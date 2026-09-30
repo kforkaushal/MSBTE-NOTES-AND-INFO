@@ -11,49 +11,25 @@
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://msbtenotes-info.netlify.app/MCU/</loc>
-    <lastmod>2026-09-09</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.95</priority>
-  </url>
-  <url>
-    <loc>https://msbtenotes-info.netlify.app/MCU/mht-cet-cap-round-allotment-seat-acceptance-2026.html</loc>
-    <lastmod>2026-09-09</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.90</priority>
-  </url>
-  <url>
-    <loc>https://msbtenotes-info.netlify.app/MCU/msbte-summer-exam-photocopy-revaluation-2026.html</loc>
-    <lastmod>2026-09-09</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.90</priority>
-  </url>
-  <url>
-    <loc>https://msbtenotes-info.netlify.app/MCU/mahadbt-post-matric-scholarship-kyc-deadline-2026.html</loc>
-    <lastmod>2026-09-09</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.90</priority>
-  </url>
-  <url>
-    <loc>https://msbtenotes-info.netlify.app/Notes/</loc>
+    <loc>https://msbtenotes-info.netlify.app/notes/</loc>
     <lastmod>2026-08-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.95</priority>
   </url>
   <url>
-    <loc>https://msbtenotes-info.netlify.app/Blog/</loc>
+    <loc>https://msbtenotes-info.netlify.app/blog/</loc>
     <lastmod>2026-08-01</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.95</priority>
   </url>
   <url>
-    <loc>https://msbtenotes-info.netlify.app/News/</loc>
+    <loc>https://msbtenotes-info.netlify.app/news/</loc>
     <lastmod>2026-08-01</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.90</priority>
   </url>
   <url>
-    <loc>https://msbtenotes-info.netlify.app/CollegeInfo/</loc>
+    <loc>https://msbtenotes-info.netlify.app/collegeinfo/</loc>
     <lastmod>2026-08-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.90</priority>
@@ -83,7 +59,7 @@
     <priority>0.82</priority>
   </url>
   <url>
-    <loc>https://msbtenotes-info.netlify.app/Jobs/</loc>
+    <loc>https://msbtenotes-info.netlify.app/jobs/</loc>
     <lastmod>2026-08-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.82</priority>
@@ -135,403 +111,403 @@
        BLOG PAGES — ordered newest first
        ========================================== -->
   <url>
-    <loc>https://msbtenotes-info.netlify.app/Blog/engineering-admissions-institute-level-round-merit-based-2026.html</loc>
+    <loc>https://msbtenotes-info.netlify.app/blog/engineering-admissions-institute-level-round-merit-based-2026</loc>
     <lastmod>2026-09-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.95</priority>
   </url>
   <url>
-    <loc>https://msbtenotes-info.netlify.app/Blog/msbte-academic-calendar-2026-27-winter-exam-date.html</loc>
+    <loc>https://msbtenotes-info.netlify.app/blog/msbte-academic-calendar-2026-27-winter-exam-date</loc>
     <lastmod>2026-08-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.95</priority>
   </url>
   <url>
-    <loc>https://msbtenotes-info.netlify.app/Blog/dse-admission-2026-27-maharashtra.html</loc>
+    <loc>https://msbtenotes-info.netlify.app/blog/dse-admission-2026-27-maharashtra</loc>
     <lastmod>2026-07-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.92</priority>
   </url>
   <url>
-    <loc>https://msbtenotes-info.netlify.app/Blog/be-vs-btech-difference-which-is-better-2026.html</loc>
+    <loc>https://msbtenotes-info.netlify.app/blog/be-vs-btech-difference-which-is-better-2026</loc>
     <lastmod>2026-07-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.92</priority>
   </url>
   <url>
-    <loc>https://msbtenotes-info.netlify.app/Blog/top-100-engineering-project-ideas-diploma-students-2026.html</loc>
+    <loc>https://msbtenotes-info.netlify.app/blog/top-100-engineering-project-ideas-diploma-students-2026</loc>
     <lastmod>2026-07-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.92</priority>
   </url>
   <url>
-    <loc>https://msbtenotes-info.netlify.app/Blog/sppu-engineering-be-btech-result-declared-2026.html</loc>
+    <loc>https://msbtenotes-info.netlify.app/blog/sppu-engineering-be-btech-result-declared-2026</loc>
     <lastmod>2026-07-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.90</priority>
   </url>
   <url>
-    <loc>https://msbtenotes-info.netlify.app/Blog/sppu-be-2019-pattern-summer-2026-timetable.html</loc>
+    <loc>https://msbtenotes-info.netlify.app/blog/sppu-be-2019-pattern-summer-2026-timetable</loc>
     <lastmod>2026-07-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.90</priority>
   </url>
   <url>
-    <loc>https://msbtenotes-info.netlify.app/Blog/msbte-notes-k-scheme-2025-26.html</loc>
+    <loc>https://msbtenotes-info.netlify.app/blog/msbte-notes-k-scheme-2025-26</loc>
     <lastmod>2026-07-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.92</priority>
   </url>
   <url>
-    <loc>https://msbtenotes-info.netlify.app/Blog/msbte-exam-ready-material-499.html</loc>
+    <loc>https://msbtenotes-info.netlify.app/blog/msbte-exam-ready-material-499</loc>
     <lastmod>2026-07-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.88</priority>
   </url>
   <url>
-    <loc>https://msbtenotes-info.netlify.app/Blog/msbte-notes-summer-exam-2026.html</loc>
+    <loc>https://msbtenotes-info.netlify.app/blog/msbte-notes-summer-exam-2026</loc>
     <lastmod>2026-07-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.90</priority>
   </url>
   <url>
-    <loc>https://msbtenotes-info.netlify.app/Blog/all-india-ncat-2026.html</loc>
+    <loc>https://msbtenotes-info.netlify.app/blog/all-india-ncat-2026</loc>
     <lastmod>2026-07-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://msbtenotes-info.netlify.app/Blog/cm-fellowship-maharashtra-2026.html</loc>
+    <loc>https://msbtenotes-info.netlify.app/blog/cm-fellowship-maharashtra-2026</loc>
     <lastmod>2026-07-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.88</priority>
   </url>
   <url>
-    <loc>https://msbtenotes-info.netlify.app/Blog/asha-bhosle-death-news.html</loc>
+    <loc>https://msbtenotes-info.netlify.app/blog/asha-bhosle-death-news</loc>
     <lastmod>2026-07-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.82</priority>
   </url>
   <url>
-    <loc>https://msbtenotes-info.netlify.app/Blog/k-scheme-guess-papers.html</loc>
+    <loc>https://msbtenotes-info.netlify.app/blog/k-scheme-guess-papers</loc>
     <lastmod>2026-07-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.90</priority>
   </url>
   <url>
-    <loc>https://msbtenotes-info.netlify.app/Blog/msbte-summer-2026-last-minute-tips.html</loc>
+    <loc>https://msbtenotes-info.netlify.app/blog/msbte-summer-2026-last-minute-tips</loc>
     <lastmod>2026-07-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.88</priority>
   </url>
   <url>
-    <loc>https://msbtenotes-info.netlify.app/Blog/sppu-summer-2026-exam-roadmap.html</loc>
+    <loc>https://msbtenotes-info.netlify.app/blog/sppu-summer-2026-exam-roadmap</loc>
     <lastmod>2026-07-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://msbtenotes-info.netlify.app/Blog/what-to-do-after-diploma.html</loc>
+    <loc>https://msbtenotes-info.netlify.app/blog/what-to-do-after-diploma</loc>
     <lastmod>2026-07-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.88</priority>
   </url>
   <url>
-    <loc>https://msbtenotes-info.netlify.app/Blog/what-to-do-after-10th.html</loc>
+    <loc>https://msbtenotes-info.netlify.app/blog/what-to-do-after-10th</loc>
     <lastmod>2026-07-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.88</priority>
   </url>
   <url>
-    <loc>https://msbtenotes-info.netlify.app/Blog/how-to-study-smarter-using-ai-msbte.html</loc>
+    <loc>https://msbtenotes-info.netlify.app/blog/how-to-study-smarter-using-ai-msbte</loc>
     <lastmod>2026-07-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://msbtenotes-info.netlify.app/Blog/fake-news-alert-msbte-exams.html</loc>
+    <loc>https://msbtenotes-info.netlify.app/blog/fake-news-alert-msbte-exams</loc>
     <lastmod>2026-07-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://msbtenotes-info.netlify.app/Blog/50-capstone-project-ideas-computer-engineering.html</loc>
+    <loc>https://msbtenotes-info.netlify.app/blog/50-capstone-project-ideas-computer-engineering</loc>
     <lastmod>2026-07-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.88</priority>
   </url>
   <url>
-    <loc>https://msbtenotes-info.netlify.app/Blog/msbte-summer-2026-final-timetable-declared-diploma.html</loc>
+    <loc>https://msbtenotes-info.netlify.app/blog/msbte-summer-2026-final-timetable-declared-diploma</loc>
     <lastmod>2026-07-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.90</priority>
   </url>
   <url>
-    <loc>https://msbtenotes-info.netlify.app/Blog/msbte-summer-2026-hall-ticket.html</loc>
+    <loc>https://msbtenotes-info.netlify.app/blog/msbte-summer-2026-hall-ticket</loc>
     <lastmod>2026-07-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.90</priority>
   </url>
   <url>
-    <loc>https://msbtenotes-info.netlify.app/Blog/msbte-institute-wise-summer-2026-timetable.html</loc>
+    <loc>https://msbtenotes-info.netlify.app/blog/msbte-institute-wise-summer-2026-timetable</loc>
     <lastmod>2026-07-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.88</priority>
   </url>
   <url>
-    <loc>https://msbtenotes-info.netlify.app/Blog/programming-in-c-312303-v2.html</loc>
+    <loc>https://msbtenotes-info.netlify.app/blog/programming-in-c-312303-v2</loc>
     <lastmod>2026-07-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.88</priority>
   </url>
   <url>
-    <loc>https://msbtenotes-info.netlify.app/Blog/msbte-summer-2026-exam-time-table.html</loc>
+    <loc>https://msbtenotes-info.netlify.app/blog/msbte-summer-2026-exam-time-table</loc>
     <lastmod>2026-07-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.90</priority>
   </url>
   <url>
-    <loc>https://msbtenotes-info.netlify.app/Blog/top-5-engineering-colleges-maharashtra.html</loc>
+    <loc>https://msbtenotes-info.netlify.app/blog/top-5-engineering-colleges-maharashtra</loc>
     <lastmod>2026-07-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://msbtenotes-info.netlify.app/Blog/msbte-summer-2026-exam-roadmap.html</loc>
+    <loc>https://msbtenotes-info.netlify.app/blog/msbte-summer-2026-exam-roadmap</loc>
     <lastmod>2026-07-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.88</priority>
   </url>
   <url>
-    <loc>https://msbtenotes-info.netlify.app/Blog/dpharm-exit-exam-cancelled-2026.html</loc>
+    <loc>https://msbtenotes-info.netlify.app/blog/dpharm-exit-exam-cancelled-2026</loc>
     <lastmod>2026-07-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://msbtenotes-info.netlify.app/Blog/sppu-kumbh-mela-credits-2026.html</loc>
+    <loc>https://msbtenotes-info.netlify.app/blog/sppu-kumbh-mela-credits-2026</loc>
     <lastmod>2026-07-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.78</priority>
   </url>
   <url>
-    <loc>https://msbtenotes-info.netlify.app/Blog/autonomous-engineering-colleges-maharashtra.html</loc>
+    <loc>https://msbtenotes-info.netlify.app/blog/autonomous-engineering-colleges-maharashtra</loc>
     <lastmod>2026-07-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://msbtenotes-info.netlify.app/Blog/sppu-result-winter-2025.html</loc>
+    <loc>https://msbtenotes-info.netlify.app/blog/sppu-result-winter-2025</loc>
     <lastmod>2026-07-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.88</priority>
   </url>
   <url>
-    <loc>https://msbtenotes-info.netlify.app/Blog/mahadbt-scholarship-error-solutions.html</loc>
+    <loc>https://msbtenotes-info.netlify.app/blog/mahadbt-scholarship-error-solutions</loc>
     <lastmod>2026-07-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://msbtenotes-info.netlify.app/Blog/aaple-sarkar-dbt-portal-guide.html</loc>
+    <loc>https://msbtenotes-info.netlify.app/blog/aaple-sarkar-dbt-portal-guide</loc>
     <lastmod>2026-07-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://msbtenotes-info.netlify.app/Blog/post-matric-scholarship-obc.html</loc>
+    <loc>https://msbtenotes-info.netlify.app/blog/post-matric-scholarship-obc</loc>
     <lastmod>2026-07-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://msbtenotes-info.netlify.app/Blog/msbte-academic-calendar-2025-26.html</loc>
+    <loc>https://msbtenotes-info.netlify.app/blog/msbte-academic-calendar-2025-26</loc>
     <lastmod>2026-07-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.88</priority>
   </url>
   <url>
-    <loc>https://msbtenotes-info.netlify.app/Blog/ugc-new-rules-2026.html</loc>
+    <loc>https://msbtenotes-info.netlify.app/blog/ugc-new-rules-2026</loc>
     <lastmod>2026-07-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.82</priority>
   </url>
   <url>
-    <loc>https://msbtenotes-info.netlify.app/Blog/programming-in-c-312303.html</loc>
+    <loc>https://msbtenotes-info.netlify.app/blog/programming-in-c-312303</loc>
     <lastmod>2026-07-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://msbtenotes-info.netlify.app/Blog/niti-aayog-internship-2026.html</loc>
+    <loc>https://msbtenotes-info.netlify.app/blog/niti-aayog-internship-2026</loc>
     <lastmod>2026-07-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://msbtenotes-info.netlify.app/Blog/computer-engineering-diploma-notes.html</loc>
+    <loc>https://msbtenotes-info.netlify.app/blog/computer-engineering-diploma-notes</loc>
     <lastmod>2026-07-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.88</priority>
   </url>
   <url>
-    <loc>https://msbtenotes-info.netlify.app/Blog/ajit-pawar-death-news.html</loc>
+    <loc>https://msbtenotes-info.netlify.app/blog/ajit-pawar-death-news</loc>
     <lastmod>2026-07-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.78</priority>
   </url>
   <url>
-    <loc>https://msbtenotes-info.netlify.app/Blog/top-engineering-colleges-pune.html</loc>
+    <loc>https://msbtenotes-info.netlify.app/blog/top-engineering-colleges-pune</loc>
     <lastmod>2026-07-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.88</priority>
   </url>
   <url>
-    <loc>https://msbtenotes-info.netlify.app/Blog/dse-admission-schedule-2026.html</loc>
+    <loc>https://msbtenotes-info.netlify.app/blog/dse-admission-schedule-2026</loc>
     <lastmod>2026-07-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.92</priority>
   </url>
   <url>
-    <loc>https://msbtenotes-info.netlify.app/Blog/professional-software-project-development.html</loc>
+    <loc>https://msbtenotes-info.netlify.app/blog/professional-software-project-development</loc>
     <lastmod>2026-07-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.82</priority>
   </url>
   <url>
-    <loc>https://msbtenotes-info.netlify.app/Blog/top-20-engineering-colleges-maharashtra.html</loc>
+    <loc>https://msbtenotes-info.netlify.app/blog/top-20-engineering-colleges-maharashtra</loc>
     <lastmod>2026-06-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.90</priority>
   </url>
   <url>
-    <loc>https://msbtenotes-info.netlify.app/Blog/msbte-summer-2026-photocopy-reevaluation.html</loc>
+    <loc>https://msbtenotes-info.netlify.app/blog/msbte-summer-2026-photocopy-reevaluation</loc>
     <lastmod>2026-06-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.90</priority>
   </url>
   <url>
-    <loc>https://msbtenotes-info.netlify.app/Blog/msbte-summer-2026-result-declared.html</loc>
+    <loc>https://msbtenotes-info.netlify.app/blog/msbte-summer-2026-result-declared</loc>
     <lastmod>2026-06-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.92</priority>
   </url>
   <url>
-    <loc>https://msbtenotes-info.netlify.app/Blog/mht-cet-pcm-result-2026-highlights.html</loc>
+    <loc>https://msbtenotes-info.netlify.app/blog/mht-cet-pcm-result-2026-highlights</loc>
     <lastmod>2026-06-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.88</priority>
   </url>
   <url>
-    <loc>https://msbtenotes-info.netlify.app/Blog/msbte-summer-2026-exam-result-date-and-link.html</loc>
+    <loc>https://msbtenotes-info.netlify.app/blog/msbte-summer-2026-exam-result-date-and-link</loc>
     <lastmod>2026-06-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.90</priority>
   </url>
   <url>
-    <loc>https://msbtenotes-info.netlify.app/Blog/msbte-summer-2026-expected-result-date.html</loc>
+    <loc>https://msbtenotes-info.netlify.app/blog/msbte-summer-2026-expected-result-date</loc>
     <lastmod>2026-05-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.90</priority>
   </url>
   <url>
-    <loc>https://msbtenotes-info.netlify.app/Blog/msbte-summer-2026-online-exam-login-guide.html</loc>
+    <loc>https://msbtenotes-info.netlify.app/blog/msbte-summer-2026-online-exam-login-guide</loc>
     <lastmod>2026-04-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://msbtenotes-info.netlify.app/Blog/msbte-summer-2026-phase6-rescheduled.html</loc>
+    <loc>https://msbtenotes-info.netlify.app/blog/msbte-summer-2026-phase6-rescheduled</loc>
     <lastmod>2026-04-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.82</priority>
   </url>
   <url>
-    <loc>https://msbtenotes-info.netlify.app/Blog/msbte-summer-2026-online-exam-subject-codes.html</loc>
+    <loc>https://msbtenotes-info.netlify.app/blog/msbte-summer-2026-online-exam-subject-codes</loc>
     <lastmod>2026-04-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://msbtenotes-info.netlify.app/Blog/msbte-summer-2026-online-exam-schedule.html</loc>
+    <loc>https://msbtenotes-info.netlify.app/blog/msbte-summer-2026-online-exam-schedule</loc>
     <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://msbtenotes-info.netlify.app/Blog/msbte-winter-2025-photocopy-reevaluation.html</loc>
+    <loc>https://msbtenotes-info.netlify.app/blog/msbte-winter-2025-photocopy-reevaluation</loc>
     <lastmod>2026-01-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://msbtenotes-info.netlify.app/Blog/msbte-result-update-jan-2025.html</loc>
+    <loc>https://msbtenotes-info.netlify.app/blog/msbte-result-update-jan-2025</loc>
     <lastmod>2026-01-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.82</priority>
   </url>
   <url>
-    <loc>https://msbtenotes-info.netlify.app/Blog/msbte-winter-2025-result-revaluation-guide.html</loc>
+    <loc>https://msbtenotes-info.netlify.app/blog/msbte-winter-2025-result-revaluation-guide</loc>
     <lastmod>2026-01-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.88</priority>
   </url>
   <url>
-    <loc>https://msbtenotes-info.netlify.app/Blog/msbte-winter-2025-result.html</loc>
+    <loc>https://msbtenotes-info.netlify.app/blog/msbte-winter-2025-result</loc>
     <lastmod>2026-01-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://msbtenotes-info.netlify.app/Blog/dbms-guess-paper-free.html</loc>
+    <loc>https://msbtenotes-info.netlify.app/blog/dbms-guess-paper-free</loc>
     <lastmod>2025-12-27</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.78</priority>
   </url>
   <url>
-    <loc>https://msbtenotes-info.netlify.app/Blog/msbte-winter-2025-study-strategies.html</loc>
+    <loc>https://msbtenotes-info.netlify.app/blog/msbte-winter-2025-study-strategies</loc>
     <lastmod>2025-12-27</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://msbtenotes-info.netlify.app/Blog/msbte-winter-2025-timetable.html</loc>
+    <loc>https://msbtenotes-info.netlify.app/blog/msbte-winter-2025-timetable</loc>
     <lastmod>2025-12-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.82</priority>
   </url>
   <url>
-    <loc>https://msbtenotes-info.netlify.app/Blog/msbte-winter-2025-hall-ticket.html</loc>
+    <loc>https://msbtenotes-info.netlify.app/blog/msbte-winter-2025-hall-ticket</loc>
     <lastmod>2025-12-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.82</priority>
   </url>
   <url>
-    <loc>https://msbtenotes-info.netlify.app/Blog/Msbte-winter-2025-exam-form.html</loc>
+    <loc>https://msbtenotes-info.netlify.app/blog/msbte-winter-2025-exam-form</loc>
     <lastmod>2025-12-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://msbtenotes-info.netlify.app/Blog/engineering-day-2025.html</loc>
+    <loc>https://msbtenotes-info.netlify.app/blog/engineering-day-2025</loc>
     <lastmod>2025-12-27</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.70</priority>
   </url>
   <url>
-    <loc>https://msbtenotes-info.netlify.app/Blog/naukri-young-turks-2025.html</loc>
+    <loc>https://msbtenotes-info.netlify.app/blog/naukri-young-turks-2025</loc>
     <lastmod>2025-12-27</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.70</priority>
   </url>
   <url>
-    <loc>https://msbtenotes-info.netlify.app/Blog/skills-2025.html</loc>
+    <loc>https://msbtenotes-info.netlify.app/blog/skills-2025</loc>
     <lastmod>2025-12-27</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://msbtenotes-info.netlify.app/Blog/5-Free-Courses.html</loc>
+    <loc>https://msbtenotes-info.netlify.app/blog/5-free-courses</loc>
     <lastmod>2025-12-27</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.75</priority>
@@ -541,73 +517,73 @@
        NOTES — Index & Question Banks
        ========================================== -->
   <url>
-    <loc>https://msbtenotes-info.netlify.app/Notes/msbte-k-scheme-question-banks.html</loc>
+    <loc>https://msbtenotes-info.netlify.app/notes/msbte-k-scheme-question-banks</loc>
     <lastmod>2026-08-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.90</priority>
   </url>
   <url>
-    <loc>https://msbtenotes-info.netlify.app/Notes/msbte-computer-engg-question-bank.html</loc>
+    <loc>https://msbtenotes-info.netlify.app/notes/msbte-computer-engg-question-bank</loc>
     <lastmod>2026-08-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.88</priority>
   </url>
   <url>
-    <loc>https://msbtenotes-info.netlify.app/Notes/msbte-it-engg-question-bank.html</loc>
+    <loc>https://msbtenotes-info.netlify.app/notes/msbte-it-engg-question-bank</loc>
     <lastmod>2026-08-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.88</priority>
   </url>
   <url>
-    <loc>https://msbtenotes-info.netlify.app/Notes/msbte-civil-engg-question-bank.html</loc>
+    <loc>https://msbtenotes-info.netlify.app/notes/msbte-civil-engg-question-bank</loc>
     <lastmod>2026-08-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.88</priority>
   </url>
   <url>
-    <loc>https://msbtenotes-info.netlify.app/Notes/msbte-mech-engg-question-bank.html</loc>
+    <loc>https://msbtenotes-info.netlify.app/notes/msbte-mech-engg-question-bank</loc>
     <lastmod>2026-08-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.88</priority>
   </url>
   <url>
-    <loc>https://msbtenotes-info.netlify.app/Notes/msbte-electrical-engg-question-bank.html</loc>
+    <loc>https://msbtenotes-info.netlify.app/notes/msbte-electrical-engg-question-bank</loc>
     <lastmod>2026-08-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.88</priority>
   </url>
   <url>
-    <loc>https://msbtenotes-info.netlify.app/Notes/msbte-etc-engg-question-bank.html</loc>
+    <loc>https://msbtenotes-info.netlify.app/notes/msbte-etc-engg-question-bank</loc>
     <lastmod>2026-08-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.88</priority>
   </url>
   <url>
-    <loc>https://msbtenotes-info.netlify.app/Notes/python-handbook.html</loc>
+    <loc>https://msbtenotes-info.netlify.app/notes/python-handbook</loc>
     <lastmod>2026-08-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://msbtenotes-info.netlify.app/Notes/advanced-java-notes.html</loc>
+    <loc>https://msbtenotes-info.netlify.app/notes/advanced-java-notes</loc>
     <lastmod>2026-08-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://msbtenotes-info.netlify.app/Notes/dsa-handwritten-notes.html</loc>
+    <loc>https://msbtenotes-info.netlify.app/notes/dsa-handwritten-notes</loc>
     <lastmod>2026-08-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://msbtenotes-info.netlify.app/Notes/dte-lab-manual.html</loc>
+    <loc>https://msbtenotes-info.netlify.app/notes/dte-lab-manual</loc>
     <lastmod>2026-08-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.82</priority>
   </url>
   <url>
-    <loc>https://msbtenotes-info.netlify.app/Notes/4th-sem-computer-microprojects.html</loc>
+    <loc>https://msbtenotes-info.netlify.app/notes/4th-sem-computer-microprojects</loc>
     <lastmod>2026-08-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.82</priority>
@@ -615,25 +591,25 @@
 
   <!-- Notes — Subject Pages (Sem 1) -->
   <url>
-    <loc>https://msbtenotes-info.netlify.app/Notes/311302-basic-mathematics.html</loc>
+    <loc>https://msbtenotes-info.netlify.app/notes/311302-basic-mathematics</loc>
     <lastmod>2026-08-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://msbtenotes-info.netlify.app/Notes/311303-communication-skills-english.html</loc>
+    <loc>https://msbtenotes-info.netlify.app/notes/311303-communication-skills-english</loc>
     <lastmod>2026-08-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://msbtenotes-info.netlify.app/Notes/311305-basic-chemistry.html</loc>
+    <loc>https://msbtenotes-info.netlify.app/notes/311305-basic-chemistry</loc>
     <lastmod>2026-08-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://msbtenotes-info.netlify.app/Notes/311305-basic-physics.html</loc>
+    <loc>https://msbtenotes-info.netlify.app/notes/311305-basic-physics</loc>
     <lastmod>2026-08-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
@@ -641,37 +617,37 @@
 
   <!-- Notes — Subject Pages (Sem 2) -->
   <url>
-    <loc>https://msbtenotes-info.netlify.app/Notes/312301-applied-mathematics.html</loc>
+    <loc>https://msbtenotes-info.netlify.app/notes/312301-applied-mathematics</loc>
     <lastmod>2026-08-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.82</priority>
   </url>
   <url>
-    <loc>https://msbtenotes-info.netlify.app/Notes/312302-basic-electrical-and-electronics-engineering.html</loc>
+    <loc>https://msbtenotes-info.netlify.app/notes/312302-basic-electrical-and-electronics-engineering</loc>
     <lastmod>2026-08-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://msbtenotes-info.netlify.app/Notes/312303-programming-in-c.html</loc>
+    <loc>https://msbtenotes-info.netlify.app/notes/312303-programming-in-c</loc>
     <lastmod>2026-08-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://msbtenotes-info.netlify.app/Notes/312314-basic-electronics.html</loc>
+    <loc>https://msbtenotes-info.netlify.app/notes/312314-basic-electronics</loc>
     <lastmod>2026-08-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://msbtenotes-info.netlify.app/Notes/312315-elements-of-electrical-engineering.html</loc>
+    <loc>https://msbtenotes-info.netlify.app/notes/312315-elements-of-electrical-engineering</loc>
     <lastmod>2026-08-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://msbtenotes-info.netlify.app/Notes/312316-electronic-materials-and-components.html</loc>
+    <loc>https://msbtenotes-info.netlify.app/notes/312316-electronic-materials-and-components</loc>
     <lastmod>2026-08-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
@@ -679,43 +655,43 @@
 
   <!-- Notes — Subject Pages (Sem 3) -->
   <url>
-    <loc>https://msbtenotes-info.netlify.app/Notes/313301-data-structure-using-c.html</loc>
+    <loc>https://msbtenotes-info.netlify.app/notes/313301-data-structure-using-c</loc>
     <lastmod>2026-08-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.82</priority>
   </url>
   <url>
-    <loc>https://msbtenotes-info.netlify.app/Notes/313302-database-management-system.html</loc>
+    <loc>https://msbtenotes-info.netlify.app/notes/313302-database-management-system</loc>
     <lastmod>2026-08-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://msbtenotes-info.netlify.app/Notes/313303-digital-techniques.html</loc>
+    <loc>https://msbtenotes-info.netlify.app/notes/313303-digital-techniques</loc>
     <lastmod>2026-08-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.82</priority>
   </url>
   <url>
-    <loc>https://msbtenotes-info.netlify.app/Notes/313304-object-oriented-programming-using-c.html</loc>
+    <loc>https://msbtenotes-info.netlify.app/notes/313304-object-oriented-programming-using-c</loc>
     <lastmod>2026-08-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.82</priority>
   </url>
   <url>
-    <loc>https://msbtenotes-info.netlify.app/Notes/313324-analog-electronics.html</loc>
+    <loc>https://msbtenotes-info.netlify.app/notes/313324-analog-electronics</loc>
     <lastmod>2026-08-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://msbtenotes-info.netlify.app/Notes/313325-circuits-networks.html</loc>
+    <loc>https://msbtenotes-info.netlify.app/notes/313325-circuits-networks</loc>
     <lastmod>2026-08-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://msbtenotes-info.netlify.app/Notes/313326-principles-of-electronic-communication.html</loc>
+    <loc>https://msbtenotes-info.netlify.app/notes/313326-principles-of-electronic-communication</loc>
     <lastmod>2026-08-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
@@ -723,49 +699,49 @@
 
   <!-- Notes — Subject Pages (Sem 4) -->
   <url>
-    <loc>https://msbtenotes-info.netlify.app/Notes/314301-environmental-education-and-sustainability.html</loc>
+    <loc>https://msbtenotes-info.netlify.app/notes/314301-environmental-education-and-sustainability</loc>
     <lastmod>2026-08-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://msbtenotes-info.netlify.app/Notes/314317-java-programming.html</loc>
+    <loc>https://msbtenotes-info.netlify.app/notes/314317-java-programming</loc>
     <lastmod>2026-08-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://msbtenotes-info.netlify.app/Notes/314318-data-communication-and-computer-network.html</loc>
+    <loc>https://msbtenotes-info.netlify.app/notes/314318-data-communication-and-computer-network</loc>
     <lastmod>2026-08-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.82</priority>
   </url>
   <url>
-    <loc>https://msbtenotes-info.netlify.app/Notes/314321-microprocessor-programming.html</loc>
+    <loc>https://msbtenotes-info.netlify.app/notes/314321-microprocessor-programming</loc>
     <lastmod>2026-08-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.82</priority>
   </url>
   <url>
-    <loc>https://msbtenotes-info.netlify.app/Notes/314326-digital-communication-systems.html</loc>
+    <loc>https://msbtenotes-info.netlify.app/notes/314326-digital-communication-systems</loc>
     <lastmod>2026-08-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://msbtenotes-info.netlify.app/Notes/314327-consumer-electronic-systems.html</loc>
+    <loc>https://msbtenotes-info.netlify.app/notes/314327-consumer-electronic-systems</loc>
     <lastmod>2026-08-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://msbtenotes-info.netlify.app/Notes/314328-microcontroller-applications.html</loc>
+    <loc>https://msbtenotes-info.netlify.app/notes/314328-microcontroller-applications</loc>
     <lastmod>2026-08-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://msbtenotes-info.netlify.app/Notes/314363-basic-power-electronics.html</loc>
+    <loc>https://msbtenotes-info.netlify.app/notes/314363-basic-power-electronics</loc>
     <lastmod>2026-08-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
@@ -773,49 +749,49 @@
 
   <!-- Notes — Subject Pages (Sem 5) -->
   <url>
-    <loc>https://msbtenotes-info.netlify.app/Notes/315301-management.html</loc>
+    <loc>https://msbtenotes-info.netlify.app/notes/315301-management</loc>
     <lastmod>2026-08-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://msbtenotes-info.netlify.app/Notes/315319-operating-system.html</loc>
+    <loc>https://msbtenotes-info.netlify.app/notes/315319-operating-system</loc>
     <lastmod>2026-08-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.82</priority>
   </url>
   <url>
-    <loc>https://msbtenotes-info.netlify.app/Notes/315321-advance-computer-network.html</loc>
+    <loc>https://msbtenotes-info.netlify.app/notes/315321-advance-computer-network</loc>
     <lastmod>2026-08-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.82</priority>
   </url>
   <url>
-    <loc>https://msbtenotes-info.netlify.app/Notes/315323-software-engineering.html</loc>
+    <loc>https://msbtenotes-info.netlify.app/notes/315323-software-engineering</loc>
     <lastmod>2026-08-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.82</priority>
   </url>
   <url>
-    <loc>https://msbtenotes-info.netlify.app/Notes/315326-data-analytics.html</loc>
+    <loc>https://msbtenotes-info.netlify.app/notes/315326-data-analytics</loc>
     <lastmod>2026-08-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.82</priority>
   </url>
   <url>
-    <loc>https://msbtenotes-info.netlify.app/Notes/315338-embedded-system.html</loc>
+    <loc>https://msbtenotes-info.netlify.app/notes/315338-embedded-system</loc>
     <lastmod>2026-08-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://msbtenotes-info.netlify.app/Notes/315339-mobile-wireless-communication.html</loc>
+    <loc>https://msbtenotes-info.netlify.app/notes/315339-mobile-wireless-communication</loc>
     <lastmod>2026-08-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://msbtenotes-info.netlify.app/Notes/315342-microwave-engineering-radar-system.html</loc>
+    <loc>https://msbtenotes-info.netlify.app/notes/315342-microwave-engineering-radar-system</loc>
     <lastmod>2026-08-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
@@ -823,49 +799,49 @@
 
   <!-- Notes — Subject Pages (Sem 6 / Electives) -->
   <url>
-    <loc>https://msbtenotes-info.netlify.app/Notes/316313-emerging-trends-in-computer-engineering-and-it.html</loc>
+    <loc>https://msbtenotes-info.netlify.app/notes/316313-emerging-trends-in-computer-engineering-and-it</loc>
     <lastmod>2026-08-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://msbtenotes-info.netlify.app/Notes/316314-software-testing.html</loc>
+    <loc>https://msbtenotes-info.netlify.app/notes/316314-software-testing</loc>
     <lastmod>2026-08-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://msbtenotes-info.netlify.app/Notes/316315-digital-forensic-and-hacking-techniques.html</loc>
+    <loc>https://msbtenotes-info.netlify.app/notes/316315-digital-forensic-and-hacking-techniques</loc>
     <lastmod>2026-08-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.82</priority>
   </url>
   <url>
-    <loc>https://msbtenotes-info.netlify.app/Notes/316317-network-and-information-security.html</loc>
+    <loc>https://msbtenotes-info.netlify.app/notes/316317-network-and-information-security</loc>
     <lastmod>2026-08-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.82</priority>
   </url>
   <url>
-    <loc>https://msbtenotes-info.netlify.app/Notes/316332-optical-network-and-satellite-communication.html</loc>
+    <loc>https://msbtenotes-info.netlify.app/notes/316332-optical-network-and-satellite-communication</loc>
     <lastmod>2026-08-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://msbtenotes-info.netlify.app/Notes/316337-emerging-trends-in-electronics.html</loc>
+    <loc>https://msbtenotes-info.netlify.app/notes/316337-emerging-trends-in-electronics</loc>
     <lastmod>2026-08-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://msbtenotes-info.netlify.app/Notes/316338-computer-network-data-communication.html</loc>
+    <loc>https://msbtenotes-info.netlify.app/notes/316338-computer-network-data-communication</loc>
     <lastmod>2026-08-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://msbtenotes-info.netlify.app/Notes/316340-vlsi-applications.html</loc>
+    <loc>https://msbtenotes-info.netlify.app/notes/316340-vlsi-applications</loc>
     <lastmod>2026-08-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
@@ -873,37 +849,37 @@
 
   <!-- Notes — Micro-Project Ideas -->
   <url>
-    <loc>https://msbtenotes-info.netlify.app/Notes/20-microproject-ideas-oop.html</loc>
+    <loc>https://msbtenotes-info.netlify.app/notes/20-microproject-ideas-oop</loc>
     <lastmod>2026-08-01</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://msbtenotes-info.netlify.app/Notes/20-microproject-ideas-dbms.html</loc>
+    <loc>https://msbtenotes-info.netlify.app/notes/20-microproject-ideas-dbms</loc>
     <lastmod>2026-08-01</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://msbtenotes-info.netlify.app/Notes/20-microproject-ideas-os.html</loc>
+    <loc>https://msbtenotes-info.netlify.app/notes/20-microproject-ideas-os</loc>
     <lastmod>2026-08-01</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://msbtenotes-info.netlify.app/Notes/20-microproject-ideas-web.html</loc>
+    <loc>https://msbtenotes-info.netlify.app/notes/20-microproject-ideas-web</loc>
     <lastmod>2026-08-01</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://msbtenotes-info.netlify.app/Notes/20-microproject-ideas-cn.html</loc>
+    <loc>https://msbtenotes-info.netlify.app/notes/20-microproject-ideas-cn</loc>
     <lastmod>2026-08-01</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://msbtenotes-info.netlify.app/Notes/20-microproject-ideas-se.html</loc>
+    <loc>https://msbtenotes-info.netlify.app/notes/20-microproject-ideas-se</loc>
     <lastmod>2026-08-01</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.75</priority>
@@ -913,133 +889,133 @@
        NOTES — LAB MANUALS
        ========================================== -->
   <url>
-    <loc>https://msbtenotes-info.netlify.app/Notes/Manual/engineering-mechanics-lab-manual.html</loc>
+    <loc>https://msbtenotes-info.netlify.app/notes/manual/engineering-mechanics-lab-manual</loc>
     <lastmod>2026-08-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.78</priority>
   </url>
   <url>
-    <loc>https://msbtenotes-info.netlify.app/Notes/Manual/building-material-construction-lab-manual.html</loc>
+    <loc>https://msbtenotes-info.netlify.app/notes/manual/building-material-construction-lab-manual</loc>
     <lastmod>2026-08-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.78</priority>
   </url>
   <url>
-    <loc>https://msbtenotes-info.netlify.app/Notes/Manual/applied-science-physics-lab-manual.html</loc>
+    <loc>https://msbtenotes-info.netlify.app/notes/manual/applied-science-physics-lab-manual</loc>
     <lastmod>2026-08-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.78</priority>
   </url>
   <url>
-    <loc>https://msbtenotes-info.netlify.app/Notes/Manual/applied-science-chemistry-lab-manual.html</loc>
+    <loc>https://msbtenotes-info.netlify.app/notes/manual/applied-science-chemistry-lab-manual</loc>
     <lastmod>2026-08-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.78</priority>
   </url>
   <url>
-    <loc>https://msbtenotes-info.netlify.app/Notes/Manual/programming-in-c-lab-manual.html</loc>
+    <loc>https://msbtenotes-info.netlify.app/notes/manual/programming-in-c-lab-manual</loc>
     <lastmod>2026-08-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://msbtenotes-info.netlify.app/Notes/Manual/web-page-designing-lab-manual.html</loc>
+    <loc>https://msbtenotes-info.netlify.app/notes/manual/web-page-designing-lab-manual</loc>
     <lastmod>2026-08-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.78</priority>
   </url>
   <url>
-    <loc>https://msbtenotes-info.netlify.app/Notes/Manual/basic-electrical-electronics-lab-manual.html</loc>
+    <loc>https://msbtenotes-info.netlify.app/notes/manual/basic-electrical-electronics-lab-manual</loc>
     <lastmod>2026-08-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.78</priority>
   </url>
   <url>
-    <loc>https://msbtenotes-info.netlify.app/Notes/Manual/fundamentals-electrical-engineering-lab-manual.html</loc>
+    <loc>https://msbtenotes-info.netlify.app/notes/manual/fundamentals-electrical-engineering-lab-manual</loc>
     <lastmod>2026-08-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.78</priority>
   </url>
   <url>
-    <loc>https://msbtenotes-info.netlify.app/Notes/Manual/basic-mechanical-engineering-lab-manual.html</loc>
+    <loc>https://msbtenotes-info.netlify.app/notes/manual/basic-mechanical-engineering-lab-manual</loc>
     <lastmod>2026-08-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.78</priority>
   </url>
   <url>
-    <loc>https://msbtenotes-info.netlify.app/Notes/Manual/basic-electronics-lab-manual.html</loc>
+    <loc>https://msbtenotes-info.netlify.app/notes/manual/basic-electronics-lab-manual</loc>
     <lastmod>2026-08-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.78</priority>
   </url>
   <url>
-    <loc>https://msbtenotes-info.netlify.app/Notes/Manual/electronic-materials-components-lab-manual.html</loc>
+    <loc>https://msbtenotes-info.netlify.app/notes/manual/electronic-materials-components-lab-manual</loc>
     <lastmod>2026-08-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.78</priority>
   </url>
   <url>
-    <loc>https://msbtenotes-info.netlify.app/Notes/Manual/elements-electrical-engineering-lab-manual.html</loc>
+    <loc>https://msbtenotes-info.netlify.app/notes/manual/elements-electrical-engineering-lab-manual</loc>
     <lastmod>2026-08-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.78</priority>
   </url>
   <url>
-    <loc>https://msbtenotes-info.netlify.app/Notes/Manual/solid-fluid-operations-lab-manual.html</loc>
+    <loc>https://msbtenotes-info.netlify.app/notes/manual/solid-fluid-operations-lab-manual</loc>
     <lastmod>2026-08-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://msbtenotes-info.netlify.app/Notes/Manual/surveying-lab-manual.html</loc>
+    <loc>https://msbtenotes-info.netlify.app/notes/manual/surveying-lab-manual</loc>
     <lastmod>2026-08-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://msbtenotes-info.netlify.app/Notes/Manual/elements-of-electronics-lab-manual.html</loc>
+    <loc>https://msbtenotes-info.netlify.app/notes/manual/elements-of-electronics-lab-manual</loc>
     <lastmod>2026-08-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://msbtenotes-info.netlify.app/Notes/Manual/linux-basics-lab-manual.html</loc>
+    <loc>https://msbtenotes-info.netlify.app/notes/manual/linux-basics-lab-manual</loc>
     <lastmod>2026-08-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://msbtenotes-info.netlify.app/Notes/Manual/chemical-engineering-materials-lab-manual.html</loc>
+    <loc>https://msbtenotes-info.netlify.app/notes/manual/chemical-engineering-materials-lab-manual</loc>
     <lastmod>2026-08-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://msbtenotes-info.netlify.app/Notes/Manual/312303-pic-programming-in-c-manual-answers.html</loc>
+    <loc>https://msbtenotes-info.netlify.app/notes/manual/312303-pic-programming-in-c-manual-answers</loc>
     <lastmod>2026-08-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://msbtenotes-info.netlify.app/Notes/Manual/bsc-lab-manual.html</loc>
+    <loc>https://msbtenotes-info.netlify.app/notes/manual/bsc-lab-manual</loc>
     <lastmod>2026-08-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://msbtenotes-info.netlify.app/Notes/Manual/bsp-lab-manual.html</loc>
+    <loc>https://msbtenotes-info.netlify.app/notes/manual/bsp-lab-manual</loc>
     <lastmod>2026-08-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://msbtenotes-info.netlify.app/Notes/Manual/cse-lab-manual.html</loc>
+    <loc>https://msbtenotes-info.netlify.app/notes/manual/cse-lab-manual</loc>
     <lastmod>2026-08-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://msbtenotes-info.netlify.app/Notes/Manual/pco-lab-manual.html</loc>
+    <loc>https://msbtenotes-info.netlify.app/notes/manual/pco-lab-manual</loc>
     <lastmod>2026-08-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
@@ -1049,43 +1025,43 @@
        BRANCHES — Branch Landing Pages
        ========================================== -->
   <url>
-    <loc>https://msbtenotes-info.netlify.app/Branches/Computer.html</loc>
+    <loc>https://msbtenotes-info.netlify.app/branches/computer</loc>
     <lastmod>2026-08-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.88</priority>
   </url>
   <url>
-    <loc>https://msbtenotes-info.netlify.app/Branches/Information-Technology.html</loc>
+    <loc>https://msbtenotes-info.netlify.app/branches/information-technology</loc>
     <lastmod>2026-08-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.88</priority>
   </url>
   <url>
-    <loc>https://msbtenotes-info.netlify.app/Branches/Civil.html</loc>
+    <loc>https://msbtenotes-info.netlify.app/branches/civil</loc>
     <lastmod>2026-08-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.88</priority>
   </url>
   <url>
-    <loc>https://msbtenotes-info.netlify.app/Branches/Mechanical-Engineering.html</loc>
+    <loc>https://msbtenotes-info.netlify.app/branches/mechanical-engineering</loc>
     <lastmod>2026-08-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.88</priority>
   </url>
   <url>
-    <loc>https://msbtenotes-info.netlify.app/Branches/Electrical-Engineering.html</loc>
+    <loc>https://msbtenotes-info.netlify.app/branches/electrical-engineering</loc>
     <lastmod>2026-08-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.88</priority>
   </url>
   <url>
-    <loc>https://msbtenotes-info.netlify.app/Branches/ETC-Engineering.html</loc>
+    <loc>https://msbtenotes-info.netlify.app/branches/etc-engineering</loc>
     <lastmod>2026-08-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.88</priority>
   </url>
   <url>
-    <loc>https://msbtenotes-info.netlify.app/Branches/AI-ML.html</loc>
+    <loc>https://msbtenotes-info.netlify.app/branches/ai-ml</loc>
     <lastmod>2026-08-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
@@ -1093,74 +1069,74 @@
 
   <!-- Computer Engineering — Semester Pages (K Scheme) -->
   <url>
-    <loc>https://msbtenotes-info.netlify.app/Branches/Computer-Semester-1.html</loc>
+    <loc>https://msbtenotes-info.netlify.app/branches/computer-semester-1</loc>
     <lastmod>2026-08-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.82</priority>
   </url>
   <url>
-    <loc>https://msbtenotes-info.netlify.app/Branches/Computer-Semester-2.html</loc>
+    <loc>https://msbtenotes-info.netlify.app/branches/computer-semester-2</loc>
     <lastmod>2026-08-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.82</priority>
   </url>
   <url>
-    <loc>https://msbtenotes-info.netlify.app/Branches/Computer-Semester-3.html</loc>
+    <loc>https://msbtenotes-info.netlify.app/branches/computer-semester-3</loc>
     <lastmod>2026-08-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.82</priority>
   </url>
   <url>
-    <loc>https://msbtenotes-info.netlify.app/Branches/Computer-Semester-4.html</loc>
+    <loc>https://msbtenotes-info.netlify.app/branches/computer-semester-4</loc>
     <lastmod>2026-08-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.82</priority>
   </url>
   <url>
-    <loc>https://msbtenotes-info.netlify.app/Branches/Computer-Semester-5.html</loc>
+    <loc>https://msbtenotes-info.netlify.app/branches/computer-semester-5</loc>
     <lastmod>2026-08-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.82</priority>
   </url>
   <url>
-    <loc>https://msbtenotes-info.netlify.app/Branches/Computer-Semester-6.html</loc>
+    <loc>https://msbtenotes-info.netlify.app/branches/computer-semester-6</loc>
     <lastmod>2026-08-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.82</priority>
   </url>
   <!-- Computer Engineering — I Scheme -->
   <url>
-    <loc>https://msbtenotes-info.netlify.app/Branches/Computer-I-Scheme.html</loc>
+    <loc>https://msbtenotes-info.netlify.app/branches/computer-i-scheme</loc>
     <lastmod>2026-08-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.82</priority>
   </url>
   <url>
-    <loc>https://msbtenotes-info.netlify.app/Branches/Computer-I-Scheme-Semester-1.html</loc>
+    <loc>https://msbtenotes-info.netlify.app/branches/computer-i-scheme-semester-1</loc>
     <lastmod>2026-08-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.78</priority>
   </url>
   <url>
-    <loc>https://msbtenotes-info.netlify.app/Branches/Computer-I-Scheme-Semester-2.html</loc>
+    <loc>https://msbtenotes-info.netlify.app/branches/computer-i-scheme-semester-2</loc>
     <lastmod>2026-08-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.78</priority>
   </url>
   <url>
-    <loc>https://msbtenotes-info.netlify.app/Branches/Computer-I-Scheme-Semester-3.html</loc>
+    <loc>https://msbtenotes-info.netlify.app/branches/computer-i-scheme-semester-3</loc>
     <lastmod>2026-08-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.78</priority>
   </url>
   <url>
-    <loc>https://msbtenotes-info.netlify.app/Branches/Computer-I-Scheme-Semester-4.html</loc>
+    <loc>https://msbtenotes-info.netlify.app/branches/computer-i-scheme-semester-4</loc>
     <lastmod>2026-08-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.78</priority>
   </url>
   <url>
-    <loc>https://msbtenotes-info.netlify.app/Branches/Computer-I-Scheme-Semester-5.html</loc>
+    <loc>https://msbtenotes-info.netlify.app/branches/computer-i-scheme-semester-5</loc>
     <lastmod>2026-08-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.78</priority>
@@ -1168,37 +1144,37 @@
 
   <!-- Civil Engineering — Semester Pages -->
   <url>
-    <loc>https://msbtenotes-info.netlify.app/Branches/Civil-Semester-1.html</loc>
+    <loc>https://msbtenotes-info.netlify.app/branches/civil-semester-1</loc>
     <lastmod>2026-08-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.82</priority>
   </url>
   <url>
-    <loc>https://msbtenotes-info.netlify.app/Branches/Civil-Semester-2.html</loc>
+    <loc>https://msbtenotes-info.netlify.app/branches/civil-semester-2</loc>
     <lastmod>2026-08-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.82</priority>
   </url>
   <url>
-    <loc>https://msbtenotes-info.netlify.app/Branches/Civil-Semester-3.html</loc>
+    <loc>https://msbtenotes-info.netlify.app/branches/civil-semester-3</loc>
     <lastmod>2026-08-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.82</priority>
   </url>
   <url>
-    <loc>https://msbtenotes-info.netlify.app/Branches/Civil-Semester-4.html</loc>
+    <loc>https://msbtenotes-info.netlify.app/branches/civil-semester-4</loc>
     <lastmod>2026-08-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.82</priority>
   </url>
   <url>
-    <loc>https://msbtenotes-info.netlify.app/Branches/Civil-Semester-5.html</loc>
+    <loc>https://msbtenotes-info.netlify.app/branches/civil-semester-5</loc>
     <lastmod>2026-08-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.82</priority>
   </url>
   <url>
-    <loc>https://msbtenotes-info.netlify.app/Branches/Civil-Semester-6.html</loc>
+    <loc>https://msbtenotes-info.netlify.app/branches/civil-semester-6</loc>
     <lastmod>2026-08-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.82</priority>
@@ -1206,37 +1182,37 @@
 
   <!-- Mechanical Engineering — Semester Pages -->
   <url>
-    <loc>https://msbtenotes-info.netlify.app/Branches/Mechanical-Engineering-Semester-1.html</loc>
+    <loc>https://msbtenotes-info.netlify.app/branches/mechanical-engineering-semester-1</loc>
     <lastmod>2026-08-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.82</priority>
   </url>
   <url>
-    <loc>https://msbtenotes-info.netlify.app/Branches/Mechanical-Engineering-Semester-2.html</loc>
+    <loc>https://msbtenotes-info.netlify.app/branches/mechanical-engineering-semester-2</loc>
     <lastmod>2026-08-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.82</priority>
   </url>
   <url>
-    <loc>https://msbtenotes-info.netlify.app/Branches/Mechanical-Engineering-Semester-3.html</loc>
+    <loc>https://msbtenotes-info.netlify.app/branches/mechanical-engineering-semester-3</loc>
     <lastmod>2026-08-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.82</priority>
   </url>
   <url>
-    <loc>https://msbtenotes-info.netlify.app/Branches/Mechanical-Engineering-Semester-4.html</loc>
+    <loc>https://msbtenotes-info.netlify.app/branches/mechanical-engineering-semester-4</loc>
     <lastmod>2026-08-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.82</priority>
   </url>
   <url>
-    <loc>https://msbtenotes-info.netlify.app/Branches/Mechanical-Engineering-Semester-5.html</loc>
+    <loc>https://msbtenotes-info.netlify.app/branches/mechanical-engineering-semester-5</loc>
     <lastmod>2026-08-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.82</priority>
   </url>
   <url>
-    <loc>https://msbtenotes-info.netlify.app/Branches/Mechanical-Engineering-Semester-6.html</loc>
+    <loc>https://msbtenotes-info.netlify.app/branches/mechanical-engineering-semester-6</loc>
     <lastmod>2026-08-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.82</priority>
@@ -1244,37 +1220,37 @@
 
   <!-- Electrical Engineering — Semester Pages -->
   <url>
-    <loc>https://msbtenotes-info.netlify.app/Branches/Electrical-Engineering-Semester-1.html</loc>
+    <loc>https://msbtenotes-info.netlify.app/branches/electrical-engineering-semester-1</loc>
     <lastmod>2026-08-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.82</priority>
   </url>
   <url>
-    <loc>https://msbtenotes-info.netlify.app/Branches/Electrical-Engineering-Semester-2.html</loc>
+    <loc>https://msbtenotes-info.netlify.app/branches/electrical-engineering-semester-2</loc>
     <lastmod>2026-08-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.82</priority>
   </url>
   <url>
-    <loc>https://msbtenotes-info.netlify.app/Branches/Electrical-Engineering-Semester-3.html</loc>
+    <loc>https://msbtenotes-info.netlify.app/branches/electrical-engineering-semester-3</loc>
     <lastmod>2026-08-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.82</priority>
   </url>
   <url>
-    <loc>https://msbtenotes-info.netlify.app/Branches/Electrical-Engineering-Semester-4.html</loc>
+    <loc>https://msbtenotes-info.netlify.app/branches/electrical-engineering-semester-4</loc>
     <lastmod>2026-08-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.82</priority>
   </url>
   <url>
-    <loc>https://msbtenotes-info.netlify.app/Branches/Electrical-Engineering-Semester-5.html</loc>
+    <loc>https://msbtenotes-info.netlify.app/branches/electrical-engineering-semester-5</loc>
     <lastmod>2026-08-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.82</priority>
   </url>
   <url>
-    <loc>https://msbtenotes-info.netlify.app/Branches/Electrical-Engineering-Semester-6.html</loc>
+    <loc>https://msbtenotes-info.netlify.app/branches/electrical-engineering-semester-6</loc>
     <lastmod>2026-08-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.82</priority>
@@ -1282,37 +1258,37 @@
 
   <!-- ETC Engineering — Semester Pages -->
   <url>
-    <loc>https://msbtenotes-info.netlify.app/Branches/ETC-Engineering-Semester-1.html</loc>
+    <loc>https://msbtenotes-info.netlify.app/branches/etc-engineering-semester-1</loc>
     <lastmod>2026-08-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.82</priority>
   </url>
   <url>
-    <loc>https://msbtenotes-info.netlify.app/Branches/ETC-Engineering-Semester-2.html</loc>
+    <loc>https://msbtenotes-info.netlify.app/branches/etc-engineering-semester-2</loc>
     <lastmod>2026-08-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.82</priority>
   </url>
   <url>
-    <loc>https://msbtenotes-info.netlify.app/Branches/ETC-Engineering-Semester-3.html</loc>
+    <loc>https://msbtenotes-info.netlify.app/branches/etc-engineering-semester-3</loc>
     <lastmod>2026-08-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.82</priority>
   </url>
   <url>
-    <loc>https://msbtenotes-info.netlify.app/Branches/ETC-Engineering-Semester-4.html</loc>
+    <loc>https://msbtenotes-info.netlify.app/branches/etc-engineering-semester-4</loc>
     <lastmod>2026-08-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.82</priority>
   </url>
   <url>
-    <loc>https://msbtenotes-info.netlify.app/Branches/ETC-Engineering-Semester-5.html</loc>
+    <loc>https://msbtenotes-info.netlify.app/branches/etc-engineering-semester-5</loc>
     <lastmod>2026-08-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.82</priority>
   </url>
   <url>
-    <loc>https://msbtenotes-info.netlify.app/Branches/ETC-Engineering-Semester-6.html</loc>
+    <loc>https://msbtenotes-info.netlify.app/branches/etc-engineering-semester-6</loc>
     <lastmod>2026-08-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.82</priority>
@@ -1320,37 +1296,37 @@
 
   <!-- Information Technology — Semester Pages -->
   <url>
-    <loc>https://msbtenotes-info.netlify.app/Branches/Information-Technology-Semester-1.html</loc>
+    <loc>https://msbtenotes-info.netlify.app/branches/information-technology-semester-1</loc>
     <lastmod>2026-08-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.82</priority>
   </url>
   <url>
-    <loc>https://msbtenotes-info.netlify.app/Branches/Information-Technology-Semester-2.html</loc>
+    <loc>https://msbtenotes-info.netlify.app/branches/information-technology-semester-2</loc>
     <lastmod>2026-08-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.82</priority>
   </url>
   <url>
-    <loc>https://msbtenotes-info.netlify.app/Branches/Information-Technology-Semester-3.html</loc>
+    <loc>https://msbtenotes-info.netlify.app/branches/information-technology-semester-3</loc>
     <lastmod>2026-08-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.82</priority>
   </url>
   <url>
-    <loc>https://msbtenotes-info.netlify.app/Branches/Information-Technology-Semester-4.html</loc>
+    <loc>https://msbtenotes-info.netlify.app/branches/information-technology-semester-4</loc>
     <lastmod>2026-08-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.82</priority>
   </url>
   <url>
-    <loc>https://msbtenotes-info.netlify.app/Branches/Information-Technology-Semester-5.html</loc>
+    <loc>https://msbtenotes-info.netlify.app/branches/information-technology-semester-5</loc>
     <lastmod>2026-08-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.82</priority>
   </url>
   <url>
-    <loc>https://msbtenotes-info.netlify.app/Branches/Information-Technology-Semester-6.html</loc>
+    <loc>https://msbtenotes-info.netlify.app/branches/information-technology-semester-6</loc>
     <lastmod>2026-08-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.82</priority>
@@ -1358,37 +1334,37 @@
 
   <!-- AI-ML — Semester Pages -->
   <url>
-    <loc>https://msbtenotes-info.netlify.app/Branches/AI-ML-Semester-1.html</loc>
+    <loc>https://msbtenotes-info.netlify.app/branches/ai-ml-semester-1</loc>
     <lastmod>2026-08-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.82</priority>
   </url>
   <url>
-    <loc>https://msbtenotes-info.netlify.app/Branches/AI-ML-Semester-2.html</loc>
+    <loc>https://msbtenotes-info.netlify.app/branches/ai-ml-semester-2</loc>
     <lastmod>2026-08-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.82</priority>
   </url>
   <url>
-    <loc>https://msbtenotes-info.netlify.app/Branches/AI-ML-Semester-3.html</loc>
+    <loc>https://msbtenotes-info.netlify.app/branches/ai-ml-semester-3</loc>
     <lastmod>2026-08-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.82</priority>
   </url>
   <url>
-    <loc>https://msbtenotes-info.netlify.app/Branches/AI-ML-Semester-4.html</loc>
+    <loc>https://msbtenotes-info.netlify.app/branches/ai-ml-semester-4</loc>
     <lastmod>2026-08-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.82</priority>
   </url>
   <url>
-    <loc>https://msbtenotes-info.netlify.app/Branches/AI-ML-Semester-5.html</loc>
+    <loc>https://msbtenotes-info.netlify.app/branches/ai-ml-semester-5</loc>
     <lastmod>2026-08-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.82</priority>
   </url>
   <url>
-    <loc>https://msbtenotes-info.netlify.app/Branches/AI-ML-Semester-6.html</loc>
+    <loc>https://msbtenotes-info.netlify.app/branches/ai-ml-semester-6</loc>
     <lastmod>2026-08-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.82</priority>
@@ -1396,395 +1372,389 @@
 
   <!-- Key Subject Pages in Branches -->
   <url>
-    <loc>https://msbtenotes-info.netlify.app/Branches/314317-java-programming.html</loc>
+    <loc>https://msbtenotes-info.netlify.app/branches/314317-java-programming</loc>
     <lastmod>2026-08-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://msbtenotes-info.netlify.app/Branches/313303-digital-techniques.html</loc>
+    <loc>https://msbtenotes-info.netlify.app/branches/313303-digital-techniques</loc>
     <lastmod>2026-08-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://msbtenotes-info.netlify.app/Branches/314004-python-programming.html</loc>
+    <loc>https://msbtenotes-info.netlify.app/branches/314004-python-programming</loc>
     <lastmod>2026-08-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://msbtenotes-info.netlify.app/Branches/314005-ui-ux-design.html</loc>
+    <loc>https://msbtenotes-info.netlify.app/branches/314005-ui-ux-design</loc>
     <lastmod>2026-08-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.78</priority>
   </url>
   <url>
-    <loc>https://msbtenotes-info.netlify.app/Branches/315319-operating-system.html</loc>
+    <loc>https://msbtenotes-info.netlify.app/branches/315319-operating-system</loc>
     <lastmod>2026-08-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://msbtenotes-info.netlify.app/Branches/315323-software-engineering.html</loc>
+    <loc>https://msbtenotes-info.netlify.app/branches/315323-software-engineering</loc>
     <lastmod>2026-08-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://msbtenotes-info.netlify.app/Branches/315321-advanced-computer-network.html</loc>
+    <loc>https://msbtenotes-info.netlify.app/branches/315321-advanced-computer-network</loc>
     <lastmod>2026-08-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://msbtenotes-info.netlify.app/Branches/315325-cloud-computing.html</loc>
+    <loc>https://msbtenotes-info.netlify.app/branches/315325-cloud-computing</loc>
     <lastmod>2026-08-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://msbtenotes-info.netlify.app/Branches/315326-data-analytics.html</loc>
+    <loc>https://msbtenotes-info.netlify.app/branches/315326-data-analytics</loc>
     <lastmod>2026-08-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://msbtenotes-info.netlify.app/Branches/314318-data-communication-and-computer-network.html</loc>
+    <loc>https://msbtenotes-info.netlify.app/branches/314318-data-communication-and-computer-network</loc>
     <lastmod>2026-08-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://msbtenotes-info.netlify.app/Branches/314321-microprocessor-programming.html</loc>
+    <loc>https://msbtenotes-info.netlify.app/branches/314321-microprocessor-programming</loc>
     <lastmod>2026-08-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://msbtenotes-info.netlify.app/Branches/314301-environmental-education-and-sustainability.html</loc>
+    <loc>https://msbtenotes-info.netlify.app/branches/314301-environmental-education-and-sustainability</loc>
     <lastmod>2026-08-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.78</priority>
   </url>
   <url>
-    <loc>https://msbtenotes-info.netlify.app/Branches/315002-entrepreneurship-development-and-startups.html</loc>
+    <loc>https://msbtenotes-info.netlify.app/branches/315002-entrepreneurship-development-and-startups</loc>
     <lastmod>2026-08-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.78</priority>
   </url>
   <url>
-    <loc>https://msbtenotes-info.netlify.app/Branches/315003-seminar-and-project-initiation-course.html</loc>
+    <loc>https://msbtenotes-info.netlify.app/branches/315003-seminar-and-project-initiation-course</loc>
     <lastmod>2026-08-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://msbtenotes-info.netlify.app/Branches/315004-internship-12-weeks.html</loc>
+    <loc>https://msbtenotes-info.netlify.app/branches/315004-internship-12-weeks</loc>
     <lastmod>2026-08-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://msbtenotes-info.netlify.app/Branches/316313-emerging-trends-in-computer-engineering-and-information-technology.html</loc>
+    <loc>https://msbtenotes-info.netlify.app/branches/316313-emerging-trends-in-computer-engineering-and-information-technology</loc>
     <lastmod>2026-08-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.78</priority>
   </url>
   <url>
-    <loc>https://msbtenotes-info.netlify.app/Branches/316314-software-testing.html</loc>
+    <loc>https://msbtenotes-info.netlify.app/branches/316314-software-testing</loc>
     <lastmod>2026-08-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.78</priority>
   </url>
   <url>
-    <loc>https://msbtenotes-info.netlify.app/Branches/elective-316315-digital-forensic-and-hacking-techniques.html</loc>
+    <loc>https://msbtenotes-info.netlify.app/branches/elective-316315-digital-forensic-and-hacking-techniques</loc>
     <lastmod>2026-08-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.78</priority>
   </url>
   <url>
-    <loc>https://msbtenotes-info.netlify.app/Branches/elective-316317-network-and-information-security.html</loc>
+    <loc>https://msbtenotes-info.netlify.app/branches/elective-316317-network-and-information-security</loc>
     <lastmod>2026-08-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.78</priority>
   </url>
   <url>
-    <loc>https://msbtenotes-info.netlify.app/Branches/elective-315321-advance-computer-network.html</loc>
+    <loc>https://msbtenotes-info.netlify.app/branches/elective-315321-advance-computer-network</loc>
     <lastmod>2026-08-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.78</priority>
   </url>
   <url>
-    <loc>https://msbtenotes-info.netlify.app/Branches/elective-315324-advance-database-management.html</loc>
+    <loc>https://msbtenotes-info.netlify.app/branches/elective-315324-advance-database-management</loc>
     <lastmod>2026-08-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.78</priority>
   </url>
   <url>
-    <loc>https://msbtenotes-info.netlify.app/Branches/elective-315325-cloud-computing.html</loc>
+    <loc>https://msbtenotes-info.netlify.app/branches/elective-315325-cloud-computing</loc>
     <lastmod>2026-08-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.78</priority>
   </url>
   <url>
-    <loc>https://msbtenotes-info.netlify.app/Branches/elective-315326-data-analytics.html</loc>
+    <loc>https://msbtenotes-info.netlify.app/branches/elective-315326-data-analytics</loc>
     <lastmod>2026-08-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.78</priority>
   </url>
   <url>
-    <loc>https://msbtenotes-info.netlify.app/Branches/elective-316316-machine-learning.html</loc>
+    <loc>https://msbtenotes-info.netlify.app/branches/elective-316316-machine-learning</loc>
     <lastmod>2026-08-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.78</priority>
   </url>
   <url>
-    <loc>https://msbtenotes-info.netlify.app/Branches/elective-316320-advanced-algorithm-in-ai-ml.html</loc>
+    <loc>https://msbtenotes-info.netlify.app/branches/elective-316320-advanced-algorithm-in-ai-ml</loc>
     <lastmod>2026-08-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.78</priority>
   </url>
   <url>
-    <loc>https://msbtenotes-info.netlify.app/Branches/elective-316321-data-warehousing-with-mining-techniques.html</loc>
+    <loc>https://msbtenotes-info.netlify.app/branches/elective-316321-data-warehousing-with-mining-techniques</loc>
     <lastmod>2026-08-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.78</priority>
   </url>
   <url>
-    <loc>https://msbtenotes-info.netlify.app/Branches/elective-316323-reinforcement-learning.html</loc>
+    <loc>https://msbtenotes-info.netlify.app/branches/elective-316323-reinforcement-learning</loc>
     <lastmod>2026-08-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.78</priority>
   </url>
   <url>
-    <loc>https://msbtenotes-info.netlify.app/Branches/316318-big-data-analytics.html</loc>
+    <loc>https://msbtenotes-info.netlify.app/branches/316318-big-data-analytics</loc>
     <lastmod>2026-08-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.78</priority>
   </url>
   <url>
-    <loc>https://msbtenotes-info.netlify.app/Branches/316319-principles-of-image-processing.html</loc>
+    <loc>https://msbtenotes-info.netlify.app/branches/316319-principles-of-image-processing</loc>
     <lastmod>2026-08-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.78</priority>
   </url>
   <url>
-    <loc>https://msbtenotes-info.netlify.app/Branches/316006-mobile-application-development.html</loc>
+    <loc>https://msbtenotes-info.netlify.app/branches/316006-mobile-application-development</loc>
     <lastmod>2026-08-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://msbtenotes-info.netlify.app/Branches/316005-client-side-scripting.html</loc>
+    <loc>https://msbtenotes-info.netlify.app/branches/316005-client-side-scripting</loc>
     <lastmod>2026-08-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.78</priority>
   </url>
   <url>
-    <loc>https://msbtenotes-info.netlify.app/Branches/316007-network-management-and-administration.html</loc>
+    <loc>https://msbtenotes-info.netlify.app/branches/316007-network-management-and-administration</loc>
     <lastmod>2026-08-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.78</priority>
   </url>
   <!-- Electrical Electives -->
   <url>
-    <loc>https://msbtenotes-info.netlify.app/Branches/elective-315335-electric-vehicle-technology.html</loc>
+    <loc>https://msbtenotes-info.netlify.app/branches/elective-315335-electric-vehicle-technology</loc>
     <lastmod>2026-08-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.78</priority>
   </url>
   <url>
-    <loc>https://msbtenotes-info.netlify.app/Branches/elective-315336-power-system-operation-and-control.html</loc>
+    <loc>https://msbtenotes-info.netlify.app/branches/elective-315336-power-system-operation-and-control</loc>
     <lastmod>2026-08-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.78</priority>
   </url>
   <url>
-    <loc>https://msbtenotes-info.netlify.app/Branches/elective-315337-renewable-energy-technology.html</loc>
+    <loc>https://msbtenotes-info.netlify.app/branches/elective-315337-renewable-energy-technology</loc>
     <lastmod>2026-08-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.78</priority>
   </url>
   <url>
-    <loc>https://msbtenotes-info.netlify.app/Branches/elective-315340-advance-power-electronics.html</loc>
+    <loc>https://msbtenotes-info.netlify.app/branches/elective-315340-advance-power-electronics</loc>
     <lastmod>2026-08-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.78</priority>
   </url>
   <url>
-    <loc>https://msbtenotes-info.netlify.app/Branches/elective-315341-iot-applications.html</loc>
+    <loc>https://msbtenotes-info.netlify.app/branches/elective-315341-iot-applications</loc>
     <lastmod>2026-08-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.78</priority>
   </url>
   <url>
-    <loc>https://msbtenotes-info.netlify.app/Branches/3316326-emerging-trends-in-electrical-engineering.html</loc>
+    <loc>https://msbtenotes-info.netlify.app/branches/3316326-emerging-trends-in-electrical-engineering</loc>
     <lastmod>2026-08-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.78</priority>
   </url>
   <url>
-    <loc>https://msbtenotes-info.netlify.app/Branches/316327-energy-conservation-and-audit.html</loc>
+    <loc>https://msbtenotes-info.netlify.app/branches/316327-energy-conservation-and-audit</loc>
     <lastmod>2026-08-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://msbtenotes-info.netlify.app/Branches/316328-maintenance-of-electrical-equipments.html</loc>
+    <loc>https://msbtenotes-info.netlify.app/branches/316328-maintenance-of-electrical-equipments</loc>
     <lastmod>2026-08-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://msbtenotes-info.netlify.app/Branches/elective-316329-industrial-automation.html</loc>
+    <loc>https://msbtenotes-info.netlify.app/branches/elective-316329-industrial-automation</loc>
     <lastmod>2026-08-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://msbtenotes-info.netlify.app/Branches/elective-316330-industrial-drives-and-control.html</loc>
+    <loc>https://msbtenotes-info.netlify.app/branches/elective-316330-industrial-drives-and-control</loc>
     <lastmod>2026-08-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://msbtenotes-info.netlify.app/Branches/elective-316331-power-system-analysis.html</loc>
+    <loc>https://msbtenotes-info.netlify.app/branches/elective-316331-power-system-analysis</loc>
     <lastmod>2026-08-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <!-- ETC Electives -->
   <url>
-    <loc>https://msbtenotes-info.netlify.app/Branches/elective-315342-microwave-engineering-radar-system.html</loc>
+    <loc>https://msbtenotes-info.netlify.app/branches/elective-315342-microwave-engineering-radar-system</loc>
     <lastmod>2026-08-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://msbtenotes-info.netlify.app/Branches/316332-optical-network-and-satellite-communication.html</loc>
+    <loc>https://msbtenotes-info.netlify.app/branches/316332-optical-network-and-satellite-communication</loc>
     <lastmod>2026-08-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://msbtenotes-info.netlify.app/Branches/316337-emerging-trends-in-electronics.html</loc>
+    <loc>https://msbtenotes-info.netlify.app/branches/316337-emerging-trends-in-electronics</loc>
     <lastmod>2026-08-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://msbtenotes-info.netlify.app/Branches/316338-computer-network-data-communication.html</loc>
+    <loc>https://msbtenotes-info.netlify.app/branches/316338-computer-network-data-communication</loc>
     <lastmod>2026-08-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://msbtenotes-info.netlify.app/Branches/elective-316335-drone-technology.html</loc>
+    <loc>https://msbtenotes-info.netlify.app/branches/elective-316335-drone-technology</loc>
     <lastmod>2026-08-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://msbtenotes-info.netlify.app/Branches/elective-316340-vlsi-applications.html</loc>
+    <loc>https://msbtenotes-info.netlify.app/branches/elective-316340-vlsi-applications</loc>
     <lastmod>2026-08-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://msbtenotes-info.netlify.app/Branches/elective-316334-automation-plc.html</loc>
+    <loc>https://msbtenotes-info.netlify.app/branches/elective-316334-automation-plc</loc>
     <lastmod>2026-08-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <!-- Civil Electives -->
   <url>
-    <loc>https://msbtenotes-info.netlify.app/Branches/elective-315316-energy-conservation-and-green-building.html</loc>
+    <loc>https://msbtenotes-info.netlify.app/branches/elective-315316-energy-conservation-and-green-building</loc>
     <lastmod>2026-08-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://msbtenotes-info.netlify.app/Branches/elective-315317-precast-and-prestressed-concrete-structures.html</loc>
+    <loc>https://msbtenotes-info.netlify.app/branches/elective-315317-precast-and-prestressed-concrete-structures</loc>
     <lastmod>2026-08-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://msbtenotes-info.netlify.app/Branches/elective-315318-road-traffic-engineering.html</loc>
+    <loc>https://msbtenotes-info.netlify.app/branches/elective-315318-road-traffic-engineering</loc>
     <lastmod>2026-08-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://msbtenotes-info.netlify.app/Branches/elective-316310-building-services.html</loc>
+    <loc>https://msbtenotes-info.netlify.app/branches/elective-316310-building-services</loc>
     <lastmod>2026-08-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://msbtenotes-info.netlify.app/Branches/elective-316311-earthquake-resistant-building.html</loc>
+    <loc>https://msbtenotes-info.netlify.app/branches/elective-316311-earthquake-resistant-building</loc>
     <lastmod>2026-08-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://msbtenotes-info.netlify.app/Branches/elective-316312-solid-waste-management.html</loc>
+    <loc>https://msbtenotes-info.netlify.app/branches/elective-316312-solid-waste-management</loc>
     <lastmod>2026-08-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <!-- Mechanical Electives -->
   <url>
-    <loc>https://msbtenotes-info.netlify.app/Branches/elective-315363-product-design-and-development.html</loc>
+    <loc>https://msbtenotes-info.netlify.app/branches/elective-315373-heating-ventilation-air-conditioning</loc>
     <lastmod>2026-08-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://msbtenotes-info.netlify.app/Branches/elective-315373-heating-ventilation-air-conditioning.html</loc>
+    <loc>https://msbtenotes-info.netlify.app/branches/elective-315374-power-plant-engineering</loc>
     <lastmod>2026-08-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://msbtenotes-info.netlify.app/Branches/elective-315374-power-plant-engineering.html</loc>
+    <loc>https://msbtenotes-info.netlify.app/branches/316357-design-of-machine-elements</loc>
     <lastmod>2026-08-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://msbtenotes-info.netlify.app/Branches/316357-design-of-machine-elements.html</loc>
+    <loc>https://msbtenotes-info.netlify.app/branches/316362-industrial-engineering-and-quality-control</loc>
     <lastmod>2026-08-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://msbtenotes-info.netlify.app/Branches/316362-industrial-engineering-and-quality-control.html</loc>
+    <loc>https://msbtenotes-info.netlify.app/branches/316363-industrial-hydraulics-and-pneumatics</loc>
     <lastmod>2026-08-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://msbtenotes-info.netlify.app/Branches/316363-industrial-hydraulics-and-pneumatics.html</loc>
+    <loc>https://msbtenotes-info.netlify.app/branches/elective-316359-computer-integrated-manufacturing-systems</loc>
     <lastmod>2026-08-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://msbtenotes-info.netlify.app/Branches/elective-316359-computer-integrated-manufacturing-systems.html</loc>
+    <loc>https://msbtenotes-info.netlify.app/branches/elective-316364-alternative-energy-sources-and-energy-management</loc>
     <lastmod>2026-08-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://msbtenotes-info.netlify.app/Branches/elective-316364-alternative-energy-sources-and-energy-management.html</loc>
-    <lastmod>2026-08-01</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.75</priority>
-  </url>
-  <url>
-    <loc>https://msbtenotes-info.netlify.app/Branches/elective-316365-cold-chain-management.html</loc>
+    <loc>https://msbtenotes-info.netlify.app/branches/elective-316365-cold-chain-management</loc>
     <lastmod>2026-08-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
@@ -1856,127 +1826,121 @@
        COLLEGE INFO — By District (24 cities)
        ========================================== -->
   <url>
-    <loc>https://msbtenotes-info.netlify.app/CollegeInfo/pune.html</loc>
+    <loc>https://msbtenotes-info.netlify.app/collegeinfo/pune</loc>
     <lastmod>2026-08-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.88</priority>
   </url>
   <url>
-    <loc>https://msbtenotes-info.netlify.app/CollegeInfo/mumbai.html</loc>
+    <loc>https://msbtenotes-info.netlify.app/collegeinfo/mumbai</loc>
     <lastmod>2026-08-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.88</priority>
   </url>
   <url>
-    <loc>https://msbtenotes-info.netlify.app/CollegeInfo/nagpur.html</loc>
+    <loc>https://msbtenotes-info.netlify.app/collegeinfo/nagpur</loc>
     <lastmod>2026-08-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://msbtenotes-info.netlify.app/CollegeInfo/nashik.html</loc>
+    <loc>https://msbtenotes-info.netlify.app/collegeinfo/nashik</loc>
     <lastmod>2026-08-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://msbtenotes-info.netlify.app/CollegeInfo/amravati.html</loc>
+    <loc>https://msbtenotes-info.netlify.app/collegeinfo/amravati</loc>
     <lastmod>2026-08-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.82</priority>
   </url>
   <url>
-    <loc>https://msbtenotes-info.netlify.app/CollegeInfo/aurangabad.html</loc>
-    <lastmod>2026-08-01</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.82</priority>
-  </url>
-  <url>
-    <loc>https://msbtenotes-info.netlify.app/CollegeInfo/jalgaon.html</loc>
+    <loc>https://msbtenotes-info.netlify.app/collegeinfo/jalgaon</loc>
     <lastmod>2026-08-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://msbtenotes-info.netlify.app/CollegeInfo/kolhapur.html</loc>
+    <loc>https://msbtenotes-info.netlify.app/collegeinfo/kolhapur</loc>
     <lastmod>2026-08-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://msbtenotes-info.netlify.app/CollegeInfo/solapur.html</loc>
+    <loc>https://msbtenotes-info.netlify.app/collegeinfo/solapur</loc>
     <lastmod>2026-08-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://msbtenotes-info.netlify.app/CollegeInfo/ahmednagar.html</loc>
+    <loc>https://msbtenotes-info.netlify.app/collegeinfo/ahmednagar</loc>
     <lastmod>2026-08-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.78</priority>
   </url>
   <url>
-    <loc>https://msbtenotes-info.netlify.app/CollegeInfo/akola.html</loc>
+    <loc>https://msbtenotes-info.netlify.app/collegeinfo/akola</loc>
     <lastmod>2026-08-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.78</priority>
   </url>
   <url>
-    <loc>https://msbtenotes-info.netlify.app/CollegeInfo/chandrapur.html</loc>
+    <loc>https://msbtenotes-info.netlify.app/collegeinfo/chandrapur</loc>
     <lastmod>2026-08-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.78</priority>
   </url>
   <url>
-    <loc>https://msbtenotes-info.netlify.app/CollegeInfo/dhule.html</loc>
+    <loc>https://msbtenotes-info.netlify.app/collegeinfo/dhule</loc>
     <lastmod>2026-08-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.78</priority>
   </url>
   <url>
-    <loc>https://msbtenotes-info.netlify.app/CollegeInfo/nandurbar.html</loc>
+    <loc>https://msbtenotes-info.netlify.app/collegeinfo/nandurbar</loc>
     <lastmod>2026-08-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://msbtenotes-info.netlify.app/CollegeInfo/raigad.html</loc>
+    <loc>https://msbtenotes-info.netlify.app/collegeinfo/raigad</loc>
     <lastmod>2026-08-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://msbtenotes-info.netlify.app/CollegeInfo/ratnagiri.html</loc>
+    <loc>https://msbtenotes-info.netlify.app/collegeinfo/ratnagiri</loc>
     <lastmod>2026-08-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://msbtenotes-info.netlify.app/CollegeInfo/sangli.html</loc>
+    <loc>https://msbtenotes-info.netlify.app/collegeinfo/sangli</loc>
     <lastmod>2026-08-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://msbtenotes-info.netlify.app/CollegeInfo/satara.html</loc>
+    <loc>https://msbtenotes-info.netlify.app/collegeinfo/satara</loc>
     <lastmod>2026-08-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://msbtenotes-info.netlify.app/CollegeInfo/sindhudurg.html</loc>
+    <loc>https://msbtenotes-info.netlify.app/collegeinfo/sindhudurg</loc>
     <lastmod>2026-08-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://msbtenotes-info.netlify.app/CollegeInfo/wardha.html</loc>
+    <loc>https://msbtenotes-info.netlify.app/collegeinfo/wardha</loc>
     <lastmod>2026-08-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://msbtenotes-info.netlify.app/CollegeInfo/yavatmal.html</loc>
+    <loc>https://msbtenotes-info.netlify.app/collegeinfo/yavatmal</loc>
     <lastmod>2026-08-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
@@ -1986,7 +1950,7 @@
        JOBS
        ========================================== -->
   <url>
-    <loc>https://msbtenotes-info.netlify.app/Jobs/bookmarked-jobs.html</loc>
+    <loc>https://msbtenotes-info.netlify.app/jobs/bookmarked-jobs</loc>
     <lastmod>2026-08-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.72</priority>
@@ -1996,13 +1960,13 @@
        COURSES
        ========================================== -->
   <url>
-    <loc>https://msbtenotes-info.netlify.app/Courses/DSA-Basic.html</loc>
+    <loc>https://msbtenotes-info.netlify.app/courses/dsa-basic</loc>
     <lastmod>2026-08-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.78</priority>
   </url>
   <url>
-    <loc>https://msbtenotes-info.netlify.app/Courses/certificate.html</loc>
+    <loc>https://msbtenotes-info.netlify.app/courses/certificate</loc>
     <lastmod>2026-08-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.72</priority>
