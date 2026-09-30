@@ -8,7 +8,12 @@ import re, sys, os, glob
 BASE = 'https://msbtenotes-info.netlify.app'
 DRY = '--dry' in sys.argv
 FOLD = r'(?:Branches|Notes|Blog|CollegeInfo|Jobs|News|Courses|MCU)'
-URL = re.compile(re.escape(BASE) + r'/(' + FOLD + r')((?:/[^"\'\s<>)\]]*)?)', re.I)
+# Root-level pages to normalise in sitemap (Netlify redirects /foo.html -> /foo)
+ROOT_HTML = re.compile(
+    re.escape(BASE) + r'/((?:services|videos|internships|forum|sitemap|links|privacy(?:-policy)?))\.html'
+)
+URL = re.compile(re.escape(BASE) + r'/(' + FOLD + r')((?:/[^"\x27\s<>)\]]*)?)', re.I)
+
 
 def norm_url(m):
     full = m.group(0)
@@ -56,7 +61,7 @@ def retitle(txt, path):
         # Also handles:  "Elective: CODE-SUBJECT NAME () K-Scheme ..."
         SUFFIX = r'(?:\s*K-Scheme Syllabus &(?:amp;)? Notes PDF)?(?:\s*\|.*)?$'
         r = re.match(r'^(?:Elective:\s*)?(\d{6,7})\s*-?\s*(.+?)\s*\(\s*(\d{6,7})?\s*\)' + SUFFIX, old) \
-         or re.match(r'^([A-Z].+?)\s*\((\d{6,7})\)' + SUFFIX, old)
+         or re.match(r'^([A-Z0-9].+?)\s*\((\d{6,7})\)' + SUFFIX, old)
         if r:
             if r.lastindex >= 3:
                 # first pattern: groups are (leading_code, name, inline_code)
@@ -74,6 +79,14 @@ def retitle(txt, path):
             code, n = r.group(1), r.group(2)
             new = fit([f'{n} ({code}) Question Bank & Notes PDF | MSBTE', f'{n} ({code}) Question Bank PDF | MSBTE',
                        f'{n} ({code}) Question Bank | MSBTE', f'{n} Question Bank PDF | MSBTE', f'{n} Question Bank | MSBTE'])
+    elif path.startswith('Branches/') and re.search(r'Semester \d', old):
+        # Semester index pages: "AI & Machine Learning Semester 1 Syllabus & Notes | MSBTE" -> shorten
+        r = re.match(r'^(.+?)\s+Semester\s+(\d)\s+Syllabus.*$', old)
+        if r:
+            branch, sem = r.group(1).strip(), r.group(2)
+            new = fit([f'{branch} Sem {sem} Notes | MSBTE K-Scheme',
+                       f'{branch} Sem {sem} | MSBTE K-Scheme',
+                       f'{branch} Sem {sem} | MSBTE'])
     if not new or new == old: return txt, None
     txt = txt.replace(m.group(0), f'<title>{new}</title>', 1)
     txt = re.sub(r'(<meta property="og:title" content=")[^"]*"', lambda x: f'{x.group(1)}{new}"', txt, count=1)
@@ -98,6 +111,8 @@ for f in glob.glob('**/*.html', recursive=True):
 # sitemap
 s = open('sitemap.xml', encoding='utf-8', newline='').read(); o = s
 s = URL.sub(norm_url, s)
+# Also normalise root-level .html pages in sitemap
+s = ROOT_HTML.sub(lambda m: BASE + '/' + m.group(1), s)
 def exists(loc):
     p = loc[len(BASE):].strip('/')
     if not p: return True
