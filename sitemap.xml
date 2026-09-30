@@ -11,6 +11,30 @@
     <priority>1.0</priority>
   </url>
   <url>
+    <loc>https://msbtenotes-info.netlify.app/MCU/</loc>
+    <lastmod>2026-09-09</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.95</priority>
+  </url>
+  <url>
+    <loc>https://msbtenotes-info.netlify.app/MCU/mht-cet-cap-round-allotment-seat-acceptance-2026.html</loc>
+    <lastmod>2026-09-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.90</priority>
+  </url>
+  <url>
+    <loc>https://msbtenotes-info.netlify.app/MCU/msbte-summer-exam-photocopy-revaluation-2026.html</loc>
+    <lastmod>2026-09-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.90</priority>
+  </url>
+  <url>
+    <loc>https://msbtenotes-info.netlify.app/MCU/mahadbt-post-matric-scholarship-kyc-deadline-2026.html</loc>
+    <lastmod>2026-09-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.90</priority>
+  </url>
+  <url>
     <loc>https://msbtenotes-info.netlify.app/Notes/</loc>
     <lastmod>2026-08-01</lastmod>
     <changefreq>weekly</changefreq>

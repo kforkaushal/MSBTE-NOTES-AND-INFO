@@ -9,6 +9,7 @@
 - [Study Notes](https://msbtenotes-info.netlify.app/#notes) - Subject-wise notes for various branches.
 - [Question Papers & Answers](https://msbtenotes-info.netlify.app/#departments) - Previous year papers and model answers.
 - [Syllabus](https://msbtenotes-info.netlify.app/scheme/index.html) - Curriculum for I & K Schemes.
+- [MCU (Maharashtra Campus Updates)](https://msbtenotes-info.netlify.app/MCU/) - Statewide verified campus intelligence, official circulars, and educational notices.
 - [Blog](https://msbtenotes-info.netlify.app/Blog/) - Educational updates, exam news, and career tips.
 - [Video Courses](https://msbtenotes-info.netlify.app/video-course/) - curated video tutorials.
 - [Internships](https://msbtenotes-info.netlify.app/internships.html) - Latest internship opportunities.
@@ -99,6 +100,15 @@ We provide detailed information and resources for **polytechnic colleges** in ke
 - Palghar, Parbhani, [Pune](https://msbtenotes-info.netlify.app/CollegeInfo/pune.html), [Raigad](https://msbtenotes-info.netlify.app/CollegeInfo/raigad.html)
 - [Ratnagiri](https://msbtenotes-info.netlify.app/CollegeInfo/ratnagiri.html), [Sangli](https://msbtenotes-info.netlify.app/CollegeInfo/sangli.html), [Satara](https://msbtenotes-info.netlify.app/CollegeInfo/satara.html), [Sindhudurg](https://msbtenotes-info.netlify.app/CollegeInfo/sindhudurg.html)
 - [Solapur](https://msbtenotes-info.netlify.app/CollegeInfo/solapur.html), Thane, [Wardha](https://msbtenotes-info.netlify.app/CollegeInfo/wardha.html), Washim, [Yavatmal](https://msbtenotes-info.netlify.app/CollegeInfo/yavatmal.html)
+
+## MCU | Maharashtra Campus Updates (Verified Intelligence Network)
+**MCU (Maharashtra Campus Updates)** is our statewide verified student information network (`https://msbtenotes-info.netlify.app/MCU/`). It aggregates and verifies official educational notices, regulatory gazettes, and academic circulars across Maharashtra:
+- **Core Mission**: "Know. Verify. Act." — Discover, verify, filter, and simplify educational information for students.
+- **Verification Proof Standard**: Every MCU update is tagged with an explicit verification badge (`Status: Official`, `Status: Reminder`, `Status: Tentative`, `Status: Expected`) and cites the official issuing authority, circular reference number, and authenticated source document.
+- **Verified Updates & Circular Breakdowns**:
+  - [MHT-CET 2026 CAP Round Seat Acceptance & Reporting Rules](https://msbtenotes-info.netlify.app/MCU/mht-cet-cap-round-allotment-seat-acceptance-2026.html) - Verified CET Cell instructions, Auto-Freeze vs Betterment rules, ₹1,000 fee, and cutoff deadlines.
+  - [MSBTE Summer 2026 Photocopy & Revaluation Guide](https://msbtenotes-info.netlify.app/MCU/msbte-summer-exam-photocopy-revaluation-2026.html) - Verified MSBTE board circular, per-subject fees, application steps, and ATKT impact.
+  - [MahaDBT Post-Matric Scholarship Biometric KYC & Bank Link](https://msbtenotes-info.netlify.app/MCU/mahadbt-post-matric-scholarship-kyc-deadline-2026.html) - Verified Govt of Maharashtra GR, NPCI Aadhaar seeding mandate, and renewal deadline.
 
 ## Frequently Asked Questions (FAQ)
 
