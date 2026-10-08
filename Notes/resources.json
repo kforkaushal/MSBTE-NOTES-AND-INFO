@@ -1,5 +1,140 @@
 [
     {
+        "title": "Operating System (OSY) K Scheme Notes & Question Bank",
+        "description": "Free MSBTE K-Scheme 314319 – Operating System (OSY) unit-wise notes, important question bank, model answers, and complete revision roadmaps for 4th Semester.",
+        "url": "/Notes/osy-k-scheme-notes.html",
+        "thumbnail": "/resourse/note-thumbs/OSY_thumbnail.png",
+        "category": "notes",
+        "tags": [
+            "OSY",
+            "Operating System",
+            "314319",
+            "K-Scheme",
+            "4th Semester"
+        ],
+        "dateAdded": "2026-10-06"
+    },
+    {
+        "title": "Microprocessor (MIC) K Scheme Notes & Question Bank",
+        "description": "Download free MSBTE K Scheme Microprocessor (MIC - 314321) unit-wise notes, 8086 architecture PDFs, IMP question bank, and complete revision roadmaps for 4th Semester.",
+        "url": "/Notes/mic-k-scheme-notes.html",
+        "thumbnail": "/resourse/note-thumbs/MIC_thumbnail.png",
+        "category": "notes",
+        "tags": [
+            "MIC",
+            "Microprocessor",
+            "314321",
+            "K-Scheme",
+            "4th Semester"
+        ],
+        "dateAdded": "2026-10-06"
+    },
+    {
+        "title": "Data Communication & Computer Network (DCN) K Scheme Notes",
+        "description": "Free MSBTE K Scheme Data Communication & Computer Network (DCN - 314318) complete notes, chapter PDFs, IMP questions, and solved model answer papers for 4th Semester.",
+        "url": "/Notes/dcn-k-scheme-notes.html",
+        "thumbnail": "/resourse/note-thumbs/DCN_thumbnail.png",
+        "category": "notes",
+        "tags": [
+            "DCN",
+            "Computer Network",
+            "314318",
+            "K-Scheme",
+            "4th Semester"
+        ],
+        "dateAdded": "2026-10-06"
+    },
+    {
+        "title": "Java Programming (JPR) K Scheme Notes & Question Bank",
+        "description": "Free download MSBTE K Scheme Java Programming (JPR - 314317) Unit 1-6 mega notes, Super 25 question bank, viva Q&A, and practice mock test papers for 4th Semester.",
+        "url": "/Notes/java-k-scheme-notes.html",
+        "thumbnail": "/resourse/note-thumbs/JPR_thumbnail.png",
+        "category": "notes",
+        "tags": [
+            "Java",
+            "JPR",
+            "314317",
+            "K-Scheme",
+            "4th Semester"
+        ],
+        "dateAdded": "2026-10-06"
+    },
+    {
+        "title": "Environmental Education & Sustainability (EES) K Scheme Notes",
+        "description": "Free MSBTE K Scheme Environmental Education and Sustainability (EES - 314301) official syllabus, complete revision notes, IMP question bank, and online MCQ sets.",
+        "url": "/Notes/ees-k-scheme-notes.html",
+        "thumbnail": "/resourse/note-thumbs/EES_thumbnail.png",
+        "category": "notes",
+        "tags": [
+            "EES",
+            "Environmental Education",
+            "314301",
+            "K-Scheme",
+            "4th Semester"
+        ],
+        "dateAdded": "2026-10-06"
+    },
+    {
+        "title": "Object Oriented Programming with C++ (OOP) K Scheme Notes",
+        "description": "Free download MSBTE K Scheme Object-Oriented Programming Using C++ (OOP - 313304) Unit 1-5 notes, complete PPTs, inheritance guides, and course outcome materials.",
+        "url": "/Notes/oop-k-scheme-notes.html",
+        "thumbnail": "/resourse/note-thumbs/OOP_thumbnail.png",
+        "category": "notes",
+        "tags": [
+            "OOP",
+            "C++",
+            "313304",
+            "K-Scheme",
+            "3rd Semester"
+        ],
+        "dateAdded": "2026-10-06"
+    },
+    {
+        "title": "Data Structures Using C (DSU) K Scheme Notes & Question Bank",
+        "description": "Download free MSBTE K Scheme Data Structures Using C (DSU - 313301) unit-wise notes, Stacks and Queues PDFs, solved question paper with answers, and question bank.",
+        "url": "/Notes/dsu-k-scheme-notes.html",
+        "thumbnail": "/resourse/note-thumbs/DSU_thumbnail.png",
+        "category": "notes",
+        "tags": [
+            "DSU",
+            "Data Structures",
+            "313301",
+            "K-Scheme",
+            "3rd Semester"
+        ],
+        "dateAdded": "2026-10-06"
+    },
+    {
+        "title": "Database Management System (DBMS) K Scheme Notes & Papers",
+        "description": "Free download MSBTE K Scheme Database Management System (DBMS - 313302) Unit 1-5 notes, complete revision guides, IMP question banks, and Winter 2023 solved papers.",
+        "url": "/Notes/dbms-k-scheme-notes.html",
+        "thumbnail": "/resourse/note-thumbs/DBMS_thumbnail.png",
+        "category": "notes",
+        "tags": [
+            "DBMS",
+            "Database",
+            "313302",
+            "K-Scheme",
+            "3rd Semester"
+        ],
+        "dateAdded": "2026-10-06"
+    },
+    {
+        "title": "Digital Techniques (DTE) K Scheme Notes, MCQs & Solved Papers",
+        "description": "Free download MSBTE K Scheme Digital Techniques (DTE - 313303) unit-wise notes, logic gate PDFs, K-Map problems, solved MCQs, and previous year sample question papers.",
+        "url": "/Notes/dte-k-scheme-notes.html",
+        "thumbnail": "/resourse/note-thumbs/DTE_thumbnail.png",
+        "category": "notes",
+        "tags": [
+            "DTE",
+            "Digital Techniques",
+            "313303",
+            "K-Scheme",
+            "3rd Semester"
+        ],
+        "dateAdded": "2026-10-06"
+    },
+    {
         "title": "The Ultimate Python Handbook PDF - Full Course Notes",
         "description": "Download CodeWithHarry's Ultimate Python Handbook covering everything from basics to AI projects like Jarvis.",
         "url": "/Notes/python-handbook.html",

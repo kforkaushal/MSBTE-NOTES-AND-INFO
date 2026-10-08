@@ -589,6 +589,62 @@
     <priority>0.82</priority>
   </url>
 
+    <!-- K-Scheme Complete Subject Notes & Question Banks (Sem 3 & 4) -->
+  <url>
+    <loc>https://msbtenotes-info.netlify.app/notes/osy-k-scheme-notes</loc>
+    <lastmod>2026-10-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.90</priority>
+  </url>
+  <url>
+    <loc>https://msbtenotes-info.netlify.app/notes/mic-k-scheme-notes</loc>
+    <lastmod>2026-10-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.90</priority>
+  </url>
+  <url>
+    <loc>https://msbtenotes-info.netlify.app/notes/dcn-k-scheme-notes</loc>
+    <lastmod>2026-10-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.90</priority>
+  </url>
+  <url>
+    <loc>https://msbtenotes-info.netlify.app/notes/java-k-scheme-notes</loc>
+    <lastmod>2026-10-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.90</priority>
+  </url>
+  <url>
+    <loc>https://msbtenotes-info.netlify.app/notes/ees-k-scheme-notes</loc>
+    <lastmod>2026-10-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.90</priority>
+  </url>
+  <url>
+    <loc>https://msbtenotes-info.netlify.app/notes/oop-k-scheme-notes</loc>
+    <lastmod>2026-10-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.90</priority>
+  </url>
+  <url>
+    <loc>https://msbtenotes-info.netlify.app/notes/dsu-k-scheme-notes</loc>
+    <lastmod>2026-10-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.90</priority>
+  </url>
+  <url>
+    <loc>https://msbtenotes-info.netlify.app/notes/dbms-k-scheme-notes</loc>
+    <lastmod>2026-10-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.90</priority>
+  </url>
+  <url>
+    <loc>https://msbtenotes-info.netlify.app/notes/dte-k-scheme-notes</loc>
+    <lastmod>2026-10-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.90</priority>
+  </url>
+
   <!-- Notes — Subject Pages (Sem 1) -->
   <url>
     <loc>https://msbtenotes-info.netlify.app/notes/311302-basic-mathematics</loc>

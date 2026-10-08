@@ -31,6 +31,8 @@ document.addEventListener('DOMContentLoaded', () => {
     function extractCategory(keywords) {
         if (!keywords || keywords.length === 0) return 'News & Updates';
         const categoryMap = {
+            'notes': 'Study Notes',
+            'k-scheme': 'K-Scheme Notes',
             'result': 'News & Updates',
             'marksheet': 'News & Updates',
             'sppu': 'News & Updates',
@@ -55,7 +57,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // --- SECTION 1 FUNCTIONS ---
 
     function createFeaturedCard(post) {
-        const category = extractCategory(post.keywords || []);
+        const category = post.category || extractCategory(post.keywords || []);
         const date = post.dateAndReadTime.split('·')[0].trim();
         const readTime = post.dateAndReadTime.split('·')[1]?.trim() || '';
         const primaryKeyword = post.keywords && post.keywords[0] ? post.keywords[0] : '';
@@ -84,7 +86,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function createHorizontalCard(post) {
-        const category = extractCategory(post.keywords || []);
+        const category = post.category || extractCategory(post.keywords || []);
         const date = post.dateAndReadTime.split('·')[0].trim();
         const readTime = post.dateAndReadTime.split('·')[1]?.trim() || '';
         const primaryKeyword = post.keywords && post.keywords[0] ? post.keywords[0] : '';

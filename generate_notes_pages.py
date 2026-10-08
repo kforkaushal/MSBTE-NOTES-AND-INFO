@@ -1,0 +1,1094 @@
+import csv
+import json
+import os
+import re
+
+# Load CSV
+with open('Drive_Files_Sorted_SEO.csv', mode='r', encoding='utf-8-sig') as f:
+    rows = list(csv.DictReader(f))
+
+by_folder = {}
+for r in rows:
+    fld = r['Folder'].strip()
+    by_folder.setdefault(fld, []).append(r)
+
+# SVG Icons
+SVG_BOOK = '<svg class="w-4 h-4 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path></svg>'
+SVG_CLIPBOARD = '<svg class="w-4 h-4 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4"></path></svg>'
+SVG_DOCUMENT = '<svg class="w-4 h-4 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>'
+SVG_FAQ = '<svg class="w-4 h-4 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>'
+SVG_DOWNLOAD = '<svg class="w-4 h-4 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>'
+SVG_CHECK = '<svg class="w-4 h-4 text-blue-600 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>'
+SVG_CHEVRON = '<svg class="chev w-5 h-5 text-gray-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>'
+SVG_HEADER_BOOK = '<svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path></svg>'
+SVG_HEADER_CLIP = '<svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4"></path></svg>'
+SVG_HEADER_DOC = '<svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>'
+
+# Specifications for the 8 subjects
+configs = [
+    {
+        "id": "mic",
+        "csv_folder": "MIC K scheme",
+        "out_file": "Notes/mic-k-scheme-notes.html",
+        "code": "314321",
+        "abbr": "MIC",
+        "name": "Microprocessor",
+        "sem": "4th Semester",
+        "dept": "Computer Engineering",
+        "thumbnail": "/resourse/note-thumbs/MIC_thumbnail.png",
+        "title": "Microprocessor (MIC) K Scheme Notes & Question Bank | MSBTE",
+        "meta_desc": "Download free MSBTE K Scheme Microprocessor (MIC - 314321) unit-wise notes, 8086 architecture PDFs, IMP question bank, and complete revision roadmaps for 4th Semester.",
+        "h1": "Microprocessor (MIC) K Scheme Notes & Study Material",
+        "subtitle": "Free MSBTE K-Scheme <strong>314321 – Microprocessor (MIC)</strong> unit-wise notes, 8086 architecture material, important question bank, and comprehensive revision roadmaps for 4th Semester Computer Engineering.",
+        "intro_p": "Everything for <strong>Microprocessor (MIC – 314321)</strong> in one place: chapter-wise 8086 notes from Unit 1 to Unit 5, unit-wise VVIMP question banks, and complete revision roadmaps for scoring high in the MSBTE board exam.",
+        "guide_title": "Mastering Microprocessor (MIC) in MSBTE K-Scheme",
+        "guide_lead": "<strong>314321 – Microprocessor (MIC)</strong> is a critical hardware-oriented subject in the 4th semester of Computer Engineering under MSBTE K-Scheme. It builds your foundation in x86 microprocessor architecture, bus cycles, addressing modes, and 8086 Assembly Language Programming (ALP).",
+        "guide_areas": [
+            ("8086 Architecture & Pin Diagram:", "Bus Interface Unit (BIU), Execution Unit (EU), segmented memory model, and Maximum vs Minimum mode pins."),
+            ("Addressing Modes & Instruction Set:", "Register, immediate, direct, indirect, based, indexed addressing, and arithmetic/logical instructions with flag register impact."),
+            ("Assembly Language Programming (ALP):", "String operations, loops, procedures, macros, and DOS interrupts (INT 21H functions)."),
+            ("Memory & Peripheral Interfacing:", "Address decoding, 8255 PPI modes, and comparison with advanced processors (80286, 80386, Pentium).")
+        ],
+        "guide_tips": "Always draw neat, labelled architectural and timing diagrams. Write complete assembly programs with proper comments, and present comparisons (e.g. Near vs Far procedures, Macro vs Procedure) in structured tables.",
+        "faqs": [
+            ("What is the subject code for Microprocessor in MSBTE K-Scheme?", "The subject code for Microprocessor (MIC) under the MSBTE K-Scheme for Computer Engineering (4th Semester) is <strong>314321</strong>."),
+            ("Are these 8086 Microprocessor notes free to download?", "Yes, all chapter notes, unit question banks, IMP question sets, and revision roadmaps are 100% free to view and download via Google Drive."),
+            ("Which units carry the maximum weightage in MSBTE MIC exams?", "Unit 2 (8086 Instruction Set) and Unit 3 (Assembly Language Programming) carry the highest combined marks weightage in the MSBTE diploma examination.")
+        ],
+        "tips_link": "/Notes/314321-microprocessor-programming.html",
+        "tips_link_text": "Unit test question banks (314321) &rarr;",
+        "score_tips": [
+            "Draw the 8086 architectural diagram with BIU and EU clearly separated.",
+            "Memorise flag register bit positions and conditions.",
+            "Practise assembly programs for array sorting, string reversal, and block transfers."
+        ]
+    },
+    {
+        "id": "dcn",
+        "csv_folder": "DCN K scheme",
+        "out_file": "Notes/dcn-k-scheme-notes.html",
+        "code": "314318",
+        "abbr": "DCN",
+        "name": "Data Communication and Computer Network",
+        "sem": "4th Semester",
+        "dept": "Computer Engineering",
+        "thumbnail": "/resourse/note-thumbs/DCN_thumbnail.png",
+        "title": "Data Communication & Computer Network (DCN) K Scheme Notes | MSBTE",
+        "meta_desc": "Free MSBTE K Scheme Data Communication & Computer Network (DCN - 314318) complete notes, chapter PDFs, IMP questions, and solved model answer papers.",
+        "h1": "Data Communication & Computer Network (DCN) K Scheme Notes",
+        "subtitle": "Free MSBTE K-Scheme <strong>314318 – Data Communication & Computer Network (DCN)</strong> complete notes, unit study material, important question bank, and solved model answers for 4th Semester Computer Engineering.",
+        "intro_p": "Master <strong>Data Communication & Computer Network (DCN – 314318)</strong>: comprehensive full-subject notes, chapter-wise PDFs, important question bank, and verified model answer papers for 4th Semester diploma exam preparation.",
+        "guide_title": "Mastering Data Communication & Networking in MSBTE K-Scheme",
+        "guide_lead": "<strong>314318 – Data Communication & Computer Network (DCN)</strong> introduces network topologies, communication media, the 7-layer OSI model, TCP/IP protocol suite, IP addressing, and transmission error detection techniques.",
+        "guide_areas": [
+            ("OSI vs TCP/IP Reference Models:", "Layer-by-layer functions, data encapsulation, protocol headers, and comparative architectural differences."),
+            ("Transmission Media & Multiplexing:", "Twisted pair, coaxial, optical fiber, wireless channels, FDM, TDM, and WDM principles."),
+            ("Data Link Layer Protocols:", "Flow control (Stop & Wait, Sliding Window), error detection (CRC, Parity, Checksum), and framing."),
+            ("Network Layer & IP Addressing:", "IPv4 header format, classful vs classless addressing (CIDR), subnetting, and switching methods.")
+        ],
+        "guide_tips": "Draw OSI 7-layer stacks with accurate protocol mappings for each layer. Practise CRC numerical calculations and subnet mask calculations step by step.",
+        "faqs": [
+            ("What is the subject code for DCN in MSBTE K-Scheme?", "The subject code for Data Communication and Computer Network (DCN) in MSBTE K-Scheme for Computer Engineering (4th Semester) is <strong>314318</strong>."),
+            ("Are these DCN K-Scheme notes and model answers free?", "Yes, all complete notes, unit PDFs, important questions, and solved model answers are free to view and download via Google Drive."),
+            ("Which topics are most frequently asked in MSBTE DCN board exams?", "The OSI 7-layer model, guided vs unguided transmission media, CRC numericals, and IPv4 subnetting appear repeatedly in board examinations.")
+        ],
+        "tips_link": "/Notes/314318-data-communication-and-computer-network.html",
+        "tips_link_text": "Unit test question banks (314318) &rarr;",
+        "score_tips": [
+            "Draw clear layer-by-layer comparison diagrams for OSI vs TCP/IP.",
+            "Write step-by-step working for CRC polynomial division problems.",
+            "Explain guided media with refractive index diagrams for optical fibers."
+        ]
+    },
+    {
+        "id": "java",
+        "csv_folder": "Java K scheme",
+        "out_file": "Notes/java-k-scheme-notes.html",
+        "code": "314317",
+        "abbr": "JPR",
+        "name": "Java Programming",
+        "sem": "4th Semester",
+        "dept": "Computer Engineering",
+        "thumbnail": "/resourse/note-thumbs/JPR_thumbnail.png",
+        "title": "Java Programming (JPR) K Scheme Notes & Question Bank | MSBTE",
+        "meta_desc": "Free download MSBTE K Scheme Java Programming (JPR - 314317) Unit 1-6 mega notes, Super 25 question bank, viva Q&A, and practice mock test papers.",
+        "h1": "Java Programming (JPR) K Scheme Notes & Study Material",
+        "subtitle": "Free MSBTE K-Scheme <strong>314317 – Java Programming (JPR)</strong> Unit 1 to 6 notes, Super 25 question bank, comprehensive viva sets, and expected mock papers for 4th Semester Computer Engineering.",
+        "intro_p": "Everything you need for <strong>Java Programming (JPR – 314317)</strong>: complete unit-wise notes from Unit 1 to Unit 6, Rajan Sir's Super 25 question bank, viva Q&A collections, and full-length practice mock papers.",
+        "guide_title": "Mastering Java Programming (JPR) in MSBTE K-Scheme",
+        "guide_lead": "<strong>314317 – Java Programming (JPR)</strong> is one of the most vital software programming courses in diploma Computer Engineering. It trains you in core OOP concepts, package structures, multithreading, exception handling, and GUI development using AWT and Event Handling.",
+        "guide_areas": [
+            ("Core OOP Foundations:", "Bytecode, JVM architecture, class/object creation, constructor overloading, and garbage collection."),
+            ("Inheritance & Polymorphism:", "Single, multilevel, and hierarchical inheritance, super keyword, method overriding, and dynamic method dispatch."),
+            ("Packages, Interfaces & Exceptions:", "Package creation/importing, multiple inheritance via interfaces, try-catch-finally, and custom exception classes."),
+            ("Multithreading & Event Handling:", "Thread lifecycle, Runnable interface, thread synchronization, Delegation Event Model, and AWT components.")
+        ],
+        "guide_tips": "Write clean, compilable Java code with proper syntax, class declarations, and main method signatures. Draw thread life-cycle state diagrams to score full theory marks.",
+        "faqs": [
+            ("What is the subject code for Java Programming in MSBTE K-Scheme?", "The subject code for Java Programming (JPR) under the MSBTE K-Scheme for Computer Engineering (4th Semester) is <strong>314317</strong>."),
+            ("Are these Java notes and practice test papers free?", "Yes, all Unit 1–6 chapter notes, Super 25 question banks, viva sets, and practice mock tests are 100% free via Google Drive."),
+            ("What are the most scoring units in MSBTE Java Programming?", "Unit 4 (Packages & Interfaces) and Unit 5 (Exception Handling & Multithreading) offer direct, high-scoring programming and theoretical questions.")
+        ],
+        "tips_link": "/Notes/314317-java-programming.html",
+        "tips_link_text": "Unit test question banks (314317) &rarr;",
+        "score_tips": [
+            "Always include complete Java code snippets with syntax highlighting and expected output.",
+            "Memorise the 5 states of Java Thread Life Cycle with transitions.",
+            "Understand try-catch-finally blocks and write custom exception classes correctly."
+        ]
+    },
+    {
+        "id": "ees",
+        "csv_folder": "EES K scheme",
+        "out_file": "Notes/ees-k-scheme-notes.html",
+        "code": "314301",
+        "abbr": "EES",
+        "name": "Environmental Education and Sustainability",
+        "sem": "4th Semester",
+        "dept": "Common to All Branches",
+        "thumbnail": "/resourse/note-thumbs/EES_thumbnail.png",
+        "title": "Environmental Education & Sustainability (EES) K Scheme Notes | MSBTE",
+        "meta_desc": "Free MSBTE K Scheme Environmental Education and Sustainability (EES - 314301) official syllabus, complete revision notes, IMP question bank, and online MCQ sets.",
+        "h1": "Environmental Education & Sustainability (EES) K Scheme Material",
+        "subtitle": "Free MSBTE K-Scheme <strong>314301 – Environmental Education & Sustainability (EES)</strong> official syllabus, complete revision notes, unit test MCQs, and VVIMP question bank for 4th Semester diploma students.",
+        "intro_p": "Ace <strong>Environmental Education and Sustainability (EES – 314301)</strong>: official K-Scheme syllabus, full subject revision notes, unit-wise MCQ test banks, and VVIMP question collections for 4th Semester diploma students of all branches.",
+        "guide_title": "Mastering Environmental Education & Sustainability in MSBTE K-Scheme",
+        "guide_lead": "<strong>314301 – Environmental Education and Sustainability (EES)</strong> is a compulsory board course across all engineering disciplines. It focuses on ecology, natural resource management, environmental pollution control, waste management, and sustainable development practices.",
+        "guide_areas": [
+            ("Ecosystems & Biodiversity:", "Energy flow, food chains/webs, ecological pyramids, and in-situ vs ex-situ biodiversity conservation."),
+            ("Natural Resources & Renewable Energy:", "Solar, wind, biomass, hydro-electric resources, and deforestation mitigation."),
+            ("Pollution Prevention & Control:", "Air, water, soil, noise, and e-waste pollution causes, adverse impacts, and treatment methods."),
+            ("Environmental Acts & Sustainable Development:", "Water & Air Acts, Environment Protection Act 1986, carbon credits, and circular economy principles.")
+        ],
+        "guide_tips": "Revise the objective MCQ banks thoroughly, as EES tests frequently feature objective questions on environmental laws, dates, standards, and ecological terminology.",
+        "faqs": [
+            ("What is the subject code for EES in MSBTE K-Scheme?", "The subject code for Environmental Education and Sustainability (EES) under the MSBTE K-Scheme (4th Semester) is <strong>314301</strong>."),
+            ("Is EES compulsory for all diploma engineering branches?", "Yes, Environmental Education and Sustainability is a mandatory common course across Computer, Civil, Mechanical, Electrical, and E&TC branches."),
+            ("Where can I find EES MCQ question banks with answers?", "Direct PDF downloads for EES multiple-choice question sets (Tests 1–3 and VVIMP databases) are provided below free via Google Drive.")
+        ],
+        "tips_link": "/Notes/314301-environmental-education-and-sustainability.html",
+        "tips_link_text": "Unit test question banks (314301) &rarr;",
+        "score_tips": [
+            "Memorise key environmental legislation years (EPA 1986, Air Act 1981, Water Act 1974).",
+            "Practise ecological pyramid diagrams and energy flow charts.",
+            "Solve all online MCQ test sets to score 90%+ in objective examinations."
+        ]
+    },
+    {
+        "id": "oop",
+        "csv_folder": "OOP K scheme",
+        "out_file": "Notes/oop-k-scheme-notes.html",
+        "code": "313304",
+        "abbr": "OOP",
+        "name": "Object Oriented Programming Using C++",
+        "sem": "3rd Semester",
+        "dept": "Computer Engineering",
+        "thumbnail": "/resourse/note-thumbs/OOP_thumbnail.png",
+        "title": "Object Oriented Programming with C++ (OOP) K Scheme Notes | MSBTE",
+        "meta_desc": "Free download MSBTE K Scheme Object-Oriented Programming Using C++ (OOP - 313304) Unit 1-5 notes, complete PPTs, inheritance guides, and course outcome materials.",
+        "h1": "Object Oriented Programming with C++ (OOP) K Scheme Notes",
+        "subtitle": "Free MSBTE K-Scheme <strong>313304 – Object-Oriented Programming with C++ (OOP)</strong> Unit 1 to Unit 5 chapter notes, PPT presentations, inheritance guides, and practical project materials for 3rd Semester.",
+        "intro_p": "Everything for <strong>Object-Oriented Programming with C++ (OOP – 313304)</strong> in one place: chapter notes from Unit 1 to Unit 5, complete lecture PPTs, inheritance deep-dives, and practical project code guides for 3rd Semester.",
+        "guide_title": "Mastering C++ Object-Oriented Programming in MSBTE K-Scheme",
+        "guide_lead": "<strong>313304 – Object-Oriented Programming with C++ (OOP)</strong> bridges procedural C programming with modern object-oriented paradigms. It covers classes, encapsulation, inheritance, polymorphism, templates, and file streams.",
+        "guide_areas": [
+            ("OOP Principles & C++ Extensions:", "Data abstraction, encapsulation, inline functions, default arguments, reference variables, and scope resolution."),
+            ("Classes & Objects:", "Access specifiers (public, private, protected), array of objects, static members, and friend functions."),
+            ("Constructors & Operator Overloading:", "Default, parameterized, copy constructors, constructor overloading, and unary/binary operator overloading."),
+            ("Inheritance, Virtual Functions & Files:", "Inheritance modes, virtual base classes, runtime polymorphism via virtual functions, and fstream file handling.")
+        ],
+        "guide_tips": "Write complete C++ code with #include <iostream>, namespace std, and correct class syntax. Clearly explain pointer-to-object mechanics and virtual function tables.",
+        "faqs": [
+            ("What is the subject code for OOP with C++ in MSBTE K-Scheme?", "The subject code for Object Oriented Programming with C++ (OOP) under the MSBTE K-Scheme for Computer Engineering (3rd Semester) is <strong>313304</strong>."),
+            ("Are these C++ notes and project materials free to download?", "Yes, all chapter notes, unit PPTs, inheritance guides, and project materials are 100% free via Google Drive."),
+            ("Which topics are crucial in MSBTE OOP board examinations?", "Operator overloading, copy constructors, friend functions, and virtual base classes are among the most frequently tested topics.")
+        ],
+        "tips_link": "/Notes/313304-object-oriented-programming-using-c.html",
+        "tips_link_text": "Unit test question banks (313304) &rarr;",
+        "score_tips": [
+            "Draw clear class diagrams indicating access modifiers and inheritance types.",
+            "Write valid C++ code demonstrating binary operator overloading with friend functions.",
+            "Differentiate between compile-time and runtime polymorphism with brief code examples."
+        ]
+    },
+    {
+        "id": "dsu",
+        "csv_folder": "DSU K scheme",
+        "out_file": "Notes/dsu-k-scheme-notes.html",
+        "code": "313301",
+        "abbr": "DSU",
+        "name": "Data Structure Using C",
+        "sem": "3rd Semester",
+        "dept": "Computer Engineering",
+        "thumbnail": "/resourse/note-thumbs/DSU_thumbnail.png",
+        "title": "Data Structures Using C (DSU) K Scheme Notes & Question Bank | MSBTE",
+        "meta_desc": "Download free MSBTE K Scheme Data Structures Using C (DSU - 313301) unit-wise notes, Stacks and Queues PDFs, solved question paper with answers, and question bank.",
+        "h1": "Data Structures Using C (DSU) K Scheme Notes & Material",
+        "subtitle": "Free MSBTE K-Scheme <strong>313301 – Data Structures Using C (DSU)</strong> unit-wise notes, Stacks, Queues, searching & sorting algorithms, solved question papers, and question bank for 3rd Semester.",
+        "intro_p": "Everything for <strong>Data Structures Using C (DSU – 313301)</strong>: complete unit-wise notes for Stacks, Queues, Linked Lists, Trees and Graphs, plus full question banks and solved exam question papers.",
+        "guide_title": "Mastering Data Structures Using C in MSBTE K-Scheme",
+        "guide_lead": "<strong>313301 – Data Structures Using C (DSU)</strong> forms the fundamental basis of software development and algorithmic logic. It covers linear structures (Arrays, Stacks, Queues, Linked Lists) and non-linear structures (Trees, Graphs, Sorting).",
+        "guide_areas": [
+            ("Introduction & Algorithm Analysis:", "Linear vs non-linear data structures, time and space complexity, asymptotic notations (Big O)."),
+            ("Linear Data Structures & Arrays:", "1D & 2D array representation, address calculation, operations on arrays, and sparse matrix."),
+            ("Stacks & Queues Applications:", "Stack push/pop, infix to postfix conversion, evaluation of postfix expressions, Circular Queues, and Priority Queues."),
+            ("Linked Lists, Trees & Sorting:", "Singly/doubly linked lists, Binary Search Trees (BST), traversal (Inorder, Preorder, Postorder), Bubble, Quick, and Merge sort.")
+        ],
+        "guide_tips": "Always illustrate data structure operations with step-by-step box diagrams. When writing C functions for stack or queue, remember overflow and underflow condition checks.",
+        "faqs": [
+            ("What is the subject code for Data Structures in MSBTE K-Scheme?", "The subject code for Data Structures Using C (DSU) under the MSBTE K-Scheme for Computer Engineering (3rd Semester) is <strong>313301</strong>."),
+            ("Are these DSU notes, question banks, and answer keys free?", "Yes, all chapter PDFs, stack & queue notes, question banks, and solved papers are free to view and download via Google Drive."),
+            ("Which algorithms carry the highest marks in MSBTE DSU exams?", "Infix to postfix conversion using stack, BST traversals, and Quick/Merge Sort algorithms appear in nearly every examination paper.")
+        ],
+        "tips_link": "/Notes/313301-data-structure-using-c.html",
+        "tips_link_text": "Unit test question banks (313301) &rarr;",
+        "score_tips": [
+            "Draw clear memory representation diagrams for linked list insertions and deletions.",
+            "Write C functions with underflow/overflow boundary checks for stacks and queues.",
+            "Show intermediate trace tables for sorting algorithms (Bubble, Insertion, Quick Sort)."
+        ]
+    },
+    {
+        "id": "dbms",
+        "csv_folder": "DBMS k scheme",
+        "out_file": "Notes/dbms-k-scheme-notes.html",
+        "code": "313302",
+        "abbr": "DBMS",
+        "name": "Database Management System",
+        "sem": "3rd Semester",
+        "dept": "Computer Engineering",
+        "thumbnail": "/resourse/note-thumbs/DBMS_thumbnail.png",
+        "title": "Database Management System (DBMS) K Scheme Notes & Papers | MSBTE",
+        "meta_desc": "Free download MSBTE K Scheme Database Management System (DBMS - 313302) Unit 1-5 notes, complete revision guides, IMP question banks, and Winter 2023 solved papers.",
+        "h1": "Database Management System (DBMS) K Scheme Notes",
+        "subtitle": "Free MSBTE K-Scheme <strong>313302 – Database Management System (DBMS)</strong> Unit 1 to 5 notes, complete revision PDFs, highly repeated question banks, and Winter 2023 solved papers for 3rd Semester.",
+        "intro_p": "Everything for <strong>Database Management System (DBMS – 313302)</strong>: Unit 1 to Unit 5 chapter notes, Prajwal and Vishal Chavare revision guides, Dhane Master question bank, and Winter 2023 solved board papers.",
+        "guide_title": "Mastering Database Management Systems in MSBTE K-Scheme",
+        "guide_lead": "<strong>313302 – Database Management System (DBMS)</strong> covers relational database concepts, ER modelling, relational algebra, SQL queries, normalization, and transaction processing.",
+        "guide_areas": [
+            ("Database Concepts & Architecture:", "File system vs DBMS, 3-tier ANSI/SPARC architecture, data independence, and DBA roles."),
+            ("Data Modeling & ER Diagrams:", "Entity sets, attributes, relationships, cardinality ratios, weak entities, and converting ER to tables."),
+            ("SQL & Relational Algebra:", "DDL, DML, DCL, TCL commands, aggregate functions, nested subqueries, joins, and relational algebra operators."),
+            ("Normalization & Transactions:", "Functional dependencies, 1NF, 2NF, 3NF, BCNF, ACID properties, and transaction states.")
+        ],
+        "guide_tips": "Draw ER diagrams using standard Crow's Foot or Chen notation. For normalization questions, show step-by-step table decomposition along with primary and foreign keys.",
+        "faqs": [
+            ("What is the subject code for DBMS in MSBTE K-Scheme?", "The subject code for Database Management System (DBMS) under the MSBTE K-Scheme for Computer Engineering (3rd Semester) is <strong>313302</strong>."),
+            ("Are these DBMS notes, question banks, and papers free?", "Yes, all chapter notes, comprehensive revision books, question banks, and Winter 2023 model answers are free to view and download via Google Drive."),
+            ("Which units carry the highest marks in MSBTE DBMS exams?", "Unit 2 (ER Modeling & Relational Model) and Unit 4 (SQL Queries & Normalization) consistently carry the highest marks weightage.")
+        ],
+        "tips_link": "/Notes/313302-database-management-system.html",
+        "tips_link_text": "Unit test question banks (313302) &rarr;",
+        "score_tips": [
+            "Draw clear ER diagrams with proper notation for entities, attributes, and relationships.",
+            "Write valid SQL syntax with table schemas and example records.",
+            "Explain normalization with concrete student/employee table examples for 1NF, 2NF, and 3NF."
+        ]
+    },
+    {
+        "id": "dte",
+        "csv_folder": "DTE K scheme",
+        "out_file": "Notes/dte-k-scheme-notes.html",
+        "code": "313303",
+        "abbr": "DTE",
+        "name": "Digital Techniques",
+        "sem": "3rd Semester",
+        "dept": "Computer Engineering",
+        "thumbnail": "/resourse/note-thumbs/DTE_thumbnail.png",
+        "title": "Digital Techniques (DTE) K Scheme Notes, MCQs & Solved Papers | MSBTE",
+        "meta_desc": "Free download MSBTE K Scheme Digital Techniques (DTE - 313303) unit-wise notes, logic gate PDFs, K-Map problems, solved MCQs, and previous year sample question papers.",
+        "h1": "Digital Techniques (DTE) K Scheme Notes & Study Material",
+        "subtitle": "Free MSBTE K-Scheme <strong>313303 – Digital Techniques (DTE)</strong> Unit 1 to 5 notes, complete overview revision, K-Map numericals, solved MCQ sets, and previous year board papers for 3rd Semester.",
+        "intro_p": "Everything for <strong>Digital Techniques (DTE – 313303)</strong> in one place: chapter notes from Unit 1 to Unit 5, Vishal Chavare complete IMP notes, K-Map problem sets, MCQ solutions, and previous year board papers.",
+        "guide_title": "Mastering Digital Techniques (DTE) in MSBTE K-Scheme",
+        "guide_lead": "<strong>313303 – Digital Techniques (DTE)</strong> forms the digital electronic hardware basis for computing. It covers number systems, Boolean algebra, logic gates, Karnaugh Maps (K-maps), combinational logic, and sequential flip-flops.",
+        "guide_areas": [
+            ("Number Systems & Logic Gates:", "Binary, octal, hexadecimal conversions, 1's & 2's complement arithmetic, universal NAND/NOR gates, and logic families."),
+            ("Boolean Algebra & K-Maps:", "De Morgan's laws, SOP & POS forms, 2, 3, and 4-variable K-Map minimization with don't-care conditions."),
+            ("Combinational Circuits:", "Half/full adders, half/full subtractors, multiplexers, demultiplexers, encoders, and decoders."),
+            ("Sequential Circuits & Counters:", "RS, JK, D, T flip-flops, race-around condition, Master-Slave JK flip-flop, and asynchronous/synchronous counters.")
+        ],
+        "guide_tips": "Draw neat digital logic gate diagrams with truth tables. In K-Map problems, circle 1s into quads and octets with clearly written minimized Boolean equations.",
+        "faqs": [
+            ("What is the subject code for Digital Techniques in MSBTE K-Scheme?", "The subject code for Digital Techniques (DTE) under the MSBTE K-Scheme for Computer Engineering (3rd Semester) is <strong>313303</strong>."),
+            ("Are these DTE notes, K-map problems, and question papers free?", "Yes, all chapter notes, K-Map problem sheets, solved MCQ sets, and previous year question papers are free via Google Drive."),
+            ("Which topics are guaranteed scoring areas in MSBTE DTE exams?", "4-variable K-Map reduction, Full Adder circuit design using gates, and Master-Slave JK flip-flop timing diagrams appear frequently.")
+        ],
+        "tips_link": "/Notes/313303-digital-techniques.html",
+        "tips_link_text": "Unit test question banks (313303) &rarr;",
+        "score_tips": [
+            "Draw standardized IEEE logic gate symbols with precise pin and input labels.",
+            "Show complete truth tables alongside circuit diagrams for combinational circuits.",
+            "Write the Boolean expression derivation step-by-step before implementing with NAND gates."
+        ]
+    }
+]
+
+def render_page(cfg):
+    items = by_folder.get(cfg["csv_folder"], [])
+    
+    # Categorize items
+    unit_items = [x for x in items if x.get("Category", "").strip() == "Unit / Chapter Notes"]
+    overview_items = [x for x in items if x.get("Category", "").strip() == "Complete / Overview Notes"]
+    qb_items = [x for x in items if x.get("Category", "").strip() == "Question Bank / IMP"]
+    paper_items = [x for x in items if x.get("Category", "").strip() == "Paper / Model Answers"]
+    syllabus_items = [x for x in items if x.get("Category", "").strip() == "Syllabus"]
+
+    # Canonical & Slugs
+    slug = cfg["out_file"].replace("Notes/", "").replace(".html", "")
+    page_url = f"https://msbtenotes-info.netlify.app/notes/{slug}"
+
+    # Group unit notes by unit number if present
+    units_dict = {}
+    for x in unit_items:
+        u = x.get("Unit/Chapter", "").strip()
+        if not u:
+            # Try to extract unit from title or filename
+            m = re.search(r'Unit\s*(\d+)', x.get("SEO Title", "") + " " + x.get("File Name", ""), re.I)
+            u = m.group(1) if m else "General"
+        units_dict.setdefault(u, []).append(x)
+
+    # Sort units naturally
+    sorted_unit_keys = sorted(units_dict.keys(), key=lambda k: int(k) if k.isdigit() else 999)
+
+    # In-page Quick Jump links
+    quick_jumps = []
+    if units_dict:
+        quick_jumps.append(('unit-notes', f'{SVG_BOOK}Unit Notes'))
+    if overview_items:
+        quick_jumps.append(('overview-notes', f'{SVG_BOOK}Complete Notes'))
+    if qb_items:
+        quick_jumps.append(('question-bank', f'{SVG_CLIPBOARD}IMP Question Bank'))
+    if paper_items:
+        quick_jumps.append(('model-answers', f'{SVG_DOCUMENT}Model Answers'))
+    if syllabus_items:
+        quick_jumps.append(('syllabus', f'{SVG_DOCUMENT}Syllabus'))
+    quick_jumps.append(('faqs', f'{SVG_FAQ}FAQs'))
+
+    quick_jump_html = ""
+    for j_id, j_label in quick_jumps:
+        quick_jump_html += f'<a href="#{j_id}" class="filter-btn whitespace-nowrap inline-flex items-center gap-2 text-sm hover:border-blue-300 hover:text-blue-600 hover:bg-blue-50">{j_label}</a>\n'
+
+    # Section 1: Unit Notes Cards
+    unit_cards_html = ""
+    for idx, u_key in enumerate(sorted_unit_keys):
+        u_files = units_dict[u_key]
+        u_badge = f"{len(u_files)} versions" if len(u_files) > 1 else "PDF"
+        
+        # Title & Description
+        clean_title = u_files[0].get("SEO Title", f"{cfg['name']} Unit {u_key} Notes")
+        clean_title = re.sub(r'\s*\|\s*MSBTE.*$', '', clean_title)
+        desc = u_files[0].get("SEO Description", f"Comprehensive MSBTE K-Scheme Unit {u_key} notes, solved numericals, and core theory concepts.")
+        
+        # Buttons
+        if len(u_files) == 1:
+            btn_html = f'<a href="{u_files[0]["Public Link"]}" target="_blank" rel="noopener" aria-label="Download Unit {u_key} notes PDF" class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-3 rounded-lg font-semibold transition inline-flex items-center justify-center gap-2 shadow-sm w-full text-sm">{SVG_DOWNLOAD}View / Download PDF</a>'
+        else:
+            sub_btns = []
+            for b_idx, f_item in enumerate(u_files[:2]):
+                v_label = f"Version {b_idx + 1}"
+                v_style = "bg-blue-600 hover:bg-blue-700 text-white shadow-sm" if b_idx == 0 else "bg-gray-100 hover:bg-gray-200 text-gray-800 border border-gray-200"
+                sub_btns.append(f'<div><p class="text-xs font-semibold text-gray-500 uppercase tracking-wide mb-2 truncate">Notes – {v_label}</p><a href="{f_item["Public Link"]}" target="_blank" rel="noopener" aria-label="Download Unit {u_key} notes {v_label}" class="{v_style} px-3 sm:px-4 py-3 rounded-lg font-semibold transition inline-flex items-center justify-center gap-2 w-full text-sm">{SVG_DOWNLOAD}Download</a></div>')
+            btn_html = f'<div class="grid grid-cols-1 sm:grid-cols-2 gap-3">{"".join(sub_btns)}</div>'
+
+        is_col_span_2 = " md:col-span-2" if (idx == len(sorted_unit_keys) - 1 and len(sorted_unit_keys) % 2 == 1) else ""
+        unit_cards_html += f"""
+                <article class="res-card p-5 sm:p-6 overflow-hidden{is_col_span_2}">
+                    <div>
+                        <div class="flex items-start justify-between gap-3 mb-3">
+                            <div class="flex items-center gap-3 min-w-0">
+                                <span class="w-9 h-9 rounded-xl bg-blue-600 text-white font-bold text-sm flex items-center justify-center font-display flex-shrink-0">{u_key}</span>
+                                <h3 class="text-base sm:text-lg font-bold text-blue-900 leading-snug break-words">{clean_title}</h3>
+                            </div>
+                            <span class="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-semibold bg-gray-100 text-gray-600 flex-shrink-0">{u_badge}</span>
+                        </div>
+                        <p class="text-sm text-gray-600 mb-5 leading-relaxed">{desc}</p>
+                    </div>
+                    <div class="pt-4 border-t border-gray-100">{btn_html}</div>
+                </article>"""
+
+    # Section: Overview / Complete Notes Cards
+    overview_cards_html = ""
+    for idx, ov_item in enumerate(overview_items):
+        ov_title = re.sub(r'\s*\|\s*MSBTE.*$', '', ov_item.get("SEO Title", "Complete Overview Notes"))
+        ov_desc = ov_item.get("SEO Description", "Complete syllabus coverage, formulas, definitions, and high-frequency exam concepts.")
+        is_col_span_2 = " md:col-span-2" if (idx == len(overview_items) - 1 and len(overview_items) % 2 == 1) else ""
+        overview_cards_html += f"""
+                <article class="res-card p-5 sm:p-6 overflow-hidden{is_col_span_2}">
+                    <div>
+                        <div class="flex items-start justify-between gap-3 mb-3">
+                            <div class="flex items-center gap-3 min-w-0">
+                                <span class="w-9 h-9 rounded-xl bg-indigo-600 text-white font-bold text-sm flex items-center justify-center font-display flex-shrink-0">{idx + 1}</span>
+                                <h3 class="text-base sm:text-lg font-bold text-blue-900 leading-snug break-words">{ov_title}</h3>
+                            </div>
+                            <span class="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-semibold bg-indigo-50 text-indigo-700 flex-shrink-0">Complete</span>
+                        </div>
+                        <p class="text-sm text-gray-600 mb-5 leading-relaxed">{ov_desc}</p>
+                    </div>
+                    <div class="pt-4 border-t border-gray-100">
+                        <a href="{ov_item['Public Link']}" target="_blank" rel="noopener" class="bg-indigo-600 hover:bg-indigo-700 text-white px-4 py-3 rounded-lg font-semibold transition inline-flex items-center justify-center gap-2 shadow-sm w-full text-sm">{SVG_DOWNLOAD}Download Complete Notes</a>
+                    </div>
+                </article>"""
+
+    # Section 2: Question Bank Cards
+    qb_cards_html = ""
+    for idx, qb in enumerate(qb_items[:5]): # Take up to 5 best items
+        q_title = re.sub(r'\s*\|\s*MSBTE.*$', '', qb.get("SEO Title", "Important Questions (IMP)"))
+        q_desc = qb.get("SEO Description", "Unit-wise 2, 4 and 6 mark questions for quick revision before unit tests and semester exams.")
+        qb_cards_html += f"""
+                <article class="res-card p-5 sm:p-6 overflow-hidden">
+                    <div>
+                        <h3 class="text-base sm:text-lg font-bold text-blue-900 mb-2 break-words">{q_title}</h3>
+                        <p class="text-sm text-gray-600 mb-5 leading-relaxed">{q_desc}</p>
+                    </div>
+                    <div class="pt-4 border-t border-gray-100">
+                        <a href="{qb['Public Link']}" target="_blank" rel="noopener" aria-label="Download {q_title} PDF" class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-3 rounded-lg font-semibold transition inline-flex items-center justify-center gap-2 shadow-sm w-full text-sm">{SVG_DOWNLOAD}Download Question Bank</a>
+                    </div>
+                </article>"""
+
+    # WhatsApp Community card inside Question Bank
+    qb_cards_html += f"""
+                <article class="res-card p-5 sm:p-6 overflow-hidden">
+                    <div>
+                        <h3 class="text-base sm:text-lg font-bold text-blue-900 mb-2 break-words">Join Diploma Study Group</h3>
+                        <p class="text-sm text-gray-600 mb-5 leading-relaxed">Get instant updates on model papers, answer keys and exam notices from the MSBTE Notes &amp; Info community.</p>
+                    </div>
+                    <div class="pt-4 border-t border-gray-100">
+                        <a href="https://chat.whatsapp.com/KFcI5VeJOpjLPgp30NXMfQ" target="_blank" rel="noopener"
+                            class="bg-green-500 hover:bg-green-600 text-white px-4 py-3 rounded-lg font-semibold transition inline-flex items-center justify-center gap-2 shadow-sm w-full text-sm"><svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>Join WhatsApp Community</a>
+                    </div>
+                </article>"""
+
+    # Section 3: Model Answers / Papers Cards
+    paper_cards_html = ""
+    for idx, p in enumerate(paper_items[:4]):
+        p_title = re.sub(r'\s*\|\s*MSBTE.*$', '', p.get("SEO Title", "Solved Question Paper & Model Answers"))
+        p_desc = p.get("SEO Description", "Official MSBTE question paper with step-by-step marking scheme and model answers.")
+        paper_cards_html += f"""
+                <article class="res-card p-5 sm:p-6 overflow-hidden">
+                    <div>
+                        <h3 class="text-base sm:text-lg font-bold text-blue-900 mb-2 break-words">{p_title}</h3>
+                        <p class="text-sm text-gray-600 mb-5 leading-relaxed">{p_desc}</p>
+                    </div>
+                    <div class="pt-4 border-t border-gray-100">
+                        <a href="{p['Public Link']}" target="_blank" rel="noopener" aria-label="Download {p_title} PDF" class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-3 rounded-lg font-semibold transition inline-flex items-center justify-center gap-2 shadow-sm w-full text-sm">{SVG_DOWNLOAD}Download Paper PDF</a>
+                    </div>
+                </article>"""
+
+    # Scoring strategy card inside Papers section
+    score_tips_li = "".join([f'<li class="flex gap-2">{SVG_CHECK}<span>{t}</span></li>' for t in cfg["score_tips"]])
+    paper_cards_html += f"""
+                <article class="res-card p-5 sm:p-6 overflow-hidden">
+                    <div>
+                        <h3 class="text-base sm:text-lg font-bold text-blue-900 mb-3 break-words">Scoring Strategy for {cfg['abbr']}</h3>
+                        <ul class="text-sm text-gray-600 space-y-2 leading-relaxed mb-5">
+                            {score_tips_li}
+                        </ul>
+                    </div>
+                    <div class="pt-4 border-t border-gray-100">
+                        <a href="{cfg['tips_link']}" class="text-blue-600 hover:text-blue-800 font-semibold text-sm inline-flex items-center gap-1 transition break-words">{cfg['tips_link_text']}</a>
+                    </div>
+                </article>"""
+
+    # Syllabus Section if present
+    syllabus_section_html = ""
+    if syllabus_items:
+        s_item = syllabus_items[0]
+        syllabus_section_html = f"""
+        <!-- SECTION: SYLLABUS -->
+        <section id="syllabus" class="mt-10 mb-12" aria-labelledby="syllabus-title">
+            <div class="border-b border-gray-200 pb-3 mb-6 flex items-start gap-3">
+                <span class="w-10 h-10 rounded-xl bg-blue-50 text-blue-600 flex items-center justify-center flex-shrink-0">{SVG_HEADER_DOC}</span>
+                <div class="min-w-0 flex-1">
+                    <h2 id="syllabus-title" class="text-2xl sm:text-3xl font-bold text-gray-900 leading-tight break-words">Official K-Scheme Syllabus</h2>
+                    <p class="text-sm text-gray-500 mt-1">Official curriculum structure, course outcomes, and marks distribution.</p>
+                </div>
+            </div>
+            <div class="grid grid-cols-1 gap-5">
+                <article class="res-card p-5 sm:p-6 overflow-hidden">
+                    <div>
+                        <div class="flex items-start justify-between gap-3 mb-3">
+                            <h3 class="text-base sm:text-lg font-bold text-blue-900 leading-snug break-words">{cfg['name']} ({cfg['code']}) Syllabus Copy</h3>
+                            <span class="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-semibold bg-green-50 text-green-700 flex-shrink-0">Official MSBTE</span>
+                        </div>
+                        <p class="text-sm text-gray-600 mb-5 leading-relaxed">Official MSBTE K-Scheme teaching and examination scheme, unit-wise marks allocation, and practical assignment lists.</p>
+                    </div>
+                    <div class="pt-4 border-t border-gray-100">
+                        <a href="{s_item['Public Link']}" target="_blank" rel="noopener" class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-3 rounded-lg font-semibold transition inline-flex items-center justify-center gap-2 shadow-sm w-full text-sm">{SVG_DOWNLOAD}Download Official Syllabus PDF</a>
+                    </div>
+                </article>
+            </div>
+        </section>"""
+
+    # Complete Notes Section if present
+    overview_section_html = ""
+    if overview_items:
+        overview_section_html = f"""
+        <!-- SECTION: COMPLETE NOTES -->
+        <section id="overview-notes" class="mt-10 mb-12" aria-labelledby="overview-notes-title">
+            <div class="border-b border-gray-200 pb-3 mb-6 flex items-start gap-3">
+                <span class="w-10 h-10 rounded-xl bg-indigo-50 text-indigo-600 flex items-center justify-center flex-shrink-0">{SVG_HEADER_BOOK}</span>
+                <div class="min-w-0 flex-1">
+                    <h2 id="overview-notes-title" class="text-2xl sm:text-3xl font-bold text-gray-900 leading-tight break-words">Complete Notes &amp; Roadmaps</h2>
+                    <p class="text-sm text-gray-500 mt-1">Full-subject consolidated PDFs and high-yield revision summaries.</p>
+                </div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+                {overview_cards_html}
+            </div>
+        </section>"""
+
+    # Guide Areas List
+    guide_areas_html = "".join([f'<li><strong>{a_title}</strong> {a_desc}</li>\n' for a_title, a_desc in cfg["guide_areas"]])
+
+    # FAQs HTML
+    faq_html = ""
+    faq_schema_items = []
+    for q_text, a_text in cfg["faqs"]:
+        clean_ans_text = re.sub(r'<[^>]+>', '', a_text)
+        faq_schema_items.append({
+            "@type": "Question",
+            "name": q_text,
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": clean_ans_text
+            }
+        })
+        faq_html += f"""
+                <details class="bg-white rounded-2xl border border-gray-100 shadow-sm hover:shadow-md transition">
+                    <summary class="p-5 font-bold text-gray-900 flex justify-between items-center gap-3 text-sm sm:text-base rounded-2xl">
+                        <span>{q_text}</span>
+                        {SVG_CHEVRON}
+                    </summary>
+                    <p class="px-5 pb-5 text-sm text-gray-600 leading-relaxed">{a_text}</p>
+                </details>"""
+
+    # Schema JSON-LD
+    schema_faq_json = json.dumps({
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": faq_schema_items
+    }, indent=2)
+
+    schema_article_json = json.dumps({
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": page_url
+        },
+        "headline": f"{cfg['name']} ({cfg['abbr']}) K Scheme Notes & Question Bank – MSBTE Diploma",
+        "description": cfg["meta_desc"],
+        "image": f"https://msbtenotes-info.netlify.app{cfg['thumbnail']}",
+        "author": {
+            "@type": "Person",
+            "name": "MSBTE Notes & Info Team"
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "MSBTE Notes & Info",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://msbtenotes-info.netlify.app/resourse/favicon-32x32.png"
+            }
+        },
+        "datePublished": "2026-10-06"
+    }, indent=2)
+
+    schema_breadcrumb_json = json.dumps({
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://msbtenotes-info.netlify.app/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Notes",
+                "item": "https://msbtenotes-info.netlify.app/#notes"
+            },
+            {
+                "@type": "ListItem",
+                "position": 3,
+                "name": f"{cfg['name']} ({cfg['abbr']}) K Scheme"
+            }
+        ]
+    }, indent=2)
+
+    # Full HTML Document
+    html_content = f"""<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Consent default (deny until user chooses) -->
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() {{ dataLayer.push(arguments); }}
+        gtag('consent', 'default', {{ 'ad_storage': 'denied', 'analytics_storage': 'denied' }});
+    </script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-H5G5CCD95W"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() {{ dataLayer.push(arguments); }}
+        gtag('js', new Date());
+        gtag('config', 'G-H5G5CCD95W');
+    </script>
+    <!-- Meta -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{cfg['title']}</title>
+    <meta name="description" content="{cfg['meta_desc']}" />
+    <meta name="keywords" content="MSBTE {cfg['name']} notes, {cfg['abbr']} K scheme notes, {cfg['code']} notes, msbte {cfg['code']} question bank, msbte diploma {cfg['name']} pdf download, {cfg['sem']} notes" />
+    <meta name="author" content="MSBTE Notes &amp; Info" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="{page_url}" />
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="{cfg['title']}" />
+    <meta property="og:description" content="{cfg['meta_desc']}" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="{page_url}" />
+    <meta property="og:image" content="https://msbtenotes-info.netlify.app{cfg['thumbnail']}" />
+    <meta property="og:site_name" content="MSBTE Notes &amp; Info" />
+
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="{cfg['title']}" />
+    <meta name="twitter:description" content="{cfg['meta_desc']}" />
+    <meta name="twitter:image" content="https://msbtenotes-info.netlify.app{cfg['thumbnail']}" />
+
+    <!-- Breadcrumb Structured Data -->
+    <script type="application/ld+json">
+{schema_breadcrumb_json}
+    </script>
+
+    <!-- Article Structured Data -->
+    <script type="application/ld+json">
+{schema_article_json}
+    </script>
+
+    <!-- FAQ Structured Data -->
+    <script type="application/ld+json">
+{schema_faq_json}
+    </script>
+
+    <!-- Favicon and App Icons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/resourse/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/resourse/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/resourse/favicon-16x16.png">
+    <link rel="manifest" href="/resourse/site.webmanifest">
+    <link rel="icon" href="/resourse/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="/resourse/favicon.ico">
+
+    <!-- Preload critical resources -->
+    <link rel="preload" href="/style.css" as="style">
+    <link rel="preload" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" as="style">
+    <link rel="preload" href="https://api.fontshare.com/v2/css?f[]=clash-display@600&display=swap" as="style">
+
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://api.fontshare.com/v2/css?f[]=clash-display@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/style.css">
+
+    <script async src="https://fundingchoicesmessages.google.com/i/pub-9227354288966999?ers=1"></script>
+    <script>(function () {{ function signalGooglefcPresent() {{ if (!window.frames['googlefcPresent']) {{ if (document.body) {{ const iframe = document.createElement('iframe'); iframe.style = 'width: 0; height: 0; border: none; z-index: -1000; left: -1000px; top: -1000px;'; iframe.style.display = 'none'; iframe.name = 'googlefcPresent'; document.body.appendChild(iframe); }} else {{ setTimeout(signalGooglefcPresent, 0); }} }} }} signalGooglefcPresent(); }})();</script>
+
+    <style>
+        /* Tailwind 2.2.19 has no group-open: / shadow-xs / scroll-mt-*, so these are handled here */
+        html, body {{
+            overflow-x: hidden;
+            max-width: 100%;
+        }}
+        .font-display {{ font-family: 'Clash Display', sans-serif; }}
+        details > summary {{ list-style: none; cursor: pointer; }}
+        details > summary::-webkit-details-marker {{ display: none; }}
+        .chev {{ transition: transform .2s ease; }}
+        details[open] .chev {{ transform: rotate(180deg); }}
+        details[open] > summary {{ color: #2563eb; }}
+        a:focus-visible, button:focus-visible, summary:focus-visible {{ outline: 2px solid #2563eb; outline-offset: 2px; }}
+        .res-card {{ background:#fff; border:1px solid #f1f5f9; border-radius:1rem; box-shadow:0 4px 12px rgba(0,0,0,.03);
+                    transition:transform .3s ease, box-shadow .3s ease; display:flex; flex-direction:column; justify-content:space-between; }}
+        .res-card:hover {{ transform:translateY(-4px); box-shadow:0 16px 32px rgba(0,0,0,.07); }}
+        @media (prefers-reduced-motion: reduce){{ .res-card, .res-card:hover {{ transition:none; transform:none; }} .chev{{transition:none;}} }}
+    </style>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9227354288966999" crossorigin="anonymous"></script>
+</head>
+
+<body class="bg-gray-50 text-gray-900 pt-16 overflow-x-hidden w-full max-w-full">
+
+    <!-- Header Navigation (same as homepage) -->
+    <nav class="bg-white shadow fixed top-0 left-0 right-0 z-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16">
+        <!-- Left: Logo -->
+        <div class="flex items-center">
+          <a href="/" class="flex items-center text-blue-600 font-bold text-xl font-display">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 mr-2" viewBox="0 0 576 512" fill="currentColor">
+              <path
+                d="M249.6 471.5c10.8 3.8 22.4-4.1 22.4-15.5V78.6c0-4.2-1.6-8.4-5-11C247.4 52 202.4 32 144 32C93.5 32 46.3 45.3 18.1 56.1C6.8 60.5 0 71.7 0 83.8V454.1c0 11.9 12.8 20.2 24.1 16.5C55.6 460.1 105.5 448 144 448c33.9 0 79 14 105.6 23.5zm76.8 0C353 462 398.1 448 432 448c38.5 0 88.4 12.1 119.9 22.6c11.3 3.8 24.1-4.6 24.1-16.5V83.8c0-12.1-6.8-23.3-18.1-27.6C529.7 45.3 482.5 32 432 32c-58.4 0-103.4 20-123 35.6c-3.3 2.6-5 6.8-5 11V456c0 11.4 11.7 19.3 22.4 15.5z" />
+            </svg>
+            MSBTE Notes &amp; Info
+          </a>
+        </div>
+
+        <!-- Middle: Desktop Nav -->
+        <div class="hidden md:flex space-x-6 text-sm font-medium">
+          <a href="/" class="text-gray-700 hover:text-blue-600 transition">Home</a>
+          <a href="/#notes" class="text-gray-700 hover:text-blue-600 transition">Notes</a>
+          <a href="/#blogs" class="text-gray-700 hover:text-blue-600 transition">Blog</a>
+          <a href="/about.html" class="text-gray-700 hover:text-blue-600 transition">About</a>
+          <a href="/contact.html" class="text-gray-700 hover:text-blue-600 transition">Contact</a>
+        </div>
+
+        <!-- Right: Mobile Menu Toggle -->
+        <div class="flex items-center md:hidden">
+          <button onclick="toggleMobileMenu()"
+            class="mobile-menu-button p-2 text-gray-600 hover:text-blue-600 transition-colors" aria-controls="mobileNav"
+            aria-expanded="false" aria-label="Open menu">
+            <svg id="menuIcon" xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 transition-transform duration-300"
+              fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+            </svg>
+            <svg id="closeIcon" xmlns="http://www.w3.org/2000/svg"
+              class="h-8 w-8 hidden transition-transform duration-300" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modern Mobile Menu Overlay -->
+    <div id="mobileNav"
+      class="fixed inset-0 bg-white z-50 transform translate-x-full invisible pointer-events-none transition-transform duration-300 ease-in-out md:hidden overflow-y-auto pt-20 px-6">
+
+      <!-- Close button for overlay -->
+      <button onclick="toggleMobileMenu()"
+        class="absolute top-6 right-6 p-2 text-gray-600 hover:text-blue-600 transition-colors" aria-label="Close menu">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+        </svg>
+      </button>
+
+      <div class="flex flex-col space-y-5">
+        <a href="/" onclick="toggleMobileMenu()"
+          class="text-xl font-display font-bold text-gray-900 border-b border-gray-100 pb-2">Home</a>
+        <a href="/#notes" onclick="toggleMobileMenu()"
+          class="text-xl font-display font-bold text-gray-900 border-b border-gray-100 pb-2">Notes</a>
+        <a href="/#blogs" onclick="toggleMobileMenu()"
+          class="text-xl font-display font-bold text-gray-900 border-b border-gray-100 pb-2">Blog</a>
+        <a href="/about.html" onclick="toggleMobileMenu()"
+          class="text-xl font-display font-bold text-gray-900 border-b border-gray-100 pb-2">About</a>
+        <a href="/contact.html" onclick="toggleMobileMenu()"
+          class="text-xl font-display font-bold text-gray-900 border-b border-gray-100 pb-2">Contact</a>
+
+        <div class="pt-6">
+          <a href="https://chat.whatsapp.com/KFcI5VeJOpjLPgp30NXMfQ"
+            class="block w-full bg-green-500 text-white text-center py-4 rounded-xl font-bold shadow-lg shadow-green-200">
+            Join WhatsApp Community
+          </a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+    <!-- Breadcrumb -->
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 pt-5 pb-2">
+        <nav class="flex text-sm" aria-label="Breadcrumb">
+            <ol class="flex items-center space-x-1 md:space-x-2 flex-wrap">
+                <li class="inline-flex items-center">
+                    <a href="/" class="inline-flex items-center font-medium text-gray-700 hover:text-blue-600 transition">
+                        <svg class="w-4 h-4 mr-1.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path></svg>Home
+                    </a>
+                </li>
+                <li class="flex items-center">
+                    <svg class="w-4 h-4 text-gray-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                    <a href="/#notes" class="ml-1 md:ml-2 font-medium text-gray-700 hover:text-blue-600 transition">Notes</a>
+                </li>
+                <li class="flex items-center min-w-0" aria-current="page">
+                    <svg class="w-4 h-4 text-gray-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                    <span class="ml-1 md:ml-2 font-medium text-gray-500 max-w-[140px] sm:max-w-xs truncate">{cfg['abbr']} ({cfg['code']}) K-Scheme</span>
+                </li>
+            </ol>
+        </nav>
+    </div>
+
+    <!-- Page Header -->
+    <header class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 pt-4 pb-6">
+        <div class="flex flex-wrap items-center gap-1.5 mb-3">
+            <span class="badge badge-free">K-Scheme</span>
+            <span class="badge badge-sem">{cfg['sem']}</span>
+            <span class="badge bg-gray-100 text-gray-700">Code {cfg['code']}</span>
+            <span class="badge bg-gray-100 text-gray-700">{cfg['dept']}</span>
+        </div>
+        <h1 class="text-2xl sm:text-3xl lg:text-4xl font-bold text-blue-600 leading-tight break-words">
+            {cfg['h1']}
+        </h1>
+        <p class="mt-3 text-gray-600 text-base sm:text-lg leading-relaxed">
+            {cfg['subtitle']}
+        </p>
+
+        <!-- Quick jump (scrolls sideways cleanly without escaping frame) -->
+        <div class="w-full overflow-x-auto no-scrollbar py-1 mt-5" style="overscroll-behavior-x: contain; -webkit-overflow-scrolling: touch;" aria-label="Jump to section">
+            <div class="inline-flex gap-2">
+                {quick_jump_html}
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+
+        <!-- Thumbnail banner (16:9, size declared to avoid layout shift) -->
+        <img src="{cfg['thumbnail']}" width="1920" height="1080"
+            alt="{cfg['name']} {cfg['abbr']} {cfg['code']} K Scheme study material thumbnail"
+            class="rounded-2xl w-full h-auto shadow-lg mb-8" decoding="async">
+
+        <!-- Intro -->
+        <p class="text-gray-700 leading-relaxed mb-2">
+            {cfg['intro_p']}
+        </p>
+
+        <div class="my-8 w-full max-w-full overflow-hidden">
+            <ins class="adsbygoogle" style="display:block; text-align:center;" data-ad-layout="in-article"
+                data-ad-format="fluid" data-ad-client="ca-pub-9227354288966999" data-ad-slot="7917907402"></ins>
+            <script>(adsbygoogle = window.adsbygoogle || []).push({{}});</script>
+        </div>
+
+        {syllabus_section_html}
+
+        {overview_section_html}
+
+        {"<!-- SECTION 1: UNIT NOTES -->" if units_dict else ""}
+        {f'''<section id="unit-notes" class="mt-10 mb-12" aria-labelledby="unit-notes-title">
+            <div class="border-b border-gray-200 pb-3 mb-6 flex items-start gap-3">
+                <span class="w-10 h-10 rounded-xl bg-blue-50 text-blue-600 flex items-center justify-center flex-shrink-0">{SVG_HEADER_BOOK}</span>
+                <div class="min-w-0 flex-1">
+                    <h2 id="unit-notes-title" class="text-2xl sm:text-3xl font-bold text-gray-900 leading-tight break-words">Unit-Wise Chapter Notes</h2>
+                    <p class="text-sm text-gray-500 mt-1">Direct Google Drive PDF downloads, organised unit by unit.</p>
+                </div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+                {unit_cards_html}
+            </div>
+        </section>''' if units_dict else ""}
+
+        <!-- YouTube promo (site standard) -->
+        <aside class="bg-white border border-gray-100 p-5 rounded-2xl shadow-sm mb-10 flex flex-col md:flex-row items-center gap-4">
+            <span class="bg-red-600 text-white rounded-full p-3 flex-shrink-0"><svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"/></svg></span>
+            <div class="flex-grow text-center md:text-left">
+                <h3 class="font-bold text-gray-900 text-lg">Subscribe to Our YouTube Channel</h3>
+                <p class="text-gray-600 text-sm mt-1">MSBTE updates, video lectures and exam tips.</p>
+            </div>
+            <a href="https://www.youtube.com/@msbte-notes-and-info" target="_blank" rel="noopener"
+                class="bg-red-600 hover:bg-red-700 text-white font-semibold py-3 px-6 rounded-lg transition flex-shrink-0 whitespace-nowrap text-sm shadow-sm w-full md:w-auto text-center">Subscribe</a>
+        </aside>
+
+        <div class="my-8 w-full max-w-full overflow-hidden">
+            <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-9227354288966999"
+                data-ad-slot="1275037071" data-ad-format="auto" data-full-width-responsive="true"></ins>
+            <script>(adsbygoogle = window.adsbygoogle || []).push({{}});</script>
+        </div>
+
+        <!-- SECTION: QUESTION BANK -->
+        <section id="question-bank" class="mt-10 mb-12" aria-labelledby="question-bank-title">
+            <div class="border-b border-gray-200 pb-3 mb-6 flex items-start gap-3">
+                <span class="w-10 h-10 rounded-xl bg-blue-50 text-blue-600 flex items-center justify-center flex-shrink-0">{SVG_HEADER_CLIP}</span>
+                <div class="min-w-0 flex-1">
+                    <h2 id="question-bank-title" class="text-2xl sm:text-3xl font-bold text-gray-900 leading-tight break-words">Question Bank &amp; IMP Questions</h2>
+                    <p class="text-sm text-gray-500 mt-1">High-frequency questions for MSBTE K-Scheme board exams.</p>
+                </div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+                {qb_cards_html}
+            </div>
+        </section>
+
+        <!-- SECTION: PAPERS -->
+        <section id="model-answers" class="mt-10 mb-12" aria-labelledby="model-answers-title">
+            <div class="border-b border-gray-200 pb-3 mb-6 flex items-start gap-3">
+                <span class="w-10 h-10 rounded-xl bg-blue-50 text-blue-600 flex items-center justify-center flex-shrink-0">{SVG_HEADER_DOC}</span>
+                <div class="min-w-0 flex-1">
+                    <h2 id="model-answers-title" class="text-2xl sm:text-3xl font-bold text-gray-900 leading-tight break-words">Past Paper &amp; Model Answers</h2>
+                    <p class="text-sm text-gray-500 mt-1">Learn how marks are distributed, step by step.</p>
+                </div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+                {paper_cards_html}
+            </div>
+        </section>
+
+        <!-- SECTION: GUIDE -->
+        <section class="mt-12 bg-white p-5 sm:p-8 rounded-2xl shadow-sm border border-gray-100 overflow-hidden break-words">
+            <h2 class="text-2xl font-bold text-blue-600 mb-4">{cfg['guide_title']}</h2>
+            <p class="text-gray-700 leading-relaxed">
+                {cfg['guide_lead']}
+            </p>
+            <h3 class="text-xl font-bold text-gray-800 mt-6 mb-3">Key focus areas</h3>
+            <ul class="list-disc pl-5 space-y-2 text-gray-700 leading-relaxed">
+                {guide_areas_html}
+            </ul>
+            <h3 class="text-xl font-bold text-gray-800 mt-6 mb-3">Tips to score top marks</h3>
+            <p class="text-gray-700 leading-relaxed">
+                {cfg['guide_tips']}
+            </p>
+        </section>
+
+        <!-- SECTION: FAQ -->
+        <section id="faqs" class="mt-12" aria-labelledby="faqs-title">
+            <h2 id="faqs-title" class="text-2xl font-bold text-gray-900 mb-6">Frequently Asked Questions</h2>
+            <div class="space-y-4">
+                {faq_html}
+            </div>
+        </section>
+    </main>
+
+    <!-- Related Articles (filled by related-blogs.js) -->
+    <section id="related-blogs" class="mt-16 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 w-full overflow-hidden">
+        <h2 class="text-2xl md:text-3xl font-bold text-blue-600 mb-6 md:mb-8 text-center">More Tips &amp; Resources</h2>
+        <div id="relatedContainer" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-8 w-full max-w-full overflow-hidden"></div>
+        <div id="relatedPagination" class="flex flex-wrap justify-center items-center gap-2 mt-8 md:mt-10 overflow-x-auto pb-4 w-full"></div>
+    </section>
+
+    <!-- Share -->
+    <div class="text-center mt-12 px-4 max-w-full overflow-hidden">
+        <p class="text-gray-600 mb-4 text-lg font-semibold">Share this resource with classmates</p>
+        <div class="flex justify-center gap-3 flex-wrap">
+            <a href="#" id="whatsappShare" target="_blank" rel="noopener" class="flex items-center gap-2 bg-green-500 text-white px-5 py-2.5 rounded-full hover:bg-green-600 transition font-semibold text-sm"><svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>WhatsApp</a>
+            <a href="#" id="telegramShare" target="_blank" rel="noopener" class="flex items-center gap-2 bg-blue-500 text-white px-5 py-2.5 rounded-full hover:bg-blue-600 transition font-semibold text-sm"><svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M11.944 0A12 12 0 000 12a12 12 0 0012 12 12 12 0 0012-12A12 12 0 0012 0a12 12 0 00-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 01.171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg>Telegram</a>
+            <button type="button" id="copyBtn" onclick="copyLink()" class="flex items-center gap-2 bg-gray-600 text-white px-5 py-2.5 rounded-full hover:bg-gray-700 transition font-semibold text-sm"><svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 5H6a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2v-1M8 5a2 2 0 002 2h2a2 2 0 002-2M8 5a2 2 0 012-2h2a2 2 0 012 2m0 0h2a2 2 0 012 2v3m2 4H10m0 0l3-3m-3 3l3 3"></path></svg><span id="copyLabel">Copy Link</span></button>
+        </div>
+        <p id="copyStatus" class="sr-only" role="status" aria-live="polite"></p>
+    </div>
+
+    <!-- Bottom ad -->
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 my-8 w-full max-w-full overflow-hidden">
+        <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-9227354288966999"
+            data-ad-slot="1275037071" data-ad-format="auto" data-full-width-responsive="true"></ins>
+        <script>(adsbygoogle = window.adsbygoogle || []).push({{}});</script>
+    </div>
+
+    <!-- Footer (same as homepage) -->
+    <footer class="bg-blue-600 text-white mt-16 py-12 w-full max-w-full overflow-hidden">
+        <div class="max-w-6xl mx-auto px-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+            <div>
+                <h3 class="text-xl font-semibold mb-4">About Us</h3>
+                <p class="text-sm">We provide free and premium study materials, notes, and guidance for MSBTE diploma engineering students across all departments.</p>
+            </div>
+            <div>
+                <h3 class="text-xl font-semibold mb-4">Quick Links</h3>
+                <ul class="space-y-2 text-sm">
+                    <li><a href="/" class="hover:underline">Home</a></li>
+                    <li><a href="/#departments" class="hover:underline">Departments</a></li>
+                    <li><a href="/#notes" class="hover:underline">Study Resources</a></li>
+                    <li><a href="/#blogs" class="hover:underline">Blog</a></li>
+                    <li><a href="/about.html" class="hover:underline">About</a></li>
+                    <li><a href="/contact.html" class="hover:underline">Contact</a></li>
+                    <li><a href="/internships.html" class="hover:underline">Internships</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="text-xl font-semibold mb-4">Contact</h3>
+                <p class="text-sm mb-2 break-all">📧 info.mraaglave@gmail.com</p>
+                <p class="text-sm mb-2">📱 +91 70832 36221</p>
+                <a href="https://chat.whatsapp.com/KFcI5VeJOpjLPgp30NXMfQ" target="_blank" rel="noopener noreferrer"
+                    class="inline-block mt-4 bg-white text-blue-600 px-4 py-2 rounded-full font-semibold hover:bg-gray-100">Join WhatsApp Community</a>
+            </div>
+        </div>
+        <div class="flex justify-center mt-8">
+            <a href="https://www.producthunt.com/products/msbte-notes-info/reviews/new?utm_source=badge-product_review&utm_medium=badge&utm_source=badge-msbte&#0045;notes&#0045;info" target="_blank" rel="noopener">
+                <img src="https://api.producthunt.com/widgets/embed-image/v1/product_review.svg?product_id=1131454&theme=light"
+                    alt="MSBTE Notes &amp; Info | Product Hunt" style="width: 250px; height: 54px;" width="250" height="54" loading="lazy" />
+            </a>
+        </div>
+        <div class="text-center mt-10 text-sm text-blue-100">
+            <p>
+                <a href="/about.html" class="hover:underline">About</a> |
+                <a href="/sitemap.html" class="hover:underline">Sitemap</a> |
+                <a href="/privacy-policy.html" class="hover:underline">Privacy Policy</a> |
+                <a href="/contact.html" class="hover:underline">Contact</a>
+            </p>
+            <p>&copy; 2026 MSBTE Notes &amp; Info. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <button id="backToTopBtn" onclick="scrollToTop()" title="Back to Top"
+    class="fixed bottom-6 right-6 z-50 hidden bg-blue-600 text-white p-3 rounded-full shadow-lg hover:bg-blue-700 transition">
+    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7" />
+    </svg>
+  </button>
+
+    <script>
+        function toggleMobileMenu() {{
+            const menu = document.getElementById('mobileNav');
+            const btn = document.querySelector('.mobile-menu-button');
+            const menuIcon = document.getElementById('menuIcon');
+            const closeIcon = document.getElementById('closeIcon');
+            const isOpen = !menu.classList.contains('translate-x-full');
+            if (isOpen) {{
+                menu.classList.add('translate-x-full');
+                menu.classList.add('invisible', 'pointer-events-none');
+                menuIcon.classList.remove('hidden');
+                closeIcon.classList.add('hidden');
+                btn.setAttribute('aria-expanded', 'false');
+                document.body.style.overflow = '';
+            }} else {{
+                menu.classList.remove('invisible', 'pointer-events-none');
+                menu.classList.remove('translate-x-full');
+                menuIcon.classList.add('hidden');
+                closeIcon.classList.remove('hidden');
+                btn.setAttribute('aria-expanded', 'true');
+                document.body.style.overflow = 'hidden';
+            }}
+        }}
+        document.addEventListener('keydown', function (e) {{
+            if (e.key === 'Escape' && !document.getElementById('mobileNav').classList.contains('translate-x-full')) toggleMobileMenu();
+        }});
+
+        const backToTopBtn = document.getElementById('backToTopBtn');
+        window.addEventListener('scroll', function () {{
+            backToTopBtn.classList.toggle('hidden', window.scrollY <= 300);
+        }});
+        function scrollToTop() {{ window.scrollTo({{ top: 0, behavior: 'smooth' }}); }}
+
+        const pageUrl = encodeURIComponent(window.location.href);
+        const message = encodeURIComponent("Free {cfg['abbr']} K Scheme Notes & Question Bank for MSBTE Diploma:");
+        document.getElementById('whatsappShare').href = `https://api.whatsapp.com/send?text=${{message}}%20${{pageUrl}}`;
+        document.getElementById('telegramShare').href = `https://t.me/share/url?url=${{pageUrl}}&text=${{message}}`;
+
+        function copyLink() {{
+            const label = document.getElementById('copyLabel');
+            const status = document.getElementById('copyStatus');
+            const done = function (ok) {{
+                label.textContent = ok ? 'Copied!' : 'Press Ctrl+C to copy';
+                status.textContent = ok ? 'Link copied to clipboard' : 'Copy failed';
+                setTimeout(function () {{ label.textContent = 'Copy Link'; }}, 2000);
+            }};
+            if (navigator.clipboard && navigator.clipboard.writeText) {{
+                navigator.clipboard.writeText(window.location.href).then(function () {{ done(true); }}, function () {{ done(false); }});
+            }} else {{ done(false); }}
+        }}
+    </script>
+    <script src="../related-blogs.js" defer></script>
+    <script src="../whatsapp-popup.js" defer></script>
+</body>
+</html>
+"""
+    return html_content
+
+# Generate all 8 pages
+generated_files = []
+for cfg in configs:
+    content = render_page(cfg)
+    with open(cfg["out_file"], "w", encoding="utf-8") as f:
+        f.write(content)
+    generated_files.append(cfg["out_file"])
+    print(f"Generated: {cfg['out_file']} ({len(content)} bytes)")
+
+print(f"\nAll {len(generated_files)} pages generated successfully!")
