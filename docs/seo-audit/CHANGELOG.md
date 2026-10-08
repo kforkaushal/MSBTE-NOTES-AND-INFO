@@ -69,3 +69,23 @@
   - `thin-pages.md`: Analysis of 294 pages under 150 words (subject stubs, lab manuals, video courses, dynamic shells) with remediation roadmap.
   - `off-topic.md`: Evaluation of non-core celebrity/political posts within the E-E-A-T and AdSense frameworks following the owner's editorial expansion decision.
   - `needs-owner-decision.md`: Updated with full inventory of 78 insecure external PDF links that failed HTTPS verification.
+
+### Phase 6: Footer Audit & Precise Restoration
+- **Commit `eab868f` & `4ff5f4a`:**
+  - Audited all 469 HTML pages against original branch `main` (`origin/Public`).
+  - Restored inline footer code across all 448 pages to match `main` byte-for-byte, retaining strictly authorized changes: consistent 2026 copyright year, `/internships` link, canonical link casing, and subtle home disclaimer.
+  - Removed unauthorized `rel="noopener noreferrer"` additions and line-wrapping inside footer blocks.
+  - Documented complete inventory in `docs/footer-check/pages.md` and page-by-page audit report in `docs/footer-check/report.md`.
+
+### Phase 7: Sitemap, Slug, Redirects & Repository Security
+- **Commit `e9abab6`:** Removed non-sitemap `llms.txt` entry from `robots.txt`, leaving only `sitemap.xml`.
+- **Commit `c6d4c43`:**
+  - Renamed `Ads.txt` to lowercase `ads.txt` and added `/Ads.txt /ads.txt 301!` redirect.
+  - Reordered `_redirects` so that 301 redirects and uppercase rules precede the `/* /404.html 404` catch-all at the bottom.
+  - Added `brain/` to `.gitignore` and removed cached Antigravity artifact files from git.
+- **Commit `e68e9d4`:**
+  - Corrected electrical engineering elective slug from typo `3316326` to official MSBTE code `316326` in `Branches/`, `sitemap.html`, and `sitemap.xml`. Added 301 redirect for legacy `3316326` slug.
+  - Added newly created tribute post `/blog/nana-patekar-tribute` to both `sitemap.html` and `sitemap.xml`.
+  - Standardized remaining `/News/` nav links in `index.html` and `News/index.html` to canonical lowercase `/news/`.
+  - Replaced bulk static dates with authentic commit dates in `sitemap.xml` `lastmod` tags.
+  - Verified `database.rules.json`: confirmed Firebase Realtime Database rules prevent open public writes.
