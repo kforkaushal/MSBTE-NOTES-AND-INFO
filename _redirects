@@ -8,3 +8,12 @@
 # ------------------------------------------
 http://*    https://:splat    301
 
+# ------------------------------------------
+# 3. Known legacy slug & course code fixes (Issue 1.13)
+# ------------------------------------------
+/branches/315004-internship12-weeks    /branches/315004-internship-12-weeks    301!
+/Branches/315004-internship12-weeks.html    /branches/315004-internship-12-weeks    301!
+/branches/316326-emerging-trends-in-electrical-engineering    /branches/3316326-emerging-trends-in-electrical-engineering    301!
+/Branches/316326-emerging-trends-in-electrical-engineering.html    /branches/3316326-emerging-trends-in-electrical-engineering    301!
+
+
