@@ -1,0 +1,140 @@
+OSY (314319) Operating System K Scheme Notes | MSBTE
+MSBTE Notes & Info
+Home
+Notes
+Blog
+About
+Contact
+Home
+Notes
+Blog
+About
+Contact
+Join WhatsApp Community
+Home
+Notes
+OSY (314319) K-Scheme
+K-Scheme
+4th Semester
+Code 314319
+Computer Engineering
+Operating System (OSY - 314319) K Scheme Notes
+Free MSBTE K-Scheme
+314319 – Operating System (OSY)
+unit-wise notes, important question bank and Winter 2024 model answers for 4th Semester Computer Engineering.
+Unit 1–5 Notes
+IMP Question Bank
+Model Answers
+FAQs
+Everything for
+Operating System (OSY – 314319)
+in one place: chapter-wise notes from Unit 1 to Unit 5, a highly repeated question bank, and the Winter 2024 model answers for exam preparation.
+Unit-Wise Chapter Notes
+Direct Google Drive PDF downloads, organised unit by unit.
+1
+Introduction to Operating System
+PDF
+Evolution of OS, types of operating systems (batch, multiprogramming, time-sharing, distributed, real-time), system calls, dual-mode execution, and layered OS structures.
+View / Download PDF
+2
+Process Management & IPC
+2 versions
+Process state model, Process Control Block (PCB), context switching mechanisms, multithreading models, and Inter-Process Communication (IPC) techniques.
+Notes – Version 1
+Download
+Notes – Version 2
+Download
+3
+CPU Scheduling Algorithms
+PDF
+Preemptive vs non-preemptive scheduling, FCFS, SJF, Priority Scheduling, Round Robin (RR), and Gantt chart numerical calculations for average turnaround time.
+View / Download PDF
+4
+Deadlocks & File Systems
+PDF
+The four Coffman conditions for deadlock, Resource Allocation Graph (RAG), Banker's Algorithm for deadlock avoidance, directory structures, and file allocation methods.
+View / Download PDF
+5
+Memory Management & Virtual Memory
+2 parts
+Logical vs physical address mapping, contiguous allocation, paging, segmentation, demand paging, and page replacement algorithms (FIFO, LRU, Optimal).
+Part A – Memory Management
+Download
+Part B – Virtual Memory
+Download
+Subscribe to Our YouTube Channel
+MSBTE updates, video lectures and exam tips.
+Subscribe
+Question Bank & IMP Questions
+High-frequency questions for MSBTE K-Scheme board exams.
+OSY Important Questions (IMP)
+Unit-wise 2, 4 and 6 mark questions for quick revision before unit tests and semester exams.
+Download IMP PDF
+Join Diploma Study Group
+Get instant updates on model papers, answer keys and exam notices from the MSBTE Notes & Info community.
+Join WhatsApp Community
+Past Paper & Model Answers
+Learn how marks are distributed, step by step.
+OSY Paper Answer Key – Winter 2024
+Solved Winter 2024 K-Scheme paper. Shows how points, diagrams and formulas earn marks.
+Download Answer Key
+Scoring Strategy for OSY
+Draw state transition diagrams with clear labels.
+Practise Gantt charts for FCFS, SJF and Round Robin.
+Memorise definitions: deadlock conditions, PCB, page fault.
+Unit test question banks (314319) →
+Mastering Operating System (OSY) in MSBTE K-Scheme
+314319 – Operating System (OSY)
+is a core fifth-semester subject of the Computer Engineering diploma under the MSBTE K-Scheme. It connects hardware with application programming and shows how processors, memory and storage are managed efficiently.
+Key focus areas
+Process Synchronization:
+critical section problem, semaphores, mutex, Producer-Consumer and Dining Philosophers.
+CPU Scheduling:
+average waiting time and turnaround time using Gantt charts.
+Deadlock Handling:
+Banker's safety and resource-request algorithms, Resource Allocation Graph cycles.
+Virtual Memory:
+page fault rate, FIFO vs LRU vs Optimal page replacement.
+Tips to score top marks
+Solve the Winter 2024 answer key under exam timing. Write precise technical definitions instead of generic prose, and present comparisons (Preemptive vs Non-preemptive, Paging vs Segmentation) as tables.
+Frequently Asked Questions
+What is the subject code for Operating System in MSBTE K-Scheme?
+The subject code for Operating System (OSY) under the MSBTE K-Scheme for Computer Engineering (4th Semester) is
+314319
+.
+Are these OSY K-Scheme notes free to download?
+Yes, all chapter notes, unit PDFs, IMP question banks and Winter 2024 model answers are free to view and download via Google Drive.
+Which units have the highest weightage in the board examination?
+Unit 2 (Process Management & CPU Scheduling) and Unit 5 (Memory Management & Virtual Memory) carry the highest marks weightage in the MSBTE board examination.
+Explore More 4th Semester K-Scheme Notes:
+Microprocessor (314321) →
+Java Programming (314317) →
+Data Communication & Network (314318) →
+All MSBTE Notes →
+More Tips & Resources
+Share this resource with classmates
+WhatsApp
+Telegram
+Copy Link
+About Us
+We provide free and premium study materials, notes, and guidance for MSBTE diploma engineering students across all departments.
+Quick Links
+Home
+Departments
+Study Resources
+Blog
+About
+Contact
+Internships
+Contact
+📧 info.mraaglave@gmail.com
+📱 +91 70832 36221
+Join WhatsApp Community
+About
+|
+Sitemap
+|
+Privacy Policy
+|
+Contact
+© 2026 MSBTE Notes & Info. All rights reserved.
