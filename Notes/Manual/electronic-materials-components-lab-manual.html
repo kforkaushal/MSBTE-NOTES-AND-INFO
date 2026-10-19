@@ -63,6 +63,33 @@
     <script>function toggleMobileMenu() { document.getElementById('mobileNav').classList.toggle('hidden') }</script>
     <script async src="https://fundingchoicesmessages.google.com/i/pub-9227354288966999?ers=1"></script>
     <script>(function () { function signalGooglefcPresent() { if (!window.frames['googlefcPresent']) { if (document.body) { const iframe = document.createElement('iframe'); iframe.style = 'width:0;height:0;border:none;z-index:-1000;left:-1000px;top:-1000px;'; iframe.style.display = 'none'; iframe.name = 'googlefcPresent'; document.body.appendChild(iframe); } else { setTimeout(signalGooglefcPresent, 0); } } } signalGooglefcPresent(); })();</script>
+    <!-- Breadcrumb Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://msbtenotes-info.netlify.app/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Notes",
+          "item": "https://msbtenotes-info.netlify.app/notes/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Electronic Materials & Components Lab Manual",
+          "item": "https://msbtenotes-info.netlify.app/notes/manual/electronic-materials-components-lab-manual"
+        }
+      ]
+    }
+    </script>
 </head>
 
 <body class="bg-gray-50 text-gray-900">
@@ -110,7 +137,7 @@
                                 d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
                                 clip-rule="evenodd"></path>
                         </svg>
-                        <a href="/Notes/"
+                        <a href="/notes/"
                             class="ml-1 text-sm font-medium text-gray-700 hover:text-blue-600 md:ml-2">Notes & Resources
                             Hub</a>
                     </div>
@@ -152,10 +179,9 @@
                 data-ad-format="fluid" data-ad-client="ca-pub-9227354288966999" data-ad-slot="7917907402"></ins>
             <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
         </div>
-        <section class="text-center"><a
-                href="https://drive.google.com/file/d/1W29o-kei22SmJqZKBSD-pqb2U_3llXdQ/view?usp=sharing"
+        <section class="text-center"><a href="https://drive.google.com/file/d/1W29o-kei22SmJqZKBSD-pqb2U_3llXdQ/view?usp=sharing"
                 target="_blank"
-                class="inline-block bg-blue-600 text-white px-8 py-3 rounded-full text-lg shadow-lg font-semibold hover:bg-blue-700 transition">Download
+                class="inline-block bg-blue-600 text-white px-8 py-3 rounded-full text-lg shadow-lg font-semibold hover:bg-blue-700 transition" rel="noopener noreferrer">Download
                 PDF</a></section>
     </main>
     <div class="text-center mt-10 max-w-4xl mx-auto px-4">
@@ -211,7 +237,7 @@
         </div>
         <div class="text-center mt-10 text-sm text-blue-100">
             <p>
-                <a href="/sitemap.html" class="hover:underline">Sitemap</a> |
+                <a href="/sitemap" class="hover:underline">Sitemap</a> |
                 <a href="/privacy-policy.html" class="hover:underline">Privacy Policy</a> |
                 <a href="/contact.html" class="hover:underline">Contact</a>
             </p>
@@ -222,7 +248,7 @@
                         alt="MSBTE Notes & Info | Product Hunt" style="width:250px;height:54px;" width="250"
                         height="54" /></a>
             </div>
-            <p>&copy; 2025 MSBTE Notes & Info. All rights reserved.</p>
+            <p>&copy; 2026 MSBTE Notes & Info. All rights reserved.</p>
         </div>
     </footer>
     <script>

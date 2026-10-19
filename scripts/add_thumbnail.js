@@ -42,7 +42,7 @@ if (fs.existsSync(notesPath)) {
     let notesContent = fs.readFileSync(notesPath, 'utf8');
 
     // Let's find the related articles grid and inject the new card
-    const cardHtml = `            <a href="/Branches/Computer-I-Scheme.html"
+    const cardHtml = `            <a href="/branches/Computer-I-Scheme.html"
                 class="block bg-white rounded-xl shadow hover:shadow-lg transition overflow-hidden border-2 border-transparent hover:border-blue-500">
                 <img src="/resourse/blog-resourse/computer-i-scheme.svg" alt="Computer Engineering I-Scheme Question Papers"
                     class="w-full h-40 object-cover">

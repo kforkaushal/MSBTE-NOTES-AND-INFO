@@ -1,10 +1,39 @@
 # ------------------------------------------
-# 1. Proper 404 for unknown pages (best for SEO)
-# ------------------------------------------
-/*    /404.html    404
-
-# ------------------------------------------
-# 2. Force HTTPS (SEO requirement)
+# 1. Force HTTPS (SEO requirement)
 # ------------------------------------------
 http://*    https://:splat    301
 
+# ------------------------------------------
+# 2. Known legacy slug & course code fixes (Issue 1.13 & Phase 2)
+# ------------------------------------------
+/branches/315004-internship12-weeks    /branches/315004-internship-12-weeks    301!
+/Branches/315004-internship12-weeks.html    /branches/315004-internship-12-weeks    301!
+/branches/3316326-emerging-trends-in-electrical-engineering    /branches/316326-emerging-trends-in-electrical-engineering    301!
+/Branches/3316326-emerging-trends-in-electrical-engineering.html    /branches/316326-emerging-trends-in-electrical-engineering    301!
+/branches/elective-315363-product-design-and-development    /branches/elective-315367-product-design-and-development    301!
+/branches/elective-315363-product-design-and-development.html    /branches/elective-315367-product-design-and-development    301!
+/Branches/elective-315363-product-design-and-development.html    /branches/elective-315367-product-design-and-development    301!
+/sitemap.html    /sitemap    301!
+/Ads.txt    /ads.txt    301!
+
+# ------------------------------------------
+# 3. Uppercase path to canonical lowercase 301 redirects (Section 3.1)
+# ------------------------------------------
+/Blog/*    /blog/:splat    301!
+/Notes/*    /notes/:splat    301!
+/Branches/*    /branches/:splat    301!
+/CollegeInfo/*    /collegeinfo/:splat    301!
+/Jobs/*    /jobs/:splat    301!
+/Courses/*    /courses/:splat    301!
+/News/*    /news/:splat    301!
+
+# ------------------------------------------
+# 4. Jobs API Proxy
+# ------------------------------------------
+/api/jobs/filters    /.netlify/functions/jobs-filters    200
+/api/jobs            /.netlify/functions/jobs            200
+
+# ------------------------------------------
+# 5. Proper 404 catch-all for unknown pages (MUST BE AT THE BOTTOM)
+# ------------------------------------------
+/*    /404.html    404

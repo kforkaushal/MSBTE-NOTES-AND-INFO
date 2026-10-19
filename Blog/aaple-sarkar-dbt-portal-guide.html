@@ -128,6 +128,33 @@
             font-family: 'Clash Display', sans-serif;
         }
     </style>
+    <!-- Breadcrumb Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://msbtenotes-info.netlify.app/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Blog",
+          "item": "https://msbtenotes-info.netlify.app/blog/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "MahaDBT Guide",
+          "item": "https://msbtenotes-info.netlify.app/blog/aaple-sarkar-dbt-portal-guide"
+        }
+      ]
+    }
+    </script>
 </head>
 
 <body class="bg-gray-50 text-gray-900 pt-16">
@@ -167,7 +194,7 @@
                 <li>
                     <div class="flex items-center">
                         <span class="mx-2 text-gray-400">/</span>
-                        <a href="/Blog/"
+                        <a href="/blog/"
                             class="ml-1 text-sm font-medium text-gray-700 hover:text-blue-600 md:ml-2">Blog</a>
                     </div>
                 </li>
@@ -219,7 +246,7 @@
             <h3 class="text-xl font-bold text-gray-800 mt-6 mb-2">Method A: Registration using Aadhaar (Fastest)</h3>
             <ol class="list-decimal pl-5 space-y-2 text-gray-700">
                 <li>Go to <a href="http://www.aaplesarkardbt.gov.in" target="_blank"
-                        class="text-blue-600 underline">aaplesarkardbt.gov.in</a> and click on <strong>New Applicant
+                        class="text-blue-600 underline" rel="noopener noreferrer">aaplesarkardbt.gov.in</a> and click on <strong>New Applicant
                         Registration</strong>.</li>
                 <li>Select "Yes" for "Do you have Aadhaar Card?".</li>
                 <li>Choose Authentication Type: <strong>OTP</strong> (if mobile is linked) or
@@ -303,11 +330,11 @@
 
             <div class="flex flex-col md:flex-row gap-4 mt-8 justify-center">
                 <a href="https://mahadbt.maharashtra.gov.in/" target="_blank"
-                    class="inline-flex items-center justify-center bg-blue-600 text-white font-bold py-3 px-6 rounded-lg hover:bg-blue-700 transition">
+                    class="inline-flex items-center justify-center bg-blue-600 text-white font-bold py-3 px-6 rounded-lg hover:bg-blue-700 transition" rel="noopener noreferrer">
                     Go to MahaDBT Portal 🔗
                 </a>
-                <a href="/Blog/post-matric-scholarship-obc.html" target="_blank"
-                    class="inline-flex items-center justify-center bg-gray-100 text-gray-700 border border-gray-300 font-bold py-3 px-6 rounded-lg hover:bg-gray-200 transition">
+                <a href="/blog/post-matric-scholarship-obc.html" target="_blank"
+                    class="inline-flex items-center justify-center bg-gray-100 text-gray-700 border border-gray-300 font-bold py-3 px-6 rounded-lg hover:bg-gray-200 transition" rel="noopener noreferrer">
                     View OBC Scholarship details 📄
                 </a>
             </div>

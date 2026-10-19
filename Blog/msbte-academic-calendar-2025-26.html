@@ -120,6 +120,33 @@
             font-family: 'Clash Display', sans-serif;
         }
     </style>
+    <!-- Breadcrumb Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://msbtenotes-info.netlify.app/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Blog",
+          "item": "https://msbtenotes-info.netlify.app/blog/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Academic Calendar 2025-26",
+          "item": "https://msbtenotes-info.netlify.app/blog/msbte-academic-calendar-2025-26"
+        }
+      ]
+    }
+    </script>
 </head>
 
 <body class="bg-gray-50 text-gray-900 pt-16">
@@ -159,7 +186,7 @@
                 <li>
                     <div class="flex items-center">
                         <span class="mx-2 text-gray-400">/</span>
-                        <a href="/Blog/"
+                        <a href="/blog/"
                             class="ml-1 text-sm font-medium text-gray-700 hover:text-blue-600 md:ml-2">Blog</a>
                     </div>
                 </li>
@@ -208,7 +235,7 @@
             <div class="mb-10 text-center">
                 <a href="https://aissmspoly.org.in/wp-content/uploads/2025/06/Academic_Calendar-2025-26.pdf"
                     target="_blank"
-                    class="inline-flex items-center justify-center bg-blue-600 text-white font-bold py-3 px-8 rounded-full shadow-lg hover:bg-blue-700 transition transform hover:-translate-y-1">
+                    class="inline-flex items-center justify-center bg-blue-600 text-white font-bold py-3 px-8 rounded-full shadow-lg hover:bg-blue-700 transition transform hover:-translate-y-1" rel="noopener noreferrer">
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2" fill="none" viewBox="0 0 24 24"
                         stroke="currentColor">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -221,7 +248,7 @@
             <!-- Internal Link Opportunity -->
             <div class="bg-gray-50 p-4 rounded-lg mb-8 border border-gray-200">
                 <p class="font-medium text-gray-700">📚 Start studying early! Download <a
-                        href="/Blog/programming-in-c-312303.html" class="text-blue-600 hover:underline">Programming in C
+                        href="/blog/programming-in-c-312303.html" class="text-blue-600 hover:underline">Programming in C
                         Notes & Question Bank (K-Scheme)</a>.</p>
             </div>
 
