@@ -28,6 +28,12 @@ http://*    https://:splat    301
 /News/*    /news/:splat    301!
 
 # ------------------------------------------
-# 4. Proper 404 catch-all for unknown pages (MUST BE AT THE BOTTOM)
+# 4. Jobs API Proxy
+# ------------------------------------------
+/api/jobs/filters    /.netlify/functions/jobs-filters    200
+/api/jobs            /.netlify/functions/jobs            200
+
+# ------------------------------------------
+# 5. Proper 404 catch-all for unknown pages (MUST BE AT THE BOTTOM)
 # ------------------------------------------
 /*    /404.html    404

@@ -13,29 +13,29 @@
     </script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Job Portal - Find Your Next Career Opportunity</title>
+    <title>Jobs for Freshers &amp; Diploma/Engineering Students - MSBTE Notes &amp; Info</title>
     <meta name="description"
-        content="Explore the latest job openings for freshers and experienced professionals. Find opportunities in software development, web design, data science, and more on the MSBTE Notes & Info job portal.">
+        content="Explore verified job openings and internships for diploma and engineering freshers from top tech companies. Filter by work mode, job type, and experience.">
     <meta name="keywords"
-        content="Jobs, Job Portal, Careers, Tech Jobs, Fresher Jobs, Software Developer Jobs, MSBTE Jobs, Diploma Jobs">
+        content="Jobs, Job Portal, Careers, Tech Jobs, Fresher Jobs, Software Developer Jobs, MSBTE Jobs, Diploma Jobs, Engineering Jobs">
     <meta name="author" content="MSBTE Notes & Info Team">
     <meta name="robots" content="index,follow">
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://msbtenotes-info.netlify.app/jobs/">
-    <meta property="og:title" content="Job Portal - Find Your Next Career Opportunity">
+    <meta property="og:title" content="Jobs for Freshers &amp; Diploma/Engineering Students - MSBTE Notes &amp; Info">
     <meta property="og:description"
-        content="Explore the latest job openings for freshers and experienced professionals on the MSBTE Notes & Info job portal.">
+        content="Explore verified job openings and internships for diploma and engineering freshers from top tech companies.">
     <meta property="og:image"
         content="https://msbtenotes-info.netlify.app/resourse/MSBTE%20NOTES%20AND%20INFORMATION.png">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://msbtenotes-info.netlify.app/jobs/">
-    <meta property="twitter:title" content="Job Portal - Find Your Next Career Opportunity">
+    <meta property="twitter:title" content="Jobs for Freshers &amp; Diploma/Engineering Students - MSBTE Notes &amp; Info">
     <meta property="twitter:description"
-        content="Explore the latest job openings for freshers and experienced professionals on the MSBTE Notes & Info job portal.">
+        content="Explore verified job openings and internships for diploma and engineering freshers from top tech companies.">
     <meta property="twitter:image"
         content="https://msbtenotes-info.netlify.app/resourse/MSBTE%20NOTES%20AND%20INFORMATION.png">
 
@@ -54,7 +54,7 @@
       },{
         "@type": "ListItem", 
         "position": 2,
-        "name": "Job Portal"
+        "name": "Jobs"
       }]
     }
     </script>
@@ -69,10 +69,10 @@
 
     <!-- Preload critical resources -->
     <link rel="preload" href="/style.css" as="style">
+    <link rel="preload" href="./jobs.css" as="style">
     <link rel="preload" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" as="style">
     <link rel="preload" href="https://api.fontshare.com/v2/css?f[]=clash-display@600&display=swap" as="style">
     <link rel="preload" href="./jobs.js" as="script">
-    <link rel="preload" href="./jobs.json" as="fetch" crossorigin="anonymous">
 
     <!-- Preload key images -->
     <link rel="preload" as="image"
@@ -94,6 +94,7 @@
     <link href="https://api.fontshare.com/v2/css?f[]=clash-display@600&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="./jobs.css">
 
     <!-- AdSense & Funding Choices Scripts -->
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9227354288966999"
@@ -403,67 +404,59 @@
         </div>
 
         <!-- Hero Section -->
-        <header class="pt-20 pb-16 text-center px-4 bg-gradient-to-b from-blue-50 to-gray-50">
-            <h1 class="text-4xl md:text-5xl font-bold text-blue-600 font-display leading-tight">
-                Find Your Next Career Opportunity
+        <header class="pt-20 pb-12 text-center px-4 bg-gradient-to-b from-blue-50 to-gray-50 border-b border-gray-200">
+            <div class="mb-3">
+                <span class="jobs-partner-badge">
+                    <svg fill="currentColor" viewBox="0 0 20 20">
+                        <path fill-rule="evenodd" d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                    </svg>
+                    artha.link Verified Partner Listings
+                </span>
+            </div>
+            <h1 class="text-3xl sm:text-4xl md:text-5xl font-bold text-blue-700 font-display leading-tight">
+                Jobs for Freshers &amp; Diploma/Engineering Students
             </h1>
             <p class="mt-4 text-gray-600 text-base md:text-lg max-w-3xl mx-auto">
-                Explore job openings from top companies. Whether you're a fresher or an experienced
-                professional, your dream job is just a click away.
+                Explore verified job openings and internships tailored for MSBTE diploma holders and engineering graduates across top tech hubs.
             </p>
         </header>
 
         <!-- Why Choose Us Section -->
-        <section class="py-16 bg-white">
+        <section class="py-12 bg-white border-b border-gray-100">
             <div class="max-w-7xl mx-auto px-4 text-center">
-                <h2 class="text-3xl md:text-3xl font-bold text-gray-700 mb-8 font-display">
-                    Why Choose Our Job Portal?
+                <h2 class="text-2xl md:text-3xl font-bold text-gray-800 mb-3 font-display">
+                    Why Use Our Job Board?
                 </h2>
-                <p class="mt-4 text-gray-600 text-base md:text-lg max-w-3xl mx-auto mb-12">
-                    We're more than just a job board. We're a career launchpad built for MSBTE students.
+                <p class="text-gray-600 text-sm md:text-base max-w-2xl mx-auto mb-8">
+                    Direct access to genuine hiring opportunities curated for diploma and degree engineers.
                 </p>
-                <div class="grid md:grid-cols-3 gap-8 text-left">
-                    <!-- Feature 1 -->
+                <div class="grid md:grid-cols-3 gap-6 text-left">
                     <div class="bg-gray-50 p-6 rounded-xl border border-gray-200">
-                        <div
-                            class="flex items-center justify-center h-12 w-12 rounded-full bg-blue-100 text-blue-600 mb-4">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
-                                stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                        <div class="flex items-center justify-center h-12 w-12 rounded-full bg-blue-100 text-blue-600 mb-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                             </svg>
                         </div>
-                        <h3 class="text-xl font-semibold text-gray-800 mb-2">Curated for Students</h3>
-                        <p class="text-gray-600">Find jobs and internships specifically tailored for MSBTE diploma
-                            holders and freshers from top companies.</p>
+                        <h3 class="text-lg font-semibold text-gray-800 mb-2">Curated for Freshers</h3>
+                        <p class="text-gray-600 text-sm">Opportunities mapped to diploma &amp; degree skill sets, with entry-level and trainee listings from verified tech employers.</p>
                     </div>
-                    <!-- Feature 2 -->
                     <div class="bg-gray-50 p-6 rounded-xl border border-gray-200">
-                        <div
-                            class="flex items-center justify-center h-12 w-12 rounded-full bg-blue-100 text-blue-600 mb-4">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
-                                stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4" />
+                        <div class="flex items-center justify-center h-12 w-12 rounded-full bg-blue-100 text-blue-600 mb-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1" />
                             </svg>
                         </div>
-                        <h3 class="text-xl font-semibold text-gray-800 mb-2">Simplified Process</h3>
-                        <p class="text-gray-600">Easily search, filter, and bookmark jobs. Apply directly with official
-                            links—no unnecessary steps.</p>
+                        <h3 class="text-lg font-semibold text-gray-800 mb-2">Direct Official Applications</h3>
+                        <p class="text-gray-600 text-sm">Every listing connects directly to the employer's official careers link without hidden fees or third-party walls.</p>
                     </div>
-                    <!-- Feature 3 -->
                     <div class="bg-gray-50 p-6 rounded-xl border border-gray-200">
-                        <div
-                            class="flex items-center justify-center h-12 w-12 rounded-full bg-blue-100 text-blue-600 mb-4">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
-                                stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+                        <div class="flex items-center justify-center h-12 w-12 rounded-full bg-blue-100 text-blue-600 mb-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 5a2 2 0 012-2h10a2 2 0 012 2v16l-7-3.5L5 21V5z" />
                             </svg>
                         </div>
-                        <h3 class="text-xl font-semibold text-gray-800 mb-2">Integrated Resources</h3>
-                        <p class="text-gray-600">Leverage our vast library of notes, question papers, and guides to
-                            prepare for your interviews and excel in your career.</p>
+                        <h3 class="text-lg font-semibold text-gray-800 mb-2">Save &amp; Track Bookmarks</h3>
+                        <p class="text-gray-600 text-sm">Bookmark promising openings in one tap and revisit them anytime on your device without signing up.</p>
                     </div>
                 </div>
             </div>
@@ -479,61 +472,138 @@
         </script>
 
         <!-- Jobs Listing Section -->
-        <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
-            <!-- Search & Filters Section -->
-            <div class="bg-white p-6 rounded-xl shadow-md border border-gray-200 mb-10">
-                <div class="flex flex-col md:flex-row md:items-center gap-4">
-                    <div class="relative flex-1">
-                        <label for="searchInput" class="sr-only">Search for jobs</label>
-                        <input id="searchInput" type="text" placeholder="Search by job title, company, or keyword..."
-                            class="w-full py-3 pl-12 pr-4 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 transition text-gray-800 placeholder-gray-500 bg-gray-50" />
-                        <svg xmlns="http://www.w3.org/2000/svg"
-                            class="absolute left-4 top-1/2 transform -translate-y-1/2 h-5 w-5 text-gray-400 pointer-events-none"
-                            viewBox="0 0 20 20" fill="currentColor">
-                            <path fill-rule="evenodd"
-                                d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z"
-                                clip-rule="evenodd" />
+        <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8" id="jobsSection">
+            <!-- Search & Filters Panel -->
+            <div class="jobs-filter-panel">
+                <!-- Search Box -->
+                <div class="jobs-search-row">
+                    <label for="jobSearchInput" class="sr-only">Search by title, company, or keyword</label>
+                    <svg class="jobs-search-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                    </svg>
+                    <input id="jobSearchInput" 
+                           type="search" 
+                           class="jobs-search-input" 
+                           placeholder="Search by job title, company name, skill, or keyword..." 
+                           autocomplete="off" />
+                </div>
+
+                <!-- Dropdown Grid -->
+                <div class="jobs-filter-grid">
+                    <!-- Category -->
+                    <div class="jobs-select-wrap">
+                        <label for="categorySelect" class="sr-only">Category</label>
+                        <select id="categorySelect" class="jobs-select">
+                            <option value="">All Categories</option>
+                        </select>
+                        <svg class="jobs-select-arrow" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
                         </svg>
                     </div>
-                    <div class="flex items-center gap-3 flex-wrap">
-                        <label for="typeFilter" class="sr-only">Filter by job type</label>
-                        <select id="typeFilter"
-                            class="py-3 px-4 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 transition w-full md:w-auto text-gray-700 bg-white cursor-pointer">
+
+                    <!-- Job Type -->
+                    <div class="jobs-select-wrap">
+                        <label for="jobTypeSelect" class="sr-only">Job Type</label>
+                        <select id="jobTypeSelect" class="jobs-select">
                             <option value="">All Job Types</option>
-                            <option value="Full-time">Full-time</option>
-                            <option value="Part-time">Part-time</option>
-                            <option value="Internship">Internship</option>
-                            <option value="Fresher">Fresher</option>
+                            <option value="full-time">Full-time</option>
+                            <option value="internship">Internship</option>
+                            <option value="part-time">Part-time</option>
+                            <option value="contract">Contract</option>
                         </select>
-                        <label for="sortFilter" class="sr-only">Sort jobs</label>
-                        <select id="sortFilter"
-                            class="py-3 px-4 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 transition w-full md:w-auto text-gray-700 bg-white cursor-pointer">
-                            <option value="latest">Sort by: Latest</option>
-                            <option value="deadline">Sort by: Deadline</option>
+                        <svg class="jobs-select-arrow" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </div>
+
+                    <!-- Work Mode -->
+                    <div class="jobs-select-wrap">
+                        <label for="workModeSelect" class="sr-only">Work Mode</label>
+                        <select id="workModeSelect" class="jobs-select">
+                            <option value="">All Work Modes</option>
+                            <option value="remote">Remote</option>
+                            <option value="hybrid">Hybrid</option>
+                            <option value="onsite">Onsite</option>
                         </select>
-                        <a href="./bookmarked-jobs.html" id="viewBookmarksBtn"
-                            class="flex items-center justify-center py-3 px-4 bg-white border border-gray-300 rounded-lg text-gray-700 font-medium hover:bg-gray-50 transition w-full md:w-auto">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2 text-yellow-500"
-                                viewBox="0 0 20 20" fill="currentColor">
+                        <svg class="jobs-select-arrow" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </div>
+
+                    <!-- Location -->
+                    <div class="jobs-select-wrap">
+                        <label for="locationSelect" class="sr-only">Location</label>
+                        <select id="locationSelect" class="jobs-select">
+                            <option value="">India (All)</option>
+                            <option value="IN">All India (IN)</option>
+                            <option value="Maharashtra">Maharashtra</option>
+                            <option value="Pune">Pune</option>
+                            <option value="Mumbai">Mumbai</option>
+                            <option value="Bengaluru">Bengaluru</option>
+                        </select>
+                        <svg class="jobs-select-arrow" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </div>
+
+                    <!-- Sort -->
+                    <div class="jobs-select-wrap">
+                        <label for="sortSelect" class="sr-only">Sort by</label>
+                        <select id="sortSelect" class="jobs-select">
+                            <option value="most_relevant">Sort: Relevant</option>
+                            <option value="newest">Sort: Newest</option>
+                            <option value="high_cpa">Sort: Top Priority</option>
+                        </select>
+                        <svg class="jobs-select-arrow" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </div>
+                </div>
+
+                <!-- Filter Actions Row -->
+                <div class="jobs-filter-actions">
+                    <span id="resultsCount" class="jobs-results-count">Loading listings...</span>
+                    <div class="flex items-center gap-3">
+                        <button id="clearFiltersBtn" type="button" class="jobs-clear-btn" aria-label="Clear active filters">
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                            </svg>
+                            <span>Clear filters</span>
+                        </button>
+                        <a href="./bookmarked-jobs.html" class="inline-flex items-center gap-1.5 text-xs font-semibold text-gray-700 bg-gray-100 hover:bg-gray-200 px-3 py-1.5 rounded-md transition-colors">
+                            <svg class="w-3.5 h-3.5 text-amber-500" fill="currentColor" viewBox="0 0 20 20">
                                 <path d="M5 4a2 2 0 012-2h6a2 2 0 012 2v14l-5-2.5L5 18V4z" />
                             </svg>
-                            My Bookmarks
+                            <span>My Bookmarks</span>
                         </a>
                     </div>
                 </div>
             </div>
 
+            <!-- Status Container (Empty, Error, 429 Countdown) -->
+            <div id="statusContainer" class="hidden"></div>
+
             <!-- Jobs Grid -->
-            <div id="jobsGrid" class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3" aria-live="polite" aria-atomic="true">
+            <div id="jobsGrid" class="jobs-grid" aria-live="polite" aria-atomic="true">
+                <!-- Dynamically populated by jobs.js -->
             </div>
-            <p id="noResults" class="text-center text-gray-500 mt-8 hidden col-span-full">No jobs found matching your
-                criteria.</p>
-            <div class="text-center mt-12">
-                <button id="loadMoreBtn"
-                    class="bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 hidden shadow-sm">Load
-                    More Jobs</button>
+
+            <!-- Load More Wrap -->
+            <div id="loadMoreWrap" class="jobs-load-more-wrap hidden">
+                <button id="loadMoreBtn" class="btn-load-more" type="button" aria-label="Load more jobs">
+                    <span>Load More Jobs</span>
+                    <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                    </svg>
+                </button>
             </div>
+
+            <!-- Disclosure Note -->
+            <p class="jobs-disclosure-note">
+                Job listings are provided in partnership via <a href="https://artha.link" target="_blank" rel="noopener noreferrer">artha.link</a> partner listings. Applications are submitted directly to official company career pages.
+            </p>
         </section>
+
     </main>
 
     <!-- Ad Container 2 -->
