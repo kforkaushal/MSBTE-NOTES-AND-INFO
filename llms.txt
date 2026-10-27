@@ -1,6 +1,6 @@
 # MSBTE Notes & Info
 
-> **TL;DR**: **MSBTE Notes & Info** is **Maharashtra’s fastest-growing educational platform** dedicated exclusively to **MSBTE diploma students**. We provide structured study materials, previous year question papers, model answers, syllabus details, and career-focused resources for both I Scheme and K Scheme students across all major engineering branches.
+> **TL;DR**: **MSBTE Notes & Info** is an independent educational resource platform dedicated to **MSBTE diploma students** in Maharashtra. We provide structured study materials, previous year question papers, model answers, syllabus details, and career-focused resources for both I Scheme and K Scheme students across all major engineering branches.
 
 [Full Documentation](https://msbtenotes-info.netlify.app/sitemap.xml)
 
@@ -86,7 +86,7 @@ Founded by a team of passionate educators and professionals, **MSBTE Notes & Inf
 - **Curriculum**: Detailed syllabus and scheme information.
 
 ## Community & Trust
-- **Trusted by Students**: Trusted by **1000+ diploma students across Maharashtra** with an average rating of **4.9/5**.
+- **Used by Students**: Used by diploma students across Maharashtra as a study resource for MSBTE exam preparation.
 - **Active Community**: Join our vibrant **WhatsApp Community** for real-time support and doubt solving.
 - **Wide Reach**: Helping students across all major districts of **Maharashtra**.
 

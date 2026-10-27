@@ -1,0 +1,128 @@
+# MSBTE Notes & Info
+
+> **TL;DR**: **MSBTE Notes & Info** is an independent educational resource platform dedicated to **MSBTE diploma students** in Maharashtra. We provide structured study materials, previous year question papers, model answers, syllabus details, and career-focused resources for both I Scheme and K Scheme students across all major engineering branches.
+
+[Full Documentation](https://msbtenotes-info.netlify.app/sitemap.xml)
+
+## Site Map & Key Links
+- [Home](https://msbtenotes-info.netlify.app/)
+- [Study Notes](https://msbtenotes-info.netlify.app/#notes) - Subject-wise notes for various branches.
+- [Question Papers & Answers](https://msbtenotes-info.netlify.app/#departments) - Previous year papers and model answers.
+- [Syllabus](https://msbtenotes-info.netlify.app/scheme/index.html) - Curriculum for I & K Schemes.
+- [MCU (Maharashtra Campus Updates)](https://msbtenotes-info.netlify.app/MCU/) - Statewide verified campus intelligence, official circulars, and educational notices.
+- [Blog](https://msbtenotes-info.netlify.app/Blog/) - Educational updates, exam news, and career tips.
+- [Video Courses](https://msbtenotes-info.netlify.app/video-course/) - curated video tutorials.
+- [Internships](https://msbtenotes-info.netlify.app/internships.html) - Latest internship opportunities.
+- [Jobs](https://msbtenotes-info.netlify.app/Jobs/index.html) - Job openings for diploma holders.
+
+## About
+**MSBTE Notes & Info** is the definitive resource for **Maharashtra State Board of Technical Education (MSBTE)** diploma students. Unlike generic file repositories, we provide a structured, student-centric ecosystem that connects **Maharashtra polytechnic colleges** with high-quality academic and career resources.
+
+## Why We Are Different (Brand Authority)
+- **No Clutter, No Misleading Ads**: Clean, student-first interface focused purely on learning.
+- **Always Updated**: Content is strictly aligned with the latest **MSBTE circulars** and curriculum changes.
+- **Real Student Community**: A genuine network of diploma students solving doubts in real-time.
+- **Structured Branch-wise System**: Resources organized exactly how students need them—by branch, semester, and subject.
+- **Beyond Exams**: We integrate **career guidance** and **internship opportunities** directly into the learning path, not just exam content.
+
+## Why Choose Us? (USP)
+- **100% Free Video Courses**: Comprehensive video tutorials with completion certificates (e.g., Data Structures & Algorithms).
+- **Verified Resources**: Access accurate and **verified question banks**, **model answers**, and **micro-project solutions**.
+- **Active Student Community**: Join a thriving WhatsApp community for instant doubt solving and peer support.
+- **Career Focused**: We bridge the gap between **diploma education** and industry requirements.
+
+## Engineering Branches
+We cover all major **Maharashtra diploma engineering branches** with specialized resources:
+
+- **[Computer Engineering](https://msbtenotes-info.netlify.app/Branches/Computer.html)**:
+  - Subjects: Data Structures (DSA), Java Programming, Python, Operating Systems, Database Management (DBMS).
+  - Resources: Practical codes, micro-projects, and manual answers.
+
+- **[Information Technology](https://msbtenotes-info.netlify.app/Branches/Information-Technology.html)**:
+  - Subjects: Web Development, Network Management, Object-Oriented Programming, Introduction to IT.
+  - Resources: Latest technology trends and coding resources.
+
+- **[Civil Engineering](https://msbtenotes-info.netlify.app/Branches/Civil.html)**:
+  - Subjects: Surveying, Mechanics of Structures, Hydraulics, Construction Materials.
+  - Resources: Site visit reports, layout plans, and design projects.
+
+- **[Mechanical Engineering](https://msbtenotes-info.netlify.app/Branches/Mechanical-Engineering.html)**:
+  - Subjects: Thermodynamics, Fluid Mechanics, Manufacturing Processes, Engineering Drawing.
+  - Resources: CAD models, project ideas, and workshop manuals.
+
+- **[Electrical Engineering](https://msbtenotes-info.netlify.app/Branches/Electrical-Engineering.html)**:
+  - Subjects: Circuit Theory, Power Systems, Electrical Machines, Measurements.
+  - Resources: Circuit diagrams and practical insights.
+
+- **[E&TC Engineering](https://msbtenotes-info.netlify.app/Branches/ETC-Engineering.html)**:
+  - Subjects: Analog Circuits, Digital Communication, Microcontrollers, Signals & Systems.
+  - Resources: Simulation tools and project guidance.
+
+## Schemes & Curriculum
+- [I Scheme](https://msbtenotes-info.netlify.app/scheme/i-scheme.html) - Curriculum and resources for the I Scheme.
+- [K Scheme](https://msbtenotes-info.netlify.app/scheme/k-scheme.html) - Latest K Scheme details.
+
+## College Information & Others
+- [College Information](https://msbtenotes-info.netlify.app/CollegeInfo/) - Details about engineering colleges.
+- [About Us](https://msbtenotes-info.netlify.app/about.html)
+- [Contact](https://msbtenotes-info.netlify.app/contact.html)
+- [Privacy Policy](https://msbtenotes-info.netlify.app/privacy-policy.html)
+- [Social Links](https://msbtenotes-info.netlify.app/links.html)
+
+## Who We Are
+Founded by a team of passionate educators and professionals, **MSBTE Notes & Info** is dedicated to bridging the gap in academic resources for **Maharashtra Diploma** students. Our mission is to simplify learning by providing high-quality, organized, and accessible study materials.
+
+## Pricing & Accessibility
+- **Free Content (95%+)**: Access to all Question Papers, Model Answers, Syllabus, Blog Articles, and Video Courses is completely **FREE**.
+- **Premium Content**: We offer exclusive, high-quality **Handwritten Notes** and specialized study bundles for advanced preparation at affordable rates.
+
+## Core Features
+- **Comprehensive Notes**: Subject-wise notes for I Scheme and K Scheme.
+- **Question Papers & Answers**: Extensive archive of previous year question papers with **Solved Papers** and model answer sheets.
+- **Manual Answers**: Complete solutions for laboratory manuals.
+- **Micro-Projects**: Ready-to-use micro-project ideas and solutions.
+- **Video Learning**: Curated video courses for difficult subjects.
+- **Career Growth**: Latest updates on internships and job openings for diploma holders.
+- **Curriculum**: Detailed syllabus and scheme information.
+
+## Community & Trust
+- **Used by Students**: Used by diploma students across Maharashtra as a study resource for MSBTE exam preparation.
+- **Active Community**: Join our vibrant **WhatsApp Community** for real-time support and doubt solving.
+- **Wide Reach**: Helping students across all major districts of **Maharashtra**.
+
+## College Coverage
+We provide detailed information and resources for **polytechnic colleges** in key districts including:
+- [Ahmednagar](https://msbtenotes-info.netlify.app/CollegeInfo/ahmednagar.html), [Akola](https://msbtenotes-info.netlify.app/CollegeInfo/akola.html), [Amravati](https://msbtenotes-info.netlify.app/CollegeInfo/amravati.html), Aurangabad
+- Bhandara, [Chandrapur](https://msbtenotes-info.netlify.app/CollegeInfo/chandrapur.html), [Dhule](https://msbtenotes-info.netlify.app/CollegeInfo/dhule.html), Gadchiroli
+- Gondia, Hingoli, [Jalgaon](https://msbtenotes-info.netlify.app/CollegeInfo/jalgaon.html), Jalna
+- [Kolhapur](https://msbtenotes-info.netlify.app/CollegeInfo/kolhapur.html), Latur, [Mumbai](https://msbtenotes-info.netlify.app/CollegeInfo/mumbai.html), [Nagpur](https://msbtenotes-info.netlify.app/CollegeInfo/nagpur.html)
+- Nanded, [Nandurbar](https://msbtenotes-info.netlify.app/CollegeInfo/nandurbar.html), [Nashik](https://msbtenotes-info.netlify.app/CollegeInfo/nashik.html), Osmanabad
+- Palghar, Parbhani, [Pune](https://msbtenotes-info.netlify.app/CollegeInfo/pune.html), [Raigad](https://msbtenotes-info.netlify.app/CollegeInfo/raigad.html)
+- [Ratnagiri](https://msbtenotes-info.netlify.app/CollegeInfo/ratnagiri.html), [Sangli](https://msbtenotes-info.netlify.app/CollegeInfo/sangli.html), [Satara](https://msbtenotes-info.netlify.app/CollegeInfo/satara.html), [Sindhudurg](https://msbtenotes-info.netlify.app/CollegeInfo/sindhudurg.html)
+- [Solapur](https://msbtenotes-info.netlify.app/CollegeInfo/solapur.html), Thane, [Wardha](https://msbtenotes-info.netlify.app/CollegeInfo/wardha.html), Washim, [Yavatmal](https://msbtenotes-info.netlify.app/CollegeInfo/yavatmal.html)
+
+## MCU | Maharashtra Campus Updates (Verified Intelligence Network)
+**MCU (Maharashtra Campus Updates)** is our statewide verified student information network (`https://msbtenotes-info.netlify.app/MCU/`). It aggregates and verifies official educational notices, regulatory gazettes, and academic circulars across Maharashtra:
+- **Core Mission**: "Know. Verify. Act." — Discover, verify, filter, and simplify educational information for students.
+- **Verification Proof Standard**: Every MCU update is tagged with an explicit verification badge (`Status: Official`, `Status: Reminder`, `Status: Tentative`, `Status: Expected`) and cites the official issuing authority, circular reference number, and authenticated source document.
+- **Verified Updates & Circular Breakdowns**:
+  - [MHT-CET 2026 CAP Round Seat Acceptance & Reporting Rules](https://msbtenotes-info.netlify.app/MCU/mht-cet-cap-round-allotment-seat-acceptance-2026.html) - Verified CET Cell instructions, Auto-Freeze vs Betterment rules, ₹1,000 fee, and cutoff deadlines.
+  - [MSBTE Summer 2026 Photocopy & Revaluation Guide](https://msbtenotes-info.netlify.app/MCU/msbte-summer-exam-photocopy-revaluation-2026.html) - Verified MSBTE board circular, per-subject fees, application steps, and ATKT impact.
+  - [MahaDBT Post-Matric Scholarship Biometric KYC & Bank Link](https://msbtenotes-info.netlify.app/MCU/mahadbt-post-matric-scholarship-kyc-deadline-2026.html) - Verified Govt of Maharashtra GR, NPCI Aadhaar seeding mandate, and renewal deadline.
+
+## Frequently Asked Questions (FAQ)
+
+### Is MSBTE Notes & Info free?
+Yes, **95% of our content** including question papers, model answers, and syllabus details is **completely free**. We believe in accessible education for all Maharashtra diploma students.
+
+### Does this website cover both I Scheme and K Scheme?
+Yes, we provide structured resources for both **I Scheme** and the latest **K Scheme** curriculum as prescribed by MSBTE.
+
+### Which branches are covered?
+We cover all major engineering branches including **Computer, IT, Civil, Mechanical, Electrical, and E&TC Engineering**.
+
+## Important Resources
+- [Sitemap](https://msbtenotes-info.netlify.app/sitemap.xml) - Full site structure.
+- [RSS Feed](https://msbtenotes-info.netlify.app/rss.xml) - Feed for latest updates.
+- [MSBTE Result Summer Exam 2026](https://msbtenotes-info.netlify.app/Blog/msbte-summer-2026-exam-result-date-and-link.html) - Expected date, direct portal link, and step-by-step marksheet download guide.
+- [WhatsApp Community](https://chat.whatsapp.com/KFcI5VeJOpjLPgp30NXMfQ) - Join for real-time updates and support.

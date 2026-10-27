@@ -1,13 +1,49 @@
 User-agent: *
 Allow: /
 
-# Block verification files
+# Block verification files (not for public indexing)
 Disallow: /googlef85124961115b472.html
 Disallow: /pinterest-9961f.html
 Disallow: /yandex_7a3f92ea9dc08f64.html
 
 # Block duplicate sitemap file
 Disallow: /sitemap1.xml
+
+# Search engines
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+# AI search / retrieval (allow to appear in AI search results)
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: Claude-SearchBot
+Allow: /
+
+User-agent: Claude-User
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Perplexity-User
+Allow: /
+
+# AI training crawlers (explicitly allowed for model knowledge)
+User-agent: GPTBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
 
 # Primary Sitemap (canonical domain)
 Sitemap: https://msbtenotes-info.netlify.app/sitemap.xml
