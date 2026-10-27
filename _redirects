@@ -1,10 +1,5 @@
 # ------------------------------------------
-# 1. Force HTTPS (SEO requirement)
-# ------------------------------------------
-http://*    https://:splat    301
-
-# ------------------------------------------
-# 2. Known legacy slug & course code fixes (Issue 1.13 & Phase 2)
+# 1. Known legacy slug & course code fixes (Issue 1.13 & Phase 2)
 # ------------------------------------------
 /branches/315004-internship12-weeks    /branches/315004-internship-12-weeks    301!
 /Branches/315004-internship12-weeks.html    /branches/315004-internship-12-weeks    301!
