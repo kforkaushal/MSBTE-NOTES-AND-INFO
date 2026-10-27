@@ -16,7 +16,7 @@
 - **Question Banks & Model Answers**: Previous year question papers, unit test papers, and model answers.
 - **Lab Manuals & Practical Solutions**: Solved laboratory manuals and experiment guides.
 - **Free Video Courses**: Practical programming and technical courses with certificates.
-- **Jobs & Internships Board**: Live job and internship listings curated for diploma holders via Netlify functions.
+- **Jobs & Internships Board**: Curated job and internship directory for diploma holders.
 - **AI-Search Ready & SEO Optimized**: Structured JSON-LD schemas (`EducationalOrganization`, `BreadcrumbList`, `BlogPosting`, `FAQPage`), standards-compliant `robots.txt`, XML sitemaps, and `llms.txt`.
 
 ---
@@ -58,8 +58,7 @@ MSBTE-NOTES-AND-INFO/
 │   └── i-scheme.html       # I-Scheme course structures
 │
 ├── Blog/                   # Educational articles, exam tips & news
-├── Jobs/                   # Job listings and details
-└── netlify/                # Serverless functions (Jobs API integration)
+└── Jobs/                   # Job listings and details
 ```
 
 ---
@@ -68,9 +67,8 @@ MSBTE-NOTES-AND-INFO/
 
 - **Core**: Semantic HTML5, Vanilla JavaScript (ES6+)
 - **Styling**: Tailwind CSS & Vanilla CSS
-- **Serverless Backend**: Netlify Functions (Node.js >= 18)
 - **Structured Data**: Schema.org JSON-LD (`BreadcrumbList`, `EducationalOrganization`, `BlogPosting`, `FAQPage`)
-- **Hosting & CI/CD**: Netlify (Automatic deployments from branch `Public`)
+- **Hosting & CI/CD**: Netlify / GitHub Pages (Static hosting)
 
 ---
 
