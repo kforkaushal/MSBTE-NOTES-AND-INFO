@@ -8,12 +8,12 @@
     <!-- ═══ PRIMARY SEO ══════════════════════════════════════════════ -->
     <title>Student Forum – Chat, Ask &amp; Discuss | MSBTE Notes &amp; Info</title>
     <meta name="description"
-        content="Join the MSBTE Notes &amp; Info live student forum. Ask doubts, share notes, and chat with diploma students from Computer, IT, Mechanical, Civil &amp; Electrical branches. Free, safe &amp; real-time.">
+        content="Join the MSBTE live student discussion forum. Ask questions, share study notes, clear doubts, and connect with fellow diploma engineering peers.">
     <meta name="keywords"
         content="MSBTE forum, MSBTE student chat, diploma student discussion, MSBTE doubt solving, MSBTE K-scheme, MSBTE I-scheme, MSBTE notes, diploma engineering India, polytechnic forum, MSBTE online community">
     <meta name="author" content="MSBTE Notes &amp; Info">
     <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
-    <link rel="canonical" href="https://msbtenotes-info.netlify.app/forum.html">
+    <link rel="canonical" href="https://msbtenotes-info.netlify.app/forum" />
 
     <!-- Favicon and App Icons -->
     <link rel="apple-touch-icon" sizes="180x180" href="resourse/apple-touch-icon.png">
@@ -30,7 +30,7 @@
     <meta property="og:title" content="Student Forum – Chat &amp; Discuss | MSBTE Notes &amp; Info">
     <meta property="og:description"
         content="Live chat forum for MSBTE diploma students. Ask doubts, discuss subjects, share notes — all in one place. Join free!">
-    <meta property="og:url" content="https://msbtenotes-info.netlify.app/forum.html">
+    <meta property="og:url" content="https://msbtenotes-info.netlify.app/forum">
     <meta property="og:image" content="https://msbtenotes-info.netlify.app/assets/og-forum.png">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
@@ -256,7 +256,7 @@
     <main class="flex-grow flex flex-col w-full relative h-[calc(100%-64px)] overflow-hidden">
 
         <!-- Initial Auth Screen Container -->
-        <div id="authContainer" class="absolute inset-0 z-40 bg-gray-50 flex flex-col items-center justify-center p-4">
+        <div id="authContainer" class="absolute inset-0 z-40 bg-gray-50 flex flex-col items-center justify-start sm:justify-center p-4 overflow-y-auto">
             <!-- Headers -->
             <div class="text-center mb-8">
                 <h1 class="text-3xl md:text-5xl font-display font-extrabold text-blue-600 mb-2">Student Forum</h1>
@@ -320,6 +320,25 @@
                     class="mt-4 text-green-600 text-sm hidden bg-green-50 p-3 rounded-lg border border-green-100">
                 </p>
             </div>
+
+            <!-- Forum Guidelines & Information for Students and Crawlers -->
+            <article class="mt-8 max-w-md w-full bg-white p-6 rounded-2xl shadow-sm border border-gray-100 text-left">
+                <h2 class="text-lg font-bold text-gray-900 font-display mb-2">About the MSBTE Student Discussion Forum</h2>
+                <p class="text-xs text-gray-600 leading-relaxed mb-3">
+                    The MSBTE Student Forum is a free, real-time collaboration space created specifically for polytechnic diploma students across Maharashtra. Whether you are studying under the K-Scheme or I-Scheme, our forum connects you directly with peers and mentors.
+                </p>
+                <h3 class="text-sm font-bold text-gray-800 font-display mb-1">What You Can Discuss:</h3>
+                <ul class="text-xs text-gray-600 space-y-1 list-disc pl-4 mb-3">
+                    <li>Branch-specific questions (Computer, IT, Mechanical, Civil, Electrical, and ENTC).</li>
+                    <li>K-Scheme semester exam doubts, previous year questions, and model answers.</li>
+                    <li>Direct Second Year Engineering (DSE) admission guidance and cutoff comparisons.</li>
+                    <li>Capstone project ideas, micro-projects, and seminar report feedback.</li>
+                </ul>
+                <h3 class="text-sm font-bold text-gray-800 font-display mb-1">Community Standards:</h3>
+                <p class="text-xs text-gray-500 leading-relaxed">
+                    Please keep discussions academic, respectful, and constructive. Spamming, offensive language, or posting copyrighted commercial materials is strictly prohibited.
+                </p>
+            </article>
         </div>
 
         <!-- Chat UI (Hidden Initially) -->

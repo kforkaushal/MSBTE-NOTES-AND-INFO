@@ -83,13 +83,13 @@
     <priority>0.60</priority>
   </url>
   <url>
-    <loc>https://msbtenotes-info.netlify.app/about.html</loc>
+    <loc>https://msbtenotes-info.netlify.app/about</loc>
     <lastmod>2026-10-08</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.50</priority>
   </url>
   <url>
-    <loc>https://msbtenotes-info.netlify.app/contact.html</loc>
+    <loc>https://msbtenotes-info.netlify.app/contact</loc>
     <lastmod>2026-10-08</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.50</priority>
