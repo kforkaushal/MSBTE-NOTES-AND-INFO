@@ -67,7 +67,8 @@
     content="Free branch-wise and semester-wise MSBTE diploma notes, K-Scheme study material, question papers, and lab manuals for Maharashtra polytechnic students." />
   <meta property="og:image"
     content="https://msbtenotes-info.netlify.app/resourse/MSBTE%20NOTES%20AND%20INFORMATION.png">
-  <meta property="og:image:alt" content="MSBTE Notes &amp; Info logo &#8211; independent diploma study resource for Maharashtra students">
+  <meta property="og:image:alt"
+    content="MSBTE Notes &amp; Info logo &#8211; independent diploma study resource for Maharashtra students">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
   <meta property="og:url" content="https://msbtenotes-info.netlify.app/">
@@ -86,7 +87,8 @@
     content="Free branch-wise and semester-wise MSBTE diploma notes, K-Scheme study material, question papers, and lab manuals for Maharashtra polytechnic students." />
   <meta name="twitter:image"
     content="https://msbtenotes-info.netlify.app/resourse/MSBTE%20NOTES%20AND%20INFORMATION.png">
-  <meta name="twitter:image:alt" content="MSBTE Notes &amp; Info &#8211; Diploma Study Resources for Maharashtra Students">
+  <meta name="twitter:image:alt"
+    content="MSBTE Notes &amp; Info &#8211; Diploma Study Resources for Maharashtra Students">
 
   <!-- Enhanced Structured Data for Educational Organization & WebSite -->
   <script type="application/ld+json">
@@ -313,24 +315,85 @@
       const menuIcon = document.getElementById('menuIcon');
       const closeIcon = document.getElementById('closeIcon');
 
-      const isOpen = !menu.classList.contains('translate-x-full');
+      if (!menu) return;
+      const isClosed = menu.classList.contains('translate-x-full');
 
-      if (isOpen) {
-        // Close it
-        menu.classList.add('translate-x-full');
-        menuIcon.classList.remove('hidden');
-        closeIcon.classList.add('hidden');
-        btn.setAttribute('aria-expanded', 'false');
-        document.body.style.overflow = ''; // Allow scrolling
-      } else {
-        // Open it
+      if (isClosed) {
         menu.classList.remove('translate-x-full');
-        menuIcon.classList.add('hidden');
-        closeIcon.classList.remove('hidden');
-        btn.setAttribute('aria-expanded', 'true');
-        document.body.style.overflow = 'hidden'; // Prevent body scroll
+        if (menuIcon) menuIcon.classList.add('hidden');
+        if (closeIcon) closeIcon.classList.remove('hidden');
+        if (btn) btn.setAttribute('aria-expanded', 'true');
+        document.body.style.overflow = 'hidden';
+      } else {
+        menu.classList.add('translate-x-full');
+        if (menuIcon) menuIcon.classList.remove('hidden');
+        if (closeIcon) closeIcon.classList.add('hidden');
+        if (btn) btn.setAttribute('aria-expanded', 'false');
+        document.body.style.overflow = '';
       }
     }
+
+    function toggleMobileSubmenu(submenuId, arrowId) {
+      const sub = document.getElementById(submenuId);
+      const arr = document.getElementById(arrowId);
+      if (!sub) return;
+      const isHidden = sub.classList.contains('hidden');
+      if (isHidden) {
+        sub.classList.remove('hidden');
+        if (arr) arr.classList.add('rotate-180');
+      } else {
+        sub.classList.add('hidden');
+        if (arr) arr.classList.remove('rotate-180');
+      }
+    }
+
+    function toggleDropdown(btn, event) {
+      if (event) {
+        event.stopPropagation();
+      }
+      const parent = btn.closest('.nav-dropdown');
+      if (!parent) return;
+      const isOpen = parent.classList.contains('is-open');
+
+      // Close other open dropdowns
+      document.querySelectorAll('.nav-dropdown').forEach(d => {
+        if (d !== parent) {
+          d.classList.remove('is-open');
+          const b = d.querySelector('button[aria-expanded]');
+          if (b) b.setAttribute('aria-expanded', 'false');
+        }
+      });
+
+      if (isOpen) {
+        parent.classList.remove('is-open');
+        btn.setAttribute('aria-expanded', 'false');
+      } else {
+        parent.classList.add('is-open');
+        btn.setAttribute('aria-expanded', 'true');
+      }
+    }
+
+    // Close desktop dropdowns when clicking outside
+    document.addEventListener('click', function (e) {
+      if (!e.target.closest('.nav-dropdown')) {
+        document.querySelectorAll('.nav-dropdown').forEach(d => {
+          d.classList.remove('is-open');
+          const b = d.querySelector('button[aria-expanded]');
+          if (b) b.setAttribute('aria-expanded', 'false');
+        });
+      }
+    });
+
+    // Close dropdowns on Escape key
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape') {
+        document.querySelectorAll('.nav-dropdown').forEach(d => {
+          d.classList.remove('is-open');
+          const b = d.querySelector('button[aria-expanded]');
+          if (b) b.setAttribute('aria-expanded', 'false');
+        });
+      }
+    });
   </script>
   <script async src="https://fundingchoicesmessages.google.com/i/pub-9227354288966999?ers=1"></script>
   <script>(function () { function signalGooglefcPresent() { if (!window.frames['googlefcPresent']) { if (document.body) { const iframe = document.createElement('iframe'); iframe.style = 'width: 0; height: 0; border: none; z-index: -1000; left: -1000px; top: -1000px;'; iframe.style.display = 'none'; iframe.name = 'googlefcPresent'; document.body.appendChild(iframe); } else { setTimeout(signalGooglefcPresent, 0); } } } signalGooglefcPresent(); })();</script>
@@ -363,16 +426,54 @@
         </div>
 
         <!-- Middle: Desktop Nav -->
-        <div class="hidden md:flex space-x-6">
+        <div class="hidden md:flex space-x-6 items-center">
           <a href="/" class="hover:text-blue-500 font-medium">Home</a>
-          <a href="#notes" class="hover:text-blue-500 font-medium">Notes</a>
+
+          <!-- Notes Dropdown -->
+          <div class="relative group py-2 nav-dropdown">
+            <button type="button" onclick="toggleDropdown(this, event)" class="flex items-center gap-1 hover:text-blue-500 font-medium focus:outline-none" aria-haspopup="true" aria-expanded="false">
+              <span>Notes</span>
+              <svg class="w-4 h-4 transition-transform duration-200 group-hover:rotate-180 dropdown-arrow" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+            </button>
+            <div class="dropdown-menu absolute left-0 top-full -mt-1 w-56 bg-white rounded-xl shadow-xl border border-gray-100 py-2 hidden group-hover:block transition-all z-50">
+              <a href="/#notes" class="flex items-center gap-2.5 px-4 py-2.5 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-600 font-medium transition">
+                <span class="text-base">📝</span>
+                <span>Subject Notes</span>
+              </a>
+              <a href="/pyq/" class="flex items-center gap-2.5 px-4 py-2.5 text-sm text-blue-600 font-bold hover:bg-blue-50 transition border-l-2 border-blue-600 bg-blue-50/40">
+                <span class="text-base">📚</span>
+                <span>Question Papers (PYQ)</span>
+              </a>
+              <a href="/video-course/" class="flex items-center gap-2.5 px-4 py-2.5 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-600 font-medium transition">
+                <span class="text-base">🎥</span>
+                <span>Video Courses</span>
+              </a>
+            </div>
+          </div>
+
           <a href="#departments" class="hover:text-blue-500 font-medium">Departments</a>
           <a href="#blogs" class="hover:text-blue-500 font-medium">Blog</a>
           <a href="/news/" class="hover:text-blue-500 font-medium">News</a>
           <a href="/collegeinfo/" class="hover:text-blue-500 font-medium">Colleges</a>
-          <a href="/video-course/" class="hover:text-blue-500 font-medium">Video Courses</a>
-          <a href="/internships.html" class="hover:text-blue-500 font-medium">Internships</a>
-          <a href="/jobs/index.html" class="hover:text-blue-500 font-medium">Jobs</a>
+
+          <!-- Jobs Dropdown -->
+          <div class="relative group py-2 nav-dropdown">
+            <button type="button" onclick="toggleDropdown(this, event)" class="flex items-center gap-1 hover:text-blue-500 font-medium focus:outline-none" aria-haspopup="true" aria-expanded="false">
+              <span>Jobs</span>
+              <svg class="w-4 h-4 transition-transform duration-200 group-hover:rotate-180 dropdown-arrow" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+            </button>
+            <div class="dropdown-menu absolute left-0 top-full -mt-1 w-52 bg-white rounded-xl shadow-xl border border-gray-100 py-2 hidden group-hover:block transition-all z-50">
+              <a href="/jobs/index.html" class="flex items-center gap-2.5 px-4 py-2.5 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-600 font-medium transition">
+                <span class="text-base">💼</span>
+                <span>Jobs Portal</span>
+              </a>
+              <a href="/internships.html" class="flex items-center gap-2.5 px-4 py-2.5 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-600 font-medium transition">
+                <span class="text-base">🎓</span>
+                <span>Internships</span>
+              </a>
+            </div>
+          </div>
+
           <a href="#about" class="hover:text-blue-500 font-medium">About</a>
           <a href="#contact" class="hover:text-blue-500 font-medium">Contact</a>
         </div>
@@ -380,7 +481,7 @@
         <!-- Right: Mobile Menu Toggle -->
         <div class="flex items-center md:hidden">
           <button onclick="toggleMobileMenu()"
-            class="mobile-menu-button p-2 text-gray-600 hover:text-blue-600 transition-colors" aria-controls="mobileNav"
+            class="mobile-menu-button p-2 text-gray-600 hover:text-blue-600 transition-colors focus:outline-none" aria-controls="mobileNav"
             aria-expanded="false" aria-label="Open menu">
             <svg id="menuIcon" xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 transition-transform duration-300"
               fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -396,45 +497,110 @@
       </div>
     </div>
 
-    <!-- Modern Mobile Menu Overlay -->
+    <!-- Modern Mobile Menu Drawer -->
     <div id="mobileNav"
-      class="fixed inset-0 bg-white z-[60] transform translate-x-full transition-transform duration-300 ease-in-out md:hidden overflow-y-auto pt-20 px-6">
+      class="fixed inset-0 bg-white transform translate-x-full transition-transform duration-300 ease-in-out md:hidden overflow-y-auto pt-20 px-6 shadow-2xl"
+      style="z-index: 9999;">
 
       <!-- Close button for overlay -->
       <button onclick="toggleMobileMenu()"
-        class="absolute top-6 right-6 p-2 text-gray-600 hover:text-blue-600 transition-colors" aria-label="Close menu">
+        class="absolute top-6 right-6 p-2 text-gray-600 hover:text-blue-600 transition-colors focus:outline-none" aria-label="Close menu">
         <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
         </svg>
       </button>
 
-      <div class="flex flex-col space-y-6">
+      <div class="flex flex-col space-y-3 pb-8">
         <a href="/" onclick="toggleMobileMenu()"
-          class="text-2xl font-display font-bold text-gray-900 border-b border-gray-100 pb-2">Home</a>
-        <a href="#notes" onclick="toggleMobileMenu()"
-          class="text-2xl font-display font-bold text-gray-900 border-b border-gray-100 pb-2">Notes</a>
-        <a href="#departments" onclick="toggleMobileMenu()"
-          class="text-2xl font-display font-bold text-gray-900 border-b border-gray-100 pb-2">Departments</a>
-        <a href="#blogs" onclick="toggleMobileMenu()"
-          class="text-2xl font-display font-bold text-gray-900 border-b border-gray-100 pb-2">Blog</a>
-        <a href="/news/" onclick="toggleMobileMenu()"
-          class="text-2xl font-display font-bold text-red-600 border-b border-gray-100 pb-2">🔴 Breaking News</a>
-        <a href="/collegeinfo/" onclick="toggleMobileMenu()"
-          class="text-2xl font-display font-bold text-gray-900 border-b border-gray-100 pb-2">Colleges</a>
-        <a href="/video-course/" onclick="toggleMobileMenu()"
-          class="text-2xl font-display font-bold text-gray-900 border-b border-gray-100 pb-2">Video Courses</a>
-        <a href="/internships.html" onclick="toggleMobileMenu()"
-          class="text-2xl font-display font-bold text-gray-900 border-b border-gray-100 pb-2">Internships</a>
-        <a href="/jobs/index.html" onclick="toggleMobileMenu()"
-          class="text-2xl font-display font-bold text-gray-900 border-b border-gray-100 pb-2">Jobs</a>
-        <a href="#about" onclick="toggleMobileMenu()"
-          class="text-2xl font-display font-bold text-gray-900 border-b border-gray-100 pb-2">About</a>
-        <a href="#contact" onclick="toggleMobileMenu()"
-          class="text-2xl font-display font-bold text-gray-900 border-b border-gray-100 pb-2">Contact</a>
+          class="text-xl font-display font-bold text-gray-900 border-b border-gray-100 pb-2">Home</a>
 
-        <div class="pt-8">
-          <a href="https://chat.whatsapp.com/KFcI5VeJOpjLPgp30NXMfQ"
-            class="block w-full bg-green-500 text-white text-center py-4 rounded-xl font-bold shadow-lg shadow-green-200">
+        <!-- Notes Mobile Submenu (Accordion) -->
+        <div class="border-b border-gray-100 pb-2">
+          <button type="button" onclick="toggleMobileSubmenu('mobileNotesSubmenu', 'mobileNotesArrow')"
+            class="w-full flex items-center justify-between text-xl font-display font-bold text-gray-900 py-1.5 focus:outline-none">
+            <span class="flex items-center gap-2">
+              <span>Notes &amp; Study</span>
+              <span class="text-xs font-sans font-semibold px-2 py-0.5 rounded-full bg-blue-100 text-blue-700">3 Links</span>
+            </span>
+            <svg id="mobileNotesArrow" class="w-5 h-5 text-gray-500 transition-transform duration-200 transform rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+            </svg>
+          </button>
+          <div id="mobileNotesSubmenu" class="space-y-1 pl-2 pt-1 pb-1 transition-all">
+            <a href="/#notes" onclick="toggleMobileMenu()" class="flex items-center gap-2.5 py-2 px-3 rounded-lg text-base font-medium text-gray-700 hover:bg-blue-50 hover:text-blue-600 transition">
+              <span class="text-lg">📝</span>
+              <div>
+                <div class="font-semibold text-gray-900">Subject Notes</div>
+                <div class="text-xs text-gray-500">K-Scheme diploma PDF study notes</div>
+              </div>
+            </a>
+            <a href="/pyq/" onclick="toggleMobileMenu()" class="flex items-center gap-2.5 py-2 px-3 rounded-lg text-base font-bold text-blue-600 bg-blue-50/80 hover:bg-blue-50 transition border border-blue-100">
+              <span class="text-lg">📚</span>
+              <div>
+                <div class="font-bold text-blue-600">Question Papers (PYQ)</div>
+                <div class="text-xs text-blue-500">Summer 2026 &amp; Winter 2025 papers</div>
+              </div>
+            </a>
+            <a href="/video-course/" onclick="toggleMobileMenu()" class="flex items-center gap-2.5 py-2 px-3 rounded-lg text-base font-medium text-gray-700 hover:bg-blue-50 hover:text-blue-600 transition">
+              <span class="text-lg">🎥</span>
+              <div>
+                <div class="font-semibold text-gray-900">Video Courses</div>
+                <div class="text-xs text-gray-500">Video tutorials and concept lectures</div>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <a href="#departments" onclick="toggleMobileMenu()"
+          class="text-xl font-display font-bold text-gray-900 border-b border-gray-100 pb-2">Departments</a>
+        <a href="#blogs" onclick="toggleMobileMenu()"
+          class="text-xl font-display font-bold text-gray-900 border-b border-gray-100 pb-2">Blog</a>
+        <a href="/news/" onclick="toggleMobileMenu()"
+          class="text-xl font-display font-bold text-red-600 border-b border-gray-100 pb-2 flex items-center justify-between">
+          <span>🔴 Breaking News</span>
+          <span class="text-xs bg-red-100 text-red-700 px-2 py-0.5 rounded-full font-sans font-semibold">Live</span>
+        </a>
+        <a href="/collegeinfo/" onclick="toggleMobileMenu()"
+          class="text-xl font-display font-bold text-gray-900 border-b border-gray-100 pb-2">Colleges</a>
+
+        <!-- Jobs Mobile Submenu (Accordion) -->
+        <div class="border-b border-gray-100 pb-2">
+          <button type="button" onclick="toggleMobileSubmenu('mobileJobsSubmenu', 'mobileJobsArrow')"
+            class="w-full flex items-center justify-between text-xl font-display font-bold text-gray-900 py-1.5 focus:outline-none">
+            <span class="flex items-center gap-2">
+              <span>Jobs &amp; Career</span>
+              <span class="text-xs font-sans font-semibold px-2 py-0.5 rounded-full bg-indigo-100 text-indigo-700">2 Links</span>
+            </span>
+            <svg id="mobileJobsArrow" class="w-5 h-5 text-gray-500 transition-transform duration-200 transform rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+            </svg>
+          </button>
+          <div id="mobileJobsSubmenu" class="space-y-1 pl-2 pt-1 pb-1 transition-all">
+            <a href="/jobs/index.html" onclick="toggleMobileMenu()" class="flex items-center gap-2.5 py-2 px-3 rounded-lg text-base font-medium text-gray-700 hover:bg-blue-50 hover:text-blue-600 transition">
+              <span class="text-lg">💼</span>
+              <div>
+                <div class="font-semibold text-gray-900">Jobs Portal</div>
+                <div class="text-xs text-gray-500">Engineering jobs &amp; campus recruitments</div>
+              </div>
+            </a>
+            <a href="/internships.html" onclick="toggleMobileMenu()" class="flex items-center gap-2.5 py-2 px-3 rounded-lg text-base font-medium text-gray-700 hover:bg-blue-50 hover:text-blue-600 transition">
+              <span class="text-lg">🎓</span>
+              <div>
+                <div class="font-semibold text-gray-900">Internships</div>
+                <div class="text-xs text-gray-500">Verified summer/winter internships</div>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <a href="#about" onclick="toggleMobileMenu()"
+          class="text-xl font-display font-bold text-gray-900 border-b border-gray-100 pb-2">About</a>
+        <a href="#contact" onclick="toggleMobileMenu()"
+          class="text-xl font-display font-bold text-gray-900 border-b border-gray-100 pb-2">Contact</a>
+
+        <div class="pt-4">
+          <a href="https://chat.whatsapp.com/KFcI5VeJOpjLPgp30NXMfQ" target="_blank" rel="noopener noreferrer"
+            class="block w-full bg-green-500 hover:bg-green-600 text-white text-center py-3.5 rounded-xl font-bold shadow-lg shadow-green-200 transition">
             Join WhatsApp Community
           </a>
         </div>
@@ -452,7 +618,10 @@
         </span>
       </h1>
       <p class="text-sm md:text-base text-blue-50 mb-8 max-w-2xl mx-auto leading-relaxed">
-        MSBTE Notes &amp; Info is an independent educational resource platform for Diploma Engineering students in Maharashtra. Explore branch-wise and semester-wise notes, K-Scheme syllabus resources, previous-year question papers, solved model answers, important questions, and exam preparation guides. Find resources by subject code, semester, branch, and syllabus scheme.
+        MSBTE Notes &amp; Info is an independent educational resource platform for Diploma Engineering students in
+        Maharashtra. Explore branch-wise and semester-wise notes, K-Scheme syllabus resources, previous-year question
+        papers, solved model answers, important questions, and exam preparation guides. Find resources by subject code,
+        semester, branch, and syllabus scheme.
       </p>
       <div class="flex flex-col sm:flex-row justify-center gap-3 px-4 sm:px-0">
         <a href="https://chat.whatsapp.com/KFcI5VeJOpjLPgp30NXMfQ"
@@ -619,7 +788,7 @@
           <p class="text-gray-600">Well-organized subject-wise notes for all diploma branches.</p>
         </a>
 
-        <a href="/notes/msbte-k-scheme-question-banks.html"
+        <a href="/notes/msbte-k-scheme-question-banks.html" <a href="/pyq/"
           class="block bg-gradient-to-br from-purple-50 to-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition-transform transform hover:-translate-y-1">
           <div class="text-purple-600 mb-4">
             <svg class="w-10 h-10 mx-auto" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
@@ -629,6 +798,8 @@
           </div>
           <h3 class="text-xl font-semibold mb-2">Question Papers</h3>
           <p class="text-gray-600">Previous year papers to help you prepare better.</p>
+          <h3 class="text-xl font-semibold mb-2">Question Papers (PYQs)</h3>
+          <p class="text-gray-600">Download Summer 2026 & Winter 2025 board exam papers for all subjects.</p>
         </a>
 
         <a href="/notes/"
@@ -829,140 +1000,310 @@
     <!-- Cards Grid -->
     <div id="notesGrid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 text-left min-h-[400px]">
 
-        <div class="resource-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col h-full">
-            <a href="/notes/osy-k-scheme-notes.html" class="flex flex-col h-full group">
-                <div class="h-48 w-full overflow-hidden bg-gray-50 border-b border-gray-100 group"><img src="/resourse/note-thumbs/OSY_thumbnail.png" alt="Operating System (OSY) K Scheme Notes & Question Bank" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500" loading="lazy"></div>
-                <div class="p-5 flex-grow flex flex-col">
-                    <h3 class="text-lg font-bold text-gray-900 mb-2 leading-snug group-hover:text-blue-600 transition-colors line-clamp-2">Operating System (OSY) K Scheme Notes & Question Bank</h3>
-                    <p class="text-sm text-gray-500 mb-4 line-clamp-3">Free MSBTE K-Scheme 314319 – Operating System (OSY) unit-wise notes, important question bank, model answers, and complete revision roadmaps for 4th Semester.</p>
-                    <div class="mt-auto flex items-center justify-between pt-3 border-t border-gray-50">
-                        <div class="flex flex-wrap gap-1"><span class="text-[10px] uppercase tracking-wider font-bold px-2 py-1 rounded-md bg-blue-50 text-blue-600 border border-blue-100">OSY</span><span class="text-[10px] uppercase tracking-wider font-bold px-2 py-1 rounded-md bg-blue-50 text-blue-600 border border-blue-100">Operating System</span></div>
-                        <span class="text-xs font-semibold text-blue-600 group-hover:translate-x-1 transition-transform inline-flex items-center gap-1">Open →</span>
-                    </div>
-                </div>
-            </a>
-        </div>
+      <div
+        class="resource-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col h-full">
+        <a href="/notes/osy-k-scheme-notes.html" class="flex flex-col h-full group">
+          <div class="h-48 w-full overflow-hidden bg-gray-50 border-b border-gray-100 group"><img
+              src="/resourse/note-thumbs/OSY_thumbnail.png" alt="Operating System (OSY) K Scheme Notes & Question Bank"
+              class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500"
+              loading="lazy"></div>
+          <div class="p-5 flex-grow flex flex-col">
+            <h3
+              class="text-lg font-bold text-gray-900 mb-2 leading-snug group-hover:text-blue-600 transition-colors line-clamp-2">
+              Operating System (OSY) K Scheme Notes & Question Bank</h3>
+            <p class="text-sm text-gray-500 mb-4 line-clamp-3">Free MSBTE K-Scheme 314319 – Operating System (OSY)
+              unit-wise notes, important question bank, model answers, and complete revision roadmaps for 4th Semester.
+            </p>
+            <div class="mt-auto flex items-center justify-between pt-3 border-t border-gray-50">
+              <div class="flex flex-wrap gap-1"><span
+                  class="text-[10px] uppercase tracking-wider font-bold px-2 py-1 rounded-md bg-blue-50 text-blue-600 border border-blue-100">OSY</span><span
+                  class="text-[10px] uppercase tracking-wider font-bold px-2 py-1 rounded-md bg-blue-50 text-blue-600 border border-blue-100">Operating
+                  System</span></div>
+              <span
+                class="text-xs font-semibold text-blue-600 group-hover:translate-x-1 transition-transform inline-flex items-center gap-1">Open
+                →</span>
+            </div>
+          </div>
+        </a>
+      </div>
 
-        <div class="resource-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col h-full">
-            <a href="/notes/mic-k-scheme-notes.html" class="flex flex-col h-full group">
-                <div class="h-48 w-full overflow-hidden bg-gray-50 border-b border-gray-100 group"><img src="/resourse/note-thumbs/MIC_thumbnail.png" alt="Microprocessor (MIC) K Scheme Notes & Question Bank" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500" loading="lazy"></div>
-                <div class="p-5 flex-grow flex flex-col">
-                    <h3 class="text-lg font-bold text-gray-900 mb-2 leading-snug group-hover:text-blue-600 transition-colors line-clamp-2">Microprocessor (MIC) K Scheme Notes & Question Bank</h3>
-                    <p class="text-sm text-gray-500 mb-4 line-clamp-3">Download free MSBTE K Scheme Microprocessor (MIC - 314321) unit-wise notes, 8086 architecture PDFs, IMP question bank, and complete revision roadmaps for 4th Semester.</p>
-                    <div class="mt-auto flex items-center justify-between pt-3 border-t border-gray-50">
-                        <div class="flex flex-wrap gap-1"><span class="text-[10px] uppercase tracking-wider font-bold px-2 py-1 rounded-md bg-blue-50 text-blue-600 border border-blue-100">MIC</span><span class="text-[10px] uppercase tracking-wider font-bold px-2 py-1 rounded-md bg-blue-50 text-blue-600 border border-blue-100">Microprocessor</span></div>
-                        <span class="text-xs font-semibold text-blue-600 group-hover:translate-x-1 transition-transform inline-flex items-center gap-1">Open →</span>
-                    </div>
-                </div>
-            </a>
-        </div>
+      <div
+        class="resource-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col h-full">
+        <a href="/notes/mic-k-scheme-notes.html" class="flex flex-col h-full group">
+          <div class="h-48 w-full overflow-hidden bg-gray-50 border-b border-gray-100 group"><img
+              src="/resourse/note-thumbs/MIC_thumbnail.png" alt="Microprocessor (MIC) K Scheme Notes & Question Bank"
+              class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500"
+              loading="lazy"></div>
+          <div class="p-5 flex-grow flex flex-col">
+            <h3
+              class="text-lg font-bold text-gray-900 mb-2 leading-snug group-hover:text-blue-600 transition-colors line-clamp-2">
+              Microprocessor (MIC) K Scheme Notes & Question Bank</h3>
+            <p class="text-sm text-gray-500 mb-4 line-clamp-3">Download free MSBTE K Scheme Microprocessor (MIC -
+              314321) unit-wise notes, 8086 architecture PDFs, IMP question bank, and complete revision roadmaps for 4th
+              Semester.</p>
+            <div class="mt-auto flex items-center justify-between pt-3 border-t border-gray-50">
+              <div class="flex flex-wrap gap-1"><span
+                  class="text-[10px] uppercase tracking-wider font-bold px-2 py-1 rounded-md bg-blue-50 text-blue-600 border border-blue-100">MIC</span><span
+                  class="text-[10px] uppercase tracking-wider font-bold px-2 py-1 rounded-md bg-blue-50 text-blue-600 border border-blue-100">Microprocessor</span>
+              </div>
+              <span
+                class="text-xs font-semibold text-blue-600 group-hover:translate-x-1 transition-transform inline-flex items-center gap-1">Open
+                →</span>
+            </div>
+          </div>
+        </a>
+      </div>
 
-        <div class="resource-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col h-full">
-            <a href="/notes/dcn-k-scheme-notes.html" class="flex flex-col h-full group">
-                <div class="h-48 w-full overflow-hidden bg-gray-50 border-b border-gray-100 group"><img src="/resourse/note-thumbs/DCN_thumbnail.png" alt="Data Communication & Computer Network (DCN) K Scheme Notes" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500" loading="lazy"></div>
-                <div class="p-5 flex-grow flex flex-col">
-                    <h3 class="text-lg font-bold text-gray-900 mb-2 leading-snug group-hover:text-blue-600 transition-colors line-clamp-2">Data Communication & Computer Network (DCN) K Scheme Notes</h3>
-                    <p class="text-sm text-gray-500 mb-4 line-clamp-3">Free MSBTE K Scheme Data Communication & Computer Network (DCN - 314318) complete notes, chapter PDFs, IMP questions, and solved model answer papers for 4th Semester.</p>
-                    <div class="mt-auto flex items-center justify-between pt-3 border-t border-gray-50">
-                        <div class="flex flex-wrap gap-1"><span class="text-[10px] uppercase tracking-wider font-bold px-2 py-1 rounded-md bg-blue-50 text-blue-600 border border-blue-100">DCN</span><span class="text-[10px] uppercase tracking-wider font-bold px-2 py-1 rounded-md bg-blue-50 text-blue-600 border border-blue-100">Computer Network</span></div>
-                        <span class="text-xs font-semibold text-blue-600 group-hover:translate-x-1 transition-transform inline-flex items-center gap-1">Open →</span>
-                    </div>
-                </div>
-            </a>
-        </div>
+      <div
+        class="resource-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col h-full">
+        <a href="/notes/dcn-k-scheme-notes.html" class="flex flex-col h-full group">
+          <div class="h-48 w-full overflow-hidden bg-gray-50 border-b border-gray-100 group"><img
+              src="/resourse/note-thumbs/DCN_thumbnail.png"
+              alt="Data Communication & Computer Network (DCN) K Scheme Notes"
+              class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500"
+              loading="lazy"></div>
+          <div class="p-5 flex-grow flex flex-col">
+            <h3
+              class="text-lg font-bold text-gray-900 mb-2 leading-snug group-hover:text-blue-600 transition-colors line-clamp-2">
+              Data Communication & Computer Network (DCN) K Scheme Notes</h3>
+            <p class="text-sm text-gray-500 mb-4 line-clamp-3">Free MSBTE K Scheme Data Communication & Computer Network
+              (DCN - 314318) complete notes, chapter PDFs, IMP questions, and solved model answer papers for 4th
+              Semester.</p>
+            <div class="mt-auto flex items-center justify-between pt-3 border-t border-gray-50">
+              <div class="flex flex-wrap gap-1"><span
+                  class="text-[10px] uppercase tracking-wider font-bold px-2 py-1 rounded-md bg-blue-50 text-blue-600 border border-blue-100">DCN</span><span
+                  class="text-[10px] uppercase tracking-wider font-bold px-2 py-1 rounded-md bg-blue-50 text-blue-600 border border-blue-100">Computer
+                  Network</span></div>
+              <span
+                class="text-xs font-semibold text-blue-600 group-hover:translate-x-1 transition-transform inline-flex items-center gap-1">Open
+                →</span>
+            </div>
+          </div>
+        </a>
+      </div>
 
-        <div class="resource-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col h-full">
-            <a href="/notes/java-k-scheme-notes.html" class="flex flex-col h-full group">
-                <div class="h-48 w-full overflow-hidden bg-gray-50 border-b border-gray-100 group"><img src="/resourse/note-thumbs/JPR_thumbnail.png" alt="Java Programming (JPR) K Scheme Notes & Question Bank" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500" loading="lazy"></div>
-                <div class="p-5 flex-grow flex flex-col">
-                    <h3 class="text-lg font-bold text-gray-900 mb-2 leading-snug group-hover:text-blue-600 transition-colors line-clamp-2">Java Programming (JPR) K Scheme Notes & Question Bank</h3>
-                    <p class="text-sm text-gray-500 mb-4 line-clamp-3">Free download MSBTE K Scheme Java Programming (JPR - 314317) Unit 1-6 mega notes, Super 25 question bank, viva Q&A, and practice mock test papers for 4th Semester.</p>
-                    <div class="mt-auto flex items-center justify-between pt-3 border-t border-gray-50">
-                        <div class="flex flex-wrap gap-1"><span class="text-[10px] uppercase tracking-wider font-bold px-2 py-1 rounded-md bg-blue-50 text-blue-600 border border-blue-100">Java</span><span class="text-[10px] uppercase tracking-wider font-bold px-2 py-1 rounded-md bg-blue-50 text-blue-600 border border-blue-100">JPR</span></div>
-                        <span class="text-xs font-semibold text-blue-600 group-hover:translate-x-1 transition-transform inline-flex items-center gap-1">Open →</span>
-                    </div>
-                </div>
-            </a>
-        </div>
+      <div
+        class="resource-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col h-full">
+        <a href="/notes/java-k-scheme-notes.html" class="flex flex-col h-full group">
+          <div class="h-48 w-full overflow-hidden bg-gray-50 border-b border-gray-100 group"><img
+              src="/resourse/note-thumbs/JPR_thumbnail.png" alt="Java Programming (JPR) K Scheme Notes & Question Bank"
+              class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500"
+              loading="lazy"></div>
+          <div class="p-5 flex-grow flex flex-col">
+            <h3
+              class="text-lg font-bold text-gray-900 mb-2 leading-snug group-hover:text-blue-600 transition-colors line-clamp-2">
+              Java Programming (JPR) K Scheme Notes & Question Bank</h3>
+            <p class="text-sm text-gray-500 mb-4 line-clamp-3">Free download MSBTE K Scheme Java Programming (JPR -
+              314317) Unit 1-6 mega notes, Super 25 question bank, viva Q&A, and practice mock test papers for 4th
+              Semester.</p>
+            <div class="mt-auto flex items-center justify-between pt-3 border-t border-gray-50">
+              <div class="flex flex-wrap gap-1"><span
+                  class="text-[10px] uppercase tracking-wider font-bold px-2 py-1 rounded-md bg-blue-50 text-blue-600 border border-blue-100">Java</span><span
+                  class="text-[10px] uppercase tracking-wider font-bold px-2 py-1 rounded-md bg-blue-50 text-blue-600 border border-blue-100">JPR</span>
+              </div>
+              <span
+                class="text-xs font-semibold text-blue-600 group-hover:translate-x-1 transition-transform inline-flex items-center gap-1">Open
+                →</span>
+            </div>
+          </div>
+        </a>
+      </div>
 
-        <div class="resource-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col h-full">
-            <a href="/notes/ees-k-scheme-notes.html" class="flex flex-col h-full group">
-                <div class="h-48 w-full overflow-hidden bg-gray-50 border-b border-gray-100 group"><img src="/resourse/note-thumbs/EES_thumbnail.png" alt="Environmental Education & Sustainability (EES) K Scheme Notes" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500" loading="lazy"></div>
-                <div class="p-5 flex-grow flex flex-col">
-                    <h3 class="text-lg font-bold text-gray-900 mb-2 leading-snug group-hover:text-blue-600 transition-colors line-clamp-2">Environmental Education & Sustainability (EES) K Scheme Notes</h3>
-                    <p class="text-sm text-gray-500 mb-4 line-clamp-3">Free MSBTE K Scheme Environmental Education and Sustainability (EES - 314301) official syllabus, complete revision notes, IMP question bank, and online MCQ sets.</p>
-                    <div class="mt-auto flex items-center justify-between pt-3 border-t border-gray-50">
-                        <div class="flex flex-wrap gap-1"><span class="text-[10px] uppercase tracking-wider font-bold px-2 py-1 rounded-md bg-blue-50 text-blue-600 border border-blue-100">EES</span><span class="text-[10px] uppercase tracking-wider font-bold px-2 py-1 rounded-md bg-blue-50 text-blue-600 border border-blue-100">Environmental Education</span></div>
-                        <span class="text-xs font-semibold text-blue-600 group-hover:translate-x-1 transition-transform inline-flex items-center gap-1">Open →</span>
-                    </div>
-                </div>
-            </a>
-        </div>
+      <div
+        class="resource-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col h-full">
+        <a href="/notes/ees-k-scheme-notes.html" class="flex flex-col h-full group">
+          <div class="h-48 w-full overflow-hidden bg-gray-50 border-b border-gray-100 group"><img
+              src="/resourse/note-thumbs/EES_thumbnail.png"
+              alt="Environmental Education & Sustainability (EES) K Scheme Notes"
+              class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500"
+              loading="lazy"></div>
+          <div class="p-5 flex-grow flex flex-col">
+            <h3
+              class="text-lg font-bold text-gray-900 mb-2 leading-snug group-hover:text-blue-600 transition-colors line-clamp-2">
+              Environmental Education & Sustainability (EES) K Scheme Notes</h3>
+            <p class="text-sm text-gray-500 mb-4 line-clamp-3">Free MSBTE K Scheme Environmental Education and
+              Sustainability (EES - 314301) official syllabus, complete revision notes, IMP question bank, and online
+              MCQ sets.</p>
+            <div class="mt-auto flex items-center justify-between pt-3 border-t border-gray-50">
+              <div class="flex flex-wrap gap-1"><span
+                  class="text-[10px] uppercase tracking-wider font-bold px-2 py-1 rounded-md bg-blue-50 text-blue-600 border border-blue-100">EES</span><span
+                  class="text-[10px] uppercase tracking-wider font-bold px-2 py-1 rounded-md bg-blue-50 text-blue-600 border border-blue-100">Environmental
+                  Education</span></div>
+              <span
+                class="text-xs font-semibold text-blue-600 group-hover:translate-x-1 transition-transform inline-flex items-center gap-1">Open
+                →</span>
+            </div>
+          </div>
+        </a>
+      </div>
 
-        <div class="resource-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col h-full">
-            <a href="/notes/oop-k-scheme-notes.html" class="flex flex-col h-full group">
-                <div class="h-48 w-full overflow-hidden bg-gray-50 border-b border-gray-100 group"><img src="/resourse/note-thumbs/OOP_thumbnail.png" alt="Object Oriented Programming with C++ (OOP) K Scheme Notes" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500" loading="lazy"></div>
-                <div class="p-5 flex-grow flex flex-col">
-                    <h3 class="text-lg font-bold text-gray-900 mb-2 leading-snug group-hover:text-blue-600 transition-colors line-clamp-2">Object Oriented Programming with C++ (OOP) K Scheme Notes</h3>
-                    <p class="text-sm text-gray-500 mb-4 line-clamp-3">Free download MSBTE K Scheme Object-Oriented Programming Using C++ (OOP - 313304) Unit 1-5 notes, complete PPTs, inheritance guides, and course outcome materials.</p>
-                    <div class="mt-auto flex items-center justify-between pt-3 border-t border-gray-50">
-                        <div class="flex flex-wrap gap-1"><span class="text-[10px] uppercase tracking-wider font-bold px-2 py-1 rounded-md bg-blue-50 text-blue-600 border border-blue-100">OOP</span><span class="text-[10px] uppercase tracking-wider font-bold px-2 py-1 rounded-md bg-blue-50 text-blue-600 border border-blue-100">C++</span></div>
-                        <span class="text-xs font-semibold text-blue-600 group-hover:translate-x-1 transition-transform inline-flex items-center gap-1">Open →</span>
-                    </div>
-                </div>
-            </a>
-        </div>
+      <div
+        class="resource-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col h-full">
+        <a href="/notes/oop-k-scheme-notes.html" class="flex flex-col h-full group">
+          <div class="h-48 w-full overflow-hidden bg-gray-50 border-b border-gray-100 group"><img
+              src="/resourse/note-thumbs/OOP_thumbnail.png"
+              alt="Object Oriented Programming with C++ (OOP) K Scheme Notes"
+              class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500"
+              loading="lazy"></div>
+          <div class="p-5 flex-grow flex flex-col">
+            <h3
+              class="text-lg font-bold text-gray-900 mb-2 leading-snug group-hover:text-blue-600 transition-colors line-clamp-2">
+              Object Oriented Programming with C++ (OOP) K Scheme Notes</h3>
+            <p class="text-sm text-gray-500 mb-4 line-clamp-3">Free download MSBTE K Scheme Object-Oriented Programming
+              Using C++ (OOP - 313304) Unit 1-5 notes, complete PPTs, inheritance guides, and course outcome materials.
+            </p>
+            <div class="mt-auto flex items-center justify-between pt-3 border-t border-gray-50">
+              <div class="flex flex-wrap gap-1"><span
+                  class="text-[10px] uppercase tracking-wider font-bold px-2 py-1 rounded-md bg-blue-50 text-blue-600 border border-blue-100">OOP</span><span
+                  class="text-[10px] uppercase tracking-wider font-bold px-2 py-1 rounded-md bg-blue-50 text-blue-600 border border-blue-100">C++</span>
+              </div>
+              <span
+                class="text-xs font-semibold text-blue-600 group-hover:translate-x-1 transition-transform inline-flex items-center gap-1">Open
+                →</span>
+            </div>
+          </div>
+        </a>
+      </div>
 
-        <div class="resource-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col h-full">
-            <a href="/notes/dsu-k-scheme-notes.html" class="flex flex-col h-full group">
-                <div class="h-48 w-full overflow-hidden bg-gray-50 border-b border-gray-100 group"><img src="/resourse/note-thumbs/DSU_thumbnail.png" alt="Data Structures Using C (DSU) K Scheme Notes & Question Bank" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500" loading="lazy"></div>
-                <div class="p-5 flex-grow flex flex-col">
-                    <h3 class="text-lg font-bold text-gray-900 mb-2 leading-snug group-hover:text-blue-600 transition-colors line-clamp-2">Data Structures Using C (DSU) K Scheme Notes & Question Bank</h3>
-                    <p class="text-sm text-gray-500 mb-4 line-clamp-3">Download free MSBTE K Scheme Data Structures Using C (DSU - 313301) unit-wise notes, Stacks and Queues PDFs, solved question paper with answers, and question bank.</p>
-                    <div class="mt-auto flex items-center justify-between pt-3 border-t border-gray-50">
-                        <div class="flex flex-wrap gap-1"><span class="text-[10px] uppercase tracking-wider font-bold px-2 py-1 rounded-md bg-blue-50 text-blue-600 border border-blue-100">DSU</span><span class="text-[10px] uppercase tracking-wider font-bold px-2 py-1 rounded-md bg-blue-50 text-blue-600 border border-blue-100">Data Structures</span></div>
-                        <span class="text-xs font-semibold text-blue-600 group-hover:translate-x-1 transition-transform inline-flex items-center gap-1">Open →</span>
-                    </div>
-                </div>
-            </a>
-        </div>
+      <div
+        class="resource-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col h-full">
+        <a href="/notes/dsu-k-scheme-notes.html" class="flex flex-col h-full group">
+          <div class="h-48 w-full overflow-hidden bg-gray-50 border-b border-gray-100 group"><img
+              src="/resourse/note-thumbs/DSU_thumbnail.png"
+              alt="Data Structures Using C (DSU) K Scheme Notes & Question Bank"
+              class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500"
+              loading="lazy"></div>
+          <div class="p-5 flex-grow flex flex-col">
+            <h3
+              class="text-lg font-bold text-gray-900 mb-2 leading-snug group-hover:text-blue-600 transition-colors line-clamp-2">
+              Data Structures Using C (DSU) K Scheme Notes & Question Bank</h3>
+            <p class="text-sm text-gray-500 mb-4 line-clamp-3">Download free MSBTE K Scheme Data Structures Using C (DSU
+              - 313301) unit-wise notes, Stacks and Queues PDFs, solved question paper with answers, and question bank.
+            </p>
+            <div class="mt-auto flex items-center justify-between pt-3 border-t border-gray-50">
+              <div class="flex flex-wrap gap-1"><span
+                  class="text-[10px] uppercase tracking-wider font-bold px-2 py-1 rounded-md bg-blue-50 text-blue-600 border border-blue-100">DSU</span><span
+                  class="text-[10px] uppercase tracking-wider font-bold px-2 py-1 rounded-md bg-blue-50 text-blue-600 border border-blue-100">Data
+                  Structures</span></div>
+              <span
+                class="text-xs font-semibold text-blue-600 group-hover:translate-x-1 transition-transform inline-flex items-center gap-1">Open
+                →</span>
+            </div>
+          </div>
+        </a>
+      </div>
 
-        <div class="resource-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col h-full">
-            <a href="/notes/dbms-k-scheme-notes.html" class="flex flex-col h-full group">
-                <div class="h-48 w-full overflow-hidden bg-gray-50 border-b border-gray-100 group"><img src="/resourse/note-thumbs/DBMS_thumbnail.png" alt="Database Management System (DBMS) K Scheme Notes & Papers" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500" loading="lazy"></div>
-                <div class="p-5 flex-grow flex flex-col">
-                    <h3 class="text-lg font-bold text-gray-900 mb-2 leading-snug group-hover:text-blue-600 transition-colors line-clamp-2">Database Management System (DBMS) K Scheme Notes & Papers</h3>
-                    <p class="text-sm text-gray-500 mb-4 line-clamp-3">Free download MSBTE K Scheme Database Management System (DBMS - 313302) Unit 1-5 notes, complete revision guides, IMP question banks, and Winter 2023 solved papers.</p>
-                    <div class="mt-auto flex items-center justify-between pt-3 border-t border-gray-50">
-                        <div class="flex flex-wrap gap-1"><span class="text-[10px] uppercase tracking-wider font-bold px-2 py-1 rounded-md bg-blue-50 text-blue-600 border border-blue-100">DBMS</span><span class="text-[10px] uppercase tracking-wider font-bold px-2 py-1 rounded-md bg-blue-50 text-blue-600 border border-blue-100">Database</span></div>
-                        <span class="text-xs font-semibold text-blue-600 group-hover:translate-x-1 transition-transform inline-flex items-center gap-1">Open →</span>
-                    </div>
-                </div>
-            </a>
-        </div>
+      <div
+        class="resource-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col h-full">
+        <a href="/notes/dbms-k-scheme-notes.html" class="flex flex-col h-full group">
+          <div class="h-48 w-full overflow-hidden bg-gray-50 border-b border-gray-100 group"><img
+              src="/resourse/note-thumbs/DBMS_thumbnail.png"
+              alt="Database Management System (DBMS) K Scheme Notes & Papers"
+              class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500"
+              loading="lazy"></div>
+          <div class="p-5 flex-grow flex flex-col">
+            <h3
+              class="text-lg font-bold text-gray-900 mb-2 leading-snug group-hover:text-blue-600 transition-colors line-clamp-2">
+              Database Management System (DBMS) K Scheme Notes & Papers</h3>
+            <p class="text-sm text-gray-500 mb-4 line-clamp-3">Free download MSBTE K Scheme Database Management System
+              (DBMS - 313302) Unit 1-5 notes, complete revision guides, IMP question banks, and Winter 2023 solved
+              papers.</p>
+            <div class="mt-auto flex items-center justify-between pt-3 border-t border-gray-50">
+              <div class="flex flex-wrap gap-1"><span
+                  class="text-[10px] uppercase tracking-wider font-bold px-2 py-1 rounded-md bg-blue-50 text-blue-600 border border-blue-100">DBMS</span><span
+                  class="text-[10px] uppercase tracking-wider font-bold px-2 py-1 rounded-md bg-blue-50 text-blue-600 border border-blue-100">Database</span>
+              </div>
+              <span
+                class="text-xs font-semibold text-blue-600 group-hover:translate-x-1 transition-transform inline-flex items-center gap-1">Open
+                →</span>
+            </div>
+          </div>
+        </a>
+      </div>
 
-        <div class="resource-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col h-full">
-            <a href="/notes/dte-k-scheme-notes.html" class="flex flex-col h-full group">
-                <div class="h-48 w-full overflow-hidden bg-gray-50 border-b border-gray-100 group"><img src="/resourse/note-thumbs/DTE_thumbnail.png" alt="Digital Techniques (DTE) K Scheme Notes, MCQs & Solved Papers" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500" loading="lazy"></div>
-                <div class="p-5 flex-grow flex flex-col">
-                    <h3 class="text-lg font-bold text-gray-900 mb-2 leading-snug group-hover:text-blue-600 transition-colors line-clamp-2">Digital Techniques (DTE) K Scheme Notes, MCQs & Solved Papers</h3>
-                    <p class="text-sm text-gray-500 mb-4 line-clamp-3">Free download MSBTE K Scheme Digital Techniques (DTE - 313303) unit-wise notes, logic gate PDFs, K-Map problems, solved MCQs, and previous year sample question papers.</p>
-                    <div class="mt-auto flex items-center justify-between pt-3 border-t border-gray-50">
-                        <div class="flex flex-wrap gap-1"><span class="text-[10px] uppercase tracking-wider font-bold px-2 py-1 rounded-md bg-blue-50 text-blue-600 border border-blue-100">DTE</span><span class="text-[10px] uppercase tracking-wider font-bold px-2 py-1 rounded-md bg-blue-50 text-blue-600 border border-blue-100">Digital Techniques</span></div>
-                        <span class="text-xs font-semibold text-blue-600 group-hover:translate-x-1 transition-transform inline-flex items-center gap-1">Open →</span>
-                    </div>
-                </div>
-            </a>
+      <div
+        class="resource-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col h-full">
+        <a href="/notes/dte-k-scheme-notes.html" class="flex flex-col h-full group">
+          <div class="h-48 w-full overflow-hidden bg-gray-50 border-b border-gray-100 group"><img
+              src="/resourse/note-thumbs/DTE_thumbnail.png"
+              alt="Digital Techniques (DTE) K Scheme Notes, MCQs & Solved Papers"
+              class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500"
+              loading="lazy"></div>
+          <div class="p-5 flex-grow flex flex-col">
+            <h3
+              class="text-lg font-bold text-gray-900 mb-2 leading-snug group-hover:text-blue-600 transition-colors line-clamp-2">
+              Digital Techniques (DTE) K Scheme Notes, MCQs & Solved Papers</h3>
+            <p class="text-sm text-gray-500 mb-4 line-clamp-3">Free download MSBTE K Scheme Digital Techniques (DTE -
+              313303) unit-wise notes, logic gate PDFs, K-Map problems, solved MCQs, and previous year sample question
+              papers.</p>
+            <div class="mt-auto flex items-center justify-between pt-3 border-t border-gray-50">
+              <div class="flex flex-wrap gap-1"><span
+                  class="text-[10px] uppercase tracking-wider font-bold px-2 py-1 rounded-md bg-blue-50 text-blue-600 border border-blue-100">DTE</span><span
+                  class="text-[10px] uppercase tracking-wider font-bold px-2 py-1 rounded-md bg-blue-50 text-blue-600 border border-blue-100">Digital
+                  Techniques</span></div>
+              <span
+                class="text-xs font-semibold text-blue-600 group-hover:translate-x-1 transition-transform inline-flex items-center gap-1">Open
+                →</span>
+            </div>
+          </div>
+        </a>
+      </div>
+      <noscript>
+        <div class="col-span-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div class="p-4 bg-white rounded-xl shadow"><a href="/notes/osy-k-scheme-notes.html"
+              class="font-bold text-blue-600 hover:underline">Operating System (OSY) K Scheme Notes & Question Bank</a>
+            <p class="text-sm text-gray-600 mt-2">Free MSBTE K-Scheme 314319 – Operating System (OSY) unit-wise notes,
+              important question bank, model answers, and complete revision roadmaps for 4th Semester.</p>
+          </div>
+          <div class="p-4 bg-white rounded-xl shadow"><a href="/notes/mic-k-scheme-notes.html"
+              class="font-bold text-blue-600 hover:underline">Microprocessor (MIC) K Scheme Notes & Question Bank</a>
+            <p class="text-sm text-gray-600 mt-2">Download free MSBTE K Scheme Microprocessor (MIC - 314321) unit-wise
+              notes, 8086 architecture PDFs, IMP question bank, and complete revision roadmaps for 4th Semester.</p>
+          </div>
+          <div class="p-4 bg-white rounded-xl shadow"><a href="/notes/dcn-k-scheme-notes.html"
+              class="font-bold text-blue-600 hover:underline">Data Communication & Computer Network (DCN) K Scheme
+              Notes</a>
+            <p class="text-sm text-gray-600 mt-2">Free MSBTE K Scheme Data Communication & Computer Network (DCN -
+              314318) complete notes, chapter PDFs, IMP questions, and solved model answer papers for 4th Semester.</p>
+          </div>
+          <div class="p-4 bg-white rounded-xl shadow"><a href="/notes/java-k-scheme-notes.html"
+              class="font-bold text-blue-600 hover:underline">Java Programming (JPR) K Scheme Notes & Question Bank</a>
+            <p class="text-sm text-gray-600 mt-2">Free download MSBTE K Scheme Java Programming (JPR - 314317) Unit 1-6
+              mega notes, Super 25 question bank, viva Q&A, and practice mock test papers for 4th Semester.</p>
+          </div>
+          <div class="p-4 bg-white rounded-xl shadow"><a href="/notes/ees-k-scheme-notes.html"
+              class="font-bold text-blue-600 hover:underline">Environmental Education & Sustainability (EES) K Scheme
+              Notes</a>
+            <p class="text-sm text-gray-600 mt-2">Free MSBTE K Scheme Environmental Education and Sustainability (EES -
+              314301) official syllabus, complete revision notes, IMP question bank, and online MCQ sets.</p>
+          </div>
+          <div class="p-4 bg-white rounded-xl shadow"><a href="/notes/oop-k-scheme-notes.html"
+              class="font-bold text-blue-600 hover:underline">Object Oriented Programming with C++ (OOP) K Scheme
+              Notes</a>
+            <p class="text-sm text-gray-600 mt-2">Free download MSBTE K Scheme Object-Oriented Programming Using C++
+              (OOP - 313304) Unit 1-5 notes, complete PPTs, inheritance guides, and course outcome materials.</p>
+          </div>
+          <div class="p-4 bg-white rounded-xl shadow"><a href="/notes/dsu-k-scheme-notes.html"
+              class="font-bold text-blue-600 hover:underline">Data Structures Using C (DSU) K Scheme Notes & Question
+              Bank</a>
+            <p class="text-sm text-gray-600 mt-2">Download free MSBTE K Scheme Data Structures Using C (DSU - 313301)
+              unit-wise notes, Stacks and Queues PDFs, solved question paper with answers, and question bank.</p>
+          </div>
+          <div class="p-4 bg-white rounded-xl shadow"><a href="/notes/dbms-k-scheme-notes.html"
+              class="font-bold text-blue-600 hover:underline">Database Management System (DBMS) K Scheme Notes &
+              Papers</a>
+            <p class="text-sm text-gray-600 mt-2">Free download MSBTE K Scheme Database Management System (DBMS -
+              313302) Unit 1-5 notes, complete revision guides, IMP question banks, and Winter 2023 solved papers.</p>
+          </div>
+          <div class="p-4 bg-white rounded-xl shadow"><a href="/notes/dte-k-scheme-notes.html"
+              class="font-bold text-blue-600 hover:underline">Digital Techniques (DTE) K Scheme Notes, MCQs & Solved
+              Papers</a>
+            <p class="text-sm text-gray-600 mt-2">Free download MSBTE K Scheme Digital Techniques (DTE - 313303)
+              unit-wise notes, logic gate PDFs, K-Map problems, solved MCQs, and previous year sample question papers.
+            </p>
+          </div>
         </div>
-<noscript><div class="col-span-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8"><div class="p-4 bg-white rounded-xl shadow"><a href="/notes/osy-k-scheme-notes.html" class="font-bold text-blue-600 hover:underline">Operating System (OSY) K Scheme Notes & Question Bank</a><p class="text-sm text-gray-600 mt-2">Free MSBTE K-Scheme 314319 – Operating System (OSY) unit-wise notes, important question bank, model answers, and complete revision roadmaps for 4th Semester.</p></div>
-<div class="p-4 bg-white rounded-xl shadow"><a href="/notes/mic-k-scheme-notes.html" class="font-bold text-blue-600 hover:underline">Microprocessor (MIC) K Scheme Notes & Question Bank</a><p class="text-sm text-gray-600 mt-2">Download free MSBTE K Scheme Microprocessor (MIC - 314321) unit-wise notes, 8086 architecture PDFs, IMP question bank, and complete revision roadmaps for 4th Semester.</p></div>
-<div class="p-4 bg-white rounded-xl shadow"><a href="/notes/dcn-k-scheme-notes.html" class="font-bold text-blue-600 hover:underline">Data Communication & Computer Network (DCN) K Scheme Notes</a><p class="text-sm text-gray-600 mt-2">Free MSBTE K Scheme Data Communication & Computer Network (DCN - 314318) complete notes, chapter PDFs, IMP questions, and solved model answer papers for 4th Semester.</p></div>
-<div class="p-4 bg-white rounded-xl shadow"><a href="/notes/java-k-scheme-notes.html" class="font-bold text-blue-600 hover:underline">Java Programming (JPR) K Scheme Notes & Question Bank</a><p class="text-sm text-gray-600 mt-2">Free download MSBTE K Scheme Java Programming (JPR - 314317) Unit 1-6 mega notes, Super 25 question bank, viva Q&A, and practice mock test papers for 4th Semester.</p></div>
-<div class="p-4 bg-white rounded-xl shadow"><a href="/notes/ees-k-scheme-notes.html" class="font-bold text-blue-600 hover:underline">Environmental Education & Sustainability (EES) K Scheme Notes</a><p class="text-sm text-gray-600 mt-2">Free MSBTE K Scheme Environmental Education and Sustainability (EES - 314301) official syllabus, complete revision notes, IMP question bank, and online MCQ sets.</p></div>
-<div class="p-4 bg-white rounded-xl shadow"><a href="/notes/oop-k-scheme-notes.html" class="font-bold text-blue-600 hover:underline">Object Oriented Programming with C++ (OOP) K Scheme Notes</a><p class="text-sm text-gray-600 mt-2">Free download MSBTE K Scheme Object-Oriented Programming Using C++ (OOP - 313304) Unit 1-5 notes, complete PPTs, inheritance guides, and course outcome materials.</p></div>
-<div class="p-4 bg-white rounded-xl shadow"><a href="/notes/dsu-k-scheme-notes.html" class="font-bold text-blue-600 hover:underline">Data Structures Using C (DSU) K Scheme Notes & Question Bank</a><p class="text-sm text-gray-600 mt-2">Download free MSBTE K Scheme Data Structures Using C (DSU - 313301) unit-wise notes, Stacks and Queues PDFs, solved question paper with answers, and question bank.</p></div>
-<div class="p-4 bg-white rounded-xl shadow"><a href="/notes/dbms-k-scheme-notes.html" class="font-bold text-blue-600 hover:underline">Database Management System (DBMS) K Scheme Notes & Papers</a><p class="text-sm text-gray-600 mt-2">Free download MSBTE K Scheme Database Management System (DBMS - 313302) Unit 1-5 notes, complete revision guides, IMP question banks, and Winter 2023 solved papers.</p></div>
-<div class="p-4 bg-white rounded-xl shadow"><a href="/notes/dte-k-scheme-notes.html" class="font-bold text-blue-600 hover:underline">Digital Techniques (DTE) K Scheme Notes, MCQs & Solved Papers</a><p class="text-sm text-gray-600 mt-2">Free download MSBTE K Scheme Digital Techniques (DTE - 313303) unit-wise notes, logic gate PDFs, K-Map problems, solved MCQs, and previous year sample question papers.</p></div></div></noscript>
+      </noscript>
     </div>
 
     </div>
@@ -989,227 +1330,423 @@
       </div>
       <div id="blogContainer" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
 
-        <div class="bg-white rounded-xl shadow-lg overflow-hidden flex flex-col h-full hover:shadow-2xl transition duration-300 transform hover:-translate-y-2 group">
-            <div class="relative overflow-hidden h-48 sm:h-56">
-                <img src="/resourse/blog-resourse/nana-patekar-tribute.jpg" alt="Heartfelt Tribute to Nana Patekar — Legendary Indian Actor (1951–2026)" class="w-full h-full object-cover group-hover:scale-110 transition duration-500" loading="lazy">
-                <div class="absolute top-4 left-4">
-                    <span class="bg-blue-600 text-white text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider shadow-md opacity-90 group-hover:opacity-100 transition duration-300">
-                        Nana Patekar death
-                    </span>
-                </div>
+        <div
+          class="bg-white rounded-xl shadow-lg overflow-hidden flex flex-col h-full hover:shadow-2xl transition duration-300 transform hover:-translate-y-2 group">
+          <div class="relative overflow-hidden h-48 sm:h-56">
+            <img src="/resourse/blog-resourse/nana-patekar-tribute.jpg"
+              alt="Heartfelt Tribute to Nana Patekar — Legendary Indian Actor (1951–2026)"
+              class="w-full h-full object-cover group-hover:scale-110 transition duration-500" loading="lazy">
+            <div class="absolute top-4 left-4">
+              <span
+                class="bg-blue-600 text-white text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider shadow-md opacity-90 group-hover:opacity-100 transition duration-300">
+                Nana Patekar death
+              </span>
             </div>
-            <div class="p-6 flex flex-col flex-grow">
-                <div class="flex items-center text-xs text-blue-500 font-semibold mb-3">
-                    <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
-                    </svg>
-                    Oct 8, 2026
-                </div>
-                <h3 class="text-xl font-bold text-gray-800 mb-3 group-hover:text-blue-600 transition duration-300 leading-snug line-clamp-2">
-                    Nana Patekar Passes Away at 75: Heartfelt Tribute to the Legend
-                </h3>
-                <p class="text-gray-600 text-sm mb-6 line-clamp-3 leading-relaxed">
-                    The Indian film industry mourns as legendary actor Nana Patekar passes away at 75. Read our heartfelt tribute to his powerful legacy in Marathi and Hindi cinema.
-                </p>
-                <div class="mt-auto">
-                    <a href="/blog/nana-patekar-tribute.html" class="inline-flex items-center text-blue-600 font-bold text-sm group-hover:underline">
-                        Read More
-                        <svg class="w-4 h-4 ml-2 group-hover:translate-x-1 transition duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
-                        </svg>
-                    </a>
-                </div>
+          </div>
+          <div class="p-6 flex flex-col flex-grow">
+            <div class="flex items-center text-xs text-blue-500 font-semibold mb-3">
+              <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+              </svg>
+              Oct 8, 2026
             </div>
+            <h3
+              class="text-xl font-bold text-gray-800 mb-3 group-hover:text-blue-600 transition duration-300 leading-snug line-clamp-2">
+              Nana Patekar Passes Away at 75: Heartfelt Tribute to the Legend
+            </h3>
+            <p class="text-gray-600 text-sm mb-6 line-clamp-3 leading-relaxed">
+              The Indian film industry mourns as legendary actor Nana Patekar passes away at 75. Read our heartfelt
+              tribute to his powerful legacy in Marathi and Hindi cinema.
+            </p>
+            <div class="mt-auto">
+              <a href="/blog/nana-patekar-tribute.html"
+                class="inline-flex items-center text-blue-600 font-bold text-sm group-hover:underline">
+                Read More
+                <svg class="w-4 h-4 ml-2 group-hover:translate-x-1 transition duration-300" fill="none"
+                  stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3">
+                  </path>
+                </svg>
+              </a>
+            </div>
+          </div>
         </div>
 
-        <div class="bg-white rounded-xl shadow-lg overflow-hidden flex flex-col h-full hover:shadow-2xl transition duration-300 transform hover:-translate-y-2 group">
-            <div class="relative overflow-hidden h-48 sm:h-56">
-                <img src="/resourse/note-thumbs/OSY_thumbnail.png" alt="Operating System OSY 314319 K Scheme Notes Thumbnail" class="w-full h-full object-cover group-hover:scale-110 transition duration-500" loading="lazy">
-                <div class="absolute top-4 left-4">
-                    <span class="bg-blue-600 text-white text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider shadow-md opacity-90 group-hover:opacity-100 transition duration-300">
-                        K-Scheme Notes
-                    </span>
-                </div>
+        <div
+          class="bg-white rounded-xl shadow-lg overflow-hidden flex flex-col h-full hover:shadow-2xl transition duration-300 transform hover:-translate-y-2 group">
+          <div class="relative overflow-hidden h-48 sm:h-56">
+            <img src="/resourse/note-thumbs/OSY_thumbnail.png"
+              alt="Operating System OSY 314319 K Scheme Notes Thumbnail"
+              class="w-full h-full object-cover group-hover:scale-110 transition duration-500" loading="lazy">
+            <div class="absolute top-4 left-4">
+              <span
+                class="bg-blue-600 text-white text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider shadow-md opacity-90 group-hover:opacity-100 transition duration-300">
+                K-Scheme Notes
+              </span>
             </div>
-            <div class="p-6 flex flex-col flex-grow">
-                <div class="flex items-center text-xs text-blue-500 font-semibold mb-3">
-                    <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
-                    </svg>
-                    Oct 6, 2026
-                </div>
-                <h3 class="text-xl font-bold text-gray-800 mb-3 group-hover:text-blue-600 transition duration-300 leading-snug line-clamp-2">
-                    Operating System (OSY) K Scheme Notes & Question Bank | MSBTE Diploma
-                </h3>
-                <p class="text-gray-600 text-sm mb-6 line-clamp-3 leading-relaxed">
-                    Free MSBTE K-Scheme 314319 – Operating System (OSY) unit-wise notes, important question bank, model answers, and complete revision roadmaps for 4th Semester.
-                </p>
-                <div class="mt-auto">
-                    <a href="/notes/osy-k-scheme-notes.html" class="inline-flex items-center text-blue-600 font-bold text-sm group-hover:underline">
-                        Read More
-                        <svg class="w-4 h-4 ml-2 group-hover:translate-x-1 transition duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
-                        </svg>
-                    </a>
-                </div>
+          </div>
+          <div class="p-6 flex flex-col flex-grow">
+            <div class="flex items-center text-xs text-blue-500 font-semibold mb-3">
+              <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+              </svg>
+              Oct 6, 2026
             </div>
+            <h3
+              class="text-xl font-bold text-gray-800 mb-3 group-hover:text-blue-600 transition duration-300 leading-snug line-clamp-2">
+              Operating System (OSY) K Scheme Notes & Question Bank | MSBTE Diploma
+            </h3>
+            <p class="text-gray-600 text-sm mb-6 line-clamp-3 leading-relaxed">
+              Free MSBTE K-Scheme 314319 – Operating System (OSY) unit-wise notes, important question bank, model
+              answers, and complete revision roadmaps for 4th Semester.
+            </p>
+            <div class="mt-auto">
+              <a href="/notes/osy-k-scheme-notes.html"
+                class="inline-flex items-center text-blue-600 font-bold text-sm group-hover:underline">
+                Read More
+                <svg class="w-4 h-4 ml-2 group-hover:translate-x-1 transition duration-300" fill="none"
+                  stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3">
+                  </path>
+                </svg>
+              </a>
+            </div>
+          </div>
         </div>
 
-        <div class="bg-white rounded-xl shadow-lg overflow-hidden flex flex-col h-full hover:shadow-2xl transition duration-300 transform hover:-translate-y-2 group">
-            <div class="relative overflow-hidden h-48 sm:h-56">
-                <img src="/resourse/note-thumbs/MIC_thumbnail.png" alt="Microprocessor MIC 314321 K Scheme Notes Thumbnail" class="w-full h-full object-cover group-hover:scale-110 transition duration-500" loading="lazy">
-                <div class="absolute top-4 left-4">
-                    <span class="bg-blue-600 text-white text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider shadow-md opacity-90 group-hover:opacity-100 transition duration-300">
-                        K-Scheme Notes
-                    </span>
-                </div>
+        <div
+          class="bg-white rounded-xl shadow-lg overflow-hidden flex flex-col h-full hover:shadow-2xl transition duration-300 transform hover:-translate-y-2 group">
+          <div class="relative overflow-hidden h-48 sm:h-56">
+            <img src="/resourse/note-thumbs/MIC_thumbnail.png" alt="Microprocessor MIC 314321 K Scheme Notes Thumbnail"
+              class="w-full h-full object-cover group-hover:scale-110 transition duration-500" loading="lazy">
+            <div class="absolute top-4 left-4">
+              <span
+                class="bg-blue-600 text-white text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider shadow-md opacity-90 group-hover:opacity-100 transition duration-300">
+                K-Scheme Notes
+              </span>
             </div>
-            <div class="p-6 flex flex-col flex-grow">
-                <div class="flex items-center text-xs text-blue-500 font-semibold mb-3">
-                    <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
-                    </svg>
-                    Oct 6, 2026
-                </div>
-                <h3 class="text-xl font-bold text-gray-800 mb-3 group-hover:text-blue-600 transition duration-300 leading-snug line-clamp-2">
-                    Microprocessor (MIC) K Scheme Notes & Question Bank | MSBTE Diploma
-                </h3>
-                <p class="text-gray-600 text-sm mb-6 line-clamp-3 leading-relaxed">
-                    Download free MSBTE K Scheme Microprocessor (MIC - 314321) unit-wise notes, 8086 architecture PDFs, IMP question bank, and complete revision roadmaps for 4th Semester.
-                </p>
-                <div class="mt-auto">
-                    <a href="/notes/mic-k-scheme-notes.html" class="inline-flex items-center text-blue-600 font-bold text-sm group-hover:underline">
-                        Read More
-                        <svg class="w-4 h-4 ml-2 group-hover:translate-x-1 transition duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
-                        </svg>
-                    </a>
-                </div>
+          </div>
+          <div class="p-6 flex flex-col flex-grow">
+            <div class="flex items-center text-xs text-blue-500 font-semibold mb-3">
+              <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+              </svg>
+              Oct 6, 2026
             </div>
+            <h3
+              class="text-xl font-bold text-gray-800 mb-3 group-hover:text-blue-600 transition duration-300 leading-snug line-clamp-2">
+              Microprocessor (MIC) K Scheme Notes & Question Bank | MSBTE Diploma
+            </h3>
+            <p class="text-gray-600 text-sm mb-6 line-clamp-3 leading-relaxed">
+              Download free MSBTE K Scheme Microprocessor (MIC - 314321) unit-wise notes, 8086 architecture PDFs, IMP
+              question bank, and complete revision roadmaps for 4th Semester.
+            </p>
+            <div class="mt-auto">
+              <a href="/notes/mic-k-scheme-notes.html"
+                class="inline-flex items-center text-blue-600 font-bold text-sm group-hover:underline">
+                Read More
+                <svg class="w-4 h-4 ml-2 group-hover:translate-x-1 transition duration-300" fill="none"
+                  stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3">
+                  </path>
+                </svg>
+              </a>
+            </div>
+          </div>
         </div>
 
-        <div class="bg-white rounded-xl shadow-lg overflow-hidden flex flex-col h-full hover:shadow-2xl transition duration-300 transform hover:-translate-y-2 group">
-            <div class="relative overflow-hidden h-48 sm:h-56">
-                <img src="/resourse/note-thumbs/DCN_thumbnail.png" alt="Data Communication & Computer Network DCN 314318 K Scheme Notes Thumbnail" class="w-full h-full object-cover group-hover:scale-110 transition duration-500" loading="lazy">
-                <div class="absolute top-4 left-4">
-                    <span class="bg-blue-600 text-white text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider shadow-md opacity-90 group-hover:opacity-100 transition duration-300">
-                        K-Scheme Notes
-                    </span>
-                </div>
+        <div
+          class="bg-white rounded-xl shadow-lg overflow-hidden flex flex-col h-full hover:shadow-2xl transition duration-300 transform hover:-translate-y-2 group">
+          <div class="relative overflow-hidden h-48 sm:h-56">
+            <img src="/resourse/note-thumbs/DCN_thumbnail.png"
+              alt="Data Communication & Computer Network DCN 314318 K Scheme Notes Thumbnail"
+              class="w-full h-full object-cover group-hover:scale-110 transition duration-500" loading="lazy">
+            <div class="absolute top-4 left-4">
+              <span
+                class="bg-blue-600 text-white text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider shadow-md opacity-90 group-hover:opacity-100 transition duration-300">
+                K-Scheme Notes
+              </span>
             </div>
-            <div class="p-6 flex flex-col flex-grow">
-                <div class="flex items-center text-xs text-blue-500 font-semibold mb-3">
-                    <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
-                    </svg>
-                    Oct 6, 2026
-                </div>
-                <h3 class="text-xl font-bold text-gray-800 mb-3 group-hover:text-blue-600 transition duration-300 leading-snug line-clamp-2">
-                    Data Communication & Computer Network (DCN) K Scheme Notes | MSBTE Diploma
-                </h3>
-                <p class="text-gray-600 text-sm mb-6 line-clamp-3 leading-relaxed">
-                    Free MSBTE K Scheme Data Communication & Computer Network (DCN - 314318) complete notes, chapter PDFs, IMP questions, and solved model answer papers for 4th Semester.
-                </p>
-                <div class="mt-auto">
-                    <a href="/notes/dcn-k-scheme-notes.html" class="inline-flex items-center text-blue-600 font-bold text-sm group-hover:underline">
-                        Read More
-                        <svg class="w-4 h-4 ml-2 group-hover:translate-x-1 transition duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
-                        </svg>
-                    </a>
-                </div>
+          </div>
+          <div class="p-6 flex flex-col flex-grow">
+            <div class="flex items-center text-xs text-blue-500 font-semibold mb-3">
+              <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+              </svg>
+              Oct 6, 2026
             </div>
+            <h3
+              class="text-xl font-bold text-gray-800 mb-3 group-hover:text-blue-600 transition duration-300 leading-snug line-clamp-2">
+              Data Communication & Computer Network (DCN) K Scheme Notes | MSBTE Diploma
+            </h3>
+            <p class="text-gray-600 text-sm mb-6 line-clamp-3 leading-relaxed">
+              Free MSBTE K Scheme Data Communication & Computer Network (DCN - 314318) complete notes, chapter PDFs, IMP
+              questions, and solved model answer papers for 4th Semester.
+            </p>
+            <div class="mt-auto">
+              <a href="/notes/dcn-k-scheme-notes.html"
+                class="inline-flex items-center text-blue-600 font-bold text-sm group-hover:underline">
+                Read More
+                <svg class="w-4 h-4 ml-2 group-hover:translate-x-1 transition duration-300" fill="none"
+                  stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3">
+                  </path>
+                </svg>
+              </a>
+            </div>
+          </div>
         </div>
 
-        <div class="bg-white rounded-xl shadow-lg overflow-hidden flex flex-col h-full hover:shadow-2xl transition duration-300 transform hover:-translate-y-2 group">
-            <div class="relative overflow-hidden h-48 sm:h-56">
-                <img src="/resourse/note-thumbs/JPR_thumbnail.png" alt="Java Programming JPR 314317 K Scheme Notes Thumbnail" class="w-full h-full object-cover group-hover:scale-110 transition duration-500" loading="lazy">
-                <div class="absolute top-4 left-4">
-                    <span class="bg-blue-600 text-white text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider shadow-md opacity-90 group-hover:opacity-100 transition duration-300">
-                        K-Scheme Notes
-                    </span>
-                </div>
+        <div
+          class="bg-white rounded-xl shadow-lg overflow-hidden flex flex-col h-full hover:shadow-2xl transition duration-300 transform hover:-translate-y-2 group">
+          <div class="relative overflow-hidden h-48 sm:h-56">
+            <img src="/resourse/note-thumbs/JPR_thumbnail.png"
+              alt="Java Programming JPR 314317 K Scheme Notes Thumbnail"
+              class="w-full h-full object-cover group-hover:scale-110 transition duration-500" loading="lazy">
+            <div class="absolute top-4 left-4">
+              <span
+                class="bg-blue-600 text-white text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider shadow-md opacity-90 group-hover:opacity-100 transition duration-300">
+                K-Scheme Notes
+              </span>
             </div>
-            <div class="p-6 flex flex-col flex-grow">
-                <div class="flex items-center text-xs text-blue-500 font-semibold mb-3">
-                    <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
-                    </svg>
-                    Oct 6, 2026
-                </div>
-                <h3 class="text-xl font-bold text-gray-800 mb-3 group-hover:text-blue-600 transition duration-300 leading-snug line-clamp-2">
-                    Java Programming (JPR) K Scheme Notes & Question Bank | MSBTE Diploma
-                </h3>
-                <p class="text-gray-600 text-sm mb-6 line-clamp-3 leading-relaxed">
-                    Free download MSBTE K Scheme Java Programming (JPR - 314317) Unit 1-6 mega notes, Super 25 question bank, viva Q&A, and practice mock test papers for 4th Semester.
-                </p>
-                <div class="mt-auto">
-                    <a href="/notes/java-k-scheme-notes.html" class="inline-flex items-center text-blue-600 font-bold text-sm group-hover:underline">
-                        Read More
-                        <svg class="w-4 h-4 ml-2 group-hover:translate-x-1 transition duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
-                        </svg>
-                    </a>
-                </div>
+          </div>
+          <div class="p-6 flex flex-col flex-grow">
+            <div class="flex items-center text-xs text-blue-500 font-semibold mb-3">
+              <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+              </svg>
+              Oct 6, 2026
             </div>
+            <h3
+              class="text-xl font-bold text-gray-800 mb-3 group-hover:text-blue-600 transition duration-300 leading-snug line-clamp-2">
+              Java Programming (JPR) K Scheme Notes & Question Bank | MSBTE Diploma
+            </h3>
+            <p class="text-gray-600 text-sm mb-6 line-clamp-3 leading-relaxed">
+              Free download MSBTE K Scheme Java Programming (JPR - 314317) Unit 1-6 mega notes, Super 25 question bank,
+              viva Q&A, and practice mock test papers for 4th Semester.
+            </p>
+            <div class="mt-auto">
+              <a href="/notes/java-k-scheme-notes.html"
+                class="inline-flex items-center text-blue-600 font-bold text-sm group-hover:underline">
+                Read More
+                <svg class="w-4 h-4 ml-2 group-hover:translate-x-1 transition duration-300" fill="none"
+                  stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3">
+                  </path>
+                </svg>
+              </a>
+            </div>
+          </div>
         </div>
 
-        <div class="bg-white rounded-xl shadow-lg overflow-hidden flex flex-col h-full hover:shadow-2xl transition duration-300 transform hover:-translate-y-2 group">
-            <div class="relative overflow-hidden h-48 sm:h-56">
-                <img src="/resourse/note-thumbs/EES_thumbnail.png" alt="Environmental Education and Sustainability EES 314301 K Scheme Notes Thumbnail" class="w-full h-full object-cover group-hover:scale-110 transition duration-500" loading="lazy">
-                <div class="absolute top-4 left-4">
-                    <span class="bg-blue-600 text-white text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider shadow-md opacity-90 group-hover:opacity-100 transition duration-300">
-                        K-Scheme Notes
-                    </span>
-                </div>
+        <div
+          class="bg-white rounded-xl shadow-lg overflow-hidden flex flex-col h-full hover:shadow-2xl transition duration-300 transform hover:-translate-y-2 group">
+          <div class="relative overflow-hidden h-48 sm:h-56">
+            <img src="/resourse/note-thumbs/EES_thumbnail.png"
+              alt="Environmental Education and Sustainability EES 314301 K Scheme Notes Thumbnail"
+              class="w-full h-full object-cover group-hover:scale-110 transition duration-500" loading="lazy">
+            <div class="absolute top-4 left-4">
+              <span
+                class="bg-blue-600 text-white text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider shadow-md opacity-90 group-hover:opacity-100 transition duration-300">
+                K-Scheme Notes
+              </span>
             </div>
-            <div class="p-6 flex flex-col flex-grow">
-                <div class="flex items-center text-xs text-blue-500 font-semibold mb-3">
-                    <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
-                    </svg>
-                    Oct 6, 2026
-                </div>
-                <h3 class="text-xl font-bold text-gray-800 mb-3 group-hover:text-blue-600 transition duration-300 leading-snug line-clamp-2">
-                    Environmental Education & Sustainability (EES) K Scheme Notes | MSBTE Diploma
-                </h3>
-                <p class="text-gray-600 text-sm mb-6 line-clamp-3 leading-relaxed">
-                    Free MSBTE K Scheme Environmental Education and Sustainability (EES - 314301) official syllabus, complete revision notes, IMP question bank, and online MCQ sets.
-                </p>
-                <div class="mt-auto">
-                    <a href="/notes/ees-k-scheme-notes.html" class="inline-flex items-center text-blue-600 font-bold text-sm group-hover:underline">
-                        Read More
-                        <svg class="w-4 h-4 ml-2 group-hover:translate-x-1 transition duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
-                        </svg>
-                    </a>
-                </div>
+          </div>
+          <div class="p-6 flex flex-col flex-grow">
+            <div class="flex items-center text-xs text-blue-500 font-semibold mb-3">
+              <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+              </svg>
+              Oct 6, 2026
             </div>
+            <h3
+              class="text-xl font-bold text-gray-800 mb-3 group-hover:text-blue-600 transition duration-300 leading-snug line-clamp-2">
+              Environmental Education & Sustainability (EES) K Scheme Notes | MSBTE Diploma
+            </h3>
+            <p class="text-gray-600 text-sm mb-6 line-clamp-3 leading-relaxed">
+              Free MSBTE K Scheme Environmental Education and Sustainability (EES - 314301) official syllabus, complete
+              revision notes, IMP question bank, and online MCQ sets.
+            </p>
+            <div class="mt-auto">
+              <a href="/notes/ees-k-scheme-notes.html"
+                class="inline-flex items-center text-blue-600 font-bold text-sm group-hover:underline">
+                Read More
+                <svg class="w-4 h-4 ml-2 group-hover:translate-x-1 transition duration-300" fill="none"
+                  stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3">
+                  </path>
+                </svg>
+              </a>
+            </div>
+          </div>
         </div>
-<noscript><div class="col-span-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"><div class="p-4 bg-white rounded-xl shadow"><a href="/blog/nana-patekar-tribute.html" class="font-bold text-blue-600 hover:underline">Nana Patekar Passes Away at 75: Heartfelt Tribute to the Legend</a><p class="text-sm text-gray-600 mt-2">The Indian film industry mourns as legendary actor Nana Patekar passes away at 75. Read our heartfelt tribute to his powerful legacy in Marathi and Hindi cinema.</p></div>
-<div class="p-4 bg-white rounded-xl shadow"><a href="/notes/osy-k-scheme-notes.html" class="font-bold text-blue-600 hover:underline">Operating System (OSY) K Scheme Notes & Question Bank | MSBTE Diploma</a><p class="text-sm text-gray-600 mt-2">Free MSBTE K-Scheme 314319 – Operating System (OSY) unit-wise notes, important question bank, model answers, and complete revision roadmaps for 4th Semester.</p></div>
-<div class="p-4 bg-white rounded-xl shadow"><a href="/notes/mic-k-scheme-notes.html" class="font-bold text-blue-600 hover:underline">Microprocessor (MIC) K Scheme Notes & Question Bank | MSBTE Diploma</a><p class="text-sm text-gray-600 mt-2">Download free MSBTE K Scheme Microprocessor (MIC - 314321) unit-wise notes, 8086 architecture PDFs, IMP question bank, and complete revision roadmaps for 4th Semester.</p></div>
-<div class="p-4 bg-white rounded-xl shadow"><a href="/notes/dcn-k-scheme-notes.html" class="font-bold text-blue-600 hover:underline">Data Communication & Computer Network (DCN) K Scheme Notes | MSBTE Diploma</a><p class="text-sm text-gray-600 mt-2">Free MSBTE K Scheme Data Communication & Computer Network (DCN - 314318) complete notes, chapter PDFs, IMP questions, and solved model answer papers for 4th Semester.</p></div>
-<div class="p-4 bg-white rounded-xl shadow"><a href="/notes/java-k-scheme-notes.html" class="font-bold text-blue-600 hover:underline">Java Programming (JPR) K Scheme Notes & Question Bank | MSBTE Diploma</a><p class="text-sm text-gray-600 mt-2">Free download MSBTE K Scheme Java Programming (JPR - 314317) Unit 1-6 mega notes, Super 25 question bank, viva Q&A, and practice mock test papers for 4th Semester.</p></div>
-<div class="p-4 bg-white rounded-xl shadow"><a href="/notes/ees-k-scheme-notes.html" class="font-bold text-blue-600 hover:underline">Environmental Education & Sustainability (EES) K Scheme Notes | MSBTE Diploma</a><p class="text-sm text-gray-600 mt-2">Free MSBTE K Scheme Environmental Education and Sustainability (EES - 314301) official syllabus, complete revision notes, IMP question bank, and online MCQ sets.</p></div>
-<div class="p-4 bg-white rounded-xl shadow"><a href="/notes/oop-k-scheme-notes.html" class="font-bold text-blue-600 hover:underline">Object Oriented Programming with C++ (OOP) K Scheme Notes | MSBTE Diploma</a><p class="text-sm text-gray-600 mt-2">Free download MSBTE K Scheme Object-Oriented Programming Using C++ (OOP - 313304) Unit 1-5 notes, complete PPTs, inheritance guides, and course outcome materials.</p></div>
-<div class="p-4 bg-white rounded-xl shadow"><a href="/notes/dsu-k-scheme-notes.html" class="font-bold text-blue-600 hover:underline">Data Structures Using C (DSU) K Scheme Notes & Question Bank | MSBTE Diploma</a><p class="text-sm text-gray-600 mt-2">Download free MSBTE K Scheme Data Structures Using C (DSU - 313301) unit-wise notes, Stacks and Queues PDFs, solved question paper with answers, and question bank.</p></div>
-<div class="p-4 bg-white rounded-xl shadow"><a href="/notes/dbms-k-scheme-notes.html" class="font-bold text-blue-600 hover:underline">Database Management System (DBMS) K Scheme Notes & Papers | MSBTE Diploma</a><p class="text-sm text-gray-600 mt-2">Free download MSBTE K Scheme Database Management System (DBMS - 313302) Unit 1-5 notes, complete revision guides, IMP question banks, and Winter 2023 solved papers.</p></div>
-<div class="p-4 bg-white rounded-xl shadow"><a href="/notes/dte-k-scheme-notes.html" class="font-bold text-blue-600 hover:underline">Digital Techniques (DTE) K Scheme Notes, MCQs & Solved Papers | MSBTE Diploma</a><p class="text-sm text-gray-600 mt-2">Free download MSBTE K Scheme Digital Techniques (DTE - 313303) unit-wise notes, logic gate PDFs, K-Map problems, solved MCQs, and previous year sample question papers.</p></div>
-<div class="p-4 bg-white rounded-xl shadow"><a href="/blog/engineering-admissions-institute-level-round-merit-based-2026.html" class="font-bold text-blue-600 hover:underline">Engineering Admission 2026: Institute-Level Round Strictly Merit-Based, CET Cell Guidelines</a><p class="text-sm text-gray-600 mt-2">Maharashtra CET Cell issues strict merit rules for 2026 institute-level engineering admissions with daily reporting & observers. Check vacant seats & process.</p></div>
-<div class="p-4 bg-white rounded-xl shadow"><a href="/blog/msbte-academic-calendar-2026-27-winter-exam-date.html" class="font-bold text-blue-600 hover:underline">MSBTE Academic Calendar 2026-27 Released: Key Dates for Odd Sem, Winter Exam & Enrolment</a><p class="text-sm text-gray-600 mt-2">MSBTE Academic Calendar 2026-27 official schedule released for Odd Semesters (Sem 1, 3 & 5). Check term start dates, Winter 2026 exam dates & K-Scheme updates.</p></div>
-<div class="p-4 bg-white rounded-xl shadow"><a href="/blog/dse-admission-2026-27-maharashtra.html" class="font-bold text-blue-600 hover:underline">DSE Admission 2026-27 Maharashtra: Dates, Schedule, Registration & Eligibility</a><p class="text-sm text-gray-600 mt-2">Complete guide on DSE Admission 2026-27 in Maharashtra for Direct Second Year Engineering. Check official dates, CAP round schedule, fee structure, and document verification process.</p></div>
-<div class="p-4 bg-white rounded-xl shadow"><a href="/blog/be-vs-btech-difference-which-is-better-2026.html" class="font-bold text-blue-600 hover:underline">BE vs BTech: Key Differences, Eligibility, Salary, Jobs & Which is Better? (2026 Guide)</a><p class="text-sm text-gray-600 mt-2">Confused between BE and BTech? Learn the complete difference between Bachelor of Engineering (BE) and Bachelor of Technology (BTech), including syllabus, eligibility, placements, salary, higher studies, and which degree is better in 2026.</p></div>
-<div class="p-4 bg-white rounded-xl shadow"><a href="/blog/top-100-engineering-project-ideas-diploma-students-2026.html" class="font-bold text-blue-600 hover:underline">Top 100 Engineering Project Ideas for Diploma Students (2026)</a><p class="text-sm text-gray-600 mt-2">Explore the top 100+ engineering project ideas for diploma and polytechnic students in 2026. Find the best final year projects in Python, ML, IoT, Java, and MERN.</p></div>
-<div class="p-4 bg-white rounded-xl shadow"><a href="/blog/sppu-engineering-be-btech-result-declared-2026.html" class="font-bold text-blue-600 hover:underline">SPPU BE & BTech Result 2026 Declared at unipune.ac.in | Direct Link</a><p class="text-sm text-gray-600 mt-2">Pune University has declared the SPPU BE Result 2026 for Final Year Engineering on 15 July 2026. Get the official direct link and revaluation details here.</p></div>
-<div class="p-4 bg-white rounded-xl shadow"><a href="/blog/sppu-be-2019-pattern-summer-2026-timetable.html" class="font-bold text-blue-600 hover:underline">SPPU BE 2019 Pattern End-Sem Exam Timetable â€“ April/May 2026 (Summer Session)</a><p class="text-sm text-gray-600 mt-2">SPPU has officially released the BE 2019 Pattern End-Sem Exam Timetable for Summer Session 2026. Check branch-wise dates, timings, and important instructions for BE students.</p></div>
-<div class="p-4 bg-white rounded-xl shadow"><a href="/blog/msbte-notes-k-scheme-2025-26.html" class="font-bold text-blue-600 hover:underline">MSBTE Notes K Scheme 2025-26 | All Branch PDF Download Free</a><p class="text-sm text-gray-600 mt-2">Download free MSBTE Notes for K Scheme â€“ All branches, all semesters. Get PDF notes, syllabus, lab manuals, micro-projects, and question banks in English & Marathi. Updated for Summer 2026 exams.</p></div>
-<div class="p-4 bg-white rounded-xl shadow"><a href="/blog/msbte-exam-ready-material-499.html" class="font-bold text-blue-600 hover:underline">MSBTE Exam à¤šà¥à¤¯à¤¾ à¤†à¤§à¥€ à¤¹à¥‡ à¤¬à¤˜ | Ultimate Question Bank à¤«à¤•à¥à¤¤ â‚¹499 à¤®à¤§à¥à¤¯à¥‡</a><p class="text-sm text-gray-600 mt-2">Get the Ultimate MSBTE Question Bank Bundle. 50+ syllabus-based questions, PYQs, and high-probability topics for every semester and branch at just â‚¹499 per subject.</p></div>
-<div class="p-4 bg-white rounded-xl shadow"><a href="/blog/msbte-notes-summer-exam-2026.html" class="font-bold text-blue-600 hover:underline">MSBTE Notes For Summer Exam 2026 | Free & Paid Guess Papers</a><p class="text-sm text-gray-600 mt-2">Get the ultimate MSBTE Notes for Summer Exam 2026. Access free study materials and buy premium guess papers for all subjects to score high marks in your diploma exams.</p></div>
-<div class="p-4 bg-white rounded-xl shadow"><a href="/blog/all-india-ncat-2026.html" class="font-bold text-blue-600 hover:underline">All India NCAT 2026: Naukri Campus Aptitude Test | Win â‚¹20 Lakhs</a><p class="text-sm text-gray-600 mt-2">Enroll now for All India NCAT 2026. Benchmark your college aptitude skills against peers, win from a â‚¹20 Lakhs prize pool, and secure paid internships with leading brands. Free for all UG/PG students.</p></div>
-<div class="p-4 bg-white rounded-xl shadow"><a href="/blog/cm-fellowship-maharashtra-2026.html" class="font-bold text-blue-600 hover:underline">CM Fellowship Maharashtra 2026: â‚¹61,500 Stipend & IIT Bombay Course | Apply Now</a><p class="text-sm text-gray-600 mt-2">Apply for the Maharashtra Chief Minister Fellowship 2026 (CMFP). Get a â‚¹61,500/month stipend, Grade-A officer status, and a Public Policy Certificate from IIT Bombay. Check eligibility, selection process & how to apply.</p></div>
-<div class="p-4 bg-white rounded-xl shadow"><a href="/blog/asha-bhosle-death-news.html" class="font-bold text-blue-600 hover:underline">Asha Bhosle Death News: Legendary Singer Passes Away at 92 | Tribute & Legacy</a><p class="text-sm text-gray-600 mt-2">Legendary playback singer Asha Bhosle passed away on April 12, 2026, at 92. Full tribute, career highlights, PM Modi's tribute, and funeral details.</p></div>
-<div class="p-4 bg-white rounded-xl shadow"><a href="/blog/k-scheme-guess-papers.html" class="font-bold text-blue-600 hover:underline">MSBTE K Scheme Guess Papers & Important Questions</a><p class="text-sm text-gray-600 mt-2">Access crucial MSBTE K Scheme Guess Papers and Important Questions for multiple subjects from Basic Mathematics to VLSI Applications.</p></div></div></noscript>
+        <noscript>
+          <div class="col-span-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="p-4 bg-white rounded-xl shadow"><a href="/blog/nana-patekar-tribute.html"
+                class="font-bold text-blue-600 hover:underline">Nana Patekar Passes Away at 75: Heartfelt Tribute to the
+                Legend</a>
+              <p class="text-sm text-gray-600 mt-2">The Indian film industry mourns as legendary actor Nana Patekar
+                passes away at 75. Read our heartfelt tribute to his powerful legacy in Marathi and Hindi cinema.</p>
+            </div>
+            <div class="p-4 bg-white rounded-xl shadow"><a href="/notes/osy-k-scheme-notes.html"
+                class="font-bold text-blue-600 hover:underline">Operating System (OSY) K Scheme Notes & Question Bank |
+                MSBTE Diploma</a>
+              <p class="text-sm text-gray-600 mt-2">Free MSBTE K-Scheme 314319 – Operating System (OSY) unit-wise notes,
+                important question bank, model answers, and complete revision roadmaps for 4th Semester.</p>
+            </div>
+            <div class="p-4 bg-white rounded-xl shadow"><a href="/notes/mic-k-scheme-notes.html"
+                class="font-bold text-blue-600 hover:underline">Microprocessor (MIC) K Scheme Notes & Question Bank |
+                MSBTE Diploma</a>
+              <p class="text-sm text-gray-600 mt-2">Download free MSBTE K Scheme Microprocessor (MIC - 314321) unit-wise
+                notes, 8086 architecture PDFs, IMP question bank, and complete revision roadmaps for 4th Semester.</p>
+            </div>
+            <div class="p-4 bg-white rounded-xl shadow"><a href="/notes/dcn-k-scheme-notes.html"
+                class="font-bold text-blue-600 hover:underline">Data Communication & Computer Network (DCN) K Scheme
+                Notes | MSBTE Diploma</a>
+              <p class="text-sm text-gray-600 mt-2">Free MSBTE K Scheme Data Communication & Computer Network (DCN -
+                314318) complete notes, chapter PDFs, IMP questions, and solved model answer papers for 4th Semester.
+              </p>
+            </div>
+            <div class="p-4 bg-white rounded-xl shadow"><a href="/notes/java-k-scheme-notes.html"
+                class="font-bold text-blue-600 hover:underline">Java Programming (JPR) K Scheme Notes & Question Bank |
+                MSBTE Diploma</a>
+              <p class="text-sm text-gray-600 mt-2">Free download MSBTE K Scheme Java Programming (JPR - 314317) Unit
+                1-6 mega notes, Super 25 question bank, viva Q&A, and practice mock test papers for 4th Semester.</p>
+            </div>
+            <div class="p-4 bg-white rounded-xl shadow"><a href="/notes/ees-k-scheme-notes.html"
+                class="font-bold text-blue-600 hover:underline">Environmental Education & Sustainability (EES) K Scheme
+                Notes | MSBTE Diploma</a>
+              <p class="text-sm text-gray-600 mt-2">Free MSBTE K Scheme Environmental Education and Sustainability (EES
+                - 314301) official syllabus, complete revision notes, IMP question bank, and online MCQ sets.</p>
+            </div>
+            <div class="p-4 bg-white rounded-xl shadow"><a href="/notes/oop-k-scheme-notes.html"
+                class="font-bold text-blue-600 hover:underline">Object Oriented Programming with C++ (OOP) K Scheme
+                Notes | MSBTE Diploma</a>
+              <p class="text-sm text-gray-600 mt-2">Free download MSBTE K Scheme Object-Oriented Programming Using C++
+                (OOP - 313304) Unit 1-5 notes, complete PPTs, inheritance guides, and course outcome materials.</p>
+            </div>
+            <div class="p-4 bg-white rounded-xl shadow"><a href="/notes/dsu-k-scheme-notes.html"
+                class="font-bold text-blue-600 hover:underline">Data Structures Using C (DSU) K Scheme Notes & Question
+                Bank | MSBTE Diploma</a>
+              <p class="text-sm text-gray-600 mt-2">Download free MSBTE K Scheme Data Structures Using C (DSU - 313301)
+                unit-wise notes, Stacks and Queues PDFs, solved question paper with answers, and question bank.</p>
+            </div>
+            <div class="p-4 bg-white rounded-xl shadow"><a href="/notes/dbms-k-scheme-notes.html"
+                class="font-bold text-blue-600 hover:underline">Database Management System (DBMS) K Scheme Notes &
+                Papers | MSBTE Diploma</a>
+              <p class="text-sm text-gray-600 mt-2">Free download MSBTE K Scheme Database Management System (DBMS -
+                313302) Unit 1-5 notes, complete revision guides, IMP question banks, and Winter 2023 solved papers.</p>
+            </div>
+            <div class="p-4 bg-white rounded-xl shadow"><a href="/notes/dte-k-scheme-notes.html"
+                class="font-bold text-blue-600 hover:underline">Digital Techniques (DTE) K Scheme Notes, MCQs & Solved
+                Papers | MSBTE Diploma</a>
+              <p class="text-sm text-gray-600 mt-2">Free download MSBTE K Scheme Digital Techniques (DTE - 313303)
+                unit-wise notes, logic gate PDFs, K-Map problems, solved MCQs, and previous year sample question papers.
+              </p>
+            </div>
+            <div class="p-4 bg-white rounded-xl shadow"><a
+                href="/blog/engineering-admissions-institute-level-round-merit-based-2026.html"
+                class="font-bold text-blue-600 hover:underline">Engineering Admission 2026: Institute-Level Round
+                Strictly Merit-Based, CET Cell Guidelines</a>
+              <p class="text-sm text-gray-600 mt-2">Maharashtra CET Cell issues strict merit rules for 2026
+                institute-level engineering admissions with daily reporting & observers. Check vacant seats & process.
+              </p>
+            </div>
+            <div class="p-4 bg-white rounded-xl shadow"><a
+                href="/blog/msbte-academic-calendar-2026-27-winter-exam-date.html"
+                class="font-bold text-blue-600 hover:underline">MSBTE Academic Calendar 2026-27 Released: Key Dates for
+                Odd Sem, Winter Exam & Enrolment</a>
+              <p class="text-sm text-gray-600 mt-2">MSBTE Academic Calendar 2026-27 official schedule released for Odd
+                Semesters (Sem 1, 3 & 5). Check term start dates, Winter 2026 exam dates & K-Scheme updates.</p>
+            </div>
+            <div class="p-4 bg-white rounded-xl shadow"><a href="/blog/dse-admission-2026-27-maharashtra.html"
+                class="font-bold text-blue-600 hover:underline">DSE Admission 2026-27 Maharashtra: Dates, Schedule,
+                Registration & Eligibility</a>
+              <p class="text-sm text-gray-600 mt-2">Complete guide on DSE Admission 2026-27 in Maharashtra for Direct
+                Second Year Engineering. Check official dates, CAP round schedule, fee structure, and document
+                verification process.</p>
+            </div>
+            <div class="p-4 bg-white rounded-xl shadow"><a href="/blog/be-vs-btech-difference-which-is-better-2026.html"
+                class="font-bold text-blue-600 hover:underline">BE vs BTech: Key Differences, Eligibility, Salary, Jobs
+                & Which is Better? (2026 Guide)</a>
+              <p class="text-sm text-gray-600 mt-2">Confused between BE and BTech? Learn the complete difference between
+                Bachelor of Engineering (BE) and Bachelor of Technology (BTech), including syllabus, eligibility,
+                placements, salary, higher studies, and which degree is better in 2026.</p>
+            </div>
+            <div class="p-4 bg-white rounded-xl shadow"><a
+                href="/blog/top-100-engineering-project-ideas-diploma-students-2026.html"
+                class="font-bold text-blue-600 hover:underline">Top 100 Engineering Project Ideas for Diploma Students
+                (2026)</a>
+              <p class="text-sm text-gray-600 mt-2">Explore the top 100+ engineering project ideas for diploma and
+                polytechnic students in 2026. Find the best final year projects in Python, ML, IoT, Java, and MERN.</p>
+            </div>
+            <div class="p-4 bg-white rounded-xl shadow"><a
+                href="/blog/sppu-engineering-be-btech-result-declared-2026.html"
+                class="font-bold text-blue-600 hover:underline">SPPU BE & BTech Result 2026 Declared at unipune.ac.in |
+                Direct Link</a>
+              <p class="text-sm text-gray-600 mt-2">Pune University has declared the SPPU BE Result 2026 for Final Year
+                Engineering on 15 July 2026. Get the official direct link and revaluation details here.</p>
+            </div>
+            <div class="p-4 bg-white rounded-xl shadow"><a href="/blog/sppu-be-2019-pattern-summer-2026-timetable.html"
+                class="font-bold text-blue-600 hover:underline">SPPU BE 2019 Pattern End-Sem Exam Timetable â€“
+                April/May 2026 (Summer Session)</a>
+              <p class="text-sm text-gray-600 mt-2">SPPU has officially released the BE 2019 Pattern End-Sem Exam
+                Timetable for Summer Session 2026. Check branch-wise dates, timings, and important instructions for BE
+                students.</p>
+            </div>
+            <div class="p-4 bg-white rounded-xl shadow"><a href="/blog/msbte-notes-k-scheme-2025-26.html"
+                class="font-bold text-blue-600 hover:underline">MSBTE Notes K Scheme 2025-26 | All Branch PDF Download
+                Free</a>
+              <p class="text-sm text-gray-600 mt-2">Download free MSBTE Notes for K Scheme â€“ All branches, all
+                semesters. Get PDF notes, syllabus, lab manuals, micro-projects, and question banks in English &
+                Marathi. Updated for Summer 2026 exams.</p>
+            </div>
+            <div class="p-4 bg-white rounded-xl shadow"><a href="/blog/msbte-exam-ready-material-499.html"
+                class="font-bold text-blue-600 hover:underline">MSBTE Exam à¤šà¥à¤¯à¤¾ à¤†à¤§à¥€ à¤¹à¥‡ à¤¬à¤˜ |
+                Ultimate Question Bank à¤«à¤•à¥à¤¤ â‚¹499 à¤®à¤§à¥à¤¯à¥‡</a>
+              <p class="text-sm text-gray-600 mt-2">Get the Ultimate MSBTE Question Bank Bundle. 50+ syllabus-based
+                questions, PYQs, and high-probability topics for every semester and branch at just â‚¹499 per subject.
+              </p>
+            </div>
+            <div class="p-4 bg-white rounded-xl shadow"><a href="/blog/msbte-notes-summer-exam-2026.html"
+                class="font-bold text-blue-600 hover:underline">MSBTE Notes For Summer Exam 2026 | Free & Paid Guess
+                Papers</a>
+              <p class="text-sm text-gray-600 mt-2">Get the ultimate MSBTE Notes for Summer Exam 2026. Access free study
+                materials and buy premium guess papers for all subjects to score high marks in your diploma exams.</p>
+            </div>
+            <div class="p-4 bg-white rounded-xl shadow"><a href="/blog/all-india-ncat-2026.html"
+                class="font-bold text-blue-600 hover:underline">All India NCAT 2026: Naukri Campus Aptitude Test | Win
+                â‚¹20 Lakhs</a>
+              <p class="text-sm text-gray-600 mt-2">Enroll now for All India NCAT 2026. Benchmark your college aptitude
+                skills against peers, win from a â‚¹20 Lakhs prize pool, and secure paid internships with leading
+                brands. Free for all UG/PG students.</p>
+            </div>
+            <div class="p-4 bg-white rounded-xl shadow"><a href="/blog/cm-fellowship-maharashtra-2026.html"
+                class="font-bold text-blue-600 hover:underline">CM Fellowship Maharashtra 2026: â‚¹61,500 Stipend & IIT
+                Bombay Course | Apply Now</a>
+              <p class="text-sm text-gray-600 mt-2">Apply for the Maharashtra Chief Minister Fellowship 2026 (CMFP). Get
+                a â‚¹61,500/month stipend, Grade-A officer status, and a Public Policy Certificate from IIT Bombay.
+                Check eligibility, selection process & how to apply.</p>
+            </div>
+            <div class="p-4 bg-white rounded-xl shadow"><a href="/blog/asha-bhosle-death-news.html"
+                class="font-bold text-blue-600 hover:underline">Asha Bhosle Death News: Legendary Singer Passes Away at
+                92 | Tribute & Legacy</a>
+              <p class="text-sm text-gray-600 mt-2">Legendary playback singer Asha Bhosle passed away on April 12, 2026,
+                at 92. Full tribute, career highlights, PM Modi's tribute, and funeral details.</p>
+            </div>
+            <div class="p-4 bg-white rounded-xl shadow"><a href="/blog/k-scheme-guess-papers.html"
+                class="font-bold text-blue-600 hover:underline">MSBTE K Scheme Guess Papers & Important Questions</a>
+              <p class="text-sm text-gray-600 mt-2">Access crucial MSBTE K Scheme Guess Papers and Important Questions
+                for multiple subjects from Basic Mathematics to VLSI Applications.</p>
+            </div>
+          </div>
+        </noscript>
       </div>
 
       <!-- Pagination Container -->
@@ -1424,7 +1961,8 @@
             class="min-w-[300px] max-w-xs bg-white rounded-2xl shadow-lg p-6 text-left flex-shrink-0 border border-gray-100">
             <div class="flex items-center gap-4 mb-4">
               <img src="https://api.dicebear.com/7.x/thumbs/svg?seed=Ritika"
-                class="w-12 h-12 rounded-full border-2 border-blue-100 p-0.5" loading="lazy" alt="Avatar of Ritika Patil" />
+                class="w-12 h-12 rounded-full border-2 border-blue-100 p-0.5" loading="lazy"
+                alt="Avatar of Ritika Patil" />
               <div>
                 <h3 class="font-display font-bold text-gray-900 text-base">Ritika Patil</h3>
                 <span class="text-xs text-gray-400">1 week ago</span>
@@ -1440,7 +1978,8 @@
             class="min-w-[300px] max-w-xs bg-white rounded-2xl shadow-lg p-6 text-left flex-shrink-0 border border-gray-100">
             <div class="flex items-center gap-4 mb-4">
               <img src="https://api.dicebear.com/7.x/thumbs/svg?seed=Yash"
-                class="w-12 h-12 rounded-full border-2 border-yellow-100 p-0.5" loading="lazy" alt="Avatar of Yash Pawar" />
+                class="w-12 h-12 rounded-full border-2 border-yellow-100 p-0.5" loading="lazy"
+                alt="Avatar of Yash Pawar" />
               <div>
                 <h3 class="font-display font-bold text-gray-900 text-base">Yash Pawar</h3>
                 <span class="text-xs text-gray-400">2 days ago</span>
@@ -1456,7 +1995,8 @@
             class="min-w-[300px] max-w-xs bg-white rounded-2xl shadow-lg p-6 text-left flex-shrink-0 border border-gray-100">
             <div class="flex items-center gap-4 mb-4">
               <img src="https://api.dicebear.com/7.x/thumbs/svg?seed=Sneha"
-                class="w-12 h-12 rounded-full border-2 border-purple-100 p-0.5" loading="lazy" alt="Avatar of Bhavesh Patil" />
+                class="w-12 h-12 rounded-full border-2 border-purple-100 p-0.5" loading="lazy"
+                alt="Avatar of Bhavesh Patil" />
               <div>
                 <h3 class="font-display font-bold text-gray-900 text-base">Bhavesh Patil</h3>
                 <span class="text-xs text-gray-400">3 days ago</span>
@@ -1472,7 +2012,8 @@
             class="min-w-[300px] max-w-xs bg-white rounded-2xl shadow-lg p-6 text-left flex-shrink-0 border border-gray-100">
             <div class="flex items-center gap-4 mb-4">
               <img src="https://api.dicebear.com/7.x/thumbs/svg?seed=Amol"
-                class="w-12 h-12 rounded-full border-2 border-green-100 p-0.5" loading="lazy" alt="Avatar of Amol Bari" />
+                class="w-12 h-12 rounded-full border-2 border-green-100 p-0.5" loading="lazy"
+                alt="Avatar of Amol Bari" />
               <div>
                 <h3 class="font-display font-bold text-gray-900 text-base">Amol Bari</h3>
                 <span class="text-xs text-gray-400">5 days ago</span>
@@ -1658,7 +2199,8 @@
         <a href="/privacy-policy.html" class="hover:underline">Privacy Policy</a> |
         <a href="/contact.html" class="hover:underline">Contact</a>
       </p>
-      <p class="mt-2 text-xs text-blue-200">Not affiliated with or endorsed by MSBTE. Official information is available at msbte.ac.in.</p>
+      <p class="mt-2 text-xs text-blue-200">Not affiliated with or endorsed by MSBTE. Official information is available
+        at msbte.ac.in.</p>
       <p class="mt-1">&copy; 2026 MSBTE Notes & Info. All rights reserved.</p>
     </div>
 
@@ -1768,10 +2310,12 @@
     role="complementary">
     <div>
       <div class="text-[10px] text-gray-500 font-bold uppercase tracking-wider">Join Our Community</div>
-      <div class="text-base font-black text-gray-900">Daily Updates & <span class="text-green-600">Free Notes</span></div>
+      <div class="text-base font-black text-gray-900">Daily Updates & <span class="text-green-600">Free Notes</span>
+      </div>
     </div>
-    <a href="https://chat.whatsapp.com/HxKxLZy32cYETd63arG1Rc"
-      target="_blank" class="bg-green-600 text-white font-bold py-3 px-6 rounded-full text-sm shadow-lg shadow-green-200" rel="noopener noreferrer">
+    <a href="https://chat.whatsapp.com/HxKxLZy32cYETd63arG1Rc" target="_blank"
+      class="bg-green-600 text-white font-bold py-3 px-6 rounded-full text-sm shadow-lg shadow-green-200"
+      rel="noopener noreferrer">
       Join Now
     </a>
   </div>

@@ -308,3 +308,43 @@ footer .bg-white {
 #about svg:hover {
   transform: scale(1.15);
 }
+
+/* ==========================================================================
+   Navigation Dropdowns & Mobile Responsive Submenus (Cross-browser & Touch)
+   ========================================================================== */
+.nav-dropdown {
+  position: relative;
+}
+
+/* Invisible bridge so mouse hover doesn't drop off between button and menu */
+.nav-dropdown::after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  height: 12px;
+}
+
+/* Tailwind 2 CDN group-hover fallback & custom dropdown support */
+.group:hover .group-hover\:block,
+.group:focus-within .group-hover\:block,
+.group.is-open .group-hover\:block,
+.nav-dropdown:hover .dropdown-menu,
+.nav-dropdown:focus-within .dropdown-menu,
+.nav-dropdown.is-open .dropdown-menu {
+  display: block !important;
+}
+
+.group:hover .group-hover\:rotate-180,
+.group.is-open .group-hover\:rotate-180,
+.nav-dropdown:hover .dropdown-arrow,
+.nav-dropdown.is-open .dropdown-arrow {
+  transform: rotate(180deg) !important;
+}
+
+/* Mobile navigation drawer z-index and touch scroll assurance */
+#mobileNav {
+  z-index: 9999 !important;
+  -webkit-overflow-scrolling: touch;
+}

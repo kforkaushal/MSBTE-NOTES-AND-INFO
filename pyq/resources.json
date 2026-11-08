@@ -1,0 +1,3940 @@
+[
+  {
+    "code": "311302",
+    "title": "Basic Mathematics (311302) Question Papers",
+    "subject_name": "Basic Mathematics",
+    "abbreviation": "BMS",
+    "semester": 1,
+    "academic_year": "First Year (FY)",
+    "subject_type": "Core",
+    "branches": [
+      "AI",
+      "CE",
+      "CM",
+      "EE",
+      "EJ",
+      "IF",
+      "ME"
+    ],
+    "branches_str": "Artificial Intelligence & Machine Learning, Civil Engineering, Computer Engineering, Electrical Engineering, Electronics & Telecommunication, Information Technology, Mechanical Engineering",
+    "slug": "311302-basic-mathematics",
+    "url": "/pyq/311302-basic-mathematics.html",
+    "image": "/resourse/pyq/ME-BM.png",
+    "papers": {
+      "Summer 2026": {
+        "url": "https://drive.google.com/file/d/1wtDwmHOUWxQSQlhMcCN1I9kkRo4bUTFB/view",
+        "direct_url": "https://drive.google.com/uc?export=download&id=1wtDwmHOUWxQSQlhMcCN1I9kkRo4bUTFB",
+        "size_kb": "401",
+        "file_name": "S-2026_311302.pdf",
+        "id": "1wtDwmHOUWxQSQlhMcCN1I9kkRo4bUTFB",
+        "year": "2026",
+        "season": "Summer"
+      },
+      "Winter 2025": {
+        "url": "https://drive.google.com/file/d/1yLJSfBhDagFBrI9-_TlF898V3GSofnpx/view",
+        "direct_url": "https://drive.google.com/uc?export=download&id=1yLJSfBhDagFBrI9-_TlF898V3GSofnpx",
+        "size_kb": "152",
+        "file_name": "W-2025_311302.pdf",
+        "id": "1yLJSfBhDagFBrI9-_TlF898V3GSofnpx",
+        "year": "2025",
+        "season": "Winter"
+      }
+    }
+  },
+  {
+    "code": "311303",
+    "title": "Communication Skills (English) (311303) Question Papers",
+    "subject_name": "Communication Skills (English)",
+    "abbreviation": "CMS",
+    "semester": 1,
+    "academic_year": "First Year (FY)",
+    "subject_type": "Core",
+    "branches": [
+      "AI",
+      "CE",
+      "CM",
+      "EE",
+      "EJ",
+      "IF",
+      "ME"
+    ],
+    "branches_str": "Artificial Intelligence & Machine Learning, Civil Engineering, Computer Engineering, Electrical Engineering, Electronics & Telecommunication, Information Technology, Mechanical Engineering",
+    "slug": "311303-communication-skills-english",
+    "url": "/pyq/311303-communication-skills-english.html",
+    "image": "/resourse/pyq/EJ-CS.png",
+    "papers": {
+      "Summer 2026": {
+        "url": "https://drive.google.com/file/d/1QCw--zXgLwT9E2yjMF9a2Z8Lza2G4vNk/view",
+        "direct_url": "https://drive.google.com/uc?export=download&id=1QCw--zXgLwT9E2yjMF9a2Z8Lza2G4vNk",
+        "size_kb": "166",
+        "file_name": "S-2026_311303.pdf",
+        "id": "1QCw--zXgLwT9E2yjMF9a2Z8Lza2G4vNk",
+        "year": "2026",
+        "season": "Summer"
+      },
+      "Winter 2025": {
+        "url": "https://drive.google.com/file/d/1wPoXkQtNz71D3sSoI9CY_9IUzWzxC9xb/view",
+        "direct_url": "https://drive.google.com/uc?export=download&id=1wPoXkQtNz71D3sSoI9CY_9IUzWzxC9xb",
+        "size_kb": "83",
+        "file_name": "W-2025_311303.pdf",
+        "id": "1wPoXkQtNz71D3sSoI9CY_9IUzWzxC9xb",
+        "year": "2025",
+        "season": "Winter"
+      }
+    }
+  },
+  {
+    "code": "312301",
+    "title": "Applied Mathematics (312301) Question Papers",
+    "subject_name": "Applied Mathematics",
+    "abbreviation": "AMS",
+    "semester": 2,
+    "academic_year": "First Year (FY)",
+    "subject_type": "Core",
+    "branches": [
+      "AI",
+      "CE",
+      "CM",
+      "EE",
+      "EJ",
+      "IF",
+      "ME"
+    ],
+    "branches_str": "Artificial Intelligence & Machine Learning, Civil Engineering, Computer Engineering, Electrical Engineering, Electronics & Telecommunication, Information Technology, Mechanical Engineering",
+    "slug": "312301-applied-mathematics",
+    "url": "/pyq/312301-applied-mathematics.html",
+    "image": "/resourse/pyq/AI-AM.png",
+    "papers": {
+      "Summer 2026": {
+        "url": "https://drive.google.com/file/d/1XXMA_Od-lZQSgGyMjUwappPFXyLoslaf/view",
+        "direct_url": "https://drive.google.com/uc?export=download&id=1XXMA_Od-lZQSgGyMjUwappPFXyLoslaf",
+        "size_kb": "34",
+        "file_name": "S-2026_312301.pdf",
+        "id": "1XXMA_Od-lZQSgGyMjUwappPFXyLoslaf",
+        "year": "2026",
+        "season": "Summer"
+      },
+      "Winter 2025": {
+        "url": "https://drive.google.com/file/d/1adrV6B30wr7_mIGkWiMNIpoSa2thyIp3/view",
+        "direct_url": "https://drive.google.com/uc?export=download&id=1adrV6B30wr7_mIGkWiMNIpoSa2thyIp3",
+        "size_kb": "150",
+        "file_name": "W-2025_312301.pdf",
+        "id": "1adrV6B30wr7_mIGkWiMNIpoSa2thyIp3",
+        "year": "2025",
+        "season": "Winter"
+      }
+    }
+  },
+  {
+    "code": "312303",
+    "title": "Programming in C (312303) Question Papers",
+    "subject_name": "Programming in C",
+    "abbreviation": "PIC",
+    "semester": 2,
+    "academic_year": "First Year (FY)",
+    "subject_type": "Core",
+    "branches": [
+      "AI",
+      "CM",
+      "IF"
+    ],
+    "branches_str": "Artificial Intelligence & Machine Learning, Computer Engineering, Information Technology",
+    "slug": "312303-programming-in-c",
+    "url": "/pyq/312303-programming-in-c.html",
+    "image": "/resourse/pyq/IF-PC303.png",
+    "papers": {
+      "Summer 2026": {
+        "url": "https://drive.google.com/file/d/1clx7lEZC9WE4LeKcYTMN1dD5r38SZP5J/view",
+        "direct_url": "https://drive.google.com/uc?export=download&id=1clx7lEZC9WE4LeKcYTMN1dD5r38SZP5J",
+        "size_kb": "372",
+        "file_name": "S-2026_312303.pdf",
+        "id": "1clx7lEZC9WE4LeKcYTMN1dD5r38SZP5J",
+        "year": "2026",
+        "season": "Summer"
+      },
+      "Winter 2025": {
+        "url": "https://drive.google.com/file/d/1bZG8jS96o1OBZa1YwymUS09cXsBt5kbN/view",
+        "direct_url": "https://drive.google.com/uc?export=download&id=1bZG8jS96o1OBZa1YwymUS09cXsBt5kbN",
+        "size_kb": "95",
+        "file_name": "W-2025_312303.pdf",
+        "id": "1bZG8jS96o1OBZa1YwymUS09cXsBt5kbN",
+        "year": "2025",
+        "season": "Winter"
+      }
+    }
+  },
+  {
+    "code": "312309",
+    "title": "Elements of Electronics (312309) Question Papers",
+    "subject_name": "Elements of Electronics",
+    "abbreviation": "EOE",
+    "semester": 2,
+    "academic_year": "First Year (FY)",
+    "subject_type": "Core",
+    "branches": [
+      "EE"
+    ],
+    "branches_str": "Electrical Engineering",
+    "slug": "312309-elements-of-electronics",
+    "url": "/pyq/312309-elements-of-electronics.html",
+    "image": "/resourse/pyq/EE-EE.png",
+    "papers": {
+      "Summer 2026": {
+        "url": "https://drive.google.com/file/d/1XgzKJX6n373EBMR529pg5fmVLrDgHvQf/view",
+        "direct_url": "https://drive.google.com/uc?export=download&id=1XgzKJX6n373EBMR529pg5fmVLrDgHvQf",
+        "size_kb": "410",
+        "file_name": "S-2026_312309.pdf",
+        "id": "1XgzKJX6n373EBMR529pg5fmVLrDgHvQf",
+        "year": "2026",
+        "season": "Summer"
+      },
+      "Winter 2025": {
+        "url": "https://drive.google.com/file/d/1sFGc0oYV4mU7FyIDhCE9dXPzdHVkWPmg/view",
+        "direct_url": "https://drive.google.com/uc?export=download&id=1sFGc0oYV4mU7FyIDhCE9dXPzdHVkWPmg",
+        "size_kb": "118",
+        "file_name": "W-2025_312309.pdf",
+        "id": "1sFGc0oYV4mU7FyIDhCE9dXPzdHVkWPmg",
+        "year": "2025",
+        "season": "Winter"
+      }
+    }
+  },
+  {
+    "code": "312310",
+    "title": "Fundamental of Electrical Engineering (312310) Question Papers",
+    "subject_name": "Fundamental of Electrical Engineering",
+    "abbreviation": "FEE",
+    "semester": 2,
+    "academic_year": "First Year (FY)",
+    "subject_type": "Core",
+    "branches": [
+      "EE"
+    ],
+    "branches_str": "Electrical Engineering",
+    "slug": "312310-fundamental-of-electrical-engineering",
+    "url": "/pyq/312310-fundamental-of-electrical-engineering.html",
+    "image": "/resourse/pyq/EE-FEE.png",
+    "papers": {
+      "Summer 2026": {
+        "url": "https://drive.google.com/file/d/1fUAyPjRi-P2nXKIR9L7MzyTnmy86WKXJ/view",
+        "direct_url": "https://drive.google.com/uc?export=download&id=1fUAyPjRi-P2nXKIR9L7MzyTnmy86WKXJ",
+        "size_kb": "395",
+        "file_name": "S-2026_312310.pdf",
+        "id": "1fUAyPjRi-P2nXKIR9L7MzyTnmy86WKXJ",
+        "year": "2026",
+        "season": "Summer"
+      },
+      "Winter 2025": {
+        "url": "https://drive.google.com/file/d/1MnTIFE_id36VU4V_stgKuiKACzo77Lh0/view",
+        "direct_url": "https://drive.google.com/uc?export=download&id=1MnTIFE_id36VU4V_stgKuiKACzo77Lh0",
+        "size_kb": "70",
+        "file_name": "W-2025_312310.pdf",
+        "id": "1MnTIFE_id36VU4V_stgKuiKACzo77Lh0",
+        "year": "2025",
+        "season": "Winter"
+      }
+    }
+  },
+  {
+    "code": "312311",
+    "title": "Engineering Drawing (312311) Question Papers",
+    "subject_name": "Engineering Drawing",
+    "abbreviation": "EDR",
+    "semester": 2,
+    "academic_year": "First Year (FY)",
+    "subject_type": "Core",
+    "branches": [
+      "ME"
+    ],
+    "branches_str": "Mechanical Engineering",
+    "slug": "312311-engineering-drawing",
+    "url": "/pyq/312311-engineering-drawing.html",
+    "image": "/resourse/pyq/ME-ED.png",
+    "papers": {
+      "Summer 2026": {
+        "url": "https://drive.google.com/file/d/1kSQrnjX4aNwHhrqQJ2r-Xn6xQbttvTES/view",
+        "direct_url": "https://drive.google.com/uc?export=download&id=1kSQrnjX4aNwHhrqQJ2r-Xn6xQbttvTES",
+        "size_kb": "584",
+        "file_name": "S-2026_312311.pdf",
+        "id": "1kSQrnjX4aNwHhrqQJ2r-Xn6xQbttvTES",
+        "year": "2026",
+        "season": "Summer"
+      },
+      "Winter 2025": {
+        "url": "https://drive.google.com/file/d/1gj4zCHtrzXcn5oEecNH_dXde2eWJ75xE/view",
+        "direct_url": "https://drive.google.com/uc?export=download&id=1gj4zCHtrzXcn5oEecNH_dXde2eWJ75xE",
+        "size_kb": "174",
+        "file_name": "W-2025_312311.pdf",
+        "id": "1gj4zCHtrzXcn5oEecNH_dXde2eWJ75xE",
+        "year": "2025",
+        "season": "Winter"
+      }
+    }
+  },
+  {
+    "code": "312312",
+    "title": "Engineering Mechanics (312312) Question Papers",
+    "subject_name": "Engineering Mechanics",
+    "abbreviation": "EGM",
+    "semester": 2,
+    "academic_year": "First Year (FY)",
+    "subject_type": "Core",
+    "branches": [
+      "CE",
+      "ME"
+    ],
+    "branches_str": "Civil Engineering, Mechanical Engineering",
+    "slug": "312312-engineering-mechanics",
+    "url": "/pyq/312312-engineering-mechanics.html",
+    "image": "/resourse/pyq/ME-EM.png",
+    "papers": {
+      "Summer 2026": {
+        "url": "https://drive.google.com/file/d/1ogEBXKRK6B92gmOsX2NMiUqTy1XEk1ER/view",
+        "direct_url": "https://drive.google.com/uc?export=download&id=1ogEBXKRK6B92gmOsX2NMiUqTy1XEk1ER",
+        "size_kb": "514",
+        "file_name": "S-2026_312312.pdf",
+        "id": "1ogEBXKRK6B92gmOsX2NMiUqTy1XEk1ER",
+        "year": "2026",
+        "season": "Summer"
+      },
+      "Winter 2025": {
+        "url": "https://drive.google.com/file/d/1lYWk4xCKik52ggyTsuxX9G7ttgnwmEGr/view",
+        "direct_url": "https://drive.google.com/uc?export=download&id=1lYWk4xCKik52ggyTsuxX9G7ttgnwmEGr",
+        "size_kb": "183",
+        "file_name": "W-2025_312312.pdf",
+        "id": "1lYWk4xCKik52ggyTsuxX9G7ttgnwmEGr",
+        "year": "2025",
+        "season": "Winter"
+      }
+    }
+  },
+  {
+    "code": "312313",
+    "title": "Manufacturing Technology (312313) Question Papers",
+    "subject_name": "Manufacturing Technology",
+    "abbreviation": "MAN",
+    "semester": 2,
+    "academic_year": "First Year (FY)",
+    "subject_type": "Core",
+    "branches": [
+      "ME"
+    ],
+    "branches_str": "Mechanical Engineering",
+    "slug": "312313-manufacturing-technology",
+    "url": "/pyq/312313-manufacturing-technology.html",
+    "image": "/resourse/pyq/ME-MT.png",
+    "papers": {
+      "Summer 2026": {
+        "url": "https://drive.google.com/file/d/161pqLcXWZKTSz5fq8Tso_QYwLrq-iirW/view",
+        "direct_url": "https://drive.google.com/uc?export=download&id=161pqLcXWZKTSz5fq8Tso_QYwLrq-iirW",
+        "size_kb": "370",
+        "file_name": "S-2026_312313.pdf",
+        "id": "161pqLcXWZKTSz5fq8Tso_QYwLrq-iirW",
+        "year": "2026",
+        "season": "Summer"
+      },
+      "Winter 2025": {
+        "url": "https://drive.google.com/file/d/1RaDIKrIB9ecSH29ozjrySfQ49BHoHjjR/view",
+        "direct_url": "https://drive.google.com/uc?export=download&id=1RaDIKrIB9ecSH29ozjrySfQ49BHoHjjR",
+        "size_kb": "23",
+        "file_name": "W-2025_312313.pdf",
+        "id": "1RaDIKrIB9ecSH29ozjrySfQ49BHoHjjR",
+        "year": "2025",
+        "season": "Winter"
+      }
+    }
+  },
+  {
+    "code": "312314",
+    "title": "Basic Electronics (312314) Question Papers",
+    "subject_name": "Basic Electronics",
+    "abbreviation": "BEL",
+    "semester": 2,
+    "academic_year": "First Year (FY)",
+    "subject_type": "Core",
+    "branches": [
+      "EJ"
+    ],
+    "branches_str": "Electronics & Telecommunication",
+    "slug": "312314-basic-electronics",
+    "url": "/pyq/312314-basic-electronics.html",
+    "image": "/resourse/pyq/EJ-BE.png",
+    "papers": {
+      "Summer 2026": {
+        "url": "https://drive.google.com/file/d/1AAJ2-mLzvtRPXzJNPrGYQes2e-y8ebsP/view",
+        "direct_url": "https://drive.google.com/uc?export=download&id=1AAJ2-mLzvtRPXzJNPrGYQes2e-y8ebsP",
+        "size_kb": "387",
+        "file_name": "S-2026_312314.pdf",
+        "id": "1AAJ2-mLzvtRPXzJNPrGYQes2e-y8ebsP",
+        "year": "2026",
+        "season": "Summer"
+      },
+      "Winter 2025": {
+        "url": "https://drive.google.com/file/d/18udTGQGArcHDifxYnIf57e5d4fhFvLDO/view",
+        "direct_url": "https://drive.google.com/uc?export=download&id=18udTGQGArcHDifxYnIf57e5d4fhFvLDO",
+        "size_kb": "29",
+        "file_name": "W-2025_312314.pdf",
+        "id": "18udTGQGArcHDifxYnIf57e5d4fhFvLDO",
+        "year": "2025",
+        "season": "Winter"
+      }
+    }
+  },
+  {
+    "code": "312315",
+    "title": "Elements of Electrical Engineering (312315) Question Papers",
+    "subject_name": "Elements of Electrical Engineering",
+    "abbreviation": "ELE",
+    "semester": 2,
+    "academic_year": "First Year (FY)",
+    "subject_type": "Core",
+    "branches": [
+      "EJ"
+    ],
+    "branches_str": "Electronics & Telecommunication",
+    "slug": "312315-elements-of-electrical-engineering",
+    "url": "/pyq/312315-elements-of-electrical-engineering.html",
+    "image": "/resourse/pyq/EJ-EEE.png",
+    "papers": {
+      "Summer 2026": {
+        "url": "https://drive.google.com/file/d/14F43IXG1bTdMgd5rmKItxJLlT7eeab2Q/view",
+        "direct_url": "https://drive.google.com/uc?export=download&id=14F43IXG1bTdMgd5rmKItxJLlT7eeab2Q",
+        "size_kb": "371",
+        "file_name": "S-2026_312315.pdf",
+        "id": "14F43IXG1bTdMgd5rmKItxJLlT7eeab2Q",
+        "year": "2026",
+        "season": "Summer"
+      },
+      "Winter 2025": {
+        "url": "https://drive.google.com/file/d/14YDthlTeG3u_ZdZVTPp5dgjPQyr8EJ_o/view",
+        "direct_url": "https://drive.google.com/uc?export=download&id=14YDthlTeG3u_ZdZVTPp5dgjPQyr8EJ_o",
+        "size_kb": "25",
+        "file_name": "W-2025_312315.pdf",
+        "id": "14YDthlTeG3u_ZdZVTPp5dgjPQyr8EJ_o",
+        "year": "2025",
+        "season": "Winter"
+      }
+    }
+  },
+  {
+    "code": "312338",
+    "title": "Building Material and Construction (312338) Question Papers",
+    "subject_name": "Building Material and Construction",
+    "abbreviation": "BMC",
+    "semester": 2,
+    "academic_year": "First Year (FY)",
+    "subject_type": "Core",
+    "branches": [
+      "CE"
+    ],
+    "branches_str": "Civil Engineering",
+    "slug": "312338-building-material-and-construction",
+    "url": "/pyq/312338-building-material-and-construction.html",
+    "image": "/resourse/pyq/CE-BMC.png",
+    "papers": {
+      "Summer 2026": {
+        "url": "https://drive.google.com/file/d/1gLNY_O4k8_3GU6z1F89w9PKsCF-Jw6hk/view",
+        "direct_url": "https://drive.google.com/uc?export=download&id=1gLNY_O4k8_3GU6z1F89w9PKsCF-Jw6hk",
+        "size_kb": "23",
+        "file_name": "S-2026_312338.pdf",
+        "id": "1gLNY_O4k8_3GU6z1F89w9PKsCF-Jw6hk",
+        "year": "2026",
+        "season": "Summer"
+      },
+      "Winter 2025": {
+        "url": "https://drive.google.com/file/d/13YMtIlOVN0KCjmZCTLM5FW69BAJ9vbZ9/view",
+        "direct_url": "https://drive.google.com/uc?export=download&id=13YMtIlOVN0KCjmZCTLM5FW69BAJ9vbZ9",
+        "size_kb": "21",
+        "file_name": "W-2025_312338.pdf",
+        "id": "13YMtIlOVN0KCjmZCTLM5FW69BAJ9vbZ9",
+        "year": "2025",
+        "season": "Winter"
+      }
+    }
+  },
+  {
+    "code": "312339",
+    "title": "Surveying (312339) Question Papers",
+    "subject_name": "Surveying",
+    "abbreviation": "SUR",
+    "semester": 2,
+    "academic_year": "First Year (FY)",
+    "subject_type": "Core",
+    "branches": [
+      "CE"
+    ],
+    "branches_str": "Civil Engineering",
+    "slug": "312339-surveying",
+    "url": "/pyq/312339-surveying.html",
+    "image": "/resourse/pyq/CE-SUR.png",
+    "papers": {
+      "Summer 2026": {
+        "url": "https://drive.google.com/file/d/1TAo74jYtv0hCSLo2eALYXff0wnQqo2N_/view",
+        "direct_url": "https://drive.google.com/uc?export=download&id=1TAo74jYtv0hCSLo2eALYXff0wnQqo2N_",
+        "size_kb": "389",
+        "file_name": "S-2026_312339.pdf",
+        "id": "1TAo74jYtv0hCSLo2eALYXff0wnQqo2N_",
+        "year": "2026",
+        "season": "Summer"
+      },
+      "Winter 2025": {
+        "url": "https://drive.google.com/file/d/1vSIkFAwezug75w9bTMY2N5RwW1BL21qp/view",
+        "direct_url": "https://drive.google.com/uc?export=download&id=1vSIkFAwezug75w9bTMY2N5RwW1BL21qp",
+        "size_kb": "42",
+        "file_name": "W-2025_312339.pdf",
+        "id": "1vSIkFAwezug75w9bTMY2N5RwW1BL21qp",
+        "year": "2025",
+        "season": "Winter"
+      }
+    }
+  },
+  {
+    "code": "313301",
+    "title": "Data Structure using C (313301) Question Papers",
+    "subject_name": "Data Structure using C",
+    "abbreviation": "DSU",
+    "semester": 3,
+    "academic_year": "Second Year (SY)",
+    "subject_type": "Core",
+    "branches": [
+      "CM",
+      "IF"
+    ],
+    "branches_str": "Computer Engineering, Information Technology",
+    "slug": "313301-data-structure-using-c",
+    "url": "/pyq/313301-data-structure-using-c.html",
+    "image": "/resourse/pyq/IF-DSC.png",
+    "papers": {
+      "Summer 2026": {
+        "url": "https://drive.google.com/file/d/1XFEdVEhBnqgfWcbwn6THpUFiRflypJO1/view",
+        "direct_url": "https://drive.google.com/uc?export=download&id=1XFEdVEhBnqgfWcbwn6THpUFiRflypJO1",
+        "size_kb": "26",
+        "file_name": "S-2026_313301.pdf",
+        "id": "1XFEdVEhBnqgfWcbwn6THpUFiRflypJO1",
+        "year": "2026",
+        "season": "Summer"
+      },
+      "Winter 2025": {
+        "url": "https://drive.google.com/file/d/1_u0BnRgrY42zgrSmKD0zSDEOdgGjdwvt/view",
+        "direct_url": "https://drive.google.com/uc?export=download&id=1_u0BnRgrY42zgrSmKD0zSDEOdgGjdwvt",
+        "size_kb": "119",
+        "file_name": "W-2025_313301.pdf",
+        "id": "1_u0BnRgrY42zgrSmKD0zSDEOdgGjdwvt",
+        "year": "2025",
+        "season": "Winter"
+      }
+    }
+  },
+  {
+    "code": "313302",
+    "title": "Database Management System (313302) Question Papers",
+    "subject_name": "Database Management System",
+    "abbreviation": "DMS",
+    "semester": 3,
+    "academic_year": "Second Year (SY)",
+    "subject_type": "Core",
+    "branches": [
+      "AI",
+      "CM",
+      "IF"
+    ],
+    "branches_str": "Artificial Intelligence & Machine Learning, Computer Engineering, Information Technology",
+    "slug": "313302-database-management-system",
+    "url": "/pyq/313302-database-management-system.html",
+    "image": "/resourse/pyq/AI-DMS.png",
+    "papers": {
+      "Summer 2026": {
+        "url": "https://drive.google.com/file/d/1lSTLHmjmeOXZIZF80SIMpRlE9YFX3J-c/view",
+        "direct_url": "https://drive.google.com/uc?export=download&id=1lSTLHmjmeOXZIZF80SIMpRlE9YFX3J-c",
+        "size_kb": "25",
+        "file_name": "S-2026_313302.pdf",
+        "id": "1lSTLHmjmeOXZIZF80SIMpRlE9YFX3J-c",
+        "year": "2026",
+        "season": "Summer"
+      },
+      "Winter 2025": {
+        "url": "https://drive.google.com/file/d/1JWn4oQAsd051jU1-lto3Pjk1NnWLI-gK/view",
+        "direct_url": "https://drive.google.com/uc?export=download&id=1JWn4oQAsd051jU1-lto3Pjk1NnWLI-gK",
+        "size_kb": "109",
+        "file_name": "W-2025_313302.pdf",
+        "id": "1JWn4oQAsd051jU1-lto3Pjk1NnWLI-gK",
+        "year": "2025",
+        "season": "Winter"
+      }
+    }
+  },
+  {
+    "code": "313303",
+    "title": "Digital Techniques (313303) Question Papers",
+    "subject_name": "Digital Techniques",
+    "abbreviation": "DTE",
+    "semester": 3,
+    "academic_year": "Second Year (SY)",
+    "subject_type": "Core",
+    "branches": [
+      "AI",
+      "CM",
+      "EJ"
+    ],
+    "branches_str": "Artificial Intelligence & Machine Learning, Computer Engineering, Electronics & Telecommunication",
+    "slug": "313303-digital-techniques",
+    "url": "/pyq/313303-digital-techniques.html",
+    "image": "/resourse/pyq/EJ-DT.png",
+    "papers": {
+      "Summer 2026": {
+        "url": "https://drive.google.com/file/d/1ECfzaDp4O3nBZsttqvaMNzT4c_8xV_Or/view",
+        "direct_url": "https://drive.google.com/uc?export=download&id=1ECfzaDp4O3nBZsttqvaMNzT4c_8xV_Or",
+        "size_kb": "26",
+        "file_name": "S-2026_313303.pdf",
+        "id": "1ECfzaDp4O3nBZsttqvaMNzT4c_8xV_Or",
+        "year": "2026",
+        "season": "Summer"
+      },
+      "Winter 2025": {
+        "url": "https://drive.google.com/file/d/1HH82GpRzrd09sddkCU1fLMoIeU5TaPPV/view",
+        "direct_url": "https://drive.google.com/uc?export=download&id=1HH82GpRzrd09sddkCU1fLMoIeU5TaPPV",
+        "size_kb": "36",
+        "file_name": "W-2025_313303.pdf",
+        "id": "1HH82GpRzrd09sddkCU1fLMoIeU5TaPPV",
+        "year": "2025",
+        "season": "Winter"
+      }
+    }
+  },
+  {
+    "code": "313304",
+    "title": "Object Oriented Programming using C++ (313304) Question Papers",
+    "subject_name": "Object Oriented Programming using C++",
+    "abbreviation": "OOP",
+    "semester": 3,
+    "academic_year": "Second Year (SY)",
+    "subject_type": "Core",
+    "branches": [
+      "CM",
+      "IF"
+    ],
+    "branches_str": "Computer Engineering, Information Technology",
+    "slug": "313304-object-oriented-programming-using-c",
+    "url": "/pyq/313304-object-oriented-programming-using-c.html",
+    "image": "/resourse/pyq/IF-OOPC.png",
+    "papers": {
+      "Summer 2026": {
+        "url": "https://drive.google.com/file/d/1kMknm0IOuag_QKRR9KOK08be2d7wVNEs/view",
+        "direct_url": "https://drive.google.com/uc?export=download&id=1kMknm0IOuag_QKRR9KOK08be2d7wVNEs",
+        "size_kb": "403",
+        "file_name": "S-2026_313304.pdf",
+        "id": "1kMknm0IOuag_QKRR9KOK08be2d7wVNEs",
+        "year": "2026",
+        "season": "Summer"
+      },
+      "Winter 2025": {
+        "url": "https://drive.google.com/file/d/11_X5I_fD20fan8_C9tygcPO8gBNAsoC-/view",
+        "direct_url": "https://drive.google.com/uc?export=download&id=11_X5I_fD20fan8_C9tygcPO8gBNAsoC-",
+        "size_kb": "21",
+        "file_name": "W-2025_313304.pdf",
+        "id": "11_X5I_fD20fan8_C9tygcPO8gBNAsoC-",
+        "year": "2025",
+        "season": "Winter"
+      }
+    }
+  },
+  {
+    "code": "313305",
+    "title": "Digital Techniques and Microprocessors (313305) Question Papers",
+    "subject_name": "Digital Techniques and Microprocessors",
+    "abbreviation": "DTM",
+    "semester": 3,
+    "academic_year": "Second Year (SY)",
+    "subject_type": "Core",
+    "branches": [
+      "IF"
+    ],
+    "branches_str": "Information Technology",
+    "slug": "313305-digital-techniques-and-microprocessors",
+    "url": "/pyq/313305-digital-techniques-and-microprocessors.html",
+    "image": "/resourse/pyq/IF-DTM.png",
+    "papers": {
+      "Summer 2026": {
+        "url": "https://drive.google.com/file/d/1bbHOCDFwoCqleFZz-0nxIy1SQPYMDCPi/view",
+        "direct_url": "https://drive.google.com/uc?export=download&id=1bbHOCDFwoCqleFZz-0nxIy1SQPYMDCPi",
+        "size_kb": "25",
+        "file_name": "S-2026_313305.pdf",
+        "id": "1bbHOCDFwoCqleFZz-0nxIy1SQPYMDCPi",
+        "year": "2026",
+        "season": "Summer"
+      },
+      "Winter 2025": {
+        "url": "https://drive.google.com/file/d/1d1Dl7hRk-anPNqC_UWrEeyksPvvF-nKs/view",
+        "direct_url": "https://drive.google.com/uc?export=download&id=1d1Dl7hRk-anPNqC_UWrEeyksPvvF-nKs",
+        "size_kb": "28",
+        "file_name": "W-2025_313305.pdf",
+        "id": "1d1Dl7hRk-anPNqC_UWrEeyksPvvF-nKs",
+        "year": "2025",
+        "season": "Winter"
+      }
+    }
+  },
+  {
+    "code": "313306",
+    "title": "Data Structure using Python (313306) Question Papers",
+    "subject_name": "Data Structure using Python",
+    "abbreviation": "DSP",
+    "semester": 3,
+    "academic_year": "Second Year (SY)",
+    "subject_type": "Core",
+    "branches": [
+      "AI"
+    ],
+    "branches_str": "Artificial Intelligence & Machine Learning",
+    "slug": "313306-data-structure-using-python",
+    "url": "/pyq/313306-data-structure-using-python.html",
+    "image": "/resourse/pyq/AI-DSP.png",
+    "papers": {
+      "Summer 2026": {
+        "url": "https://drive.google.com/file/d/1jnIHjhiDUbVkFE7P95R2d5mypCZQYD8t/view",
+        "direct_url": "https://drive.google.com/uc?export=download&id=1jnIHjhiDUbVkFE7P95R2d5mypCZQYD8t",
+        "size_kb": "43",
+        "file_name": "S-2026_313306.pdf",
+        "id": "1jnIHjhiDUbVkFE7P95R2d5mypCZQYD8t",
+        "year": "2026",
+        "season": "Summer"
+      },
+      "Winter 2025": {
+        "url": "https://drive.google.com/file/d/1_dDwqacqJe3dIOA3icB6oIWDLzqkvNqN/view",
+        "direct_url": "https://drive.google.com/uc?export=download&id=1_dDwqacqJe3dIOA3icB6oIWDLzqkvNqN",
+        "size_kb": "107",
+        "file_name": "W-2025_313306.pdf",
+        "id": "1_dDwqacqJe3dIOA3icB6oIWDLzqkvNqN",
+        "year": "2025",
+        "season": "Winter"
+      }
+    }
+  },
+  {
+    "code": "313307",
+    "title": "Statistical Modelling for Machine Learning (313307) Question Papers",
+    "subject_name": "Statistical Modelling for Machine Learning",
+    "abbreviation": "SML",
+    "semester": 3,
+    "academic_year": "Second Year (SY)",
+    "subject_type": "Core",
+    "branches": [
+      "AI"
+    ],
+    "branches_str": "Artificial Intelligence & Machine Learning",
+    "slug": "313307-statistical-modelling-for-machine-learning",
+    "url": "/pyq/313307-statistical-modelling-for-machine-learning.html",
+    "image": "/resourse/pyq/AI-SMML.png",
+    "papers": {
+      "Summer 2026": {
+        "url": "https://drive.google.com/file/d/1PpgEo4AuA8r2pj3dZvM_MD8E-uGlhwHb/view",
+        "direct_url": "https://drive.google.com/uc?export=download&id=1PpgEo4AuA8r2pj3dZvM_MD8E-uGlhwHb",
+        "size_kb": "393",
+        "file_name": "S-2026_313307.pdf",
+        "id": "1PpgEo4AuA8r2pj3dZvM_MD8E-uGlhwHb",
+        "year": "2026",
+        "season": "Summer"
+      },
+      "Winter 2025": {
+        "url": "https://drive.google.com/file/d/1xCugzxerXpMm73a5iKw4ovboI5ML5zmm/view",
+        "direct_url": "https://drive.google.com/uc?export=download&id=1xCugzxerXpMm73a5iKw4ovboI5ML5zmm",
+        "size_kb": "38",
+        "file_name": "W-2025_313307.pdf",
+        "id": "1xCugzxerXpMm73a5iKw4ovboI5ML5zmm",
+        "year": "2025",
+        "season": "Winter"
+      }
+    }
+  },
+  {
+    "code": "313308",
+    "title": "Strength of Materials (313308) Question Papers",
+    "subject_name": "Strength of Materials",
+    "abbreviation": "SOM",
+    "semester": 3,
+    "academic_year": "Second Year (SY)",
+    "subject_type": "Core",
+    "branches": [
+      "CE",
+      "ME"
+    ],
+    "branches_str": "Civil Engineering, Mechanical Engineering",
+    "slug": "313308-strength-of-materials",
+    "url": "/pyq/313308-strength-of-materials.html",
+    "image": "/resourse/pyq/ME-SM.png",
+    "papers": {
+      "Summer 2026": {
+        "url": "https://drive.google.com/file/d/1btwxPb1hD-xGnYe41d0-_gYKRLmQprDS/view",
+        "direct_url": "https://drive.google.com/uc?export=download&id=1btwxPb1hD-xGnYe41d0-_gYKRLmQprDS",
+        "size_kb": "67",
+        "file_name": "S-2026_313308.pdf",
+        "id": "1btwxPb1hD-xGnYe41d0-_gYKRLmQprDS",
+        "year": "2026",
+        "season": "Summer"
+      },
+      "Winter 2025": {
+        "url": "https://drive.google.com/file/d/1Rk-1RnVEZXWPS6b5i1ISWrRrYvNyltaz/view",
+        "direct_url": "https://drive.google.com/uc?export=download&id=1Rk-1RnVEZXWPS6b5i1ISWrRrYvNyltaz",
+        "size_kb": "110",
+        "file_name": "W-2025_313308.pdf",
+        "id": "1Rk-1RnVEZXWPS6b5i1ISWrRrYvNyltaz",
+        "year": "2025",
+        "season": "Winter"
+      }
+    }
+  },
+  {
+    "code": "313309",
+    "title": "Fluid Mechanics and Machinery (313309) Question Papers",
+    "subject_name": "Fluid Mechanics and Machinery",
+    "abbreviation": "FMM",
+    "semester": 3,
+    "academic_year": "Second Year (SY)",
+    "subject_type": "Core",
+    "branches": [
+      "ME"
+    ],
+    "branches_str": "Mechanical Engineering",
+    "slug": "313309-fluid-mechanics-and-machinery",
+    "url": "/pyq/313309-fluid-mechanics-and-machinery.html",
+    "image": "/resourse/pyq/ME-FMM.png",
+    "papers": {
+      "Summer 2026": {
+        "url": "https://drive.google.com/file/d/17idWbs56ZfH29-VU0Pz-mQMY7WzD3fSP/view",
+        "direct_url": "https://drive.google.com/uc?export=download&id=17idWbs56ZfH29-VU0Pz-mQMY7WzD3fSP",
+        "size_kb": "389",
+        "file_name": "S-2026_313309.pdf",
+        "id": "17idWbs56ZfH29-VU0Pz-mQMY7WzD3fSP",
+        "year": "2026",
+        "season": "Summer"
+      },
+      "Winter 2025": {
+        "url": "https://drive.google.com/file/d/1KYMZKUetha8oU-X1t4Jugcua-WEKNnCV/view",
+        "direct_url": "https://drive.google.com/uc?export=download&id=1KYMZKUetha8oU-X1t4Jugcua-WEKNnCV",
+        "size_kb": "29",
+        "file_name": "W-2025_313309.pdf",
+        "id": "1KYMZKUetha8oU-X1t4Jugcua-WEKNnCV",
+        "year": "2025",
+        "season": "Winter"
+      }
+    }
+  },
+  {
+    "code": "313310",
+    "title": "Thermal Engineering (313310) Question Papers",
+    "subject_name": "Thermal Engineering",
+    "abbreviation": "TEN",
+    "semester": 3,
+    "academic_year": "Second Year (SY)",
+    "subject_type": "Core",
+    "branches": [
+      "ME"
+    ],
+    "branches_str": "Mechanical Engineering",
+    "slug": "313310-thermal-engineering",
+    "url": "/pyq/313310-thermal-engineering.html",
+    "image": "/resourse/pyq/ME-TE.png",
+    "papers": {
+      "Summer 2026": {
+        "url": "https://drive.google.com/file/d/1o9Jd8sWS_rwBJ_a5xRoDSHuonhxJvWqM/view",
+        "direct_url": "https://drive.google.com/uc?export=download&id=1o9Jd8sWS_rwBJ_a5xRoDSHuonhxJvWqM",
+        "size_kb": "28",
+        "file_name": "S-2026_313310.pdf",
+        "id": "1o9Jd8sWS_rwBJ_a5xRoDSHuonhxJvWqM",
+        "year": "2026",
+        "season": "Summer"
+      },
+      "Winter 2025": {
+        "url": "https://drive.google.com/file/d/1z8ar7uuCPe3AsbaX-zKoMi2txNfNxbrD/view",
+        "direct_url": "https://drive.google.com/uc?export=download&id=1z8ar7uuCPe3AsbaX-zKoMi2txNfNxbrD",
+        "size_kb": "25",
+        "file_name": "W-2025_313310.pdf",
+        "id": "1z8ar7uuCPe3AsbaX-zKoMi2txNfNxbrD",
+        "year": "2025",
+        "season": "Winter"
+      }
+    }
+  },
+  {
+    "code": "313311",
+    "title": "Production Drawing (313311) Question Papers",
+    "subject_name": "Production Drawing",
+    "abbreviation": "PRD",
+    "semester": 3,
+    "academic_year": "Second Year (SY)",
+    "subject_type": "Core",
+    "branches": [
+      "ME"
+    ],
+    "branches_str": "Mechanical Engineering",
+    "slug": "313311-production-drawing",
+    "url": "/pyq/313311-production-drawing.html",
+    "image": "/resourse/pyq/ME-PD.png",
+    "papers": {
+      "Summer 2026": {
+        "url": "https://drive.google.com/file/d/1FsU_RUM5gNptH863iZuhVqB5kUbK_1sG/view",
+        "direct_url": "https://drive.google.com/uc?export=download&id=1FsU_RUM5gNptH863iZuhVqB5kUbK_1sG",
+        "size_kb": "455",
+        "file_name": "S-2026_313311.pdf",
+        "id": "1FsU_RUM5gNptH863iZuhVqB5kUbK_1sG",
+        "year": "2026",
+        "season": "Summer"
+      },
+      "Winter 2025": {
+        "url": "https://drive.google.com/file/d/1GPcifpwQ5jyGwMA1nF83GENjkVk7T2JQ/view",
+        "direct_url": "https://drive.google.com/uc?export=download&id=1GPcifpwQ5jyGwMA1nF83GENjkVk7T2JQ",
+        "size_kb": "408",
+        "file_name": "W-2025_313311.pdf",
+        "id": "1GPcifpwQ5jyGwMA1nF83GENjkVk7T2JQ",
+        "year": "2025",
+        "season": "Winter"
+      }
+    }
+  },
+  {
+    "code": "313313",
+    "title": "Theory of Machines (313313) Question Papers",
+    "subject_name": "Theory of Machines",
+    "abbreviation": "TOM",
+    "semester": 4,
+    "academic_year": "Second Year (SY)",
+    "subject_type": "Core",
+    "branches": [
+      "ME"
+    ],
+    "branches_str": "Mechanical Engineering",
+    "slug": "313313-theory-of-machines",
+    "url": "/pyq/313313-theory-of-machines.html",
+    "image": "/resourse/pyq/ME-TM.png",
+    "papers": {
+      "Summer 2026": {
+        "url": "https://drive.google.com/file/d/195S-gk1dKGTQ7qtFLFDA6E0NRTyKSJ9A/view",
+        "direct_url": "https://drive.google.com/uc?export=download&id=195S-gk1dKGTQ7qtFLFDA6E0NRTyKSJ9A",
+        "size_kb": "78",
+        "file_name": "S-2026_313313.pdf",
+        "id": "195S-gk1dKGTQ7qtFLFDA6E0NRTyKSJ9A",
+        "year": "2026",
+        "season": "Summer"
+      },
+      "Winter 2025": {
+        "url": "https://drive.google.com/file/d/1KPkxaNd_n3bMha-PrBpHNIehdcrPKTSE/view",
+        "direct_url": "https://drive.google.com/uc?export=download&id=1KPkxaNd_n3bMha-PrBpHNIehdcrPKTSE",
+        "size_kb": "62",
+        "file_name": "W-2025_313313.pdf",
+        "id": "1KPkxaNd_n3bMha-PrBpHNIehdcrPKTSE",
+        "year": "2025",
+        "season": "Winter"
+      }
+    }
+  },
+  {
+    "code": "313316",
+    "title": "Metrology and Measurement (313316) Question Papers",
+    "subject_name": "Metrology and Measurement",
+    "abbreviation": "MEM",
+    "semester": 4,
+    "academic_year": "Second Year (SY)",
+    "subject_type": "Core",
+    "branches": [
+      "ME"
+    ],
+    "branches_str": "Mechanical Engineering",
+    "slug": "313316-metrology-and-measurement",
+    "url": "/pyq/313316-metrology-and-measurement.html",
+    "image": "/resourse/pyq/ME-MM.png",
+    "papers": {
+      "Summer 2026": {
+        "url": "https://drive.google.com/file/d/1ypSZ4urUm1-Qpb9XMpbloiGrRLN6Z2Hf/view",
+        "direct_url": "https://drive.google.com/uc?export=download&id=1ypSZ4urUm1-Qpb9XMpbloiGrRLN6Z2Hf",
+        "size_kb": "366",
+        "file_name": "S-2026_313316.pdf",
+        "id": "1ypSZ4urUm1-Qpb9XMpbloiGrRLN6Z2Hf",
+        "year": "2026",
+        "season": "Summer"
+      },
+      "Winter 2025": {
+        "url": "https://drive.google.com/file/d/1nsNe7QBrWw-UcSrgs8_0KZbt2VOuf3Go/view",
+        "direct_url": "https://drive.google.com/uc?export=download&id=1nsNe7QBrWw-UcSrgs8_0KZbt2VOuf3Go",
+        "size_kb": "23",
+        "file_name": "W-2025_313316.pdf",
+        "id": "1nsNe7QBrWw-UcSrgs8_0KZbt2VOuf3Go",
+        "year": "2025",
+        "season": "Winter"
+      }
+    }
+  },
+  {
+    "code": "313321",
+    "title": "Advanced Surveying (313321) Question Papers",
+    "subject_name": "Advanced Surveying",
+    "abbreviation": "ASY",
+    "semester": 3,
+    "academic_year": "Second Year (SY)",
+    "subject_type": "Core",
+    "branches": [
+      "CE"
+    ],
+    "branches_str": "Civil Engineering",
+    "slug": "313321-advanced-surveying",
+    "url": "/pyq/313321-advanced-surveying.html",
+    "image": "/resourse/pyq/CE-AS321.png",
+    "papers": {
+      "Summer 2026": {
+        "url": "https://drive.google.com/file/d/1MRCUFf8tfte7uhbWm3gUD2LSsXEeXsz8/view",
+        "direct_url": "https://drive.google.com/uc?export=download&id=1MRCUFf8tfte7uhbWm3gUD2LSsXEeXsz8",
+        "size_kb": "25",
+        "file_name": "S-2026_313321.pdf",
+        "id": "1MRCUFf8tfte7uhbWm3gUD2LSsXEeXsz8",
+        "year": "2026",
+        "season": "Summer"
+      },
+      "Winter 2025": {
+        "url": "https://drive.google.com/file/d/1xGCkihhrRXK9K0mpFQmPUxKxqYwdvTLu/view",
+        "direct_url": "https://drive.google.com/uc?export=download&id=1xGCkihhrRXK9K0mpFQmPUxKxqYwdvTLu",
+        "size_kb": "108",
+        "file_name": "W-2025_313321.pdf",
+        "id": "1xGCkihhrRXK9K0mpFQmPUxKxqYwdvTLu",
+        "year": "2025",
+        "season": "Winter"
+      }
+    }
+  },
+  {
+    "code": "313322",
+    "title": "Concrete Technology (313322) Question Papers",
+    "subject_name": "Concrete Technology",
+    "abbreviation": "CTE",
+    "semester": 3,
+    "academic_year": "Second Year (SY)",
+    "subject_type": "Core",
+    "branches": [
+      "CE"
+    ],
+    "branches_str": "Civil Engineering",
+    "slug": "313322-concrete-technology",
+    "url": "/pyq/313322-concrete-technology.html",
+    "image": "/resourse/pyq/CE-CT.png",
+    "papers": {
+      "Summer 2026": {
+        "url": "https://drive.google.com/file/d/1BOiWJG-DyT-AfpW5dD4okfsoNIyU-xOr/view",
+        "direct_url": "https://drive.google.com/uc?export=download&id=1BOiWJG-DyT-AfpW5dD4okfsoNIyU-xOr",
+        "size_kb": "25",
+        "file_name": "S-2026_313322.pdf",
+        "id": "1BOiWJG-DyT-AfpW5dD4okfsoNIyU-xOr",
+        "year": "2026",
+        "season": "Summer"
+      },
+      "Winter 2025": {
+        "url": "https://drive.google.com/file/d/1oCH7l9G71_7tu7NhANGBgKYo00K-MkSk/view",
+        "direct_url": "https://drive.google.com/uc?export=download&id=1oCH7l9G71_7tu7NhANGBgKYo00K-MkSk",
+        "size_kb": "23",
+        "file_name": "W-2025_313322.pdf",
+        "id": "1oCH7l9G71_7tu7NhANGBgKYo00K-MkSk",
+        "year": "2025",
+        "season": "Winter"
+      }
+    }
+  },
+  {
+    "code": "313323",
+    "title": "Highway Engineering (313323) Question Papers",
+    "subject_name": "Highway Engineering",
+    "abbreviation": "HEN",
+    "semester": 3,
+    "academic_year": "Second Year (SY)",
+    "subject_type": "Core",
+    "branches": [
+      "CE"
+    ],
+    "branches_str": "Civil Engineering",
+    "slug": "313323-highway-engineering",
+    "url": "/pyq/313323-highway-engineering.html",
+    "image": "/resourse/pyq/CE-HE.png",
+    "papers": {
+      "Summer 2026": {
+        "url": "https://drive.google.com/file/d/1r6qhu50AOoOlmudQydWPcIhBBkyMicIR/view",
+        "direct_url": "https://drive.google.com/uc?export=download&id=1r6qhu50AOoOlmudQydWPcIhBBkyMicIR",
+        "size_kb": "385",
+        "file_name": "S-2026_313323.pdf",
+        "id": "1r6qhu50AOoOlmudQydWPcIhBBkyMicIR",
+        "year": "2026",
+        "season": "Summer"
+      },
+      "Winter 2025": {
+        "url": "https://drive.google.com/file/d/1kqUn-VWYvUIwRPv17tejFH3rJVUgqWtC/view",
+        "direct_url": "https://drive.google.com/uc?export=download&id=1kqUn-VWYvUIwRPv17tejFH3rJVUgqWtC",
+        "size_kb": "23",
+        "file_name": "W-2025_313323.pdf",
+        "id": "1kqUn-VWYvUIwRPv17tejFH3rJVUgqWtC",
+        "year": "2025",
+        "season": "Winter"
+      }
+    }
+  },
+  {
+    "code": "313324",
+    "title": "Analog Electronics (313324) Question Papers",
+    "subject_name": "Analog Electronics",
+    "abbreviation": "AEL",
+    "semester": 3,
+    "academic_year": "Second Year (SY)",
+    "subject_type": "Core",
+    "branches": [
+      "EJ"
+    ],
+    "branches_str": "Electronics & Telecommunication",
+    "slug": "313324-analog-electronics",
+    "url": "/pyq/313324-analog-electronics.html",
+    "image": "/resourse/pyq/EJ-AE.png",
+    "papers": {
+      "Summer 2026": {
+        "url": "https://drive.google.com/file/d/1cUqmXilkjLPYWmO5lMCyp7aqntEntBxI/view",
+        "direct_url": "https://drive.google.com/uc?export=download&id=1cUqmXilkjLPYWmO5lMCyp7aqntEntBxI",
+        "size_kb": "25",
+        "file_name": "S-2026_313324.pdf",
+        "id": "1cUqmXilkjLPYWmO5lMCyp7aqntEntBxI",
+        "year": "2026",
+        "season": "Summer"
+      },
+      "Winter 2025": {
+        "url": "https://drive.google.com/file/d/1bNY4-JaeXcKKfMii5J-7EXtB4IDll5Pg/view",
+        "direct_url": "https://drive.google.com/uc?export=download&id=1bNY4-JaeXcKKfMii5J-7EXtB4IDll5Pg",
+        "size_kb": "24",
+        "file_name": "W-2025_313324.pdf",
+        "id": "1bNY4-JaeXcKKfMii5J-7EXtB4IDll5Pg",
+        "year": "2025",
+        "season": "Winter"
+      }
+    }
+  },
+  {
+    "code": "313325",
+    "title": "Circuits and Networks (313325) Question Papers",
+    "subject_name": "Circuits and Networks",
+    "abbreviation": "CNE",
+    "semester": 3,
+    "academic_year": "Second Year (SY)",
+    "subject_type": "Core",
+    "branches": [
+      "EJ"
+    ],
+    "branches_str": "Electronics & Telecommunication",
+    "slug": "313325-circuits-and-networks",
+    "url": "/pyq/313325-circuits-and-networks.html",
+    "image": "/resourse/pyq/EJ-CN.png",
+    "papers": {
+      "Summer 2026": {
+        "url": "https://drive.google.com/file/d/1V2I7YReXnBtpjsY6qh9rl6jVt_iZ1pBO/view",
+        "direct_url": "https://drive.google.com/uc?export=download&id=1V2I7YReXnBtpjsY6qh9rl6jVt_iZ1pBO",
+        "size_kb": "119",
+        "file_name": "S-2026_313325.pdf",
+        "id": "1V2I7YReXnBtpjsY6qh9rl6jVt_iZ1pBO",
+        "year": "2026",
+        "season": "Summer"
+      },
+      "Winter 2025": {
+        "url": "https://drive.google.com/file/d/1yKfIqzqFlLLnbpSsERkWjCsJy8e_LBxX/view",
+        "direct_url": "https://drive.google.com/uc?export=download&id=1yKfIqzqFlLLnbpSsERkWjCsJy8e_LBxX",
+        "size_kb": "161",
+        "file_name": "W-2025_313325.pdf",
+        "id": "1yKfIqzqFlLLnbpSsERkWjCsJy8e_LBxX",
+        "year": "2025",
+        "season": "Winter"
+      }
+    }
+  },
+  {
+    "code": "313326",
+    "title": "Principles of Electronic Communication (313326) Question Papers",
+    "subject_name": "Principles of Electronic Communication",
+    "abbreviation": "PEC",
+    "semester": 3,
+    "academic_year": "Second Year (SY)",
+    "subject_type": "Core",
+    "branches": [
+      "EJ"
+    ],
+    "branches_str": "Electronics & Telecommunication",
+    "slug": "313326-principles-of-electronic-communication",
+    "url": "/pyq/313326-principles-of-electronic-communication.html",
+    "image": "/resourse/pyq/EJ-PEC.png",
+    "papers": {
+      "Summer 2026": {
+        "url": "https://drive.google.com/file/d/1AYZl_eD0ldEpV56N8RgTomgSrbUrMr3Y/view",
+        "direct_url": "https://drive.google.com/uc?export=download&id=1AYZl_eD0ldEpV56N8RgTomgSrbUrMr3Y",
+        "size_kb": "388",
+        "file_name": "S-2026_313326.pdf",
+        "id": "1AYZl_eD0ldEpV56N8RgTomgSrbUrMr3Y",
+        "year": "2026",
+        "season": "Summer"
+      },
+      "Winter 2025": {
+        "url": "https://drive.google.com/file/d/1JbCVX00npWUAz9Al0mw79VoHemCf4lDj/view",
+        "direct_url": "https://drive.google.com/uc?export=download&id=1JbCVX00npWUAz9Al0mw79VoHemCf4lDj",
+        "size_kb": "117",
+        "file_name": "W-2025_313326.pdf",
+        "id": "1JbCVX00npWUAz9Al0mw79VoHemCf4lDj",
+        "year": "2025",
+        "season": "Winter"
+      }
+    }
+  },
+  {
+    "code": "313332",
+    "title": "Electrical Circuits and Network (313332) Question Papers",
+    "subject_name": "Electrical Circuits and Network",
+    "abbreviation": "ECN",
+    "semester": 3,
+    "academic_year": "Second Year (SY)",
+    "subject_type": "Core",
+    "branches": [
+      "EE"
+    ],
+    "branches_str": "Electrical Engineering",
+    "slug": "313332-electrical-circuits-and-network",
+    "url": "/pyq/313332-electrical-circuits-and-network.html",
+    "image": "/resourse/pyq/EE-ECN.png",
+    "papers": {
+      "Summer 2026": {
+        "url": "https://drive.google.com/file/d/1nH0jGRSRQxhhPMx8lV3JmKTIalNR4MQa/view",
+        "direct_url": "https://drive.google.com/uc?export=download&id=1nH0jGRSRQxhhPMx8lV3JmKTIalNR4MQa",
+        "size_kb": "114",
+        "file_name": "S-2026_313332.pdf",
+        "id": "1nH0jGRSRQxhhPMx8lV3JmKTIalNR4MQa",
+        "year": "2026",
+        "season": "Summer"
+      },
+      "Winter 2025": {
+        "url": "https://drive.google.com/file/d/133O-55Zd8b9ifdW8qAorhVY3df-J_TwJ/view",
+        "direct_url": "https://drive.google.com/uc?export=download&id=133O-55Zd8b9ifdW8qAorhVY3df-J_TwJ",
+        "size_kb": "91",
+        "file_name": "W-2025_313332.pdf",
+        "id": "133O-55Zd8b9ifdW8qAorhVY3df-J_TwJ",
+        "year": "2025",
+        "season": "Winter"
+      }
+    }
+  },
+  {
+    "code": "313333",
+    "title": "Electrical Power Generation, Transmission and Distribution (313333) Question Papers",
+    "subject_name": "Electrical Power Generation, Transmission and Distribution",
+    "abbreviation": "PGD",
+    "semester": 3,
+    "academic_year": "Second Year (SY)",
+    "subject_type": "Core",
+    "branches": [
+      "EE"
+    ],
+    "branches_str": "Electrical Engineering",
+    "slug": "313333-electrical-power-generation-transmission-and-distribution",
+    "url": "/pyq/313333-electrical-power-generation-transmission-and-distribution.html",
+    "image": "/resourse/pyq/EE-EPGTD.png",
+    "papers": {
+      "Summer 2026": {
+        "url": "https://drive.google.com/file/d/1k4smgT--ZaxeBylxzZgLyD00vREyTXRb/view",
+        "direct_url": "https://drive.google.com/uc?export=download&id=1k4smgT--ZaxeBylxzZgLyD00vREyTXRb",
+        "size_kb": "411",
+        "file_name": "S-2026_313333.pdf",
+        "id": "1k4smgT--ZaxeBylxzZgLyD00vREyTXRb",
+        "year": "2026",
+        "season": "Summer"
+      },
+      "Winter 2025": {
+        "url": "https://drive.google.com/file/d/1NHi6eLN99WxCz4lXOQx9BCGnHKzinokQ/view",
+        "direct_url": "https://drive.google.com/uc?export=download&id=1NHi6eLN99WxCz4lXOQx9BCGnHKzinokQ",
+        "size_kb": "25",
+        "file_name": "W-2025_313333.pdf",
+        "id": "1NHi6eLN99WxCz4lXOQx9BCGnHKzinokQ",
+        "year": "2025",
+        "season": "Winter"
+      }
+    }
+  },
+  {
+    "code": "313334",
+    "title": "Electrical and Electronic Measurement (313334) Question Papers",
+    "subject_name": "Electrical and Electronic Measurement",
+    "abbreviation": "EEM",
+    "semester": 3,
+    "academic_year": "Second Year (SY)",
+    "subject_type": "Core",
+    "branches": [
+      "EE"
+    ],
+    "branches_str": "Electrical Engineering",
+    "slug": "313334-electrical-and-electronic-measurement",
+    "url": "/pyq/313334-electrical-and-electronic-measurement.html",
+    "image": "/resourse/pyq/EE-EEM.png",
+    "papers": {
+      "Summer 2026": {
+        "url": "https://drive.google.com/file/d/1VysCrmKwk4pw55iU6UaDEMlPz6HAHueB/view",
+        "direct_url": "https://drive.google.com/uc?export=download&id=1VysCrmKwk4pw55iU6UaDEMlPz6HAHueB",
+        "size_kb": "23",
+        "file_name": "S-2026_313334.pdf",
+        "id": "1VysCrmKwk4pw55iU6UaDEMlPz6HAHueB",
+        "year": "2026",
+        "season": "Summer"
+      },
+      "Winter 2025": {
+        "url": "https://drive.google.com/file/d/1vhIhCP1TDSXikICdsHzaGuvtCPgDJHRA/view",
+        "direct_url": "https://drive.google.com/uc?export=download&id=1vhIhCP1TDSXikICdsHzaGuvtCPgDJHRA",
+        "size_kb": "23",
+        "file_name": "W-2025_313334.pdf",
+        "id": "1vhIhCP1TDSXikICdsHzaGuvtCPgDJHRA",
+        "year": "2025",
+        "season": "Winter"
+      }
+    }
+  },
+  {
+    "code": "313335",
+    "title": "Fundamentals of Power Electronics (313335) Question Papers",
+    "subject_name": "Fundamentals of Power Electronics",
+    "abbreviation": "FPE",
+    "semester": 3,
+    "academic_year": "Second Year (SY)",
+    "subject_type": "Core",
+    "branches": [
+      "EE"
+    ],
+    "branches_str": "Electrical Engineering",
+    "slug": "313335-fundamentals-of-power-electronics",
+    "url": "/pyq/313335-fundamentals-of-power-electronics.html",
+    "image": "/resourse/pyq/EE-FPE.png",
+    "papers": {
+      "Summer 2026": {
+        "url": "https://drive.google.com/file/d/1yw-XkYiiA5WFUyn1z8zdGCgb_CEmCPzZ/view",
+        "direct_url": "https://drive.google.com/uc?export=download&id=1yw-XkYiiA5WFUyn1z8zdGCgb_CEmCPzZ",
+        "size_kb": "365",
+        "file_name": "S-2026_313335.pdf",
+        "id": "1yw-XkYiiA5WFUyn1z8zdGCgb_CEmCPzZ",
+        "year": "2026",
+        "season": "Summer"
+      },
+      "Winter 2025": {
+        "url": "https://drive.google.com/file/d/1U21JeUtWnhdkN91BnXanifC6DdeZFoAK/view",
+        "direct_url": "https://drive.google.com/uc?export=download&id=1U21JeUtWnhdkN91BnXanifC6DdeZFoAK",
+        "size_kb": "26",
+        "file_name": "W-2025_313335.pdf",
+        "id": "1U21JeUtWnhdkN91BnXanifC6DdeZFoAK",
+        "year": "2025",
+        "season": "Winter"
+      }
+    }
+  },
+  {
+    "code": "314303",
+    "title": "Hydraulics (314303) Question Papers",
+    "subject_name": "Hydraulics",
+    "abbreviation": "HYD",
+    "semester": 4,
+    "academic_year": "Second Year (SY)",
+    "subject_type": "Core",
+    "branches": [
+      "CE"
+    ],
+    "branches_str": "Civil Engineering",
+    "slug": "314303-hydraulics",
+    "url": "/pyq/314303-hydraulics.html",
+    "image": "/resourse/pyq/CE-HYD.png",
+    "papers": {
+      "Summer 2026": {
+        "url": "https://drive.google.com/file/d/1Q0LztibBqfuyuuuUJR1Ssty0JPvd_ZED/view",
+        "direct_url": "https://drive.google.com/uc?export=download&id=1Q0LztibBqfuyuuuUJR1Ssty0JPvd_ZED",
+        "size_kb": "25",
+        "file_name": "S-2026_314303.pdf",
+        "id": "1Q0LztibBqfuyuuuUJR1Ssty0JPvd_ZED",
+        "year": "2026",
+        "season": "Summer"
+      },
+      "Winter 2025": {
+        "url": "https://drive.google.com/file/d/1JS5srkv_ZT-xDry8Ah5sszCTEybLYOoC/view",
+        "direct_url": "https://drive.google.com/uc?export=download&id=1JS5srkv_ZT-xDry8Ah5sszCTEybLYOoC",
+        "size_kb": "112",
+        "file_name": "W-2025_314303.pdf",
+        "id": "1JS5srkv_ZT-xDry8Ah5sszCTEybLYOoC",
+        "year": "2025",
+        "season": "Winter"
+      }
+    }
+  },
+  {
+    "code": "314312",
+    "title": "Railway, Bridge and Tunnel Engineering (314312) Question Papers",
+    "subject_name": "Railway, Bridge and Tunnel Engineering",
+    "abbreviation": "RBT",
+    "semester": 4,
+    "academic_year": "Second Year (SY)",
+    "subject_type": "Core",
+    "branches": [
+      "CE"
+    ],
+    "branches_str": "Civil Engineering",
+    "slug": "314312-railway-bridge-and-tunnel-engineering",
+    "url": "/pyq/314312-railway-bridge-and-tunnel-engineering.html",
+    "image": "/resourse/pyq/CE-RBTE.png",
+    "papers": {
+      "Summer 2026": {
+        "url": "https://drive.google.com/file/d/1zOSosWda5CxQF-pRhzNss2HBxg428N_Y/view",
+        "direct_url": "https://drive.google.com/uc?export=download&id=1zOSosWda5CxQF-pRhzNss2HBxg428N_Y",
+        "size_kb": "23",
+        "file_name": "S-2026_314312.pdf",
+        "id": "1zOSosWda5CxQF-pRhzNss2HBxg428N_Y",
+        "year": "2026",
+        "season": "Summer"
+      },
+      "Winter 2025": {
+        "url": "https://drive.google.com/file/d/1fBpwXK5T0k4_9mHJvawhto4bREsu6vE1/view",
+        "direct_url": "https://drive.google.com/uc?export=download&id=1fBpwXK5T0k4_9mHJvawhto4bREsu6vE1",
+        "size_kb": "22",
+        "file_name": "W-2025_314312.pdf",
+        "id": "1fBpwXK5T0k4_9mHJvawhto4bREsu6vE1",
+        "year": "2025",
+        "season": "Winter"
+      }
+    }
+  },
+  {
+    "code": "314313",
+    "title": "Estimating, Costing and Valuation (314313) Question Papers",
+    "subject_name": "Estimating, Costing and Valuation",
+    "abbreviation": "ECV",
+    "semester": 4,
+    "academic_year": "Second Year (SY)",
+    "subject_type": "Core",
+    "branches": [
+      "CE"
+    ],
+    "branches_str": "Civil Engineering",
+    "slug": "314313-estimating-costing-and-valuation",
+    "url": "/pyq/314313-estimating-costing-and-valuation.html",
+    "image": "/resourse/pyq/CE-ECV.png",
+    "papers": {
+      "Summer 2026": {
+        "url": "https://drive.google.com/file/d/1bLnHnF1CRvp78N4lQQ-9Pm2qBG6cGxOT/view",
+        "direct_url": "https://drive.google.com/uc?export=download&id=1bLnHnF1CRvp78N4lQQ-9Pm2qBG6cGxOT",
+        "size_kb": "94",
+        "file_name": "S-2026_314313.pdf",
+        "id": "1bLnHnF1CRvp78N4lQQ-9Pm2qBG6cGxOT",
+        "year": "2026",
+        "season": "Summer"
+      },
+      "Winter 2025": {
+        "url": "https://drive.google.com/file/d/1IjIg6ePzWMAyu0qV9c3qYZMdE2oNO3_G/view",
+        "direct_url": "https://drive.google.com/uc?export=download&id=1IjIg6ePzWMAyu0qV9c3qYZMdE2oNO3_G",
+        "size_kb": "141",
+        "file_name": "W-2025_314313.pdf",
+        "id": "1IjIg6ePzWMAyu0qV9c3qYZMdE2oNO3_G",
+        "year": "2025",
+        "season": "Winter"
+      }
+    }
+  },
+  {
+    "code": "314314",
+    "title": "Water and Wastewater Engineering (314314) Question Papers",
+    "subject_name": "Water and Wastewater Engineering",
+    "abbreviation": "WWE",
+    "semester": 4,
+    "academic_year": "Second Year (SY)",
+    "subject_type": "Core",
+    "branches": [
+      "CE"
+    ],
+    "branches_str": "Civil Engineering",
+    "slug": "314314-water-and-wastewater-engineering",
+    "url": "/pyq/314314-water-and-wastewater-engineering.html",
+    "image": "/resourse/pyq/CE-WWE.png",
+    "papers": {
+      "Summer 2026": {
+        "url": "https://drive.google.com/file/d/1yDBVOFskjFNSboLpendPweK4rZFH4S0e/view",
+        "direct_url": "https://drive.google.com/uc?export=download&id=1yDBVOFskjFNSboLpendPweK4rZFH4S0e",
+        "size_kb": "367",
+        "file_name": "S-2026_314314.pdf",
+        "id": "1yDBVOFskjFNSboLpendPweK4rZFH4S0e",
+        "year": "2026",
+        "season": "Summer"
+      },
+      "Winter 2025": {
+        "url": "https://drive.google.com/file/d/1QWGGL7mwppWbfgRU-MPz-sLtj3biH82V/view",
+        "direct_url": "https://drive.google.com/uc?export=download&id=1QWGGL7mwppWbfgRU-MPz-sLtj3biH82V",
+        "size_kb": "23",
+        "file_name": "W-2025_314314.pdf",
+        "id": "1QWGGL7mwppWbfgRU-MPz-sLtj3biH82V",
+        "year": "2025",
+        "season": "Winter"
+      }
+    }
+  },
+  {
+    "code": "314315",
+    "title": "Geotechnical Engineering (314315) Question Papers",
+    "subject_name": "Geotechnical Engineering",
+    "abbreviation": "GTE",
+    "semester": 4,
+    "academic_year": "Second Year (SY)",
+    "subject_type": "Core",
+    "branches": [
+      "CE"
+    ],
+    "branches_str": "Civil Engineering",
+    "slug": "314315-geotechnical-engineering",
+    "url": "/pyq/314315-geotechnical-engineering.html",
+    "image": "/resourse/pyq/CE-GE.png",
+    "papers": {
+      "Summer 2026": {
+        "url": "https://drive.google.com/file/d/11bSBPLFOw4N_o1Pb63bHUfd2TD47gr2m/view",
+        "direct_url": "https://drive.google.com/uc?export=download&id=11bSBPLFOw4N_o1Pb63bHUfd2TD47gr2m",
+        "size_kb": "386",
+        "file_name": "S-2026_314315.pdf",
+        "id": "11bSBPLFOw4N_o1Pb63bHUfd2TD47gr2m",
+        "year": "2026",
+        "season": "Summer"
+      },
+      "Winter 2025": {
+        "url": "https://drive.google.com/file/d/1SYunjsvwD31uh1wXolBncMvXWHeGrc9R/view",
+        "direct_url": "https://drive.google.com/uc?export=download&id=1SYunjsvwD31uh1wXolBncMvXWHeGrc9R",
+        "size_kb": "28",
+        "file_name": "W-2025_314315.pdf",
+        "id": "1SYunjsvwD31uh1wXolBncMvXWHeGrc9R",
+        "year": "2025",
+        "season": "Winter"
+      }
+    }
+  },
+  {
+    "code": "314317",
+    "title": "Java Programming (314317) Question Papers",
+    "subject_name": "Java Programming",
+    "abbreviation": "JPR",
+    "semester": 4,
+    "academic_year": "Second Year (SY)",
+    "subject_type": "Core",
+    "branches": [
+      "AI",
+      "CM",
+      "IF"
+    ],
+    "branches_str": "Artificial Intelligence & Machine Learning, Computer Engineering, Information Technology",
+    "slug": "314317-java-programming",
+    "url": "/pyq/314317-java-programming.html",
+    "image": "/resourse/pyq/CM-JP.png",
+    "papers": {
+      "Summer 2026": {
+        "url": "https://drive.google.com/file/d/1jhbmJg5rTVUc6w1Ede3S_7D3YcZODK9H/view",
+        "direct_url": "https://drive.google.com/uc?export=download&id=1jhbmJg5rTVUc6w1Ede3S_7D3YcZODK9H",
+        "size_kb": "22",
+        "file_name": "S-2026_314317.pdf",
+        "id": "1jhbmJg5rTVUc6w1Ede3S_7D3YcZODK9H",
+        "year": "2026",
+        "season": "Summer"
+      },
+      "Winter 2025": {
+        "url": "https://drive.google.com/file/d/1eDtEYdxtw0BYOEd5dT6HpyJeUSwkvJ2x/view",
+        "direct_url": "https://drive.google.com/uc?export=download&id=1eDtEYdxtw0BYOEd5dT6HpyJeUSwkvJ2x",
+        "size_kb": "24",
+        "file_name": "W-2025_314317.pdf",
+        "id": "1eDtEYdxtw0BYOEd5dT6HpyJeUSwkvJ2x",
+        "year": "2025",
+        "season": "Winter"
+      }
+    }
+  },
+  {
+    "code": "314318",
+    "title": "Data Communication and Computer Network (314318) Question Papers",
+    "subject_name": "Data Communication and Computer Network",
+    "abbreviation": "DCN",
+    "semester": 4,
+    "academic_year": "Second Year (SY)",
+    "subject_type": "Core",
+    "branches": [
+      "AI",
+      "CM",
+      "IF"
+    ],
+    "branches_str": "Artificial Intelligence & Machine Learning, Computer Engineering, Information Technology",
+    "slug": "314318-data-communication-and-computer-network",
+    "url": "/pyq/314318-data-communication-and-computer-network.html",
+    "image": "/resourse/pyq/CM-DCCN.png",
+    "papers": {
+      "Summer 2026": {
+        "url": "https://drive.google.com/file/d/1drRtrH9a7DAW5Me5FnWoxC850bl98D2O/view",
+        "direct_url": "https://drive.google.com/uc?export=download&id=1drRtrH9a7DAW5Me5FnWoxC850bl98D2O",
+        "size_kb": "23",
+        "file_name": "S-2026_314318.pdf",
+        "id": "1drRtrH9a7DAW5Me5FnWoxC850bl98D2O",
+        "year": "2026",
+        "season": "Summer"
+      },
+      "Winter 2025": {
+        "url": "https://drive.google.com/file/d/1NG6T7TwwFD3fVvWgRY1-JNjbehSBo9JL/view",
+        "direct_url": "https://drive.google.com/uc?export=download&id=1NG6T7TwwFD3fVvWgRY1-JNjbehSBo9JL",
+        "size_kb": "102",
+        "file_name": "W-2025_314318.pdf",
+        "id": "1NG6T7TwwFD3fVvWgRY1-JNjbehSBo9JL",
+        "year": "2025",
+        "season": "Winter"
+      }
+    }
+  },
+  {
+    "code": "314319",
+    "title": "Information Security (314319) Question Papers",
+    "subject_name": "Information Security",
+    "abbreviation": "IFS",
+    "semester": 4,
+    "academic_year": "Second Year (SY)",
+    "subject_type": "Core",
+    "branches": [
+      "IF"
+    ],
+    "branches_str": "Information Technology",
+    "slug": "314319-information-security",
+    "url": "/pyq/314319-information-security.html",
+    "image": "/resourse/pyq/IF-IS.png",
+    "papers": {
+      "Summer 2026": {
+        "url": "https://drive.google.com/file/d/1vqLLFqiMc_0hDbarNQ5WpTxDoUzd70Io/view",
+        "direct_url": "https://drive.google.com/uc?export=download&id=1vqLLFqiMc_0hDbarNQ5WpTxDoUzd70Io",
+        "size_kb": "367",
+        "file_name": "S-2026_314319.pdf",
+        "id": "1vqLLFqiMc_0hDbarNQ5WpTxDoUzd70Io",
+        "year": "2026",
+        "season": "Summer"
+      },
+      "Winter 2025": {
+        "url": "https://drive.google.com/file/d/1LXW6aKSiXqIWwH5py1Fq-waayZMnd1_g/view",
+        "direct_url": "https://drive.google.com/uc?export=download&id=1LXW6aKSiXqIWwH5py1Fq-waayZMnd1_g",
+        "size_kb": "23",
+        "file_name": "W-2025_314319.pdf",
+        "id": "1LXW6aKSiXqIWwH5py1Fq-waayZMnd1_g",
+        "year": "2025",
+        "season": "Winter"
+      }
+    }
+  },
+  {
+    "code": "314320",
+    "title": "Mathematics for Machine Learning (314320) Question Papers",
+    "subject_name": "Mathematics for Machine Learning",
+    "abbreviation": "MML",
+    "semester": 4,
+    "academic_year": "Second Year (SY)",
+    "subject_type": "Core",
+    "branches": [
+      "AI"
+    ],
+    "branches_str": "Artificial Intelligence & Machine Learning",
+    "slug": "314320-mathematics-for-machine-learning",
+    "url": "/pyq/314320-mathematics-for-machine-learning.html",
+    "image": "/resourse/pyq/AI-MML.png",
+    "papers": {
+      "Summer 2026": {
+        "url": "https://drive.google.com/file/d/1DE2oanQG-o7jB7cf447OvQTuKCa74N9b/view",
+        "direct_url": "https://drive.google.com/uc?export=download&id=1DE2oanQG-o7jB7cf447OvQTuKCa74N9b",
+        "size_kb": "398",
+        "file_name": "S-2026_314320.pdf",
+        "id": "1DE2oanQG-o7jB7cf447OvQTuKCa74N9b",
+        "year": "2026",
+        "season": "Summer"
+      },
+      "Winter 2025": {
+        "url": "https://drive.google.com/file/d/198YuOkvcOKa-trQbO2CXixeQetora3m0/view",
+        "direct_url": "https://drive.google.com/uc?export=download&id=198YuOkvcOKa-trQbO2CXixeQetora3m0",
+        "size_kb": "44",
+        "file_name": "W-2025_314320.pdf",
+        "id": "198YuOkvcOKa-trQbO2CXixeQetora3m0",
+        "year": "2025",
+        "season": "Winter"
+      }
+    }
+  },
+  {
+    "code": "314321",
+    "title": "Microprocessor Programming (314321) Question Papers",
+    "subject_name": "Microprocessor Programming",
+    "abbreviation": "MPP",
+    "semester": 4,
+    "academic_year": "Second Year (SY)",
+    "subject_type": "Core",
+    "branches": [
+      "AI",
+      "CM"
+    ],
+    "branches_str": "Artificial Intelligence & Machine Learning, Computer Engineering",
+    "slug": "314321-microprocessor-programming",
+    "url": "/pyq/314321-microprocessor-programming.html",
+    "image": "/resourse/pyq/CM-MP.png",
+    "papers": {
+      "Summer 2026": {
+        "url": "https://drive.google.com/file/d/1iMpt2tO5DWld1JsXQ-cK4xqEJn5SuXrR/view",
+        "direct_url": "https://drive.google.com/uc?export=download&id=1iMpt2tO5DWld1JsXQ-cK4xqEJn5SuXrR",
+        "size_kb": "23",
+        "file_name": "S-2026_314321.pdf",
+        "id": "1iMpt2tO5DWld1JsXQ-cK4xqEJn5SuXrR",
+        "year": "2026",
+        "season": "Summer"
+      },
+      "Winter 2025": {
+        "url": "https://drive.google.com/file/d/1I_A0O2D31g01QwU6BBXZuBqdg_LnCMKO/view",
+        "direct_url": "https://drive.google.com/uc?export=download&id=1I_A0O2D31g01QwU6BBXZuBqdg_LnCMKO",
+        "size_kb": "23",
+        "file_name": "W-2025_314321.pdf",
+        "id": "1I_A0O2D31g01QwU6BBXZuBqdg_LnCMKO",
+        "year": "2025",
+        "season": "Winter"
+      }
+    }
+  },
+  {
+    "code": "314322",
+    "title": "D.C. Machines and Transformers (314322) Question Papers",
+    "subject_name": "D.C. Machines and Transformers",
+    "abbreviation": "DCT",
+    "semester": 4,
+    "academic_year": "Second Year (SY)",
+    "subject_type": "Core",
+    "branches": [
+      "EE"
+    ],
+    "branches_str": "Electrical Engineering",
+    "slug": "314322-d-c-machines-and-transformers",
+    "url": "/pyq/314322-d-c-machines-and-transformers.html",
+    "image": "/resourse/pyq/EE-DMT.png",
+    "papers": {
+      "Summer 2026": {
+        "url": "https://drive.google.com/file/d/1UQF9i95OERhygbPKSgE0EjMS5BbClIha/view",
+        "direct_url": "https://drive.google.com/uc?export=download&id=1UQF9i95OERhygbPKSgE0EjMS5BbClIha",
+        "size_kb": "27",
+        "file_name": "S-2026_314322.pdf",
+        "id": "1UQF9i95OERhygbPKSgE0EjMS5BbClIha",
+        "year": "2026",
+        "season": "Summer"
+      },
+      "Winter 2025": {
+        "url": "https://drive.google.com/file/d/1SSqbD3e8MbBMdO2Gzpp3ItF6otVFWS6d/view",
+        "direct_url": "https://drive.google.com/uc?export=download&id=1SSqbD3e8MbBMdO2Gzpp3ItF6otVFWS6d",
+        "size_kb": "27",
+        "file_name": "W-2025_314322.pdf",
+        "id": "1SSqbD3e8MbBMdO2Gzpp3ItF6otVFWS6d",
+        "year": "2025",
+        "season": "Winter"
+      }
+    }
+  },
+  {
+    "code": "314323",
+    "title": "Utilization of Electrical Energy (314323) Question Papers",
+    "subject_name": "Utilization of Electrical Energy",
+    "abbreviation": "UEE",
+    "semester": 4,
+    "academic_year": "Second Year (SY)",
+    "subject_type": "Core",
+    "branches": [
+      "EE"
+    ],
+    "branches_str": "Electrical Engineering",
+    "slug": "314323-utilization-of-electrical-energy",
+    "url": "/pyq/314323-utilization-of-electrical-energy.html",
+    "image": "/resourse/pyq/EE-UEE.png",
+    "papers": {
+      "Summer 2026": {
+        "url": "https://drive.google.com/file/d/1ii0ZMUAGS7IboVlSIyx_jNEXIFphGACX/view",
+        "direct_url": "https://drive.google.com/uc?export=download&id=1ii0ZMUAGS7IboVlSIyx_jNEXIFphGACX",
+        "size_kb": "25",
+        "file_name": "S-2026_314323.pdf",
+        "id": "1ii0ZMUAGS7IboVlSIyx_jNEXIFphGACX",
+        "year": "2026",
+        "season": "Summer"
+      },
+      "Winter 2025": {
+        "url": "https://drive.google.com/file/d/1r0XrAAFSSfts-Pgs7yTD9IL5UfN7j9AJ/view",
+        "direct_url": "https://drive.google.com/uc?export=download&id=1r0XrAAFSSfts-Pgs7yTD9IL5UfN7j9AJ",
+        "size_kb": "24",
+        "file_name": "W-2025_314323.pdf",
+        "id": "1r0XrAAFSSfts-Pgs7yTD9IL5UfN7j9AJ",
+        "year": "2025",
+        "season": "Winter"
+      }
+    }
+  },
+  {
+    "code": "314324",
+    "title": "Digital Electronics and Microcontroller Applications (314324) Question Papers",
+    "subject_name": "Digital Electronics and Microcontroller Applications",
+    "abbreviation": "DEM",
+    "semester": 4,
+    "academic_year": "Second Year (SY)",
+    "subject_type": "Core",
+    "branches": [
+      "EE"
+    ],
+    "branches_str": "Electrical Engineering",
+    "slug": "314324-digital-electronics-and-microcontroller-applications",
+    "url": "/pyq/314324-digital-electronics-and-microcontroller-applications.html",
+    "image": "/resourse/pyq/EE-DEMA.png",
+    "papers": {
+      "Summer 2026": {
+        "url": "https://drive.google.com/file/d/1Mn8buNUjoiXKAnW5NLsDPoWfK5bVeoF_/view",
+        "direct_url": "https://drive.google.com/uc?export=download&id=1Mn8buNUjoiXKAnW5NLsDPoWfK5bVeoF_",
+        "size_kb": "25",
+        "file_name": "S-2026_314324.pdf",
+        "id": "1Mn8buNUjoiXKAnW5NLsDPoWfK5bVeoF_",
+        "year": "2026",
+        "season": "Summer"
+      },
+      "Winter 2025": {
+        "url": "https://drive.google.com/file/d/1elS75dSmh0Pu8TJJo90id9bMLN75vvZi/view",
+        "direct_url": "https://drive.google.com/uc?export=download&id=1elS75dSmh0Pu8TJJo90id9bMLN75vvZi",
+        "size_kb": "24",
+        "file_name": "W-2025_314324.pdf",
+        "id": "1elS75dSmh0Pu8TJJo90id9bMLN75vvZi",
+        "year": "2025",
+        "season": "Winter"
+      }
+    }
+  },
+  {
+    "code": "314325",
+    "title": "Electrical Estimating and Contracting (314325) Question Papers",
+    "subject_name": "Electrical Estimating and Contracting",
+    "abbreviation": "EEC",
+    "semester": 4,
+    "academic_year": "Second Year (SY)",
+    "subject_type": "Core",
+    "branches": [
+      "EE"
+    ],
+    "branches_str": "Electrical Engineering",
+    "slug": "314325-electrical-estimating-and-contracting",
+    "url": "/pyq/314325-electrical-estimating-and-contracting.html",
+    "image": "/resourse/pyq/EE-EEC.png",
+    "papers": {
+      "Summer 2026": {
+        "url": "https://drive.google.com/file/d/1Qqn7WIKSIUza3xsGraYQgCgpgg3K4G11/view",
+        "direct_url": "https://drive.google.com/uc?export=download&id=1Qqn7WIKSIUza3xsGraYQgCgpgg3K4G11",
+        "size_kb": "393",
+        "file_name": "S-2026_314325.pdf",
+        "id": "1Qqn7WIKSIUza3xsGraYQgCgpgg3K4G11",
+        "year": "2026",
+        "season": "Summer"
+      },
+      "Winter 2025": {
+        "url": "https://drive.google.com/file/d/1YeJE1SSQLwjzvrY7UhG2inWrA2xylMkM/view",
+        "direct_url": "https://drive.google.com/uc?export=download&id=1YeJE1SSQLwjzvrY7UhG2inWrA2xylMkM",
+        "size_kb": "58",
+        "file_name": "W-2025_314325.pdf",
+        "id": "1YeJE1SSQLwjzvrY7UhG2inWrA2xylMkM",
+        "year": "2025",
+        "season": "Winter"
+      }
+    }
+  },
+  {
+    "code": "314326",
+    "title": "Digital Communication Systems (314326) Question Papers",
+    "subject_name": "Digital Communication Systems",
+    "abbreviation": "DCS",
+    "semester": 4,
+    "academic_year": "Second Year (SY)",
+    "subject_type": "Core",
+    "branches": [
+      "EJ"
+    ],
+    "branches_str": "Electronics & Telecommunication",
+    "slug": "314326-digital-communication-systems",
+    "url": "/pyq/314326-digital-communication-systems.html",
+    "image": "/resourse/pyq/EJ-DCS.png",
+    "papers": {
+      "Summer 2026": {
+        "url": "https://drive.google.com/file/d/10K-jJJlqCxS4UXdMCcBGFDkhUH3D8mzX/view",
+        "direct_url": "https://drive.google.com/uc?export=download&id=10K-jJJlqCxS4UXdMCcBGFDkhUH3D8mzX",
+        "size_kb": "27",
+        "file_name": "S-2026_314326.pdf",
+        "id": "10K-jJJlqCxS4UXdMCcBGFDkhUH3D8mzX",
+        "year": "2026",
+        "season": "Summer"
+      },
+      "Winter 2025": {
+        "url": "https://drive.google.com/file/d/1Y-qZHEadPg_rxRg1mXss_k-eCLoD2DCQ/view",
+        "direct_url": "https://drive.google.com/uc?export=download&id=1Y-qZHEadPg_rxRg1mXss_k-eCLoD2DCQ",
+        "size_kb": "118",
+        "file_name": "W-2025_314326.pdf",
+        "id": "1Y-qZHEadPg_rxRg1mXss_k-eCLoD2DCQ",
+        "year": "2025",
+        "season": "Winter"
+      }
+    }
+  },
+  {
+    "code": "314327",
+    "title": "Consumer Electronic Systems (314327) Question Papers",
+    "subject_name": "Consumer Electronic Systems",
+    "abbreviation": "CES",
+    "semester": 4,
+    "academic_year": "Second Year (SY)",
+    "subject_type": "Core",
+    "branches": [
+      "EJ"
+    ],
+    "branches_str": "Electronics & Telecommunication",
+    "slug": "314327-consumer-electronic-systems",
+    "url": "/pyq/314327-consumer-electronic-systems.html",
+    "image": "/resourse/pyq/EJ-CES.png",
+    "papers": {
+      "Summer 2026": {
+        "url": "https://drive.google.com/file/d/1hL56_4aXzAMC8_p8JeJp8LsuD-_PSQWP/view",
+        "direct_url": "https://drive.google.com/uc?export=download&id=1hL56_4aXzAMC8_p8JeJp8LsuD-_PSQWP",
+        "size_kb": "68",
+        "file_name": "S-2026_314327.pdf",
+        "id": "1hL56_4aXzAMC8_p8JeJp8LsuD-_PSQWP",
+        "year": "2026",
+        "season": "Summer"
+      },
+      "Winter 2025": {
+        "url": "https://drive.google.com/file/d/1t9RTIcF_H9QozM15lKNnFG9dOofxn7Kb/view",
+        "direct_url": "https://drive.google.com/uc?export=download&id=1t9RTIcF_H9QozM15lKNnFG9dOofxn7Kb",
+        "size_kb": "23",
+        "file_name": "W-2025_314327.pdf",
+        "id": "1t9RTIcF_H9QozM15lKNnFG9dOofxn7Kb",
+        "year": "2025",
+        "season": "Winter"
+      }
+    }
+  },
+  {
+    "code": "314328",
+    "title": "Microcontroller and Applications (314328) Question Papers",
+    "subject_name": "Microcontroller and Applications",
+    "abbreviation": "MAP",
+    "semester": 4,
+    "academic_year": "Second Year (SY)",
+    "subject_type": "Core",
+    "branches": [
+      "EJ"
+    ],
+    "branches_str": "Electronics & Telecommunication",
+    "slug": "314328-microcontroller-and-applications",
+    "url": "/pyq/314328-microcontroller-and-applications.html",
+    "image": "/resourse/pyq/EJ-MA.png",
+    "papers": {
+      "Summer 2026": {
+        "url": "https://drive.google.com/file/d/1QoFOCu-pypZHAIQVP3ab0nVtdYumADug/view",
+        "direct_url": "https://drive.google.com/uc?export=download&id=1QoFOCu-pypZHAIQVP3ab0nVtdYumADug",
+        "size_kb": "386",
+        "file_name": "S-2026_314328.pdf",
+        "id": "1QoFOCu-pypZHAIQVP3ab0nVtdYumADug",
+        "year": "2026",
+        "season": "Summer"
+      },
+      "Winter 2025": {
+        "url": "https://drive.google.com/file/d/1onY41Yfv39frsR5b-8_RZpYXY0_4fAJy/view",
+        "direct_url": "https://drive.google.com/uc?export=download&id=1onY41Yfv39frsR5b-8_RZpYXY0_4fAJy",
+        "size_kb": "111",
+        "file_name": "W-2025_314328.pdf",
+        "id": "1onY41Yfv39frsR5b-8_RZpYXY0_4fAJy",
+        "year": "2025",
+        "season": "Winter"
+      }
+    }
+  },
+  {
+    "code": "314340",
+    "title": "Production Processes (314340) Question Papers",
+    "subject_name": "Production Processes",
+    "abbreviation": "PRP",
+    "semester": 4,
+    "academic_year": "Second Year (SY)",
+    "subject_type": "Core",
+    "branches": [
+      "ME"
+    ],
+    "branches_str": "Mechanical Engineering",
+    "slug": "314340-production-processes",
+    "url": "/pyq/314340-production-processes.html",
+    "image": "/resourse/pyq/ME-PP.png",
+    "papers": {
+      "Summer 2026": {
+        "url": "https://drive.google.com/file/d/1aj-mGc3-4SqF5-fjavxrZXWzXW_hL918/view",
+        "direct_url": "https://drive.google.com/uc?export=download&id=1aj-mGc3-4SqF5-fjavxrZXWzXW_hL918",
+        "size_kb": "363",
+        "file_name": "S-2026_314340.pdf",
+        "id": "1aj-mGc3-4SqF5-fjavxrZXWzXW_hL918",
+        "year": "2026",
+        "season": "Summer"
+      },
+      "Winter 2025": {
+        "url": "https://drive.google.com/file/d/1DmLFSj-3ngQIAdtQg7sA2jYqCFrIsqXX/view",
+        "direct_url": "https://drive.google.com/uc?export=download&id=1DmLFSj-3ngQIAdtQg7sA2jYqCFrIsqXX",
+        "size_kb": "21",
+        "file_name": "W-2025_314340.pdf",
+        "id": "1DmLFSj-3ngQIAdtQg7sA2jYqCFrIsqXX",
+        "year": "2025",
+        "season": "Winter"
+      }
+    }
+  },
+  {
+    "code": "314363",
+    "title": "Basic Power Electronics (314363) Question Papers",
+    "subject_name": "Basic Power Electronics",
+    "abbreviation": "BPE",
+    "semester": 4,
+    "academic_year": "Second Year (SY)",
+    "subject_type": "Core",
+    "branches": [
+      "EJ"
+    ],
+    "branches_str": "Electronics & Telecommunication",
+    "slug": "314363-basic-power-electronics",
+    "url": "/pyq/314363-basic-power-electronics.html",
+    "image": "/resourse/pyq/EJ-BPE.png",
+    "papers": {
+      "Summer 2026": {
+        "url": "https://drive.google.com/file/d/1zGRB9Ga1klaHAoAgZFPojijMtqT483_Y/view",
+        "direct_url": "https://drive.google.com/uc?export=download&id=1zGRB9Ga1klaHAoAgZFPojijMtqT483_Y",
+        "size_kb": "364",
+        "file_name": "S-2026_314363.pdf",
+        "id": "1zGRB9Ga1klaHAoAgZFPojijMtqT483_Y",
+        "year": "2026",
+        "season": "Summer"
+      },
+      "Winter 2025": {
+        "url": "https://drive.google.com/file/d/1k86wSmWYKsRwtRA-rbDZ83qqBmdgf2Ko/view",
+        "direct_url": "https://drive.google.com/uc?export=download&id=1k86wSmWYKsRwtRA-rbDZ83qqBmdgf2Ko",
+        "size_kb": "27",
+        "file_name": "W-2025_314363.pdf",
+        "id": "1k86wSmWYKsRwtRA-rbDZ83qqBmdgf2Ko",
+        "year": "2025",
+        "season": "Winter"
+      }
+    }
+  },
+  {
+    "code": "315313",
+    "title": "Theory of Structures (315313) Question Papers",
+    "subject_name": "Theory of Structures",
+    "abbreviation": "TOS",
+    "semester": 5,
+    "academic_year": "Third Year (TY)",
+    "subject_type": "Core",
+    "branches": [
+      "CE"
+    ],
+    "branches_str": "Civil Engineering",
+    "slug": "315313-theory-of-structures",
+    "url": "/pyq/315313-theory-of-structures.html",
+    "image": "/resourse/pyq/CE-TS.png",
+    "papers": {
+      "Summer 2026": {
+        "url": "https://drive.google.com/file/d/1cyClVLCaWzT-4sWXG5gDRGlYES38iVIZ/view",
+        "direct_url": "https://drive.google.com/uc?export=download&id=1cyClVLCaWzT-4sWXG5gDRGlYES38iVIZ",
+        "size_kb": "86",
+        "file_name": "S-2026_315313.pdf",
+        "id": "1cyClVLCaWzT-4sWXG5gDRGlYES38iVIZ",
+        "year": "2026",
+        "season": "Summer"
+      },
+      "Winter 2025": {
+        "url": "https://drive.google.com/file/d/1CiLuKoTGWAUmR-bO2ws45TLWWuakyYXY/view",
+        "direct_url": "https://drive.google.com/uc?export=download&id=1CiLuKoTGWAUmR-bO2ws45TLWWuakyYXY",
+        "size_kb": "151",
+        "file_name": "W-2025_315313.pdf",
+        "id": "1CiLuKoTGWAUmR-bO2ws45TLWWuakyYXY",
+        "year": "2025",
+        "season": "Winter"
+      }
+    }
+  },
+  {
+    "code": "315314",
+    "title": "Water Resource Engineering (315314) Question Papers",
+    "subject_name": "Water Resource Engineering",
+    "abbreviation": "WRE",
+    "semester": 5,
+    "academic_year": "Third Year (TY)",
+    "subject_type": "Core",
+    "branches": [
+      "CE"
+    ],
+    "branches_str": "Civil Engineering",
+    "slug": "315314-water-resource-engineering",
+    "url": "/pyq/315314-water-resource-engineering.html",
+    "image": "/resourse/pyq/CE-WRE.png",
+    "papers": {
+      "Summer 2026": {
+        "url": "https://drive.google.com/file/d/1gOurq7Cd1dttR35ukAViXj3cXbMcJw8M/view",
+        "direct_url": "https://drive.google.com/uc?export=download&id=1gOurq7Cd1dttR35ukAViXj3cXbMcJw8M",
+        "size_kb": "27",
+        "file_name": "S-2026_315314.pdf",
+        "id": "1gOurq7Cd1dttR35ukAViXj3cXbMcJw8M",
+        "year": "2026",
+        "season": "Summer"
+      },
+      "Winter 2025": {
+        "url": "https://drive.google.com/file/d/1MzrYSPxpxOOO7dfg0s1pc8gIw5qI00iq/view",
+        "direct_url": "https://drive.google.com/uc?export=download&id=1MzrYSPxpxOOO7dfg0s1pc8gIw5qI00iq",
+        "size_kb": "26",
+        "file_name": "W-2025_315314.pdf",
+        "id": "1MzrYSPxpxOOO7dfg0s1pc8gIw5qI00iq",
+        "year": "2025",
+        "season": "Winter"
+      }
+    }
+  },
+  {
+    "code": "315316",
+    "title": "Energy Conservation and Green Building (315316) Question Papers",
+    "subject_name": "Energy Conservation and Green Building",
+    "abbreviation": "ECG",
+    "semester": 5,
+    "academic_year": "Third Year (TY)",
+    "subject_type": "Elective",
+    "branches": [
+      "CE"
+    ],
+    "branches_str": "Civil Engineering",
+    "slug": "315316-energy-conservation-and-green-building",
+    "url": "/pyq/315316-energy-conservation-and-green-building.html",
+    "image": "/resourse/pyq/CE-ECGB.png",
+    "papers": {
+      "Summer 2026": {
+        "url": "https://drive.google.com/file/d/1smyTuTjrJeeOIrwgzsDvh-KXVS_7GW6H/view",
+        "direct_url": "https://drive.google.com/uc?export=download&id=1smyTuTjrJeeOIrwgzsDvh-KXVS_7GW6H",
+        "size_kb": "23",
+        "file_name": "S-2026_315316.pdf",
+        "id": "1smyTuTjrJeeOIrwgzsDvh-KXVS_7GW6H",
+        "year": "2026",
+        "season": "Summer"
+      },
+      "Winter 2025": {
+        "url": "https://drive.google.com/file/d/1H-aQcHpxuqyBxi_WttUdL_ugu-CJ_FFK/view",
+        "direct_url": "https://drive.google.com/uc?export=download&id=1H-aQcHpxuqyBxi_WttUdL_ugu-CJ_FFK",
+        "size_kb": "22",
+        "file_name": "W-2025_315316.pdf",
+        "id": "1H-aQcHpxuqyBxi_WttUdL_ugu-CJ_FFK",
+        "year": "2025",
+        "season": "Winter"
+      }
+    }
+  },
+  {
+    "code": "315317",
+    "title": "Precast and Prestressed Concrete Structures (315317) Question Papers",
+    "subject_name": "Precast and Prestressed Concrete Structures",
+    "abbreviation": "PCS",
+    "semester": 5,
+    "academic_year": "Third Year (TY)",
+    "subject_type": "Elective",
+    "branches": [
+      "CE"
+    ],
+    "branches_str": "Civil Engineering",
+    "slug": "315317-precast-and-prestressed-concrete-structures",
+    "url": "/pyq/315317-precast-and-prestressed-concrete-structures.html",
+    "image": "/resourse/pyq/CE-PPCS.png",
+    "papers": {
+      "Summer 2026": {
+        "url": "https://drive.google.com/file/d/1qBkiBWNdG7qWEM52skdcA9Fl0PQ27wtW/view",
+        "direct_url": "https://drive.google.com/uc?export=download&id=1qBkiBWNdG7qWEM52skdcA9Fl0PQ27wtW",
+        "size_kb": "25",
+        "file_name": "S-2026_315317.pdf",
+        "id": "1qBkiBWNdG7qWEM52skdcA9Fl0PQ27wtW",
+        "year": "2026",
+        "season": "Summer"
+      },
+      "Winter 2025": {
+        "url": "https://drive.google.com/file/d/1cmKaT62BJCHQ74Iaeo4RxDg5fM45EMk5/view",
+        "direct_url": "https://drive.google.com/uc?export=download&id=1cmKaT62BJCHQ74Iaeo4RxDg5fM45EMk5",
+        "size_kb": "23",
+        "file_name": "W-2025_315317.pdf",
+        "id": "1cmKaT62BJCHQ74Iaeo4RxDg5fM45EMk5",
+        "year": "2025",
+        "season": "Winter"
+      }
+    }
+  },
+  {
+    "code": "315318",
+    "title": "Road Traffic Engineering (315318) Question Papers",
+    "subject_name": "Road Traffic Engineering",
+    "abbreviation": "RTE",
+    "semester": 5,
+    "academic_year": "Third Year (TY)",
+    "subject_type": "Elective",
+    "branches": [
+      "CE"
+    ],
+    "branches_str": "Civil Engineering",
+    "slug": "315318-road-traffic-engineering",
+    "url": "/pyq/315318-road-traffic-engineering.html",
+    "image": "/resourse/pyq/CE-RTE.png",
+    "papers": {
+      "Summer 2026": {
+        "url": "https://drive.google.com/file/d/1MMYk1oLdI_R7RD_kC1rnX-dQtcLKzS56/view",
+        "direct_url": "https://drive.google.com/uc?export=download&id=1MMYk1oLdI_R7RD_kC1rnX-dQtcLKzS56",
+        "size_kb": "24",
+        "file_name": "S-2026_315318.pdf",
+        "id": "1MMYk1oLdI_R7RD_kC1rnX-dQtcLKzS56",
+        "year": "2026",
+        "season": "Summer"
+      },
+      "Winter 2025": {
+        "url": "https://drive.google.com/file/d/1xeZGDAsYb3nCxvYrEqaRlTzGXSZmdNgH/view",
+        "direct_url": "https://drive.google.com/uc?export=download&id=1xeZGDAsYb3nCxvYrEqaRlTzGXSZmdNgH",
+        "size_kb": "21",
+        "file_name": "W-2025_315318.pdf",
+        "id": "1xeZGDAsYb3nCxvYrEqaRlTzGXSZmdNgH",
+        "year": "2025",
+        "season": "Winter"
+      }
+    }
+  },
+  {
+    "code": "315319",
+    "title": "Operating System (315319) Question Papers",
+    "subject_name": "Operating System",
+    "abbreviation": "OSY",
+    "semester": 5,
+    "academic_year": "Third Year (TY)",
+    "subject_type": "Core",
+    "branches": [
+      "AI",
+      "CM",
+      "IF"
+    ],
+    "branches_str": "Artificial Intelligence & Machine Learning, Computer Engineering, Information Technology",
+    "slug": "315319-operating-system",
+    "url": "/pyq/315319-operating-system.html",
+    "image": "/resourse/pyq/IF-OS.png",
+    "papers": {
+      "Summer 2026": {
+        "url": "https://drive.google.com/file/d/1Ta2xQ2sKwIDYGdyZPY5RpElA3oVh6MXA/view",
+        "direct_url": "https://drive.google.com/uc?export=download&id=1Ta2xQ2sKwIDYGdyZPY5RpElA3oVh6MXA",
+        "size_kb": "25",
+        "file_name": "S-2026_315319.pdf",
+        "id": "1Ta2xQ2sKwIDYGdyZPY5RpElA3oVh6MXA",
+        "year": "2026",
+        "season": "Summer"
+      },
+      "Winter 2025": {
+        "url": "https://drive.google.com/file/d/1Avprn_7llF-aHfpPuBO13380xGWapLc7/view",
+        "direct_url": "https://drive.google.com/uc?export=download&id=1Avprn_7llF-aHfpPuBO13380xGWapLc7",
+        "size_kb": "25",
+        "file_name": "W-2025_315319.pdf",
+        "id": "1Avprn_7llF-aHfpPuBO13380xGWapLc7",
+        "year": "2025",
+        "season": "Winter"
+      }
+    }
+  },
+  {
+    "code": "315321",
+    "title": "Advance Computer Network (315321) Question Papers",
+    "subject_name": "Advance Computer Network",
+    "abbreviation": "ACN",
+    "semester": 5,
+    "academic_year": "Third Year (TY)",
+    "subject_type": "Elective",
+    "branches": [
+      "CM",
+      "IF"
+    ],
+    "branches_str": "Computer Engineering, Information Technology",
+    "slug": "315321-advance-computer-network",
+    "url": "/pyq/315321-advance-computer-network.html",
+    "image": "/resourse/pyq/IF-ACN.png",
+    "papers": {
+      "Summer 2026": {
+        "url": "https://drive.google.com/file/d/1dtmflLftlvW_IGdqrR2TPzAXe26QgcEG/view",
+        "direct_url": "https://drive.google.com/uc?export=download&id=1dtmflLftlvW_IGdqrR2TPzAXe26QgcEG",
+        "size_kb": "23",
+        "file_name": "S-2026_315321.pdf",
+        "id": "1dtmflLftlvW_IGdqrR2TPzAXe26QgcEG",
+        "year": "2026",
+        "season": "Summer"
+      },
+      "Winter 2025": {
+        "url": "https://drive.google.com/file/d/12PrYIPvLFpoOdX112Ch9HYNOXKl3Kgyf/view",
+        "direct_url": "https://drive.google.com/uc?export=download&id=12PrYIPvLFpoOdX112Ch9HYNOXKl3Kgyf",
+        "size_kb": "23",
+        "file_name": "W-2025_315321.pdf",
+        "id": "12PrYIPvLFpoOdX112Ch9HYNOXKl3Kgyf",
+        "year": "2025",
+        "season": "Winter"
+      }
+    }
+  },
+  {
+    "code": "315323",
+    "title": "Software Engineering (315323) Question Papers",
+    "subject_name": "Software Engineering",
+    "abbreviation": "STE",
+    "semester": 5,
+    "academic_year": "Third Year (TY)",
+    "subject_type": "Core",
+    "branches": [
+      "CM"
+    ],
+    "branches_str": "Computer Engineering",
+    "slug": "315323-software-engineering",
+    "url": "/pyq/315323-software-engineering.html",
+    "image": "/resourse/pyq/CM-SE.png",
+    "papers": {
+      "Summer 2026": {
+        "url": "https://drive.google.com/file/d/1cqEDlmozr1OfnaqJvvWYA2mV52ojJor_/view",
+        "direct_url": "https://drive.google.com/uc?export=download&id=1cqEDlmozr1OfnaqJvvWYA2mV52ojJor_",
+        "size_kb": "22",
+        "file_name": "S-2026_315323.pdf",
+        "id": "1cqEDlmozr1OfnaqJvvWYA2mV52ojJor_",
+        "year": "2026",
+        "season": "Summer"
+      },
+      "Winter 2025": {
+        "url": "https://drive.google.com/file/d/1W905_G-H2f_3zyuEmBdijatXqs9bzGJu/view",
+        "direct_url": "https://drive.google.com/uc?export=download&id=1W905_G-H2f_3zyuEmBdijatXqs9bzGJu",
+        "size_kb": "26",
+        "file_name": "W-2025_315323.pdf",
+        "id": "1W905_G-H2f_3zyuEmBdijatXqs9bzGJu",
+        "year": "2025",
+        "season": "Winter"
+      }
+    }
+  },
+  {
+    "code": "315324",
+    "title": "Advance Database Management (315324) Question Papers",
+    "subject_name": "Advance Database Management",
+    "abbreviation": "ADM",
+    "semester": 5,
+    "academic_year": "Third Year (TY)",
+    "subject_type": "Elective",
+    "branches": [
+      "AI",
+      "IF"
+    ],
+    "branches_str": "Artificial Intelligence & Machine Learning, Information Technology",
+    "slug": "315324-advance-database-management",
+    "url": "/pyq/315324-advance-database-management.html",
+    "image": "/resourse/pyq/AI-ADM.png",
+    "papers": {
+      "Summer 2026": {
+        "url": "https://drive.google.com/file/d/19ubcW1qX2hLQVkbRbglhla4vSTUVKiFg/view",
+        "direct_url": "https://drive.google.com/uc?export=download&id=19ubcW1qX2hLQVkbRbglhla4vSTUVKiFg",
+        "size_kb": "23",
+        "file_name": "S-2026_315324.pdf",
+        "id": "19ubcW1qX2hLQVkbRbglhla4vSTUVKiFg",
+        "year": "2026",
+        "season": "Summer"
+      },
+      "Winter 2025": {
+        "url": "https://drive.google.com/file/d/1ElmrRp_n5fzRRDRQhTqM1hZJyoRG7b4O/view",
+        "direct_url": "https://drive.google.com/uc?export=download&id=1ElmrRp_n5fzRRDRQhTqM1hZJyoRG7b4O",
+        "size_kb": "23",
+        "file_name": "W-2025_315324.pdf",
+        "id": "1ElmrRp_n5fzRRDRQhTqM1hZJyoRG7b4O",
+        "year": "2025",
+        "season": "Winter"
+      }
+    }
+  },
+  {
+    "code": "315325",
+    "title": "Cloud Computing (315325) Question Papers",
+    "subject_name": "Cloud Computing",
+    "abbreviation": "CLC",
+    "semester": 5,
+    "academic_year": "Third Year (TY)",
+    "subject_type": "Elective",
+    "branches": [
+      "CM"
+    ],
+    "branches_str": "Computer Engineering",
+    "slug": "315325-cloud-computing",
+    "url": "/pyq/315325-cloud-computing.html",
+    "image": "/resourse/pyq/CM-CC.png",
+    "papers": {
+      "Summer 2026": {
+        "url": "https://drive.google.com/file/d/1m5kD87ng7FdWGMqYFTK-ZjrNyAxL7jXD/view",
+        "direct_url": "https://drive.google.com/uc?export=download&id=1m5kD87ng7FdWGMqYFTK-ZjrNyAxL7jXD",
+        "size_kb": "23",
+        "file_name": "S-2026_315325.pdf",
+        "id": "1m5kD87ng7FdWGMqYFTK-ZjrNyAxL7jXD",
+        "year": "2026",
+        "season": "Summer"
+      },
+      "Winter 2025": {
+        "url": "https://drive.google.com/file/d/1FZ-DfuTZKNbJYFdO-CijvbPhVR-XQV4O/view",
+        "direct_url": "https://drive.google.com/uc?export=download&id=1FZ-DfuTZKNbJYFdO-CijvbPhVR-XQV4O",
+        "size_kb": "23",
+        "file_name": "W-2025_315325.pdf",
+        "id": "1FZ-DfuTZKNbJYFdO-CijvbPhVR-XQV4O",
+        "year": "2025",
+        "season": "Winter"
+      }
+    }
+  },
+  {
+    "code": "315326",
+    "title": "Data Analytics (315326) Question Papers",
+    "subject_name": "Data Analytics",
+    "abbreviation": "DAN",
+    "semester": 5,
+    "academic_year": "Third Year (TY)",
+    "subject_type": "Elective",
+    "branches": [
+      "CM",
+      "IF"
+    ],
+    "branches_str": "Computer Engineering, Information Technology",
+    "slug": "315326-data-analytics",
+    "url": "/pyq/315326-data-analytics.html",
+    "image": "/resourse/pyq/CM-DA.png",
+    "papers": {
+      "Summer 2026": {
+        "url": "https://drive.google.com/file/d/1ilBOs2FaxeDpfLO9wAJN35ku7r0vhhGv/view",
+        "direct_url": "https://drive.google.com/uc?export=download&id=1ilBOs2FaxeDpfLO9wAJN35ku7r0vhhGv",
+        "size_kb": "33",
+        "file_name": "S-2026_315326.pdf",
+        "id": "1ilBOs2FaxeDpfLO9wAJN35ku7r0vhhGv",
+        "year": "2026",
+        "season": "Summer"
+      },
+      "Winter 2025": {
+        "url": "https://drive.google.com/file/d/1Ain7GMnOQYdxCExC_0-uSrD-OXsGcYVF/view",
+        "direct_url": "https://drive.google.com/uc?export=download&id=1Ain7GMnOQYdxCExC_0-uSrD-OXsGcYVF",
+        "size_kb": "24",
+        "file_name": "W-2025_315326.pdf",
+        "id": "1Ain7GMnOQYdxCExC_0-uSrD-OXsGcYVF",
+        "year": "2025",
+        "season": "Winter"
+      }
+    }
+  },
+  {
+    "code": "315327",
+    "title": "Cloud Computing for Data Science (315327) Question Papers",
+    "subject_name": "Cloud Computing for Data Science",
+    "abbreviation": "CDS",
+    "semester": 5,
+    "academic_year": "Third Year (TY)",
+    "subject_type": "Elective",
+    "branches": [
+      "AI"
+    ],
+    "branches_str": "Artificial Intelligence & Machine Learning",
+    "slug": "315327-cloud-computing-for-data-science",
+    "url": "/pyq/315327-cloud-computing-for-data-science.html",
+    "image": "/resourse/pyq/AI-CCDS.png",
+    "papers": {
+      "Summer 2026": {
+        "url": "https://drive.google.com/file/d/1z2KixgFOagr5ryUx1PhIdJCwgt6Hg7c1/view",
+        "direct_url": "https://drive.google.com/uc?export=download&id=1z2KixgFOagr5ryUx1PhIdJCwgt6Hg7c1",
+        "size_kb": "23",
+        "file_name": "S-2026_315327.pdf",
+        "id": "1z2KixgFOagr5ryUx1PhIdJCwgt6Hg7c1",
+        "year": "2026",
+        "season": "Summer"
+      },
+      "Winter 2025": {
+        "url": "https://drive.google.com/file/d/15KSAHsyYJ9Erj3pHi8Tlo3scBGrmJRyT/view",
+        "direct_url": "https://drive.google.com/uc?export=download&id=15KSAHsyYJ9Erj3pHi8Tlo3scBGrmJRyT",
+        "size_kb": "22",
+        "file_name": "W-2025_315327.pdf",
+        "id": "15KSAHsyYJ9Erj3pHi8Tlo3scBGrmJRyT",
+        "year": "2025",
+        "season": "Winter"
+      }
+    }
+  },
+  {
+    "code": "315329",
+    "title": "Natural Language Processing (315329) Question Papers",
+    "subject_name": "Natural Language Processing",
+    "abbreviation": "NLP",
+    "semester": 5,
+    "academic_year": "Third Year (TY)",
+    "subject_type": "Elective",
+    "branches": [
+      "AI"
+    ],
+    "branches_str": "Artificial Intelligence & Machine Learning",
+    "slug": "315329-natural-language-processing",
+    "url": "/pyq/315329-natural-language-processing.html",
+    "image": "/resourse/pyq/AI-NLP.png",
+    "papers": {
+      "Summer 2026": {
+        "url": "https://drive.google.com/file/d/1FSAUbM6JLOzO7eXf44Oa22C39rtDthqp/view",
+        "direct_url": "https://drive.google.com/uc?export=download&id=1FSAUbM6JLOzO7eXf44Oa22C39rtDthqp",
+        "size_kb": "22",
+        "file_name": "S-2026_315329.pdf",
+        "id": "1FSAUbM6JLOzO7eXf44Oa22C39rtDthqp",
+        "year": "2026",
+        "season": "Summer"
+      },
+      "Winter 2025": {
+        "url": "https://drive.google.com/file/d/1b5IOF61Yo_V_7WLMluoYB_w38CQnA6SZ/view",
+        "direct_url": "https://drive.google.com/uc?export=download&id=1b5IOF61Yo_V_7WLMluoYB_w38CQnA6SZ",
+        "size_kb": "29",
+        "file_name": "W-2025_315329.pdf",
+        "id": "1b5IOF61Yo_V_7WLMluoYB_w38CQnA6SZ",
+        "year": "2025",
+        "season": "Winter"
+      }
+    }
+  },
+  {
+    "code": "315330",
+    "title": "AI and ML Algorithm (315330) Question Papers",
+    "subject_name": "AI and ML Algorithm",
+    "abbreviation": "AML",
+    "semester": 5,
+    "academic_year": "Third Year (TY)",
+    "subject_type": "Core",
+    "branches": [
+      "AI"
+    ],
+    "branches_str": "Artificial Intelligence & Machine Learning",
+    "slug": "315330-ai-and-ml-algorithm",
+    "url": "/pyq/315330-ai-and-ml-algorithm.html",
+    "image": "/resourse/pyq/AI-AMA.png",
+    "papers": {
+      "Summer 2026": {
+        "url": "https://drive.google.com/file/d/1ZeOuyJJdiumBFqa7dssq3hAlMSDFJy4T/view",
+        "direct_url": "https://drive.google.com/uc?export=download&id=1ZeOuyJJdiumBFqa7dssq3hAlMSDFJy4T",
+        "size_kb": "164",
+        "file_name": "S-2026_315330.pdf",
+        "id": "1ZeOuyJJdiumBFqa7dssq3hAlMSDFJy4T",
+        "year": "2026",
+        "season": "Summer"
+      },
+      "Winter 2025": {
+        "url": "https://drive.google.com/file/d/1AUwy-VALOU3g60_b90TfBq5nzpc0-7kv/view",
+        "direct_url": "https://drive.google.com/uc?export=download&id=1AUwy-VALOU3g60_b90TfBq5nzpc0-7kv",
+        "size_kb": "24",
+        "file_name": "W-2025_315330.pdf",
+        "id": "1AUwy-VALOU3g60_b90TfBq5nzpc0-7kv",
+        "year": "2025",
+        "season": "Winter"
+      }
+    }
+  },
+  {
+    "code": "315332",
+    "title": "Software Engineering and Testing (315332) Question Papers",
+    "subject_name": "Software Engineering and Testing",
+    "abbreviation": "SET",
+    "semester": 5,
+    "academic_year": "Third Year (TY)",
+    "subject_type": "Core",
+    "branches": [
+      "IF"
+    ],
+    "branches_str": "Information Technology",
+    "slug": "315332-software-engineering-and-testing",
+    "url": "/pyq/315332-software-engineering-and-testing.html",
+    "image": "/resourse/pyq/IF-SET.png",
+    "papers": {
+      "Summer 2026": {
+        "url": "https://drive.google.com/file/d/145_aJ4rnnjvbFVsfQm0wE2HOTwX67Y39/view",
+        "direct_url": "https://drive.google.com/uc?export=download&id=145_aJ4rnnjvbFVsfQm0wE2HOTwX67Y39",
+        "size_kb": "23",
+        "file_name": "S-2026_315332.pdf",
+        "id": "145_aJ4rnnjvbFVsfQm0wE2HOTwX67Y39",
+        "year": "2026",
+        "season": "Summer"
+      },
+      "Winter 2025": {
+        "url": "https://drive.google.com/file/d/1dV73EVslpGB8MQACTAePWenGnua-qz16/view",
+        "direct_url": "https://drive.google.com/uc?export=download&id=1dV73EVslpGB8MQACTAePWenGnua-qz16",
+        "size_kb": "23",
+        "file_name": "W-2025_315332.pdf",
+        "id": "1dV73EVslpGB8MQACTAePWenGnua-qz16",
+        "year": "2025",
+        "season": "Winter"
+      }
+    }
+  },
+  {
+    "code": "315333",
+    "title": "AC Machines Performance (315333) Question Papers",
+    "subject_name": "AC Machines Performance",
+    "abbreviation": "ACM",
+    "semester": 5,
+    "academic_year": "Third Year (TY)",
+    "subject_type": "Core",
+    "branches": [
+      "EE"
+    ],
+    "branches_str": "Electrical Engineering",
+    "slug": "315333-ac-machines-performance",
+    "url": "/pyq/315333-ac-machines-performance.html",
+    "image": "/resourse/pyq/EE-AMP.png",
+    "papers": {
+      "Summer 2026": {
+        "url": "https://drive.google.com/file/d/1W0devPIfysuBcB_kQ7Z8Oyco-he1QbiG/view",
+        "direct_url": "https://drive.google.com/uc?export=download&id=1W0devPIfysuBcB_kQ7Z8Oyco-he1QbiG",
+        "size_kb": "30",
+        "file_name": "S-2026_315333.pdf",
+        "id": "1W0devPIfysuBcB_kQ7Z8Oyco-he1QbiG",
+        "year": "2026",
+        "season": "Summer"
+      },
+      "Winter 2025": {
+        "url": "https://drive.google.com/file/d/1VkVgv0uOIaZCof0OIF6vopi9R__Jf9pc/view",
+        "direct_url": "https://drive.google.com/uc?export=download&id=1VkVgv0uOIaZCof0OIF6vopi9R__Jf9pc",
+        "size_kb": "140",
+        "file_name": "W-2025_315333.pdf",
+        "id": "1VkVgv0uOIaZCof0OIF6vopi9R__Jf9pc",
+        "year": "2025",
+        "season": "Winter"
+      }
+    }
+  },
+  {
+    "code": "315334",
+    "title": "Switchgear and Protection (315334) Question Papers",
+    "subject_name": "Switchgear and Protection",
+    "abbreviation": "SAP",
+    "semester": 5,
+    "academic_year": "Third Year (TY)",
+    "subject_type": "Core",
+    "branches": [
+      "EE"
+    ],
+    "branches_str": "Electrical Engineering",
+    "slug": "315334-switchgear-and-protection",
+    "url": "/pyq/315334-switchgear-and-protection.html",
+    "image": "/resourse/pyq/EE-SP.png",
+    "papers": {
+      "Summer 2026": {
+        "url": "https://drive.google.com/file/d/18dBijm3MSuh4AwFtH9ovWeRa3EQtPFLn/view",
+        "direct_url": "https://drive.google.com/uc?export=download&id=18dBijm3MSuh4AwFtH9ovWeRa3EQtPFLn",
+        "size_kb": "26",
+        "file_name": "S-2026_315334.pdf",
+        "id": "18dBijm3MSuh4AwFtH9ovWeRa3EQtPFLn",
+        "year": "2026",
+        "season": "Summer"
+      },
+      "Winter 2025": {
+        "url": "https://drive.google.com/file/d/1na98HnpTCLtl7YtnijbNwrg2nkFwBgj4/view",
+        "direct_url": "https://drive.google.com/uc?export=download&id=1na98HnpTCLtl7YtnijbNwrg2nkFwBgj4",
+        "size_kb": "113",
+        "file_name": "W-2025_315334.pdf",
+        "id": "1na98HnpTCLtl7YtnijbNwrg2nkFwBgj4",
+        "year": "2025",
+        "season": "Winter"
+      }
+    }
+  },
+  {
+    "code": "315335",
+    "title": "Electric Vehicle Technology (315335) Question Papers",
+    "subject_name": "Electric Vehicle Technology",
+    "abbreviation": "EVT",
+    "semester": 5,
+    "academic_year": "Third Year (TY)",
+    "subject_type": "Elective",
+    "branches": [
+      "EE"
+    ],
+    "branches_str": "Electrical Engineering",
+    "slug": "315335-electric-vehicle-technology",
+    "url": "/pyq/315335-electric-vehicle-technology.html",
+    "image": "/resourse/pyq/EE-EVT.png",
+    "papers": {
+      "Summer 2026": {
+        "url": "https://drive.google.com/file/d/1Tvw-KVyu56y1VzK4MbW-Ee5LdUaduNBJ/view",
+        "direct_url": "https://drive.google.com/uc?export=download&id=1Tvw-KVyu56y1VzK4MbW-Ee5LdUaduNBJ",
+        "size_kb": "25",
+        "file_name": "S-2026_315335.pdf",
+        "id": "1Tvw-KVyu56y1VzK4MbW-Ee5LdUaduNBJ",
+        "year": "2026",
+        "season": "Summer"
+      },
+      "Winter 2025": {
+        "url": "https://drive.google.com/file/d/1RQz7zbap1dtgFjt9eYvFNrLYUP-qLMJc/view",
+        "direct_url": "https://drive.google.com/uc?export=download&id=1RQz7zbap1dtgFjt9eYvFNrLYUP-qLMJc",
+        "size_kb": "192",
+        "file_name": "W-2025_315335.pdf",
+        "id": "1RQz7zbap1dtgFjt9eYvFNrLYUP-qLMJc",
+        "year": "2025",
+        "season": "Winter"
+      }
+    }
+  },
+  {
+    "code": "315336",
+    "title": "Power System Operation and Control (315336) Question Papers",
+    "subject_name": "Power System Operation and Control",
+    "abbreviation": "PSO",
+    "semester": 5,
+    "academic_year": "Third Year (TY)",
+    "subject_type": "Elective",
+    "branches": [
+      "EE"
+    ],
+    "branches_str": "Electrical Engineering",
+    "slug": "315336-power-system-operation-and-control",
+    "url": "/pyq/315336-power-system-operation-and-control.html",
+    "image": "/resourse/pyq/EE-PSOC.png",
+    "papers": {
+      "Summer 2026": {
+        "url": "https://drive.google.com/file/d/1sH6zsirzhpLlkwZ0hlsU64DLO1xnEG55/view",
+        "direct_url": "https://drive.google.com/uc?export=download&id=1sH6zsirzhpLlkwZ0hlsU64DLO1xnEG55",
+        "size_kb": "55",
+        "file_name": "S-2026_315336.pdf",
+        "id": "1sH6zsirzhpLlkwZ0hlsU64DLO1xnEG55",
+        "year": "2026",
+        "season": "Summer"
+      },
+      "Winter 2025": {
+        "url": "https://drive.google.com/file/d/1WqxwRy8isZ_tk_z79UjOvfwmIE10j3O1/view",
+        "direct_url": "https://drive.google.com/uc?export=download&id=1WqxwRy8isZ_tk_z79UjOvfwmIE10j3O1",
+        "size_kb": "68",
+        "file_name": "W-2025_315336.pdf",
+        "id": "1WqxwRy8isZ_tk_z79UjOvfwmIE10j3O1",
+        "year": "2025",
+        "season": "Winter"
+      }
+    }
+  },
+  {
+    "code": "315337",
+    "title": "Renewable Energy Technology (315337) Question Papers",
+    "subject_name": "Renewable Energy Technology",
+    "abbreviation": "RET",
+    "semester": 5,
+    "academic_year": "Third Year (TY)",
+    "subject_type": "Elective",
+    "branches": [
+      "EE"
+    ],
+    "branches_str": "Electrical Engineering",
+    "slug": "315337-renewable-energy-technology",
+    "url": "/pyq/315337-renewable-energy-technology.html",
+    "image": "/resourse/pyq/EE-RET.png",
+    "papers": {
+      "Summer 2026": {
+        "url": "https://drive.google.com/file/d/1sh3PyXBta3g4V_q0yic6GoUixkqB2IUY/view",
+        "direct_url": "https://drive.google.com/uc?export=download&id=1sh3PyXBta3g4V_q0yic6GoUixkqB2IUY",
+        "size_kb": "24",
+        "file_name": "S-2026_315337.pdf",
+        "id": "1sh3PyXBta3g4V_q0yic6GoUixkqB2IUY",
+        "year": "2026",
+        "season": "Summer"
+      },
+      "Winter 2025": {
+        "url": "https://drive.google.com/file/d/1YjAqImWXdHvezAFKyPqAw0M6ruViBdd1/view",
+        "direct_url": "https://drive.google.com/uc?export=download&id=1YjAqImWXdHvezAFKyPqAw0M6ruViBdd1",
+        "size_kb": "31",
+        "file_name": "W-2025_315337.pdf",
+        "id": "1YjAqImWXdHvezAFKyPqAw0M6ruViBdd1",
+        "year": "2025",
+        "season": "Winter"
+      }
+    }
+  },
+  {
+    "code": "315338",
+    "title": "Embedded System (315338) Question Papers",
+    "subject_name": "Embedded System",
+    "abbreviation": "EMB",
+    "semester": 5,
+    "academic_year": "Third Year (TY)",
+    "subject_type": "Core",
+    "branches": [
+      "EJ"
+    ],
+    "branches_str": "Electronics & Telecommunication",
+    "slug": "315338-embedded-system",
+    "url": "/pyq/315338-embedded-system.html",
+    "image": "/resourse/pyq/EJ-ES.png",
+    "papers": {
+      "Summer 2026": {
+        "url": "https://drive.google.com/file/d/1ulO3ofL_XZzmxix3otVU4_CPcbR4MuiR/view",
+        "direct_url": "https://drive.google.com/uc?export=download&id=1ulO3ofL_XZzmxix3otVU4_CPcbR4MuiR",
+        "size_kb": "24",
+        "file_name": "S-2026_315338.pdf",
+        "id": "1ulO3ofL_XZzmxix3otVU4_CPcbR4MuiR",
+        "year": "2026",
+        "season": "Summer"
+      },
+      "Winter 2025": {
+        "url": "https://drive.google.com/file/d/1s6tYyYWSDq2Y-78echQV7DgrEi3fD2Vq/view",
+        "direct_url": "https://drive.google.com/uc?export=download&id=1s6tYyYWSDq2Y-78echQV7DgrEi3fD2Vq",
+        "size_kb": "24",
+        "file_name": "W-2025_315338.pdf",
+        "id": "1s6tYyYWSDq2Y-78echQV7DgrEi3fD2Vq",
+        "year": "2025",
+        "season": "Winter"
+      }
+    }
+  },
+  {
+    "code": "315339",
+    "title": "Mobile and Wireless Communication (315339) Question Papers",
+    "subject_name": "Mobile and Wireless Communication",
+    "abbreviation": "MWC",
+    "semester": 5,
+    "academic_year": "Third Year (TY)",
+    "subject_type": "Core",
+    "branches": [
+      "EJ"
+    ],
+    "branches_str": "Electronics & Telecommunication",
+    "slug": "315339-mobile-and-wireless-communication",
+    "url": "/pyq/315339-mobile-and-wireless-communication.html",
+    "image": "/resourse/pyq/EJ-MWC.png",
+    "papers": {
+      "Summer 2026": {
+        "url": "https://drive.google.com/file/d/14FtHtvw_NRpwMlEBC8lwGjnFZ8kJiMlq/view",
+        "direct_url": "https://drive.google.com/uc?export=download&id=14FtHtvw_NRpwMlEBC8lwGjnFZ8kJiMlq",
+        "size_kb": "25",
+        "file_name": "S-2026_315339.pdf",
+        "id": "14FtHtvw_NRpwMlEBC8lwGjnFZ8kJiMlq",
+        "year": "2026",
+        "season": "Summer"
+      },
+      "Winter 2025": {
+        "url": "https://drive.google.com/file/d/1TLWEYvJZfNN6vJj_wX1IYCZ14_45J9sr/view",
+        "direct_url": "https://drive.google.com/uc?export=download&id=1TLWEYvJZfNN6vJj_wX1IYCZ14_45J9sr",
+        "size_kb": "84",
+        "file_name": "W-2025_315339.pdf",
+        "id": "1TLWEYvJZfNN6vJj_wX1IYCZ14_45J9sr",
+        "year": "2025",
+        "season": "Winter"
+      }
+    }
+  },
+  {
+    "code": "315340",
+    "title": "Advance Power Electronics (315340) Question Papers",
+    "subject_name": "Advance Power Electronics",
+    "abbreviation": "APE",
+    "semester": 5,
+    "academic_year": "Third Year (TY)",
+    "subject_type": "Elective",
+    "branches": [
+      "EJ"
+    ],
+    "branches_str": "Electronics & Telecommunication",
+    "slug": "315340-advance-power-electronics",
+    "url": "/pyq/315340-advance-power-electronics.html",
+    "image": "/resourse/pyq/EJ-APE.png",
+    "papers": {
+      "Summer 2026": {
+        "url": "https://drive.google.com/file/d/1HLxqirIzqAf3c5CZwwHr1a2Hk4U6rNy2/view",
+        "direct_url": "https://drive.google.com/uc?export=download&id=1HLxqirIzqAf3c5CZwwHr1a2Hk4U6rNy2",
+        "size_kb": "295",
+        "file_name": "S-2026_315340.pdf",
+        "id": "1HLxqirIzqAf3c5CZwwHr1a2Hk4U6rNy2",
+        "year": "2026",
+        "season": "Summer"
+      },
+      "Winter 2025": {
+        "url": "https://drive.google.com/file/d/1U4mjRE5oMJl7OrnPiK9ipO-CqUMrvWL9/view",
+        "direct_url": "https://drive.google.com/uc?export=download&id=1U4mjRE5oMJl7OrnPiK9ipO-CqUMrvWL9",
+        "size_kb": "25",
+        "file_name": "W-2025_315340.pdf",
+        "id": "1U4mjRE5oMJl7OrnPiK9ipO-CqUMrvWL9",
+        "year": "2025",
+        "season": "Winter"
+      }
+    }
+  },
+  {
+    "code": "315341",
+    "title": "IOT Applications (315341) Question Papers",
+    "subject_name": "IOT Applications",
+    "abbreviation": "IOT",
+    "semester": 5,
+    "academic_year": "Third Year (TY)",
+    "subject_type": "Elective",
+    "branches": [
+      "EJ"
+    ],
+    "branches_str": "Electronics & Telecommunication",
+    "slug": "315341-iot-applications",
+    "url": "/pyq/315341-iot-applications.html",
+    "image": "/resourse/pyq/EJ-IA.png",
+    "papers": {
+      "Summer 2026": {
+        "url": "https://drive.google.com/file/d/1hDl2yxCvM0Q9DDXmls71ptCvDZBkMBuV/view",
+        "direct_url": "https://drive.google.com/uc?export=download&id=1hDl2yxCvM0Q9DDXmls71ptCvDZBkMBuV",
+        "size_kb": "23",
+        "file_name": "S-2026_315341.pdf",
+        "id": "1hDl2yxCvM0Q9DDXmls71ptCvDZBkMBuV",
+        "year": "2026",
+        "season": "Summer"
+      },
+      "Winter 2025": {
+        "url": "https://drive.google.com/file/d/1gi2PLI-vwME0sh3cAQiIkENyKbdVZH2E/view",
+        "direct_url": "https://drive.google.com/uc?export=download&id=1gi2PLI-vwME0sh3cAQiIkENyKbdVZH2E",
+        "size_kb": "23",
+        "file_name": "W-2025_315341.pdf",
+        "id": "1gi2PLI-vwME0sh3cAQiIkENyKbdVZH2E",
+        "year": "2025",
+        "season": "Winter"
+      }
+    }
+  },
+  {
+    "code": "315342",
+    "title": "Microwave Engineering and Radar System (315342) Question Papers",
+    "subject_name": "Microwave Engineering and Radar System",
+    "abbreviation": "MER",
+    "semester": 5,
+    "academic_year": "Third Year (TY)",
+    "subject_type": "Elective",
+    "branches": [
+      "EJ"
+    ],
+    "branches_str": "Electronics & Telecommunication",
+    "slug": "315342-microwave-engineering-and-radar-system",
+    "url": "/pyq/315342-microwave-engineering-and-radar-system.html",
+    "image": "/resourse/pyq/EJ-MERS.png",
+    "papers": {
+      "Summer 2026": {
+        "url": "https://drive.google.com/file/d/1uQY6pNX8jrNVw-yZ96TzPh1fM6bidw9y/view",
+        "direct_url": "https://drive.google.com/uc?export=download&id=1uQY6pNX8jrNVw-yZ96TzPh1fM6bidw9y",
+        "size_kb": "25",
+        "file_name": "S-2026_315342.pdf",
+        "id": "1uQY6pNX8jrNVw-yZ96TzPh1fM6bidw9y",
+        "year": "2026",
+        "season": "Summer"
+      },
+      "Winter 2025": {
+        "url": "https://drive.google.com/file/d/1SaKxOnKz169889Yxs_r6Hrnz2StVIOTM/view",
+        "direct_url": "https://drive.google.com/uc?export=download&id=1SaKxOnKz169889Yxs_r6Hrnz2StVIOTM",
+        "size_kb": "27",
+        "file_name": "W-2025_315342.pdf",
+        "id": "1SaKxOnKz169889Yxs_r6Hrnz2StVIOTM",
+        "year": "2025",
+        "season": "Winter"
+      }
+    }
+  },
+  {
+    "code": "315367",
+    "title": "Product Design and Development (315367) Question Papers",
+    "subject_name": "Product Design and Development",
+    "abbreviation": "PDD",
+    "semester": 5,
+    "academic_year": "Third Year (TY)",
+    "subject_type": "Elective",
+    "branches": [
+      "ME"
+    ],
+    "branches_str": "Mechanical Engineering",
+    "slug": "315367-product-design-and-development",
+    "url": "/pyq/315367-product-design-and-development.html",
+    "image": "/resourse/pyq/ME-PDD.png",
+    "papers": {
+      "Summer 2026": {
+        "url": "https://drive.google.com/file/d/1Mq5knvDyZPTXhzMmDrTYEyCIRDkuTpB1/view",
+        "direct_url": "https://drive.google.com/uc?export=download&id=1Mq5knvDyZPTXhzMmDrTYEyCIRDkuTpB1",
+        "size_kb": "23",
+        "file_name": "S-2026_315367.pdf",
+        "id": "1Mq5knvDyZPTXhzMmDrTYEyCIRDkuTpB1",
+        "year": "2026",
+        "season": "Summer"
+      },
+      "Winter 2025": {
+        "url": "https://drive.google.com/file/d/1VMXQ_7A6UmxnonAHuTh41hOicdrgLTvU/view",
+        "direct_url": "https://drive.google.com/uc?export=download&id=1VMXQ_7A6UmxnonAHuTh41hOicdrgLTvU",
+        "size_kb": "23",
+        "file_name": "W-2025_315367.pdf",
+        "id": "1VMXQ_7A6UmxnonAHuTh41hOicdrgLTvU",
+        "year": "2025",
+        "season": "Winter"
+      }
+    }
+  },
+  {
+    "code": "315371",
+    "title": "Power Engineering (315371) Question Papers",
+    "subject_name": "Power Engineering",
+    "abbreviation": "PEN",
+    "semester": 5,
+    "academic_year": "Third Year (TY)",
+    "subject_type": "Core",
+    "branches": [
+      "ME"
+    ],
+    "branches_str": "Mechanical Engineering",
+    "slug": "315371-power-engineering",
+    "url": "/pyq/315371-power-engineering.html",
+    "image": "/resourse/pyq/ME-PE.png",
+    "papers": {
+      "Summer 2026": {
+        "url": "https://drive.google.com/file/d/1xyS1uk8fm6Ni3vvgPHA4SaLdddAfZpIv/view",
+        "direct_url": "https://drive.google.com/uc?export=download&id=1xyS1uk8fm6Ni3vvgPHA4SaLdddAfZpIv",
+        "size_kb": "30",
+        "file_name": "S-2026_315371.pdf",
+        "id": "1xyS1uk8fm6Ni3vvgPHA4SaLdddAfZpIv",
+        "year": "2026",
+        "season": "Summer"
+      },
+      "Winter 2025": {
+        "url": "https://drive.google.com/file/d/14F7_Z39d71K72zRA2fyd5egBEzIokId7/view",
+        "direct_url": "https://drive.google.com/uc?export=download&id=14F7_Z39d71K72zRA2fyd5egBEzIokId7",
+        "size_kb": "30",
+        "file_name": "W-2025_315371.pdf",
+        "id": "14F7_Z39d71K72zRA2fyd5egBEzIokId7",
+        "year": "2025",
+        "season": "Winter"
+      }
+    }
+  },
+  {
+    "code": "315372",
+    "title": "Automobile Engineering (315372) Question Papers",
+    "subject_name": "Automobile Engineering",
+    "abbreviation": "AEN",
+    "semester": 5,
+    "academic_year": "Third Year (TY)",
+    "subject_type": "Core",
+    "branches": [
+      "ME"
+    ],
+    "branches_str": "Mechanical Engineering",
+    "slug": "315372-automobile-engineering",
+    "url": "/pyq/315372-automobile-engineering.html",
+    "image": "/resourse/pyq/ME-AE.png",
+    "papers": {
+      "Summer 2026": {
+        "url": "https://drive.google.com/file/d/1okb-Y33RcC2MHtle_jrB_x5wN8z6oIQj/view",
+        "direct_url": "https://drive.google.com/uc?export=download&id=1okb-Y33RcC2MHtle_jrB_x5wN8z6oIQj",
+        "size_kb": "22",
+        "file_name": "S-2026_315372.pdf",
+        "id": "1okb-Y33RcC2MHtle_jrB_x5wN8z6oIQj",
+        "year": "2026",
+        "season": "Summer"
+      },
+      "Winter 2025": {
+        "url": "https://drive.google.com/file/d/1fYiA5XN7QStAmq_u2Nue8ort27Hnc3ia/view",
+        "direct_url": "https://drive.google.com/uc?export=download&id=1fYiA5XN7QStAmq_u2Nue8ort27Hnc3ia",
+        "size_kb": "105",
+        "file_name": "W-2025_315372.pdf",
+        "id": "1fYiA5XN7QStAmq_u2Nue8ort27Hnc3ia",
+        "year": "2025",
+        "season": "Winter"
+      }
+    }
+  },
+  {
+    "code": "315373",
+    "title": "Heating Ventilation Air Conditioning (315373) Question Papers",
+    "subject_name": "Heating Ventilation Air Conditioning",
+    "abbreviation": "HVC",
+    "semester": 5,
+    "academic_year": "Third Year (TY)",
+    "subject_type": "Elective",
+    "branches": [
+      "ME"
+    ],
+    "branches_str": "Mechanical Engineering",
+    "slug": "315373-heating-ventilation-air-conditioning",
+    "url": "/pyq/315373-heating-ventilation-air-conditioning.html",
+    "image": "/resourse/pyq/ME-HVAC.png",
+    "papers": {
+      "Summer 2026": {
+        "url": "https://drive.google.com/file/d/1cJBhW-9sVa0NQG_l4Jifdwua8xFlaCof/view",
+        "direct_url": "https://drive.google.com/uc?export=download&id=1cJBhW-9sVa0NQG_l4Jifdwua8xFlaCof",
+        "size_kb": "25",
+        "file_name": "S-2026_315373.pdf",
+        "id": "1cJBhW-9sVa0NQG_l4Jifdwua8xFlaCof",
+        "year": "2026",
+        "season": "Summer"
+      },
+      "Winter 2025": {
+        "url": "https://drive.google.com/file/d/1QnjiBJEvLT_9r09IXiEgrT6K7eRwxZjY/view",
+        "direct_url": "https://drive.google.com/uc?export=download&id=1QnjiBJEvLT_9r09IXiEgrT6K7eRwxZjY",
+        "size_kb": "25",
+        "file_name": "W-2025_315373.pdf",
+        "id": "1QnjiBJEvLT_9r09IXiEgrT6K7eRwxZjY",
+        "year": "2025",
+        "season": "Winter"
+      }
+    }
+  },
+  {
+    "code": "315374",
+    "title": "Power Plant Engineering (315374) Question Papers",
+    "subject_name": "Power Plant Engineering",
+    "abbreviation": "PPE",
+    "semester": 5,
+    "academic_year": "Third Year (TY)",
+    "subject_type": "Elective",
+    "branches": [
+      "ME"
+    ],
+    "branches_str": "Mechanical Engineering",
+    "slug": "315374-power-plant-engineering",
+    "url": "/pyq/315374-power-plant-engineering.html",
+    "image": "/resourse/pyq/ME-PPE.png",
+    "papers": {
+      "Summer 2026": {
+        "url": "https://drive.google.com/file/d/1wXO5B7D74Bh5KebW6-XUEnPTtciMfV58/view",
+        "direct_url": "https://drive.google.com/uc?export=download&id=1wXO5B7D74Bh5KebW6-XUEnPTtciMfV58",
+        "size_kb": "23",
+        "file_name": "S-2026_315374.pdf",
+        "id": "1wXO5B7D74Bh5KebW6-XUEnPTtciMfV58",
+        "year": "2026",
+        "season": "Summer"
+      },
+      "Winter 2025": {
+        "url": "https://drive.google.com/file/d/1LBS-yPKyzWiR8fgL3xMhfHWYGhvUROOR/view",
+        "direct_url": "https://drive.google.com/uc?export=download&id=1LBS-yPKyzWiR8fgL3xMhfHWYGhvUROOR",
+        "size_kb": "25",
+        "file_name": "W-2025_315374.pdf",
+        "id": "1LBS-yPKyzWiR8fgL3xMhfHWYGhvUROOR",
+        "year": "2025",
+        "season": "Winter"
+      }
+    }
+  },
+  {
+    "code": "316307",
+    "title": "Contracts and Billing (316307) Question Papers",
+    "subject_name": "Contracts and Billing",
+    "abbreviation": "CAB",
+    "semester": 6,
+    "academic_year": "Third Year (TY)",
+    "subject_type": "Core",
+    "branches": [
+      "CE"
+    ],
+    "branches_str": "Civil Engineering",
+    "slug": "316307-contracts-and-billing",
+    "url": "/pyq/316307-contracts-and-billing.html",
+    "image": "/resourse/pyq/CE-CB.png",
+    "papers": {
+      "Summer 2026": {
+        "url": "https://drive.google.com/file/d/1wP48tMOz-bCldc_k2i3y73gcrfEJEPun/view",
+        "direct_url": "https://drive.google.com/uc?export=download&id=1wP48tMOz-bCldc_k2i3y73gcrfEJEPun",
+        "size_kb": "25",
+        "file_name": "S-2026_316307.pdf",
+        "id": "1wP48tMOz-bCldc_k2i3y73gcrfEJEPun",
+        "year": "2026",
+        "season": "Summer"
+      }
+    }
+  },
+  {
+    "code": "316308",
+    "title": "Design of RCC and Steel Structures (316308) Question Papers",
+    "subject_name": "Design of RCC and Steel Structures",
+    "abbreviation": "DRS",
+    "semester": 6,
+    "academic_year": "Third Year (TY)",
+    "subject_type": "Core",
+    "branches": [
+      "CE"
+    ],
+    "branches_str": "Civil Engineering",
+    "slug": "316308-design-of-rcc-and-steel-structures",
+    "url": "/pyq/316308-design-of-rcc-and-steel-structures.html",
+    "image": "/resourse/pyq/CE-DRSS.png",
+    "papers": {
+      "Summer 2026": {
+        "url": "https://drive.google.com/file/d/16Qax9TkEw4YDY8YrqPzW-sBMFMMTCMPg/view",
+        "direct_url": "https://drive.google.com/uc?export=download&id=16Qax9TkEw4YDY8YrqPzW-sBMFMMTCMPg",
+        "size_kb": "30",
+        "file_name": "S-2026_316308.pdf",
+        "id": "16Qax9TkEw4YDY8YrqPzW-sBMFMMTCMPg",
+        "year": "2026",
+        "season": "Summer"
+      }
+    }
+  },
+  {
+    "code": "316309",
+    "title": "Maintenance and Repairs of Structures (316309) Question Papers",
+    "subject_name": "Maintenance and Repairs of Structures",
+    "abbreviation": "MRS",
+    "semester": 6,
+    "academic_year": "Third Year (TY)",
+    "subject_type": "Core",
+    "branches": [
+      "CE"
+    ],
+    "branches_str": "Civil Engineering",
+    "slug": "316309-maintenance-and-repairs-of-structures",
+    "url": "/pyq/316309-maintenance-and-repairs-of-structures.html",
+    "image": "/resourse/pyq/CE-MRS.png",
+    "papers": {
+      "Summer 2026": {
+        "url": "https://drive.google.com/file/d/18ng1t0zOiB_T6N2vHFu9Nu_e0Z8Jwjk_/view",
+        "direct_url": "https://drive.google.com/uc?export=download&id=18ng1t0zOiB_T6N2vHFu9Nu_e0Z8Jwjk_",
+        "size_kb": "24",
+        "file_name": "S-2026_316309.pdf",
+        "id": "18ng1t0zOiB_T6N2vHFu9Nu_e0Z8Jwjk_",
+        "year": "2026",
+        "season": "Summer"
+      }
+    }
+  },
+  {
+    "code": "316310",
+    "title": "Building Services (316310) Question Papers",
+    "subject_name": "Building Services",
+    "abbreviation": "BSI",
+    "semester": 6,
+    "academic_year": "Third Year (TY)",
+    "subject_type": "Elective",
+    "branches": [
+      "CE"
+    ],
+    "branches_str": "Civil Engineering",
+    "slug": "316310-building-services",
+    "url": "/pyq/316310-building-services.html",
+    "image": "/resourse/pyq/CE-BS310.png",
+    "papers": {
+      "Summer 2026": {
+        "url": "https://drive.google.com/file/d/1EocLHQF1bNyhVp04J2Z1bDZQubx_G-KQ/view",
+        "direct_url": "https://drive.google.com/uc?export=download&id=1EocLHQF1bNyhVp04J2Z1bDZQubx_G-KQ",
+        "size_kb": "181",
+        "file_name": "S-2026_316310.pdf",
+        "id": "1EocLHQF1bNyhVp04J2Z1bDZQubx_G-KQ",
+        "year": "2026",
+        "season": "Summer"
+      }
+    }
+  },
+  {
+    "code": "316312",
+    "title": "Solid Waste Management (316312) Question Papers",
+    "subject_name": "Solid Waste Management",
+    "abbreviation": "SWM",
+    "semester": 6,
+    "academic_year": "Third Year (TY)",
+    "subject_type": "Elective",
+    "branches": [
+      "CE"
+    ],
+    "branches_str": "Civil Engineering",
+    "slug": "316312-solid-waste-management",
+    "url": "/pyq/316312-solid-waste-management.html",
+    "image": "/resourse/pyq/CE-SWM.png",
+    "papers": {
+      "Summer 2026": {
+        "url": "https://drive.google.com/file/d/1N3iLHG0dJJ6sUWxjeqW0dFquWzETu_JE/view",
+        "direct_url": "https://drive.google.com/uc?export=download&id=1N3iLHG0dJJ6sUWxjeqW0dFquWzETu_JE",
+        "size_kb": "367",
+        "file_name": "S-2026_316312.pdf",
+        "id": "1N3iLHG0dJJ6sUWxjeqW0dFquWzETu_JE",
+        "year": "2026",
+        "season": "Summer"
+      }
+    }
+  },
+  {
+    "code": "316314",
+    "title": "Software Testing (316314) Question Papers",
+    "subject_name": "Software Testing",
+    "abbreviation": "STG",
+    "semester": 6,
+    "academic_year": "Third Year (TY)",
+    "subject_type": "Core",
+    "branches": [
+      "CM"
+    ],
+    "branches_str": "Computer Engineering",
+    "slug": "316314-software-testing",
+    "url": "/pyq/316314-software-testing.html",
+    "image": "/resourse/pyq/CM-ST.png",
+    "papers": {
+      "Summer 2026": {
+        "url": "https://drive.google.com/file/d/1F3nyWWWnuQmYNVzKxsfyuOgcZlY2Hl4q/view",
+        "direct_url": "https://drive.google.com/uc?export=download&id=1F3nyWWWnuQmYNVzKxsfyuOgcZlY2Hl4q",
+        "size_kb": "22",
+        "file_name": "S-2026_316314.pdf",
+        "id": "1F3nyWWWnuQmYNVzKxsfyuOgcZlY2Hl4q",
+        "year": "2026",
+        "season": "Summer"
+      }
+    }
+  },
+  {
+    "code": "316315",
+    "title": "Digital Forensic and Hacking Techniques (316315) Question Papers",
+    "subject_name": "Digital Forensic and Hacking Techniques",
+    "abbreviation": "DFH",
+    "semester": 6,
+    "academic_year": "Third Year (TY)",
+    "subject_type": "Elective",
+    "branches": [
+      "CM",
+      "IF"
+    ],
+    "branches_str": "Computer Engineering, Information Technology",
+    "slug": "316315-digital-forensic-and-hacking-techniques",
+    "url": "/pyq/316315-digital-forensic-and-hacking-techniques.html",
+    "image": "/resourse/pyq/IF-DFHT.png",
+    "papers": {
+      "Summer 2026": {
+        "url": "https://drive.google.com/file/d/18TWoBs0awFFGHR6VYbt5fzt4N-4axORH/view",
+        "direct_url": "https://drive.google.com/uc?export=download&id=18TWoBs0awFFGHR6VYbt5fzt4N-4axORH",
+        "size_kb": "22",
+        "file_name": "S-2026_316315.pdf",
+        "id": "18TWoBs0awFFGHR6VYbt5fzt4N-4axORH",
+        "year": "2026",
+        "season": "Summer"
+      }
+    }
+  },
+  {
+    "code": "316316",
+    "title": "Machine Learning (316316) Question Papers",
+    "subject_name": "Machine Learning",
+    "abbreviation": "MLT",
+    "semester": 6,
+    "academic_year": "Third Year (TY)",
+    "subject_type": "Elective",
+    "branches": [
+      "CM",
+      "IF"
+    ],
+    "branches_str": "Computer Engineering, Information Technology",
+    "slug": "316316-machine-learning",
+    "url": "/pyq/316316-machine-learning.html",
+    "image": "/resourse/pyq/CM-ML.png",
+    "papers": {
+      "Summer 2026": {
+        "url": "https://drive.google.com/file/d/165XBB9wgzn13JFVXzAfOZe3vn5ljh-sw/view",
+        "direct_url": "https://drive.google.com/uc?export=download&id=165XBB9wgzn13JFVXzAfOZe3vn5ljh-sw",
+        "size_kb": "21",
+        "file_name": "S-2026_316316.pdf",
+        "id": "165XBB9wgzn13JFVXzAfOZe3vn5ljh-sw",
+        "year": "2026",
+        "season": "Summer"
+      }
+    }
+  },
+  {
+    "code": "316317",
+    "title": "Network and Information Security (316317) Question Papers",
+    "subject_name": "Network and Information Security",
+    "abbreviation": "NIS",
+    "semester": 6,
+    "academic_year": "Third Year (TY)",
+    "subject_type": "Elective",
+    "branches": [
+      "CM"
+    ],
+    "branches_str": "Computer Engineering",
+    "slug": "316317-network-and-information-security",
+    "url": "/pyq/316317-network-and-information-security.html",
+    "image": "/resourse/pyq/CM-NIS.png",
+    "papers": {
+      "Summer 2026": {
+        "url": "https://drive.google.com/file/d/17A8sRFLubmLfIno9CpfImXAaqqDPOJpK/view",
+        "direct_url": "https://drive.google.com/uc?export=download&id=17A8sRFLubmLfIno9CpfImXAaqqDPOJpK",
+        "size_kb": "23",
+        "file_name": "S-2026_316317.pdf",
+        "id": "17A8sRFLubmLfIno9CpfImXAaqqDPOJpK",
+        "year": "2026",
+        "season": "Summer"
+      }
+    }
+  },
+  {
+    "code": "316318",
+    "title": "Big Data Analytics (316318) Question Papers",
+    "subject_name": "Big Data Analytics",
+    "abbreviation": "BDA",
+    "semester": 6,
+    "academic_year": "Third Year (TY)",
+    "subject_type": "Core",
+    "branches": [
+      "AI"
+    ],
+    "branches_str": "Artificial Intelligence & Machine Learning",
+    "slug": "316318-big-data-analytics",
+    "url": "/pyq/316318-big-data-analytics.html",
+    "image": "/resourse/pyq/AI-BDA.png",
+    "papers": {
+      "Summer 2026": {
+        "url": "https://drive.google.com/file/d/1skBt8PNCOEIyQ0NMrh9FRb8S8hREz6a9/view",
+        "direct_url": "https://drive.google.com/uc?export=download&id=1skBt8PNCOEIyQ0NMrh9FRb8S8hREz6a9",
+        "size_kb": "22",
+        "file_name": "S-2026_316318.pdf",
+        "id": "1skBt8PNCOEIyQ0NMrh9FRb8S8hREz6a9",
+        "year": "2026",
+        "season": "Summer"
+      }
+    }
+  },
+  {
+    "code": "316319",
+    "title": "Principles of Image Processing (316319) Question Papers",
+    "subject_name": "Principles of Image Processing",
+    "abbreviation": "PIP",
+    "semester": 6,
+    "academic_year": "Third Year (TY)",
+    "subject_type": "Core",
+    "branches": [
+      "AI"
+    ],
+    "branches_str": "Artificial Intelligence & Machine Learning",
+    "slug": "316319-principles-of-image-processing",
+    "url": "/pyq/316319-principles-of-image-processing.html",
+    "image": "/resourse/pyq/AI-PIP.png",
+    "papers": {
+      "Summer 2026": {
+        "url": "https://drive.google.com/file/d/1YwOywLiOejYQd5W5s71fcJm56IpCd6Hg/view",
+        "direct_url": "https://drive.google.com/uc?export=download&id=1YwOywLiOejYQd5W5s71fcJm56IpCd6Hg",
+        "size_kb": "23",
+        "file_name": "S-2026_316319.pdf",
+        "id": "1YwOywLiOejYQd5W5s71fcJm56IpCd6Hg",
+        "year": "2026",
+        "season": "Summer"
+      }
+    }
+  },
+  {
+    "code": "316320",
+    "title": "Advanced Algorithm in AI and ML (316320) Question Papers",
+    "subject_name": "Advanced Algorithm in AI and ML",
+    "abbreviation": "AAM",
+    "semester": 6,
+    "academic_year": "Third Year (TY)",
+    "subject_type": "Elective",
+    "branches": [
+      "AI"
+    ],
+    "branches_str": "Artificial Intelligence & Machine Learning",
+    "slug": "316320-advanced-algorithm-in-ai-and-ml",
+    "url": "/pyq/316320-advanced-algorithm-in-ai-and-ml.html",
+    "image": "/resourse/pyq/AI-AAAM.png",
+    "papers": {
+      "Summer 2026": {
+        "url": "https://drive.google.com/file/d/1tQcjKKlvqnHRaJCyETQDPKy_L7LF7zTW/view",
+        "direct_url": "https://drive.google.com/uc?export=download&id=1tQcjKKlvqnHRaJCyETQDPKy_L7LF7zTW",
+        "size_kb": "23",
+        "file_name": "S-2026_316320.pdf",
+        "id": "1tQcjKKlvqnHRaJCyETQDPKy_L7LF7zTW",
+        "year": "2026",
+        "season": "Summer"
+      }
+    }
+  },
+  {
+    "code": "316321",
+    "title": "Data Warehousing with Mining Techniques (316321) Question Papers",
+    "subject_name": "Data Warehousing with Mining Techniques",
+    "abbreviation": "DWM",
+    "semester": 6,
+    "academic_year": "Third Year (TY)",
+    "subject_type": "Elective",
+    "branches": [
+      "AI",
+      "IF"
+    ],
+    "branches_str": "Artificial Intelligence & Machine Learning, Information Technology",
+    "slug": "316321-data-warehousing-with-mining-techniques",
+    "url": "/pyq/316321-data-warehousing-with-mining-techniques.html",
+    "image": "/resourse/pyq/IF-DWMT.png",
+    "papers": {
+      "Summer 2026": {
+        "url": "https://drive.google.com/file/d/1_S_hlPXGBLZ0dZLccdktJ2j5NqF33MIg/view",
+        "direct_url": "https://drive.google.com/uc?export=download&id=1_S_hlPXGBLZ0dZLccdktJ2j5NqF33MIg",
+        "size_kb": "24",
+        "file_name": "S-2026_316321.pdf",
+        "id": "1_S_hlPXGBLZ0dZLccdktJ2j5NqF33MIg",
+        "year": "2026",
+        "season": "Summer"
+      }
+    }
+  },
+  {
+    "code": "316323",
+    "title": "Reinforcement Learning (316323) Question Papers",
+    "subject_name": "Reinforcement Learning",
+    "abbreviation": "RLE",
+    "semester": 6,
+    "academic_year": "Third Year (TY)",
+    "subject_type": "Elective",
+    "branches": [
+      "AI"
+    ],
+    "branches_str": "Artificial Intelligence & Machine Learning",
+    "slug": "316323-reinforcement-learning",
+    "url": "/pyq/316323-reinforcement-learning.html",
+    "image": "/resourse/pyq/AI-RL.png",
+    "papers": {
+      "Summer 2026": {
+        "url": "https://drive.google.com/file/d/1Dcmu1J-JsuStuQiUmG3y4qpofOjFROYY/view",
+        "direct_url": "https://drive.google.com/uc?export=download&id=1Dcmu1J-JsuStuQiUmG3y4qpofOjFROYY",
+        "size_kb": "23",
+        "file_name": "S-2026_316323.pdf",
+        "id": "1Dcmu1J-JsuStuQiUmG3y4qpofOjFROYY",
+        "year": "2026",
+        "season": "Summer"
+      }
+    }
+  },
+  {
+    "code": "316325",
+    "title": "Wireless and Mobile Network (316325) Question Papers",
+    "subject_name": "Wireless and Mobile Network",
+    "abbreviation": "WMN",
+    "semester": 6,
+    "academic_year": "Third Year (TY)",
+    "subject_type": "Core",
+    "branches": [
+      "IF"
+    ],
+    "branches_str": "Information Technology",
+    "slug": "316325-wireless-and-mobile-network",
+    "url": "/pyq/316325-wireless-and-mobile-network.html",
+    "image": "/resourse/pyq/IF-WMN.png",
+    "papers": {
+      "Summer 2026": {
+        "url": "https://drive.google.com/file/d/17yBmMveUlNIm1acNqdmNBmSdomE5HFR3/view",
+        "direct_url": "https://drive.google.com/uc?export=download&id=17yBmMveUlNIm1acNqdmNBmSdomE5HFR3",
+        "size_kb": "23",
+        "file_name": "S-2026_316325.pdf",
+        "id": "17yBmMveUlNIm1acNqdmNBmSdomE5HFR3",
+        "year": "2026",
+        "season": "Summer"
+      }
+    }
+  },
+  {
+    "code": "316327",
+    "title": "Energy Conservation and Audit (316327) Question Papers",
+    "subject_name": "Energy Conservation and Audit",
+    "abbreviation": "ECA",
+    "semester": 6,
+    "academic_year": "Third Year (TY)",
+    "subject_type": "Core",
+    "branches": [
+      "EE"
+    ],
+    "branches_str": "Electrical Engineering",
+    "slug": "316327-energy-conservation-and-audit",
+    "url": "/pyq/316327-energy-conservation-and-audit.html",
+    "image": "/resourse/pyq/EE-ECA.png",
+    "papers": {
+      "Summer 2026": {
+        "url": "https://drive.google.com/file/d/1_CGAi9fCeVoUWPrTYBb6o5pNt0-9QoAZ/view",
+        "direct_url": "https://drive.google.com/uc?export=download&id=1_CGAi9fCeVoUWPrTYBb6o5pNt0-9QoAZ",
+        "size_kb": "24",
+        "file_name": "S-2026_316327.pdf",
+        "id": "1_CGAi9fCeVoUWPrTYBb6o5pNt0-9QoAZ",
+        "year": "2026",
+        "season": "Summer"
+      }
+    }
+  },
+  {
+    "code": "316328",
+    "title": "Maintenance of Electrical Equipments (316328) Question Papers",
+    "subject_name": "Maintenance of Electrical Equipments",
+    "abbreviation": "MEE",
+    "semester": 6,
+    "academic_year": "Third Year (TY)",
+    "subject_type": "Core",
+    "branches": [
+      "EE"
+    ],
+    "branches_str": "Electrical Engineering",
+    "slug": "316328-maintenance-of-electrical-equipments",
+    "url": "/pyq/316328-maintenance-of-electrical-equipments.html",
+    "image": "/resourse/pyq/EE-MEE.png",
+    "papers": {
+      "Summer 2026": {
+        "url": "https://drive.google.com/file/d/1EJYLZgM0tqFiAuXwZaxfQo-pkptrcXwr/view",
+        "direct_url": "https://drive.google.com/uc?export=download&id=1EJYLZgM0tqFiAuXwZaxfQo-pkptrcXwr",
+        "size_kb": "24",
+        "file_name": "S-2026_316328.pdf",
+        "id": "1EJYLZgM0tqFiAuXwZaxfQo-pkptrcXwr",
+        "year": "2026",
+        "season": "Summer"
+      }
+    }
+  },
+  {
+    "code": "316329",
+    "title": "Industrial Automation (316329) Question Papers",
+    "subject_name": "Industrial Automation",
+    "abbreviation": "INA",
+    "semester": 6,
+    "academic_year": "Third Year (TY)",
+    "subject_type": "Elective",
+    "branches": [
+      "EE"
+    ],
+    "branches_str": "Electrical Engineering",
+    "slug": "316329-industrial-automation",
+    "url": "/pyq/316329-industrial-automation.html",
+    "image": "/resourse/pyq/EE-IA.png",
+    "papers": {
+      "Summer 2026": {
+        "url": "https://drive.google.com/file/d/1rEr8QOkUG1OvEe2Pf6gX_6PS8F8VdSjX/view",
+        "direct_url": "https://drive.google.com/uc?export=download&id=1rEr8QOkUG1OvEe2Pf6gX_6PS8F8VdSjX",
+        "size_kb": "23",
+        "file_name": "S-2026_316329.pdf",
+        "id": "1rEr8QOkUG1OvEe2Pf6gX_6PS8F8VdSjX",
+        "year": "2026",
+        "season": "Summer"
+      }
+    }
+  },
+  {
+    "code": "316330",
+    "title": "Industrial Drives and Control (316330) Question Papers",
+    "subject_name": "Industrial Drives and Control",
+    "abbreviation": "IDC",
+    "semester": 6,
+    "academic_year": "Third Year (TY)",
+    "subject_type": "Elective",
+    "branches": [
+      "EE"
+    ],
+    "branches_str": "Electrical Engineering",
+    "slug": "316330-industrial-drives-and-control",
+    "url": "/pyq/316330-industrial-drives-and-control.html",
+    "image": "/resourse/pyq/EE-IDC.png",
+    "papers": {
+      "Summer 2026": {
+        "url": "https://drive.google.com/file/d/1eQcChkAii9ph23fVF8S43AhdbfZXw82d/view",
+        "direct_url": "https://drive.google.com/uc?export=download&id=1eQcChkAii9ph23fVF8S43AhdbfZXw82d",
+        "size_kb": "24",
+        "file_name": "S-2026_316330.pdf",
+        "id": "1eQcChkAii9ph23fVF8S43AhdbfZXw82d",
+        "year": "2026",
+        "season": "Summer"
+      }
+    }
+  },
+  {
+    "code": "316331",
+    "title": "Power System Analysis (316331) Question Papers",
+    "subject_name": "Power System Analysis",
+    "abbreviation": "PSA",
+    "semester": 6,
+    "academic_year": "Third Year (TY)",
+    "subject_type": "Elective",
+    "branches": [
+      "EE"
+    ],
+    "branches_str": "Electrical Engineering",
+    "slug": "316331-power-system-analysis",
+    "url": "/pyq/316331-power-system-analysis.html",
+    "image": "/resourse/pyq/EE-PSA.png",
+    "papers": {
+      "Summer 2026": {
+        "url": "https://drive.google.com/file/d/1TieTMhA1Zq6FLeLmRTbD7CCd8BwCWFdE/view",
+        "direct_url": "https://drive.google.com/uc?export=download&id=1TieTMhA1Zq6FLeLmRTbD7CCd8BwCWFdE",
+        "size_kb": "38",
+        "file_name": "S-2026_316331.pdf",
+        "id": "1TieTMhA1Zq6FLeLmRTbD7CCd8BwCWFdE",
+        "year": "2026",
+        "season": "Summer"
+      }
+    }
+  },
+  {
+    "code": "316332",
+    "title": "Optical Network and Satellite Communication (316332) Question Papers",
+    "subject_name": "Optical Network and Satellite Communication",
+    "abbreviation": "ONS",
+    "semester": 6,
+    "academic_year": "Third Year (TY)",
+    "subject_type": "Core",
+    "branches": [
+      "EJ"
+    ],
+    "branches_str": "Electronics & Telecommunication",
+    "slug": "316332-optical-network-and-satellite-communication",
+    "url": "/pyq/316332-optical-network-and-satellite-communication.html",
+    "image": "/resourse/pyq/EJ-ONSC.png",
+    "papers": {
+      "Summer 2026": {
+        "url": "https://drive.google.com/file/d/1h9xlO777n8ukUjC2tdqnzaChjfZqxp1T/view",
+        "direct_url": "https://drive.google.com/uc?export=download&id=1h9xlO777n8ukUjC2tdqnzaChjfZqxp1T",
+        "size_kb": "83",
+        "file_name": "S-2026_316332.pdf",
+        "id": "1h9xlO777n8ukUjC2tdqnzaChjfZqxp1T",
+        "year": "2026",
+        "season": "Summer"
+      }
+    }
+  },
+  {
+    "code": "316334",
+    "title": "Automation and PLC (316334) Question Papers",
+    "subject_name": "Automation and PLC",
+    "abbreviation": "AMP",
+    "semester": 6,
+    "academic_year": "Third Year (TY)",
+    "subject_type": "Elective",
+    "branches": [
+      "EJ"
+    ],
+    "branches_str": "Electronics & Telecommunication",
+    "slug": "316334-automation-and-plc",
+    "url": "/pyq/316334-automation-and-plc.html",
+    "image": "/resourse/pyq/EJ-AP.png",
+    "papers": {
+      "Summer 2026": {
+        "url": "https://drive.google.com/file/d/1n22DFhJSX0wgTChePJZbLMKwjNR7dKlu/view",
+        "direct_url": "https://drive.google.com/uc?export=download&id=1n22DFhJSX0wgTChePJZbLMKwjNR7dKlu",
+        "size_kb": "49",
+        "file_name": "S-2026_316334.pdf",
+        "id": "1n22DFhJSX0wgTChePJZbLMKwjNR7dKlu",
+        "year": "2026",
+        "season": "Summer"
+      }
+    }
+  },
+  {
+    "code": "316335",
+    "title": "Drone Technology (316335) Question Papers",
+    "subject_name": "Drone Technology",
+    "abbreviation": "DNT",
+    "semester": 6,
+    "academic_year": "Third Year (TY)",
+    "subject_type": "Elective",
+    "branches": [
+      "EJ"
+    ],
+    "branches_str": "Electronics & Telecommunication",
+    "slug": "316335-drone-technology",
+    "url": "/pyq/316335-drone-technology.html",
+    "image": "/resourse/pyq/EJ-DT335.png",
+    "papers": {
+      "Summer 2026": {
+        "url": "https://drive.google.com/file/d/1gYgt-NV842IskBFB9v8jNaRjQthPZfVc/view",
+        "direct_url": "https://drive.google.com/uc?export=download&id=1gYgt-NV842IskBFB9v8jNaRjQthPZfVc",
+        "size_kb": "25",
+        "file_name": "S-2026_316335.pdf",
+        "id": "1gYgt-NV842IskBFB9v8jNaRjQthPZfVc",
+        "year": "2026",
+        "season": "Summer"
+      }
+    }
+  },
+  {
+    "code": "316338",
+    "title": "Computer Network and Data Communication (316338) Question Papers",
+    "subject_name": "Computer Network and Data Communication",
+    "abbreviation": "CND",
+    "semester": 6,
+    "academic_year": "Third Year (TY)",
+    "subject_type": "Core",
+    "branches": [
+      "EJ"
+    ],
+    "branches_str": "Electronics & Telecommunication",
+    "slug": "316338-computer-network-and-data-communication",
+    "url": "/pyq/316338-computer-network-and-data-communication.html",
+    "image": "/resourse/pyq/EJ-CNDC.png",
+    "papers": {
+      "Summer 2026": {
+        "url": "https://drive.google.com/file/d/16e3G7B1RSoLGqt_cMRyndU9hT1XawyPV/view",
+        "direct_url": "https://drive.google.com/uc?export=download&id=16e3G7B1RSoLGqt_cMRyndU9hT1XawyPV",
+        "size_kb": "25",
+        "file_name": "S-2026_316338.pdf",
+        "id": "16e3G7B1RSoLGqt_cMRyndU9hT1XawyPV",
+        "year": "2026",
+        "season": "Summer"
+      }
+    }
+  },
+  {
+    "code": "316340",
+    "title": "VLSI Applications (316340) Question Papers",
+    "subject_name": "VLSI Applications",
+    "abbreviation": "VLS",
+    "semester": 6,
+    "academic_year": "Third Year (TY)",
+    "subject_type": "Elective",
+    "branches": [
+      "EJ"
+    ],
+    "branches_str": "Electronics & Telecommunication",
+    "slug": "316340-vlsi-applications",
+    "url": "/pyq/316340-vlsi-applications.html",
+    "image": "/resourse/pyq/EJ-VA.png",
+    "papers": {
+      "Summer 2026": {
+        "url": "https://drive.google.com/file/d/1O4LNtmfr1wtMsHfCXMhruNkG8ZCAQqEi/view",
+        "direct_url": "https://drive.google.com/uc?export=download&id=1O4LNtmfr1wtMsHfCXMhruNkG8ZCAQqEi",
+        "size_kb": "23",
+        "file_name": "S-2026_316340.pdf",
+        "id": "1O4LNtmfr1wtMsHfCXMhruNkG8ZCAQqEi",
+        "year": "2026",
+        "season": "Summer"
+      }
+    }
+  },
+  {
+    "code": "316357",
+    "title": "Design of Machine Elements (316357) Question Papers",
+    "subject_name": "Design of Machine Elements",
+    "abbreviation": "DME",
+    "semester": 6,
+    "academic_year": "Third Year (TY)",
+    "subject_type": "Core",
+    "branches": [
+      "ME"
+    ],
+    "branches_str": "Mechanical Engineering",
+    "slug": "316357-design-of-machine-elements",
+    "url": "/pyq/316357-design-of-machine-elements.html",
+    "image": "/resourse/pyq/ME-DME.png",
+    "papers": {
+      "Summer 2026": {
+        "url": "https://drive.google.com/file/d/1Bk5iX-erDhtR6UbFq5sLj0dUCv32bep5/view",
+        "direct_url": "https://drive.google.com/uc?export=download&id=1Bk5iX-erDhtR6UbFq5sLj0dUCv32bep5",
+        "size_kb": "82",
+        "file_name": "S-2026_316357.pdf",
+        "id": "1Bk5iX-erDhtR6UbFq5sLj0dUCv32bep5",
+        "year": "2026",
+        "season": "Summer"
+      }
+    }
+  },
+  {
+    "code": "316359",
+    "title": "Computer Integrated Manufacturing Systems (316359) Question Papers",
+    "subject_name": "Computer Integrated Manufacturing Systems",
+    "abbreviation": "CIM",
+    "semester": 6,
+    "academic_year": "Third Year (TY)",
+    "subject_type": "Elective",
+    "branches": [
+      "ME"
+    ],
+    "branches_str": "Mechanical Engineering",
+    "slug": "316359-computer-integrated-manufacturing-systems",
+    "url": "/pyq/316359-computer-integrated-manufacturing-systems.html",
+    "image": "/resourse/pyq/ME-CIMS.png",
+    "papers": {
+      "Summer 2026": {
+        "url": "https://drive.google.com/file/d/1fi1dAYYHSe3mRZH3xUI27eooCi-5ACu2/view",
+        "direct_url": "https://drive.google.com/uc?export=download&id=1fi1dAYYHSe3mRZH3xUI27eooCi-5ACu2",
+        "size_kb": "24",
+        "file_name": "S-2026_316359.pdf",
+        "id": "1fi1dAYYHSe3mRZH3xUI27eooCi-5ACu2",
+        "year": "2026",
+        "season": "Summer"
+      }
+    }
+  },
+  {
+    "code": "316362",
+    "title": "Industrial Engineering and Quality Control (316362) Question Papers",
+    "subject_name": "Industrial Engineering and Quality Control",
+    "abbreviation": "IEQ",
+    "semester": 6,
+    "academic_year": "Third Year (TY)",
+    "subject_type": "Core",
+    "branches": [
+      "ME"
+    ],
+    "branches_str": "Mechanical Engineering",
+    "slug": "316362-industrial-engineering-and-quality-control",
+    "url": "/pyq/316362-industrial-engineering-and-quality-control.html",
+    "image": "/resourse/pyq/ME-IEQC.png",
+    "papers": {
+      "Summer 2026": {
+        "url": "https://drive.google.com/file/d/1XcaKrLVy-TxjlAUA4zkiZivkCSvljysW/view",
+        "direct_url": "https://drive.google.com/uc?export=download&id=1XcaKrLVy-TxjlAUA4zkiZivkCSvljysW",
+        "size_kb": "28",
+        "file_name": "S-2026_316362.pdf",
+        "id": "1XcaKrLVy-TxjlAUA4zkiZivkCSvljysW",
+        "year": "2026",
+        "season": "Summer"
+      }
+    }
+  },
+  {
+    "code": "316363",
+    "title": "Industrial Hydraulics and Pneumatics (316363) Question Papers",
+    "subject_name": "Industrial Hydraulics and Pneumatics",
+    "abbreviation": "IHP",
+    "semester": 6,
+    "academic_year": "Third Year (TY)",
+    "subject_type": "Core",
+    "branches": [
+      "ME"
+    ],
+    "branches_str": "Mechanical Engineering",
+    "slug": "316363-industrial-hydraulics-and-pneumatics",
+    "url": "/pyq/316363-industrial-hydraulics-and-pneumatics.html",
+    "image": "/resourse/pyq/ME-IHP.png",
+    "papers": {
+      "Summer 2026": {
+        "url": "https://drive.google.com/file/d/1TY4PvJSRrWwI744p6a3qU_4_T0P2RJha/view",
+        "direct_url": "https://drive.google.com/uc?export=download&id=1TY4PvJSRrWwI744p6a3qU_4_T0P2RJha",
+        "size_kb": "252",
+        "file_name": "S-2026_316363.pdf",
+        "id": "1TY4PvJSRrWwI744p6a3qU_4_T0P2RJha",
+        "year": "2026",
+        "season": "Summer"
+      }
+    }
+  },
+  {
+    "code": "316364",
+    "title": "Alternative Energy Sources and Energy Management (316364) Question Papers",
+    "subject_name": "Alternative Energy Sources and Energy Management",
+    "abbreviation": "AES",
+    "semester": 6,
+    "academic_year": "Third Year (TY)",
+    "subject_type": "Elective",
+    "branches": [
+      "ME"
+    ],
+    "branches_str": "Mechanical Engineering",
+    "slug": "316364-alternative-energy-sources-and-energy-management",
+    "url": "/pyq/316364-alternative-energy-sources-and-energy-management.html",
+    "image": "/resourse/pyq/ME-AESEM.png",
+    "papers": {
+      "Summer 2026": {
+        "url": "https://drive.google.com/file/d/1KKpuXJ7d879qHQIOCNXtDoj07WQOI37V/view",
+        "direct_url": "https://drive.google.com/uc?export=download&id=1KKpuXJ7d879qHQIOCNXtDoj07WQOI37V",
+        "size_kb": "24",
+        "file_name": "S-2026_316364.pdf",
+        "id": "1KKpuXJ7d879qHQIOCNXtDoj07WQOI37V",
+        "year": "2026",
+        "season": "Summer"
+      }
+    }
+  },
+  {
+    "code": "316365",
+    "title": "Cold Chain Management (316365) Question Papers",
+    "subject_name": "Cold Chain Management",
+    "abbreviation": "CCM",
+    "semester": 6,
+    "academic_year": "Third Year (TY)",
+    "subject_type": "Elective",
+    "branches": [
+      "ME"
+    ],
+    "branches_str": "Mechanical Engineering",
+    "slug": "316365-cold-chain-management",
+    "url": "/pyq/316365-cold-chain-management.html",
+    "image": "/resourse/pyq/ME-CCM.png",
+    "papers": {
+      "Summer 2026": {
+        "url": "https://drive.google.com/file/d/1I1q4B0HXJ7cRe3CfbxCHiuwH8KYPV26W/view",
+        "direct_url": "https://drive.google.com/uc?export=download&id=1I1q4B0HXJ7cRe3CfbxCHiuwH8KYPV26W",
+        "size_kb": "24",
+        "file_name": "S-2026_316365.pdf",
+        "id": "1I1q4B0HXJ7cRe3CfbxCHiuwH8KYPV26W",
+        "year": "2026",
+        "season": "Summer"
+      }
+    }
+  }
+]

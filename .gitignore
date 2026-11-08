@@ -7,3 +7,5 @@ brain/
 .env.local
 .env.*.local
 node_modules/
+__pycache__/
+*.pyc

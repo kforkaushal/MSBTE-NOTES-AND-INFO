@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450">
+    <defs>
+        <linearGradient id="grad_70" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#2563EB" />
+            <stop offset="100%" stop-color="#1D4ED8" />
+        </linearGradient>
+    </defs>
+    <rect width="800" height="450" rx="24" fill="url(#grad_70)" />
+    <circle cx="720" cy="80" r="140" fill="#FFFFFF" opacity="0.08" />
+    <circle cx="100" cy="400" r="180" fill="#FFFFFF" opacity="0.05" />
+    <rect x="60" y="60" width="130" height="34" rx="8" fill="#FFFFFF" fill-opacity="0.2" />
+    <text x="75" y="83" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="700" fill="#FFFFFF" letter-spacing="1.5">MSBTE PYQ</text>
+    <rect x="202" y="60" width="110" height="34" rx="8" fill="#FFFFFF" fill-opacity="0.2" />
+    <text x="217" y="83" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="700" fill="#FFFFFF" letter-spacing="1">K-SCHEME</text>
+    <text x="60" y="145" font-family="system-ui, -apple-system, sans-serif" font-size="20" font-weight="600" fill="#E0E7FF">COURSE CODE: 315333</text>
+    <text x="60" y="220" font-family="system-ui, -apple-system, sans-serif" font-size="36" font-weight="800" fill="#FFFFFF">AC Machines Performance</text>
+    <rect x="60" y="340" width="680" height="2" fill="#FFFFFF" opacity="0.2" />
+    <text x="60" y="380" font-family="system-ui, -apple-system, sans-serif" font-size="16" font-weight="500" fill="#F3F4F6">Summer 2026 &amp; Winter 2025 Question Papers</text>
+    <text x="740" y="380" text-anchor="end" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="600" fill="#FCD34D">msbtenotes-info.netlify.app</text>
+</svg>

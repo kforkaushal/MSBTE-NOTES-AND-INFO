@@ -1,9 +1,7 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version='1.0' encoding='utf-8'?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
-  <!-- ==========================================
-       CORE / MAIN PAGES  (priority 1.0 – 0.8)
-       ========================================== -->
+  
   <url>
     <loc>https://msbtenotes-info.netlify.app/</loc>
     <lastmod>2026-10-08</lastmod>
@@ -107,9 +105,7 @@
     <priority>0.30</priority>
   </url>
 
-  <!-- ==========================================
-       BLOG PAGES — ordered newest first
-       ========================================== -->
+  
   <url>
     <loc>https://msbtenotes-info.netlify.app/blog/nana-patekar-tribute</loc>
     <lastmod>2026-10-08</lastmod>
@@ -519,9 +515,7 @@
     <priority>0.75</priority>
   </url>
 
-  <!-- ==========================================
-       NOTES — Index & Question Banks
-       ========================================== -->
+  
   <url>
     <loc>https://msbtenotes-info.netlify.app/notes/msbte-k-scheme-question-banks</loc>
     <lastmod>2026-08-01</lastmod>
@@ -595,7 +589,7 @@
     <priority>0.82</priority>
   </url>
 
-    <!-- K-Scheme Complete Subject Notes & Question Banks (Sem 3 & 4) -->
+    
   <url>
     <loc>https://msbtenotes-info.netlify.app/notes/osy-k-scheme-notes</loc>
     <lastmod>2026-10-06</lastmod>
@@ -651,7 +645,7 @@
     <priority>0.90</priority>
   </url>
 
-  <!-- Notes — Subject Pages (Sem 1) -->
+  
   <url>
     <loc>https://msbtenotes-info.netlify.app/notes/311302-basic-mathematics</loc>
     <lastmod>2026-08-01</lastmod>
@@ -677,7 +671,7 @@
     <priority>0.80</priority>
   </url>
 
-  <!-- Notes — Subject Pages (Sem 2) -->
+  
   <url>
     <loc>https://msbtenotes-info.netlify.app/notes/312301-applied-mathematics</loc>
     <lastmod>2026-08-01</lastmod>
@@ -715,7 +709,7 @@
     <priority>0.80</priority>
   </url>
 
-  <!-- Notes — Subject Pages (Sem 3) -->
+  
   <url>
     <loc>https://msbtenotes-info.netlify.app/notes/313301-data-structure-using-c</loc>
     <lastmod>2026-08-01</lastmod>
@@ -759,7 +753,7 @@
     <priority>0.80</priority>
   </url>
 
-  <!-- Notes — Subject Pages (Sem 4) -->
+  
   <url>
     <loc>https://msbtenotes-info.netlify.app/notes/314301-environmental-education-and-sustainability</loc>
     <lastmod>2026-08-01</lastmod>
@@ -809,7 +803,7 @@
     <priority>0.80</priority>
   </url>
 
-  <!-- Notes — Subject Pages (Sem 5) -->
+  
   <url>
     <loc>https://msbtenotes-info.netlify.app/notes/315301-management</loc>
     <lastmod>2026-08-01</lastmod>
@@ -859,7 +853,7 @@
     <priority>0.80</priority>
   </url>
 
-  <!-- Notes — Subject Pages (Sem 6 / Electives) -->
+  
   <url>
     <loc>https://msbtenotes-info.netlify.app/notes/316313-emerging-trends-in-computer-engineering-and-it</loc>
     <lastmod>2026-08-01</lastmod>
@@ -909,7 +903,7 @@
     <priority>0.80</priority>
   </url>
 
-  <!-- Notes — Micro-Project Ideas -->
+  
   <url>
     <loc>https://msbtenotes-info.netlify.app/notes/20-microproject-ideas-oop</loc>
     <lastmod>2026-08-01</lastmod>
@@ -947,9 +941,7 @@
     <priority>0.75</priority>
   </url>
 
-  <!-- ==========================================
-       NOTES — LAB MANUALS
-       ========================================== -->
+  
   <url>
     <loc>https://msbtenotes-info.netlify.app/notes/manual/engineering-mechanics-lab-manual</loc>
     <lastmod>2026-08-01</lastmod>
@@ -1083,9 +1075,7 @@
     <priority>0.75</priority>
   </url>
 
-  <!-- ==========================================
-       BRANCHES — Branch Landing Pages
-       ========================================== -->
+  
   <url>
     <loc>https://msbtenotes-info.netlify.app/branches/computer</loc>
     <lastmod>2026-08-01</lastmod>
@@ -1129,7 +1119,7 @@
     <priority>0.85</priority>
   </url>
 
-  <!-- Computer Engineering — Semester Pages (K Scheme) -->
+  
   <url>
     <loc>https://msbtenotes-info.netlify.app/branches/computer-semester-1</loc>
     <lastmod>2026-08-01</lastmod>
@@ -1166,7 +1156,7 @@
     <changefreq>monthly</changefreq>
     <priority>0.82</priority>
   </url>
-  <!-- Computer Engineering — I Scheme -->
+  
   <url>
     <loc>https://msbtenotes-info.netlify.app/branches/computer-i-scheme</loc>
     <lastmod>2026-08-01</lastmod>
@@ -1204,7 +1194,7 @@
     <priority>0.78</priority>
   </url>
 
-  <!-- Civil Engineering — Semester Pages -->
+  
   <url>
     <loc>https://msbtenotes-info.netlify.app/branches/civil-semester-1</loc>
     <lastmod>2026-08-01</lastmod>
@@ -1242,7 +1232,7 @@
     <priority>0.82</priority>
   </url>
 
-  <!-- Mechanical Engineering — Semester Pages -->
+  
   <url>
     <loc>https://msbtenotes-info.netlify.app/branches/mechanical-engineering-semester-1</loc>
     <lastmod>2026-08-01</lastmod>
@@ -1280,7 +1270,7 @@
     <priority>0.82</priority>
   </url>
 
-  <!-- Electrical Engineering — Semester Pages -->
+  
   <url>
     <loc>https://msbtenotes-info.netlify.app/branches/electrical-engineering-semester-1</loc>
     <lastmod>2026-08-01</lastmod>
@@ -1318,7 +1308,7 @@
     <priority>0.82</priority>
   </url>
 
-  <!-- ETC Engineering — Semester Pages -->
+  
   <url>
     <loc>https://msbtenotes-info.netlify.app/branches/etc-engineering-semester-1</loc>
     <lastmod>2026-08-01</lastmod>
@@ -1356,7 +1346,7 @@
     <priority>0.82</priority>
   </url>
 
-  <!-- Information Technology — Semester Pages -->
+  
   <url>
     <loc>https://msbtenotes-info.netlify.app/branches/information-technology-semester-1</loc>
     <lastmod>2026-08-01</lastmod>
@@ -1394,7 +1384,7 @@
     <priority>0.82</priority>
   </url>
 
-  <!-- AI-ML — Semester Pages -->
+  
   <url>
     <loc>https://msbtenotes-info.netlify.app/branches/ai-ml-semester-1</loc>
     <lastmod>2026-08-01</lastmod>
@@ -1432,7 +1422,7 @@
     <priority>0.82</priority>
   </url>
 
-  <!-- Key Subject Pages in Branches -->
+  
   <url>
     <loc>https://msbtenotes-info.netlify.app/branches/314317-java-programming</loc>
     <lastmod>2026-08-01</lastmod>
@@ -1625,7 +1615,7 @@
     <changefreq>monthly</changefreq>
     <priority>0.78</priority>
   </url>
-  <!-- Electrical Electives -->
+  
   <url>
     <loc>https://msbtenotes-info.netlify.app/branches/elective-315335-electric-vehicle-technology</loc>
     <lastmod>2026-08-01</lastmod>
@@ -1698,7 +1688,7 @@
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
-  <!-- ETC Electives -->
+  
   <url>
     <loc>https://msbtenotes-info.netlify.app/branches/elective-315342-microwave-engineering-radar-system</loc>
     <lastmod>2026-08-01</lastmod>
@@ -1741,7 +1731,7 @@
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
-  <!-- Civil Electives -->
+  
   <url>
     <loc>https://msbtenotes-info.netlify.app/branches/elective-315316-energy-conservation-and-green-building</loc>
     <lastmod>2026-08-01</lastmod>
@@ -1778,7 +1768,7 @@
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
-  <!-- Mechanical Electives -->
+  
   <url>
     <loc>https://msbtenotes-info.netlify.app/branches/elective-315373-heating-ventilation-air-conditioning</loc>
     <lastmod>2026-08-01</lastmod>
@@ -1828,9 +1818,7 @@
     <priority>0.75</priority>
   </url>
 
-  <!-- ==========================================
-       SCHEME PAGES
-       ========================================== -->
+  
   <url>
     <loc>https://msbtenotes-info.netlify.app/scheme/</loc>
     <lastmod>2026-08-01</lastmod>
@@ -1850,9 +1838,7 @@
     <priority>0.78</priority>
   </url>
 
-  <!-- ==========================================
-       VIDEO COURSES
-       ========================================== -->
+  
   <url>
     <loc>https://msbtenotes-info.netlify.app/video-course/applied-mathematics.html</loc>
     <lastmod>2026-10-08</lastmod>
@@ -1890,9 +1876,7 @@
     <priority>0.85</priority>
   </url>
 
-  <!-- ==========================================
-       COLLEGE INFO — By District (24 cities)
-       ========================================== -->
+  
   <url>
     <loc>https://msbtenotes-info.netlify.app/collegeinfo/pune</loc>
     <lastmod>2026-08-01</lastmod>
@@ -2014,9 +1998,7 @@
     <priority>0.75</priority>
   </url>
 
-  <!-- ==========================================
-       JOBS
-       ========================================== -->
+  
   <url>
     <loc>https://msbtenotes-info.netlify.app/jobs/bookmarked-jobs</loc>
     <lastmod>2026-08-01</lastmod>
@@ -2024,9 +2006,7 @@
     <priority>0.72</priority>
   </url>
 
-  <!-- ==========================================
-       COURSES
-       ========================================== -->
+  
   <url>
     <loc>https://msbtenotes-info.netlify.app/courses/dsa-basic</loc>
     <lastmod>2026-08-01</lastmod>
@@ -2040,4 +2020,11 @@
     <priority>0.72</priority>
   </url>
 
-</urlset>
+
+  <url>
+    <loc>https://msbtenotes-info.netlify.app/pyq/</loc>
+    <lastmod>2026-11-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url><loc>https://msbtenotes-info.netlify.app/pyq/311302-basic-mathematics.html</loc><lastmod>2026-11-08</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url><url><loc>https://msbtenotes-info.netlify.app/pyq/311303-communication-skills-english.html</loc><lastmod>2026-11-08</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url><url><loc>https://msbtenotes-info.netlify.app/pyq/312301-applied-mathematics.html</loc><lastmod>2026-11-08</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url><url><loc>https://msbtenotes-info.netlify.app/pyq/312303-programming-in-c.html</loc><lastmod>2026-11-08</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url><url><loc>https://msbtenotes-info.netlify.app/pyq/313306-data-structure-using-python.html</loc><lastmod>2026-11-08</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url><url><loc>https://msbtenotes-info.netlify.app/pyq/313302-database-management-system.html</loc><lastmod>2026-11-08</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url><url><loc>https://msbtenotes-info.netlify.app/pyq/313303-digital-techniques.html</loc><lastmod>2026-11-08</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url><url><loc>https://msbtenotes-info.netlify.app/pyq/313307-statistical-modelling-for-machine-learning.html</loc><lastmod>2026-11-08</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url><url><loc>https://msbtenotes-info.netlify.app/pyq/314318-data-communication-and-computer-network.html</loc><lastmod>2026-11-08</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url><url><loc>https://msbtenotes-info.netlify.app/pyq/314317-java-programming.html</loc><lastmod>2026-11-08</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url><url><loc>https://msbtenotes-info.netlify.app/pyq/314320-mathematics-for-machine-learning.html</loc><lastmod>2026-11-08</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url><url><loc>https://msbtenotes-info.netlify.app/pyq/314321-microprocessor-programming.html</loc><lastmod>2026-11-08</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url><url><loc>https://msbtenotes-info.netlify.app/pyq/315324-advance-database-management.html</loc><lastmod>2026-11-08</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url><url><loc>https://msbtenotes-info.netlify.app/pyq/315330-ai-and-ml-algorithm.html</loc><lastmod>2026-11-08</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url><url><loc>https://msbtenotes-info.netlify.app/pyq/315327-cloud-computing-for-data-science.html</loc><lastmod>2026-11-08</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url><url><loc>https://msbtenotes-info.netlify.app/pyq/315329-natural-language-processing.html</loc><lastmod>2026-11-08</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url><url><loc>https://msbtenotes-info.netlify.app/pyq/315319-operating-system.html</loc><lastmod>2026-11-08</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url><url><loc>https://msbtenotes-info.netlify.app/pyq/316320-advanced-algorithm-in-ai-and-ml.html</loc><lastmod>2026-11-08</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url><url><loc>https://msbtenotes-info.netlify.app/pyq/316318-big-data-analytics.html</loc><lastmod>2026-11-08</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url><url><loc>https://msbtenotes-info.netlify.app/pyq/316321-data-warehousing-with-mining-techniques.html</loc><lastmod>2026-11-08</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url><url><loc>https://msbtenotes-info.netlify.app/pyq/316319-principles-of-image-processing.html</loc><lastmod>2026-11-08</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url><url><loc>https://msbtenotes-info.netlify.app/pyq/316323-reinforcement-learning.html</loc><lastmod>2026-11-08</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url><url><loc>https://msbtenotes-info.netlify.app/pyq/312338-building-material-and-construction.html</loc><lastmod>2026-11-08</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url><url><loc>https://msbtenotes-info.netlify.app/pyq/312312-engineering-mechanics.html</loc><lastmod>2026-11-08</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url><url><loc>https://msbtenotes-info.netlify.app/pyq/312339-surveying.html</loc><lastmod>2026-11-08</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url><url><loc>https://msbtenotes-info.netlify.app/pyq/313321-advanced-surveying.html</loc><lastmod>2026-11-08</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url><url><loc>https://msbtenotes-info.netlify.app/pyq/313322-concrete-technology.html</loc><lastmod>2026-11-08</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url><url><loc>https://msbtenotes-info.netlify.app/pyq/313323-highway-engineering.html</loc><lastmod>2026-11-08</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url><url><loc>https://msbtenotes-info.netlify.app/pyq/313308-strength-of-materials.html</loc><lastmod>2026-11-08</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url><url><loc>https://msbtenotes-info.netlify.app/pyq/314313-estimating-costing-and-valuation.html</loc><lastmod>2026-11-08</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url><url><loc>https://msbtenotes-info.netlify.app/pyq/314315-geotechnical-engineering.html</loc><lastmod>2026-11-08</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url><url><loc>https://msbtenotes-info.netlify.app/pyq/314303-hydraulics.html</loc><lastmod>2026-11-08</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url><url><loc>https://msbtenotes-info.netlify.app/pyq/314312-railway-bridge-and-tunnel-engineering.html</loc><lastmod>2026-11-08</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url><url><loc>https://msbtenotes-info.netlify.app/pyq/314314-water-and-wastewater-engineering.html</loc><lastmod>2026-11-08</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url><url><loc>https://msbtenotes-info.netlify.app/pyq/315316-energy-conservation-and-green-building.html</loc><lastmod>2026-11-08</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url><url><loc>https://msbtenotes-info.netlify.app/pyq/315317-precast-and-prestressed-concrete-structures.html</loc><lastmod>2026-11-08</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url><url><loc>https://msbtenotes-info.netlify.app/pyq/315318-road-traffic-engineering.html</loc><lastmod>2026-11-08</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url><url><loc>https://msbtenotes-info.netlify.app/pyq/315313-theory-of-structures.html</loc><lastmod>2026-11-08</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url><url><loc>https://msbtenotes-info.netlify.app/pyq/315314-water-resource-engineering.html</loc><lastmod>2026-11-08</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url><url><loc>https://msbtenotes-info.netlify.app/pyq/316310-building-services.html</loc><lastmod>2026-11-08</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url><url><loc>https://msbtenotes-info.netlify.app/pyq/316307-contracts-and-billing.html</loc><lastmod>2026-11-08</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url><url><loc>https://msbtenotes-info.netlify.app/pyq/316308-design-of-rcc-and-steel-structures.html</loc><lastmod>2026-11-08</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url><url><loc>https://msbtenotes-info.netlify.app/pyq/316309-maintenance-and-repairs-of-structures.html</loc><lastmod>2026-11-08</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url><url><loc>https://msbtenotes-info.netlify.app/pyq/316312-solid-waste-management.html</loc><lastmod>2026-11-08</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url><url><loc>https://msbtenotes-info.netlify.app/pyq/313301-data-structure-using-c.html</loc><lastmod>2026-11-08</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url><url><loc>https://msbtenotes-info.netlify.app/pyq/313304-object-oriented-programming-using-c.html</loc><lastmod>2026-11-08</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url><url><loc>https://msbtenotes-info.netlify.app/pyq/315321-advance-computer-network.html</loc><lastmod>2026-11-08</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url><url><loc>https://msbtenotes-info.netlify.app/pyq/315325-cloud-computing.html</loc><lastmod>2026-11-08</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url><url><loc>https://msbtenotes-info.netlify.app/pyq/315326-data-analytics.html</loc><lastmod>2026-11-08</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url><url><loc>https://msbtenotes-info.netlify.app/pyq/315323-software-engineering.html</loc><lastmod>2026-11-08</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url><url><loc>https://msbtenotes-info.netlify.app/pyq/316315-digital-forensic-and-hacking-techniques.html</loc><lastmod>2026-11-08</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url><url><loc>https://msbtenotes-info.netlify.app/pyq/316316-machine-learning.html</loc><lastmod>2026-11-08</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url><url><loc>https://msbtenotes-info.netlify.app/pyq/316317-network-and-information-security.html</loc><lastmod>2026-11-08</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url><url><loc>https://msbtenotes-info.netlify.app/pyq/316314-software-testing.html</loc><lastmod>2026-11-08</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url><url><loc>https://msbtenotes-info.netlify.app/pyq/312309-elements-of-electronics.html</loc><lastmod>2026-11-08</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url><url><loc>https://msbtenotes-info.netlify.app/pyq/312310-fundamental-of-electrical-engineering.html</loc><lastmod>2026-11-08</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url><url><loc>https://msbtenotes-info.netlify.app/pyq/313334-electrical-and-electronic-measurement.html</loc><lastmod>2026-11-08</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url><url><loc>https://msbtenotes-info.netlify.app/pyq/313332-electrical-circuits-and-network.html</loc><lastmod>2026-11-08</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url><url><loc>https://msbtenotes-info.netlify.app/pyq/313333-electrical-power-generation-transmission-and-distribution.html</loc><lastmod>2026-11-08</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url><url><loc>https://msbtenotes-info.netlify.app/pyq/313335-fundamentals-of-power-electronics.html</loc><lastmod>2026-11-08</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url><url><loc>https://msbtenotes-info.netlify.app/pyq/314322-d-c-machines-and-transformers.html</loc><lastmod>2026-11-08</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url><url><loc>https://msbtenotes-info.netlify.app/pyq/314324-digital-electronics-and-microcontroller-applications.html</loc><lastmod>2026-11-08</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url><url><loc>https://msbtenotes-info.netlify.app/pyq/314325-electrical-estimating-and-contracting.html</loc><lastmod>2026-11-08</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url><url><loc>https://msbtenotes-info.netlify.app/pyq/314323-utilization-of-electrical-energy.html</loc><lastmod>2026-11-08</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url><url><loc>https://msbtenotes-info.netlify.app/pyq/315333-ac-machines-performance.html</loc><lastmod>2026-11-08</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url><url><loc>https://msbtenotes-info.netlify.app/pyq/315335-electric-vehicle-technology.html</loc><lastmod>2026-11-08</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url><url><loc>https://msbtenotes-info.netlify.app/pyq/315336-power-system-operation-and-control.html</loc><lastmod>2026-11-08</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url><url><loc>https://msbtenotes-info.netlify.app/pyq/315337-renewable-energy-technology.html</loc><lastmod>2026-11-08</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url><url><loc>https://msbtenotes-info.netlify.app/pyq/315334-switchgear-and-protection.html</loc><lastmod>2026-11-08</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url><url><loc>https://msbtenotes-info.netlify.app/pyq/316327-energy-conservation-and-audit.html</loc><lastmod>2026-11-08</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url><url><loc>https://msbtenotes-info.netlify.app/pyq/316329-industrial-automation.html</loc><lastmod>2026-11-08</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url><url><loc>https://msbtenotes-info.netlify.app/pyq/316330-industrial-drives-and-control.html</loc><lastmod>2026-11-08</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url><url><loc>https://msbtenotes-info.netlify.app/pyq/316328-maintenance-of-electrical-equipments.html</loc><lastmod>2026-11-08</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url><url><loc>https://msbtenotes-info.netlify.app/pyq/316331-power-system-analysis.html</loc><lastmod>2026-11-08</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url><url><loc>https://msbtenotes-info.netlify.app/pyq/312314-basic-electronics.html</loc><lastmod>2026-11-08</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url><url><loc>https://msbtenotes-info.netlify.app/pyq/312315-elements-of-electrical-engineering.html</loc><lastmod>2026-11-08</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url><url><loc>https://msbtenotes-info.netlify.app/pyq/313324-analog-electronics.html</loc><lastmod>2026-11-08</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url><url><loc>https://msbtenotes-info.netlify.app/pyq/313325-circuits-and-networks.html</loc><lastmod>2026-11-08</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url><url><loc>https://msbtenotes-info.netlify.app/pyq/313326-principles-of-electronic-communication.html</loc><lastmod>2026-11-08</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url><url><loc>https://msbtenotes-info.netlify.app/pyq/314363-basic-power-electronics.html</loc><lastmod>2026-11-08</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url><url><loc>https://msbtenotes-info.netlify.app/pyq/314327-consumer-electronic-systems.html</loc><lastmod>2026-11-08</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url><url><loc>https://msbtenotes-info.netlify.app/pyq/314326-digital-communication-systems.html</loc><lastmod>2026-11-08</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url><url><loc>https://msbtenotes-info.netlify.app/pyq/314328-microcontroller-and-applications.html</loc><lastmod>2026-11-08</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url><url><loc>https://msbtenotes-info.netlify.app/pyq/315340-advance-power-electronics.html</loc><lastmod>2026-11-08</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url><url><loc>https://msbtenotes-info.netlify.app/pyq/315338-embedded-system.html</loc><lastmod>2026-11-08</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url><url><loc>https://msbtenotes-info.netlify.app/pyq/315341-iot-applications.html</loc><lastmod>2026-11-08</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url><url><loc>https://msbtenotes-info.netlify.app/pyq/315342-microwave-engineering-and-radar-system.html</loc><lastmod>2026-11-08</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url><url><loc>https://msbtenotes-info.netlify.app/pyq/315339-mobile-and-wireless-communication.html</loc><lastmod>2026-11-08</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url><url><loc>https://msbtenotes-info.netlify.app/pyq/316334-automation-and-plc.html</loc><lastmod>2026-11-08</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url><url><loc>https://msbtenotes-info.netlify.app/pyq/316338-computer-network-and-data-communication.html</loc><lastmod>2026-11-08</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url><url><loc>https://msbtenotes-info.netlify.app/pyq/316335-drone-technology.html</loc><lastmod>2026-11-08</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url><url><loc>https://msbtenotes-info.netlify.app/pyq/316332-optical-network-and-satellite-communication.html</loc><lastmod>2026-11-08</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url><url><loc>https://msbtenotes-info.netlify.app/pyq/316340-vlsi-applications.html</loc><lastmod>2026-11-08</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url><url><loc>https://msbtenotes-info.netlify.app/pyq/313305-digital-techniques-and-microprocessors.html</loc><lastmod>2026-11-08</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url><url><loc>https://msbtenotes-info.netlify.app/pyq/314319-information-security.html</loc><lastmod>2026-11-08</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url><url><loc>https://msbtenotes-info.netlify.app/pyq/315332-software-engineering-and-testing.html</loc><lastmod>2026-11-08</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url><url><loc>https://msbtenotes-info.netlify.app/pyq/316325-wireless-and-mobile-network.html</loc><lastmod>2026-11-08</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url><url><loc>https://msbtenotes-info.netlify.app/pyq/312311-engineering-drawing.html</loc><lastmod>2026-11-08</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url><url><loc>https://msbtenotes-info.netlify.app/pyq/312313-manufacturing-technology.html</loc><lastmod>2026-11-08</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url><url><loc>https://msbtenotes-info.netlify.app/pyq/313309-fluid-mechanics-and-machinery.html</loc><lastmod>2026-11-08</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url><url><loc>https://msbtenotes-info.netlify.app/pyq/313311-production-drawing.html</loc><lastmod>2026-11-08</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url><url><loc>https://msbtenotes-info.netlify.app/pyq/313310-thermal-engineering.html</loc><lastmod>2026-11-08</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url><url><loc>https://msbtenotes-info.netlify.app/pyq/313316-metrology-and-measurement.html</loc><lastmod>2026-11-08</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url><url><loc>https://msbtenotes-info.netlify.app/pyq/314340-production-processes.html</loc><lastmod>2026-11-08</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url><url><loc>https://msbtenotes-info.netlify.app/pyq/313313-theory-of-machines.html</loc><lastmod>2026-11-08</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url><url><loc>https://msbtenotes-info.netlify.app/pyq/315372-automobile-engineering.html</loc><lastmod>2026-11-08</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url><url><loc>https://msbtenotes-info.netlify.app/pyq/315373-heating-ventilation-air-conditioning.html</loc><lastmod>2026-11-08</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url><url><loc>https://msbtenotes-info.netlify.app/pyq/315371-power-engineering.html</loc><lastmod>2026-11-08</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url><url><loc>https://msbtenotes-info.netlify.app/pyq/315374-power-plant-engineering.html</loc><lastmod>2026-11-08</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url><url><loc>https://msbtenotes-info.netlify.app/pyq/315367-product-design-and-development.html</loc><lastmod>2026-11-08</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url><url><loc>https://msbtenotes-info.netlify.app/pyq/316364-alternative-energy-sources-and-energy-management.html</loc><lastmod>2026-11-08</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url><url><loc>https://msbtenotes-info.netlify.app/pyq/316365-cold-chain-management.html</loc><lastmod>2026-11-08</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url><url><loc>https://msbtenotes-info.netlify.app/pyq/316359-computer-integrated-manufacturing-systems.html</loc><lastmod>2026-11-08</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url><url><loc>https://msbtenotes-info.netlify.app/pyq/316357-design-of-machine-elements.html</loc><lastmod>2026-11-08</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url><url><loc>https://msbtenotes-info.netlify.app/pyq/316362-industrial-engineering-and-quality-control.html</loc><lastmod>2026-11-08</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url><url><loc>https://msbtenotes-info.netlify.app/pyq/316363-industrial-hydraulics-and-pneumatics.html</loc><lastmod>2026-11-08</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url></urlset>
