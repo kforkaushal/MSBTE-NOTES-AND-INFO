@@ -24,7 +24,6 @@
 /Courses/*    /courses/:splat    301!
 /News/*    /news/:splat    301!
 /PYQ/*     /pyq/:splat     301!
-/pyq       /pyq/           301!
 
 
 # ------------------------------------------
