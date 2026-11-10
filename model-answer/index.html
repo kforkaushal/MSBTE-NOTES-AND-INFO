@@ -25,11 +25,19 @@
     <meta name="keywords" content="MSBTE model answer, MSBTE model answer paper, MSBTE solved question paper, MSBTE K scheme model answer, MSBTE computer engineering model answer">
     <link rel="canonical" href="https://msbtenotes-info.netlify.app/model-answer/">
 
+    <!-- Favicon and App Icons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/resourse/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/resourse/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/resourse/favicon-16x16.png">
+    <link rel="manifest" href="/resourse/site.webmanifest">
+    <link rel="icon" href="/resourse/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="/resourse/favicon.ico">
+
     <!-- Open Graph -->
     <meta property="og:title" content="MSBTE Model Answer Papers K-Scheme — Download Solved Question Papers">
     <meta property="og:description" content="Download official MSBTE K-Scheme model answer papers, summer &amp; winter solved solutions, and step-wise marking schemes for Computer, IT, and AI &amp; ML diploma courses.">
     <meta property="og:url" content="https://msbtenotes-info.netlify.app/model-answer/">
-    <meta property="og:image" content="https://msbtenotes-info.netlify.app/resourse/msbte_subject_thumbnails/01_Data_Structures_Using_C.png">
+    <meta property="og:image" content="https://msbtenotes-info.netlify.app/resourse/msbte_subject_thumbnails/00_MSBTE_Model_Answer_Papers_Index.png">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="675">
     <meta property="og:type" content="website">
@@ -39,7 +47,7 @@
     <meta name="twitter:site" content="@msbtenotes">
     <meta name="twitter:title" content="MSBTE Model Answer Papers K-Scheme — Download Solved Question Papers">
     <meta name="twitter:description" content="Download official MSBTE K-Scheme model answer papers, summer &amp; winter solved solutions, and step-wise marking schemes for Computer, IT, and AI &amp; ML diploma courses.">
-    <meta name="twitter:image" content="https://msbtenotes-info.netlify.app/resourse/msbte_subject_thumbnails/01_Data_Structures_Using_C.png">
+    <meta name="twitter:image" content="https://msbtenotes-info.netlify.app/resourse/msbte_subject_thumbnails/00_MSBTE_Model_Answer_Papers_Index.png">
 
     <!-- Styles -->
     <link rel="stylesheet" href="/style.css">
@@ -54,6 +62,7 @@
         "name": "MSBTE Model Answer Papers K-Scheme",
         "description": "Download official MSBTE K-Scheme model answer papers and solved solutions for Maharashtra diploma engineering.",
         "url": "https://msbtenotes-info.netlify.app/model-answer/",
+        "image": "https://msbtenotes-info.netlify.app/resourse/msbte_subject_thumbnails/00_MSBTE_Model_Answer_Papers_Index.png",
         "publisher": {
             "@type": "Organization",
             "name": "MSBTE Notes & Info",
@@ -76,6 +85,11 @@
         }
         .no-scrollbar::-webkit-scrollbar { display: none; }
         .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+        .thumb-16-9 {
+            aspect-ratio: 16 / 9;
+            width: 100%;
+            object-fit: cover;
+        }
     </style>
 </head>
 <body class="bg-gray-50 text-gray-900 pt-16">
@@ -304,8 +318,14 @@
     </header>
 
     <!-- Main Content Grid -->
-    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12">
-        <div class="flex items-center justify-between mb-6 sm:mb-8">
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 sm:py-10 space-y-6 sm:space-y-8">
+
+        <!-- Authentic 16:9 Hub Thumbnail Banner -->
+        <div class="w-full overflow-hidden rounded-2xl sm:rounded-3xl border border-gray-200/90 shadow-sm bg-gray-100" style="aspect-ratio: 16 / 9; max-width: 100%;">
+            <img src="/resourse/msbte_subject_thumbnails/00_MSBTE_Model_Answer_Papers_Index.png" alt="MSBTE K-Scheme Model Answer Papers Hub Banner" class="thumb-16-9" style="aspect-ratio: 16 / 9; width: 100%; height: 100%; object-fit: cover;" loading="eager">
+        </div>
+
+        <div class="flex items-center justify-between mb-4 sm:mb-6">
             <h2 class="text-lg sm:text-2xl font-bold font-display text-gray-900 flex items-center gap-2">
                 <span>Available Subjects</span>
                 <span id="subjectCountBadge" class="text-xs px-2 py-0.5 rounded-full bg-blue-100 text-blue-700 font-bold">14</span>

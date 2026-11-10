@@ -2,7 +2,9 @@
 """
 scripts/generate_model_answer_pages.py
 Professional generator for 14 MSBTE K-Scheme Model Answer pages with:
-- Strict 16:9 aspect ratio thumbnails across mobile, tablet, and desktop views
+- Authentic 16:9 aspect ratio thumbnails across mobile, tablet, and desktop views
+- 16:9 Thumbnail banner for the Model Answer Papers Index page
+- Comprehensive Favicon & App Icon links on all pages
 - Mobile-first responsive UI/UX tailored for 95%+ mobile audience
 - Zero tacky emojis; clean SVG icons and professional engineering academic styling
 - Hallmark trust seals and official MSBTE evaluation marking schemes
@@ -19,6 +21,7 @@ import json
 import re
 import xml.etree.ElementTree as ET
 from datetime import datetime
+from PIL import Image, ImageDraw, ImageFont
 
 BASE_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
 sys.path.append(BASE_DIR)
@@ -34,6 +37,7 @@ INDEX_PATH = os.path.join(BASE_DIR, 'index.html')
 PYQ_INDEX_PATH = os.path.join(BASE_DIR, 'pyq', 'index.html')
 
 os.makedirs(OUTPUT_DIR, exist_ok=True)
+os.makedirs(THUMBS_DIR, exist_ok=True)
 
 PNG_THUMB_MAP = {
     "Data Structures Using C": "/resourse/msbte_subject_thumbnails/01_Data_Structures_Using_C.png",
@@ -51,6 +55,17 @@ PNG_THUMB_MAP = {
     "AI & ML Algorithm": "/resourse/msbte_subject_thumbnails/13_AI_and_ML_Algorithm.png",
     "Natural Language Processing": "/resourse/msbte_subject_thumbnails/14_Natural_Language_Processing.png"
 }
+
+INDEX_THUMB_URL = "/resourse/msbte_subject_thumbnails/00_MSBTE_Model_Answer_Papers_Index.png"
+
+# Favicon Block for all pages
+FAVICON_HTML = """    <!-- Favicon and App Icons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/resourse/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/resourse/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/resourse/favicon-16x16.png">
+    <link rel="manifest" href="/resourse/site.webmanifest">
+    <link rel="icon" href="/resourse/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="/resourse/favicon.ico">"""
 
 # SVG Icons
 SVG_LOGO_BOOK = """<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 sm:h-7 sm:w-7 mr-2 text-blue-600 flex-shrink-0" viewBox="0 0 576 512" fill="currentColor"><path d="M249.6 471.5c10.8 3.8 22.4-4.1 22.4-15.5V78.6c0-4.2-1.6-8.4-5-11C247.4 52 202.4 32 144 32C93.5 32 46.3 45.3 18.1 56.1C6.8 60.5 0 71.7 0 83.8V454.1c0 11.9 12.8 20.2 24.1 16.5C55.6 460.1 105.5 448 144 448c33.9 0 79 14 105.6 23.5zm76.8 0C353 462 398.1 448 432 448c38.5 0 88.4 12.1 119.9 22.6c11.3 3.8 24.1-4.6 24.1-16.5V83.8c0-12.1-6.8-23.3-18.1-27.6C529.7 45.3 482.5 32 432 32c-58.4 0-103.4 20-123 35.6c-3.3 2.6-5 6.8-5 11V456c0 11.4 11.7 19.3 22.4 15.5z"/></svg>"""
@@ -383,6 +398,108 @@ FOOTER_HTML = """    <!-- Site Footer -->
         }
     </script>"""
 
+def ensure_hub_thumbnail():
+    """Generates a premier 1920x1080 (16:9) graphic thumbnail for the Model Answer Papers Index."""
+    out_path_1 = os.path.join(BASE_DIR, 'resourse', 'msbte_subject_thumbnails', '00_MSBTE_Model_Answer_Papers_Index.png')
+    out_path_2 = os.path.join(BASE_DIR, 'resourse', 'msbte_model_answer_index.png')
+    if os.path.exists(out_path_1) and os.path.getsize(out_path_1) > 10000:
+        return
+
+    width, height = 1920, 1080
+    image = Image.new('RGB', (width, height), (15, 23, 42))
+    draw = ImageDraw.Draw(image)
+
+    # Background gradient: from deep navy to rich slate
+    for y in range(height):
+        ratio = y / height
+        r = int(15 * (1 - ratio) + 20 * ratio)
+        g = int(23 * (1 - ratio) + 45 * ratio)
+        b = int(42 * (1 - ratio) + 95 * ratio)
+        draw.line([(0, y), (width, y)], fill=(r, g, b))
+
+    # Decorative geometric lines
+    for i in range(120, 0, -5):
+        alpha_ratio = (120 - i) / 120
+        c = int(37 + 40 * alpha_ratio)
+        draw.ellipse([width - 350 - i*4, -100 - i*4, width - 350 + i*4, -100 + i*4], outline=(20, 60, c), width=2)
+
+    font_dir = 'C:/Windows/Fonts/'
+    try:
+        font_huge = ImageFont.truetype(font_dir + 'segoeuib.ttf', 96)
+        font_big = ImageFont.truetype(font_dir + 'segoeuib.ttf', 56)
+        font_med = ImageFont.truetype(font_dir + 'segoeui.ttf', 38)
+        font_small = ImageFont.truetype(font_dir + 'segoeuib.ttf', 28)
+        font_badge = ImageFont.truetype(font_dir + 'segoeuib.ttf', 24)
+        font_check = ImageFont.truetype(font_dir + 'segoeui.ttf', 20)
+    except Exception:
+        font_huge = ImageFont.load_default()
+        font_big = font_huge
+        font_med = font_huge
+        font_small = font_huge
+        font_badge = font_huge
+        font_check = font_huge
+
+    # Top badge
+    badge_text = 'MSBTE K-SCHEME CURRICULUM • OFFICIAL SOLUTIONS'
+    bx, by = 120, 140
+    bw, bh = 680, 50
+    draw.rounded_rectangle([bx, by, bx + bw, by + bh], radius=25, fill=(37, 99, 235))
+    draw.text((bx + 30, by + 10), badge_text, font=font_badge, fill=(255, 255, 255))
+
+    # Title
+    draw.text((120, 230), 'MSBTE K-Scheme', font=font_big, fill=(147, 197, 253))
+    draw.text((120, 310), 'MODEL ANSWER PAPERS', font=font_huge, fill=(255, 255, 255))
+
+    # Underline accent
+    draw.rectangle([120, 440, 420, 448], fill=(59, 130, 246))
+
+    # Description
+    draw.text((120, 480), 'Download 100% verified board examination solutions with official step-wise', font=font_med, fill=(226, 232, 240))
+    draw.text((120, 535), 'marking keys, question papers, and examiner evaluation guidelines.', font=font_med, fill=(226, 232, 240))
+
+    # Department badges
+    deps = [
+        ('Computer Engineering (CO)', (30, 58, 138), (147, 197, 253)),
+        ('Information Technology (IF)', (19, 78, 74), (153, 246, 228)),
+        ('AI & Machine Learning (AN)', (88, 28, 135), (233, 213, 255)),
+        ('Semester 3 & 5', (120, 53, 15), (254, 215, 170))
+    ]
+    cur_x = 120
+    by_pos = 640
+    for d_text, bg_c, text_c in deps:
+        bbox = font_small.getbbox(d_text)
+        dw = bbox[2] - bbox[0] + 40
+        dh = 52
+        draw.rounded_rectangle([cur_x, by_pos, cur_x + dw, by_pos + dh], radius=14, fill=bg_c, outline=text_c, width=2)
+        draw.text((cur_x + 20, by_pos + 10), d_text, font=font_small, fill=text_c)
+        cur_x += dw + 20
+
+    # Feature checklist box
+    card_x, card_y, card_w, card_h = 120, 750, 1680, 180
+    draw.rounded_rectangle([card_x, card_y, card_x + card_w, card_y + card_h], radius=24, fill=(15, 23, 42), outline=(51, 65, 85), width=2)
+
+    features = [
+        ('Step-Wise Marking Breakdown', 'Exact marks distribution for diagrams, formulas & derivations'),
+        ('Summer & Winter Solved Papers', 'Complete solutions covering past 5+ board exam sessions'),
+        ('Examiner Verified Solutions', 'Standard format compliant with Maharashtra MSBTE board norms')
+    ]
+    col_w = card_w // 3
+    for i, (title, sub) in enumerate(features):
+        fx = card_x + i * col_w + 35
+        fy = card_y + 35
+        draw.ellipse([fx, fy + 4, fx + 32, fy + 36], fill=(16, 185, 129))
+        draw.text((fx + 10, fy + 7), '✓', font=font_badge, fill=(255, 255, 255))
+        draw.text((fx + 45, fy), title, font=font_small, fill=(255, 255, 255))
+        draw.text((fx + 45, fy + 42), sub, font=font_check, fill=(148, 163, 184))
+
+    # Bottom watermark
+    draw.text((120, 975), 'MSBTE Notes & Info  •  msbtenotes-info.netlify.app', font=font_badge, fill=(148, 163, 184))
+    draw.text((width - 480, 975), 'K-Scheme Diploma Engineering', font=font_badge, fill=(148, 163, 184))
+
+    image.save(out_path_1, 'PNG', optimize=True)
+    image.save(out_path_2, 'PNG', optimize=True)
+    print(f"Generated 16:9 Model Answer Index thumbnail at {out_path_1}")
+
 def generate_subject_page(name, info, idx):
     code = info['code']
     slug = info['slug']
@@ -574,6 +691,8 @@ def generate_subject_page(name, info, idx):
     <meta name="description" content="{meta_desc}">
     <meta name="keywords" content="MSBTE {code} model answer, {name} model answer paper, {abbr} solved question paper, MSBTE K-Scheme model answer, MSBTE marking scheme {code}">
     <link rel="canonical" href="{canonical_url}">
+
+{FAVICON_HTML}
 
     <!-- Open Graph -->
     <meta property="og:title" content="{page_title}">
@@ -1040,11 +1159,13 @@ def generate_hub_page(subjects_data):
     <meta name="keywords" content="MSBTE model answer, MSBTE model answer paper, MSBTE solved question paper, MSBTE K scheme model answer, MSBTE computer engineering model answer">
     <link rel="canonical" href="{canonical_url}">
 
+{FAVICON_HTML}
+
     <!-- Open Graph -->
     <meta property="og:title" content="MSBTE Model Answer Papers K-Scheme — Download Solved Question Papers">
     <meta property="og:description" content="Download official MSBTE K-Scheme model answer papers, summer &amp; winter solved solutions, and step-wise marking schemes for Computer, IT, and AI &amp; ML diploma courses.">
     <meta property="og:url" content="{canonical_url}">
-    <meta property="og:image" content="https://msbtenotes-info.netlify.app/resourse/msbte_subject_thumbnails/01_Data_Structures_Using_C.png">
+    <meta property="og:image" content="https://msbtenotes-info.netlify.app{INDEX_THUMB_URL}">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="675">
     <meta property="og:type" content="website">
@@ -1054,7 +1175,7 @@ def generate_hub_page(subjects_data):
     <meta name="twitter:site" content="@msbtenotes">
     <meta name="twitter:title" content="MSBTE Model Answer Papers K-Scheme — Download Solved Question Papers">
     <meta name="twitter:description" content="Download official MSBTE K-Scheme model answer papers, summer &amp; winter solved solutions, and step-wise marking schemes for Computer, IT, and AI &amp; ML diploma courses.">
-    <meta name="twitter:image" content="https://msbtenotes-info.netlify.app/resourse/msbte_subject_thumbnails/01_Data_Structures_Using_C.png">
+    <meta name="twitter:image" content="https://msbtenotes-info.netlify.app{INDEX_THUMB_URL}">
 
     <!-- Styles -->
     <link rel="stylesheet" href="/style.css">
@@ -1069,6 +1190,7 @@ def generate_hub_page(subjects_data):
         "name": "MSBTE Model Answer Papers K-Scheme",
         "description": "Download official MSBTE K-Scheme model answer papers and solved solutions for Maharashtra diploma engineering.",
         "url": "{canonical_url}",
+        "image": "https://msbtenotes-info.netlify.app{INDEX_THUMB_URL}",
         "publisher": {{
             "@type": "Organization",
             "name": "MSBTE Notes & Info",
@@ -1091,6 +1213,11 @@ def generate_hub_page(subjects_data):
         }}
         .no-scrollbar::-webkit-scrollbar {{ display: none; }}
         .no-scrollbar {{ -ms-overflow-style: none; scrollbar-width: none; }}
+        .thumb-16-9 {{
+            aspect-ratio: 16 / 9;
+            width: 100%;
+            object-fit: cover;
+        }}
     </style>
 </head>
 <body class="bg-gray-50 text-gray-900 pt-16">
@@ -1138,8 +1265,14 @@ def generate_hub_page(subjects_data):
     </header>
 
     <!-- Main Content Grid -->
-    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12">
-        <div class="flex items-center justify-between mb-6 sm:mb-8">
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 sm:py-10 space-y-6 sm:space-y-8">
+
+        <!-- Authentic 16:9 Hub Thumbnail Banner -->
+        <div class="w-full overflow-hidden rounded-2xl sm:rounded-3xl border border-gray-200/90 shadow-sm bg-gray-100" style="aspect-ratio: 16 / 9; max-width: 100%;">
+            <img src="{INDEX_THUMB_URL}" alt="MSBTE K-Scheme Model Answer Papers Hub Banner" class="thumb-16-9" style="aspect-ratio: 16 / 9; width: 100%; height: 100%; object-fit: cover;" loading="eager">
+        </div>
+
+        <div class="flex items-center justify-between mb-4 sm:mb-6">
             <h2 class="text-lg sm:text-2xl font-bold font-display text-gray-900 flex items-center gap-2">
                 <span>Available Subjects</span>
                 <span id="subjectCountBadge" class="text-xs px-2 py-0.5 rounded-full bg-blue-100 text-blue-700 font-bold">{len(subjects_data)}</span>
@@ -1255,7 +1388,7 @@ def generate_hub_page(subjects_data):
     return html
 
 def update_notes_resources_json(subjects_data):
-    """Adds the 14 model answer items to Notes/resources.json as requested."""
+    """Adds the 14 model answer items plus the Model Answer Hub card to Notes/resources.json."""
     if not os.path.exists(NOTES_RES_PATH):
         print("Notes/resources.json not found!")
         return
@@ -1266,6 +1399,27 @@ def update_notes_resources_json(subjects_data):
     # Filter out existing model-answer items if re-running
     notes_res = [item for item in notes_res if not item.get('url', '').startswith('/model-answer/')]
 
+    # 1. Add Hub Card at the very top of model answers
+    hub_entry = {
+        "title": "MSBTE Model Answer Papers K-Scheme (All Subjects & Solved Solutions)",
+        "description": "Download official MSBTE K-Scheme model answer papers with step-wise solutions, evaluation marking schemes, and exam keys for Computer, IT, and AI & ML engineering diploma courses.",
+        "url": "/model-answer/",
+        "thumbnail": INDEX_THUMB_URL,
+        "category": "model-answer",
+        "tags": ["Model Answer", "MSBTE", "K-Scheme", "Solved Papers", "Marking Scheme", "CO", "IF", "AN"],
+        "code": "ALL",
+        "abbreviation": "MAP",
+        "semester": "All",
+        "academic_year": "2026/2025",
+        "branches": ["CO", "IF", "AN"],
+        "branches_str": "Computer, IT, AI & ML",
+        "slug": "index",
+        "papers_count": sum(len(s.get('papers', {})) for s in subjects_data.values()),
+        "dateAdded": "2026-11-10"
+    }
+    notes_res.append(hub_entry)
+
+    # 2. Add individual subject entries
     for idx, (name, info) in enumerate(subjects_data.items()):
         code = info['code']
         slug = info['slug']
@@ -1296,7 +1450,7 @@ def update_notes_resources_json(subjects_data):
 
     with open(NOTES_RES_PATH, 'w', encoding='utf-8') as f:
         json.dump(notes_res, f, indent=2)
-    print(f"Updated Notes/resources.json with {len(subjects_data)} model answer entries (Total items: {len(notes_res)}).")
+    print(f"Updated Notes/resources.json with {len(subjects_data) + 1} model answer entries (Total items: {len(notes_res)}).")
 
 def update_sitemap(subjects_data):
     """Updates sitemap.xml to include /model-answer/ and all 14 subject pages."""
@@ -1368,18 +1522,37 @@ def update_redirects():
     print("Updated _redirects with model-answer routing rules.")
 
 def main():
-    print("Starting generation of MSBTE K-Scheme Model Answer pages with 16:9 thumbnails and mobile-first UI/UX...")
+    print("Starting generation of MSBTE K-Scheme Model Answer pages with 16:9 thumbnails, favicon, and mobile UI/UX...")
+    
+    # 0. Ensure 16:9 Index Hub Thumbnail exists
+    ensure_hub_thumbnail()
+
     with open(MODEL_DATA_PATH, 'r', encoding='utf-8') as f:
         subjects_data = json.load(f)
 
-    catalog_entries = []
+    catalog_entries = [
+        {
+            "code": "ALL",
+            "title": "MSBTE Model Answer Papers K-Scheme (All Subjects & Solved Solutions)",
+            "subject_name": "Model Answer Papers Hub",
+            "abbreviation": "MAP",
+            "semester": "All",
+            "academic_year": "2026/2025",
+            "branches": ["CO", "IF", "AN"],
+            "branches_str": "Computer, IT, AI & ML",
+            "slug": "index",
+            "url": "/model-answer/",
+            "image": INDEX_THUMB_URL,
+            "papers": {}
+        }
+    ]
 
     # 1. Generate individual subject pages
     for idx, (name, info) in enumerate(subjects_data.items()):
         slug = info['slug']
         code = info['code']
         thumb_url = PNG_THUMB_MAP.get(name, f"/resourse/msbte_subject_thumbnails/{idx+1:02d}_{name.replace(' ', '_').replace('&', 'and')}.png")
-        print(f"Generating [{idx+1}/{len(subjects_data)}] {name} ({code}) -> {slug} with 16:9 thumbnail...")
+        print(f"Generating [{idx+1}/{len(subjects_data)}] {name} ({code}) -> {slug} with 16:9 thumbnail and favicon...")
         
         page_html = generate_subject_page(name, info, idx)
         
@@ -1431,7 +1604,7 @@ def main():
     # 6. Update _redirects
     update_redirects()
 
-    print("Generation complete! All pages generated with 16:9 aspect ratio, mobile-first design, and clean professional styling.")
+    print("Generation complete! Favicon added to all pages and 16:9 index thumbnail created & linked.")
 
 if __name__ == '__main__':
     main()

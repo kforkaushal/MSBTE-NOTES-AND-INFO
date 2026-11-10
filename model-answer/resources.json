@@ -1,5 +1,23 @@
 [
   {
+    "code": "ALL",
+    "title": "MSBTE Model Answer Papers K-Scheme (All Subjects & Solved Solutions)",
+    "subject_name": "Model Answer Papers Hub",
+    "abbreviation": "MAP",
+    "semester": "All",
+    "academic_year": "2026/2025",
+    "branches": [
+      "CO",
+      "IF",
+      "AN"
+    ],
+    "branches_str": "Computer, IT, AI & ML",
+    "slug": "index",
+    "url": "/model-answer/",
+    "image": "/resourse/msbte_subject_thumbnails/00_MSBTE_Model_Answer_Papers_Index.png",
+    "papers": {}
+  },
+  {
     "code": "313301",
     "title": "Data Structures Using C (313301) Model Answer Papers",
     "subject_name": "Data Structures Using C",

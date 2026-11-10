@@ -8422,6 +8422,36 @@
     }
   },
   {
+    "title": "MSBTE Model Answer Papers K-Scheme (All Subjects & Solved Solutions)",
+    "description": "Download official MSBTE K-Scheme model answer papers with step-wise solutions, evaluation marking schemes, and exam keys for Computer, IT, and AI & ML engineering diploma courses.",
+    "url": "/model-answer/",
+    "thumbnail": "/resourse/msbte_subject_thumbnails/00_MSBTE_Model_Answer_Papers_Index.png",
+    "category": "model-answer",
+    "tags": [
+      "Model Answer",
+      "MSBTE",
+      "K-Scheme",
+      "Solved Papers",
+      "Marking Scheme",
+      "CO",
+      "IF",
+      "AN"
+    ],
+    "code": "ALL",
+    "abbreviation": "MAP",
+    "semester": "All",
+    "academic_year": "2026/2025",
+    "branches": [
+      "CO",
+      "IF",
+      "AN"
+    ],
+    "branches_str": "Computer, IT, AI & ML",
+    "slug": "index",
+    "papers_count": 60,
+    "dateAdded": "2026-11-10"
+  },
+  {
     "title": "Data Structures Using C (313301) Model Answer Papers & Solved Solutions",
     "description": "Download official MSBTE K-Scheme model answer papers with step-wise solutions, evaluation marking schemes, and exam keys for Data Structures Using C (313301) - Semester 3.",
     "url": "/model-answer/313301-data-structure-using-c.html",
