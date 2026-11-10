@@ -1093,7 +1093,7 @@ def generate_hub_page(subjects_data):
         
         branch_badges = " ".join([f'<span class="px-2 py-0.5 rounded text-[11px] sm:text-xs font-semibold bg-gray-100 text-gray-700">{b}</span>' for b in branches])
         
-        cards_html.append(f"""            <div class="res-card bg-white rounded-2xl sm:rounded-3xl border border-gray-200/90 shadow-sm overflow-hidden flex flex-col justify-between" 
+        cards_html.append(f"""            <div class="res-card bg-white rounded-2xl sm:rounded-3xl border border-gray-200/90 shadow-sm hover:shadow-xl hover:border-blue-300 transition-all duration-300 overflow-hidden flex flex-col justify-between group" 
                  data-name="{name.lower()}" 
                  data-code="{code}" 
                  data-abbr="{abbr.lower()}" 
@@ -1101,28 +1101,46 @@ def generate_hub_page(subjects_data):
                  data-branches="{','.join(branches)}">
                 <div>
                     <!-- 16:9 Aspect Ratio Thumbnail Container -->
-                    <a href="/model-answer/{slug}.html" class="block w-full overflow-hidden bg-gray-100 relative group" style="aspect-ratio: 16 / 9;">
-                        <img src="{thumb_url}" alt="{name} {code} Model Answer Thumbnail" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-300" style="aspect-ratio: 16 / 9; width: 100%; height: 100%; object-fit: cover;" loading="lazy">
-                        <div class="absolute top-2.5 left-2.5 sm:top-3 sm:left-3 flex gap-1.5 flex-wrap">
-                            <span class="px-2 py-0.5 sm:px-2.5 sm:py-1 rounded-md text-[11px] sm:text-xs font-bold bg-blue-600 text-white shadow-sm">K-Scheme</span>
-                            <span class="px-2 py-0.5 sm:px-2.5 sm:py-1 rounded-md text-[11px] sm:text-xs font-bold bg-emerald-600 text-white shadow-sm">{paper_count} Solved Papers</span>
+                    <a href="/model-answer/{slug}.html" class="block w-full overflow-hidden bg-gray-100 relative" style="aspect-ratio: 16 / 9;">
+                        <img src="{thumb_url}" alt="{name} {code} Model Answer Thumbnail" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500" style="aspect-ratio: 16 / 9; width: 100%; height: 100%; object-fit: cover;" loading="lazy">
+                        <div class="absolute inset-0 bg-gradient-to-t from-gray-950/70 via-transparent to-black/20 pointer-events-none"></div>
+                        <div class="absolute top-2.5 left-2.5 sm:top-3 sm:left-3 flex gap-1.5 flex-wrap z-10">
+                            <span class="px-2.5 py-1 rounded-lg text-[11px] sm:text-xs font-bold bg-blue-600/95 text-white shadow-sm backdrop-blur-sm">K-Scheme</span>
+                            <span class="px-2.5 py-1 rounded-lg text-[11px] sm:text-xs font-bold bg-emerald-600/95 text-white shadow-sm backdrop-blur-sm flex items-center gap-1">
+                                <svg class="w-3 h-3" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                                <span>{paper_count} Solved Papers</span>
+                            </span>
+                        </div>
+                        <div class="absolute bottom-2.5 left-2.5 right-2.5 flex items-center justify-between text-white text-xs z-10">
+                            <span class="px-2 py-0.5 rounded-md font-semibold bg-black/60 backdrop-blur-sm text-[11px]">Semester {sem}</span>
+                            <span class="px-2 py-0.5 rounded-md font-mono font-bold bg-white/20 backdrop-blur-sm text-[11px]">#{code}</span>
                         </div>
                     </a>
                     <div class="p-4 sm:p-6">
                         <div class="flex items-center justify-between gap-2 mb-2">
                             <span class="text-xs font-bold uppercase tracking-wider text-blue-600">Sem {sem} &bull; Code {code}</span>
-                            <span class="px-2 py-0.5 rounded-full text-xs font-bold bg-purple-50 text-purple-700 border border-purple-200">{abbr}</span>
+                            <span class="px-2.5 py-0.5 rounded-full text-xs font-mono font-bold bg-purple-50 text-purple-700 border border-purple-200">{abbr}</span>
                         </div>
-                        <h3 class="text-base sm:text-lg font-bold font-display text-gray-900 mb-2 leading-snug">
-                            <a href="/model-answer/{slug}.html" class="hover:text-blue-600 transition">{name}</a>
+                        <h3 class="text-base sm:text-lg font-bold font-display text-gray-900 mb-2 leading-snug group-hover:text-blue-600 transition">
+                            <a href="/model-answer/{slug}.html">{name}</a>
                         </h3>
-                        <div class="flex flex-wrap gap-1 mt-2.5">
+                        <div class="flex flex-wrap gap-1.5 mt-2.5">
                             {branch_badges}
+                        </div>
+                        <div class="mt-4 pt-3 border-t border-gray-100 space-y-1.5 text-xs text-gray-600">
+                            <div class="flex items-center gap-2">
+                                <svg class="w-3.5 h-3.5 text-emerald-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                                <span>Step-Wise Marks Allocation</span>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <svg class="w-3.5 h-3.5 text-emerald-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                                <span>Summer &amp; Winter Solutions</span>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="px-4 pb-4 sm:px-6 sm:pb-6 pt-2 border-t border-gray-100">
-                    <a href="/model-answer/{slug}.html" class="w-full inline-flex items-center justify-center gap-1.5 py-2.5 sm:py-3 px-4 rounded-xl bg-blue-600 hover:bg-blue-700 text-white font-semibold text-xs sm:text-sm transition shadow-sm">
+                <div class="px-4 pb-4 sm:px-6 sm:pb-6 pt-0">
+                    <a href="/model-answer/{slug}.html" class="w-full inline-flex items-center justify-center gap-2 py-2.5 sm:py-3 px-4 rounded-xl bg-blue-600 hover:bg-blue-700 active:bg-blue-800 text-white font-semibold text-xs sm:text-sm transition-all shadow-sm group-hover:shadow-md">
                         <span>View Solved Papers</span>
                         {SVG_ARROW_RIGHT}
                     </a>
@@ -1202,14 +1220,86 @@ def generate_hub_page(subjects_data):
     }}
     </script>
 
+    <!-- JSON-LD: BreadcrumbList -->
+    <script type="application/ld+json">
+    {{
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {{
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://msbtenotes-info.netlify.app/"
+            }},
+            {{
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Model Answer Papers",
+                "item": "{canonical_url}"
+            }}
+        ]
+    }}
+    </script>
+
+    <!-- JSON-LD: FAQPage -->
+    <script type="application/ld+json">
+    {{
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {{
+                "@type": "Question",
+                "name": "Where can I download MSBTE K-Scheme model answer papers?",
+                "acceptedAnswer": {{
+                    "@type": "Answer",
+                    "text": "You can download verified MSBTE K-Scheme model answer papers directly from this portal. All papers are organized by subject, course code, semester (Semester 3 and 5), and branch (Computer, IT, and AI & ML)."
+                }}
+            }},
+            {{
+                "@type": "Question",
+                "name": "Do MSBTE examiners award step marks in theory examinations?",
+                "acceptedAnswer": {{
+                    "@type": "Answer",
+                    "text": "Yes, MSBTE follows a strict step-wise marking scheme. Partial marks are awarded for writing proper formulas, circuit diagrams, input/output explanations, and algorithms even if the final numerical answer has an error."
+                }}
+            }},
+            {{
+                "@type": "Question",
+                "name": "What is the difference between MSBTE PYQ and Model Answer Paper?",
+                "acceptedAnswer": {{
+                    "@type": "Answer",
+                    "text": "MSBTE PYQ refers to previous year question papers containing only the questions asked in the board exam. Model answer papers provide the official MSBTE evaluation key, model solutions written by subject matter experts, and step-wise mark distribution for each question."
+                }}
+            }},
+            {{
+                "@type": "Question",
+                "name": "Which examination sessions are covered in these model answers?",
+                "acceptedAnswer": {{
+                    "@type": "Answer",
+                    "text": "The portal covers both Summer and Winter board examination series, including recent solved papers with full step-by-step solutions for Maharashtra polytechnic diploma students."
+                }}
+            }},
+            {{
+                "@type": "Question",
+                "name": "How should diploma students practice using MSBTE model answers?",
+                "acceptedAnswer": {{
+                    "@type": "Answer",
+                    "text": "First, attempt to solve the MSBTE question paper under timed exam conditions without looking at the solutions. Next, cross-check your answers against the official model answer to identify missing technical keywords, formulas, and formatting errors."
+                }}
+            }}
+        ]
+    }}
+    </script>
+
     <style>
         .font-display {{ font-family: 'Clash Display', sans-serif; }}
         .res-card {{
             transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
         }}
         .res-card:hover {{
-            transform: translateY(-3px);
-            box-shadow: 0 10px 24px -6px rgba(0, 0, 0, 0.08);
+            transform: translateY(-4px);
+            box-shadow: 0 12px 28px -6px rgba(0, 0, 0, 0.09);
         }}
         .no-scrollbar::-webkit-scrollbar {{ display: none; }}
         .no-scrollbar {{ -ms-overflow-style: none; scrollbar-width: none; }}
@@ -1220,103 +1310,323 @@ def generate_hub_page(subjects_data):
         }}
     </style>
 </head>
-<body class="bg-gray-50 text-gray-900 pt-16">
+<body class="bg-gray-50 text-gray-900 pt-16 overflow-x-hidden w-full max-w-full">
 
 {NAV_HTML}
 
-    <!-- Hero Section -->
-    <header class="bg-gradient-to-b from-blue-50 to-gray-50 border-b border-gray-200/80 py-8 sm:py-14">
+    <!-- Modern Breadcrumb Bar -->
+    <div class="bg-gray-100/70 border-b border-gray-200/60">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3">
+            <nav class="flex items-center space-x-2 text-xs sm:text-sm text-gray-500 overflow-x-auto no-scrollbar whitespace-nowrap" aria-label="Breadcrumb">
+                <a href="/" class="hover:text-blue-600 transition flex items-center gap-1 font-medium">
+                    <svg class="w-4 h-4 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"/></svg>
+                    <span>Home</span>
+                </a>
+                <svg class="w-3.5 h-3.5 text-gray-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+                <span class="text-blue-600 font-semibold flex-shrink-0">Model Answer Papers</span>
+            </nav>
+        </div>
+    </div>
+
+    <!-- Hero Header -->
+    <header class="bg-gradient-to-b from-blue-50/70 via-indigo-50/30 to-gray-50 border-b border-gray-200/80 pt-8 pb-10 sm:pt-12 sm:pb-14">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold bg-blue-100 text-blue-800 uppercase tracking-wider mb-3 shadow-sm">
-                <span>Official Board Solutions &bull; K-Scheme Curriculum</span>
-            </span>
-            <h1 class="text-2xl sm:text-4xl lg:text-5xl font-black font-display text-gray-900 tracking-tight mb-3">
+            <!-- Verified Curriculum Badge -->
+            <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full text-xs font-bold bg-blue-100/90 text-blue-800 border border-blue-200/60 shadow-xs mb-4">
+                <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+                <span>Official MSBTE K-Scheme &bull; 2025–2026 Examination Solutions</span>
+            </div>
+
+            <h1 class="text-3xl sm:text-5xl lg:text-6xl font-black font-display text-gray-900 tracking-tight leading-tight mb-4">
                 MSBTE <span class="text-blue-600">Model Answer Papers</span>
             </h1>
-            <p class="text-sm sm:text-base text-gray-600 max-w-2xl mx-auto leading-relaxed mb-6">
-                Download verified MSBTE official model solutions with step-wise marks distribution, examiner evaluation keys, and question papers for diploma engineering.
+            <p class="text-sm sm:text-base lg:text-lg text-gray-600 max-w-2xl mx-auto leading-relaxed mb-6">
+                Download verified MSBTE official solved question papers with step-wise marks distribution, examiner evaluation keys, and question papers for diploma engineering.
             </p>
 
-            <!-- Search and Filter Bar (Mobile-friendly) -->
-            <div class="max-w-2xl mx-auto">
+            <!-- 16:9 Dedicated Index Thumbnail Banner (Crisp & Responsive) -->
+            <div class="max-w-4xl mx-auto my-6 sm:my-8 overflow-hidden rounded-2xl sm:rounded-3xl border border-gray-200/90 shadow-md bg-gray-100 relative group" style="aspect-ratio: 16 / 9;">
+                <img src="{INDEX_THUMB_URL}" 
+                     alt="MSBTE K-Scheme Model Answer Papers Hub Banner" 
+                     class="w-full h-full object-cover transform group-hover:scale-[1.02] transition-transform duration-500" 
+                     style="aspect-ratio: 16 / 9; width: 100%; height: 100%; object-fit: cover;" 
+                     loading="eager"
+                     fetchpriority="high">
+                <div class="absolute inset-0 bg-gradient-to-t from-gray-950/75 via-transparent to-black/20 pointer-events-none"></div>
+                <div class="absolute bottom-3 left-3 right-3 sm:bottom-6 sm:left-6 sm:right-6 flex flex-wrap items-center justify-between gap-2 z-10 text-white text-left">
+                    <div>
+                        <span class="inline-block px-2.5 py-1 rounded-md text-[11px] sm:text-xs font-bold bg-blue-600/90 backdrop-blur-sm uppercase tracking-wider mb-1">Central Archive</span>
+                        <p class="font-display font-bold text-base sm:text-2xl text-white drop-shadow">Computer &bull; IT &bull; AI &amp; ML Solved Papers</p>
+                    </div>
+                    <span class="px-3 py-1.5 rounded-full text-xs font-bold bg-white/20 backdrop-blur-md border border-white/30 hidden sm:inline-flex items-center gap-1.5">
+                        <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+                        <span>14 Verified Subjects</span>
+                    </span>
+                </div>
+            </div>
+
+            <!-- 4 Trust & Metric Highlights Cards -->
+            <div class="grid grid-cols-2 sm:grid-cols-4 gap-2.5 sm:gap-4 max-w-4xl mx-auto text-left mb-6 sm:mb-8">
+                <div class="bg-white p-3 sm:p-4 rounded-xl sm:rounded-2xl border border-gray-200/80 shadow-xs flex items-center gap-3">
+                    <div class="w-9 h-9 sm:w-10 sm:h-10 rounded-xl bg-blue-50 text-blue-600 flex items-center justify-center flex-shrink-0">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/></svg>
+                    </div>
+                    <div>
+                        <div class="text-sm sm:text-base font-bold text-gray-900 leading-tight">14 Subjects</div>
+                        <div class="text-[11px] sm:text-xs text-gray-500">K-Scheme Sem 3 &amp; 5</div>
+                    </div>
+                </div>
+                <div class="bg-white p-3 sm:p-4 rounded-xl sm:rounded-2xl border border-gray-200/80 shadow-xs flex items-center gap-3">
+                    <div class="w-9 h-9 sm:w-10 sm:h-10 rounded-xl bg-emerald-50 text-emerald-600 flex items-center justify-center flex-shrink-0">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                    </div>
+                    <div>
+                        <div class="text-sm sm:text-base font-bold text-gray-900 leading-tight">Official Key</div>
+                        <div class="text-[11px] sm:text-xs text-gray-500">Step Marking Scheme</div>
+                    </div>
+                </div>
+                <div class="bg-white p-3 sm:p-4 rounded-xl sm:rounded-2xl border border-gray-200/80 shadow-xs flex items-center gap-3">
+                    <div class="w-9 h-9 sm:w-10 sm:h-10 rounded-xl bg-purple-50 text-purple-600 flex items-center justify-center flex-shrink-0">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
+                    </div>
+                    <div>
+                        <div class="text-sm sm:text-base font-bold text-gray-900 leading-tight">All Sessions</div>
+                        <div class="text-[11px] sm:text-xs text-gray-500">Summer &amp; Winter</div>
+                    </div>
+                </div>
+                <div class="bg-white p-3 sm:p-4 rounded-xl sm:rounded-2xl border border-gray-200/80 shadow-xs flex items-center gap-3">
+                    <div class="w-9 h-9 sm:w-10 sm:h-10 rounded-xl bg-amber-50 text-amber-600 flex items-center justify-center flex-shrink-0">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/></svg>
+                    </div>
+                    <div>
+                        <div class="text-sm sm:text-base font-bold text-gray-900 leading-tight">Fast PDF</div>
+                        <div class="text-[11px] sm:text-xs text-gray-500">One-Tap Drive Access</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Search and Interactive Filter Card (Mobile-friendly) -->
+            <div class="bg-white p-4 sm:p-6 rounded-2xl sm:rounded-3xl border border-gray-200 shadow-sm max-w-4xl mx-auto space-y-3.5 text-left">
+                <!-- Search Input with Clear Button -->
                 <div class="relative">
-                    <input type="text" id="modelSearchInput" oninput="filterCards()" placeholder="Search subject or 6-digit code (e.g. 313301)..." class="w-full px-4 py-3 sm:py-3.5 pl-11 rounded-xl sm:rounded-2xl border border-gray-300 shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 text-sm sm:text-base text-gray-900 bg-white" />
-                    <svg class="w-5 h-5 text-gray-400 absolute left-3.5 top-3.5 sm:top-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
+                    <input type="text" id="modelSearchInput" oninput="handleSearchInput()" placeholder="Search by subject name, course code (e.g. 313301), or branch..." class="w-full px-4 py-3 sm:py-3.5 pl-11 pr-10 rounded-xl sm:rounded-2xl border border-gray-300 shadow-xs focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 text-sm sm:text-base text-gray-900 bg-white" />
+                    <svg class="w-5 h-5 text-gray-400 absolute left-3.5 top-3.5 sm:top-4 pointer-events-none" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
+                    <button type="button" id="clearSearchBtn" onclick="clearSearch()" class="hidden absolute right-3 top-3 sm:top-3.5 text-gray-400 hover:text-gray-600 p-1 rounded-full focus:outline-none" aria-label="Clear search">
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+                    </button>
                 </div>
 
-                <!-- Touch-scrollable Branch Filter Pills -->
-                <div class="flex overflow-x-auto no-scrollbar gap-1.5 sm:gap-2 py-1 -mx-4 px-4 sm:mx-0 sm:px-0 sm:justify-center items-center mt-3 text-xs font-semibold">
-                    <span class="text-gray-400 uppercase tracking-wider mr-1 flex-shrink-0">Branch:</span>
-                    <button type="button" onclick="setBranchFilter('all', this)" class="branch-filter-btn px-3 py-1.5 rounded-full bg-blue-600 text-white font-bold transition shadow-sm whitespace-nowrap flex-shrink-0">All</button>
-                    <button type="button" onclick="setBranchFilter('CO', this)" class="branch-filter-btn px-3 py-1.5 rounded-full bg-white text-gray-700 border border-gray-200 hover:bg-gray-100 transition whitespace-nowrap flex-shrink-0">Computer (CO)</button>
-                    <button type="button" onclick="setBranchFilter('IF', this)" class="branch-filter-btn px-3 py-1.5 rounded-full bg-white text-gray-700 border border-gray-200 hover:bg-gray-100 transition whitespace-nowrap flex-shrink-0">IT (IF)</button>
-                    <button type="button" onclick="setBranchFilter('AN', this)" class="branch-filter-btn px-3 py-1.5 rounded-full bg-white text-gray-700 border border-gray-200 hover:bg-gray-100 transition whitespace-nowrap flex-shrink-0">AI &amp; ML (AN)</button>
-                </div>
+                <!-- Filter Rows -->
+                <div class="pt-2 border-t border-gray-100 flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+                    <!-- Branch Filters -->
+                    <div class="flex items-center gap-1.5 sm:gap-2 overflow-x-auto no-scrollbar text-xs">
+                        <span class="text-gray-400 uppercase tracking-wider font-bold mr-1 flex-shrink-0">Branch:</span>
+                        <button type="button" onclick="setBranchFilter('all', this)" class="branch-filter-btn px-3 py-1.5 rounded-full bg-blue-600 text-white font-bold transition shadow-xs whitespace-nowrap flex-shrink-0">All Branches (14)</button>
+                        <button type="button" onclick="setBranchFilter('CO', this)" class="branch-filter-btn px-3 py-1.5 rounded-full bg-white text-gray-700 border border-gray-200 hover:bg-gray-100 transition whitespace-nowrap flex-shrink-0">Computer (CO)</button>
+                        <button type="button" onclick="setBranchFilter('IF', this)" class="branch-filter-btn px-3 py-1.5 rounded-full bg-white text-gray-700 border border-gray-200 hover:bg-gray-100 transition whitespace-nowrap flex-shrink-0">IT (IF)</button>
+                        <button type="button" onclick="setBranchFilter('AN', this)" class="branch-filter-btn px-3 py-1.5 rounded-full bg-white text-gray-700 border border-gray-200 hover:bg-gray-100 transition whitespace-nowrap flex-shrink-0">AI &amp; ML (AN)</button>
+                    </div>
 
-                <!-- Touch-scrollable Semester Filter Pills -->
-                <div class="flex overflow-x-auto no-scrollbar gap-1.5 sm:gap-2 py-1 -mx-4 px-4 sm:mx-0 sm:px-0 sm:justify-center items-center mt-2 text-xs font-semibold">
-                    <span class="text-gray-400 uppercase tracking-wider mr-1 flex-shrink-0">Semester:</span>
-                    <button type="button" onclick="setSemFilter('all', this)" class="sem-filter-btn px-3 py-1.5 rounded-full bg-blue-600 text-white font-bold transition shadow-sm whitespace-nowrap flex-shrink-0">All Semesters</button>
-                    <button type="button" onclick="setSemFilter('3', this)" class="sem-filter-btn px-3 py-1.5 rounded-full bg-white text-gray-700 border border-gray-200 hover:bg-gray-100 transition whitespace-nowrap flex-shrink-0">Semester 3</button>
-                    <button type="button" onclick="setSemFilter('5', this)" class="sem-filter-btn px-3 py-1.5 rounded-full bg-white text-gray-700 border border-gray-200 hover:bg-gray-100 transition whitespace-nowrap flex-shrink-0">Semester 5</button>
+                    <!-- Semester Filters -->
+                    <div class="flex items-center gap-1.5 sm:gap-2 overflow-x-auto no-scrollbar text-xs">
+                        <span class="text-gray-400 uppercase tracking-wider font-bold mr-1 flex-shrink-0">Semester:</span>
+                        <button type="button" onclick="setSemFilter('all', this)" class="sem-filter-btn px-3 py-1.5 rounded-full bg-blue-600 text-white font-bold transition shadow-xs whitespace-nowrap flex-shrink-0">All Semesters</button>
+                        <button type="button" onclick="setSemFilter('3', this)" class="sem-filter-btn px-3 py-1.5 rounded-full bg-white text-gray-700 border border-gray-200 hover:bg-gray-100 transition whitespace-nowrap flex-shrink-0">Sem 3 (4)</button>
+                        <button type="button" onclick="setSemFilter('5', this)" class="sem-filter-btn px-3 py-1.5 rounded-full bg-white text-gray-700 border border-gray-200 hover:bg-gray-100 transition whitespace-nowrap flex-shrink-0">Sem 5 (10)</button>
+                    </div>
                 </div>
             </div>
         </div>
     </header>
 
     <!-- Main Content Grid -->
-    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 sm:py-10 space-y-6 sm:space-y-8">
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 sm:py-10 space-y-8 sm:space-y-12">
 
-        <!-- Authentic 16:9 Hub Thumbnail Banner -->
-        <div class="w-full overflow-hidden rounded-2xl sm:rounded-3xl border border-gray-200/90 shadow-sm bg-gray-100" style="aspect-ratio: 16 / 9; max-width: 100%;">
-            <img src="{INDEX_THUMB_URL}" alt="MSBTE K-Scheme Model Answer Papers Hub Banner" class="thumb-16-9" style="aspect-ratio: 16 / 9; width: 100%; height: 100%; object-fit: cover;" loading="eager">
+        <!-- Results Counter & Info Bar -->
+        <div class="flex items-center justify-between px-1">
+            <div class="flex items-center gap-2">
+                <h2 class="text-lg sm:text-2xl font-bold font-display text-gray-900">
+                    Available Subjects
+                </h2>
+                <span id="subjectCountBadge" class="text-xs px-2.5 py-0.5 rounded-full bg-blue-100 text-blue-700 font-bold">{len(subjects_data)}</span>
+            </div>
+            <span class="text-xs text-gray-500 hidden sm:inline-block">Official step-wise marking schemes</span>
         </div>
 
-        <div class="flex items-center justify-between mb-4 sm:mb-6">
-            <h2 class="text-lg sm:text-2xl font-bold font-display text-gray-900 flex items-center gap-2">
-                <span>Available Subjects</span>
-                <span id="subjectCountBadge" class="text-xs px-2 py-0.5 rounded-full bg-blue-100 text-blue-700 font-bold">{len(subjects_data)}</span>
-            </h2>
-            <span class="text-xs text-gray-500">Official step-wise marking schemes</span>
-        </div>
-
-        <div id="modelCardsContainer" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
+        <div id="modelCardsContainer" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-6">
 {all_cards_str}
         </div>
 
-        <div id="noResultsNotice" class="hidden text-center py-12 sm:py-16">
-            <p class="text-gray-400 text-base sm:text-lg font-medium">No matching model answer papers found.</p>
-            <button onclick="resetFilters()" class="mt-3 text-xs sm:text-sm font-semibold text-blue-600 hover:underline">Reset search and filters</button>
+        <!-- No Results Fallback -->
+        <div id="noResultsNotice" class="hidden text-center py-12 sm:py-16 bg-white rounded-2xl border border-gray-200/80 p-8 shadow-xs">
+            <div class="w-12 h-12 rounded-full bg-gray-100 text-gray-400 mx-auto flex items-center justify-center mb-3">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
+            </div>
+            <p class="text-gray-900 text-base sm:text-lg font-bold">No matching model answer papers found</p>
+            <p class="text-gray-500 text-xs sm:text-sm mt-1 max-w-md mx-auto">Try checking for typos or resetting your branch and semester filters.</p>
+            <button onclick="resetFilters()" class="mt-4 inline-flex items-center gap-1.5 px-4 py-2 rounded-xl bg-blue-600 hover:bg-blue-700 text-white font-semibold text-xs sm:text-sm transition shadow-xs">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"/></svg>
+                <span>Reset Filters &amp; Search</span>
+            </button>
+        </div>
+
+        <!-- Cross-Link Banners Section -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
+            <div class="bg-gradient-to-br from-blue-900 to-indigo-900 text-white p-5 sm:p-7 rounded-2xl sm:rounded-3xl shadow-sm flex flex-col justify-between">
+                <div>
+                    <span class="inline-block px-2.5 py-0.5 rounded-md text-[11px] font-bold bg-blue-500/30 text-blue-200 border border-blue-400/30 uppercase tracking-wider mb-2">Question Papers Archive</span>
+                    <h3 class="text-lg sm:text-xl font-bold font-display mb-2">Need Board Question Papers (PYQ)?</h3>
+                    <p class="text-xs sm:text-sm text-blue-100 leading-relaxed mb-4">Download official MSBTE K-Scheme question papers for all 116 diploma engineering subjects.</p>
+                </div>
+                <a href="/pyq/" class="inline-flex items-center gap-2 text-xs sm:text-sm font-bold text-white bg-blue-600 hover:bg-blue-500 py-2.5 px-4 rounded-xl transition w-fit shadow-xs">
+                    <span>Explore PYQ Portal</span>
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+                </a>
+            </div>
+
+            <div class="bg-gradient-to-br from-emerald-900 to-teal-900 text-white p-5 sm:p-7 rounded-2xl sm:rounded-3xl shadow-sm flex flex-col justify-between">
+                <div>
+                    <span class="inline-block px-2.5 py-0.5 rounded-md text-[11px] font-bold bg-emerald-500/30 text-emerald-200 border border-emerald-400/30 uppercase tracking-wider mb-2">Curated Notes</span>
+                    <h3 class="text-lg sm:text-xl font-display font-bold mb-2">Need Subject Notes &amp; Lab Manuals?</h3>
+                    <p class="text-xs sm:text-sm text-emerald-100 leading-relaxed mb-4">Access syllabus-aligned handwritten notes, unit test IMPs, and completed laboratory manual answers.</p>
+                </div>
+                <a href="/#notes" class="inline-flex items-center gap-2 text-xs sm:text-sm font-bold text-white bg-emerald-600 hover:bg-emerald-500 py-2.5 px-4 rounded-xl transition w-fit shadow-xs">
+                    <span>View Subject Notes</span>
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+                </a>
+            </div>
         </div>
 
         <!-- Explanatory Guide Section -->
-        <section class="mt-14 sm:mt-20 bg-white rounded-2xl sm:rounded-3xl p-5 sm:p-10 border border-gray-200 shadow-sm space-y-5">
-            <h2 class="text-xl sm:text-2xl font-bold font-display text-gray-900">
-                Why MSBTE Model Answer Papers are Essential for High Scores
-            </h2>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-5 text-xs sm:text-sm text-gray-600 leading-relaxed">
-                <div>
-                    <h3 class="font-bold text-gray-900 text-sm sm:text-base mb-1.5">1. Step-Wise Marks Breakdown</h3>
-                    <p>MSBTE examiners use the official model answer as their sole evaluation standard. Reviewing model solutions reveals exactly which definitions, formulas, and diagrams earn guaranteed partial credit.</p>
+        <section class="bg-white rounded-2xl sm:rounded-3xl p-5 sm:p-8 border border-gray-200/90 shadow-sm space-y-6">
+            <div class="border-b border-gray-100 pb-4">
+                <span class="text-xs font-bold uppercase tracking-wider text-blue-600">Evaluation Blueprint</span>
+                <h2 class="text-xl sm:text-2xl font-bold font-display text-gray-900 mt-1">
+                    How MSBTE Answers Are Evaluated by Examiners
+                </h2>
+                <p class="text-xs sm:text-sm text-gray-600 mt-1">Understanding the official scoring keys to maximize theory examination marks.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-xs sm:text-sm text-gray-600 leading-relaxed">
+                <div class="space-y-2">
+                    <div class="w-8 h-8 rounded-lg bg-blue-50 text-blue-600 flex items-center justify-center font-bold text-sm">1</div>
+                    <h3 class="font-bold text-gray-900 text-sm sm:text-base">Step-Wise Partial Credit</h3>
+                    <p>MSBTE examiners allocate specific marks for each distinct phase of a solution: 1 mark for formula definition, 2 marks for substitution, and 1 mark for final answer with units.</p>
                 </div>
-                <div>
-                    <h3 class="font-bold text-gray-900 text-sm sm:text-base mb-1.5">2. Standard Presentation Style</h3>
-                    <p>Learn how top students format comparative answers into tables, write clean algorithms with proper indentation, and sketch high-scoring engineering diagrams with labeled pins.</p>
+                <div class="space-y-2">
+                    <div class="w-8 h-8 rounded-lg bg-blue-50 text-blue-600 flex items-center justify-center font-bold text-sm">2</div>
+                    <h3 class="font-bold text-gray-900 text-sm sm:text-base">Diagrams &amp; Pinouts Weightage</h3>
+                    <p>Every engineering question with architecture, flowcharts, or timing diagrams carries up to 50% of the total question marks purely for clear, labeled illustrations.</p>
                 </div>
-                <div>
-                    <h3 class="font-bold text-gray-900 text-sm sm:text-base mb-1.5">3. Identifying Repeated Patterns</h3>
-                    <p>Comparing 3 to 5 successive board exam model answers reveals the recurring 4-mark and 6-mark questions that account for more than 60% of every question paper.</p>
+                <div class="space-y-2">
+                    <div class="w-8 h-8 rounded-lg bg-blue-50 text-blue-600 flex items-center justify-center font-bold text-sm">3</div>
+                    <h3 class="font-bold text-gray-900 text-sm sm:text-base">Tabular Comparisons</h3>
+                    <p>When asked to "Differentiate", writing comparison points in neat tables with parameters (e.g., speed, complexity, protocol) guarantees full 4/4 or 6/6 marks according to model keys.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Interactive FAQ Section with Accordion -->
+        <section class="bg-white rounded-2xl sm:rounded-3xl p-5 sm:p-8 border border-gray-200/90 shadow-sm space-y-4">
+            <div class="border-b border-gray-100 pb-4">
+                <span class="text-xs font-bold uppercase tracking-wider text-blue-600">Student Help</span>
+                <h2 class="text-xl sm:text-2xl font-bold font-display text-gray-900 mt-1">
+                    Frequently Asked Questions (FAQ)
+                </h2>
+            </div>
+
+            <div class="space-y-3">
+                <!-- FAQ Item 1 -->
+                <div class="border border-gray-200 rounded-xl overflow-hidden">
+                    <button type="button" onclick="toggleFaq(this)" class="w-full flex items-center justify-between p-4 text-left font-bold text-sm sm:text-base text-gray-900 hover:bg-gray-50 transition">
+                        <span>Where can I download MSBTE K-Scheme model answer papers?</span>
+                        <svg class="w-4 h-4 text-gray-400 transition-transform duration-200 transform chev" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+                    </button>
+                    <div class="hidden p-4 pt-0 text-xs sm:text-sm text-gray-600 border-t border-gray-100 bg-gray-50/50 leading-relaxed">
+                        You can download verified MSBTE K-Scheme model answer papers directly from this portal. All papers are organized by subject, course code, semester (Semester 3 and 5), and branch (Computer, IT, and AI &amp; ML).
+                    </div>
+                </div>
+
+                <!-- FAQ Item 2 -->
+                <div class="border border-gray-200 rounded-xl overflow-hidden">
+                    <button type="button" onclick="toggleFaq(this)" class="w-full flex items-center justify-between p-4 text-left font-bold text-sm sm:text-base text-gray-900 hover:bg-gray-50 transition">
+                        <span>Do MSBTE examiners award step marks in theory examinations?</span>
+                        <svg class="w-4 h-4 text-gray-400 transition-transform duration-200 transform chev" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+                    </button>
+                    <div class="hidden p-4 pt-0 text-xs sm:text-sm text-gray-600 border-t border-gray-100 bg-gray-50/50 leading-relaxed">
+                        Yes, MSBTE follows a strict step-wise marking scheme. Partial marks are awarded for writing proper formulas, circuit diagrams, input/output explanations, and algorithms even if the final numerical answer has an error.
+                    </div>
+                </div>
+
+                <!-- FAQ Item 3 -->
+                <div class="border border-gray-200 rounded-xl overflow-hidden">
+                    <button type="button" onclick="toggleFaq(this)" class="w-full flex items-center justify-between p-4 text-left font-bold text-sm sm:text-base text-gray-900 hover:bg-gray-50 transition">
+                        <span>What is the difference between MSBTE PYQ and Model Answer Paper?</span>
+                        <svg class="w-4 h-4 text-gray-400 transition-transform duration-200 transform chev" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+                    </button>
+                    <div class="hidden p-4 pt-0 text-xs sm:text-sm text-gray-600 border-t border-gray-100 bg-gray-50/50 leading-relaxed">
+                        MSBTE PYQ refers to previous year question papers containing only the questions asked in the board exam. Model answer papers provide the official MSBTE evaluation key, model solutions written by subject matter experts, and step-wise mark distribution for each question.
+                    </div>
+                </div>
+
+                <!-- FAQ Item 4 -->
+                <div class="border border-gray-200 rounded-xl overflow-hidden">
+                    <button type="button" onclick="toggleFaq(this)" class="w-full flex items-center justify-between p-4 text-left font-bold text-sm sm:text-base text-gray-900 hover:bg-gray-50 transition">
+                        <span>Which examination sessions are covered in these model answers?</span>
+                        <svg class="w-4 h-4 text-gray-400 transition-transform duration-200 transform chev" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+                    </button>
+                    <div class="hidden p-4 pt-0 text-xs sm:text-sm text-gray-600 border-t border-gray-100 bg-gray-50/50 leading-relaxed">
+                        The portal covers both Summer and Winter board examination series, including recent solved papers with full step-by-step solutions for Maharashtra polytechnic diploma students.
+                    </div>
+                </div>
+
+                <!-- FAQ Item 5 -->
+                <div class="border border-gray-200 rounded-xl overflow-hidden">
+                    <button type="button" onclick="toggleFaq(this)" class="w-full flex items-center justify-between p-4 text-left font-bold text-sm sm:text-base text-gray-900 hover:bg-gray-50 transition">
+                        <span>How should diploma students practice using MSBTE model answers?</span>
+                        <svg class="w-4 h-4 text-gray-400 transition-transform duration-200 transform chev" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+                    </button>
+                    <div class="hidden p-4 pt-0 text-xs sm:text-sm text-gray-600 border-t border-gray-100 bg-gray-50/50 leading-relaxed">
+                        First, attempt to solve the MSBTE question paper under timed exam conditions without looking at the solutions. Next, cross-check your answers against the official model answer to identify missing technical keywords, formulas, and formatting errors.
+                    </div>
                 </div>
             </div>
         </section>
     </main>
 
+    <!-- Floating Back to Top Button -->
+    <button type="button" id="backToTopBtn" onclick="window.scrollTo({{top: 0, behavior: 'smooth'}})" class="hidden fixed bottom-6 right-6 z-40 p-3 rounded-full bg-blue-600 text-white shadow-lg hover:bg-blue-700 hover:shadow-xl transition-all focus:outline-none" aria-label="Back to top">
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18"/></svg>
+    </button>
+
 {FOOTER_HTML}
 
-    <!-- Filtering script -->
+    <!-- Filtering & UI Scripts -->
     <script>
         let currentBranch = 'all';
         let currentSem = 'all';
+
+        function handleSearchInput() {{
+            const val = document.getElementById('modelSearchInput').value;
+            const clearBtn = document.getElementById('clearSearchBtn');
+            if (clearBtn) {{
+                clearBtn.classList.toggle('hidden', !val || val.length === 0);
+            }}
+            filterCards();
+        }}
+
+        function clearSearch() {{
+            const input = document.getElementById('modelSearchInput');
+            if (input) {{
+                input.value = '';
+                input.focus();
+            }}
+            const clearBtn = document.getElementById('clearSearchBtn');
+            if (clearBtn) {{
+                clearBtn.classList.add('hidden');
+            }}
+            filterCards();
+        }}
 
         function filterCards() {{
             const query = (document.getElementById('modelSearchInput').value || '').toLowerCase().trim();
@@ -1357,7 +1667,7 @@ def generate_hub_page(subjects_data):
             document.querySelectorAll('.branch-filter-btn').forEach(b => {{
                 b.className = 'branch-filter-btn px-3 py-1.5 rounded-full bg-white text-gray-700 border border-gray-200 hover:bg-gray-100 transition whitespace-nowrap flex-shrink-0';
             }});
-            btn.className = 'branch-filter-btn px-3 py-1.5 rounded-full bg-blue-600 text-white font-bold transition shadow-sm whitespace-nowrap flex-shrink-0';
+            btn.className = 'branch-filter-btn px-3 py-1.5 rounded-full bg-blue-600 text-white font-bold transition shadow-xs whitespace-nowrap flex-shrink-0';
             filterCards();
         }}
 
@@ -1366,22 +1676,33 @@ def generate_hub_page(subjects_data):
             document.querySelectorAll('.sem-filter-btn').forEach(b => {{
                 b.className = 'sem-filter-btn px-3 py-1.5 rounded-full bg-white text-gray-700 border border-gray-200 hover:bg-gray-100 transition whitespace-nowrap flex-shrink-0';
             }});
-            btn.className = 'sem-filter-btn px-3 py-1.5 rounded-full bg-blue-600 text-white font-bold transition shadow-sm whitespace-nowrap flex-shrink-0';
+            btn.className = 'sem-filter-btn px-3 py-1.5 rounded-full bg-blue-600 text-white font-bold transition shadow-xs whitespace-nowrap flex-shrink-0';
             filterCards();
         }}
 
         function resetFilters() {{
-            document.getElementById('modelSearchInput').value = '';
+            const input = document.getElementById('modelSearchInput');
+            if (input) input.value = '';
+            const clearBtn = document.getElementById('clearSearchBtn');
+            if (clearBtn) clearBtn.classList.add('hidden');
             currentBranch = 'all';
             currentSem = 'all';
             document.querySelectorAll('.branch-filter-btn').forEach((b, i) => {{
-                b.className = i === 0 ? 'branch-filter-btn px-3 py-1.5 rounded-full bg-blue-600 text-white font-bold transition shadow-sm whitespace-nowrap flex-shrink-0' : 'branch-filter-btn px-3 py-1.5 rounded-full bg-white text-gray-700 border border-gray-200 hover:bg-gray-100 transition whitespace-nowrap flex-shrink-0';
+                b.className = i === 0 ? 'branch-filter-btn px-3 py-1.5 rounded-full bg-blue-600 text-white font-bold transition shadow-xs whitespace-nowrap flex-shrink-0' : 'branch-filter-btn px-3 py-1.5 rounded-full bg-white text-gray-700 border border-gray-200 hover:bg-gray-100 transition whitespace-nowrap flex-shrink-0';
             }});
             document.querySelectorAll('.sem-filter-btn').forEach((b, i) => {{
-                b.className = i === 0 ? 'sem-filter-btn px-3 py-1.5 rounded-full bg-blue-600 text-white font-bold transition shadow-sm whitespace-nowrap flex-shrink-0' : 'sem-filter-btn px-3 py-1.5 rounded-full bg-white text-gray-700 border border-gray-200 hover:bg-gray-100 transition whitespace-nowrap flex-shrink-0';
+                b.className = i === 0 ? 'sem-filter-btn px-3 py-1.5 rounded-full bg-blue-600 text-white font-bold transition shadow-xs whitespace-nowrap flex-shrink-0' : 'sem-filter-btn px-3 py-1.5 rounded-full bg-white text-gray-700 border border-gray-200 hover:bg-gray-100 transition whitespace-nowrap flex-shrink-0';
             }});
             filterCards();
         }}
+
+        // Back to top scroll listener
+        window.addEventListener('scroll', function() {{
+            const btn = document.getElementById('backToTopBtn');
+            if (btn) {{
+                btn.classList.toggle('hidden', window.scrollY < 300);
+            }}
+        }});
     </script>
 </body>
 </html>"""
