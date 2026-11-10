@@ -15,6 +15,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const categories = [
         { id: 'all', name: 'All' },
         { id: 'notes', name: 'Notes' },
+        { id: 'model-answer', name: 'Model Answers' },
         { id: 'question-bank', name: 'Question Banks' },
         { id: 'micro-project', name: 'Micro-Projects' },
         { id: 'subject-guide', name: 'Subject Guides' },
@@ -62,7 +63,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const highlightedDescription = highlightText(resource.description, searchTerm);
 
             // Pastel tags
-            const tagsHTML = resource.tags.map(tag => `
+            const tagsHTML = (resource.tags || []).map(tag => `
                 <span class="text-[10px] uppercase tracking-wider font-bold px-2 py-1 rounded-md bg-blue-50 text-blue-600 border border-blue-100">
                     ${highlightText(tag, searchTerm)}
                 </span>

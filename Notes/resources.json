@@ -8420,5 +8420,395 @@
         "season": "Summer"
       }
     }
+  },
+  {
+    "title": "Data Structures Using C (313301) Model Answer Papers & Solved Solutions",
+    "description": "Download official MSBTE K-Scheme model answer papers with step-wise solutions, evaluation marking schemes, and exam keys for Data Structures Using C (313301) - Semester 3.",
+    "url": "/model-answer/313301-data-structure-using-c.html",
+    "thumbnail": "/resourse/msbte_subject_thumbnails/01_Data_Structures_Using_C.png",
+    "category": "model-answer",
+    "tags": [
+      "DSU",
+      "313301",
+      "Model Answer",
+      "Sem 3",
+      "K-Scheme",
+      "CO",
+      "IF",
+      "AN"
+    ],
+    "code": "313301",
+    "abbreviation": "DSU",
+    "semester": 3,
+    "academic_year": "Second Year (SY)",
+    "branches": [
+      "CO",
+      "IF",
+      "AN"
+    ],
+    "branches_str": "Computer Engineering, Information Technology, AI & Machine Learning",
+    "slug": "313301-data-structure-using-c",
+    "papers_count": 8,
+    "dateAdded": "2026-11-10"
+  },
+  {
+    "title": "Database Management System (313302) Model Answer Papers & Solved Solutions",
+    "description": "Download official MSBTE K-Scheme model answer papers with step-wise solutions, evaluation marking schemes, and exam keys for Database Management System (313302) - Semester 3.",
+    "url": "/model-answer/313302-database-management-system.html",
+    "thumbnail": "/resourse/msbte_subject_thumbnails/02_Database_Management_System.png",
+    "category": "model-answer",
+    "tags": [
+      "DMS",
+      "313302",
+      "Model Answer",
+      "Sem 3",
+      "K-Scheme",
+      "CO",
+      "IF",
+      "AN"
+    ],
+    "code": "313302",
+    "abbreviation": "DMS",
+    "semester": 3,
+    "academic_year": "Second Year (SY)",
+    "branches": [
+      "CO",
+      "IF",
+      "AN"
+    ],
+    "branches_str": "Computer Engineering, Information Technology, AI & Machine Learning",
+    "slug": "313302-database-management-system",
+    "papers_count": 7,
+    "dateAdded": "2026-11-10"
+  },
+  {
+    "title": "Digital Techniques (313303) Model Answer Papers & Solved Solutions",
+    "description": "Download official MSBTE K-Scheme model answer papers with step-wise solutions, evaluation marking schemes, and exam keys for Digital Techniques (313303) - Semester 3.",
+    "url": "/model-answer/313303-digital-techniques.html",
+    "thumbnail": "/resourse/msbte_subject_thumbnails/03_Digital_Techniques.png",
+    "category": "model-answer",
+    "tags": [
+      "DTE",
+      "313303",
+      "Model Answer",
+      "Sem 3",
+      "K-Scheme",
+      "CO",
+      "IF",
+      "AN"
+    ],
+    "code": "313303",
+    "abbreviation": "DTE",
+    "semester": 3,
+    "academic_year": "Second Year (SY)",
+    "branches": [
+      "CO",
+      "IF",
+      "AN"
+    ],
+    "branches_str": "Computer Engineering, Information Technology, AI & Machine Learning",
+    "slug": "313303-digital-techniques",
+    "papers_count": 6,
+    "dateAdded": "2026-11-10"
+  },
+  {
+    "title": "Object Oriented Programming (313304) Model Answer Papers & Solved Solutions",
+    "description": "Download official MSBTE K-Scheme model answer papers with step-wise solutions, evaluation marking schemes, and exam keys for Object Oriented Programming (313304) - Semester 3.",
+    "url": "/model-answer/313304-object-oriented-programming-using-c.html",
+    "thumbnail": "/resourse/msbte_subject_thumbnails/04_Object_Oriented_Programming.png",
+    "category": "model-answer",
+    "tags": [
+      "OOP",
+      "313304",
+      "Model Answer",
+      "Sem 3",
+      "K-Scheme",
+      "CO",
+      "IF",
+      "AN"
+    ],
+    "code": "313304",
+    "abbreviation": "OOP",
+    "semester": 3,
+    "academic_year": "Second Year (SY)",
+    "branches": [
+      "CO",
+      "IF",
+      "AN"
+    ],
+    "branches_str": "Computer Engineering, Information Technology, AI & Machine Learning",
+    "slug": "313304-object-oriented-programming-using-c",
+    "papers_count": 6,
+    "dateAdded": "2026-11-10"
+  },
+  {
+    "title": "Operating System (315319) Model Answer Papers & Solved Solutions",
+    "description": "Download official MSBTE K-Scheme model answer papers with step-wise solutions, evaluation marking schemes, and exam keys for Operating System (315319) - Semester 5.",
+    "url": "/model-answer/315319-operating-system.html",
+    "thumbnail": "/resourse/msbte_subject_thumbnails/05_Operating_System.png",
+    "category": "model-answer",
+    "tags": [
+      "OSY",
+      "315319",
+      "Model Answer",
+      "Sem 5",
+      "K-Scheme",
+      "CO",
+      "IF",
+      "AN"
+    ],
+    "code": "315319",
+    "abbreviation": "OSY",
+    "semester": 5,
+    "academic_year": "Third Year (TY)",
+    "branches": [
+      "CO",
+      "IF",
+      "AN"
+    ],
+    "branches_str": "Computer Engineering, Information Technology, AI & Machine Learning",
+    "slug": "315319-operating-system",
+    "papers_count": 7,
+    "dateAdded": "2026-11-10"
+  },
+  {
+    "title": "Advanced Computer Network (315321) Model Answer Papers & Solved Solutions",
+    "description": "Download official MSBTE K-Scheme model answer papers with step-wise solutions, evaluation marking schemes, and exam keys for Advanced Computer Network (315321) - Semester 5.",
+    "url": "/model-answer/315321-advance-computer-network.html",
+    "thumbnail": "/resourse/msbte_subject_thumbnails/06_Advanced_Computer_Network.png",
+    "category": "model-answer",
+    "tags": [
+      "ACN",
+      "315321",
+      "Model Answer",
+      "Sem 5",
+      "K-Scheme",
+      "CO",
+      "IF"
+    ],
+    "code": "315321",
+    "abbreviation": "ACN",
+    "semester": 5,
+    "academic_year": "Third Year (TY)",
+    "branches": [
+      "CO",
+      "IF"
+    ],
+    "branches_str": "Computer Engineering, Information Technology",
+    "slug": "315321-advance-computer-network",
+    "papers_count": 4,
+    "dateAdded": "2026-11-10"
+  },
+  {
+    "title": "Data Analytics (315326) Model Answer Papers & Solved Solutions",
+    "description": "Download official MSBTE K-Scheme model answer papers with step-wise solutions, evaluation marking schemes, and exam keys for Data Analytics (315326) - Semester 5.",
+    "url": "/model-answer/315326-data-analytics.html",
+    "thumbnail": "/resourse/msbte_subject_thumbnails/07_Data_Analytics.png",
+    "category": "model-answer",
+    "tags": [
+      "DAN",
+      "315326",
+      "Model Answer",
+      "Sem 5",
+      "K-Scheme",
+      "CO",
+      "IF"
+    ],
+    "code": "315326",
+    "abbreviation": "DAN",
+    "semester": 5,
+    "academic_year": "Third Year (TY)",
+    "branches": [
+      "CO",
+      "IF"
+    ],
+    "branches_str": "Computer Engineering, Information Technology",
+    "slug": "315326-data-analytics",
+    "papers_count": 2,
+    "dateAdded": "2026-11-10"
+  },
+  {
+    "title": "Advanced Database Management (315324) Model Answer Papers & Solved Solutions",
+    "description": "Download official MSBTE K-Scheme model answer papers with step-wise solutions, evaluation marking schemes, and exam keys for Advanced Database Management (315324) - Semester 5.",
+    "url": "/model-answer/315324-advance-database-management.html",
+    "thumbnail": "/resourse/msbte_subject_thumbnails/08_Advanced_Database_Management.png",
+    "category": "model-answer",
+    "tags": [
+      "ADM",
+      "315324",
+      "Model Answer",
+      "Sem 5",
+      "K-Scheme",
+      "IF",
+      "AN"
+    ],
+    "code": "315324",
+    "abbreviation": "ADM",
+    "semester": 5,
+    "academic_year": "Third Year (TY)",
+    "branches": [
+      "IF",
+      "AN"
+    ],
+    "branches_str": "Information Technology, AI & Machine Learning",
+    "slug": "315324-advance-database-management",
+    "papers_count": 2,
+    "dateAdded": "2026-11-10"
+  },
+  {
+    "title": "Software Engineering (315323) Model Answer Papers & Solved Solutions",
+    "description": "Download official MSBTE K-Scheme model answer papers with step-wise solutions, evaluation marking schemes, and exam keys for Software Engineering (315323) - Semester 5.",
+    "url": "/model-answer/315323-software-engineering.html",
+    "thumbnail": "/resourse/msbte_subject_thumbnails/09_Software_Engineering.png",
+    "category": "model-answer",
+    "tags": [
+      "STE",
+      "315323",
+      "Model Answer",
+      "Sem 5",
+      "K-Scheme",
+      "CO"
+    ],
+    "code": "315323",
+    "abbreviation": "STE",
+    "semester": 5,
+    "academic_year": "Third Year (TY)",
+    "branches": [
+      "CO"
+    ],
+    "branches_str": "Computer Engineering",
+    "slug": "315323-software-engineering",
+    "papers_count": 8,
+    "dateAdded": "2026-11-10"
+  },
+  {
+    "title": "Software Engineering and Testing (315332) Model Answer Papers & Solved Solutions",
+    "description": "Download official MSBTE K-Scheme model answer papers with step-wise solutions, evaluation marking schemes, and exam keys for Software Engineering and Testing (315332) - Semester 5.",
+    "url": "/model-answer/315332-software-engineering-and-testing.html",
+    "thumbnail": "/resourse/msbte_subject_thumbnails/10_Software_Engineering_and_Testing.png",
+    "category": "model-answer",
+    "tags": [
+      "SET",
+      "315332",
+      "Model Answer",
+      "Sem 5",
+      "K-Scheme",
+      "IF"
+    ],
+    "code": "315332",
+    "abbreviation": "SET",
+    "semester": 5,
+    "academic_year": "Third Year (TY)",
+    "branches": [
+      "IF"
+    ],
+    "branches_str": "Information Technology",
+    "slug": "315332-software-engineering-and-testing",
+    "papers_count": 2,
+    "dateAdded": "2026-11-10"
+  },
+  {
+    "title": "Cloud Computing (315325) Model Answer Papers & Solved Solutions",
+    "description": "Download official MSBTE K-Scheme model answer papers with step-wise solutions, evaluation marking schemes, and exam keys for Cloud Computing (315325) - Semester 5.",
+    "url": "/model-answer/315325-cloud-computing.html",
+    "thumbnail": "/resourse/msbte_subject_thumbnails/11_Cloud_Computing.png",
+    "category": "model-answer",
+    "tags": [
+      "CLC",
+      "315325",
+      "Model Answer",
+      "Sem 5",
+      "K-Scheme",
+      "CO"
+    ],
+    "code": "315325",
+    "abbreviation": "CLC",
+    "semester": 5,
+    "academic_year": "Third Year (TY)",
+    "branches": [
+      "CO"
+    ],
+    "branches_str": "Computer Engineering",
+    "slug": "315325-cloud-computing",
+    "papers_count": 2,
+    "dateAdded": "2026-11-10"
+  },
+  {
+    "title": "Cloud Computing for Data Science (315327) Model Answer Papers & Solved Solutions",
+    "description": "Download official MSBTE K-Scheme model answer papers with step-wise solutions, evaluation marking schemes, and exam keys for Cloud Computing for Data Science (315327) - Semester 5.",
+    "url": "/model-answer/315327-cloud-computing-for-data-science.html",
+    "thumbnail": "/resourse/msbte_subject_thumbnails/12_Cloud_Computing_for_Data_Science.png",
+    "category": "model-answer",
+    "tags": [
+      "CDS",
+      "315327",
+      "Model Answer",
+      "Sem 5",
+      "K-Scheme",
+      "AN"
+    ],
+    "code": "315327",
+    "abbreviation": "CDS",
+    "semester": 5,
+    "academic_year": "Third Year (TY)",
+    "branches": [
+      "AN"
+    ],
+    "branches_str": "AI & Machine Learning",
+    "slug": "315327-cloud-computing-for-data-science",
+    "papers_count": 2,
+    "dateAdded": "2026-11-10"
+  },
+  {
+    "title": "AI & ML Algorithm (315330) Model Answer Papers & Solved Solutions",
+    "description": "Download official MSBTE K-Scheme model answer papers with step-wise solutions, evaluation marking schemes, and exam keys for AI & ML Algorithm (315330) - Semester 5.",
+    "url": "/model-answer/315330-ai-and-ml-algorithm.html",
+    "thumbnail": "/resourse/msbte_subject_thumbnails/13_AI_and_ML_Algorithm.png",
+    "category": "model-answer",
+    "tags": [
+      "AML",
+      "315330",
+      "Model Answer",
+      "Sem 5",
+      "K-Scheme",
+      "AN"
+    ],
+    "code": "315330",
+    "abbreviation": "AML",
+    "semester": 5,
+    "academic_year": "Third Year (TY)",
+    "branches": [
+      "AN"
+    ],
+    "branches_str": "AI & Machine Learning",
+    "slug": "315330-ai-and-ml-algorithm",
+    "papers_count": 2,
+    "dateAdded": "2026-11-10"
+  },
+  {
+    "title": "Natural Language Processing (315329) Model Answer Papers & Solved Solutions",
+    "description": "Download official MSBTE K-Scheme model answer papers with step-wise solutions, evaluation marking schemes, and exam keys for Natural Language Processing (315329) - Semester 5.",
+    "url": "/model-answer/315329-natural-language-processing.html",
+    "thumbnail": "/resourse/msbte_subject_thumbnails/14_Natural_Language_Processing.png",
+    "category": "model-answer",
+    "tags": [
+      "NLP",
+      "315329",
+      "Model Answer",
+      "Sem 5",
+      "K-Scheme",
+      "AN"
+    ],
+    "code": "315329",
+    "abbreviation": "NLP",
+    "semester": 5,
+    "academic_year": "Third Year (TY)",
+    "branches": [
+      "AN"
+    ],
+    "branches_str": "AI & Machine Learning",
+    "slug": "315329-natural-language-processing",
+    "papers_count": 2,
+    "dateAdded": "2026-11-10"
   }
 ]

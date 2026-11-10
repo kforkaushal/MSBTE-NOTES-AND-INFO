@@ -1,0 +1,673 @@
+[
+  {
+    "code": "313301",
+    "title": "Data Structures Using C (313301) Model Answer Papers",
+    "subject_name": "Data Structures Using C",
+    "abbreviation": "DSU",
+    "semester": 3,
+    "academic_year": "Second Year (SY)",
+    "branches": [
+      "CO",
+      "IF",
+      "AN"
+    ],
+    "branches_str": "Computer Engineering, Information Technology, AI & Machine Learning",
+    "slug": "313301-data-structure-using-c",
+    "url": "/model-answer/313301-data-structure-using-c.html",
+    "image": "/resourse/msbte_subject_thumbnails/01_Data_Structures_Using_C.png",
+    "papers": {
+      "Summer 2025": {
+        "exam": "Summer 2025",
+        "file_name": "Data Structures Using C - Summer 2025.pdf",
+        "view_link": "https://drive.google.com/file/d/12jMYwmGSLF2uhtkFLoyAgVRj9mBAWaqD/view",
+        "download_link": "https://drive.google.com/uc?export=download&id=12jMYwmGSLF2uhtkFLoyAgVRj9mBAWaqD",
+        "drive_id": "12jMYwmGSLF2uhtkFLoyAgVRj9mBAWaqD"
+      },
+      "Winter 2024": {
+        "exam": "Winter 2024",
+        "file_name": "Data Structures Using C - Winter 2024.pdf",
+        "view_link": "https://drive.google.com/file/d/1xMPXxuqSR1sUZVrFqPTTehEEJo3-ef_I/view",
+        "download_link": "https://drive.google.com/uc?export=download&id=1xMPXxuqSR1sUZVrFqPTTehEEJo3-ef_I",
+        "drive_id": "1xMPXxuqSR1sUZVrFqPTTehEEJo3-ef_I"
+      },
+      "Summer 2023": {
+        "exam": "Summer 2023",
+        "file_name": "Data Structures Using C - Summer 2023.pdf",
+        "view_link": "https://drive.google.com/file/d/1HT3zLMgiTHB_vDWpizDdkKaUNUdjb_Xc/view",
+        "download_link": "https://drive.google.com/uc?export=download&id=1HT3zLMgiTHB_vDWpizDdkKaUNUdjb_Xc",
+        "drive_id": "1HT3zLMgiTHB_vDWpizDdkKaUNUdjb_Xc"
+      },
+      "Winter 2023": {
+        "exam": "Winter 2023",
+        "file_name": "Data Structures Using C - Winter 2023.pdf",
+        "view_link": "https://drive.google.com/file/d/1phTRMCioRdgRD5eVUztUd5rlgM2jhLL4/view",
+        "download_link": "https://drive.google.com/uc?export=download&id=1phTRMCioRdgRD5eVUztUd5rlgM2jhLL4",
+        "drive_id": "1phTRMCioRdgRD5eVUztUd5rlgM2jhLL4"
+      },
+      "Winter 2022": {
+        "exam": "Winter 2022",
+        "file_name": "Data Structures Using C - Winter 2022.pdf",
+        "view_link": "https://drive.google.com/file/d/1TjYZ9TtrzHE6ddDjBlS54bjHrx2bnQfL/view",
+        "download_link": "https://drive.google.com/uc?export=download&id=1TjYZ9TtrzHE6ddDjBlS54bjHrx2bnQfL",
+        "drive_id": "1TjYZ9TtrzHE6ddDjBlS54bjHrx2bnQfL"
+      },
+      "Summer 2019": {
+        "exam": "Summer 2019",
+        "file_name": "Data Structures Using C - Summer 2019.pdf",
+        "view_link": "https://drive.google.com/file/d/1ID9GzgpTmNTYeXMCg1MbCe552p3FYqBZ/view",
+        "download_link": "https://drive.google.com/uc?export=download&id=1ID9GzgpTmNTYeXMCg1MbCe552p3FYqBZ",
+        "drive_id": "1ID9GzgpTmNTYeXMCg1MbCe552p3FYqBZ"
+      },
+      "Winter 2019": {
+        "exam": "Winter 2019",
+        "file_name": "Data Structures Using C - Winter 2019.pdf",
+        "view_link": "https://drive.google.com/file/d/1AzujD-sTp5k5mAkzBMdZMWeKvnmYBssi/view",
+        "download_link": "https://drive.google.com/uc?export=download&id=1AzujD-sTp5k5mAkzBMdZMWeKvnmYBssi",
+        "drive_id": "1AzujD-sTp5k5mAkzBMdZMWeKvnmYBssi"
+      },
+      "Winter 2018": {
+        "exam": "Winter 2018",
+        "file_name": "Data Structures Using C - Winter 2018.pdf",
+        "view_link": "https://drive.google.com/file/d/1LgQe_GaWuUpXi8nVaj3l_MPzhDE5riBq/view",
+        "download_link": "https://drive.google.com/uc?export=download&id=1LgQe_GaWuUpXi8nVaj3l_MPzhDE5riBq",
+        "drive_id": "1LgQe_GaWuUpXi8nVaj3l_MPzhDE5riBq"
+      }
+    }
+  },
+  {
+    "code": "313302",
+    "title": "Database Management System (313302) Model Answer Papers",
+    "subject_name": "Database Management System",
+    "abbreviation": "DMS",
+    "semester": 3,
+    "academic_year": "Second Year (SY)",
+    "branches": [
+      "CO",
+      "IF",
+      "AN"
+    ],
+    "branches_str": "Computer Engineering, Information Technology, AI & Machine Learning",
+    "slug": "313302-database-management-system",
+    "url": "/model-answer/313302-database-management-system.html",
+    "image": "/resourse/msbte_subject_thumbnails/02_Database_Management_System.png",
+    "papers": {
+      "Summer 2024": {
+        "exam": "Summer 2024",
+        "file_name": "Database Management System - Summer 2024.pdf",
+        "view_link": "https://drive.google.com/file/d/1d2P701PlgkoLLvroHtOJSEDEFuIRzBOt/view",
+        "download_link": "https://drive.google.com/uc?export=download&id=1d2P701PlgkoLLvroHtOJSEDEFuIRzBOt",
+        "drive_id": "1d2P701PlgkoLLvroHtOJSEDEFuIRzBOt"
+      },
+      "Summer 2023": {
+        "exam": "Summer 2023",
+        "file_name": "Database Management System - Summer 2023.pdf",
+        "view_link": "https://drive.google.com/file/d/1WQFnlo1ay2wdXrQGCp63-7ju9z9n6N19/view",
+        "download_link": "https://drive.google.com/uc?export=download&id=1WQFnlo1ay2wdXrQGCp63-7ju9z9n6N19",
+        "drive_id": "1WQFnlo1ay2wdXrQGCp63-7ju9z9n6N19"
+      },
+      "Winter 2023": {
+        "exam": "Winter 2023",
+        "file_name": "Database Management System - Winter 2023.pdf",
+        "view_link": "https://drive.google.com/file/d/1CZKLi-XVWXtXw_l37CFYQ3mcat9XmvHV/view",
+        "download_link": "https://drive.google.com/uc?export=download&id=1CZKLi-XVWXtXw_l37CFYQ3mcat9XmvHV",
+        "drive_id": "1CZKLi-XVWXtXw_l37CFYQ3mcat9XmvHV"
+      },
+      "Winter 2022": {
+        "exam": "Winter 2022",
+        "file_name": "Database Management System - Winter 2022.pdf",
+        "view_link": "https://drive.google.com/file/d/1BPOBtePKgQCx5RojA5pNbbU4AJgNk9He/view",
+        "download_link": "https://drive.google.com/uc?export=download&id=1BPOBtePKgQCx5RojA5pNbbU4AJgNk9He",
+        "drive_id": "1BPOBtePKgQCx5RojA5pNbbU4AJgNk9He"
+      },
+      "Summer 2019": {
+        "exam": "Summer 2019",
+        "file_name": "Database Management System - Summer 2019.pdf",
+        "view_link": "https://drive.google.com/file/d/1RSnETSPJK4Dm4QWqzx94B7Gd0GTTRkdO/view",
+        "download_link": "https://drive.google.com/uc?export=download&id=1RSnETSPJK4Dm4QWqzx94B7Gd0GTTRkdO",
+        "drive_id": "1RSnETSPJK4Dm4QWqzx94B7Gd0GTTRkdO"
+      },
+      "Winter 2019": {
+        "exam": "Winter 2019",
+        "file_name": "Database Management System - Winter 2019.pdf",
+        "view_link": "https://drive.google.com/file/d/1gyx4gh8p24hW0rSxz4DX-GiC6Yluwa1O/view",
+        "download_link": "https://drive.google.com/uc?export=download&id=1gyx4gh8p24hW0rSxz4DX-GiC6Yluwa1O",
+        "drive_id": "1gyx4gh8p24hW0rSxz4DX-GiC6Yluwa1O"
+      },
+      "Winter 2018": {
+        "exam": "Winter 2018",
+        "file_name": "Database Management System - Winter 2018.pdf",
+        "view_link": "https://drive.google.com/file/d/1cQSeIlPc0y4Nly7av6QUBCyoAx3gTGO7/view",
+        "download_link": "https://drive.google.com/uc?export=download&id=1cQSeIlPc0y4Nly7av6QUBCyoAx3gTGO7",
+        "drive_id": "1cQSeIlPc0y4Nly7av6QUBCyoAx3gTGO7"
+      }
+    }
+  },
+  {
+    "code": "313303",
+    "title": "Digital Techniques (313303) Model Answer Papers",
+    "subject_name": "Digital Techniques",
+    "abbreviation": "DTE",
+    "semester": 3,
+    "academic_year": "Second Year (SY)",
+    "branches": [
+      "CO",
+      "IF",
+      "AN"
+    ],
+    "branches_str": "Computer Engineering, Information Technology, AI & Machine Learning",
+    "slug": "313303-digital-techniques",
+    "url": "/model-answer/313303-digital-techniques.html",
+    "image": "/resourse/msbte_subject_thumbnails/03_Digital_Techniques.png",
+    "papers": {
+      "Summer 2023": {
+        "exam": "Summer 2023",
+        "file_name": "Digital Techniques - Summer 2023.pdf",
+        "view_link": "https://drive.google.com/file/d/1ak1_-2Vg7x5KdLXqoW0bpAfutiCjP111/view",
+        "download_link": "https://drive.google.com/uc?export=download&id=1ak1_-2Vg7x5KdLXqoW0bpAfutiCjP111",
+        "drive_id": "1ak1_-2Vg7x5KdLXqoW0bpAfutiCjP111"
+      },
+      "Winter 2023": {
+        "exam": "Winter 2023",
+        "file_name": "Digital Techniques - Winter 2023.pdf",
+        "view_link": "https://drive.google.com/file/d/1dEJWzVfUQ1YHgbtGofZztrNrCLkZLhWz/view",
+        "download_link": "https://drive.google.com/uc?export=download&id=1dEJWzVfUQ1YHgbtGofZztrNrCLkZLhWz",
+        "drive_id": "1dEJWzVfUQ1YHgbtGofZztrNrCLkZLhWz"
+      },
+      "Winter 2022": {
+        "exam": "Winter 2022",
+        "file_name": "Digital Techniques - Winter 2022.pdf",
+        "view_link": "https://drive.google.com/file/d/1I3DEz5vTWzmmf3Mx6OSFk_G3c4lss0II/view",
+        "download_link": "https://drive.google.com/uc?export=download&id=1I3DEz5vTWzmmf3Mx6OSFk_G3c4lss0II",
+        "drive_id": "1I3DEz5vTWzmmf3Mx6OSFk_G3c4lss0II"
+      },
+      "Summer 2019": {
+        "exam": "Summer 2019",
+        "file_name": "Digital Techniques - Summer 2019.pdf",
+        "view_link": "https://drive.google.com/file/d/15QRsYrJCYXbfB7sN8VxePFzBwWAuBKu0/view",
+        "download_link": "https://drive.google.com/uc?export=download&id=15QRsYrJCYXbfB7sN8VxePFzBwWAuBKu0",
+        "drive_id": "15QRsYrJCYXbfB7sN8VxePFzBwWAuBKu0"
+      },
+      "Winter 2019": {
+        "exam": "Winter 2019",
+        "file_name": "Digital Techniques - Winter 2019.pdf",
+        "view_link": "https://drive.google.com/file/d/1vYOqISniV4ZOgDbfemywGyARzuOwpqha/view",
+        "download_link": "https://drive.google.com/uc?export=download&id=1vYOqISniV4ZOgDbfemywGyARzuOwpqha",
+        "drive_id": "1vYOqISniV4ZOgDbfemywGyARzuOwpqha"
+      },
+      "Winter 2018": {
+        "exam": "Winter 2018",
+        "file_name": "Digital Techniques - Winter 2018.pdf",
+        "view_link": "https://drive.google.com/file/d/1hx2f58W0lbrEG4lVZq7FHhNsZP-Oyn9b/view",
+        "download_link": "https://drive.google.com/uc?export=download&id=1hx2f58W0lbrEG4lVZq7FHhNsZP-Oyn9b",
+        "drive_id": "1hx2f58W0lbrEG4lVZq7FHhNsZP-Oyn9b"
+      }
+    }
+  },
+  {
+    "code": "313304",
+    "title": "Object Oriented Programming (313304) Model Answer Papers",
+    "subject_name": "Object Oriented Programming",
+    "abbreviation": "OOP",
+    "semester": 3,
+    "academic_year": "Second Year (SY)",
+    "branches": [
+      "CO",
+      "IF",
+      "AN"
+    ],
+    "branches_str": "Computer Engineering, Information Technology, AI & Machine Learning",
+    "slug": "313304-object-oriented-programming-using-c",
+    "url": "/model-answer/313304-object-oriented-programming-using-c.html",
+    "image": "/resourse/msbte_subject_thumbnails/04_Object_Oriented_Programming.png",
+    "papers": {
+      "Summer 2024": {
+        "exam": "Summer 2024",
+        "file_name": "Object Oriented Programming - Summer 2024.pdf",
+        "view_link": "https://drive.google.com/file/d/1l8ZekdIbRpZaKLs1R-tKJ2c36LoVC7s8/view",
+        "download_link": "https://drive.google.com/uc?export=download&id=1l8ZekdIbRpZaKLs1R-tKJ2c36LoVC7s8",
+        "drive_id": "1l8ZekdIbRpZaKLs1R-tKJ2c36LoVC7s8"
+      },
+      "Summer 2023": {
+        "exam": "Summer 2023",
+        "file_name": "Object Oriented Programming - Summer 2023.pdf",
+        "view_link": "https://drive.google.com/file/d/1Zhw8QBhK_azOvALXeROO1YIuCieIyuQl/view",
+        "download_link": "https://drive.google.com/uc?export=download&id=1Zhw8QBhK_azOvALXeROO1YIuCieIyuQl",
+        "drive_id": "1Zhw8QBhK_azOvALXeROO1YIuCieIyuQl"
+      },
+      "Winter 2022": {
+        "exam": "Winter 2022",
+        "file_name": "Object Oriented Programming - Winter 2022.pdf",
+        "view_link": "https://drive.google.com/file/d/172pIo18bVYKq0EH_IcYrpzpzvGzI8b9Q/view",
+        "download_link": "https://drive.google.com/uc?export=download&id=172pIo18bVYKq0EH_IcYrpzpzvGzI8b9Q",
+        "drive_id": "172pIo18bVYKq0EH_IcYrpzpzvGzI8b9Q"
+      },
+      "Summer 2019": {
+        "exam": "Summer 2019",
+        "file_name": "Object Oriented Programming - Summer 2019.pdf",
+        "view_link": "https://drive.google.com/file/d/1GZgqppQMrHdjL8cBrv048uRoY2JG03IX/view",
+        "download_link": "https://drive.google.com/uc?export=download&id=1GZgqppQMrHdjL8cBrv048uRoY2JG03IX",
+        "drive_id": "1GZgqppQMrHdjL8cBrv048uRoY2JG03IX"
+      },
+      "Winter 2019": {
+        "exam": "Winter 2019",
+        "file_name": "Object Oriented Programming - Winter 2019.pdf",
+        "view_link": "https://drive.google.com/file/d/1o58F_AT09yEQWCzMydF2B0zvnRxXl_I_/view",
+        "download_link": "https://drive.google.com/uc?export=download&id=1o58F_AT09yEQWCzMydF2B0zvnRxXl_I_",
+        "drive_id": "1o58F_AT09yEQWCzMydF2B0zvnRxXl_I_"
+      },
+      "Winter 2018": {
+        "exam": "Winter 2018",
+        "file_name": "Object Oriented Programming - Winter 2018.pdf",
+        "view_link": "https://drive.google.com/file/d/1qjGDB5IhlIXnkmvfEL_0GTuhuF8jFGJZ/view",
+        "download_link": "https://drive.google.com/uc?export=download&id=1qjGDB5IhlIXnkmvfEL_0GTuhuF8jFGJZ",
+        "drive_id": "1qjGDB5IhlIXnkmvfEL_0GTuhuF8jFGJZ"
+      }
+    }
+  },
+  {
+    "code": "315319",
+    "title": "Operating System (315319) Model Answer Papers",
+    "subject_name": "Operating System",
+    "abbreviation": "OSY",
+    "semester": 5,
+    "academic_year": "Third Year (TY)",
+    "branches": [
+      "CO",
+      "IF",
+      "AN"
+    ],
+    "branches_str": "Computer Engineering, Information Technology, AI & Machine Learning",
+    "slug": "315319-operating-system",
+    "url": "/model-answer/315319-operating-system.html",
+    "image": "/resourse/msbte_subject_thumbnails/05_Operating_System.png",
+    "papers": {
+      "Summer 2026": {
+        "exam": "Summer 2026",
+        "file_name": "Operating System - Summer 2026.pdf",
+        "view_link": "https://drive.google.com/file/d/1_oUAYTL1ygVRD9GLlhjR6ye1js3Fr8OG/view",
+        "download_link": "https://drive.google.com/uc?export=download&id=1_oUAYTL1ygVRD9GLlhjR6ye1js3Fr8OG",
+        "drive_id": "1_oUAYTL1ygVRD9GLlhjR6ye1js3Fr8OG"
+      },
+      "Winter 2025": {
+        "exam": "Winter 2025",
+        "file_name": "Operating System - Winter 2025.pdf",
+        "view_link": "https://drive.google.com/file/d/13LWmQ5FFI1HlhW5m9i5smA330hKTdHp1/view",
+        "download_link": "https://drive.google.com/uc?export=download&id=13LWmQ5FFI1HlhW5m9i5smA330hKTdHp1",
+        "drive_id": "13LWmQ5FFI1HlhW5m9i5smA330hKTdHp1"
+      },
+      "Summer 2024": {
+        "exam": "Summer 2024",
+        "file_name": "Operating System - Summer 2024.pdf",
+        "view_link": "https://drive.google.com/file/d/1DaaeG8KLnap5RLEGGGq4X-KG3vs1Y27w/view",
+        "download_link": "https://drive.google.com/uc?export=download&id=1DaaeG8KLnap5RLEGGGq4X-KG3vs1Y27w",
+        "drive_id": "1DaaeG8KLnap5RLEGGGq4X-KG3vs1Y27w"
+      },
+      "Winter 2023": {
+        "exam": "Winter 2023",
+        "file_name": "Operating System - Winter 2023.pdf",
+        "view_link": "https://drive.google.com/file/d/1QstJJYCjzolfsS9_5G7M3aQHjI0DxXLG/view",
+        "download_link": "https://drive.google.com/uc?export=download&id=1QstJJYCjzolfsS9_5G7M3aQHjI0DxXLG",
+        "drive_id": "1QstJJYCjzolfsS9_5G7M3aQHjI0DxXLG"
+      },
+      "Summer 2022": {
+        "exam": "Summer 2022",
+        "file_name": "Operating System - Summer 2022.pdf",
+        "view_link": "https://drive.google.com/file/d/1X6N00kCvREkrMikRU2CcLSBvrY2IckHb/view",
+        "download_link": "https://drive.google.com/uc?export=download&id=1X6N00kCvREkrMikRU2CcLSBvrY2IckHb",
+        "drive_id": "1X6N00kCvREkrMikRU2CcLSBvrY2IckHb"
+      },
+      "Winter 2022": {
+        "exam": "Winter 2022",
+        "file_name": "Operating System - Winter 2022.pdf",
+        "view_link": "https://drive.google.com/file/d/1UpKnpE5fq8QvnRTDnFgNu-wM3vMniDqN/view",
+        "download_link": "https://drive.google.com/uc?export=download&id=1UpKnpE5fq8QvnRTDnFgNu-wM3vMniDqN",
+        "drive_id": "1UpKnpE5fq8QvnRTDnFgNu-wM3vMniDqN"
+      },
+      "Winter 2019": {
+        "exam": "Winter 2019",
+        "file_name": "Operating System - Winter 2019.pdf",
+        "view_link": "https://drive.google.com/file/d/1-uQubkUUXwuB89pfnA_SSmMY0WlFF0Qh/view",
+        "download_link": "https://drive.google.com/uc?export=download&id=1-uQubkUUXwuB89pfnA_SSmMY0WlFF0Qh",
+        "drive_id": "1-uQubkUUXwuB89pfnA_SSmMY0WlFF0Qh"
+      }
+    }
+  },
+  {
+    "code": "315321",
+    "title": "Advanced Computer Network (315321) Model Answer Papers",
+    "subject_name": "Advanced Computer Network",
+    "abbreviation": "ACN",
+    "semester": 5,
+    "academic_year": "Third Year (TY)",
+    "branches": [
+      "CO",
+      "IF"
+    ],
+    "branches_str": "Computer Engineering, Information Technology",
+    "slug": "315321-advance-computer-network",
+    "url": "/model-answer/315321-advance-computer-network.html",
+    "image": "/resourse/msbte_subject_thumbnails/06_Advanced_Computer_Network.png",
+    "papers": {
+      "Summer 2026": {
+        "exam": "Summer 2026",
+        "file_name": "Advanced Computer Network - Summer 2026.pdf",
+        "view_link": "https://drive.google.com/file/d/1nN-ZZQY9w0LmvOpk3DldhFt26og9VhoR/view",
+        "download_link": "https://drive.google.com/uc?export=download&id=1nN-ZZQY9w0LmvOpk3DldhFt26og9VhoR",
+        "drive_id": "1nN-ZZQY9w0LmvOpk3DldhFt26og9VhoR"
+      },
+      "Winter 2025": {
+        "exam": "Winter 2025",
+        "file_name": "Advanced Computer Network - Winter 2025.pdf",
+        "view_link": "https://drive.google.com/file/d/1_8wAesYq7I44XKDuUJfTgAS9gEwh0wY6/view",
+        "download_link": "https://drive.google.com/uc?export=download&id=1_8wAesYq7I44XKDuUJfTgAS9gEwh0wY6",
+        "drive_id": "1_8wAesYq7I44XKDuUJfTgAS9gEwh0wY6"
+      },
+      "Summer 2024": {
+        "exam": "Summer 2024",
+        "file_name": "Advanced Computer Network - Summer 2024.pdf",
+        "view_link": "https://drive.google.com/file/d/1ficUAfXQpdYDQvbENkUeq1xhrneqWirF/view",
+        "download_link": "https://drive.google.com/uc?export=download&id=1ficUAfXQpdYDQvbENkUeq1xhrneqWirF",
+        "drive_id": "1ficUAfXQpdYDQvbENkUeq1xhrneqWirF"
+      },
+      "Winter 2019 \u2013 Winter 2023": {
+        "exam": "Winter 2019 \u2013 Winter 2023",
+        "file_name": "Advanced Computer Network - Winter 2019 \u2013 Winter 2023.pdf",
+        "view_link": "https://drive.google.com/file/d/17fULANRgmUyUK-hxvst93iFvu8sh1wsY/view",
+        "download_link": "https://drive.google.com/uc?export=download&id=17fULANRgmUyUK-hxvst93iFvu8sh1wsY",
+        "drive_id": "17fULANRgmUyUK-hxvst93iFvu8sh1wsY"
+      }
+    }
+  },
+  {
+    "code": "315326",
+    "title": "Data Analytics (315326) Model Answer Papers",
+    "subject_name": "Data Analytics",
+    "abbreviation": "DAN",
+    "semester": 5,
+    "academic_year": "Third Year (TY)",
+    "branches": [
+      "CO",
+      "IF"
+    ],
+    "branches_str": "Computer Engineering, Information Technology",
+    "slug": "315326-data-analytics",
+    "url": "/model-answer/315326-data-analytics.html",
+    "image": "/resourse/msbte_subject_thumbnails/07_Data_Analytics.png",
+    "papers": {
+      "Summer 2026": {
+        "exam": "Summer 2026",
+        "file_name": "Data Analytics - Summer 2026.pdf",
+        "view_link": "https://drive.google.com/file/d/15RDhjyimRERVJLE3OaOBzioJdxbEXW_E/view",
+        "download_link": "https://drive.google.com/uc?export=download&id=15RDhjyimRERVJLE3OaOBzioJdxbEXW_E",
+        "drive_id": "15RDhjyimRERVJLE3OaOBzioJdxbEXW_E"
+      },
+      "Winter 2025": {
+        "exam": "Winter 2025",
+        "file_name": "Data Analytics - Winter 2025.pdf",
+        "view_link": "https://drive.google.com/file/d/1eYB6fBFX1WZHdAPJCYTtDPAQysXP-AkJ/view",
+        "download_link": "https://drive.google.com/uc?export=download&id=1eYB6fBFX1WZHdAPJCYTtDPAQysXP-AkJ",
+        "drive_id": "1eYB6fBFX1WZHdAPJCYTtDPAQysXP-AkJ"
+      }
+    }
+  },
+  {
+    "code": "315324",
+    "title": "Advanced Database Management (315324) Model Answer Papers",
+    "subject_name": "Advanced Database Management",
+    "abbreviation": "ADM",
+    "semester": 5,
+    "academic_year": "Third Year (TY)",
+    "branches": [
+      "IF",
+      "AN"
+    ],
+    "branches_str": "Information Technology, AI & Machine Learning",
+    "slug": "315324-advance-database-management",
+    "url": "/model-answer/315324-advance-database-management.html",
+    "image": "/resourse/msbte_subject_thumbnails/08_Advanced_Database_Management.png",
+    "papers": {
+      "Summer 2026": {
+        "exam": "Summer 2026",
+        "file_name": "Advanced Database Management - Summer 2026.pdf",
+        "view_link": "https://drive.google.com/file/d/1i5Ke6U5hWkRSn58wA3un3cAybLWhsjnE/view",
+        "download_link": "https://drive.google.com/uc?export=download&id=1i5Ke6U5hWkRSn58wA3un3cAybLWhsjnE",
+        "drive_id": "1i5Ke6U5hWkRSn58wA3un3cAybLWhsjnE"
+      },
+      "Winter 2025": {
+        "exam": "Winter 2025",
+        "file_name": "Advanced Database Management - Winter 2025.pdf",
+        "view_link": "https://drive.google.com/file/d/1XZ9dTrhn7syyJgDcxXplRm7e-aXqmqFB/view",
+        "download_link": "https://drive.google.com/uc?export=download&id=1XZ9dTrhn7syyJgDcxXplRm7e-aXqmqFB",
+        "drive_id": "1XZ9dTrhn7syyJgDcxXplRm7e-aXqmqFB"
+      }
+    }
+  },
+  {
+    "code": "315323",
+    "title": "Software Engineering (315323) Model Answer Papers",
+    "subject_name": "Software Engineering",
+    "abbreviation": "STE",
+    "semester": 5,
+    "academic_year": "Third Year (TY)",
+    "branches": [
+      "CO"
+    ],
+    "branches_str": "Computer Engineering",
+    "slug": "315323-software-engineering",
+    "url": "/model-answer/315323-software-engineering.html",
+    "image": "/resourse/msbte_subject_thumbnails/09_Software_Engineering.png",
+    "papers": {
+      "Summer 2026": {
+        "exam": "Summer 2026",
+        "file_name": "Software Engineering - Summer 2026.pdf",
+        "view_link": "https://drive.google.com/file/d/1MA3q2vWt2p-3bzB5hXlNYu16PsybpkPw/view",
+        "download_link": "https://drive.google.com/uc?export=download&id=1MA3q2vWt2p-3bzB5hXlNYu16PsybpkPw",
+        "drive_id": "1MA3q2vWt2p-3bzB5hXlNYu16PsybpkPw"
+      },
+      "Winter 2025": {
+        "exam": "Winter 2025",
+        "file_name": "Software Engineering - Winter 2025.pdf",
+        "view_link": "https://drive.google.com/file/d/1NbSHKPq8Ub48a_8ttUuO7YS87Uvg10ip/view",
+        "download_link": "https://drive.google.com/uc?export=download&id=1NbSHKPq8Ub48a_8ttUuO7YS87Uvg10ip",
+        "drive_id": "1NbSHKPq8Ub48a_8ttUuO7YS87Uvg10ip"
+      },
+      "Summer 2023": {
+        "exam": "Summer 2023",
+        "file_name": "Software Engineering - Summer 2023.pdf",
+        "view_link": "https://drive.google.com/file/d/1L_AEGgq6m5kil4LRWQ9ocVoithhgObmh/view",
+        "download_link": "https://drive.google.com/uc?export=download&id=1L_AEGgq6m5kil4LRWQ9ocVoithhgObmh",
+        "drive_id": "1L_AEGgq6m5kil4LRWQ9ocVoithhgObmh"
+      },
+      "Winter 2023": {
+        "exam": "Winter 2023",
+        "file_name": "Software Engineering - Winter 2023.pdf",
+        "view_link": "https://drive.google.com/file/d/1EAKVhvwdZohQ1mHhlXQBKot6EcRSsSKw/view",
+        "download_link": "https://drive.google.com/uc?export=download&id=1EAKVhvwdZohQ1mHhlXQBKot6EcRSsSKw",
+        "drive_id": "1EAKVhvwdZohQ1mHhlXQBKot6EcRSsSKw"
+      },
+      "Summer 2022": {
+        "exam": "Summer 2022",
+        "file_name": "Software Engineering - Summer 2022.pdf",
+        "view_link": "https://drive.google.com/file/d/1eVNf1bggQ3x0BnJDURUY8EwmcyFtmnOP/view",
+        "download_link": "https://drive.google.com/uc?export=download&id=1eVNf1bggQ3x0BnJDURUY8EwmcyFtmnOP",
+        "drive_id": "1eVNf1bggQ3x0BnJDURUY8EwmcyFtmnOP"
+      },
+      "Winter 2022": {
+        "exam": "Winter 2022",
+        "file_name": "Software Engineering - Winter 2022.pdf",
+        "view_link": "https://drive.google.com/file/d/1Sm4fjUZIzC6MS87S6XDQxIPVaEaq9PsC/view",
+        "download_link": "https://drive.google.com/uc?export=download&id=1Sm4fjUZIzC6MS87S6XDQxIPVaEaq9PsC",
+        "drive_id": "1Sm4fjUZIzC6MS87S6XDQxIPVaEaq9PsC"
+      },
+      "Summer 2019": {
+        "exam": "Summer 2019",
+        "file_name": "Software Engineering - Summer 2019.pdf",
+        "view_link": "https://drive.google.com/file/d/1VCLoaq3TUOc-wBiODWQNCh-oxw89LQbz/view",
+        "download_link": "https://drive.google.com/uc?export=download&id=1VCLoaq3TUOc-wBiODWQNCh-oxw89LQbz",
+        "drive_id": "1VCLoaq3TUOc-wBiODWQNCh-oxw89LQbz"
+      },
+      "Winter 2019": {
+        "exam": "Winter 2019",
+        "file_name": "Software Engineering - Winter 2019.pdf",
+        "view_link": "https://drive.google.com/file/d/1MW4iEvKX5pLZ2NSrNMdtWqP9YOXS7zGh/view",
+        "download_link": "https://drive.google.com/uc?export=download&id=1MW4iEvKX5pLZ2NSrNMdtWqP9YOXS7zGh",
+        "drive_id": "1MW4iEvKX5pLZ2NSrNMdtWqP9YOXS7zGh"
+      }
+    }
+  },
+  {
+    "code": "315332",
+    "title": "Software Engineering and Testing (315332) Model Answer Papers",
+    "subject_name": "Software Engineering and Testing",
+    "abbreviation": "SET",
+    "semester": 5,
+    "academic_year": "Third Year (TY)",
+    "branches": [
+      "IF"
+    ],
+    "branches_str": "Information Technology",
+    "slug": "315332-software-engineering-and-testing",
+    "url": "/model-answer/315332-software-engineering-and-testing.html",
+    "image": "/resourse/msbte_subject_thumbnails/10_Software_Engineering_and_Testing.png",
+    "papers": {
+      "Summer 2026": {
+        "exam": "Summer 2026",
+        "file_name": "Software Engineering and Testing - Summer 2026.pdf",
+        "view_link": "https://drive.google.com/file/d/1GI0MsNiSZECXiaTWp4Yy9kv9Hkmx6aFt/view",
+        "download_link": "https://drive.google.com/uc?export=download&id=1GI0MsNiSZECXiaTWp4Yy9kv9Hkmx6aFt",
+        "drive_id": "1GI0MsNiSZECXiaTWp4Yy9kv9Hkmx6aFt"
+      },
+      "Winter 2025": {
+        "exam": "Winter 2025",
+        "file_name": "Software Engineering and Testing - Winter 2025.pdf",
+        "view_link": "https://drive.google.com/file/d/1BgXbSVpbenr4TJAKa3cQydlhcDXjE7xp/view",
+        "download_link": "https://drive.google.com/uc?export=download&id=1BgXbSVpbenr4TJAKa3cQydlhcDXjE7xp",
+        "drive_id": "1BgXbSVpbenr4TJAKa3cQydlhcDXjE7xp"
+      }
+    }
+  },
+  {
+    "code": "315325",
+    "title": "Cloud Computing (315325) Model Answer Papers",
+    "subject_name": "Cloud Computing",
+    "abbreviation": "CLC",
+    "semester": 5,
+    "academic_year": "Third Year (TY)",
+    "branches": [
+      "CO"
+    ],
+    "branches_str": "Computer Engineering",
+    "slug": "315325-cloud-computing",
+    "url": "/model-answer/315325-cloud-computing.html",
+    "image": "/resourse/msbte_subject_thumbnails/11_Cloud_Computing.png",
+    "papers": {
+      "Summer 2026": {
+        "exam": "Summer 2026",
+        "file_name": "Cloud Computing - Summer 2026.pdf",
+        "view_link": "https://drive.google.com/file/d/1O0LefPFleTotWVysNthld63aENtIvZ6Z/view",
+        "download_link": "https://drive.google.com/uc?export=download&id=1O0LefPFleTotWVysNthld63aENtIvZ6Z",
+        "drive_id": "1O0LefPFleTotWVysNthld63aENtIvZ6Z"
+      },
+      "Winter 2025": {
+        "exam": "Winter 2025",
+        "file_name": "Cloud Computing - Winter 2025.pdf",
+        "view_link": "https://drive.google.com/file/d/1S9jsFVCY74qjMtDUAwj8oKf8BwKo9MD-/view",
+        "download_link": "https://drive.google.com/uc?export=download&id=1S9jsFVCY74qjMtDUAwj8oKf8BwKo9MD-",
+        "drive_id": "1S9jsFVCY74qjMtDUAwj8oKf8BwKo9MD-"
+      }
+    }
+  },
+  {
+    "code": "315327",
+    "title": "Cloud Computing for Data Science (315327) Model Answer Papers",
+    "subject_name": "Cloud Computing for Data Science",
+    "abbreviation": "CDS",
+    "semester": 5,
+    "academic_year": "Third Year (TY)",
+    "branches": [
+      "AN"
+    ],
+    "branches_str": "AI & Machine Learning",
+    "slug": "315327-cloud-computing-for-data-science",
+    "url": "/model-answer/315327-cloud-computing-for-data-science.html",
+    "image": "/resourse/msbte_subject_thumbnails/12_Cloud_Computing_for_Data_Science.png",
+    "papers": {
+      "Summer 2026": {
+        "exam": "Summer 2026",
+        "file_name": "Cloud Computing for Data Science - Summer 2026.pdf",
+        "view_link": "https://drive.google.com/file/d/1TbUwwWIAe79MpITRbpNDtD90phYEE6s_/view",
+        "download_link": "https://drive.google.com/uc?export=download&id=1TbUwwWIAe79MpITRbpNDtD90phYEE6s_",
+        "drive_id": "1TbUwwWIAe79MpITRbpNDtD90phYEE6s_"
+      },
+      "Winter 2025": {
+        "exam": "Winter 2025",
+        "file_name": "Cloud Computing for Data Science - Winter 2025.pdf",
+        "view_link": "https://drive.google.com/file/d/1KhBPHuaNuovzjoytubVXMic96uaAYR6F/view",
+        "download_link": "https://drive.google.com/uc?export=download&id=1KhBPHuaNuovzjoytubVXMic96uaAYR6F",
+        "drive_id": "1KhBPHuaNuovzjoytubVXMic96uaAYR6F"
+      }
+    }
+  },
+  {
+    "code": "315330",
+    "title": "AI & ML Algorithm (315330) Model Answer Papers",
+    "subject_name": "AI & ML Algorithm",
+    "abbreviation": "AML",
+    "semester": 5,
+    "academic_year": "Third Year (TY)",
+    "branches": [
+      "AN"
+    ],
+    "branches_str": "AI & Machine Learning",
+    "slug": "315330-ai-and-ml-algorithm",
+    "url": "/model-answer/315330-ai-and-ml-algorithm.html",
+    "image": "/resourse/msbte_subject_thumbnails/13_AI_and_ML_Algorithm.png",
+    "papers": {
+      "Summer 2026": {
+        "exam": "Summer 2026",
+        "file_name": "AI & ML Algorithm - Summer 2026.pdf",
+        "view_link": "https://drive.google.com/file/d/1W4FsrIZ7GXV3spnWWzPuHREOHcrxL63T/view",
+        "download_link": "https://drive.google.com/uc?export=download&id=1W4FsrIZ7GXV3spnWWzPuHREOHcrxL63T",
+        "drive_id": "1W4FsrIZ7GXV3spnWWzPuHREOHcrxL63T"
+      },
+      "Winter 2025": {
+        "exam": "Winter 2025",
+        "file_name": "AI & ML Algorithm - Winter 2025.pdf",
+        "view_link": "https://drive.google.com/file/d/1v-8MPEXCScCic6oeK2Wq9r7jnG7wSs3s/view",
+        "download_link": "https://drive.google.com/uc?export=download&id=1v-8MPEXCScCic6oeK2Wq9r7jnG7wSs3s",
+        "drive_id": "1v-8MPEXCScCic6oeK2Wq9r7jnG7wSs3s"
+      }
+    }
+  },
+  {
+    "code": "315329",
+    "title": "Natural Language Processing (315329) Model Answer Papers",
+    "subject_name": "Natural Language Processing",
+    "abbreviation": "NLP",
+    "semester": 5,
+    "academic_year": "Third Year (TY)",
+    "branches": [
+      "AN"
+    ],
+    "branches_str": "AI & Machine Learning",
+    "slug": "315329-natural-language-processing",
+    "url": "/model-answer/315329-natural-language-processing.html",
+    "image": "/resourse/msbte_subject_thumbnails/14_Natural_Language_Processing.png",
+    "papers": {
+      "Summer 2026": {
+        "exam": "Summer 2026",
+        "file_name": "Natural Language Processing - Summer 2026.pdf",
+        "view_link": "https://drive.google.com/file/d/1pviZiyDGft1OuY1wpQAX8O6hx-2kLrua/view",
+        "download_link": "https://drive.google.com/uc?export=download&id=1pviZiyDGft1OuY1wpQAX8O6hx-2kLrua",
+        "drive_id": "1pviZiyDGft1OuY1wpQAX8O6hx-2kLrua"
+      },
+      "Winter 2025": {
+        "exam": "Winter 2025",
+        "file_name": "Natural Language Processing - Winter 2025.pdf",
+        "view_link": "https://drive.google.com/file/d/1Fdk3tVc6xDmt96ucNWIlkpmNvoYtJ0zr/view",
+        "download_link": "https://drive.google.com/uc?export=download&id=1Fdk3tVc6xDmt96ucNWIlkpmNvoYtJ0zr",
+        "drive_id": "1Fdk3tVc6xDmt96ucNWIlkpmNvoYtJ0zr"
+      }
+    }
+  }
+]

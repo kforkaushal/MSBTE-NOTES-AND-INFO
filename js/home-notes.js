@@ -52,7 +52,7 @@ document.addEventListener('DOMContentLoaded', () => {
             } else if (currentFilter === 'papers') {
                 return itemCategory === 'question-bank';
             } else if (currentFilter === 'answers') {
-                return itemCategory === 'answer-sheet' || itemCategory === 'solution'; // flexible matching
+                return itemCategory === 'answer-sheet' || itemCategory === 'solution' || itemCategory === 'model-answer'; // flexible matching
             } else if (currentFilter === 'other') {
                 return itemCategory === 'micro-project' || itemCategory === 'lab-manual';
             }

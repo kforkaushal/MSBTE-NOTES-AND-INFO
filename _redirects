@@ -28,6 +28,10 @@
 
 # ------------------------------------------
 
+/Model-Answer/*    /model-answer/:splat    301!
+/model-answers/*   /model-answer/:splat    301!
+/model-answers     /model-answer/          301!
+
 # ------------------------------------------
 # PYQ Subject ID Aliases (e.g. /pyq/ai-bm)
 # ------------------------------------------
@@ -348,6 +352,8 @@
 
 # PYQ Uppercase and Rewrite Rules
 /pyq/:slug    /pyq/:slug.html    200
+
+/model-answer/:slug    /model-answer/:slug.html    200
 
 # 5. Proper 404 catch-all for unknown pages (MUST BE AT THE BOTTOM)
 # ------------------------------------------
