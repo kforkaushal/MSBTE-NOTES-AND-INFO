@@ -157,7 +157,7 @@
     <link rel="preconnect" href="https://api.fontshare.com">
 
     <!-- Fonts (Matches Main Index: Inter & Clash Display) -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link href="https://api.fontshare.com/v2/css?f[]=clash-display@600,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/style.css">
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
@@ -167,26 +167,28 @@
     <style>
         :root {
             --primary-gradient: linear-gradient(135deg, #2563eb 0%, #7c3aed 100%);
-            --glass-bg: rgba(255, 255, 255, 0.85);
-            --glass-border: rgba(229, 231, 235, 0.9);
-            --glass-shadow: 0 8px 30px rgba(0, 0, 0, 0.04);
+            --glass-bg: rgba(255, 255, 255, 0.88);
+            --glass-border: rgba(229, 231, 235, 0.95);
+            --glass-shadow: 0 10px 35px -5px rgba(0, 0, 0, 0.05);
         }
 
         body {
             background-color: #f8fafc;
-            background-image: radial-gradient(#e2e8f0 1px, transparent 1px);
+            background-image: radial-gradient(#e2e8f0 1.2px, transparent 1.2px);
             background-size: 24px 24px;
             font-family: 'Inter', sans-serif;
+            -webkit-font-smoothing: antialiased;
         }
 
         h1, h2, h3, h4, .font-display {
             font-family: 'Clash Display', sans-serif;
+            letter-spacing: -0.015em;
         }
 
         .glass-panel {
             background: var(--glass-bg);
-            backdrop-filter: blur(12px);
-            -webkit-backdrop-filter: blur(12px);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
             border: 1px solid var(--glass-border);
             box-shadow: var(--glass-shadow);
         }
@@ -194,13 +196,13 @@
         .search-glass {
             background: #ffffff;
             border: 1.5px solid #e2e8f0;
-            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.03), 0 2px 4px -1px rgba(0, 0, 0, 0.02);
-            transition: all 0.25s ease;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.02), 0 2px 4px -1px rgba(0, 0, 0, 0.02);
+            transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
         }
 
         .search-glass:focus-within {
-            border-color: #3b82f6;
-            box-shadow: 0 0 0 4px rgba(59, 130, 246, 0.12);
+            border-color: #2563eb;
+            box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.12), 0 10px 25px -5px rgba(37, 99, 235, 0.08);
         }
 
         .gradient-text {
@@ -215,7 +217,7 @@
             display: inline-flex;
             align-items: center;
             justify-content: center;
-            padding: 0.5rem 0.95rem;
+            padding: 0.5rem 1rem;
             min-height: 42px;
             border-radius: 9999px;
             font-size: 0.85rem;
@@ -238,23 +240,27 @@
             transform: translateY(-1px);
         }
 
+        .filter-chip:active {
+            transform: scale(0.97);
+        }
+
         .filter-chip.active {
             background: var(--primary-gradient);
             color: #ffffff;
             border-color: transparent;
-            box-shadow: 0 4px 12px rgba(37, 99, 235, 0.25);
+            box-shadow: 0 4px 12px rgba(37, 99, 235, 0.28);
             font-weight: 600;
         }
 
-        /* Interactive Folder Cards */
+        /* Tactile Interactive Folder Cards */
         .folder-card {
             background: #ffffff;
             border: 1px solid #e5e7eb;
-            border-radius: 1rem;
-            padding: 1rem 1.15rem;
+            border-radius: 1.1rem;
+            padding: 1.1rem 1.2rem;
             display: flex;
             align-items: center;
-            gap: 0.875rem;
+            gap: 0.9rem;
             transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
             cursor: pointer;
             position: relative;
@@ -265,13 +271,17 @@
         .folder-card:hover {
             border-color: #93c5fd;
             transform: translateY(-2px);
-            box-shadow: 0 10px 25px -5px rgba(59, 130, 246, 0.1);
+            box-shadow: 0 12px 28px -5px rgba(37, 99, 235, 0.1);
+        }
+
+        .folder-card:active {
+            transform: scale(0.98);
         }
 
         .folder-card.folder-active {
             border-color: #2563eb;
-            background-color: #eff6ff;
-            box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.25);
+            background: linear-gradient(135deg, #eff6ff 0%, #f5f3ff 100%);
+            box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.25), 0 8px 20px -4px rgba(37, 99, 235, 0.15);
         }
 
         .aspect-video {
@@ -336,7 +346,7 @@
             background: var(--primary-gradient);
             color: #ffffff;
             border-color: transparent;
-            box-shadow: 0 4px 10px rgba(37, 99, 235, 0.25);
+            box-shadow: 0 4px 12px rgba(37, 99, 235, 0.25);
         }
 
         .pagination-btn:disabled {
@@ -345,7 +355,7 @@
         }
 
         .note-card-enter {
-            animation: fade-up 0.4s ease-out forwards;
+            animation: fade-up 0.35s ease-out forwards;
             opacity: 0;
             transform: translateY(16px);
         }
@@ -355,6 +365,15 @@
                 opacity: 1;
                 transform: translateY(0);
             }
+        }
+
+        @keyframes scale-in {
+            0% { transform: scale(0); opacity: 0; }
+            100% { transform: scale(1); opacity: 1; }
+        }
+
+        .animate-scale-in {
+            animation: scale-in 0.2s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
         }
 
         @keyframes scroll-x {
@@ -459,9 +478,9 @@
     </nav>
 
     <!-- Main Content Container -->
-    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 md:py-14">
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 md:py-12">
 
-        <!-- Top Breadcrumbs Bar -->
+        <!-- Top Breadcrumbs Bar with Clickable Steps -->
         <nav aria-label="Breadcrumb" class="mb-6 flex items-center space-x-2 text-xs md:text-sm text-gray-500 overflow-x-auto whitespace-nowrap py-1">
             <a href="/" class="hover:text-blue-600 transition-colors flex items-center gap-1 font-medium">
                 <svg class="w-4 h-4 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -470,26 +489,52 @@
                 Home
             </a>
             <span class="text-gray-300">/</span>
-            <span class="text-gray-800 font-medium">Notes &amp; Study Library</span>
+            <button type="button" id="breadcrumb-root" class="hover:text-blue-600 font-semibold text-gray-800 focus:outline-none">
+                Study Library
+            </button>
             <span id="breadcrumb-branch-sep" class="text-gray-300 hidden">/</span>
-            <span id="breadcrumb-branch" class="text-blue-600 font-semibold hidden"></span>
+            <button type="button" id="breadcrumb-branch" class="text-blue-600 font-semibold hover:underline hidden focus:outline-none"></button>
             <span id="breadcrumb-sem-sep" class="text-gray-300 hidden">/</span>
             <span id="breadcrumb-sem" class="text-blue-600 font-semibold hidden"></span>
+            <span id="breadcrumb-type-sep" class="text-gray-300 hidden">/</span>
+            <span id="breadcrumb-type" class="text-indigo-600 font-semibold hidden"></span>
         </nav>
 
-        <!-- Hero Header -->
+        <!-- Elevated Hero Section with Value Stat Pills -->
         <header class="text-center mb-10 relative">
-            <div class="inline-flex items-center gap-2 py-1 px-3.5 rounded-full bg-blue-50 border border-blue-100 text-blue-700 text-xs font-semibold tracking-wide uppercase mb-4">
+            <div class="inline-flex items-center gap-2 py-1 px-4 rounded-full bg-blue-50 border border-blue-200/60 text-blue-700 text-xs font-semibold tracking-wide uppercase mb-4 shadow-sm">
                 <span class="w-2 h-2 rounded-full bg-blue-600 animate-pulse"></span>
                 MSBTE K-Scheme 2026 Master Study Portal
             </div>
-            <h1 class="text-3xl sm:text-4xl md:text-5xl font-bold font-display tracking-tight text-gray-900 mb-4 leading-tight">
+
+            <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold font-display tracking-tight text-gray-900 mb-4 leading-tight">
                 MSBTE Notes, PYQ Papers &amp;<br class="hidden sm:inline" />
                 <span class="gradient-text">Model Answer Directory</span>
             </h1>
-            <p class="max-w-3xl mx-auto text-base sm:text-lg text-gray-600 leading-relaxed">
-                Your unified repository for 470+ verified MSBTE K-Scheme materials: Unit Notes, Previous Year Question Papers (PYQ), Solved Model Answers, Question Banks, and Practical Manuals.
+
+            <p class="max-w-3xl mx-auto text-base sm:text-lg text-gray-600 leading-relaxed mb-6">
+                Your unified repository for 470+ verified MSBTE K-Scheme study materials: Unit Notes, Previous Year Question Papers (PYQ), Solved Model Answers, Question Banks, and Practical Manuals.
             </p>
+
+            <!-- KPI Value Stat Badges -->
+            <div class="flex flex-wrap items-center justify-center gap-2.5 sm:gap-4 text-xs font-semibold text-gray-700">
+                <div class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-white border border-gray-200/80 shadow-sm">
+                    <span class="w-2 h-2 rounded-full bg-blue-600"></span>
+                    <span>470+ Study Resources</span>
+                </div>
+                <div class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-white border border-rose-200/80 shadow-sm text-rose-700">
+                    <span class="w-2 h-2 rounded-full bg-rose-500"></span>
+                    <span>117 PYQ Papers</span>
+                </div>
+                <div class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-white border border-emerald-200/80 shadow-sm text-emerald-700">
+                    <span class="w-2 h-2 rounded-full bg-emerald-500"></span>
+                    <span>15 Model Answers</span>
+                </div>
+                <div class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-white border border-gray-200/80 shadow-sm">
+                    <span class="w-2 h-2 rounded-full bg-amber-500"></span>
+                    <span>100% Free Drive PDFs</span>
+                </div>
+            </div>
         </header>
 
         <!-- Search & Master Navigation Hub -->
@@ -507,20 +552,22 @@
                         placeholder="Search subjects (Operating System), codes (313301), PYQ, Model Answers..."
                         autocomplete="off">
                     <button type="button" id="search-clear-btn"
-                        class="hidden pr-4 text-gray-400 hover:text-gray-600 min-h-[44px] min-w-[44px] flex items-center justify-center"
+                        class="hidden pr-4 text-gray-400 hover:text-gray-600 min-h-[44px] min-w-[44px] flex items-center justify-center transition-colors"
                         aria-label="Clear search">
                         <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
                         </svg>
                     </button>
                     <div class="hidden md:flex pr-4 items-center pointer-events-none">
-                        <kbd class="px-2 py-1 text-xs font-semibold text-gray-400 bg-gray-100 border border-gray-200 rounded">Press /</kbd>
+                        <kbd class="inline-flex items-center gap-1 px-2.5 py-1 text-xs font-mono font-medium text-gray-500 bg-gray-100 border border-gray-200 rounded-md shadow-sm">
+                            <span>Press</span> <span class="text-blue-600 font-bold">/</span>
+                        </kbd>
                     </div>
                 </div>
 
                 <!-- Popular Search Quick Chips -->
                 <div class="mt-4 flex flex-wrap items-center gap-1.5 sm:gap-2">
-                    <span class="text-xs font-medium text-gray-500 mr-1 flex items-center gap-1">
+                    <span class="text-xs font-semibold text-gray-500 mr-1 flex items-center gap-1">
                         <svg class="w-3.5 h-3.5 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
                         </svg>
@@ -542,12 +589,14 @@
                 <div class="flex items-center justify-between mb-4">
                     <div>
                         <h2 class="text-xl md:text-2xl font-bold font-display text-gray-900 flex items-center gap-2">
-                            <svg class="w-6 h-6 text-rose-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"/>
-                            </svg>
-                            Study Material Folders
+                            <span class="p-1 rounded-lg bg-rose-50 text-rose-600">
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"/>
+                                </svg>
+                            </span>
+                            Browse by Material Type
                         </h2>
-                        <p class="text-xs md:text-sm text-gray-500">Tap a folder to browse PYQs, Model Answers, or Revision Notes.</p>
+                        <p class="text-xs md:text-sm text-gray-500">Tap a folder to open all PYQ papers, solved model answers, or revision notes.</p>
                     </div>
                 </div>
 
@@ -637,12 +686,14 @@
                 <div class="flex items-center justify-between mb-4">
                     <div>
                         <h2 class="text-xl md:text-2xl font-bold font-display text-gray-900 flex items-center gap-2">
-                            <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-6l-2-2H5a2 2 0 00-2 2z"/>
-                            </svg>
-                            Engineering Branch Folders
+                            <span class="p-1 rounded-lg bg-blue-50 text-blue-600">
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-6l-2-2H5a2 2 0 00-2 2z"/>
+                                </svg>
+                            </span>
+                            Browse by Engineering Branch
                         </h2>
-                        <p class="text-xs md:text-sm text-gray-500">Filter resources by your engineering branch.</p>
+                        <p class="text-xs md:text-sm text-gray-500">Filter study materials by your engineering department.</p>
                     </div>
                 </div>
 
@@ -778,7 +829,7 @@
             </div>
 
             <!-- SECTION 3: Drill-Down Filter Selector Matrix -->
-            <div class="bg-white rounded-2xl md:rounded-3xl p-5 md:p-6 border border-gray-200/80 shadow-sm space-y-5">
+            <div class="bg-white rounded-2xl md:rounded-3xl p-5 md:p-6 border border-gray-200/90 shadow-sm space-y-5">
                 <!-- Material Type Filter Row -->
                 <div>
                     <div class="text-xs font-bold uppercase tracking-wider text-gray-400 mb-2 flex items-center gap-1.5">
@@ -880,37 +931,40 @@
         </div>
 
         <!-- Active Filters Bar -->
-        <div id="active-filters-bar" class="hidden mb-6 p-3.5 bg-blue-50/60 rounded-xl border border-blue-100 flex flex-wrap items-center justify-between gap-3">
+        <div id="active-filters-bar" class="hidden mb-6 p-3.5 bg-blue-50/70 rounded-xl border border-blue-200/80 flex flex-wrap items-center justify-between gap-3 shadow-sm">
             <div class="flex flex-wrap items-center gap-2">
-                <span class="text-xs font-semibold text-blue-900">Active Filters:</span>
+                <span class="text-xs font-bold text-blue-950 flex items-center gap-1">
+                    <svg class="w-3.5 h-3.5 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 4a1 1 0 011-1h16a1 1 0 011 1v2.586a1 1 0 01-.293.707l-6.414 6.414a1 1 0 00-.293.707V17l-4 4v-6.586a1 1 0 00-.293-.707L3.293 7.293A1 1 0 013 6.586V4z"/></svg>
+                    Active Filters:
+                </span>
                 <div id="active-filters-list" class="flex flex-wrap gap-1.5"></div>
             </div>
-            <button type="button" id="clear-all-filters-btn" class="text-xs font-semibold text-blue-700 hover:text-blue-900 underline flex items-center gap-1">
-                Clear All Filters
+            <button type="button" id="clear-all-filters-btn" class="text-xs font-bold text-blue-700 hover:text-blue-900 underline flex items-center gap-1">
+                Clear All
             </button>
         </div>
-
-        <!-- Loading State Skeleton -->
-        <div id="notes-loading-state" class="hidden"></div>
 
         <!-- Resource Grid -->
         <div id="resource-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-7">
             <!-- Initial static cards rendered for instant display & crawler SEO -->
             <!-- Card 1: Model Answer -->
-            <article class="resource-card bg-white rounded-2xl shadow-sm border border-gray-200/80 overflow-hidden flex flex-col h-full">
+            <article class="resource-card bg-white rounded-2xl shadow-sm border border-gray-200/90 overflow-hidden flex flex-col h-full">
                 <a href="/model-answer/313301-data-structure-using-c.html" class="flex flex-col h-full group">
                     <div class="relative w-full aspect-video overflow-hidden bg-gray-50 border-b border-gray-100">
                         <img src="/resourse/msbte_subject_thumbnails/313301_Data_Structures_Using_C.png" alt="Data Structures Using C (313301) Model Answer Paper" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500" loading="lazy">
                     </div>
                     <div class="p-5 flex-grow flex flex-col">
                         <div class="flex flex-wrap items-center gap-1.5 mb-3">
-                            <span class="inline-flex items-center text-xs font-semibold px-2.5 py-0.5 rounded-full bg-emerald-50 text-emerald-700 border border-emerald-200">Model Answer</span>
+                            <span class="inline-flex items-center gap-1.5 text-xs font-semibold px-2.5 py-0.5 rounded-full bg-emerald-50 text-emerald-700 border border-emerald-200">
+                                <span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>
+                                Model Answer
+                            </span>
                             <span class="text-[11px] font-semibold px-2 py-0.5 rounded-md bg-blue-50 text-blue-700 border border-blue-100">Sem 3</span>
                             <span class="text-[11px] font-mono font-medium px-2 py-0.5 rounded-md bg-slate-100 text-slate-700">313301</span>
                             <span class="text-[11px] font-semibold px-2 py-0.5 rounded-md bg-gray-100 text-gray-700 border border-gray-200">CO • IF • AN</span>
                         </div>
-                        <h3 class="text-base md:text-lg font-bold text-gray-900 mb-2 leading-snug group-hover:text-blue-600 transition-colors line-clamp-2">Data Structures Using C (313301) Model Answer Papers</h3>
-                        <p class="text-xs md:text-sm text-gray-500 mb-4 line-clamp-3 leading-relaxed flex-grow">Download MSBTE K-Scheme 313301 Data Structures Using C official solved model answer papers with question-wise marking schemes.</p>
+                        <h3 class="text-base md:text-lg font-bold font-display text-gray-900 mb-2 leading-snug group-hover:text-blue-600 transition-colors line-clamp-2">Data Structures Using C (313301) Model Answer Papers</h3>
+                        <p class="text-xs md:text-sm text-gray-600 mb-4 line-clamp-3 leading-relaxed flex-grow">Download MSBTE K-Scheme 313301 Data Structures Using C official solved model answer papers with question-wise marking schemes.</p>
                         <div class="mt-auto pt-3 border-t border-gray-100 flex items-center justify-between">
                             <span class="text-xs text-gray-400 font-medium">Free Verified PDF</span>
                             <span class="inline-flex items-center gap-1 text-xs md:text-sm font-semibold text-blue-600 group-hover:translate-x-1 transition-transform">
@@ -922,24 +976,27 @@
             </article>
 
             <!-- Card 2: PYQ Paper -->
-            <article class="resource-card bg-white rounded-2xl shadow-sm border border-gray-200/80 overflow-hidden flex flex-col h-full">
+            <article class="resource-card bg-white rounded-2xl shadow-sm border border-gray-200/90 overflow-hidden flex flex-col h-full">
                 <a href="/pyq/314319-information-security.html" class="flex flex-col h-full group">
                     <div class="relative w-full aspect-video overflow-hidden bg-gray-50 border-b border-gray-100">
                         <img src="/resourse/note-thumbs/OSY_thumbnail.png" alt="Operating System (314319) Previous Year Question Papers" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500" loading="lazy">
                     </div>
                     <div class="p-5 flex-grow flex flex-col">
                         <div class="flex flex-wrap items-center gap-1.5 mb-3">
-                            <span class="inline-flex items-center text-xs font-semibold px-2.5 py-0.5 rounded-full bg-rose-50 text-rose-700 border border-rose-200">PYQ Paper</span>
+                            <span class="inline-flex items-center gap-1.5 text-xs font-semibold px-2.5 py-0.5 rounded-full bg-rose-50 text-rose-700 border border-rose-200">
+                                <span class="w-1.5 h-1.5 rounded-full bg-rose-500"></span>
+                                PYQ Paper
+                            </span>
                             <span class="text-[11px] font-semibold px-2 py-0.5 rounded-md bg-blue-50 text-blue-700 border border-blue-100">Sem 4</span>
                             <span class="text-[11px] font-mono font-medium px-2 py-0.5 rounded-md bg-slate-100 text-slate-700">314319</span>
                             <span class="text-[11px] font-semibold px-2 py-0.5 rounded-md bg-gray-100 text-gray-700 border border-gray-200">CO • IF</span>
                         </div>
-                        <h3 class="text-base md:text-lg font-bold text-gray-900 mb-2 leading-snug group-hover:text-blue-600 transition-colors line-clamp-2">Operating System (314319) Question Papers (PYQ)</h3>
-                        <p class="text-xs md:text-sm text-gray-500 mb-4 line-clamp-3 leading-relaxed flex-grow">Download free Summer and Winter MSBTE K-Scheme Operating System previous year question papers with direct Google Drive links.</p>
+                        <h3 class="text-base md:text-lg font-bold font-display text-gray-900 mb-2 leading-snug group-hover:text-blue-600 transition-colors line-clamp-2">Operating System (314319) Question Papers (PYQ)</h3>
+                        <p class="text-xs md:text-sm text-gray-600 mb-4 line-clamp-3 leading-relaxed flex-grow">Download free Summer and Winter MSBTE K-Scheme Operating System previous year question papers with direct Google Drive links.</p>
                         <div class="mt-auto pt-3 border-t border-gray-100 flex items-center justify-between">
                             <span class="text-xs text-gray-400 font-medium">Free Verified PDF</span>
                             <span class="inline-flex items-center gap-1 text-xs md:text-sm font-semibold text-blue-600 group-hover:translate-x-1 transition-transform">
-                                View Papers (Drive) &rarr;
+                                Download PYQ &rarr;
                             </span>
                         </div>
                     </div>
@@ -947,24 +1004,27 @@
             </article>
 
             <!-- Card 3: Notes -->
-            <article class="resource-card bg-white rounded-2xl shadow-sm border border-gray-200/80 overflow-hidden flex flex-col h-full">
+            <article class="resource-card bg-white rounded-2xl shadow-sm border border-gray-200/90 overflow-hidden flex flex-col h-full">
                 <a href="/notes/java-k-scheme-notes.html" class="flex flex-col h-full group">
                     <div class="relative w-full aspect-video overflow-hidden bg-gray-50 border-b border-gray-100">
                         <img src="/resourse/note-thumbs/JPR_thumbnail.png" alt="Java Programming (JPR) K Scheme Notes & Question Bank" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500" loading="lazy">
                     </div>
-                    <div class="p-5 flex-grow flex-col">
+                    <div class="p-5 flex-grow flex flex-col">
                         <div class="flex flex-wrap items-center gap-1.5 mb-3">
-                            <span class="inline-flex items-center text-xs font-semibold px-2.5 py-0.5 rounded-full bg-blue-50 text-blue-700 border border-blue-200">Notes</span>
+                            <span class="inline-flex items-center gap-1.5 text-xs font-semibold px-2.5 py-0.5 rounded-full bg-blue-50 text-blue-700 border border-blue-200">
+                                <span class="w-1.5 h-1.5 rounded-full bg-blue-500"></span>
+                                Notes
+                            </span>
                             <span class="text-[11px] font-semibold px-2 py-0.5 rounded-md bg-blue-50 text-blue-700 border border-blue-100">Sem 4</span>
                             <span class="text-[11px] font-mono font-medium px-2 py-0.5 rounded-md bg-slate-100 text-slate-700">314317</span>
                             <span class="text-[11px] font-semibold px-2 py-0.5 rounded-md bg-gray-100 text-gray-700 border border-gray-200">CO • IF</span>
                         </div>
-                        <h3 class="text-base md:text-lg font-bold text-gray-900 mb-2 leading-snug group-hover:text-blue-600 transition-colors line-clamp-2">Java Programming (JPR) K Scheme Notes &amp; Question Bank</h3>
-                        <p class="text-xs md:text-sm text-gray-500 mb-4 line-clamp-3 leading-relaxed flex-grow">Free download MSBTE K Scheme Java Programming (JPR - 314317) Unit 1-6 mega notes, Super 25 question bank, viva Q&amp;A, and practice test papers.</p>
+                        <h3 class="text-base md:text-lg font-bold font-display text-gray-900 mb-2 leading-snug group-hover:text-blue-600 transition-colors line-clamp-2">Java Programming (JPR) K Scheme Notes &amp; Question Bank</h3>
+                        <p class="text-xs md:text-sm text-gray-600 mb-4 line-clamp-3 leading-relaxed flex-grow">Free download MSBTE K Scheme Java Programming (JPR - 314317) Unit 1-6 mega notes, Super 25 question bank, viva Q&amp;A, and practice test papers.</p>
                         <div class="mt-auto pt-3 border-t border-gray-100 flex items-center justify-between">
                             <span class="text-xs text-gray-400 font-medium">Free Verified PDF</span>
                             <span class="inline-flex items-center gap-1 text-xs md:text-sm font-semibold text-blue-600 group-hover:translate-x-1 transition-transform">
-                                Open Study Material &rarr;
+                                Open Notes &rarr;
                             </span>
                         </div>
                     </div>
@@ -972,7 +1032,7 @@
             </article>
         </div>
 
-        <!-- No Results Empty State -->
+        <!-- No Results Empty State with Smart Suggestions -->
         <div id="no-results" class="hidden text-center py-16 px-4 bg-white rounded-2xl shadow-sm border border-gray-100 my-8">
             <div class="inline-flex items-center justify-center w-16 h-16 rounded-full bg-blue-50 mb-4 text-blue-600">
                 <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -984,7 +1044,7 @@
                 Try loosening your branch/semester filter or search with different keywords (e.g. subject name or 6-digit code).
             </p>
             <button type="button" onclick="document.getElementById('clear-all-filters-btn').click();"
-                class="px-5 py-2.5 bg-blue-600 hover:bg-blue-700 text-white rounded-xl text-sm font-semibold transition-colors shadow-sm min-h-[44px]">
+                class="px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white rounded-xl text-sm font-semibold transition-colors shadow-md min-h-[44px]">
                 Reset All Filters
             </button>
         </div>
@@ -1013,6 +1073,19 @@
         </noscript>
 
     </main>
+
+    <!-- Mobile Floating Action Pill Dock (visible only on mobile on scroll) -->
+    <div id="mobile-floating-bar" class="md:hidden fixed bottom-5 left-4 right-4 z-40 transform translate-y-24 opacity-0 transition-all duration-300 pointer-events-none">
+        <div class="pointer-events-auto bg-gray-900/95 text-white backdrop-blur-md px-4 py-3 rounded-2xl shadow-2xl flex items-center justify-between border border-white/10">
+            <div class="flex items-center gap-2">
+                <span class="w-2 h-2 rounded-full bg-emerald-400"></span>
+                <span id="mobile-floating-count" class="text-xs font-semibold text-gray-200">Study Materials</span>
+            </div>
+            <button type="button" id="mobile-floating-reset" class="px-3 py-1.5 bg-blue-600 text-white rounded-xl text-xs font-bold hover:bg-blue-500 transition shadow">
+                Reset Filters
+            </button>
+        </div>
+    </div>
 
     <!-- Ad Slot 2: Before Recommended Books -->
     <div class="max-w-4xl mx-auto my-12 px-4">
