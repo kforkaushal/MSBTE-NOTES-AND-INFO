@@ -712,10 +712,18 @@ def generate_subject_page(name, info, idx):
     <meta name="twitter:description" content="{meta_desc}">
     <meta name="twitter:image" content="https://msbtenotes-info.netlify.app{thumb_url}">
 
+    <!-- Preconnects -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://api.fontshare.com">
+
+    <!-- Fonts (Matches Main Index: Inter & Clash Display) -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+    <link href="https://api.fontshare.com/v2/css?f[]=clash-display@600,700&display=swap" rel="stylesheet">
+
     <!-- Styles -->
     <link rel="stylesheet" href="/style.css">
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-    <link href="https://api.fontshare.com/v2/css?f[]=clash-display@600,700&display=swap" rel="stylesheet">
 
     <!-- JSON-LD Structured Data: TechArticle -->
     <script type="application/ld+json">
@@ -1195,10 +1203,18 @@ def generate_hub_page(subjects_data):
     <meta name="twitter:description" content="Download official MSBTE K-Scheme model answer papers, summer &amp; winter solved solutions, and step-wise marking schemes for Computer, IT, and AI &amp; ML diploma courses.">
     <meta name="twitter:image" content="https://msbtenotes-info.netlify.app{INDEX_THUMB_URL}">
 
+    <!-- Preconnects -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://api.fontshare.com">
+
+    <!-- Fonts (Matches Main Index: Inter & Clash Display) -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+    <link href="https://api.fontshare.com/v2/css?f[]=clash-display@600,700&display=swap" rel="stylesheet">
+
     <!-- Styles -->
     <link rel="stylesheet" href="/style.css">
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-    <link href="https://api.fontshare.com/v2/css?f[]=clash-display@600,700&display=swap" rel="stylesheet">
 
     <!-- JSON-LD: CollectionPage -->
     <script type="application/ld+json">

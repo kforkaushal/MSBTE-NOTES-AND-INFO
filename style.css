@@ -1,8 +1,32 @@
 /* External CSS for all cards on the MSBTE Notes & Info site */
 
+/* ==========================================================================
+   Global Typography (Inter & Clash Display)
+   Matches the typography applied on the main index.html
+   ========================================================================== */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@500;600;700&display=swap');
+@import url('https://api.fontshare.com/v2/css?f[]=clash-display@500,600,700&display=swap');
+
+:root {
+  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --font-display: 'Clash Display', 'Inter', sans-serif;
+}
+
+/* Base Body & Text Typography (Matches main index.html) */
+html,
+body,
+input,
+textarea,
+select,
+button,
+.font-sans {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
 body {
   scroll-behavior: smooth;
-  font-family: 'Inter', sans-serif;
   scroll-padding-top: 5rem;
 }
 
@@ -12,14 +36,15 @@ html {
   /* prevents section from hiding under fixed navbar */
 }
 
-
+/* Headings & Display Elements (Matches main index.html) */
 h1,
 h2,
 h3,
 h4,
 h5,
-h6 {
-  font-family: 'Clash Display', sans-serif;
+h6,
+.font-display {
+  font-family: 'Clash Display', sans-serif !important;
   font-weight: 600;
 }
 
