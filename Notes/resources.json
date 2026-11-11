@@ -1,5 +1,35 @@
 [
   {
+    "title": "MSBTE Previous Year Question Papers (PYQ Hub - All Branches & Semesters)",
+    "description": "Download free MSBTE K-Scheme previous year question papers (PYQ) with direct Google Drive links for all semesters, branches and subjects.",
+    "url": "/pyq/",
+    "thumbnail": "/resourse/MSBTE%20NOTES%20AND%20INFORMATION.png",
+    "category": "pyq",
+    "tags": [
+      "PYQ",
+      "Question Papers",
+      "K-Scheme",
+      "All Branches",
+      "Google Drive",
+      "Previous Year"
+    ],
+    "dateAdded": "2026-11-10",
+    "code": "ALL",
+    "shortCode": "PYQ",
+    "semester": null,
+    "year": null,
+    "branches": [
+      "COMMON",
+      "CO",
+      "IF",
+      "AN",
+      "ME",
+      "CE",
+      "EE",
+      "EJ"
+    ]
+  },
+  {
     "title": "Operating System (OSY) K Scheme Notes & Question Bank",
     "description": "Free MSBTE K-Scheme 314319 – Operating System (OSY) unit-wise notes, important question bank, model answers, and complete revision roadmaps for 4th Semester.",
     "url": "/Notes/osy-k-scheme-notes.html",
@@ -7187,7 +7217,12 @@
     },
     "shortCode": "BMS",
     "year": 1,
-    "category": "notes"
+    "category": "pyq",
+    "tags": [
+      "PYQ",
+      "Question Paper",
+      "MSBTE PYQ"
+    ]
   },
   {
     "code": "311303",
@@ -7233,7 +7268,12 @@
     },
     "shortCode": "ENG",
     "year": 1,
-    "category": "notes"
+    "category": "pyq",
+    "tags": [
+      "PYQ",
+      "Question Paper",
+      "MSBTE PYQ"
+    ]
   },
   {
     "code": "312301",
@@ -7279,7 +7319,12 @@
     },
     "shortCode": "AMS",
     "year": 1,
-    "category": "notes"
+    "category": "pyq",
+    "tags": [
+      "PYQ",
+      "Question Paper",
+      "MSBTE PYQ"
+    ]
   },
   {
     "code": "312303",
@@ -7323,7 +7368,12 @@
     },
     "shortCode": "PIC",
     "year": 1,
-    "category": "notes"
+    "category": "pyq",
+    "tags": [
+      "PYQ",
+      "Question Paper",
+      "MSBTE PYQ"
+    ]
   },
   {
     "code": "312309",
@@ -7363,7 +7413,12 @@
     },
     "shortCode": "EOE",
     "year": 1,
-    "category": "notes"
+    "category": "pyq",
+    "tags": [
+      "PYQ",
+      "Question Paper",
+      "MSBTE PYQ"
+    ]
   },
   {
     "code": "312310",
@@ -7402,7 +7457,12 @@
     },
     "shortCode": "FEE",
     "year": 1,
-    "category": "notes"
+    "category": "pyq",
+    "tags": [
+      "PYQ",
+      "Question Paper",
+      "MSBTE PYQ"
+    ]
   },
   {
     "code": "312311",
@@ -7442,7 +7502,12 @@
     },
     "shortCode": "EDR",
     "year": 1,
-    "category": "notes"
+    "category": "pyq",
+    "tags": [
+      "PYQ",
+      "Question Paper",
+      "MSBTE PYQ"
+    ]
   },
   {
     "code": "312312",
@@ -7482,7 +7547,12 @@
     },
     "shortCode": "EME",
     "year": 1,
-    "category": "notes"
+    "category": "pyq",
+    "tags": [
+      "PYQ",
+      "Question Paper",
+      "MSBTE PYQ"
+    ]
   },
   {
     "code": "312313",
@@ -7521,7 +7591,12 @@
     },
     "shortCode": "MTR",
     "year": 1,
-    "category": "notes"
+    "category": "pyq",
+    "tags": [
+      "PYQ",
+      "Question Paper",
+      "MSBTE PYQ"
+    ]
   },
   {
     "code": "312314",
@@ -7561,7 +7636,12 @@
     },
     "shortCode": "BEL",
     "year": 1,
-    "category": "notes"
+    "category": "pyq",
+    "tags": [
+      "PYQ",
+      "Question Paper",
+      "MSBTE PYQ"
+    ]
   },
   {
     "code": "312315",
@@ -7600,7 +7680,12 @@
     },
     "shortCode": "EEE",
     "year": 1,
-    "category": "notes"
+    "category": "pyq",
+    "tags": [
+      "PYQ",
+      "Question Paper",
+      "MSBTE PYQ"
+    ]
   },
   {
     "code": "312338",
@@ -7639,7 +7724,12 @@
     },
     "shortCode": "BMC",
     "year": 1,
-    "category": "notes"
+    "category": "pyq",
+    "tags": [
+      "PYQ",
+      "Question Paper",
+      "MSBTE PYQ"
+    ]
   },
   {
     "code": "312339",
@@ -7678,7 +7768,12 @@
     },
     "shortCode": "SUR",
     "year": 1,
-    "category": "notes"
+    "category": "pyq",
+    "tags": [
+      "PYQ",
+      "Question Paper",
+      "MSBTE PYQ"
+    ]
   },
   {
     "code": "313301",
@@ -7719,7 +7814,12 @@
     },
     "shortCode": "DSU",
     "year": 2,
-    "category": "notes"
+    "category": "pyq",
+    "tags": [
+      "PYQ",
+      "Question Paper",
+      "MSBTE PYQ"
+    ]
   },
   {
     "code": "313302",
@@ -7760,7 +7860,12 @@
     },
     "shortCode": "DBMS",
     "year": 2,
-    "category": "notes"
+    "category": "pyq",
+    "tags": [
+      "PYQ",
+      "Question Paper",
+      "MSBTE PYQ"
+    ]
   },
   {
     "code": "313303",
@@ -7802,7 +7907,12 @@
     },
     "shortCode": "DTE",
     "year": 2,
-    "category": "notes"
+    "category": "pyq",
+    "tags": [
+      "PYQ",
+      "Question Paper",
+      "MSBTE PYQ"
+    ]
   },
   {
     "code": "313304",
@@ -7843,7 +7953,12 @@
     },
     "shortCode": "OOP",
     "year": 2,
-    "category": "notes"
+    "category": "pyq",
+    "tags": [
+      "PYQ",
+      "Question Paper",
+      "MSBTE PYQ"
+    ]
   },
   {
     "code": "313305",
@@ -7882,7 +7997,12 @@
     },
     "shortCode": "DTM",
     "year": 2,
-    "category": "notes"
+    "category": "pyq",
+    "tags": [
+      "PYQ",
+      "Question Paper",
+      "MSBTE PYQ"
+    ]
   },
   {
     "code": "313306",
@@ -7923,7 +8043,12 @@
     },
     "shortCode": "DSP",
     "year": 2,
-    "category": "notes"
+    "category": "pyq",
+    "tags": [
+      "PYQ",
+      "Question Paper",
+      "MSBTE PYQ"
+    ]
   },
   {
     "code": "313307",
@@ -7962,7 +8087,12 @@
     },
     "shortCode": "SML",
     "year": 2,
-    "category": "notes"
+    "category": "pyq",
+    "tags": [
+      "PYQ",
+      "Question Paper",
+      "MSBTE PYQ"
+    ]
   },
   {
     "code": "313308",
@@ -8002,7 +8132,12 @@
     },
     "shortCode": "SOM",
     "year": 2,
-    "category": "notes"
+    "category": "pyq",
+    "tags": [
+      "PYQ",
+      "Question Paper",
+      "MSBTE PYQ"
+    ]
   },
   {
     "code": "313309",
@@ -8041,7 +8176,12 @@
     },
     "shortCode": "FMM",
     "year": 2,
-    "category": "notes"
+    "category": "pyq",
+    "tags": [
+      "PYQ",
+      "Question Paper",
+      "MSBTE PYQ"
+    ]
   },
   {
     "code": "313310",
@@ -8080,7 +8220,12 @@
     },
     "shortCode": "TEN",
     "year": 2,
-    "category": "notes"
+    "category": "pyq",
+    "tags": [
+      "PYQ",
+      "Question Paper",
+      "MSBTE PYQ"
+    ]
   },
   {
     "code": "313311",
@@ -8119,7 +8264,12 @@
     },
     "shortCode": "PDR",
     "year": 2,
-    "category": "notes"
+    "category": "pyq",
+    "tags": [
+      "PYQ",
+      "Question Paper",
+      "MSBTE PYQ"
+    ]
   },
   {
     "code": "313313",
@@ -8158,7 +8308,12 @@
     },
     "shortCode": "TOM",
     "year": 2,
-    "category": "notes"
+    "category": "pyq",
+    "tags": [
+      "PYQ",
+      "Question Paper",
+      "MSBTE PYQ"
+    ]
   },
   {
     "code": "313316",
@@ -8197,7 +8352,12 @@
     },
     "shortCode": "M&M",
     "year": 2,
-    "category": "notes"
+    "category": "pyq",
+    "tags": [
+      "PYQ",
+      "Question Paper",
+      "MSBTE PYQ"
+    ]
   },
   {
     "code": "313321",
@@ -8236,7 +8396,12 @@
     },
     "shortCode": "ASU",
     "year": 2,
-    "category": "notes"
+    "category": "pyq",
+    "tags": [
+      "PYQ",
+      "Question Paper",
+      "MSBTE PYQ"
+    ]
   },
   {
     "code": "313322",
@@ -8275,7 +8440,12 @@
     },
     "shortCode": "CTE",
     "year": 2,
-    "category": "notes"
+    "category": "pyq",
+    "tags": [
+      "PYQ",
+      "Question Paper",
+      "MSBTE PYQ"
+    ]
   },
   {
     "code": "313323",
@@ -8314,7 +8484,12 @@
     },
     "shortCode": "HEN",
     "year": 2,
-    "category": "notes"
+    "category": "pyq",
+    "tags": [
+      "PYQ",
+      "Question Paper",
+      "MSBTE PYQ"
+    ]
   },
   {
     "code": "313324",
@@ -8353,7 +8528,12 @@
     },
     "shortCode": "AEN",
     "year": 2,
-    "category": "notes"
+    "category": "pyq",
+    "tags": [
+      "PYQ",
+      "Question Paper",
+      "MSBTE PYQ"
+    ]
   },
   {
     "code": "313325",
@@ -8393,7 +8573,12 @@
     },
     "shortCode": "CKN",
     "year": 2,
-    "category": "notes"
+    "category": "pyq",
+    "tags": [
+      "PYQ",
+      "Question Paper",
+      "MSBTE PYQ"
+    ]
   },
   {
     "code": "313326",
@@ -8432,7 +8617,12 @@
     },
     "shortCode": "PEC",
     "year": 2,
-    "category": "notes"
+    "category": "pyq",
+    "tags": [
+      "PYQ",
+      "Question Paper",
+      "MSBTE PYQ"
+    ]
   },
   {
     "code": "313332",
@@ -8471,7 +8661,12 @@
     },
     "shortCode": "ECN",
     "year": 2,
-    "category": "notes"
+    "category": "pyq",
+    "tags": [
+      "PYQ",
+      "Question Paper",
+      "MSBTE PYQ"
+    ]
   },
   {
     "code": "313333",
@@ -8510,7 +8705,12 @@
     },
     "shortCode": "EPG",
     "year": 2,
-    "category": "notes"
+    "category": "pyq",
+    "tags": [
+      "PYQ",
+      "Question Paper",
+      "MSBTE PYQ"
+    ]
   },
   {
     "code": "313334",
@@ -8549,7 +8749,12 @@
     },
     "shortCode": "EEM",
     "year": 2,
-    "category": "notes"
+    "category": "pyq",
+    "tags": [
+      "PYQ",
+      "Question Paper",
+      "MSBTE PYQ"
+    ]
   },
   {
     "code": "313335",
@@ -8589,7 +8794,12 @@
     },
     "shortCode": "FPE",
     "year": 2,
-    "category": "notes"
+    "category": "pyq",
+    "tags": [
+      "PYQ",
+      "Question Paper",
+      "MSBTE PYQ"
+    ]
   },
   {
     "code": "314303",
@@ -8628,7 +8838,12 @@
     },
     "shortCode": "HYD",
     "year": 2,
-    "category": "notes"
+    "category": "pyq",
+    "tags": [
+      "PYQ",
+      "Question Paper",
+      "MSBTE PYQ"
+    ]
   },
   {
     "code": "314312",
@@ -8667,7 +8882,12 @@
     },
     "shortCode": "RBT",
     "year": 2,
-    "category": "notes"
+    "category": "pyq",
+    "tags": [
+      "PYQ",
+      "Question Paper",
+      "MSBTE PYQ"
+    ]
   },
   {
     "code": "314313",
@@ -8706,7 +8926,12 @@
     },
     "shortCode": "ECV",
     "year": 2,
-    "category": "notes"
+    "category": "pyq",
+    "tags": [
+      "PYQ",
+      "Question Paper",
+      "MSBTE PYQ"
+    ]
   },
   {
     "code": "314314",
@@ -8745,7 +8970,12 @@
     },
     "shortCode": "WWE",
     "year": 2,
-    "category": "notes"
+    "category": "pyq",
+    "tags": [
+      "PYQ",
+      "Question Paper",
+      "MSBTE PYQ"
+    ]
   },
   {
     "code": "314315",
@@ -8784,7 +9014,12 @@
     },
     "shortCode": "GTE",
     "year": 2,
-    "category": "notes"
+    "category": "pyq",
+    "tags": [
+      "PYQ",
+      "Question Paper",
+      "MSBTE PYQ"
+    ]
   },
   {
     "code": "314317",
@@ -8825,7 +9060,12 @@
     },
     "shortCode": "JPR",
     "year": 2,
-    "category": "notes"
+    "category": "pyq",
+    "tags": [
+      "PYQ",
+      "Question Paper",
+      "MSBTE PYQ"
+    ]
   },
   {
     "code": "314318",
@@ -8865,7 +9105,12 @@
     },
     "shortCode": "DCN",
     "year": 2,
-    "category": "notes"
+    "category": "pyq",
+    "tags": [
+      "PYQ",
+      "Question Paper",
+      "MSBTE PYQ"
+    ]
   },
   {
     "code": "314319",
@@ -8906,7 +9151,12 @@
     },
     "shortCode": "OSY",
     "year": 2,
-    "category": "notes"
+    "category": "pyq",
+    "tags": [
+      "PYQ",
+      "Question Paper",
+      "MSBTE PYQ"
+    ]
   },
   {
     "code": "314320",
@@ -8945,7 +9195,12 @@
     },
     "shortCode": "MML",
     "year": 2,
-    "category": "notes"
+    "category": "pyq",
+    "tags": [
+      "PYQ",
+      "Question Paper",
+      "MSBTE PYQ"
+    ]
   },
   {
     "code": "314321",
@@ -8985,7 +9240,12 @@
     },
     "shortCode": "MIC",
     "year": 2,
-    "category": "notes"
+    "category": "pyq",
+    "tags": [
+      "PYQ",
+      "Question Paper",
+      "MSBTE PYQ"
+    ]
   },
   {
     "code": "314322",
@@ -9024,7 +9284,12 @@
     },
     "shortCode": "DMT",
     "year": 2,
-    "category": "notes"
+    "category": "pyq",
+    "tags": [
+      "PYQ",
+      "Question Paper",
+      "MSBTE PYQ"
+    ]
   },
   {
     "code": "314323",
@@ -9063,7 +9328,12 @@
     },
     "shortCode": "UEE",
     "year": 2,
-    "category": "notes"
+    "category": "pyq",
+    "tags": [
+      "PYQ",
+      "Question Paper",
+      "MSBTE PYQ"
+    ]
   },
   {
     "code": "314324",
@@ -9103,7 +9373,12 @@
     },
     "shortCode": "DEM",
     "year": 2,
-    "category": "notes"
+    "category": "pyq",
+    "tags": [
+      "PYQ",
+      "Question Paper",
+      "MSBTE PYQ"
+    ]
   },
   {
     "code": "314325",
@@ -9142,7 +9417,12 @@
     },
     "shortCode": "EEC",
     "year": 2,
-    "category": "notes"
+    "category": "pyq",
+    "tags": [
+      "PYQ",
+      "Question Paper",
+      "MSBTE PYQ"
+    ]
   },
   {
     "code": "314326",
@@ -9181,7 +9461,12 @@
     },
     "shortCode": "DCS",
     "year": 2,
-    "category": "notes"
+    "category": "pyq",
+    "tags": [
+      "PYQ",
+      "Question Paper",
+      "MSBTE PYQ"
+    ]
   },
   {
     "code": "314327",
@@ -9220,7 +9505,12 @@
     },
     "shortCode": "CES",
     "year": 2,
-    "category": "notes"
+    "category": "pyq",
+    "tags": [
+      "PYQ",
+      "Question Paper",
+      "MSBTE PYQ"
+    ]
   },
   {
     "code": "314328",
@@ -9259,7 +9549,12 @@
     },
     "shortCode": "MAP",
     "year": 2,
-    "category": "notes"
+    "category": "pyq",
+    "tags": [
+      "PYQ",
+      "Question Paper",
+      "MSBTE PYQ"
+    ]
   },
   {
     "code": "314340",
@@ -9298,7 +9593,12 @@
     },
     "shortCode": "PPR",
     "year": 2,
-    "category": "notes"
+    "category": "pyq",
+    "tags": [
+      "PYQ",
+      "Question Paper",
+      "MSBTE PYQ"
+    ]
   },
   {
     "code": "314363",
@@ -9338,7 +9638,12 @@
     },
     "shortCode": "BPE",
     "year": 2,
-    "category": "notes"
+    "category": "pyq",
+    "tags": [
+      "PYQ",
+      "Question Paper",
+      "MSBTE PYQ"
+    ]
   },
   {
     "code": "315313",
@@ -9377,7 +9682,12 @@
     },
     "shortCode": "TOS",
     "year": 3,
-    "category": "notes"
+    "category": "pyq",
+    "tags": [
+      "PYQ",
+      "Question Paper",
+      "MSBTE PYQ"
+    ]
   },
   {
     "code": "315314",
@@ -9416,7 +9726,12 @@
     },
     "shortCode": "WRE",
     "year": 3,
-    "category": "notes"
+    "category": "pyq",
+    "tags": [
+      "PYQ",
+      "Question Paper",
+      "MSBTE PYQ"
+    ]
   },
   {
     "code": "315316",
@@ -9455,7 +9770,12 @@
     },
     "shortCode": "ECG",
     "year": 3,
-    "category": "notes"
+    "category": "pyq",
+    "tags": [
+      "PYQ",
+      "Question Paper",
+      "MSBTE PYQ"
+    ]
   },
   {
     "code": "315317",
@@ -9494,7 +9814,12 @@
     },
     "shortCode": "PPC",
     "year": 3,
-    "category": "notes"
+    "category": "pyq",
+    "tags": [
+      "PYQ",
+      "Question Paper",
+      "MSBTE PYQ"
+    ]
   },
   {
     "code": "315318",
@@ -9533,7 +9858,12 @@
     },
     "shortCode": "RTE",
     "year": 3,
-    "category": "notes"
+    "category": "pyq",
+    "tags": [
+      "PYQ",
+      "Question Paper",
+      "MSBTE PYQ"
+    ]
   },
   {
     "code": "315319",
@@ -9574,7 +9904,12 @@
     },
     "shortCode": "OS",
     "year": 3,
-    "category": "notes"
+    "category": "pyq",
+    "tags": [
+      "PYQ",
+      "Question Paper",
+      "MSBTE PYQ"
+    ]
   },
   {
     "code": "315321",
@@ -9614,7 +9949,12 @@
     },
     "shortCode": "ACN",
     "year": 3,
-    "category": "notes"
+    "category": "pyq",
+    "tags": [
+      "PYQ",
+      "Question Paper",
+      "MSBTE PYQ"
+    ]
   },
   {
     "code": "315323",
@@ -9653,7 +9993,12 @@
     },
     "shortCode": "SEN",
     "year": 3,
-    "category": "notes"
+    "category": "pyq",
+    "tags": [
+      "PYQ",
+      "Question Paper",
+      "MSBTE PYQ"
+    ]
   },
   {
     "code": "315324",
@@ -9693,7 +10038,12 @@
     },
     "shortCode": "ADM",
     "year": 3,
-    "category": "notes"
+    "category": "pyq",
+    "tags": [
+      "PYQ",
+      "Question Paper",
+      "MSBTE PYQ"
+    ]
   },
   {
     "code": "315325",
@@ -9732,7 +10082,12 @@
     },
     "shortCode": "CLC",
     "year": 3,
-    "category": "notes"
+    "category": "pyq",
+    "tags": [
+      "PYQ",
+      "Question Paper",
+      "MSBTE PYQ"
+    ]
   },
   {
     "code": "315326",
@@ -9772,7 +10127,12 @@
     },
     "shortCode": "DAN",
     "year": 3,
-    "category": "notes"
+    "category": "pyq",
+    "tags": [
+      "PYQ",
+      "Question Paper",
+      "MSBTE PYQ"
+    ]
   },
   {
     "code": "315327",
@@ -9811,7 +10171,12 @@
     },
     "shortCode": "CCD",
     "year": 3,
-    "category": "notes"
+    "category": "pyq",
+    "tags": [
+      "PYQ",
+      "Question Paper",
+      "MSBTE PYQ"
+    ]
   },
   {
     "code": "315329",
@@ -9850,7 +10215,12 @@
     },
     "shortCode": "NLP",
     "year": 3,
-    "category": "notes"
+    "category": "pyq",
+    "tags": [
+      "PYQ",
+      "Question Paper",
+      "MSBTE PYQ"
+    ]
   },
   {
     "code": "315330",
@@ -9889,7 +10259,12 @@
     },
     "shortCode": "AML",
     "year": 3,
-    "category": "notes"
+    "category": "pyq",
+    "tags": [
+      "PYQ",
+      "Question Paper",
+      "MSBTE PYQ"
+    ]
   },
   {
     "code": "315332",
@@ -9928,7 +10303,12 @@
     },
     "shortCode": "SET",
     "year": 3,
-    "category": "notes"
+    "category": "pyq",
+    "tags": [
+      "PYQ",
+      "Question Paper",
+      "MSBTE PYQ"
+    ]
   },
   {
     "code": "315333",
@@ -9967,7 +10347,12 @@
     },
     "shortCode": "AMP",
     "year": 3,
-    "category": "notes"
+    "category": "pyq",
+    "tags": [
+      "PYQ",
+      "Question Paper",
+      "MSBTE PYQ"
+    ]
   },
   {
     "code": "315334",
@@ -10006,7 +10391,12 @@
     },
     "shortCode": "SAP",
     "year": 3,
-    "category": "notes"
+    "category": "pyq",
+    "tags": [
+      "PYQ",
+      "Question Paper",
+      "MSBTE PYQ"
+    ]
   },
   {
     "code": "315335",
@@ -10045,7 +10435,12 @@
     },
     "shortCode": "EVT",
     "year": 3,
-    "category": "notes"
+    "category": "pyq",
+    "tags": [
+      "PYQ",
+      "Question Paper",
+      "MSBTE PYQ"
+    ]
   },
   {
     "code": "315336",
@@ -10084,7 +10479,12 @@
     },
     "shortCode": "PSO",
     "year": 3,
-    "category": "notes"
+    "category": "pyq",
+    "tags": [
+      "PYQ",
+      "Question Paper",
+      "MSBTE PYQ"
+    ]
   },
   {
     "code": "315337",
@@ -10123,7 +10523,12 @@
     },
     "shortCode": "RET",
     "year": 3,
-    "category": "notes"
+    "category": "pyq",
+    "tags": [
+      "PYQ",
+      "Question Paper",
+      "MSBTE PYQ"
+    ]
   },
   {
     "code": "315338",
@@ -10162,7 +10567,12 @@
     },
     "shortCode": "EMS",
     "year": 3,
-    "category": "notes"
+    "category": "pyq",
+    "tags": [
+      "PYQ",
+      "Question Paper",
+      "MSBTE PYQ"
+    ]
   },
   {
     "code": "315339",
@@ -10201,7 +10611,12 @@
     },
     "shortCode": "MWC",
     "year": 3,
-    "category": "notes"
+    "category": "pyq",
+    "tags": [
+      "PYQ",
+      "Question Paper",
+      "MSBTE PYQ"
+    ]
   },
   {
     "code": "315340",
@@ -10241,7 +10656,12 @@
     },
     "shortCode": "APE",
     "year": 3,
-    "category": "notes"
+    "category": "pyq",
+    "tags": [
+      "PYQ",
+      "Question Paper",
+      "MSBTE PYQ"
+    ]
   },
   {
     "code": "315341",
@@ -10282,7 +10702,12 @@
     },
     "shortCode": "ITA",
     "year": 3,
-    "category": "notes"
+    "category": "pyq",
+    "tags": [
+      "PYQ",
+      "Question Paper",
+      "MSBTE PYQ"
+    ]
   },
   {
     "code": "315342",
@@ -10321,7 +10746,12 @@
     },
     "shortCode": "MRS",
     "year": 3,
-    "category": "notes"
+    "category": "pyq",
+    "tags": [
+      "PYQ",
+      "Question Paper",
+      "MSBTE PYQ"
+    ]
   },
   {
     "code": "315367",
@@ -10360,7 +10790,12 @@
     },
     "shortCode": "PDD",
     "year": 3,
-    "category": "notes"
+    "category": "pyq",
+    "tags": [
+      "PYQ",
+      "Question Paper",
+      "MSBTE PYQ"
+    ]
   },
   {
     "code": "315371",
@@ -10399,7 +10834,12 @@
     },
     "shortCode": "PEN",
     "year": 3,
-    "category": "notes"
+    "category": "pyq",
+    "tags": [
+      "PYQ",
+      "Question Paper",
+      "MSBTE PYQ"
+    ]
   },
   {
     "code": "315372",
@@ -10438,7 +10878,12 @@
     },
     "shortCode": "AEN",
     "year": 3,
-    "category": "notes"
+    "category": "pyq",
+    "tags": [
+      "PYQ",
+      "Question Paper",
+      "MSBTE PYQ"
+    ]
   },
   {
     "code": "315373",
@@ -10477,7 +10922,12 @@
     },
     "shortCode": "HVA",
     "year": 3,
-    "category": "notes"
+    "category": "pyq",
+    "tags": [
+      "PYQ",
+      "Question Paper",
+      "MSBTE PYQ"
+    ]
   },
   {
     "code": "315374",
@@ -10516,7 +10966,12 @@
     },
     "shortCode": "PPE",
     "year": 3,
-    "category": "notes"
+    "category": "pyq",
+    "tags": [
+      "PYQ",
+      "Question Paper",
+      "MSBTE PYQ"
+    ]
   },
   {
     "code": "316307",
@@ -10546,7 +11001,12 @@
     },
     "shortCode": "CAB",
     "year": 3,
-    "category": "notes"
+    "category": "pyq",
+    "tags": [
+      "PYQ",
+      "Question Paper",
+      "MSBTE PYQ"
+    ]
   },
   {
     "code": "316308",
@@ -10576,7 +11036,12 @@
     },
     "shortCode": "DRS",
     "year": 3,
-    "category": "notes"
+    "category": "pyq",
+    "tags": [
+      "PYQ",
+      "Question Paper",
+      "MSBTE PYQ"
+    ]
   },
   {
     "code": "316309",
@@ -10606,7 +11071,12 @@
     },
     "shortCode": "MRS",
     "year": 3,
-    "category": "notes"
+    "category": "pyq",
+    "tags": [
+      "PYQ",
+      "Question Paper",
+      "MSBTE PYQ"
+    ]
   },
   {
     "code": "316310",
@@ -10636,7 +11106,12 @@
     },
     "shortCode": "BSE",
     "year": 3,
-    "category": "notes"
+    "category": "pyq",
+    "tags": [
+      "PYQ",
+      "Question Paper",
+      "MSBTE PYQ"
+    ]
   },
   {
     "code": "316312",
@@ -10666,7 +11141,12 @@
     },
     "shortCode": "SWM",
     "year": 3,
-    "category": "notes"
+    "category": "pyq",
+    "tags": [
+      "PYQ",
+      "Question Paper",
+      "MSBTE PYQ"
+    ]
   },
   {
     "code": "316314",
@@ -10697,7 +11177,12 @@
     },
     "shortCode": "STE",
     "year": 3,
-    "category": "notes"
+    "category": "pyq",
+    "tags": [
+      "PYQ",
+      "Question Paper",
+      "MSBTE PYQ"
+    ]
   },
   {
     "code": "316315",
@@ -10728,7 +11213,12 @@
     },
     "shortCode": "DFH",
     "year": 3,
-    "category": "notes"
+    "category": "pyq",
+    "tags": [
+      "PYQ",
+      "Question Paper",
+      "MSBTE PYQ"
+    ]
   },
   {
     "code": "316316",
@@ -10760,7 +11250,12 @@
     },
     "shortCode": "ML",
     "year": 3,
-    "category": "notes"
+    "category": "pyq",
+    "tags": [
+      "PYQ",
+      "Question Paper",
+      "MSBTE PYQ"
+    ]
   },
   {
     "code": "316317",
@@ -10791,7 +11286,12 @@
     },
     "shortCode": "NIS",
     "year": 3,
-    "category": "notes"
+    "category": "pyq",
+    "tags": [
+      "PYQ",
+      "Question Paper",
+      "MSBTE PYQ"
+    ]
   },
   {
     "code": "316318",
@@ -10823,7 +11323,12 @@
     },
     "shortCode": "BDA",
     "year": 3,
-    "category": "notes"
+    "category": "pyq",
+    "tags": [
+      "PYQ",
+      "Question Paper",
+      "MSBTE PYQ"
+    ]
   },
   {
     "code": "316319",
@@ -10854,7 +11359,12 @@
     },
     "shortCode": "PIP",
     "year": 3,
-    "category": "notes"
+    "category": "pyq",
+    "tags": [
+      "PYQ",
+      "Question Paper",
+      "MSBTE PYQ"
+    ]
   },
   {
     "code": "316320",
@@ -10884,7 +11394,12 @@
     },
     "shortCode": "AAI",
     "year": 3,
-    "category": "notes"
+    "category": "pyq",
+    "tags": [
+      "PYQ",
+      "Question Paper",
+      "MSBTE PYQ"
+    ]
   },
   {
     "code": "316321",
@@ -10916,7 +11431,12 @@
     },
     "shortCode": "DWM",
     "year": 3,
-    "category": "notes"
+    "category": "pyq",
+    "tags": [
+      "PYQ",
+      "Question Paper",
+      "MSBTE PYQ"
+    ]
   },
   {
     "code": "316323",
@@ -10946,7 +11466,12 @@
     },
     "shortCode": "RL",
     "year": 3,
-    "category": "notes"
+    "category": "pyq",
+    "tags": [
+      "PYQ",
+      "Question Paper",
+      "MSBTE PYQ"
+    ]
   },
   {
     "code": "316325",
@@ -10976,7 +11501,12 @@
     },
     "shortCode": "WMN",
     "year": 3,
-    "category": "notes"
+    "category": "pyq",
+    "tags": [
+      "PYQ",
+      "Question Paper",
+      "MSBTE PYQ"
+    ]
   },
   {
     "code": "316327",
@@ -11006,7 +11536,12 @@
     },
     "shortCode": "ECA",
     "year": 3,
-    "category": "notes"
+    "category": "pyq",
+    "tags": [
+      "PYQ",
+      "Question Paper",
+      "MSBTE PYQ"
+    ]
   },
   {
     "code": "316328",
@@ -11036,7 +11571,12 @@
     },
     "shortCode": "MEE",
     "year": 3,
-    "category": "notes"
+    "category": "pyq",
+    "tags": [
+      "PYQ",
+      "Question Paper",
+      "MSBTE PYQ"
+    ]
   },
   {
     "code": "316329",
@@ -11066,7 +11606,12 @@
     },
     "shortCode": "IAU",
     "year": 3,
-    "category": "notes"
+    "category": "pyq",
+    "tags": [
+      "PYQ",
+      "Question Paper",
+      "MSBTE PYQ"
+    ]
   },
   {
     "code": "316330",
@@ -11096,7 +11641,12 @@
     },
     "shortCode": "IDC",
     "year": 3,
-    "category": "notes"
+    "category": "pyq",
+    "tags": [
+      "PYQ",
+      "Question Paper",
+      "MSBTE PYQ"
+    ]
   },
   {
     "code": "316331",
@@ -11126,7 +11676,12 @@
     },
     "shortCode": "PSA",
     "year": 3,
-    "category": "notes"
+    "category": "pyq",
+    "tags": [
+      "PYQ",
+      "Question Paper",
+      "MSBTE PYQ"
+    ]
   },
   {
     "code": "316332",
@@ -11156,7 +11711,12 @@
     },
     "shortCode": "ONS",
     "year": 3,
-    "category": "notes"
+    "category": "pyq",
+    "tags": [
+      "PYQ",
+      "Question Paper",
+      "MSBTE PYQ"
+    ]
   },
   {
     "code": "316334",
@@ -11187,7 +11747,12 @@
     },
     "shortCode": "PLC",
     "year": 3,
-    "category": "notes"
+    "category": "pyq",
+    "tags": [
+      "PYQ",
+      "Question Paper",
+      "MSBTE PYQ"
+    ]
   },
   {
     "code": "316335",
@@ -11218,7 +11783,12 @@
     },
     "shortCode": "DRT",
     "year": 3,
-    "category": "notes"
+    "category": "pyq",
+    "tags": [
+      "PYQ",
+      "Question Paper",
+      "MSBTE PYQ"
+    ]
   },
   {
     "code": "316338",
@@ -11248,7 +11818,12 @@
     },
     "shortCode": "NDC",
     "year": 3,
-    "category": "notes"
+    "category": "pyq",
+    "tags": [
+      "PYQ",
+      "Question Paper",
+      "MSBTE PYQ"
+    ]
   },
   {
     "code": "316340",
@@ -11278,7 +11853,12 @@
     },
     "shortCode": "VLS",
     "year": 3,
-    "category": "notes"
+    "category": "pyq",
+    "tags": [
+      "PYQ",
+      "Question Paper",
+      "MSBTE PYQ"
+    ]
   },
   {
     "code": "316357",
@@ -11308,7 +11888,12 @@
     },
     "shortCode": "DME",
     "year": 3,
-    "category": "notes"
+    "category": "pyq",
+    "tags": [
+      "PYQ",
+      "Question Paper",
+      "MSBTE PYQ"
+    ]
   },
   {
     "code": "316359",
@@ -11338,7 +11923,12 @@
     },
     "shortCode": "CIM",
     "year": 3,
-    "category": "notes"
+    "category": "pyq",
+    "tags": [
+      "PYQ",
+      "Question Paper",
+      "MSBTE PYQ"
+    ]
   },
   {
     "code": "316362",
@@ -11368,7 +11958,12 @@
     },
     "shortCode": "IEQ",
     "year": 3,
-    "category": "notes"
+    "category": "pyq",
+    "tags": [
+      "PYQ",
+      "Question Paper",
+      "MSBTE PYQ"
+    ]
   },
   {
     "code": "316363",
@@ -11398,7 +11993,12 @@
     },
     "shortCode": "IHP",
     "year": 3,
-    "category": "notes"
+    "category": "pyq",
+    "tags": [
+      "PYQ",
+      "Question Paper",
+      "MSBTE PYQ"
+    ]
   },
   {
     "code": "316364",
@@ -11429,7 +12029,12 @@
     },
     "shortCode": "AES",
     "year": 3,
-    "category": "notes"
+    "category": "pyq",
+    "tags": [
+      "PYQ",
+      "Question Paper",
+      "MSBTE PYQ"
+    ]
   },
   {
     "code": "316365",
@@ -11459,7 +12064,12 @@
     },
     "shortCode": "CCM",
     "year": 3,
-    "category": "notes"
+    "category": "pyq",
+    "tags": [
+      "PYQ",
+      "Question Paper",
+      "MSBTE PYQ"
+    ]
   },
   {
     "title": "MSBTE Model Answer Papers K-Scheme (All Subjects & Solved Solutions)",
@@ -11475,7 +12085,8 @@
       "Marking Scheme",
       "CO",
       "IF",
-      "AN"
+      "AN",
+      "Solved Paper"
     ],
     "code": "ALL",
     "abbreviation": "MAP",
@@ -11512,7 +12123,9 @@
       "K-Scheme",
       "CO",
       "IF",
-      "AN"
+      "AN",
+      "Solved Paper",
+      "Marking Scheme"
     ],
     "code": "313301",
     "abbreviation": "DSU",
@@ -11544,7 +12157,9 @@
       "K-Scheme",
       "CO",
       "IF",
-      "AN"
+      "AN",
+      "Solved Paper",
+      "Marking Scheme"
     ],
     "code": "313302",
     "abbreviation": "DMS",
@@ -11576,7 +12191,9 @@
       "K-Scheme",
       "CO",
       "IF",
-      "AN"
+      "AN",
+      "Solved Paper",
+      "Marking Scheme"
     ],
     "code": "313303",
     "abbreviation": "DTE",
@@ -11609,7 +12226,9 @@
       "K-Scheme",
       "CO",
       "IF",
-      "AN"
+      "AN",
+      "Solved Paper",
+      "Marking Scheme"
     ],
     "code": "313304",
     "abbreviation": "OOP",
@@ -11641,7 +12260,9 @@
       "K-Scheme",
       "CO",
       "IF",
-      "AN"
+      "AN",
+      "Solved Paper",
+      "Marking Scheme"
     ],
     "code": "315319",
     "abbreviation": "OSY",
@@ -11672,7 +12293,9 @@
       "Sem 5",
       "K-Scheme",
       "CO",
-      "IF"
+      "IF",
+      "Solved Paper",
+      "Marking Scheme"
     ],
     "code": "315321",
     "abbreviation": "ACN",
@@ -11702,7 +12325,9 @@
       "Sem 5",
       "K-Scheme",
       "CO",
-      "IF"
+      "IF",
+      "Solved Paper",
+      "Marking Scheme"
     ],
     "code": "315326",
     "abbreviation": "DAN",
@@ -11732,7 +12357,9 @@
       "Sem 5",
       "K-Scheme",
       "IF",
-      "AN"
+      "AN",
+      "Solved Paper",
+      "Marking Scheme"
     ],
     "code": "315324",
     "abbreviation": "ADM",
@@ -11761,7 +12388,9 @@
       "Model Answer",
       "Sem 5",
       "K-Scheme",
-      "CO"
+      "CO",
+      "Solved Paper",
+      "Marking Scheme"
     ],
     "code": "315323",
     "abbreviation": "STE",
@@ -11789,7 +12418,9 @@
       "Model Answer",
       "Sem 5",
       "K-Scheme",
-      "IF"
+      "IF",
+      "Solved Paper",
+      "Marking Scheme"
     ],
     "code": "315332",
     "abbreviation": "SET",
@@ -11817,7 +12448,9 @@
       "Model Answer",
       "Sem 5",
       "K-Scheme",
-      "CO"
+      "CO",
+      "Solved Paper",
+      "Marking Scheme"
     ],
     "code": "315325",
     "abbreviation": "CLC",
@@ -11845,7 +12478,9 @@
       "Model Answer",
       "Sem 5",
       "K-Scheme",
-      "AN"
+      "AN",
+      "Solved Paper",
+      "Marking Scheme"
     ],
     "code": "315327",
     "abbreviation": "CDS",
@@ -11873,7 +12508,9 @@
       "Model Answer",
       "Sem 5",
       "K-Scheme",
-      "AN"
+      "AN",
+      "Solved Paper",
+      "Marking Scheme"
     ],
     "code": "315330",
     "abbreviation": "AML",
@@ -11901,7 +12538,9 @@
       "Model Answer",
       "Sem 5",
       "K-Scheme",
-      "AN"
+      "AN",
+      "Solved Paper",
+      "Marking Scheme"
     ],
     "code": "315329",
     "abbreviation": "NLP",
@@ -11916,5 +12555,537 @@
     "dateAdded": "2026-11-10",
     "shortCode": "NLP",
     "year": 3
+  },
+  {
+    "title": "Data Structures & Algorithms (DSA) Handwritten Notes | MSBTE Diploma & Degree (Video Lecture)",
+    "description": "Unlock your success in Data Structures and Algorithms with these premium handwritten notes! Ideal for MSBTE diploma and degree students.",
+    "url": "https://www.youtube.com/watch?v=gybdf0hKV24",
+    "thumbnail": "https://img.youtube.com/vi/gybdf0hKV24/maxresdefault.jpg",
+    "category": "video-lecture",
+    "tags": [
+      "Video",
+      "Lecture",
+      "YouTube",
+      "Handwritten Notes"
+    ],
+    "dateAdded": "2024-01-01",
+    "code": null,
+    "shortCode": "VID",
+    "semester": null,
+    "year": null,
+    "branches": [
+      "COMMON",
+      "CO",
+      "IF",
+      "AN",
+      "ME",
+      "CE",
+      "EE",
+      "EJ"
+    ]
+  },
+  {
+    "title": "DSE Admission 2025 Full Timeline OUT | CAP Round Dates & Merit List (Video Lecture)",
+    "description": "Complete guide to Direct Second Year Engineering (DSE) admission timeline, CAP rounds, and avoiding common mistakes.",
+    "url": "https://www.youtube.com/watch?v=x-0LoOSZvho",
+    "thumbnail": "https://img.youtube.com/vi/x-0LoOSZvho/maxresdefault.jpg",
+    "category": "video-lecture",
+    "tags": [
+      "Video",
+      "Lecture",
+      "YouTube",
+      "Handwritten Notes"
+    ],
+    "dateAdded": "2024-07-22",
+    "code": null,
+    "shortCode": "VID",
+    "semester": null,
+    "year": null,
+    "branches": [
+      "COMMON",
+      "CO",
+      "IF",
+      "AN",
+      "ME",
+      "CE",
+      "EE",
+      "EJ"
+    ]
+  },
+  {
+    "title": "Top 20 Engineering Colleges in Pune for DSE 2025 | Verified List (Video Lecture)",
+    "description": "Verified list of top engineering colleges in Pune for Direct Second Year students based on cutoff and placements.",
+    "url": "https://www.youtube.com/watch?v=r4fH6uHaCfY",
+    "thumbnail": "https://img.youtube.com/vi/r4fH6uHaCfY/maxresdefault.jpg",
+    "category": "video-lecture",
+    "tags": [
+      "Video",
+      "Lecture",
+      "YouTube",
+      "Handwritten Notes"
+    ],
+    "dateAdded": "2024-07-23",
+    "code": null,
+    "shortCode": "VID",
+    "semester": null,
+    "year": null,
+    "branches": [
+      "COMMON",
+      "CO",
+      "IF",
+      "AN",
+      "ME",
+      "CE",
+      "EE",
+      "EJ"
+    ]
+  },
+  {
+    "title": "DSE Admission 2025 Under 85% | Best Colleges for Direct Second Year (Video Lecture)",
+    "description": "Best engineering colleges for students with less than 85% in diploma. maximize your chances of getting a good seat.",
+    "url": "https://www.youtube.com/watch?v=I1nSS-lSOxw",
+    "thumbnail": "https://img.youtube.com/vi/I1nSS-lSOxw/maxresdefault.jpg",
+    "category": "video-lecture",
+    "tags": [
+      "Video",
+      "Lecture",
+      "YouTube",
+      "Handwritten Notes"
+    ],
+    "dateAdded": "2024-06-24",
+    "code": null,
+    "shortCode": "VID",
+    "semester": null,
+    "year": null,
+    "branches": [
+      "COMMON",
+      "CO",
+      "IF",
+      "AN",
+      "ME",
+      "CE",
+      "EE",
+      "EJ"
+    ]
+  },
+  {
+    "title": "MSBTE Winter 2025 Exam Form Filling Guide (Video Lecture)",
+    "description": "Step-by-step guide to filling the MSBTE Winter 2025 exam form. Don't miss the last date!",
+    "url": "https://www.youtube.com/watch?v=b0BLL7eIyos",
+    "thumbnail": "https://img.youtube.com/vi/b0BLL7eIyos/maxresdefault.jpg",
+    "category": "video-lecture",
+    "tags": [
+      "Video",
+      "Lecture",
+      "YouTube",
+      "Handwritten Notes"
+    ],
+    "dateAdded": "2024-09-05",
+    "code": null,
+    "shortCode": "VID",
+    "semester": null,
+    "year": null,
+    "branches": [
+      "COMMON",
+      "CO",
+      "IF",
+      "AN",
+      "ME",
+      "CE",
+      "EE",
+      "EJ"
+    ]
+  },
+  {
+    "title": "Important Exam Update | MSBTE Latest News (Video Lecture)",
+    "description": "Stay updated with the latest circulars and news regarding MSBTE summer and winter exams.",
+    "url": "https://www.youtube.com/watch?v=VNOc-_QPlIg",
+    "thumbnail": "https://img.youtube.com/vi/VNOc-_QPlIg/maxresdefault.jpg",
+    "category": "video-lecture",
+    "tags": [
+      "Video",
+      "Lecture",
+      "YouTube",
+      "Handwritten Notes"
+    ],
+    "dateAdded": "2024-01-01",
+    "code": null,
+    "shortCode": "VID",
+    "semester": null,
+    "year": null,
+    "branches": [
+      "COMMON",
+      "CO",
+      "IF",
+      "AN",
+      "ME",
+      "CE",
+      "EE",
+      "EJ"
+    ]
+  },
+  {
+    "title": "Microproject Ideas for Computer Engineering (Video Lecture)",
+    "description": "Get innovative microproject ideas with source code and documentation for your semester submission.",
+    "url": "https://www.youtube.com/watch?v=oO9A2MwjVus",
+    "thumbnail": "https://img.youtube.com/vi/oO9A2MwjVus/maxresdefault.jpg",
+    "category": "video-lecture",
+    "tags": [
+      "Video",
+      "Lecture",
+      "YouTube",
+      "Handwritten Notes"
+    ],
+    "dateAdded": "2024-01-01",
+    "code": null,
+    "shortCode": "VID",
+    "semester": null,
+    "year": null,
+    "branches": [
+      "COMMON",
+      "CO",
+      "IF",
+      "AN",
+      "ME",
+      "CE",
+      "EE",
+      "EJ"
+    ]
+  },
+  {
+    "title": "How to Score 90%+ in MSBTE Diploma Exams (Video Lecture)",
+    "description": "Proven study strategies and tips to score excellent marks in your diploma engineering exams.",
+    "url": "https://www.youtube.com/watch?v=pASS9yNpQng",
+    "thumbnail": "https://img.youtube.com/vi/pASS9yNpQng/maxresdefault.jpg",
+    "category": "video-lecture",
+    "tags": [
+      "Video",
+      "Lecture",
+      "YouTube",
+      "Handwritten Notes"
+    ],
+    "dateAdded": "2024-01-01",
+    "code": null,
+    "shortCode": "VID",
+    "semester": null,
+    "year": null,
+    "branches": [
+      "COMMON",
+      "CO",
+      "IF",
+      "AN",
+      "ME",
+      "CE",
+      "EE",
+      "EJ"
+    ]
+  },
+  {
+    "title": "MSBTE Paper Checking Process Explained (Video Lecture)",
+    "description": "Inside look at how MSBTE papers are checked and how grace marks are awarded.",
+    "url": "https://www.youtube.com/watch?v=KmQPWF8GFYk",
+    "thumbnail": "https://img.youtube.com/vi/KmQPWF8GFYk/maxresdefault.jpg",
+    "category": "video-lecture",
+    "tags": [
+      "Video",
+      "Lecture",
+      "YouTube",
+      "Handwritten Notes"
+    ],
+    "dateAdded": "2024-01-01",
+    "code": null,
+    "shortCode": "VID",
+    "semester": null,
+    "year": null,
+    "branches": [
+      "COMMON",
+      "CO",
+      "IF",
+      "AN",
+      "ME",
+      "CE",
+      "EE",
+      "EJ"
+    ]
+  },
+  {
+    "title": "Revaluation & Photocopy Process 2025 (Video Lecture)",
+    "description": "Complete procedure for applying for revaluation and photocopy of answer books.",
+    "url": "https://www.youtube.com/watch?v=KY7CBcc7om8",
+    "thumbnail": "https://img.youtube.com/vi/KY7CBcc7om8/maxresdefault.jpg",
+    "category": "video-lecture",
+    "tags": [
+      "Video",
+      "Lecture",
+      "YouTube",
+      "Handwritten Notes"
+    ],
+    "dateAdded": "2024-01-01",
+    "code": null,
+    "shortCode": "VID",
+    "semester": null,
+    "year": null,
+    "branches": [
+      "COMMON",
+      "CO",
+      "IF",
+      "AN",
+      "ME",
+      "CE",
+      "EE",
+      "EJ"
+    ]
+  },
+  {
+    "title": "Diploma to Degree (DSE) Admission Process (Video Lecture)",
+    "description": "Everything you need to know about the Direct Second Year admission process for engineering.",
+    "url": "https://www.youtube.com/watch?v=DzIw9OeLvns",
+    "thumbnail": "https://img.youtube.com/vi/DzIw9OeLvns/maxresdefault.jpg",
+    "category": "video-lecture",
+    "tags": [
+      "Video",
+      "Lecture",
+      "YouTube",
+      "Handwritten Notes"
+    ],
+    "dateAdded": "2024-01-01",
+    "code": null,
+    "shortCode": "VID",
+    "semester": null,
+    "year": null,
+    "branches": [
+      "COMMON",
+      "CO",
+      "IF",
+      "AN",
+      "ME",
+      "CE",
+      "EE",
+      "EJ"
+    ]
+  },
+  {
+    "title": "Engineering Mechanics Important Questions (Video Lecture)",
+    "description": "Most repeated questions in Engineering Mechanics for first-year diploma students.",
+    "url": "https://www.youtube.com/watch?v=orw6WyPKr3E",
+    "thumbnail": "https://img.youtube.com/vi/orw6WyPKr3E/maxresdefault.jpg",
+    "category": "video-lecture",
+    "tags": [
+      "Video",
+      "Lecture",
+      "YouTube",
+      "Handwritten Notes"
+    ],
+    "dateAdded": "2024-01-01",
+    "code": null,
+    "shortCode": "VID",
+    "semester": null,
+    "year": null,
+    "branches": [
+      "COMMON",
+      "CO",
+      "IF",
+      "AN",
+      "ME",
+      "CE",
+      "EE",
+      "EJ"
+    ]
+  },
+  {
+    "title": "Java Programming | Pass Easily in MSBTE (Video Lecture)",
+    "description": "Important concepts and questions to help you pass Java Programming subject easily.",
+    "url": "https://www.youtube.com/watch?v=iShG61YNFh0",
+    "thumbnail": "https://img.youtube.com/vi/iShG61YNFh0/maxresdefault.jpg",
+    "category": "video-lecture",
+    "tags": [
+      "Video",
+      "Lecture",
+      "YouTube",
+      "Handwritten Notes"
+    ],
+    "dateAdded": "2024-01-01",
+    "code": null,
+    "shortCode": "VID",
+    "semester": null,
+    "year": null,
+    "branches": [
+      "COMMON",
+      "CO",
+      "IF",
+      "AN",
+      "ME",
+      "CE",
+      "EE",
+      "EJ"
+    ]
+  },
+  {
+    "title": "Applied Mathematics M2 | Derivative Tricks (Video Lecture)",
+    "description": "Solve derivative problems quickly with these simple tricks and formulas.",
+    "url": "https://www.youtube.com/watch?v=9MGKw7nxE5Q",
+    "thumbnail": "https://img.youtube.com/vi/9MGKw7nxE5Q/maxresdefault.jpg",
+    "category": "video-lecture",
+    "tags": [
+      "Video",
+      "Lecture",
+      "YouTube",
+      "Handwritten Notes"
+    ],
+    "dateAdded": "2024-01-01",
+    "code": null,
+    "shortCode": "VID",
+    "semester": null,
+    "year": null,
+    "branches": [
+      "COMMON",
+      "CO",
+      "IF",
+      "AN",
+      "ME",
+      "CE",
+      "EE",
+      "EJ"
+    ]
+  },
+  {
+    "title": "Basic Electronics (BEC) | Imp Questions (Video Lecture)",
+    "description": "Target 70/70 marks in Basic Electronics with these important questions.",
+    "url": "https://www.youtube.com/watch?v=WLgmkoPEGPY",
+    "thumbnail": "https://img.youtube.com/vi/WLgmkoPEGPY/maxresdefault.jpg",
+    "category": "video-lecture",
+    "tags": [
+      "Video",
+      "Lecture",
+      "YouTube",
+      "Handwritten Notes"
+    ],
+    "dateAdded": "2024-01-01",
+    "code": null,
+    "shortCode": "VID",
+    "semester": null,
+    "year": null,
+    "branches": [
+      "COMMON",
+      "CO",
+      "IF",
+      "AN",
+      "ME",
+      "CE",
+      "EE",
+      "EJ"
+    ]
+  },
+  {
+    "title": "Emerging Trends in Computer Engineering (Video Lecture)",
+    "description": "Learn about the latest syllabus changes and emerging trends subject.",
+    "url": "https://www.youtube.com/watch?v=-UZQnt3WJRI",
+    "thumbnail": "https://img.youtube.com/vi/-UZQnt3WJRI/maxresdefault.jpg",
+    "category": "video-lecture",
+    "tags": [
+      "Video",
+      "Lecture",
+      "YouTube",
+      "Handwritten Notes"
+    ],
+    "dateAdded": "2024-01-01",
+    "code": null,
+    "shortCode": "VID",
+    "semester": null,
+    "year": null,
+    "branches": [
+      "COMMON",
+      "CO",
+      "IF",
+      "AN",
+      "ME",
+      "CE",
+      "EE",
+      "EJ"
+    ]
+  },
+  {
+    "title": "Environment Studies (EST) Project Topics (Video Lecture)",
+    "description": "List of easy and scoring project topics for Environment Studies subject.",
+    "url": "https://www.youtube.com/watch?v=3oUUdDjeC9c",
+    "thumbnail": "https://img.youtube.com/vi/3oUUdDjeC9c/maxresdefault.jpg",
+    "category": "video-lecture",
+    "tags": [
+      "Video",
+      "Lecture",
+      "YouTube",
+      "Handwritten Notes"
+    ],
+    "dateAdded": "2024-01-01",
+    "code": null,
+    "shortCode": "VID",
+    "semester": null,
+    "year": null,
+    "branches": [
+      "COMMON",
+      "CO",
+      "IF",
+      "AN",
+      "ME",
+      "CE",
+      "EE",
+      "EJ"
+    ]
+  },
+  {
+    "title": "Best Laptops for Engineering Students 2025 (Video Lecture)",
+    "description": "Top budget and performance laptops for diploma and degree engineering students.",
+    "url": "https://www.youtube.com/watch?v=lZdU4CsmWqY",
+    "thumbnail": "https://img.youtube.com/vi/lZdU4CsmWqY/maxresdefault.jpg",
+    "category": "video-lecture",
+    "tags": [
+      "Video",
+      "Lecture",
+      "YouTube",
+      "Handwritten Notes"
+    ],
+    "dateAdded": "2024-01-01",
+    "code": null,
+    "shortCode": "VID",
+    "semester": null,
+    "year": null,
+    "branches": [
+      "COMMON",
+      "CO",
+      "IF",
+      "AN",
+      "ME",
+      "CE",
+      "EE",
+      "EJ"
+    ]
+  },
+  {
+    "title": "Welcome to Our Community | Channel Intro (Video Lecture)",
+    "description": "Introduction to MSBTE Notes & Info - Your partner in diploma success.",
+    "url": "https://www.youtube.com/watch?v=KJrLr2u2_oY",
+    "thumbnail": "https://img.youtube.com/vi/KJrLr2u2_oY/maxresdefault.jpg",
+    "category": "video-lecture",
+    "tags": [
+      "Video",
+      "Lecture",
+      "YouTube",
+      "Handwritten Notes"
+    ],
+    "dateAdded": "2024-01-01",
+    "code": null,
+    "shortCode": "VID",
+    "semester": null,
+    "year": null,
+    "branches": [
+      "COMMON",
+      "CO",
+      "IF",
+      "AN",
+      "ME",
+      "CE",
+      "EE",
+      "EJ"
+    ]
   }
 ]

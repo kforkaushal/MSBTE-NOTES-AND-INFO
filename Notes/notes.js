@@ -2,6 +2,7 @@
  * MSBTE Notes & Resources Portal - Interactive Directory & Search Engine
  * Features:
  * - Multi-dimensional hierarchical filtering: Branch, Year, Semester, Category
+ * - Comprehensive support for Notes, PYQs, Model Answers, Question Banks, Lab Manuals, Videos
  * - Real-time full-text search with highlighting and clear button
  * - URL state synchronization (shareable search & folder filters)
  * - Mobile-first responsive touch interactions (min 44px touch targets)
@@ -33,6 +34,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const semesterContainer = document.getElementById('semester-filters');
     const categoryContainer = document.getElementById('category-filters');
     const folderCardsContainer = document.getElementById('folder-cards-grid');
+    const categoryCardsContainer = document.getElementById('category-cards-grid');
 
     // State
     let resources = [];
@@ -80,15 +82,17 @@ document.addEventListener('DOMContentLoaded', () => {
         { id: '6', name: 'Sem 6', year: 3 }
     ];
 
-    // Category Definitions
+    // Category Definitions (Includes PYQ, Model Answer, Notes, QB, Manuals, Videos)
     const CATEGORIES = [
         { id: 'all', name: 'All Materials' },
-        { id: 'notes', name: 'Notes' },
+        { id: 'pyq', name: 'PYQ Papers' },
         { id: 'model-answer', name: 'Model Answers' },
+        { id: 'notes', name: 'Notes' },
         { id: 'question-bank', name: 'Question Banks' },
         { id: 'lab-manual', name: 'Lab Manuals' },
         { id: 'micro-project', name: 'Micro-Projects' },
-        { id: 'subject-guide', name: 'Subject Guides' }
+        { id: 'subject-guide', name: 'Subject Guides' },
+        { id: 'video-lecture', name: 'Video Lectures' }
     ];
 
     // Fetch Resources
@@ -156,15 +160,17 @@ document.addEventListener('DOMContentLoaded', () => {
         return text.replace(regex, `<mark class="bg-yellow-200 text-gray-900 rounded px-0.5">$1</mark>`);
     }
 
-    // Category Badges Styling & SVGs
+    // Category Badges Styling
     function getCategoryBadge(category) {
         const config = {
-            'notes': { label: 'Notes', bg: 'bg-blue-50', text: 'text-blue-700', border: 'border-blue-200' },
+            'pyq': { label: 'PYQ Paper', bg: 'bg-rose-50', text: 'text-rose-700', border: 'border-rose-200' },
             'model-answer': { label: 'Model Answer', bg: 'bg-emerald-50', text: 'text-emerald-700', border: 'border-emerald-200' },
+            'notes': { label: 'Notes', bg: 'bg-blue-50', text: 'text-blue-700', border: 'border-blue-200' },
             'question-bank': { label: 'Question Bank', bg: 'bg-amber-50', text: 'text-amber-700', border: 'border-amber-200' },
             'lab-manual': { label: 'Lab Manual', bg: 'bg-purple-50', text: 'text-purple-700', border: 'border-purple-200' },
-            'micro-project': { label: 'Micro-Project', bg: 'bg-rose-50', text: 'text-rose-700', border: 'border-rose-200' },
-            'subject-guide': { label: 'Subject Guide', bg: 'bg-indigo-50', text: 'text-indigo-700', border: 'border-indigo-200' }
+            'micro-project': { label: 'Micro-Project', bg: 'bg-fuchsia-50', text: 'text-fuchsia-700', border: 'border-fuchsia-200' },
+            'subject-guide': { label: 'Subject Guide', bg: 'bg-indigo-50', text: 'text-indigo-700', border: 'border-indigo-200' },
+            'video-lecture': { label: 'Video Lecture', bg: 'bg-red-50', text: 'text-red-700', border: 'border-red-200' }
         };
         const c = config[category] || config['notes'];
         return `<span class="inline-flex items-center text-xs font-semibold px-2.5 py-0.5 rounded-full ${c.bg} ${c.text} border ${c.border}">
@@ -175,12 +181,14 @@ document.addEventListener('DOMContentLoaded', () => {
     // Category SVG Fallback Illustration
     function getCategoryFallbackIllustration(category, code, title) {
         const svgIcons = {
-            'notes': '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/>',
+            'pyq': '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>',
             'model-answer': '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>',
+            'notes': '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/>',
             'question-bank': '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>',
             'lab-manual': '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.977l-.51.342a6 6 0 01-3.86.977l-2.387.477a2 2 0 00-1.022.547m3.234-1.234a6 6 0 013.86-.977l1.022.204a2 2 0 011.022.547m-3.234-1.234a6 6 0 00-3.86.977l-1.022.204a2 2 0 00-1.022.547m10.234-4.234a6 6 0 01-3.86-.977l-.51-.342a6 6 0 00-3.86-.977l-2.387-.477a2 2 0 00-1.022.547m3.234-1.234a6 6 0 013.86-.977l1.022.204a2 2 0 011.022.547m-3.234-1.234a6 6 0 00-3.86.977l-1.022.204a2 2 0 00-1.022.547"/>',
             'micro-project': '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/>',
-            'subject-guide': '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/>'
+            'subject-guide': '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/>',
+            'video-lecture': '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>'
         };
         const icon = svgIcons[category] || svgIcons['notes'];
 
@@ -263,7 +271,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
             // Code Badge
             let codeBadgeHTML = '';
-            if (resource.code) {
+            if (resource.code && resource.code !== 'ALL') {
                 codeBadgeHTML = `
                     <span class="text-[11px] font-mono font-medium px-2 py-0.5 rounded-md bg-slate-100 text-slate-700">
                         ${highlightText(resource.code, searchTerm)}
@@ -271,8 +279,12 @@ document.addEventListener('DOMContentLoaded', () => {
                 `;
             }
 
+            const actionLabel = resource.category === 'video-lecture' ? 'Watch Lecture' :
+                               (resource.category === 'pyq' ? 'View Papers (Drive)' :
+                               (resource.category === 'model-answer' ? 'View Model Answer' : 'Open Study Material'));
+
             card.innerHTML = `
-                <a href="${resource.url}" class="flex flex-col h-full group focus:outline-none focus:ring-2 focus:ring-blue-500 rounded-2xl">
+                <a href="${resource.url}" ${resource.url.startsWith('http') ? 'target="_blank" rel="noopener noreferrer"' : ''} class="flex flex-col h-full group focus:outline-none focus:ring-2 focus:ring-blue-500 rounded-2xl">
                     ${thumbnailHTML}
                     <div class="p-5 flex-grow flex flex-col">
                         <!-- Top Metadata Row -->
@@ -295,9 +307,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
                         <!-- Bottom Action Link -->
                         <div class="mt-auto pt-3 border-t border-gray-100 flex items-center justify-between">
-                            <span class="text-xs text-gray-400 font-medium">Free Verified PDF</span>
+                            <span class="text-xs text-gray-400 font-medium">Free Verified Material</span>
                             <span class="inline-flex items-center gap-1 text-xs md:text-sm font-semibold text-blue-600 group-hover:translate-x-1 transition-transform">
-                                Open Study Material
+                                ${actionLabel}
                                 <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
                                 </svg>
@@ -359,15 +371,16 @@ document.addEventListener('DOMContentLoaded', () => {
                 const desc = (res.description || '').toLowerCase();
                 const code = (res.code || '').toLowerCase();
                 const shortCode = (res.shortCode || '').toLowerCase();
+                const cat = (res.category || '').toLowerCase();
                 const tags = (res.tags || []).map(t => t.toLowerCase());
 
-                // Multi-term matching (all terms in query must be present in at least one field)
                 const terms = searchTerm.split(/\s+/).filter(Boolean);
                 const matchesAllTerms = terms.every(term => 
                     title.includes(term) ||
                     desc.includes(term) ||
                     code.includes(term) ||
                     shortCode.includes(term) ||
+                    cat.includes(term) ||
                     tags.some(tag => tag.includes(term))
                 );
 
@@ -399,7 +412,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // Update Counter
         if (resultsCountEl) {
-            resultsCountEl.textContent = `Showing ${filtered.length} of ${resources.length} resources`;
+            resultsCountEl.textContent = `Showing ${filtered.length} of ${resources.length} study materials`;
         }
 
         // Update Active Filters Status Bar
@@ -438,7 +451,6 @@ document.addEventListener('DOMContentLoaded', () => {
         activeFiltersBar.classList.remove('hidden');
         activeFiltersList.innerHTML = '';
 
-        // Helper to add filter pill
         function addPill(label, onRemove) {
             const pill = document.createElement('span');
             pill.className = 'inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-medium bg-blue-50 text-blue-700 border border-blue-200';
@@ -450,6 +462,13 @@ document.addEventListener('DOMContentLoaded', () => {
             `;
             pill.querySelector('button').addEventListener('click', onRemove);
             activeFiltersList.appendChild(pill);
+        }
+
+        if (state.category !== 'all') {
+            const c = CATEGORIES.find(item => item.id === state.category);
+            addPill(`Type: ${c ? c.name : state.category}`, () => {
+                setCategory('all');
+            });
         }
 
         if (state.branch !== 'all') {
@@ -471,13 +490,6 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         }
 
-        if (state.category !== 'all') {
-            const c = CATEGORIES.find(item => item.id === state.category);
-            addPill(`Type: ${c ? c.name : state.category}`, () => {
-                setCategory('all');
-            });
-        }
-
         if (state.search.trim()) {
             addPill(`"${state.search.trim()}"`, () => {
                 state.search = '';
@@ -493,7 +505,12 @@ document.addEventListener('DOMContentLoaded', () => {
     function updateBreadcrumb() {
         if (!breadcrumbBranch || !breadcrumbBranchSep) return;
 
-        if (state.branch !== 'all') {
+        if (state.category !== 'all') {
+            const c = CATEGORIES.find(item => item.id === state.category);
+            breadcrumbBranch.textContent = c ? c.name : state.category;
+            breadcrumbBranch.classList.remove('hidden');
+            breadcrumbBranchSep.classList.remove('hidden');
+        } else if (state.branch !== 'all') {
             const b = BRANCHES.find(item => item.id === state.branch);
             breadcrumbBranch.textContent = b ? b.name : state.branch.toUpperCase();
             breadcrumbBranch.classList.remove('hidden');
@@ -537,7 +554,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
         paginationContainer.appendChild(prevBtn);
 
-        // Smart page numbers (show max 5 buttons around currentPage)
         let startPage = Math.max(1, currentPage - 2);
         let endPage = Math.min(totalPages, currentPage + 2);
 
@@ -620,7 +636,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function setYear(yearId) {
         state.year = yearId;
-        // If year changes, check if sem is incompatible
         if (state.year !== 'all') {
             const y = parseInt(state.year);
             const validSems = y === 1 ? ['1', '2'] : (y === 2 ? ['3', '4'] : ['5', '6']);
@@ -635,7 +650,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function setSem(semId) {
         state.sem = semId;
-        // If sem is selected, auto-align year
         if (semId !== 'all') {
             const semNum = parseInt(semId);
             state.year = semNum <= 2 ? '1' : (semNum <= 4 ? '2' : '3');
@@ -710,7 +724,25 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         }
 
-        // 5. Folder Cards Clicks
+        // 5. Category Folder Cards
+        if (categoryCardsContainer) {
+            const catCards = categoryCardsContainer.querySelectorAll('[data-folder-cat]');
+            catCards.forEach(card => {
+                card.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    const cat = card.dataset.folderCat;
+                    if (cat) {
+                        state.category = (state.category === cat) ? 'all' : cat;
+                        currentPage = 1;
+                        updateButtonsUI();
+                        filterAndRender();
+                        scrollToGrid();
+                    }
+                });
+            });
+        }
+
+        // 6. Branch Folder Cards
         if (folderCardsContainer) {
             const folderCards = folderCardsContainer.querySelectorAll('[data-folder-branch]');
             folderCards.forEach(card => {
@@ -720,7 +752,9 @@ document.addEventListener('DOMContentLoaded', () => {
                     const sem = card.dataset.folderSem;
                     const year = card.dataset.folderYear;
 
-                    if (branch) state.branch = branch;
+                    if (branch) {
+                        state.branch = (state.branch === branch) ? 'all' : branch;
+                    }
                     if (year) state.year = year;
                     if (sem) state.sem = sem;
 
@@ -761,9 +795,15 @@ document.addEventListener('DOMContentLoaded', () => {
                 card.classList.toggle('folder-active', matches);
             });
         }
+        if (categoryCardsContainer) {
+            categoryCardsContainer.querySelectorAll('[data-folder-cat]').forEach(card => {
+                const matches = card.dataset.folderCat === state.category;
+                card.classList.toggle('folder-active', matches);
+            });
+        }
     }
 
-    // Debounce search input for performance
+    // Debounce search input
     let searchDebounceTimer = null;
     if (searchInput) {
         searchInput.addEventListener('input', (e) => {
@@ -838,19 +878,24 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // Quick Search Tags (DSU, OSY, JPR, etc.)
+    // Quick Search Tags (DSU, OSY, JPR, PYQ, Model Answer, etc.)
     const quickTags = document.querySelectorAll('.quick-tag-chip');
     quickTags.forEach(tag => {
         tag.addEventListener('click', () => {
             const query = tag.dataset.query;
+            const cat = tag.dataset.cat;
+            if (cat) {
+                state.category = cat;
+            }
             if (query && searchInput) {
                 searchInput.value = query;
                 state.search = query;
                 if (searchClearBtn) searchClearBtn.classList.remove('hidden');
-                currentPage = 1;
-                filterAndRender();
-                scrollToGrid();
             }
+            currentPage = 1;
+            updateButtonsUI();
+            filterAndRender();
+            scrollToGrid();
         });
     });
 
@@ -873,7 +918,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
         await fetchResources();
 
-        // Hide pre-loader if present
         const preloader = document.getElementById('notes-loading-state');
         if (preloader) preloader.remove();
 
