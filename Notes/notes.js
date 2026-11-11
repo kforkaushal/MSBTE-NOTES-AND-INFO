@@ -21,12 +21,18 @@ document.addEventListener('DOMContentLoaded', () => {
     const activeFiltersList = document.getElementById('active-filters-list');
     const clearAllFiltersBtn = document.getElementById('clear-all-filters-btn');
     const paginationContainer = document.getElementById('pagination-container');
+    const mobileFloatingBar = document.getElementById('mobile-floating-bar');
+    const mobileFloatingCount = document.getElementById('mobile-floating-count');
+    const mobileFloatingReset = document.getElementById('mobile-floating-reset');
 
     // Breadcrumb Elements
+    const breadcrumbRoot = document.getElementById('breadcrumb-root');
     const breadcrumbBranch = document.getElementById('breadcrumb-branch');
     const breadcrumbBranchSep = document.getElementById('breadcrumb-branch-sep');
     const breadcrumbSem = document.getElementById('breadcrumb-sem');
     const breadcrumbSemSep = document.getElementById('breadcrumb-sem-sep');
+    const breadcrumbType = document.getElementById('breadcrumb-type');
+    const breadcrumbTypeSep = document.getElementById('breadcrumb-type-sep');
 
     // Filter Containers
     const branchContainer = document.getElementById('branch-filters');
@@ -53,7 +59,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Branch Definitions
     const BRANCHES = [
         { id: 'all', name: 'All Branches', short: 'All' },
-        { id: 'common', name: 'First Year Common', short: 'FY' },
+        { id: 'common', name: '1st Year Common', short: 'FY' },
         { id: 'co', name: 'Computer Engg', short: 'CO' },
         { id: 'if', name: 'Information Tech', short: 'IF' },
         { id: 'an', name: 'AI & ML / DS', short: 'AN' },
@@ -82,7 +88,7 @@ document.addEventListener('DOMContentLoaded', () => {
         { id: '6', name: 'Sem 6', year: 3 }
     ];
 
-    // Category Definitions (Includes PYQ, Model Answer, Notes, QB, Manuals, Videos)
+    // Category Definitions
     const CATEGORIES = [
         { id: 'all', name: 'All Materials' },
         { id: 'pyq', name: 'PYQ Papers' },
@@ -95,8 +101,27 @@ document.addEventListener('DOMContentLoaded', () => {
         { id: 'video-lecture', name: 'Video Lectures' }
     ];
 
+    // Render Skeleton Loading
+    function renderSkeletonLoading() {
+        if (!grid) return;
+        let skeletonHTML = '';
+        for (let i = 0; i < 6; i++) {
+            skeletonHTML += `
+                <div class="bg-white rounded-2xl p-5 border border-gray-100 shadow-sm animate-pulse flex flex-col h-72">
+                    <div class="w-full aspect-video bg-gray-200 rounded-xl mb-4"></div>
+                    <div class="h-4 bg-gray-200 rounded w-1/3 mb-2"></div>
+                    <div class="h-5 bg-gray-200 rounded w-4/5 mb-3"></div>
+                    <div class="h-3 bg-gray-100 rounded w-full mb-1.5"></div>
+                    <div class="h-3 bg-gray-100 rounded w-2/3 mt-auto"></div>
+                </div>
+            `;
+        }
+        grid.innerHTML = skeletonHTML;
+    }
+
     // Fetch Resources
     async function fetchResources() {
+        renderSkeletonLoading();
         try {
             const response = await fetch('/Notes/resources.json');
             if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
@@ -105,11 +130,14 @@ document.addEventListener('DOMContentLoaded', () => {
         } catch (error) {
             console.error("Could not fetch resources:", error);
             grid.innerHTML = `
-                <div class="col-span-full text-center py-12 bg-white rounded-2xl border border-red-100 p-8">
-                    <p class="text-red-600 font-semibold mb-2">Unable to load study materials at this time.</p>
-                    <p class="text-gray-500 text-sm mb-4">Please check your internet connection or reload the page.</p>
-                    <button onclick="location.reload()" class="px-5 py-2.5 bg-blue-600 text-white rounded-xl font-medium text-sm hover:bg-blue-700 transition">
-                        Retry Loading
+                <div class="col-span-full text-center py-12 bg-white rounded-2xl border border-red-100 p-8 shadow-sm">
+                    <div class="w-12 h-12 mx-auto rounded-full bg-red-50 text-red-600 flex items-center justify-center mb-3">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"/></svg>
+                    </div>
+                    <p class="text-gray-900 font-bold text-lg mb-1">Unable to load study materials</p>
+                    <p class="text-gray-500 text-sm mb-4">Please check your internet connection and reload the page.</p>
+                    <button onclick="location.reload()" class="px-5 py-2.5 bg-blue-600 text-white rounded-xl font-semibold text-sm hover:bg-blue-700 transition shadow">
+                        Reload Study Portal
                     </button>
                 </div>`;
             return [];
@@ -157,23 +185,24 @@ document.addEventListener('DOMContentLoaded', () => {
         if (!term || !term.trim()) return text;
         const cleanTerm = term.trim().replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
         const regex = new RegExp(`(${cleanTerm})`, 'gi');
-        return text.replace(regex, `<mark class="bg-yellow-200 text-gray-900 rounded px-0.5">$1</mark>`);
+        return text.replace(regex, `<mark class="bg-amber-200 text-gray-900 rounded px-1 py-0.2 font-medium">$1</mark>`);
     }
 
-    // Category Badges Styling
+    // Category Badges Styling with distinct high-contrast colors
     function getCategoryBadge(category) {
         const config = {
-            'pyq': { label: 'PYQ Paper', bg: 'bg-rose-50', text: 'text-rose-700', border: 'border-rose-200' },
-            'model-answer': { label: 'Model Answer', bg: 'bg-emerald-50', text: 'text-emerald-700', border: 'border-emerald-200' },
-            'notes': { label: 'Notes', bg: 'bg-blue-50', text: 'text-blue-700', border: 'border-blue-200' },
-            'question-bank': { label: 'Question Bank', bg: 'bg-amber-50', text: 'text-amber-700', border: 'border-amber-200' },
-            'lab-manual': { label: 'Lab Manual', bg: 'bg-purple-50', text: 'text-purple-700', border: 'border-purple-200' },
-            'micro-project': { label: 'Micro-Project', bg: 'bg-fuchsia-50', text: 'text-fuchsia-700', border: 'border-fuchsia-200' },
-            'subject-guide': { label: 'Subject Guide', bg: 'bg-indigo-50', text: 'text-indigo-700', border: 'border-indigo-200' },
-            'video-lecture': { label: 'Video Lecture', bg: 'bg-red-50', text: 'text-red-700', border: 'border-red-200' }
+            'pyq': { label: 'PYQ Paper', bg: 'bg-rose-50', text: 'text-rose-700', border: 'border-rose-200/80', dot: 'bg-rose-500' },
+            'model-answer': { label: 'Model Answer', bg: 'bg-emerald-50', text: 'text-emerald-700', border: 'border-emerald-200/80', dot: 'bg-emerald-500' },
+            'notes': { label: 'Notes', bg: 'bg-blue-50', text: 'text-blue-700', border: 'border-blue-200/80', dot: 'bg-blue-500' },
+            'question-bank': { label: 'Question Bank', bg: 'bg-amber-50', text: 'text-amber-700', border: 'border-amber-200/80', dot: 'bg-amber-500' },
+            'lab-manual': { label: 'Lab Manual', bg: 'bg-purple-50', text: 'text-purple-700', border: 'border-purple-200/80', dot: 'bg-purple-500' },
+            'micro-project': { label: 'Micro-Project', bg: 'bg-fuchsia-50', text: 'text-fuchsia-700', border: 'border-fuchsia-200/80', dot: 'bg-fuchsia-500' },
+            'subject-guide': { label: 'Subject Guide', bg: 'bg-indigo-50', text: 'text-indigo-700', border: 'border-indigo-200/80', dot: 'bg-indigo-500' },
+            'video-lecture': { label: 'Video Lecture', bg: 'bg-red-50', text: 'text-red-700', border: 'border-red-200/80', dot: 'bg-red-500' }
         };
         const c = config[category] || config['notes'];
-        return `<span class="inline-flex items-center text-xs font-semibold px-2.5 py-0.5 rounded-full ${c.bg} ${c.text} border ${c.border}">
+        return `<span class="inline-flex items-center gap-1.5 text-xs font-semibold px-2.5 py-0.5 rounded-full ${c.bg} ${c.text} border ${c.border}">
+            <span class="w-1.5 h-1.5 rounded-full ${c.dot}"></span>
             ${c.label}
         </span>`;
     }
@@ -193,16 +222,16 @@ document.addEventListener('DOMContentLoaded', () => {
         const icon = svgIcons[category] || svgIcons['notes'];
 
         return `
-            <div class="w-full h-full flex flex-col items-center justify-center bg-gradient-to-br from-slate-50 to-blue-50/60 p-4 border-b border-gray-100 relative group-hover:from-blue-50/80 group-hover:to-indigo-50/80 transition-colors">
+            <div class="w-full h-full flex flex-col items-center justify-center bg-gradient-to-br from-slate-50 via-white to-blue-50/50 p-4 border-b border-gray-100 relative group-hover:from-blue-50/80 group-hover:to-indigo-50/80 transition-colors">
                 <div class="w-12 h-12 rounded-xl bg-white shadow-sm border border-gray-100 flex items-center justify-center text-blue-600 mb-2 group-hover:scale-110 transition-transform">
                     <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">${icon}</svg>
                 </div>
-                ${code ? `<span class="text-xs font-mono font-bold text-gray-500 uppercase tracking-wider">${code}</span>` : ''}
+                ${code && code !== 'ALL' ? `<span class="text-xs font-mono font-bold text-gray-500 uppercase tracking-wider">${code}</span>` : ''}
             </div>
         `;
     }
 
-    // Render Resources Grid
+    // Render Resources Grid with Elevated Visual Styling
     function renderResources(items, searchTerm = '') {
         grid.innerHTML = '';
 
@@ -219,8 +248,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
         items.forEach((resource, index) => {
             const card = document.createElement('article');
-            card.className = 'resource-card bg-white rounded-2xl shadow-sm border border-gray-200/80 hover:border-blue-300 overflow-hidden hover:shadow-lg hover:-translate-y-1 transition-all duration-300 flex flex-col h-full note-card-enter';
-            card.style.animationDelay = `${Math.min(index * 35, 300)}ms`;
+            card.className = 'resource-card bg-white rounded-2xl shadow-sm border border-gray-200/90 hover:border-blue-400 overflow-hidden hover:shadow-xl hover:-translate-y-1.5 transition-all duration-300 flex flex-col h-full note-card-enter group';
+            card.style.animationDelay = `${Math.min(index * 30, 250)}ms`;
 
             const highlightedTitle = highlightText(resource.title, searchTerm);
             const highlightedDescription = highlightText(resource.description, searchTerm);
@@ -238,6 +267,7 @@ document.addEventListener('DOMContentLoaded', () => {
                              alt="${resource.title}" 
                              class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500" 
                              loading="lazy">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
                     </div>
                 `;
             } else {
@@ -279,12 +309,25 @@ document.addEventListener('DOMContentLoaded', () => {
                 `;
             }
 
-            const actionLabel = resource.category === 'video-lecture' ? 'Watch Lecture' :
-                               (resource.category === 'pyq' ? 'View Papers (Drive)' :
-                               (resource.category === 'model-answer' ? 'View Model Answer' : 'Open Study Material'));
+            // Action labels & format tag
+            let actionLabel = 'Open Material';
+            let formatTag = 'Verified PDF';
+            if (resource.category === 'pyq') {
+                actionLabel = 'Download PYQ';
+                formatTag = 'Google Drive PDF';
+            } else if (resource.category === 'model-answer') {
+                actionLabel = 'View Model Answer';
+                formatTag = 'Solved Solution';
+            } else if (resource.category === 'video-lecture') {
+                actionLabel = 'Watch Lecture';
+                formatTag = 'Video Course';
+            } else if (resource.category === 'lab-manual') {
+                actionLabel = 'View Manual';
+                formatTag = 'Solved Practicals';
+            }
 
             card.innerHTML = `
-                <a href="${resource.url}" ${resource.url.startsWith('http') ? 'target="_blank" rel="noopener noreferrer"' : ''} class="flex flex-col h-full group focus:outline-none focus:ring-2 focus:ring-blue-500 rounded-2xl">
+                <a href="${resource.url}" ${resource.url.startsWith('http') ? 'target="_blank" rel="noopener noreferrer"' : ''} class="flex flex-col h-full focus:outline-none focus:ring-2 focus:ring-blue-500 rounded-2xl">
                     ${thumbnailHTML}
                     <div class="p-5 flex-grow flex flex-col">
                         <!-- Top Metadata Row -->
@@ -296,19 +339,22 @@ document.addEventListener('DOMContentLoaded', () => {
                         </div>
 
                         <!-- Title -->
-                        <h3 class="text-base md:text-lg font-bold text-gray-900 mb-2 leading-snug group-hover:text-blue-600 transition-colors line-clamp-2">
+                        <h3 class="text-base md:text-lg font-bold font-display text-gray-900 mb-2 leading-snug group-hover:text-blue-600 transition-colors line-clamp-2">
                             ${highlightedTitle}
                         </h3>
 
                         <!-- Description -->
-                        <p class="text-xs md:text-sm text-gray-500 mb-4 line-clamp-3 leading-relaxed flex-grow">
+                        <p class="text-xs md:text-sm text-gray-600 mb-4 line-clamp-3 leading-relaxed flex-grow">
                             ${highlightedDescription}
                         </p>
 
                         <!-- Bottom Action Link -->
                         <div class="mt-auto pt-3 border-t border-gray-100 flex items-center justify-between">
-                            <span class="text-xs text-gray-400 font-medium">Free Verified Material</span>
-                            <span class="inline-flex items-center gap-1 text-xs md:text-sm font-semibold text-blue-600 group-hover:translate-x-1 transition-transform">
+                            <span class="text-xs text-gray-400 font-medium flex items-center gap-1">
+                                <span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>
+                                ${formatTag}
+                            </span>
+                            <span class="inline-flex items-center gap-1.5 text-xs md:text-sm font-semibold text-blue-600 group-hover:text-blue-700 group-hover:translate-x-1 transition-all">
                                 ${actionLabel}
                                 <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
@@ -410,10 +456,10 @@ document.addEventListener('DOMContentLoaded', () => {
                 break;
         }
 
-        // Update Counter
-        if (resultsCountEl) {
-            resultsCountEl.textContent = `Showing ${filtered.length} of ${resources.length} study materials`;
-        }
+        // Update Desktop & Mobile Counters
+        const countText = `Showing ${filtered.length} of ${resources.length} study materials`;
+        if (resultsCountEl) resultsCountEl.textContent = countText;
+        if (mobileFloatingCount) mobileFloatingCount.textContent = `${filtered.length} items`;
 
         // Update Active Filters Status Bar
         renderActiveFiltersBar();
@@ -433,7 +479,7 @@ document.addEventListener('DOMContentLoaded', () => {
         updateUrl();
     }
 
-    // Active Filters Status Bar
+    // Active Filters Status Bar with Clearable Badges
     function renderActiveFiltersBar() {
         if (!activeFiltersBar || !activeFiltersList) return;
 
@@ -453,7 +499,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         function addPill(label, onRemove) {
             const pill = document.createElement('span');
-            pill.className = 'inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-medium bg-blue-50 text-blue-700 border border-blue-200';
+            pill.className = 'inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-white text-blue-700 border border-blue-200 shadow-sm';
             pill.innerHTML = `
                 <span>${label}</span>
                 <button type="button" class="hover:text-blue-900 focus:outline-none p-0.5 rounded-full" aria-label="Remove filter ${label}">
@@ -501,16 +547,11 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
-    // Update Breadcrumb Trail
+    // Update Interactive Breadcrumb Trail
     function updateBreadcrumb() {
         if (!breadcrumbBranch || !breadcrumbBranchSep) return;
 
-        if (state.category !== 'all') {
-            const c = CATEGORIES.find(item => item.id === state.category);
-            breadcrumbBranch.textContent = c ? c.name : state.category;
-            breadcrumbBranch.classList.remove('hidden');
-            breadcrumbBranchSep.classList.remove('hidden');
-        } else if (state.branch !== 'all') {
+        if (state.branch !== 'all') {
             const b = BRANCHES.find(item => item.id === state.branch);
             breadcrumbBranch.textContent = b ? b.name : state.branch.toUpperCase();
             breadcrumbBranch.classList.remove('hidden');
@@ -528,6 +569,18 @@ document.addEventListener('DOMContentLoaded', () => {
             breadcrumbSem.classList.add('hidden');
             breadcrumbSemSep.classList.add('hidden');
         }
+
+        if (breadcrumbType && breadcrumbTypeSep) {
+            if (state.category !== 'all') {
+                const c = CATEGORIES.find(item => item.id === state.category);
+                breadcrumbType.textContent = c ? c.name : state.category;
+                breadcrumbType.classList.remove('hidden');
+                breadcrumbTypeSep.classList.remove('hidden');
+            } else {
+                breadcrumbType.classList.add('hidden');
+                breadcrumbTypeSep.classList.add('hidden');
+            }
+        }
     }
 
     // Accessible Pagination
@@ -537,7 +590,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
         if (totalPages <= 1) return;
 
-        // Previous Button
         const prevBtn = document.createElement('button');
         prevBtn.className = 'pagination-btn';
         prevBtn.innerHTML = `
@@ -600,7 +652,6 @@ document.addEventListener('DOMContentLoaded', () => {
             paginationContainer.appendChild(lastPageBtn);
         }
 
-        // Next Button
         const nextBtn = document.createElement('button');
         nextBtn.className = 'pagination-btn';
         nextBtn.innerHTML = `
@@ -661,6 +712,20 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function setCategory(catId) {
         state.category = catId;
+        currentPage = 1;
+        updateButtonsUI();
+        filterAndRender();
+    }
+
+    // Reset All Filters
+    function resetAllFilters() {
+        state.branch = 'all';
+        state.year = 'all';
+        state.sem = 'all';
+        state.category = 'all';
+        state.search = '';
+        if (searchInput) searchInput.value = '';
+        if (searchClearBtn) searchClearBtn.classList.add('hidden');
         currentPage = 1;
         updateButtonsUI();
         filterAndRender();
@@ -767,7 +832,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
-    // Refresh active states of all buttons
+    // Refresh active states of all buttons & folder cards with checkmarks
     function updateButtonsUI() {
         if (branchContainer) {
             branchContainer.querySelectorAll('.filter-chip').forEach(btn => {
@@ -789,16 +854,45 @@ document.addEventListener('DOMContentLoaded', () => {
                 btn.classList.toggle('active', btn.dataset.cat === state.category);
             });
         }
+
+        // Branch Folders Active Indicator
         if (folderCardsContainer) {
             folderCardsContainer.querySelectorAll('[data-folder-branch]').forEach(card => {
                 const matches = card.dataset.folderBranch === state.branch;
                 card.classList.toggle('folder-active', matches);
+                
+                // Toggle active check badge
+                let checkBadge = card.querySelector('.folder-active-check');
+                if (matches) {
+                    if (!checkBadge) {
+                        checkBadge = document.createElement('span');
+                        checkBadge.className = 'folder-active-check absolute top-2 right-2 w-5 h-5 rounded-full bg-blue-600 text-white flex items-center justify-center text-[10px] shadow-sm animate-scale-in';
+                        checkBadge.innerHTML = '<svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"/></svg>';
+                        card.appendChild(checkBadge);
+                    }
+                } else if (checkBadge) {
+                    checkBadge.remove();
+                }
             });
         }
+
+        // Category Folders Active Indicator
         if (categoryCardsContainer) {
             categoryCardsContainer.querySelectorAll('[data-folder-cat]').forEach(card => {
                 const matches = card.dataset.folderCat === state.category;
                 card.classList.toggle('folder-active', matches);
+
+                let checkBadge = card.querySelector('.folder-active-check');
+                if (matches) {
+                    if (!checkBadge) {
+                        checkBadge = document.createElement('span');
+                        checkBadge.className = 'folder-active-check absolute top-2 right-2 w-5 h-5 rounded-full bg-blue-600 text-white flex items-center justify-center text-[10px] shadow-sm animate-scale-in';
+                        checkBadge.innerHTML = '<svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"/></svg>';
+                        card.appendChild(checkBadge);
+                    }
+                } else if (checkBadge) {
+                    checkBadge.remove();
+                }
             });
         }
     }
@@ -864,17 +958,32 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Clear All Filters Button
     if (clearAllFiltersBtn) {
-        clearAllFiltersBtn.addEventListener('click', () => {
-            state.branch = 'all';
-            state.year = 'all';
+        clearAllFiltersBtn.addEventListener('click', resetAllFilters);
+    }
+    if (mobileFloatingReset) {
+        mobileFloatingReset.addEventListener('click', () => {
+            resetAllFilters();
+            scrollToGrid();
+        });
+    }
+
+    // Breadcrumb click handlers
+    if (breadcrumbRoot) {
+        breadcrumbRoot.addEventListener('click', (e) => {
+            e.preventDefault();
+            resetAllFilters();
+            scrollToGrid();
+        });
+    }
+    if (breadcrumbBranch) {
+        breadcrumbBranch.addEventListener('click', (e) => {
+            e.preventDefault();
             state.sem = 'all';
             state.category = 'all';
-            state.search = '';
-            if (searchInput) searchInput.value = '';
-            if (searchClearBtn) searchClearBtn.classList.add('hidden');
             currentPage = 1;
             updateButtonsUI();
             filterAndRender();
+            scrollToGrid();
         });
     }
 
@@ -909,6 +1018,20 @@ document.addEventListener('DOMContentLoaded', () => {
             if (button) button.setAttribute('aria-expanded', isExpanded);
         }
     };
+
+    // Mobile Floating Bottom Action Dock visibility on scroll
+    window.addEventListener('scroll', () => {
+        if (!mobileFloatingBar) return;
+        const scrollY = window.scrollY;
+        // Show after scrolling 450px down on mobile screens
+        if (window.innerWidth < 768 && scrollY > 450) {
+            mobileFloatingBar.classList.remove('translate-y-24', 'opacity-0');
+            mobileFloatingBar.classList.add('translate-y-0', 'opacity-100');
+        } else {
+            mobileFloatingBar.classList.add('translate-y-24', 'opacity-0');
+            mobileFloatingBar.classList.remove('translate-y-0', 'opacity-100');
+        }
+    }, { passive: true });
 
     // Initialize Everything
     async function init() {
