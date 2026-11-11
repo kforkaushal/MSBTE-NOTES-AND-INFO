@@ -1,7 +1,7 @@
 [
   {
     "title": "Operating System (OSY) K Scheme Notes & Question Bank",
-    "description": "Free MSBTE K-Scheme 314319 \u2013 Operating System (OSY) unit-wise notes, important question bank, model answers, and complete revision roadmaps for 4th Semester.",
+    "description": "Free MSBTE K-Scheme 314319 – Operating System (OSY) unit-wise notes, important question bank, model answers, and complete revision roadmaps for 4th Semester.",
     "url": "/Notes/osy-k-scheme-notes.html",
     "thumbnail": "/resourse/note-thumbs/OSY_thumbnail.png",
     "category": "notes",
@@ -12,7 +12,16 @@
       "K-Scheme",
       "4th Semester"
     ],
-    "dateAdded": "2026-10-06"
+    "dateAdded": "2026-10-06",
+    "code": "314319",
+    "shortCode": "OSY",
+    "semester": 4,
+    "year": 2,
+    "branches": [
+      "CO",
+      "IF",
+      "AN"
+    ]
   },
   {
     "title": "Microprocessor (MIC) K Scheme Notes & Question Bank",
@@ -27,7 +36,15 @@
       "K-Scheme",
       "4th Semester"
     ],
-    "dateAdded": "2026-10-06"
+    "dateAdded": "2026-10-06",
+    "code": "314321",
+    "shortCode": "MIC",
+    "semester": 4,
+    "year": 2,
+    "branches": [
+      "CO",
+      "IF"
+    ]
   },
   {
     "title": "Data Communication & Computer Network (DCN) K Scheme Notes",
@@ -42,7 +59,15 @@
       "K-Scheme",
       "4th Semester"
     ],
-    "dateAdded": "2026-10-06"
+    "dateAdded": "2026-10-06",
+    "code": "314318",
+    "shortCode": "DCN",
+    "semester": 4,
+    "year": 2,
+    "branches": [
+      "CO",
+      "IF"
+    ]
   },
   {
     "title": "Java Programming (JPR) K Scheme Notes & Question Bank",
@@ -57,7 +82,16 @@
       "K-Scheme",
       "4th Semester"
     ],
-    "dateAdded": "2026-10-06"
+    "dateAdded": "2026-10-06",
+    "code": "314317",
+    "shortCode": "JPR",
+    "semester": 4,
+    "year": 2,
+    "branches": [
+      "CO",
+      "IF",
+      "AN"
+    ]
   },
   {
     "title": "Environmental Education & Sustainability (EES) K Scheme Notes",
@@ -72,7 +106,21 @@
       "K-Scheme",
       "4th Semester"
     ],
-    "dateAdded": "2026-10-06"
+    "dateAdded": "2026-10-06",
+    "code": "314301",
+    "shortCode": "EES",
+    "semester": 4,
+    "year": 2,
+    "branches": [
+      "COMMON",
+      "CO",
+      "IF",
+      "AN",
+      "ME",
+      "CE",
+      "EE",
+      "EJ"
+    ]
   },
   {
     "title": "Object Oriented Programming with C++ (OOP) K Scheme Notes",
@@ -87,7 +135,16 @@
       "K-Scheme",
       "3rd Semester"
     ],
-    "dateAdded": "2026-10-06"
+    "dateAdded": "2026-10-06",
+    "code": "313304",
+    "shortCode": "OOP",
+    "semester": 3,
+    "year": 2,
+    "branches": [
+      "CO",
+      "IF",
+      "AN"
+    ]
   },
   {
     "title": "Data Structures Using C (DSU) K Scheme Notes & Question Bank",
@@ -102,7 +159,16 @@
       "K-Scheme",
       "3rd Semester"
     ],
-    "dateAdded": "2026-10-06"
+    "dateAdded": "2026-10-06",
+    "code": "313301",
+    "shortCode": "DSU",
+    "semester": 3,
+    "year": 2,
+    "branches": [
+      "CO",
+      "IF",
+      "AN"
+    ]
   },
   {
     "title": "Database Management System (DBMS) K Scheme Notes & Papers",
@@ -117,7 +183,16 @@
       "K-Scheme",
       "3rd Semester"
     ],
-    "dateAdded": "2026-10-06"
+    "dateAdded": "2026-10-06",
+    "code": "313302",
+    "shortCode": "DBMS",
+    "semester": 3,
+    "year": 2,
+    "branches": [
+      "CO",
+      "IF",
+      "AN"
+    ]
   },
   {
     "title": "Digital Techniques (DTE) K Scheme Notes, MCQs & Solved Papers",
@@ -132,7 +207,17 @@
       "K-Scheme",
       "3rd Semester"
     ],
-    "dateAdded": "2026-10-06"
+    "dateAdded": "2026-10-06",
+    "code": "313303",
+    "shortCode": "DTE",
+    "semester": 3,
+    "year": 2,
+    "branches": [
+      "CO",
+      "IF",
+      "AN",
+      "EJ"
+    ]
   },
   {
     "title": "The Ultimate Python Handbook PDF - Full Course Notes",
@@ -147,7 +232,16 @@
       "Projects",
       "Full Course"
     ],
-    "dateAdded": "2026-04-27"
+    "dateAdded": "2026-04-27",
+    "code": null,
+    "shortCode": "PY",
+    "semester": 3,
+    "year": 2,
+    "branches": [
+      "CO",
+      "IF",
+      "AN"
+    ]
   },
   {
     "title": "311305 - Basic Physics - First Year First Semester Question Bank",
@@ -162,7 +256,21 @@
       "MSBTE",
       "K-Scheme"
     ],
-    "dateAdded": "2026-03-10"
+    "dateAdded": "2026-03-10",
+    "code": "311305",
+    "shortCode": "BSC",
+    "semester": 1,
+    "year": 1,
+    "branches": [
+      "COMMON",
+      "CO",
+      "IF",
+      "AN",
+      "ME",
+      "CE",
+      "EE",
+      "EJ"
+    ]
   },
   {
     "title": "311303 - Communication Skills (English) - First Year First Semester Question Bank",
@@ -177,7 +285,21 @@
       "MSBTE",
       "K-Scheme"
     ],
-    "dateAdded": "2026-03-10"
+    "dateAdded": "2026-03-10",
+    "code": "311303",
+    "shortCode": "ENG",
+    "semester": 1,
+    "year": 1,
+    "branches": [
+      "COMMON",
+      "CO",
+      "IF",
+      "AN",
+      "ME",
+      "CE",
+      "EE",
+      "EJ"
+    ]
   },
   {
     "title": "311305 - Basic Chemistry - First Year First Semester Question Bank",
@@ -192,7 +314,21 @@
       "MSBTE",
       "K-Scheme"
     ],
-    "dateAdded": "2026-03-10"
+    "dateAdded": "2026-03-10",
+    "code": "311305",
+    "shortCode": "BSC",
+    "semester": 1,
+    "year": 1,
+    "branches": [
+      "COMMON",
+      "CO",
+      "IF",
+      "AN",
+      "ME",
+      "CE",
+      "EE",
+      "EJ"
+    ]
   },
   {
     "title": "311302 - Basic Mathematics - First Year First Semester Question Bank",
@@ -207,7 +343,21 @@
       "MSBTE",
       "K-Scheme"
     ],
-    "dateAdded": "2026-03-10"
+    "dateAdded": "2026-03-10",
+    "code": "311302",
+    "shortCode": "BMS",
+    "semester": 1,
+    "year": 1,
+    "branches": [
+      "COMMON",
+      "CO",
+      "IF",
+      "AN",
+      "ME",
+      "CE",
+      "EE",
+      "EJ"
+    ]
   },
   {
     "title": "312301 - Applied Mathematics - First Year Second Semester Question Bank",
@@ -222,7 +372,21 @@
       "MSBTE",
       "K-Scheme"
     ],
-    "dateAdded": "2026-03-10"
+    "dateAdded": "2026-03-10",
+    "code": "312301",
+    "shortCode": "AMS",
+    "semester": 2,
+    "year": 1,
+    "branches": [
+      "COMMON",
+      "CO",
+      "IF",
+      "AN",
+      "ME",
+      "CE",
+      "EE",
+      "EJ"
+    ]
   },
   {
     "title": "312302 - Basic Electrical and Electronics Engineering - First Year Second Semester Question Bank",
@@ -237,7 +401,19 @@
       "MSBTE",
       "K-Scheme"
     ],
-    "dateAdded": "2026-03-10"
+    "dateAdded": "2026-03-10",
+    "code": "312302",
+    "shortCode": "BEE",
+    "semester": 2,
+    "year": 1,
+    "branches": [
+      "COMMON",
+      "CO",
+      "IF",
+      "AN",
+      "ME",
+      "CE"
+    ]
   },
   {
     "title": "312303 - Programming in C - First Year Second Semester Question Bank",
@@ -252,7 +428,19 @@
       "MSBTE",
       "K-Scheme"
     ],
-    "dateAdded": "2026-03-10"
+    "dateAdded": "2026-03-10",
+    "code": "312303",
+    "shortCode": "PIC",
+    "semester": 2,
+    "year": 1,
+    "branches": [
+      "COMMON",
+      "CO",
+      "IF",
+      "AN",
+      "EE",
+      "EJ"
+    ]
   },
   {
     "title": "313303 - Digital Techniques - Second Year Third Semester Question Bank",
@@ -267,7 +455,17 @@
       "MSBTE",
       "K-Scheme"
     ],
-    "dateAdded": "2026-03-10"
+    "dateAdded": "2026-03-10",
+    "code": "313303",
+    "shortCode": "DTE",
+    "semester": 3,
+    "year": 2,
+    "branches": [
+      "CO",
+      "IF",
+      "AN",
+      "EJ"
+    ]
   },
   {
     "title": "313301 - Data Structure Using C - Second Year Third Semester Question Bank",
@@ -282,7 +480,16 @@
       "MSBTE",
       "K-Scheme"
     ],
-    "dateAdded": "2026-03-10"
+    "dateAdded": "2026-03-10",
+    "code": "313301",
+    "shortCode": "DSU",
+    "semester": 3,
+    "year": 2,
+    "branches": [
+      "CO",
+      "IF",
+      "AN"
+    ]
   },
   {
     "title": "313302 - Database Management System - Second Year Third Semester Question Bank",
@@ -297,7 +504,16 @@
       "MSBTE",
       "K-Scheme"
     ],
-    "dateAdded": "2026-03-10"
+    "dateAdded": "2026-03-10",
+    "code": "313302",
+    "shortCode": "DBMS",
+    "semester": 3,
+    "year": 2,
+    "branches": [
+      "CO",
+      "IF",
+      "AN"
+    ]
   },
   {
     "title": "313304 - Object Oriented Programming Using C++ - Second Year Third Semester Question Bank",
@@ -312,7 +528,16 @@
       "MSBTE",
       "K-Scheme"
     ],
-    "dateAdded": "2026-03-10"
+    "dateAdded": "2026-03-10",
+    "code": "313304",
+    "shortCode": "OOP",
+    "semester": 3,
+    "year": 2,
+    "branches": [
+      "CO",
+      "IF",
+      "AN"
+    ]
   },
   {
     "title": "314318 - Data Communication and Computer Network - Second Year Fourth Semester Question Bank",
@@ -327,7 +552,15 @@
       "MSBTE",
       "K-Scheme"
     ],
-    "dateAdded": "2026-03-10"
+    "dateAdded": "2026-03-10",
+    "code": "314318",
+    "shortCode": "DCN",
+    "semester": 4,
+    "year": 2,
+    "branches": [
+      "CO",
+      "IF"
+    ]
   },
   {
     "title": "314321 - Microprocessor Programming - Second Year Fourth Semester Question Bank",
@@ -342,7 +575,15 @@
       "MSBTE",
       "K-Scheme"
     ],
-    "dateAdded": "2026-03-10"
+    "dateAdded": "2026-03-10",
+    "code": "314321",
+    "shortCode": "MIC",
+    "semester": 4,
+    "year": 2,
+    "branches": [
+      "CO",
+      "IF"
+    ]
   },
   {
     "title": "314317 - Java Programming - Second Year Fourth Semester Question Bank",
@@ -357,7 +598,16 @@
       "MSBTE",
       "K-Scheme"
     ],
-    "dateAdded": "2026-03-10"
+    "dateAdded": "2026-03-10",
+    "code": "314317",
+    "shortCode": "JPR",
+    "semester": 4,
+    "year": 2,
+    "branches": [
+      "CO",
+      "IF",
+      "AN"
+    ]
   },
   {
     "title": "314301 - Environmental Education and Sustainability - Second Year Fourth Semester Question Bank",
@@ -372,7 +622,21 @@
       "MSBTE",
       "K-Scheme"
     ],
-    "dateAdded": "2026-03-10"
+    "dateAdded": "2026-03-10",
+    "code": "314301",
+    "shortCode": "EES",
+    "semester": 4,
+    "year": 2,
+    "branches": [
+      "COMMON",
+      "CO",
+      "IF",
+      "AN",
+      "ME",
+      "CE",
+      "EE",
+      "EJ"
+    ]
   },
   {
     "title": "315319 - Operating System - Third Year Fifth Semester Question Bank",
@@ -387,7 +651,16 @@
       "MSBTE",
       "K-Scheme"
     ],
-    "dateAdded": "2026-03-10"
+    "dateAdded": "2026-03-10",
+    "code": "315319",
+    "shortCode": "OS",
+    "semester": 5,
+    "year": 3,
+    "branches": [
+      "CO",
+      "IF",
+      "AN"
+    ]
   },
   {
     "title": "315323 - Software Engineering - Third Year Fifth Semester Question Bank",
@@ -402,7 +675,14 @@
       "MSBTE",
       "K-Scheme"
     ],
-    "dateAdded": "2026-03-10"
+    "dateAdded": "2026-03-10",
+    "code": "315323",
+    "shortCode": "SEN",
+    "semester": 5,
+    "year": 3,
+    "branches": [
+      "CO"
+    ]
   },
   {
     "title": "315321 - Advance Computer Network - Third Year Fifth Semester Question Bank",
@@ -417,7 +697,15 @@
       "MSBTE",
       "K-Scheme"
     ],
-    "dateAdded": "2026-03-10"
+    "dateAdded": "2026-03-10",
+    "code": "315321",
+    "shortCode": "ACN",
+    "semester": 5,
+    "year": 3,
+    "branches": [
+      "CO",
+      "IF"
+    ]
   },
   {
     "title": "315326 - Data Analytics - Third Year Fifth Semester Question Bank",
@@ -432,7 +720,15 @@
       "MSBTE",
       "K-Scheme"
     ],
-    "dateAdded": "2026-03-10"
+    "dateAdded": "2026-03-10",
+    "code": "315326",
+    "shortCode": "DAN",
+    "semester": 5,
+    "year": 3,
+    "branches": [
+      "CO",
+      "IF"
+    ]
   },
   {
     "title": "315301 - Management - Third Year Sixth Semester Question Bank",
@@ -447,7 +743,21 @@
       "MSBTE",
       "K-Scheme"
     ],
-    "dateAdded": "2026-03-10"
+    "dateAdded": "2026-03-10",
+    "code": "315301",
+    "shortCode": "MAN",
+    "semester": 6,
+    "year": 3,
+    "branches": [
+      "COMMON",
+      "CO",
+      "IF",
+      "AN",
+      "ME",
+      "CE",
+      "EE",
+      "EJ"
+    ]
   },
   {
     "title": "316313 - Emerging Trends in Computer Engineering and IT - Third Year Sixth Semester Question Bank",
@@ -462,7 +772,15 @@
       "MSBTE",
       "K-Scheme"
     ],
-    "dateAdded": "2026-03-10"
+    "dateAdded": "2026-03-10",
+    "code": "316313",
+    "shortCode": "ETC",
+    "semester": 6,
+    "year": 3,
+    "branches": [
+      "CO",
+      "IF"
+    ]
   },
   {
     "title": "316314 - Software Testing - Third Year Sixth Semester Question Bank",
@@ -477,7 +795,15 @@
       "MSBTE",
       "K-Scheme"
     ],
-    "dateAdded": "2026-03-10"
+    "dateAdded": "2026-03-10",
+    "code": "316314",
+    "shortCode": "STE",
+    "semester": 6,
+    "year": 3,
+    "branches": [
+      "CO",
+      "IF"
+    ]
   },
   {
     "title": "316315 - Digital Forensic and Hacking Techniques - Third Year Sixth Semester Question Bank",
@@ -492,7 +818,15 @@
       "MSBTE",
       "K-Scheme"
     ],
-    "dateAdded": "2026-03-10"
+    "dateAdded": "2026-03-10",
+    "code": "316315",
+    "shortCode": "DFH",
+    "semester": 6,
+    "year": 3,
+    "branches": [
+      "CO",
+      "IF"
+    ]
   },
   {
     "title": "316317 - Network and Information Security - Third Year Sixth Semester Question Bank",
@@ -507,7 +841,15 @@
       "MSBTE",
       "K-Scheme"
     ],
-    "dateAdded": "2026-03-10"
+    "dateAdded": "2026-03-10",
+    "code": "316317",
+    "shortCode": "NIS",
+    "semester": 6,
+    "year": 3,
+    "branches": [
+      "CO",
+      "IF"
+    ]
   },
   {
     "title": "312316 - Electronic Materials and Components - First Year Second Semester Question Bank",
@@ -522,7 +864,14 @@
       "MSBTE",
       "K-Scheme"
     ],
-    "dateAdded": "2026-03-10"
+    "dateAdded": "2026-03-10",
+    "code": "312316",
+    "shortCode": "EMC",
+    "semester": 2,
+    "year": 1,
+    "branches": [
+      "EJ"
+    ]
   },
   {
     "title": "312314 - Basic Electronics - First Year Second Semester Question Bank",
@@ -537,7 +886,15 @@
       "MSBTE",
       "K-Scheme"
     ],
-    "dateAdded": "2026-03-10"
+    "dateAdded": "2026-03-10",
+    "code": "312314",
+    "shortCode": "BEL",
+    "semester": 2,
+    "year": 1,
+    "branches": [
+      "EJ",
+      "EE"
+    ]
   },
   {
     "title": "312315 - Elements of Electrical Engineering - First Year Second Semester Question Bank",
@@ -552,7 +909,14 @@
       "MSBTE",
       "K-Scheme"
     ],
-    "dateAdded": "2026-03-10"
+    "dateAdded": "2026-03-10",
+    "code": "312315",
+    "shortCode": "EEE",
+    "semester": 2,
+    "year": 1,
+    "branches": [
+      "EE"
+    ]
   },
   {
     "title": "313324 - Analog Electronics - Second Year Third Semester Question Bank",
@@ -567,7 +931,14 @@
       "MSBTE",
       "K-Scheme"
     ],
-    "dateAdded": "2026-03-10"
+    "dateAdded": "2026-03-10",
+    "code": "313324",
+    "shortCode": "AEN",
+    "semester": 3,
+    "year": 2,
+    "branches": [
+      "EJ"
+    ]
   },
   {
     "title": "313325 - Circuits & Networks - Second Year Third Semester Question Bank",
@@ -582,7 +953,15 @@
       "MSBTE",
       "K-Scheme"
     ],
-    "dateAdded": "2026-03-10"
+    "dateAdded": "2026-03-10",
+    "code": "313325",
+    "shortCode": "CKN",
+    "semester": 3,
+    "year": 2,
+    "branches": [
+      "EJ",
+      "EE"
+    ]
   },
   {
     "title": "313326 - Principles of Electronic Communication - Second Year Third Semester Question Bank",
@@ -597,7 +976,14 @@
       "MSBTE",
       "K-Scheme"
     ],
-    "dateAdded": "2026-03-10"
+    "dateAdded": "2026-03-10",
+    "code": "313326",
+    "shortCode": "PEC",
+    "semester": 3,
+    "year": 2,
+    "branches": [
+      "EJ"
+    ]
   },
   {
     "title": "314326 - Digital Communication Systems - Second Year Fourth Semester Question Bank",
@@ -612,7 +998,14 @@
       "MSBTE",
       "K-Scheme"
     ],
-    "dateAdded": "2026-03-10"
+    "dateAdded": "2026-03-10",
+    "code": "314326",
+    "shortCode": "DCS",
+    "semester": 4,
+    "year": 2,
+    "branches": [
+      "EJ"
+    ]
   },
   {
     "title": "314327 - Consumer Electronic Systems - Second Year Fourth Semester Question Bank",
@@ -627,7 +1020,14 @@
       "MSBTE",
       "K-Scheme"
     ],
-    "dateAdded": "2026-03-10"
+    "dateAdded": "2026-03-10",
+    "code": "314327",
+    "shortCode": "CES",
+    "semester": 4,
+    "year": 2,
+    "branches": [
+      "EJ"
+    ]
   },
   {
     "title": "314328 - Microcontroller & Applications - Second Year Fourth Semester Question Bank",
@@ -642,7 +1042,14 @@
       "MSBTE",
       "K-Scheme"
     ],
-    "dateAdded": "2026-03-10"
+    "dateAdded": "2026-03-10",
+    "code": "314328",
+    "shortCode": "MAP",
+    "semester": 4,
+    "year": 2,
+    "branches": [
+      "EJ"
+    ]
   },
   {
     "title": "314363 - Basic Power Electronics - Second Year Fourth Semester Question Bank",
@@ -657,7 +1064,15 @@
       "MSBTE",
       "K-Scheme"
     ],
-    "dateAdded": "2026-03-10"
+    "dateAdded": "2026-03-10",
+    "code": "314363",
+    "shortCode": "BPE",
+    "semester": 4,
+    "year": 2,
+    "branches": [
+      "EE",
+      "EJ"
+    ]
   },
   {
     "title": "315338 - Embedded System - Third Year Fifth Semester Question Bank",
@@ -672,7 +1087,14 @@
       "MSBTE",
       "K-Scheme"
     ],
-    "dateAdded": "2026-03-10"
+    "dateAdded": "2026-03-10",
+    "code": "315338",
+    "shortCode": "EMS",
+    "semester": 5,
+    "year": 3,
+    "branches": [
+      "EJ"
+    ]
   },
   {
     "title": "315339 - Mobile & Wireless Communication - Third Year Fifth Semester Question Bank",
@@ -687,7 +1109,14 @@
       "MSBTE",
       "K-Scheme"
     ],
-    "dateAdded": "2026-03-10"
+    "dateAdded": "2026-03-10",
+    "code": "315339",
+    "shortCode": "MWC",
+    "semester": 5,
+    "year": 3,
+    "branches": [
+      "EJ"
+    ]
   },
   {
     "title": "315342 - Microwave Engineering & Radar System - Third Year Fifth Semester Question Bank",
@@ -702,7 +1131,14 @@
       "MSBTE",
       "K-Scheme"
     ],
-    "dateAdded": "2026-03-10"
+    "dateAdded": "2026-03-10",
+    "code": "315342",
+    "shortCode": "MRS",
+    "semester": 5,
+    "year": 3,
+    "branches": [
+      "EJ"
+    ]
   },
   {
     "title": "316337 - Emerging Trends in Electronics - Third Year Sixth Semester Question Bank",
@@ -717,7 +1153,14 @@
       "MSBTE",
       "K-Scheme"
     ],
-    "dateAdded": "2026-03-10"
+    "dateAdded": "2026-03-10",
+    "code": "316337",
+    "shortCode": "ETE",
+    "semester": 6,
+    "year": 3,
+    "branches": [
+      "EJ"
+    ]
   },
   {
     "title": "316332 - Optical Network and Satellite Communication - Third Year Sixth Semester Question Bank",
@@ -732,7 +1175,14 @@
       "MSBTE",
       "K-Scheme"
     ],
-    "dateAdded": "2026-03-10"
+    "dateAdded": "2026-03-10",
+    "code": "316332",
+    "shortCode": "ONS",
+    "semester": 6,
+    "year": 3,
+    "branches": [
+      "EJ"
+    ]
   },
   {
     "title": "316338 - Computer Network & Data Communication - Third Year Sixth Semester Question Bank",
@@ -747,7 +1197,14 @@
       "MSBTE",
       "K-Scheme"
     ],
-    "dateAdded": "2026-03-10"
+    "dateAdded": "2026-03-10",
+    "code": "316338",
+    "shortCode": "NDC",
+    "semester": 6,
+    "year": 3,
+    "branches": [
+      "EJ"
+    ]
   },
   {
     "title": "316340 - VLSI Applications - Third Year Sixth Semester Question Bank",
@@ -762,7 +1219,14 @@
       "MSBTE",
       "K-Scheme"
     ],
-    "dateAdded": "2026-03-10"
+    "dateAdded": "2026-03-10",
+    "code": "316340",
+    "shortCode": "VLS",
+    "semester": 6,
+    "year": 3,
+    "branches": [
+      "EJ"
+    ]
   },
   {
     "title": "312303 PIC Programming in C Manual Answers",
@@ -777,7 +1241,19 @@
       "Solved",
       "MSBTE"
     ],
-    "dateAdded": "2026-02-07"
+    "dateAdded": "2026-02-07",
+    "code": "312303",
+    "shortCode": "PIC",
+    "semester": 2,
+    "year": 1,
+    "branches": [
+      "COMMON",
+      "CO",
+      "IF",
+      "AN",
+      "EE",
+      "EJ"
+    ]
   },
   {
     "title": "DSA Handwritten Notes",
@@ -792,7 +1268,16 @@
       "Handwritten",
       "PDF"
     ],
-    "dateAdded": "2025-12-11"
+    "dateAdded": "2025-12-11",
+    "code": null,
+    "shortCode": "DSA",
+    "semester": 3,
+    "year": 2,
+    "branches": [
+      "CO",
+      "IF",
+      "AN"
+    ]
   },
   {
     "title": "Digital Techniques (313303) Lab Manual",
@@ -806,7 +1291,17 @@
       "Lab",
       "Solved"
     ],
-    "dateAdded": "2025-10-22"
+    "dateAdded": "2025-10-22",
+    "code": "313303",
+    "shortCode": "DTE",
+    "semester": 3,
+    "year": 2,
+    "branches": [
+      "CO",
+      "IF",
+      "AN",
+      "EJ"
+    ]
   },
   {
     "title": "Java Programming (314317) Resources",
@@ -820,7 +1315,16 @@
       "Flashcards",
       "MCQ"
     ],
-    "dateAdded": "2025-10-20"
+    "dateAdded": "2025-10-20",
+    "code": "314317",
+    "shortCode": "JPR",
+    "semester": 4,
+    "year": 2,
+    "branches": [
+      "CO",
+      "IF",
+      "AN"
+    ]
   },
   {
     "title": "Advanced Java Handwritten Notes",
@@ -834,7 +1338,15 @@
       "Handwritten",
       "PDF"
     ],
-    "dateAdded": "2025-09-18"
+    "dateAdded": "2025-09-18",
+    "code": null,
+    "shortCode": "AJAVA",
+    "semester": 5,
+    "year": 3,
+    "branches": [
+      "CO",
+      "IF"
+    ]
   },
   {
     "title": "K-Scheme Question Bank Hub",
@@ -847,7 +1359,21 @@
       "All Branches",
       "PDF"
     ],
-    "dateAdded": "2025-09-17"
+    "dateAdded": "2025-09-17",
+    "code": null,
+    "shortCode": null,
+    "semester": null,
+    "year": null,
+    "branches": [
+      "COMMON",
+      "CO",
+      "IF",
+      "AN",
+      "ME",
+      "CE",
+      "EE",
+      "EJ"
+    ]
   },
   {
     "title": "20 OOP Microproject Ideas",
@@ -861,7 +1387,16 @@
       "Java",
       "Ideas"
     ],
-    "dateAdded": "2025-09-05"
+    "dateAdded": "2025-09-05",
+    "code": null,
+    "shortCode": "OOP",
+    "semester": 3,
+    "year": 2,
+    "branches": [
+      "CO",
+      "IF",
+      "AN"
+    ]
   },
   {
     "title": "20 DBMS Microproject Ideas",
@@ -875,7 +1410,16 @@
       "Database",
       "Ideas"
     ],
-    "dateAdded": "2025-09-06"
+    "dateAdded": "2025-09-06",
+    "code": null,
+    "shortCode": "DBMS",
+    "semester": 3,
+    "year": 2,
+    "branches": [
+      "CO",
+      "IF",
+      "AN"
+    ]
   },
   {
     "title": "20 OS Microproject Ideas",
@@ -889,7 +1433,16 @@
       "Linux",
       "Ideas"
     ],
-    "dateAdded": "2025-09-07"
+    "dateAdded": "2025-09-07",
+    "code": null,
+    "shortCode": "OSY",
+    "semester": 4,
+    "year": 2,
+    "branches": [
+      "CO",
+      "IF",
+      "AN"
+    ]
   },
   {
     "title": "20 Software Engineering Microproject Ideas",
@@ -903,7 +1456,14 @@
       "SRS",
       "Ideas"
     ],
-    "dateAdded": "2025-09-08"
+    "dateAdded": "2025-09-08",
+    "code": null,
+    "shortCode": "SEN",
+    "semester": 5,
+    "year": 3,
+    "branches": [
+      "CO"
+    ]
   },
   {
     "title": "20 Computer Networks Microproject Ideas",
@@ -917,7 +1477,15 @@
       "Packet Tracer",
       "Ideas"
     ],
-    "dateAdded": "2025-09-09"
+    "dateAdded": "2025-09-09",
+    "code": null,
+    "shortCode": "DCN",
+    "semester": 4,
+    "year": 2,
+    "branches": [
+      "CO",
+      "IF"
+    ]
   },
   {
     "title": "20 Python & Web Dev Microproject Ideas",
@@ -932,7 +1500,16 @@
       "CSS",
       "JS"
     ],
-    "dateAdded": "2025-09-10"
+    "dateAdded": "2025-09-10",
+    "code": null,
+    "shortCode": "WEB",
+    "semester": 4,
+    "year": 2,
+    "branches": [
+      "CO",
+      "IF",
+      "AN"
+    ]
   },
   {
     "title": "Digital Techniques (313303) Subject Guide",
@@ -945,7 +1522,17 @@
       "313303",
       "Electronics"
     ],
-    "dateAdded": "2025-10-21"
+    "dateAdded": "2025-10-21",
+    "code": "313303",
+    "shortCode": "DTE",
+    "semester": 3,
+    "year": 2,
+    "branches": [
+      "CO",
+      "IF",
+      "AN",
+      "EJ"
+    ]
   },
   {
     "title": "Microprocessor (314321) Subject Guide",
@@ -958,7 +1545,15 @@
       "314321",
       "Microprocessor"
     ],
-    "dateAdded": "2025-07-15"
+    "dateAdded": "2025-07-15",
+    "code": "314321",
+    "shortCode": "MIC",
+    "semester": 4,
+    "year": 2,
+    "branches": [
+      "CO",
+      "IF"
+    ]
   },
   {
     "title": "Operating System (315319) Subject Guide",
@@ -971,7 +1566,16 @@
       "315319",
       "OS"
     ],
-    "dateAdded": "2025-07-16"
+    "dateAdded": "2025-07-16",
+    "code": "315319",
+    "shortCode": "OS",
+    "semester": 5,
+    "year": 3,
+    "branches": [
+      "CO",
+      "IF",
+      "AN"
+    ]
   },
   {
     "title": "Software Engineering (315323) Subject Guide",
@@ -984,7 +1588,14 @@
       "315323",
       "SE"
     ],
-    "dateAdded": "2025-07-17"
+    "dateAdded": "2025-07-17",
+    "code": "315323",
+    "shortCode": "SEN",
+    "semester": 5,
+    "year": 3,
+    "branches": [
+      "CO"
+    ]
   },
   {
     "title": "Advanced Computer Network (315321) Guide",
@@ -997,7 +1608,15 @@
       "315321",
       "Networking"
     ],
-    "dateAdded": "2025-07-18"
+    "dateAdded": "2025-07-18",
+    "code": "315321",
+    "shortCode": "ACN",
+    "semester": 5,
+    "year": 3,
+    "branches": [
+      "CO",
+      "IF"
+    ]
   },
   {
     "title": "Data Analytics (315326) Subject Guide",
@@ -1010,7 +1629,15 @@
       "315326",
       "Analytics"
     ],
-    "dateAdded": "2025-07-20"
+    "dateAdded": "2025-07-20",
+    "code": "315326",
+    "shortCode": "DAN",
+    "semester": 5,
+    "year": 3,
+    "branches": [
+      "CO",
+      "IF"
+    ]
   },
   {
     "title": "Entrepreneurship Development (315002) Guide",
@@ -1023,7 +1650,21 @@
       "315002",
       "Business"
     ],
-    "dateAdded": "2025-07-21"
+    "dateAdded": "2025-07-21",
+    "code": "315002",
+    "shortCode": "EDP",
+    "semester": 5,
+    "year": 3,
+    "branches": [
+      "COMMON",
+      "CO",
+      "IF",
+      "AN",
+      "ME",
+      "CE",
+      "EE",
+      "EJ"
+    ]
   },
   {
     "title": "MSBTE Computer Engineering Question Bank (K-Scheme)",
@@ -1038,7 +1679,14 @@
       "K-Scheme",
       "PDF"
     ],
-    "dateAdded": "2025-09-12"
+    "dateAdded": "2025-09-12",
+    "code": null,
+    "shortCode": null,
+    "semester": null,
+    "year": null,
+    "branches": [
+      "CO"
+    ]
   },
   {
     "title": "MSBTE IT Engineering Question Bank (K-Scheme)",
@@ -1053,7 +1701,14 @@
       "K-Scheme",
       "PDF"
     ],
-    "dateAdded": "2025-09-14"
+    "dateAdded": "2025-09-14",
+    "code": null,
+    "shortCode": null,
+    "semester": null,
+    "year": null,
+    "branches": [
+      "IF"
+    ]
   },
   {
     "title": "MSBTE Mechanical Engineering Question Bank (K-Scheme)",
@@ -1068,7 +1723,14 @@
       "K-Scheme",
       "PDF"
     ],
-    "dateAdded": "2025-09-15"
+    "dateAdded": "2025-09-15",
+    "code": null,
+    "shortCode": null,
+    "semester": null,
+    "year": null,
+    "branches": [
+      "ME"
+    ]
   },
   {
     "title": "MSBTE Civil Engineering Question Bank (K-Scheme)",
@@ -1083,7 +1745,14 @@
       "K-Scheme",
       "PDF"
     ],
-    "dateAdded": "2025-09-15"
+    "dateAdded": "2025-09-15",
+    "code": null,
+    "shortCode": null,
+    "semester": null,
+    "year": null,
+    "branches": [
+      "CE"
+    ]
   },
   {
     "title": "MSBTE Electrical Engineering Question Bank (K-Scheme)",
@@ -1098,7 +1767,14 @@
       "K-Scheme",
       "PDF"
     ],
-    "dateAdded": "2025-09-16"
+    "dateAdded": "2025-09-16",
+    "code": null,
+    "shortCode": null,
+    "semester": null,
+    "year": null,
+    "branches": [
+      "EE"
+    ]
   },
   {
     "title": "MSBTE E&TC Engineering Question Bank (K-Scheme)",
@@ -1113,7 +1789,14 @@
       "K-Scheme",
       "PDF"
     ],
-    "dateAdded": "2025-09-13"
+    "dateAdded": "2025-09-13",
+    "code": null,
+    "shortCode": null,
+    "semester": null,
+    "year": null,
+    "branches": [
+      "EJ"
+    ]
   },
   {
     "title": "Cloud Computing (315325) Subject Guide",
@@ -1127,7 +1810,14 @@
       "Cloud",
       "AWS"
     ],
-    "dateAdded": "2025-10-26"
+    "dateAdded": "2025-10-26",
+    "code": "315325",
+    "shortCode": "CLC",
+    "semester": 5,
+    "year": 3,
+    "branches": [
+      "CO"
+    ]
   },
   {
     "title": "DBMS Guess Paper (Free Version)",
@@ -1141,7 +1831,16 @@
       "Guess Paper",
       "K-Scheme"
     ],
-    "dateAdded": "2025-10-26"
+    "dateAdded": "2025-10-26",
+    "code": "313302",
+    "shortCode": "DBMS",
+    "semester": 3,
+    "year": 2,
+    "branches": [
+      "CO",
+      "IF",
+      "AN"
+    ]
   },
   {
     "title": "Engineering Mechanics (312312) Lab Manual",
@@ -1155,7 +1854,15 @@
       "2nd Semester",
       "K-Scheme"
     ],
-    "dateAdded": "2025-12-30"
+    "dateAdded": "2025-12-30",
+    "code": "312312",
+    "shortCode": "EME",
+    "semester": 2,
+    "year": 1,
+    "branches": [
+      "ME",
+      "CE"
+    ]
   },
   {
     "title": "Building Material and Construction (312338) Lab Manual",
@@ -1169,7 +1876,14 @@
       "Civil",
       "K-Scheme"
     ],
-    "dateAdded": "2025-12-30"
+    "dateAdded": "2025-12-30",
+    "code": "312338",
+    "shortCode": "BMC",
+    "semester": 2,
+    "year": 1,
+    "branches": [
+      "CE"
+    ]
   },
   {
     "title": "Applied Science Physics (312308) Lab Manual",
@@ -1183,7 +1897,16 @@
       "2nd Semester",
       "K-Scheme"
     ],
-    "dateAdded": "2025-12-30"
+    "dateAdded": "2025-12-30",
+    "code": "312308",
+    "shortCode": "ASP",
+    "semester": 2,
+    "year": 1,
+    "branches": [
+      "COMMON",
+      "ME",
+      "CE"
+    ]
   },
   {
     "title": "Applied Science Chemistry (312308) Lab Manual",
@@ -1197,7 +1920,16 @@
       "2nd Semester",
       "K-Scheme"
     ],
-    "dateAdded": "2025-12-30"
+    "dateAdded": "2025-12-30",
+    "code": "312308",
+    "shortCode": "ASP",
+    "semester": 2,
+    "year": 1,
+    "branches": [
+      "COMMON",
+      "ME",
+      "CE"
+    ]
   },
   {
     "title": "Programming in C (312303) Lab Manual",
@@ -1211,7 +1943,19 @@
       "PIC",
       "K-Scheme"
     ],
-    "dateAdded": "2025-12-30"
+    "dateAdded": "2025-12-30",
+    "code": "312303",
+    "shortCode": "PIC",
+    "semester": 2,
+    "year": 1,
+    "branches": [
+      "COMMON",
+      "CO",
+      "IF",
+      "AN",
+      "EE",
+      "EJ"
+    ]
   },
   {
     "title": "Web Page Designing (312004) Lab Manual",
@@ -1226,7 +1970,16 @@
       "CSS",
       "K-Scheme"
     ],
-    "dateAdded": "2025-12-30"
+    "dateAdded": "2025-12-30",
+    "code": "312004",
+    "shortCode": "WPD",
+    "semester": 2,
+    "year": 1,
+    "branches": [
+      "CO",
+      "IF",
+      "AN"
+    ]
   },
   {
     "title": "Basic Electrical and Electronics Engineering (312302) Lab Manual",
@@ -1240,7 +1993,19 @@
       "Electrical",
       "K-Scheme"
     ],
-    "dateAdded": "2025-12-30"
+    "dateAdded": "2025-12-30",
+    "code": "312302",
+    "shortCode": "BEE",
+    "semester": 2,
+    "year": 1,
+    "branches": [
+      "COMMON",
+      "CO",
+      "IF",
+      "AN",
+      "ME",
+      "CE"
+    ]
   },
   {
     "title": "Fundamentals of Electrical Engineering (312310) Lab Manual",
@@ -1254,7 +2019,14 @@
       "Electrical",
       "K-Scheme"
     ],
-    "dateAdded": "2025-12-30"
+    "dateAdded": "2025-12-30",
+    "code": "312310",
+    "shortCode": "FEE",
+    "semester": 2,
+    "year": 1,
+    "branches": [
+      "EE"
+    ]
   },
   {
     "title": "Basic Mechanical Engineering (312006) Lab Manual",
@@ -1268,7 +2040,15 @@
       "Mechanical",
       "K-Scheme"
     ],
-    "dateAdded": "2025-12-30"
+    "dateAdded": "2025-12-30",
+    "code": "312006",
+    "shortCode": "BME",
+    "semester": 2,
+    "year": 1,
+    "branches": [
+      "COMMON",
+      "ME"
+    ]
   },
   {
     "title": "Basic Electronics (312314) Lab Manual",
@@ -1282,7 +2062,15 @@
       "Electronics",
       "K-Scheme"
     ],
-    "dateAdded": "2025-12-30"
+    "dateAdded": "2025-12-30",
+    "code": "312314",
+    "shortCode": "BEL",
+    "semester": 2,
+    "year": 1,
+    "branches": [
+      "EJ",
+      "EE"
+    ]
   },
   {
     "title": "Electronic Materials & Components (312316) Lab Manual",
@@ -1296,7 +2084,14 @@
       "Electronics",
       "K-Scheme"
     ],
-    "dateAdded": "2025-12-30"
+    "dateAdded": "2025-12-30",
+    "code": "312316",
+    "shortCode": "EMC",
+    "semester": 2,
+    "year": 1,
+    "branches": [
+      "EJ"
+    ]
   },
   {
     "title": "Elements of Electrical Engineering (312315) Lab Manual",
@@ -1310,7 +2105,14 @@
       "Electrical",
       "K-Scheme"
     ],
-    "dateAdded": "2025-12-30"
+    "dateAdded": "2025-12-30",
+    "code": "312315",
+    "shortCode": "EEE",
+    "semester": 2,
+    "year": 1,
+    "branches": [
+      "EE"
+    ]
   },
   {
     "title": "Solid Fluid Operations (312342) Lab Manual",
@@ -1324,7 +2126,14 @@
       "Chemical Engineering",
       "K-Scheme"
     ],
-    "dateAdded": "2025-12-30"
+    "dateAdded": "2025-12-30",
+    "code": "312342",
+    "shortCode": "SFO",
+    "semester": 2,
+    "year": 1,
+    "branches": [
+      "ME"
+    ]
   },
   {
     "title": "Surveying (312339) Lab Manual",
@@ -1338,7 +2147,14 @@
       "Civil",
       "K-Scheme"
     ],
-    "dateAdded": "2025-12-30"
+    "dateAdded": "2025-12-30",
+    "code": "312339",
+    "shortCode": "SUR",
+    "semester": 2,
+    "year": 1,
+    "branches": [
+      "CE"
+    ]
   },
   {
     "title": "Elements of Electronics (312309) Lab Manual",
@@ -1352,7 +2168,15 @@
       "Electronics",
       "K-Scheme"
     ],
-    "dateAdded": "2025-12-30"
+    "dateAdded": "2025-12-30",
+    "code": "312309",
+    "shortCode": "EOE",
+    "semester": 2,
+    "year": 1,
+    "branches": [
+      "EJ",
+      "EE"
+    ]
   },
   {
     "title": "Linux Basics (312001) Lab Manual",
@@ -1366,7 +2190,17 @@
       "LNX",
       "K-Scheme"
     ],
-    "dateAdded": "2025-12-30"
+    "dateAdded": "2025-12-30",
+    "code": "312001",
+    "shortCode": "LNX",
+    "semester": 2,
+    "year": 1,
+    "branches": [
+      "COMMON",
+      "CO",
+      "IF",
+      "AN"
+    ]
   },
   {
     "title": "Fundamental of Chemical Engineering and Materials (312341) Lab Manual",
@@ -1380,7 +2214,14 @@
       "Chemical Engineering",
       "K-Scheme"
     ],
-    "dateAdded": "2025-12-30"
+    "dateAdded": "2025-12-30",
+    "code": "312341",
+    "shortCode": "FCM",
+    "semester": 2,
+    "year": 1,
+    "branches": [
+      "ME"
+    ]
   },
   {
     "title": "Computer Technology Syllabus & Notes",
@@ -1393,7 +2234,14 @@
       "K-Scheme",
       "Syllabus"
     ],
-    "dateAdded": "2026-01-06"
+    "dateAdded": "2026-01-06",
+    "code": null,
+    "shortCode": null,
+    "semester": null,
+    "year": null,
+    "branches": [
+      "CO"
+    ]
   },
   {
     "title": "Computer Technology Semester 1",
@@ -1406,7 +2254,14 @@
       "Semester 1",
       "K-Scheme"
     ],
-    "dateAdded": "2026-01-06"
+    "dateAdded": "2026-01-06",
+    "code": null,
+    "shortCode": null,
+    "semester": null,
+    "year": null,
+    "branches": [
+      "CO"
+    ]
   },
   {
     "title": "BASIC MATHEMATICS (311302)",
@@ -1420,7 +2275,21 @@
       "Semester 1",
       "K-Scheme"
     ],
-    "dateAdded": "2026-01-06"
+    "dateAdded": "2026-01-06",
+    "code": "311302",
+    "shortCode": "BMS",
+    "semester": 1,
+    "year": 1,
+    "branches": [
+      "COMMON",
+      "CO",
+      "IF",
+      "AN",
+      "ME",
+      "CE",
+      "EE",
+      "EJ"
+    ]
   },
   {
     "title": "BASIC SCIENCE (311305)",
@@ -1434,7 +2303,21 @@
       "Semester 1",
       "K-Scheme"
     ],
-    "dateAdded": "2026-01-06"
+    "dateAdded": "2026-01-06",
+    "code": "311305",
+    "shortCode": "BSC",
+    "semester": 1,
+    "year": 1,
+    "branches": [
+      "COMMON",
+      "CO",
+      "IF",
+      "AN",
+      "ME",
+      "CE",
+      "EE",
+      "EJ"
+    ]
   },
   {
     "title": "COMMUNICATION SKILLS (ENGLISH) (311303)",
@@ -1448,7 +2331,21 @@
       "Semester 1",
       "K-Scheme"
     ],
-    "dateAdded": "2026-01-06"
+    "dateAdded": "2026-01-06",
+    "code": "311303",
+    "shortCode": "ENG",
+    "semester": 1,
+    "year": 1,
+    "branches": [
+      "COMMON",
+      "CO",
+      "IF",
+      "AN",
+      "ME",
+      "CE",
+      "EE",
+      "EJ"
+    ]
   },
   {
     "title": "ENGINEERING GRAPHICS (311008)",
@@ -1462,7 +2359,17 @@
       "Semester 1",
       "K-Scheme"
     ],
-    "dateAdded": "2026-01-06"
+    "dateAdded": "2026-01-06",
+    "code": "311008",
+    "shortCode": "EG-C",
+    "semester": 1,
+    "year": 1,
+    "branches": [
+      "COMMON",
+      "CO",
+      "IF",
+      "AN"
+    ]
   },
   {
     "title": "ENGINEERING WORKSHOP PRACTICE (311002)",
@@ -1476,7 +2383,16 @@
       "Semester 1",
       "K-Scheme"
     ],
-    "dateAdded": "2026-01-06"
+    "dateAdded": "2026-01-06",
+    "code": "311002",
+    "shortCode": "EWP",
+    "semester": 1,
+    "year": 1,
+    "branches": [
+      "COMMON",
+      "ME",
+      "CE"
+    ]
   },
   {
     "title": "FUNDAMENTALS OF ICT (311001)",
@@ -1490,7 +2406,21 @@
       "Semester 1",
       "K-Scheme"
     ],
-    "dateAdded": "2026-01-06"
+    "dateAdded": "2026-01-06",
+    "code": "311001",
+    "shortCode": "ICT",
+    "semester": 1,
+    "year": 1,
+    "branches": [
+      "COMMON",
+      "CO",
+      "IF",
+      "AN",
+      "ME",
+      "CE",
+      "EE",
+      "EJ"
+    ]
   },
   {
     "title": "YOGA AND MEDITATION (311003)",
@@ -1504,7 +2434,21 @@
       "Semester 1",
       "K-Scheme"
     ],
-    "dateAdded": "2026-01-06"
+    "dateAdded": "2026-01-06",
+    "code": "311003",
+    "shortCode": "YM",
+    "semester": 1,
+    "year": 1,
+    "branches": [
+      "COMMON",
+      "CO",
+      "IF",
+      "AN",
+      "ME",
+      "CE",
+      "EE",
+      "EJ"
+    ]
   },
   {
     "title": "Computer Technology Semester 2",
@@ -1517,7 +2461,14 @@
       "Semester 2",
       "K-Scheme"
     ],
-    "dateAdded": "2026-01-06"
+    "dateAdded": "2026-01-06",
+    "code": null,
+    "shortCode": null,
+    "semester": null,
+    "year": null,
+    "branches": [
+      "CO"
+    ]
   },
   {
     "title": "LINUX BASICS (312001)",
@@ -1531,7 +2482,17 @@
       "Semester 2",
       "K-Scheme"
     ],
-    "dateAdded": "2026-01-06"
+    "dateAdded": "2026-01-06",
+    "code": "312001",
+    "shortCode": "LNX",
+    "semester": 2,
+    "year": 1,
+    "branches": [
+      "COMMON",
+      "CO",
+      "IF",
+      "AN"
+    ]
   },
   {
     "title": "PROFESSIONAL COMMUNICATION (312002)",
@@ -1545,7 +2506,21 @@
       "Semester 2",
       "K-Scheme"
     ],
-    "dateAdded": "2026-01-06"
+    "dateAdded": "2026-01-06",
+    "code": "312002",
+    "shortCode": "PCO",
+    "semester": 2,
+    "year": 1,
+    "branches": [
+      "COMMON",
+      "CO",
+      "IF",
+      "AN",
+      "ME",
+      "CE",
+      "EE",
+      "EJ"
+    ]
   },
   {
     "title": "SOCIAL AND LIFE SKILLS (312003)",
@@ -1559,7 +2534,21 @@
       "Semester 2",
       "K-Scheme"
     ],
-    "dateAdded": "2026-01-06"
+    "dateAdded": "2026-01-06",
+    "code": "312003",
+    "shortCode": "SLS",
+    "semester": 2,
+    "year": 1,
+    "branches": [
+      "COMMON",
+      "CO",
+      "IF",
+      "AN",
+      "ME",
+      "CE",
+      "EE",
+      "EJ"
+    ]
   },
   {
     "title": "WEB PAGE DESIGNING (312004)",
@@ -1573,7 +2562,16 @@
       "Semester 2",
       "K-Scheme"
     ],
-    "dateAdded": "2026-01-06"
+    "dateAdded": "2026-01-06",
+    "code": "312004",
+    "shortCode": "WPD",
+    "semester": 2,
+    "year": 1,
+    "branches": [
+      "CO",
+      "IF",
+      "AN"
+    ]
   },
   {
     "title": "APPLIED MATHEMATICS (312301)",
@@ -1587,7 +2585,21 @@
       "Semester 2",
       "K-Scheme"
     ],
-    "dateAdded": "2026-01-06"
+    "dateAdded": "2026-01-06",
+    "code": "312301",
+    "shortCode": "AMS",
+    "semester": 2,
+    "year": 1,
+    "branches": [
+      "COMMON",
+      "CO",
+      "IF",
+      "AN",
+      "ME",
+      "CE",
+      "EE",
+      "EJ"
+    ]
   },
   {
     "title": "BASIC ELECTRICAL AND ELECTRONICS ENGINEERING (312302)",
@@ -1601,7 +2613,19 @@
       "Semester 2",
       "K-Scheme"
     ],
-    "dateAdded": "2026-01-06"
+    "dateAdded": "2026-01-06",
+    "code": "312302",
+    "shortCode": "BEE",
+    "semester": 2,
+    "year": 1,
+    "branches": [
+      "COMMON",
+      "CO",
+      "IF",
+      "AN",
+      "ME",
+      "CE"
+    ]
   },
   {
     "title": "PROGRAMMING IN C (312303)",
@@ -1615,7 +2639,19 @@
       "Semester 2",
       "K-Scheme"
     ],
-    "dateAdded": "2026-01-06"
+    "dateAdded": "2026-01-06",
+    "code": "312303",
+    "shortCode": "PIC",
+    "semester": 2,
+    "year": 1,
+    "branches": [
+      "COMMON",
+      "CO",
+      "IF",
+      "AN",
+      "EE",
+      "EJ"
+    ]
   },
   {
     "title": "Computer Technology Semester 3",
@@ -1628,7 +2664,14 @@
       "Semester 3",
       "K-Scheme"
     ],
-    "dateAdded": "2026-01-06"
+    "dateAdded": "2026-01-06",
+    "code": null,
+    "shortCode": null,
+    "semester": null,
+    "year": null,
+    "branches": [
+      "CO"
+    ]
   },
   {
     "title": "DATA STRUCTURE USING C (313301)",
@@ -1642,7 +2685,16 @@
       "Semester 3",
       "K-Scheme"
     ],
-    "dateAdded": "2026-01-06"
+    "dateAdded": "2026-01-06",
+    "code": "313301",
+    "shortCode": "DSU",
+    "semester": 3,
+    "year": 2,
+    "branches": [
+      "CO",
+      "IF",
+      "AN"
+    ]
   },
   {
     "title": "DATABASE MANAGEMENT SYSTEM (313302)",
@@ -1656,7 +2708,16 @@
       "Semester 3",
       "K-Scheme"
     ],
-    "dateAdded": "2026-01-06"
+    "dateAdded": "2026-01-06",
+    "code": "313302",
+    "shortCode": "DBMS",
+    "semester": 3,
+    "year": 2,
+    "branches": [
+      "CO",
+      "IF",
+      "AN"
+    ]
   },
   {
     "title": "OBJECT ORIENTED PROGRAMMING USING C++ (313304)",
@@ -1670,7 +2731,16 @@
       "Semester 3",
       "K-Scheme"
     ],
-    "dateAdded": "2026-01-06"
+    "dateAdded": "2026-01-06",
+    "code": "313304",
+    "shortCode": "OOP",
+    "semester": 3,
+    "year": 2,
+    "branches": [
+      "CO",
+      "IF",
+      "AN"
+    ]
   },
   {
     "title": "COMPUTER GRAPHICS (313001)",
@@ -1684,7 +2754,15 @@
       "Semester 3",
       "K-Scheme"
     ],
-    "dateAdded": "2026-01-06"
+    "dateAdded": "2026-01-06",
+    "code": "313001",
+    "shortCode": "CGR",
+    "semester": 3,
+    "year": 2,
+    "branches": [
+      "CO",
+      "IF"
+    ]
   },
   {
     "title": "ESSENCE OF INDIAN CONSTITUTION (313002)",
@@ -1698,7 +2776,21 @@
       "Semester 3",
       "K-Scheme"
     ],
-    "dateAdded": "2026-01-06"
+    "dateAdded": "2026-01-06",
+    "code": "313002",
+    "shortCode": "EIC",
+    "semester": 3,
+    "year": 2,
+    "branches": [
+      "COMMON",
+      "CO",
+      "IF",
+      "AN",
+      "ME",
+      "CE",
+      "EE",
+      "EJ"
+    ]
   },
   {
     "title": "Computer Technology Semester 4",
@@ -1711,7 +2803,14 @@
       "Semester 4",
       "K-Scheme"
     ],
-    "dateAdded": "2026-01-06"
+    "dateAdded": "2026-01-06",
+    "code": null,
+    "shortCode": null,
+    "semester": null,
+    "year": null,
+    "branches": [
+      "CO"
+    ]
   },
   {
     "title": "ENVIRONMENTAL EDUCATION AND SUSTAINABILITY (314301)",
@@ -1725,7 +2824,21 @@
       "Semester 4",
       "K-Scheme"
     ],
-    "dateAdded": "2026-01-06"
+    "dateAdded": "2026-01-06",
+    "code": "314301",
+    "shortCode": "EES",
+    "semester": 4,
+    "year": 2,
+    "branches": [
+      "COMMON",
+      "CO",
+      "IF",
+      "AN",
+      "ME",
+      "CE",
+      "EE",
+      "EJ"
+    ]
   },
   {
     "title": "DATA COMMUNICATION AND COMPUTER NETWORK (314318)",
@@ -1739,7 +2852,15 @@
       "Semester 4",
       "K-Scheme"
     ],
-    "dateAdded": "2026-01-06"
+    "dateAdded": "2026-01-06",
+    "code": "314318",
+    "shortCode": "DCN",
+    "semester": 4,
+    "year": 2,
+    "branches": [
+      "CO",
+      "IF"
+    ]
   },
   {
     "title": "PYTHON PROGRAMMING (314004)",
@@ -1753,7 +2874,16 @@
       "Semester 4",
       "K-Scheme"
     ],
-    "dateAdded": "2026-01-06"
+    "dateAdded": "2026-01-06",
+    "code": "314004",
+    "shortCode": "PYP",
+    "semester": 4,
+    "year": 2,
+    "branches": [
+      "CO",
+      "IF",
+      "AN"
+    ]
   },
   {
     "title": "UI_UX DESIGN (314005)",
@@ -1767,7 +2897,16 @@
       "Semester 4",
       "K-Scheme"
     ],
-    "dateAdded": "2026-01-06"
+    "dateAdded": "2026-01-06",
+    "code": "314005",
+    "shortCode": "UID",
+    "semester": 4,
+    "year": 2,
+    "branches": [
+      "CO",
+      "IF",
+      "AN"
+    ]
   },
   {
     "title": "Computer Technology Semester 5",
@@ -1780,7 +2919,14 @@
       "Semester 5",
       "K-Scheme"
     ],
-    "dateAdded": "2026-01-06"
+    "dateAdded": "2026-01-06",
+    "code": null,
+    "shortCode": null,
+    "semester": null,
+    "year": null,
+    "branches": [
+      "CO"
+    ]
   },
   {
     "title": "ENTREPRENEURSHIP DEVELOPMENT AND STARTUPS (315002)",
@@ -1794,7 +2940,21 @@
       "Semester 5",
       "K-Scheme"
     ],
-    "dateAdded": "2026-01-06"
+    "dateAdded": "2026-01-06",
+    "code": "315002",
+    "shortCode": "EDP",
+    "semester": 5,
+    "year": 3,
+    "branches": [
+      "COMMON",
+      "CO",
+      "IF",
+      "AN",
+      "ME",
+      "CE",
+      "EE",
+      "EJ"
+    ]
   },
   {
     "title": "SEMINAR AND PROJECT INITIATION COURSE (315003)",
@@ -1808,7 +2968,21 @@
       "Semester 5",
       "K-Scheme"
     ],
-    "dateAdded": "2026-01-06"
+    "dateAdded": "2026-01-06",
+    "code": "315003",
+    "shortCode": "SPI",
+    "semester": 5,
+    "year": 3,
+    "branches": [
+      "COMMON",
+      "CO",
+      "IF",
+      "AN",
+      "ME",
+      "CE",
+      "EE",
+      "EJ"
+    ]
   },
   {
     "title": "INTERNSHIP12 WEEKS (315004)",
@@ -1822,7 +2996,21 @@
       "Semester 5",
       "K-Scheme"
     ],
-    "dateAdded": "2026-01-06"
+    "dateAdded": "2026-01-06",
+    "code": "315004",
+    "shortCode": "ITP",
+    "semester": 5,
+    "year": 3,
+    "branches": [
+      "COMMON",
+      "CO",
+      "IF",
+      "AN",
+      "ME",
+      "CE",
+      "EE",
+      "EJ"
+    ]
   },
   {
     "title": "Elective: 315321 - ADVANCE COMPUTER NETWORK ()",
@@ -1836,7 +3024,15 @@
       "Semester 5",
       "K-Scheme"
     ],
-    "dateAdded": "2026-01-06"
+    "dateAdded": "2026-01-06",
+    "code": "315321",
+    "shortCode": "ACN",
+    "semester": 5,
+    "year": 3,
+    "branches": [
+      "CO",
+      "IF"
+    ]
   },
   {
     "title": "Elective: 315325-CLOUD COMPUTING ()",
@@ -1850,7 +3046,14 @@
       "Semester 5",
       "K-Scheme"
     ],
-    "dateAdded": "2026-01-06"
+    "dateAdded": "2026-01-06",
+    "code": "315325",
+    "shortCode": "CLC",
+    "semester": 5,
+    "year": 3,
+    "branches": [
+      "CO"
+    ]
   },
   {
     "title": "Elective: 315326 - DATA ANALYTICS ()",
@@ -1864,7 +3067,15 @@
       "Semester 5",
       "K-Scheme"
     ],
-    "dateAdded": "2026-01-06"
+    "dateAdded": "2026-01-06",
+    "code": "315326",
+    "shortCode": "DAN",
+    "semester": 5,
+    "year": 3,
+    "branches": [
+      "CO",
+      "IF"
+    ]
   },
   {
     "title": "Computer Technology Semester 6",
@@ -1877,7 +3088,14 @@
       "Semester 6",
       "K-Scheme"
     ],
-    "dateAdded": "2026-01-06"
+    "dateAdded": "2026-01-06",
+    "code": null,
+    "shortCode": null,
+    "semester": null,
+    "year": null,
+    "branches": [
+      "CO"
+    ]
   },
   {
     "title": "MANAGEMENT (315301)",
@@ -1891,7 +3109,21 @@
       "Semester 6",
       "K-Scheme"
     ],
-    "dateAdded": "2026-01-06"
+    "dateAdded": "2026-01-06",
+    "code": "315301",
+    "shortCode": "MAN",
+    "semester": 6,
+    "year": 3,
+    "branches": [
+      "COMMON",
+      "CO",
+      "IF",
+      "AN",
+      "ME",
+      "CE",
+      "EE",
+      "EJ"
+    ]
   },
   {
     "title": "EMERGING TRENDS IN COMPUTER ENGINEERING AND INFORMATION TECHNOLOGY (316313)",
@@ -1905,7 +3137,15 @@
       "Semester 6",
       "K-Scheme"
     ],
-    "dateAdded": "2026-01-06"
+    "dateAdded": "2026-01-06",
+    "code": "316313",
+    "shortCode": "ETC",
+    "semester": 6,
+    "year": 3,
+    "branches": [
+      "CO",
+      "IF"
+    ]
   },
   {
     "title": "SOFTWARE TESTING (316314)",
@@ -1919,7 +3159,15 @@
       "Semester 6",
       "K-Scheme"
     ],
-    "dateAdded": "2026-01-06"
+    "dateAdded": "2026-01-06",
+    "code": "316314",
+    "shortCode": "STE",
+    "semester": 6,
+    "year": 3,
+    "branches": [
+      "CO",
+      "IF"
+    ]
   },
   {
     "title": "CLIENT SIDE SCRIPTING (316005)",
@@ -1933,7 +3181,15 @@
       "Semester 6",
       "K-Scheme"
     ],
-    "dateAdded": "2026-01-06"
+    "dateAdded": "2026-01-06",
+    "code": "316005",
+    "shortCode": "CSS",
+    "semester": 6,
+    "year": 3,
+    "branches": [
+      "CO",
+      "IF"
+    ]
   },
   {
     "title": "MOBILE APPLICATION DEVELOPMENT (316006)",
@@ -1947,7 +3203,16 @@
       "Semester 6",
       "K-Scheme"
     ],
-    "dateAdded": "2026-01-06"
+    "dateAdded": "2026-01-06",
+    "code": "316006",
+    "shortCode": "MAD",
+    "semester": 6,
+    "year": 3,
+    "branches": [
+      "CO",
+      "IF",
+      "AN"
+    ]
   },
   {
     "title": "CAPSTONE PROJECT (316004)",
@@ -1961,7 +3226,21 @@
       "Semester 6",
       "K-Scheme"
     ],
-    "dateAdded": "2026-01-06"
+    "dateAdded": "2026-01-06",
+    "code": "316004",
+    "shortCode": "CPJ",
+    "semester": 6,
+    "year": 3,
+    "branches": [
+      "COMMON",
+      "CO",
+      "IF",
+      "AN",
+      "ME",
+      "CE",
+      "EE",
+      "EJ"
+    ]
   },
   {
     "title": "Elective: 316315-DIGITAL FORENSIC AND HACKING TECHNIQUES ()",
@@ -1975,7 +3254,15 @@
       "Semester 6",
       "K-Scheme"
     ],
-    "dateAdded": "2026-01-06"
+    "dateAdded": "2026-01-06",
+    "code": "316315",
+    "shortCode": "DFH",
+    "semester": 6,
+    "year": 3,
+    "branches": [
+      "CO",
+      "IF"
+    ]
   },
   {
     "title": "Elective: 316316-MACHINE LEARNING ()",
@@ -1989,7 +3276,16 @@
       "Semester 6",
       "K-Scheme"
     ],
-    "dateAdded": "2026-01-06"
+    "dateAdded": "2026-01-06",
+    "code": "316316",
+    "shortCode": "ML",
+    "semester": 6,
+    "year": 3,
+    "branches": [
+      "AN",
+      "CO",
+      "IF"
+    ]
   },
   {
     "title": "Elective: 316317-NETWORK AND INFORMATION SECURITY ()",
@@ -2003,7 +3299,15 @@
       "Semester 6",
       "K-Scheme"
     ],
-    "dateAdded": "2026-01-06"
+    "dateAdded": "2026-01-06",
+    "code": "316317",
+    "shortCode": "NIS",
+    "semester": 6,
+    "year": 3,
+    "branches": [
+      "CO",
+      "IF"
+    ]
   },
   {
     "title": "Electronics and Telecommunication Syllabus & Notes",
@@ -2016,7 +3320,14 @@
       "K-Scheme",
       "Syllabus"
     ],
-    "dateAdded": "2026-01-06"
+    "dateAdded": "2026-01-06",
+    "code": null,
+    "shortCode": null,
+    "semester": null,
+    "year": null,
+    "branches": [
+      "EJ"
+    ]
   },
   {
     "title": "Electronics and Telecommunication Semester 1",
@@ -2029,7 +3340,14 @@
       "Semester 1",
       "K-Scheme"
     ],
-    "dateAdded": "2026-01-06"
+    "dateAdded": "2026-01-06",
+    "code": null,
+    "shortCode": null,
+    "semester": null,
+    "year": null,
+    "branches": [
+      "EJ"
+    ]
   },
   {
     "title": "ENGINEERING WORKSHOP PRACTICE (311007)",
@@ -2043,7 +3361,16 @@
       "Semester 1",
       "K-Scheme"
     ],
-    "dateAdded": "2026-01-06"
+    "dateAdded": "2026-01-06",
+    "code": "311007",
+    "shortCode": "EWP-E",
+    "semester": 1,
+    "year": 1,
+    "branches": [
+      "COMMON",
+      "EE",
+      "EJ"
+    ]
   },
   {
     "title": "Electronics and Telecommunication Semester 2",
@@ -2056,7 +3383,14 @@
       "Semester 2",
       "K-Scheme"
     ],
-    "dateAdded": "2026-01-06"
+    "dateAdded": "2026-01-06",
+    "code": null,
+    "shortCode": null,
+    "semester": null,
+    "year": null,
+    "branches": [
+      "EJ"
+    ]
   },
   {
     "title": "ELECTRONICS WORKSHOP PRACTICE (312008)",
@@ -2070,7 +3404,15 @@
       "Semester 2",
       "K-Scheme"
     ],
-    "dateAdded": "2026-01-06"
+    "dateAdded": "2026-01-06",
+    "code": "312008",
+    "shortCode": "EWP-EX",
+    "semester": 2,
+    "year": 1,
+    "branches": [
+      "EJ",
+      "EE"
+    ]
   },
   {
     "title": "PROGRAMMING IN C LANGUAGE (312009)",
@@ -2084,7 +3426,19 @@
       "Semester 2",
       "K-Scheme"
     ],
-    "dateAdded": "2026-01-06"
+    "dateAdded": "2026-01-06",
+    "code": "312009",
+    "shortCode": "PIC",
+    "semester": 2,
+    "year": 1,
+    "branches": [
+      "COMMON",
+      "CO",
+      "IF",
+      "AN",
+      "EE",
+      "EJ"
+    ]
   },
   {
     "title": "BASIC ELECTRONICS (312314)",
@@ -2098,7 +3452,15 @@
       "Semester 2",
       "K-Scheme"
     ],
-    "dateAdded": "2026-01-06"
+    "dateAdded": "2026-01-06",
+    "code": "312314",
+    "shortCode": "BEL",
+    "semester": 2,
+    "year": 1,
+    "branches": [
+      "EJ",
+      "EE"
+    ]
   },
   {
     "title": "ELEMENTS OF ELECTRICAL ENGINEERING (312315)",
@@ -2112,7 +3474,14 @@
       "Semester 2",
       "K-Scheme"
     ],
-    "dateAdded": "2026-01-06"
+    "dateAdded": "2026-01-06",
+    "code": "312315",
+    "shortCode": "EEE",
+    "semester": 2,
+    "year": 1,
+    "branches": [
+      "EE"
+    ]
   },
   {
     "title": "ELECTRONIC MATERIALS AND COMPONENTS (312316)",
@@ -2126,7 +3495,14 @@
       "Semester 2",
       "K-Scheme"
     ],
-    "dateAdded": "2026-01-06"
+    "dateAdded": "2026-01-06",
+    "code": "312316",
+    "shortCode": "EMC",
+    "semester": 2,
+    "year": 1,
+    "branches": [
+      "EJ"
+    ]
   },
   {
     "title": "Electronics and Telecommunication Semester 3",
@@ -2139,7 +3515,14 @@
       "Semester 3",
       "K-Scheme"
     ],
-    "dateAdded": "2026-01-06"
+    "dateAdded": "2026-01-06",
+    "code": null,
+    "shortCode": null,
+    "semester": null,
+    "year": null,
+    "branches": [
+      "EJ"
+    ]
   },
   {
     "title": "ANALOG ELECTRONICS (313324)",
@@ -2153,7 +3536,14 @@
       "Semester 3",
       "K-Scheme"
     ],
-    "dateAdded": "2026-01-06"
+    "dateAdded": "2026-01-06",
+    "code": "313324",
+    "shortCode": "AEN",
+    "semester": 3,
+    "year": 2,
+    "branches": [
+      "EJ"
+    ]
   },
   {
     "title": "CIRCUITS & NETWORKS (313325)",
@@ -2167,7 +3557,15 @@
       "Semester 3",
       "K-Scheme"
     ],
-    "dateAdded": "2026-01-06"
+    "dateAdded": "2026-01-06",
+    "code": "313325",
+    "shortCode": "CKN",
+    "semester": 3,
+    "year": 2,
+    "branches": [
+      "EJ",
+      "EE"
+    ]
   },
   {
     "title": "PRINCIPLES OF ELECTRONIC COMMUNICATION (313326)",
@@ -2181,7 +3579,14 @@
       "Semester 3",
       "K-Scheme"
     ],
-    "dateAdded": "2026-01-06"
+    "dateAdded": "2026-01-06",
+    "code": "313326",
+    "shortCode": "PEC",
+    "semester": 3,
+    "year": 2,
+    "branches": [
+      "EJ"
+    ]
   },
   {
     "title": "BASIC PYTHON PROGRAMMING (313011)",
@@ -2195,7 +3600,16 @@
       "Semester 6",
       "K-Scheme"
     ],
-    "dateAdded": "2026-01-06"
+    "dateAdded": "2026-01-06",
+    "code": "313011",
+    "shortCode": "BPP",
+    "semester": 3,
+    "year": 2,
+    "branches": [
+      "CO",
+      "IF",
+      "AN"
+    ]
   },
   {
     "title": "ELECTRONIC MEASUREMENTS & INSTRUMENTATION (313012)",
@@ -2209,7 +3623,14 @@
       "Semester 3",
       "K-Scheme"
     ],
-    "dateAdded": "2026-01-06"
+    "dateAdded": "2026-01-06",
+    "code": "313012",
+    "shortCode": "EMI",
+    "semester": 3,
+    "year": 2,
+    "branches": [
+      "EJ"
+    ]
   },
   {
     "title": "Electronics and Telecommunication Semester 4",
@@ -2222,7 +3643,14 @@
       "Semester 4",
       "K-Scheme"
     ],
-    "dateAdded": "2026-01-06"
+    "dateAdded": "2026-01-06",
+    "code": null,
+    "shortCode": null,
+    "semester": null,
+    "year": null,
+    "branches": [
+      "EJ"
+    ]
   },
   {
     "title": "DIGITAL COMMUNICATION SYSTEMS (314326)",
@@ -2236,7 +3664,14 @@
       "Semester 4",
       "K-Scheme"
     ],
-    "dateAdded": "2026-01-06"
+    "dateAdded": "2026-01-06",
+    "code": "314326",
+    "shortCode": "DCS",
+    "semester": 4,
+    "year": 2,
+    "branches": [
+      "EJ"
+    ]
   },
   {
     "title": "CONSUMER ELECTRONIC SYSTEMS (314327)",
@@ -2250,7 +3685,14 @@
       "Semester 4",
       "K-Scheme"
     ],
-    "dateAdded": "2026-01-06"
+    "dateAdded": "2026-01-06",
+    "code": "314327",
+    "shortCode": "CES",
+    "semester": 4,
+    "year": 2,
+    "branches": [
+      "EJ"
+    ]
   },
   {
     "title": "MICROCONTROLLER & APPLICATIONS (314328)",
@@ -2264,7 +3706,14 @@
       "Semester 4",
       "K-Scheme"
     ],
-    "dateAdded": "2026-01-06"
+    "dateAdded": "2026-01-06",
+    "code": "314328",
+    "shortCode": "MAP",
+    "semester": 4,
+    "year": 2,
+    "branches": [
+      "EJ"
+    ]
   },
   {
     "title": "BASIC POWER ELECTRONICS (314363)",
@@ -2278,7 +3727,15 @@
       "Semester 4",
       "K-Scheme"
     ],
-    "dateAdded": "2026-01-06"
+    "dateAdded": "2026-01-06",
+    "code": "314363",
+    "shortCode": "BPE",
+    "semester": 4,
+    "year": 2,
+    "branches": [
+      "EE",
+      "EJ"
+    ]
   },
   {
     "title": "ELECTRONIC EQUIPMENT MAINTENANCE & SIMULATION (314009)",
@@ -2292,7 +3749,14 @@
       "Semester 4",
       "K-Scheme"
     ],
-    "dateAdded": "2026-01-06"
+    "dateAdded": "2026-01-06",
+    "code": "314009",
+    "shortCode": "EEM",
+    "semester": 4,
+    "year": 2,
+    "branches": [
+      "EJ"
+    ]
   },
   {
     "title": "Electronics and Telecommunication Semester 5",
@@ -2305,7 +3769,14 @@
       "Semester 5",
       "K-Scheme"
     ],
-    "dateAdded": "2026-01-06"
+    "dateAdded": "2026-01-06",
+    "code": null,
+    "shortCode": null,
+    "semester": null,
+    "year": null,
+    "branches": [
+      "EJ"
+    ]
   },
   {
     "title": "EMBEDDED SYSTEM (315338)",
@@ -2319,7 +3790,14 @@
       "Semester 5",
       "K-Scheme"
     ],
-    "dateAdded": "2026-01-06"
+    "dateAdded": "2026-01-06",
+    "code": "315338",
+    "shortCode": "EMS",
+    "semester": 5,
+    "year": 3,
+    "branches": [
+      "EJ"
+    ]
   },
   {
     "title": "MOBILE & WIRELESS COMMUNICATION (315339)",
@@ -2333,7 +3811,14 @@
       "Semester 5",
       "K-Scheme"
     ],
-    "dateAdded": "2026-01-06"
+    "dateAdded": "2026-01-06",
+    "code": "315339",
+    "shortCode": "MWC",
+    "semester": 5,
+    "year": 3,
+    "branches": [
+      "EJ"
+    ]
   },
   {
     "title": "INTERNSHIP(12 WEEKS) (315004)",
@@ -2347,7 +3832,21 @@
       "Semester 5",
       "K-Scheme"
     ],
-    "dateAdded": "2026-01-06"
+    "dateAdded": "2026-01-06",
+    "code": "315004",
+    "shortCode": "ITP",
+    "semester": 5,
+    "year": 3,
+    "branches": [
+      "COMMON",
+      "CO",
+      "IF",
+      "AN",
+      "ME",
+      "CE",
+      "EE",
+      "EJ"
+    ]
   },
   {
     "title": "Elective: 315340- ADVANCE POWER ELECTRONICS ()",
@@ -2361,7 +3860,15 @@
       "Semester 5",
       "K-Scheme"
     ],
-    "dateAdded": "2026-01-06"
+    "dateAdded": "2026-01-06",
+    "code": "315340",
+    "shortCode": "APE",
+    "semester": 5,
+    "year": 3,
+    "branches": [
+      "EJ",
+      "EE"
+    ]
   },
   {
     "title": "Elective: 315341- IOT APPLICATIONS ()",
@@ -2375,7 +3882,16 @@
       "Semester 5",
       "K-Scheme"
     ],
-    "dateAdded": "2026-01-06"
+    "dateAdded": "2026-01-06",
+    "code": "315341",
+    "shortCode": "ITA",
+    "semester": 5,
+    "year": 3,
+    "branches": [
+      "EJ",
+      "CO",
+      "IF"
+    ]
   },
   {
     "title": "Elective: 315342- MICROWAVE ENGINEERING & RADAR SYSTEM ()",
@@ -2389,7 +3905,14 @@
       "Semester 5",
       "K-Scheme"
     ],
-    "dateAdded": "2026-01-06"
+    "dateAdded": "2026-01-06",
+    "code": "315342",
+    "shortCode": "MRS",
+    "semester": 5,
+    "year": 3,
+    "branches": [
+      "EJ"
+    ]
   },
   {
     "title": "Electronics and Telecommunication Semester 6",
@@ -2402,7 +3925,14 @@
       "Semester 6",
       "K-Scheme"
     ],
-    "dateAdded": "2026-01-06"
+    "dateAdded": "2026-01-06",
+    "code": null,
+    "shortCode": null,
+    "semester": null,
+    "year": null,
+    "branches": [
+      "EJ"
+    ]
   },
   {
     "title": "EMERGING TRENDS IN ELECTRONICS (316337)",
@@ -2416,7 +3946,14 @@
       "Semester 6",
       "K-Scheme"
     ],
-    "dateAdded": "2026-01-06"
+    "dateAdded": "2026-01-06",
+    "code": "316337",
+    "shortCode": "ETE",
+    "semester": 6,
+    "year": 3,
+    "branches": [
+      "EJ"
+    ]
   },
   {
     "title": "OPTICAL NETWORK AND SATELLITE COMMUNICATION (316332)",
@@ -2430,7 +3967,14 @@
       "Semester 6",
       "K-Scheme"
     ],
-    "dateAdded": "2026-01-06"
+    "dateAdded": "2026-01-06",
+    "code": "316332",
+    "shortCode": "ONS",
+    "semester": 6,
+    "year": 3,
+    "branches": [
+      "EJ"
+    ]
   },
   {
     "title": "COMPUTER NETWORK & DATA COMMUNICATION (316338)",
@@ -2444,7 +3988,14 @@
       "Semester 6",
       "K-Scheme"
     ],
-    "dateAdded": "2026-01-06"
+    "dateAdded": "2026-01-06",
+    "code": "316338",
+    "shortCode": "NDC",
+    "semester": 6,
+    "year": 3,
+    "branches": [
+      "EJ"
+    ]
   },
   {
     "title": "Elective: 316334 - AUTOMATION & PLC ()",
@@ -2458,7 +4009,15 @@
       "Semester 6",
       "K-Scheme"
     ],
-    "dateAdded": "2026-01-06"
+    "dateAdded": "2026-01-06",
+    "code": "316334",
+    "shortCode": "PLC",
+    "semester": 6,
+    "year": 3,
+    "branches": [
+      "EJ",
+      "EE"
+    ]
   },
   {
     "title": "Elective: 316335 - DRONE TECHNOLOGY ()",
@@ -2472,7 +4031,15 @@
       "Semester 6",
       "K-Scheme"
     ],
-    "dateAdded": "2026-01-06"
+    "dateAdded": "2026-01-06",
+    "code": "316335",
+    "shortCode": "DRT",
+    "semester": 6,
+    "year": 3,
+    "branches": [
+      "EJ",
+      "ME"
+    ]
   },
   {
     "title": "Elective: 316340 - VLSI APPLICATIONS ()",
@@ -2486,7 +4053,14 @@
       "Semester 6",
       "K-Scheme"
     ],
-    "dateAdded": "2026-01-06"
+    "dateAdded": "2026-01-06",
+    "code": "316340",
+    "shortCode": "VLS",
+    "semester": 6,
+    "year": 3,
+    "branches": [
+      "EJ"
+    ]
   },
   {
     "title": "Information Technology Syllabus & Notes",
@@ -2499,7 +4073,14 @@
       "K-Scheme",
       "Syllabus"
     ],
-    "dateAdded": "2026-01-06"
+    "dateAdded": "2026-01-06",
+    "code": null,
+    "shortCode": null,
+    "semester": null,
+    "year": null,
+    "branches": [
+      "IF"
+    ]
   },
   {
     "title": "Information Technology Semester 1",
@@ -2512,7 +4093,14 @@
       "Semester 1",
       "K-Scheme"
     ],
-    "dateAdded": "2026-01-06"
+    "dateAdded": "2026-01-06",
+    "code": null,
+    "shortCode": null,
+    "semester": null,
+    "year": null,
+    "branches": [
+      "IF"
+    ]
   },
   {
     "title": "Information Technology Semester 2",
@@ -2525,7 +4113,14 @@
       "Semester 2",
       "K-Scheme"
     ],
-    "dateAdded": "2026-01-06"
+    "dateAdded": "2026-01-06",
+    "code": null,
+    "shortCode": null,
+    "semester": null,
+    "year": null,
+    "branches": [
+      "IF"
+    ]
   },
   {
     "title": "Information Technology Semester 3",
@@ -2538,7 +4133,14 @@
       "Semester 3",
       "K-Scheme"
     ],
-    "dateAdded": "2026-01-06"
+    "dateAdded": "2026-01-06",
+    "code": null,
+    "shortCode": null,
+    "semester": null,
+    "year": null,
+    "branches": [
+      "IF"
+    ]
   },
   {
     "title": "DIGITAL TECHNIQUES AND MICROPROCESSORS (313305)",
@@ -2552,7 +4154,14 @@
       "Semester 3",
       "K-Scheme"
     ],
-    "dateAdded": "2026-01-06"
+    "dateAdded": "2026-01-06",
+    "code": "313305",
+    "shortCode": "DTM",
+    "semester": 3,
+    "year": 2,
+    "branches": [
+      "EJ"
+    ]
   },
   {
     "title": "APPLIED MULTIMEDIA TECHNIQUES (313003)",
@@ -2566,7 +4175,15 @@
       "Semester 3",
       "K-Scheme"
     ],
-    "dateAdded": "2026-01-06"
+    "dateAdded": "2026-01-06",
+    "code": "313003",
+    "shortCode": "AMT",
+    "semester": 3,
+    "year": 2,
+    "branches": [
+      "CO",
+      "IF"
+    ]
   },
   {
     "title": "Information Technology Semester 4",
@@ -2579,7 +4196,14 @@
       "Semester 4",
       "K-Scheme"
     ],
-    "dateAdded": "2026-01-06"
+    "dateAdded": "2026-01-06",
+    "code": null,
+    "shortCode": null,
+    "semester": null,
+    "year": null,
+    "branches": [
+      "IF"
+    ]
   },
   {
     "title": "INFORMATION SECURITY (314319)",
@@ -2593,7 +4217,16 @@
       "Semester 4",
       "K-Scheme"
     ],
-    "dateAdded": "2026-01-06"
+    "dateAdded": "2026-01-06",
+    "code": "314319",
+    "shortCode": "OSY",
+    "semester": 4,
+    "year": 2,
+    "branches": [
+      "CO",
+      "IF",
+      "AN"
+    ]
   },
   {
     "title": "INTERNET OF THINGS (314006)",
@@ -2607,7 +4240,17 @@
       "Semester 4",
       "K-Scheme"
     ],
-    "dateAdded": "2026-01-06"
+    "dateAdded": "2026-01-06",
+    "code": "314006",
+    "shortCode": "IOT",
+    "semester": 4,
+    "year": 2,
+    "branches": [
+      "CO",
+      "IF",
+      "AN",
+      "EJ"
+    ]
   },
   {
     "title": "Information Technology Semester 5",
@@ -2620,7 +4263,14 @@
       "Semester 5",
       "K-Scheme"
     ],
-    "dateAdded": "2026-01-06"
+    "dateAdded": "2026-01-06",
+    "code": null,
+    "shortCode": null,
+    "semester": null,
+    "year": null,
+    "branches": [
+      "IF"
+    ]
   },
   {
     "title": "SOFTWARE ENGINEERING AND TESTING (315332)",
@@ -2634,7 +4284,14 @@
       "Semester 5",
       "K-Scheme"
     ],
-    "dateAdded": "2026-01-06"
+    "dateAdded": "2026-01-06",
+    "code": "315332",
+    "shortCode": "SET",
+    "semester": 5,
+    "year": 3,
+    "branches": [
+      "IF"
+    ]
   },
   {
     "title": "Elective: 315324 - ADVANCE DATABASE MANAGEMENT ()",
@@ -2648,7 +4305,15 @@
       "Semester 5",
       "K-Scheme"
     ],
-    "dateAdded": "2026-01-06"
+    "dateAdded": "2026-01-06",
+    "code": "315324",
+    "shortCode": "ADM",
+    "semester": 5,
+    "year": 3,
+    "branches": [
+      "IF",
+      "AN"
+    ]
   },
   {
     "title": "Information Technology Semester 6",
@@ -2661,7 +4326,14 @@
       "Semester 6",
       "K-Scheme"
     ],
-    "dateAdded": "2026-01-06"
+    "dateAdded": "2026-01-06",
+    "code": null,
+    "shortCode": null,
+    "semester": null,
+    "year": null,
+    "branches": [
+      "IF"
+    ]
   },
   {
     "title": "WIRELESS AND MOBILE NETWORK (316325)",
@@ -2675,7 +4347,14 @@
       "Semester 6",
       "K-Scheme"
     ],
-    "dateAdded": "2026-01-06"
+    "dateAdded": "2026-01-06",
+    "code": "316325",
+    "shortCode": "WMN",
+    "semester": 6,
+    "year": 3,
+    "branches": [
+      "EJ"
+    ]
   },
   {
     "title": "Elective: 316321 - DATA WAREHOUSING WITH MINING TECHNIQUES ()",
@@ -2689,7 +4368,16 @@
       "Semester 6",
       "K-Scheme"
     ],
-    "dateAdded": "2026-01-06"
+    "dateAdded": "2026-01-06",
+    "code": "316321",
+    "shortCode": "DWM",
+    "semester": 6,
+    "year": 3,
+    "branches": [
+      "AN",
+      "CO",
+      "IF"
+    ]
   },
   {
     "title": "Mechanical Engineering Syllabus & Notes",
@@ -2702,7 +4390,14 @@
       "K-Scheme",
       "Syllabus"
     ],
-    "dateAdded": "2026-01-06"
+    "dateAdded": "2026-01-06",
+    "code": null,
+    "shortCode": null,
+    "semester": null,
+    "year": null,
+    "branches": [
+      "ME"
+    ]
   },
   {
     "title": "Mechanical Engineering Semester 1",
@@ -2715,7 +4410,14 @@
       "Semester 1",
       "K-Scheme"
     ],
-    "dateAdded": "2026-01-06"
+    "dateAdded": "2026-01-06",
+    "code": null,
+    "shortCode": null,
+    "semester": null,
+    "year": null,
+    "branches": [
+      "ME"
+    ]
   },
   {
     "title": "ENGINEERING GRAPHICS (311006)",
@@ -2729,7 +4431,16 @@
       "Semester 1",
       "K-Scheme"
     ],
-    "dateAdded": "2026-01-06"
+    "dateAdded": "2026-01-06",
+    "code": "311006",
+    "shortCode": "EG",
+    "semester": 1,
+    "year": 1,
+    "branches": [
+      "COMMON",
+      "ME",
+      "CE"
+    ]
   },
   {
     "title": "ENGINEERING WORKSHOP PRACTICE (311005)",
@@ -2743,7 +4454,15 @@
       "Semester 1",
       "K-Scheme"
     ],
-    "dateAdded": "2026-01-06"
+    "dateAdded": "2026-01-06",
+    "code": "311005",
+    "shortCode": "EWP-M",
+    "semester": 1,
+    "year": 1,
+    "branches": [
+      "COMMON",
+      "ME"
+    ]
   },
   {
     "title": "Mechanical Engineering Semester 2",
@@ -2756,7 +4475,14 @@
       "Semester 2",
       "K-Scheme"
     ],
-    "dateAdded": "2026-01-06"
+    "dateAdded": "2026-01-06",
+    "code": null,
+    "shortCode": null,
+    "semester": null,
+    "year": null,
+    "branches": [
+      "ME"
+    ]
   },
   {
     "title": "APPLIED SCIENCE (312308)",
@@ -2770,7 +4496,16 @@
       "Semester 2",
       "K-Scheme"
     ],
-    "dateAdded": "2026-01-06"
+    "dateAdded": "2026-01-06",
+    "code": "312308",
+    "shortCode": "ASP",
+    "semester": 2,
+    "year": 1,
+    "branches": [
+      "COMMON",
+      "ME",
+      "CE"
+    ]
   },
   {
     "title": "ENGINEERING DRAWING (312311)",
@@ -2784,7 +4519,15 @@
       "Semester 2",
       "K-Scheme"
     ],
-    "dateAdded": "2026-01-06"
+    "dateAdded": "2026-01-06",
+    "code": "312311",
+    "shortCode": "EDR",
+    "semester": 2,
+    "year": 1,
+    "branches": [
+      "ME",
+      "CE"
+    ]
   },
   {
     "title": "ENGINEERING MECHANICS (312312)",
@@ -2798,7 +4541,15 @@
       "Semester 2",
       "K-Scheme"
     ],
-    "dateAdded": "2026-01-06"
+    "dateAdded": "2026-01-06",
+    "code": "312312",
+    "shortCode": "EME",
+    "semester": 2,
+    "year": 1,
+    "branches": [
+      "ME",
+      "CE"
+    ]
   },
   {
     "title": "MANUFACTURING TECHNOLOGY (312313)",
@@ -2812,7 +4563,14 @@
       "Semester 2",
       "K-Scheme"
     ],
-    "dateAdded": "2026-01-06"
+    "dateAdded": "2026-01-06",
+    "code": "312313",
+    "shortCode": "MTR",
+    "semester": 2,
+    "year": 1,
+    "branches": [
+      "ME"
+    ]
   },
   {
     "title": "Mechanical Engineering Semester 3",
@@ -2825,7 +4583,14 @@
       "Semester 3",
       "K-Scheme"
     ],
-    "dateAdded": "2026-01-06"
+    "dateAdded": "2026-01-06",
+    "code": null,
+    "shortCode": null,
+    "semester": null,
+    "year": null,
+    "branches": [
+      "ME"
+    ]
   },
   {
     "title": "STRENGTH OF MATERIALS (313308)",
@@ -2839,7 +4604,15 @@
       "Semester 3",
       "K-Scheme"
     ],
-    "dateAdded": "2026-01-06"
+    "dateAdded": "2026-01-06",
+    "code": "313308",
+    "shortCode": "SOM",
+    "semester": 3,
+    "year": 2,
+    "branches": [
+      "ME",
+      "CE"
+    ]
   },
   {
     "title": "FLUID MECHANICS AND MACHINERY (313309)",
@@ -2853,7 +4626,14 @@
       "Semester 3",
       "K-Scheme"
     ],
-    "dateAdded": "2026-01-06"
+    "dateAdded": "2026-01-06",
+    "code": "313309",
+    "shortCode": "FMM",
+    "semester": 3,
+    "year": 2,
+    "branches": [
+      "ME"
+    ]
   },
   {
     "title": "THERMAL ENGINEERING (313310)",
@@ -2867,7 +4647,14 @@
       "Semester 3",
       "K-Scheme"
     ],
-    "dateAdded": "2026-01-06"
+    "dateAdded": "2026-01-06",
+    "code": "313310",
+    "shortCode": "TEN",
+    "semester": 3,
+    "year": 2,
+    "branches": [
+      "ME"
+    ]
   },
   {
     "title": "PRODUCTION DRAWING (313311)",
@@ -2881,7 +4668,14 @@
       "Semester 3",
       "K-Scheme"
     ],
-    "dateAdded": "2026-01-06"
+    "dateAdded": "2026-01-06",
+    "code": "313311",
+    "shortCode": "PDR",
+    "semester": 3,
+    "year": 2,
+    "branches": [
+      "ME"
+    ]
   },
   {
     "title": "BASIC ELECTRICAL AND ELECTRONICS (312020)",
@@ -2895,7 +4689,19 @@
       "Semester 3",
       "K-Scheme"
     ],
-    "dateAdded": "2026-01-06"
+    "dateAdded": "2026-01-06",
+    "code": "312020",
+    "shortCode": "BEE",
+    "semester": 2,
+    "year": 1,
+    "branches": [
+      "COMMON",
+      "CO",
+      "IF",
+      "AN",
+      "ME",
+      "CE"
+    ]
   },
   {
     "title": "COMPUTER AIDED DRAFTING (313006)",
@@ -2909,7 +4715,14 @@
       "Semester 3",
       "K-Scheme"
     ],
-    "dateAdded": "2026-01-06"
+    "dateAdded": "2026-01-06",
+    "code": "313006",
+    "shortCode": "CAD",
+    "semester": 3,
+    "year": 2,
+    "branches": [
+      "ME"
+    ]
   },
   {
     "title": "FUNDAMENTALS OF PYTHON PROGRAMMING (313007)",
@@ -2923,7 +4736,16 @@
       "Semester 3",
       "K-Scheme"
     ],
-    "dateAdded": "2026-01-06"
+    "dateAdded": "2026-01-06",
+    "code": "313007",
+    "shortCode": "FPP",
+    "semester": 3,
+    "year": 2,
+    "branches": [
+      "CO",
+      "IF",
+      "AN"
+    ]
   },
   {
     "title": "Mechanical Engineering Semester 4",
@@ -2936,7 +4758,14 @@
       "Semester 4",
       "K-Scheme"
     ],
-    "dateAdded": "2026-01-06"
+    "dateAdded": "2026-01-06",
+    "code": null,
+    "shortCode": null,
+    "semester": null,
+    "year": null,
+    "branches": [
+      "ME"
+    ]
   },
   {
     "title": "THEORY OF MACHINES (313313)",
@@ -2950,7 +4779,14 @@
       "Semester 4",
       "K-Scheme"
     ],
-    "dateAdded": "2026-01-06"
+    "dateAdded": "2026-01-06",
+    "code": "313313",
+    "shortCode": "TOM",
+    "semester": 3,
+    "year": 2,
+    "branches": [
+      "ME"
+    ]
   },
   {
     "title": "METROLOGY AND MEASUREMENT (313316)",
@@ -2964,7 +4800,14 @@
       "Semester 4",
       "K-Scheme"
     ],
-    "dateAdded": "2026-01-06"
+    "dateAdded": "2026-01-06",
+    "code": "313316",
+    "shortCode": "M&M",
+    "semester": 3,
+    "year": 2,
+    "branches": [
+      "ME"
+    ]
   },
   {
     "title": "MECHANICAL ENGINEERING MATERIALS (313317)",
@@ -2978,7 +4821,14 @@
       "Semester 4",
       "K-Scheme"
     ],
-    "dateAdded": "2026-01-06"
+    "dateAdded": "2026-01-06",
+    "code": "313317",
+    "shortCode": "MEM",
+    "semester": 3,
+    "year": 2,
+    "branches": [
+      "ME"
+    ]
   },
   {
     "title": "PRODUCTION PROCESSES (314340)",
@@ -2992,7 +4842,14 @@
       "Semester 4",
       "K-Scheme"
     ],
-    "dateAdded": "2026-01-06"
+    "dateAdded": "2026-01-06",
+    "code": "314340",
+    "shortCode": "PPR",
+    "semester": 4,
+    "year": 2,
+    "branches": [
+      "ME"
+    ]
   },
   {
     "title": "ENTREPRENEURSHIP DEVELOPMENT AND STARTUPS (314014)",
@@ -3006,7 +4863,21 @@
       "Semester 4",
       "K-Scheme"
     ],
-    "dateAdded": "2026-01-06"
+    "dateAdded": "2026-01-06",
+    "code": "314014",
+    "shortCode": "EDS",
+    "semester": 4,
+    "year": 2,
+    "branches": [
+      "COMMON",
+      "CO",
+      "IF",
+      "AN",
+      "ME",
+      "CE",
+      "EE",
+      "EJ"
+    ]
   },
   {
     "title": "BASICS OF MECHATRONICS (314017)",
@@ -3020,7 +4891,14 @@
       "Semester 4",
       "K-Scheme"
     ],
-    "dateAdded": "2026-01-06"
+    "dateAdded": "2026-01-06",
+    "code": "314017",
+    "shortCode": "BMT",
+    "semester": 4,
+    "year": 2,
+    "branches": [
+      "ME"
+    ]
   },
   {
     "title": "CNC PROGRAMMING (314018)",
@@ -3034,7 +4912,14 @@
       "Semester 4",
       "K-Scheme"
     ],
-    "dateAdded": "2026-01-06"
+    "dateAdded": "2026-01-06",
+    "code": "314018",
+    "shortCode": "CNC",
+    "semester": 4,
+    "year": 2,
+    "branches": [
+      "ME"
+    ]
   },
   {
     "title": "Mechanical Engineering Semester 5",
@@ -3047,7 +4932,14 @@
       "Semester 5",
       "K-Scheme"
     ],
-    "dateAdded": "2026-01-06"
+    "dateAdded": "2026-01-06",
+    "code": null,
+    "shortCode": null,
+    "semester": null,
+    "year": null,
+    "branches": [
+      "ME"
+    ]
   },
   {
     "title": "EMERGING TRENDS IN MECHANICAL ENGINEERING (315363)",
@@ -3061,7 +4953,14 @@
       "Semester 5",
       "K-Scheme"
     ],
-    "dateAdded": "2026-01-06"
+    "dateAdded": "2026-01-06",
+    "code": "315363",
+    "shortCode": "ETM",
+    "semester": 5,
+    "year": 3,
+    "branches": [
+      "ME"
+    ]
   },
   {
     "title": "POWER ENGINEERING (315371)",
@@ -3075,7 +4974,14 @@
       "Semester 5",
       "K-Scheme"
     ],
-    "dateAdded": "2026-01-06"
+    "dateAdded": "2026-01-06",
+    "code": "315371",
+    "shortCode": "PEN",
+    "semester": 5,
+    "year": 3,
+    "branches": [
+      "ME"
+    ]
   },
   {
     "title": "AUTOMOBILE ENGINEERING (315372)",
@@ -3089,7 +4995,14 @@
       "Semester 5",
       "K-Scheme"
     ],
-    "dateAdded": "2026-01-06"
+    "dateAdded": "2026-01-06",
+    "code": "315372",
+    "shortCode": "AEN",
+    "semester": 5,
+    "year": 3,
+    "branches": [
+      "ME"
+    ]
   },
   {
     "title": "Elective: 315367 - PRODUCT DESIGN AND DEVELOPMENT ()",
@@ -3103,7 +5016,14 @@
       "Semester 5",
       "K-Scheme"
     ],
-    "dateAdded": "2026-01-06"
+    "dateAdded": "2026-01-06",
+    "code": "315367",
+    "shortCode": "PDD",
+    "semester": 5,
+    "year": 3,
+    "branches": [
+      "ME"
+    ]
   },
   {
     "title": "Elective: 315373 - HEATING VENTILATION AIR CONDITIONING ()",
@@ -3117,7 +5037,14 @@
       "Semester 5",
       "K-Scheme"
     ],
-    "dateAdded": "2026-01-06"
+    "dateAdded": "2026-01-06",
+    "code": "315373",
+    "shortCode": "HVA",
+    "semester": 5,
+    "year": 3,
+    "branches": [
+      "ME"
+    ]
   },
   {
     "title": "Elective: 315374 - POWER PLANT ENGINEERING ()",
@@ -3131,7 +5058,14 @@
       "Semester 5",
       "K-Scheme"
     ],
-    "dateAdded": "2026-01-06"
+    "dateAdded": "2026-01-06",
+    "code": "315374",
+    "shortCode": "PPE",
+    "semester": 5,
+    "year": 3,
+    "branches": [
+      "ME"
+    ]
   },
   {
     "title": "Mechanical Engineering Semester 6",
@@ -3144,7 +5078,14 @@
       "Semester 6",
       "K-Scheme"
     ],
-    "dateAdded": "2026-01-06"
+    "dateAdded": "2026-01-06",
+    "code": null,
+    "shortCode": null,
+    "semester": null,
+    "year": null,
+    "branches": [
+      "ME"
+    ]
   },
   {
     "title": "DESIGN OF MACHINE ELEMENTS (316357)",
@@ -3158,7 +5099,14 @@
       "Semester 6",
       "K-Scheme"
     ],
-    "dateAdded": "2026-01-06"
+    "dateAdded": "2026-01-06",
+    "code": "316357",
+    "shortCode": "DME",
+    "semester": 6,
+    "year": 3,
+    "branches": [
+      "ME"
+    ]
   },
   {
     "title": "INDUSTRIAL ENGINEERING AND QUALITY CONTROL (316362)",
@@ -3172,7 +5120,14 @@
       "Semester 6",
       "K-Scheme"
     ],
-    "dateAdded": "2026-01-06"
+    "dateAdded": "2026-01-06",
+    "code": "316362",
+    "shortCode": "IEQ",
+    "semester": 6,
+    "year": 3,
+    "branches": [
+      "ME"
+    ]
   },
   {
     "title": "INDUSTRIAL HYDRAULICS AND PNEUMATICS (316363)",
@@ -3186,7 +5141,14 @@
       "Semester 6",
       "K-Scheme"
     ],
-    "dateAdded": "2026-01-06"
+    "dateAdded": "2026-01-06",
+    "code": "316363",
+    "shortCode": "IHP",
+    "semester": 6,
+    "year": 3,
+    "branches": [
+      "ME"
+    ]
   },
   {
     "title": "3D MODELLING AND ADDITIVE MANUFACTURING (316013)",
@@ -3200,7 +5162,14 @@
       "Semester 6",
       "K-Scheme"
     ],
-    "dateAdded": "2026-01-06"
+    "dateAdded": "2026-01-06",
+    "code": "316013",
+    "shortCode": "MAM",
+    "semester": 6,
+    "year": 3,
+    "branches": [
+      "ME"
+    ]
   },
   {
     "title": "Elective: 316359 - COMPUTER INTEGRATED MANUFACTURING SYSTEMS ()",
@@ -3214,7 +5183,14 @@
       "Semester 6",
       "K-Scheme"
     ],
-    "dateAdded": "2026-01-06"
+    "dateAdded": "2026-01-06",
+    "code": "316359",
+    "shortCode": "CIM",
+    "semester": 6,
+    "year": 3,
+    "branches": [
+      "ME"
+    ]
   },
   {
     "title": "Elective: 316364 - ALTERNATIVE ENERGY SOURCES AND ENERGY MANAGEMENT ()",
@@ -3228,7 +5204,15 @@
       "Semester 6",
       "K-Scheme"
     ],
-    "dateAdded": "2026-01-06"
+    "dateAdded": "2026-01-06",
+    "code": "316364",
+    "shortCode": "AES",
+    "semester": 6,
+    "year": 3,
+    "branches": [
+      "ME",
+      "EE"
+    ]
   },
   {
     "title": "Elective: 316365 - COLD CHAIN MANAGEMENT ()",
@@ -3242,7 +5226,14 @@
       "Semester 6",
       "K-Scheme"
     ],
-    "dateAdded": "2026-01-06"
+    "dateAdded": "2026-01-06",
+    "code": "316365",
+    "shortCode": "CCM",
+    "semester": 6,
+    "year": 3,
+    "branches": [
+      "ME"
+    ]
   },
   {
     "title": "Civil Engineering Syllabus & Notes",
@@ -3255,7 +5246,14 @@
       "K-Scheme",
       "Syllabus"
     ],
-    "dateAdded": "2026-01-06"
+    "dateAdded": "2026-01-06",
+    "code": null,
+    "shortCode": null,
+    "semester": null,
+    "year": null,
+    "branches": [
+      "CE"
+    ]
   },
   {
     "title": "Civil Engineering Semester 1",
@@ -3268,7 +5266,14 @@
       "Semester 1",
       "K-Scheme"
     ],
-    "dateAdded": "2026-01-06"
+    "dateAdded": "2026-01-06",
+    "code": null,
+    "shortCode": null,
+    "semester": null,
+    "year": null,
+    "branches": [
+      "CE"
+    ]
   },
   {
     "title": "CIVIL ENGINEERING WORKSHOP (311010)",
@@ -3282,7 +5287,15 @@
       "Semester 1",
       "K-Scheme"
     ],
-    "dateAdded": "2026-01-06"
+    "dateAdded": "2026-01-06",
+    "code": "311010",
+    "shortCode": "CEW",
+    "semester": 1,
+    "year": 1,
+    "branches": [
+      "COMMON",
+      "CE"
+    ]
   },
   {
     "title": "Civil Engineering Semester 2",
@@ -3295,7 +5308,14 @@
       "Semester 2",
       "K-Scheme"
     ],
-    "dateAdded": "2026-01-06"
+    "dateAdded": "2026-01-06",
+    "code": null,
+    "shortCode": null,
+    "semester": null,
+    "year": null,
+    "branches": [
+      "CE"
+    ]
   },
   {
     "title": "PROFESSIONALCOMMUNICATION (312002)",
@@ -3309,7 +5329,21 @@
       "Semester 2",
       "K-Scheme"
     ],
-    "dateAdded": "2026-01-06"
+    "dateAdded": "2026-01-06",
+    "code": "312002",
+    "shortCode": "PCO",
+    "semester": 2,
+    "year": 1,
+    "branches": [
+      "COMMON",
+      "CO",
+      "IF",
+      "AN",
+      "ME",
+      "CE",
+      "EE",
+      "EJ"
+    ]
   },
   {
     "title": "SOCIALANDLIFESKILLS (312003)",
@@ -3323,7 +5357,21 @@
       "Semester 2",
       "K-Scheme"
     ],
-    "dateAdded": "2026-01-06"
+    "dateAdded": "2026-01-06",
+    "code": "312003",
+    "shortCode": "SLS",
+    "semester": 2,
+    "year": 1,
+    "branches": [
+      "COMMON",
+      "CO",
+      "IF",
+      "AN",
+      "ME",
+      "CE",
+      "EE",
+      "EJ"
+    ]
   },
   {
     "title": "APPLIEDMATHEMATICS (312301)",
@@ -3337,7 +5385,21 @@
       "Semester 2",
       "K-Scheme"
     ],
-    "dateAdded": "2026-01-06"
+    "dateAdded": "2026-01-06",
+    "code": "312301",
+    "shortCode": "AMS",
+    "semester": 2,
+    "year": 1,
+    "branches": [
+      "COMMON",
+      "CO",
+      "IF",
+      "AN",
+      "ME",
+      "CE",
+      "EE",
+      "EJ"
+    ]
   },
   {
     "title": "APPLIEDSCIENCE (312308)",
@@ -3351,7 +5413,16 @@
       "Semester 2",
       "K-Scheme"
     ],
-    "dateAdded": "2026-01-06"
+    "dateAdded": "2026-01-06",
+    "code": "312308",
+    "shortCode": "ASP",
+    "semester": 2,
+    "year": 1,
+    "branches": [
+      "COMMON",
+      "ME",
+      "CE"
+    ]
   },
   {
     "title": "ENGINEERINGMECHANICS (312312)",
@@ -3365,7 +5436,15 @@
       "Semester 2",
       "K-Scheme"
     ],
-    "dateAdded": "2026-01-06"
+    "dateAdded": "2026-01-06",
+    "code": "312312",
+    "shortCode": "EME",
+    "semester": 2,
+    "year": 1,
+    "branches": [
+      "ME",
+      "CE"
+    ]
   },
   {
     "title": "BUILDINGMATERIALANDCONSTRUCTION (312338)",
@@ -3379,7 +5458,14 @@
       "Semester 2",
       "K-Scheme"
     ],
-    "dateAdded": "2026-01-06"
+    "dateAdded": "2026-01-06",
+    "code": "312338",
+    "shortCode": "BMC",
+    "semester": 2,
+    "year": 1,
+    "branches": [
+      "CE"
+    ]
   },
   {
     "title": "SURVEYING (312339)",
@@ -3393,7 +5479,14 @@
       "Semester 2",
       "K-Scheme"
     ],
-    "dateAdded": "2026-01-06"
+    "dateAdded": "2026-01-06",
+    "code": "312339",
+    "shortCode": "SUR",
+    "semester": 2,
+    "year": 1,
+    "branches": [
+      "CE"
+    ]
   },
   {
     "title": "Civil Engineering Semester 3",
@@ -3406,7 +5499,14 @@
       "Semester 3",
       "K-Scheme"
     ],
-    "dateAdded": "2026-01-06"
+    "dateAdded": "2026-01-06",
+    "code": null,
+    "shortCode": null,
+    "semester": null,
+    "year": null,
+    "branches": [
+      "CE"
+    ]
   },
   {
     "title": "ADVANCED SURVEYING (313321)",
@@ -3420,7 +5520,14 @@
       "Semester 3",
       "K-Scheme"
     ],
-    "dateAdded": "2026-01-06"
+    "dateAdded": "2026-01-06",
+    "code": "313321",
+    "shortCode": "ASU",
+    "semester": 3,
+    "year": 2,
+    "branches": [
+      "CE"
+    ]
   },
   {
     "title": "CONCRETE TECHNOLOGY (313322)",
@@ -3434,7 +5541,14 @@
       "Semester 3",
       "K-Scheme"
     ],
-    "dateAdded": "2026-01-06"
+    "dateAdded": "2026-01-06",
+    "code": "313322",
+    "shortCode": "CTE",
+    "semester": 3,
+    "year": 2,
+    "branches": [
+      "CE"
+    ]
   },
   {
     "title": "HIGHWAY ENGINEERING (313323)",
@@ -3448,7 +5562,14 @@
       "Semester 3",
       "K-Scheme"
     ],
-    "dateAdded": "2026-01-06"
+    "dateAdded": "2026-01-06",
+    "code": "313323",
+    "shortCode": "HEN",
+    "semester": 3,
+    "year": 2,
+    "branches": [
+      "CE"
+    ]
   },
   {
     "title": "BUILDING PLANNING & DRAWING WITH CAD (313009)",
@@ -3462,7 +5583,14 @@
       "Semester 3",
       "K-Scheme"
     ],
-    "dateAdded": "2026-01-06"
+    "dateAdded": "2026-01-06",
+    "code": "313009",
+    "shortCode": "BPD",
+    "semester": 3,
+    "year": 2,
+    "branches": [
+      "CE"
+    ]
   },
   {
     "title": "CONSTRUCTION MANAGEMENT (313010)",
@@ -3476,7 +5604,14 @@
       "Semester 3",
       "K-Scheme"
     ],
-    "dateAdded": "2026-01-06"
+    "dateAdded": "2026-01-06",
+    "code": "313010",
+    "shortCode": "CMA",
+    "semester": 3,
+    "year": 2,
+    "branches": [
+      "CE"
+    ]
   },
   {
     "title": "Civil Engineering Semester 4",
@@ -3489,7 +5624,14 @@
       "Semester 4",
       "K-Scheme"
     ],
-    "dateAdded": "2026-01-06"
+    "dateAdded": "2026-01-06",
+    "code": null,
+    "shortCode": null,
+    "semester": null,
+    "year": null,
+    "branches": [
+      "CE"
+    ]
   },
   {
     "title": "RAILWAY, BRIDGE AND TUNNEL ENGINEERING (314312)",
@@ -3503,7 +5645,14 @@
       "Semester 4",
       "K-Scheme"
     ],
-    "dateAdded": "2026-01-06"
+    "dateAdded": "2026-01-06",
+    "code": "314312",
+    "shortCode": "RBT",
+    "semester": 4,
+    "year": 2,
+    "branches": [
+      "CE"
+    ]
   },
   {
     "title": "HYDRAULICS (314303)",
@@ -3517,7 +5666,14 @@
       "Semester 4",
       "K-Scheme"
     ],
-    "dateAdded": "2026-01-06"
+    "dateAdded": "2026-01-06",
+    "code": "314303",
+    "shortCode": "HYD",
+    "semester": 4,
+    "year": 2,
+    "branches": [
+      "CE"
+    ]
   },
   {
     "title": "ESTIMATING, COSTING AND VALUATION (314313)",
@@ -3531,7 +5687,14 @@
       "Semester 4",
       "K-Scheme"
     ],
-    "dateAdded": "2026-01-06"
+    "dateAdded": "2026-01-06",
+    "code": "314313",
+    "shortCode": "ECV",
+    "semester": 4,
+    "year": 2,
+    "branches": [
+      "CE"
+    ]
   },
   {
     "title": "WATER AND WASTEWATER ENGINEERING (314314)",
@@ -3545,7 +5708,14 @@
       "Semester 4",
       "K-Scheme"
     ],
-    "dateAdded": "2026-01-06"
+    "dateAdded": "2026-01-06",
+    "code": "314314",
+    "shortCode": "WWE",
+    "semester": 4,
+    "year": 2,
+    "branches": [
+      "CE"
+    ]
   },
   {
     "title": "GEOTECHNICAL ENGINEERING (314315)",
@@ -3559,7 +5729,14 @@
       "Semester 4",
       "K-Scheme"
     ],
-    "dateAdded": "2026-01-06"
+    "dateAdded": "2026-01-06",
+    "code": "314315",
+    "shortCode": "GTE",
+    "semester": 4,
+    "year": 2,
+    "branches": [
+      "CE"
+    ]
   },
   {
     "title": "Civil Engineering Semester 5",
@@ -3572,7 +5749,14 @@
       "Semester 5",
       "K-Scheme"
     ],
-    "dateAdded": "2026-01-06"
+    "dateAdded": "2026-01-06",
+    "code": null,
+    "shortCode": null,
+    "semester": null,
+    "year": null,
+    "branches": [
+      "CE"
+    ]
   },
   {
     "title": "THEORY OF STRUCTURES (315313)",
@@ -3586,7 +5770,14 @@
       "Semester 5",
       "K-Scheme"
     ],
-    "dateAdded": "2026-01-06"
+    "dateAdded": "2026-01-06",
+    "code": "315313",
+    "shortCode": "TOS",
+    "semester": 5,
+    "year": 3,
+    "branches": [
+      "CE"
+    ]
   },
   {
     "title": "WATER RESOURCE ENGINEERING (315314)",
@@ -3600,7 +5791,14 @@
       "Semester 5",
       "K-Scheme"
     ],
-    "dateAdded": "2026-01-06"
+    "dateAdded": "2026-01-06",
+    "code": "315314",
+    "shortCode": "WRE",
+    "semester": 5,
+    "year": 3,
+    "branches": [
+      "CE"
+    ]
   },
   {
     "title": "EMERGING TRENDS IN CIVIL ENGINEERING (315315)",
@@ -3614,7 +5812,14 @@
       "Semester 5",
       "K-Scheme"
     ],
-    "dateAdded": "2026-01-06"
+    "dateAdded": "2026-01-06",
+    "code": "315315",
+    "shortCode": "ETC",
+    "semester": 5,
+    "year": 3,
+    "branches": [
+      "CE"
+    ]
   },
   {
     "title": "Elective: 315316- ENERGY CONSERVATION AND GREEN BUILDING ()",
@@ -3628,7 +5833,14 @@
       "Semester 5",
       "K-Scheme"
     ],
-    "dateAdded": "2026-01-06"
+    "dateAdded": "2026-01-06",
+    "code": "315316",
+    "shortCode": "ECG",
+    "semester": 5,
+    "year": 3,
+    "branches": [
+      "CE"
+    ]
   },
   {
     "title": "Elective: 315317- PRECAST AND PRESTRESSED CONCRETE STRUCTURES ()",
@@ -3642,7 +5854,14 @@
       "Semester 5",
       "K-Scheme"
     ],
-    "dateAdded": "2026-01-06"
+    "dateAdded": "2026-01-06",
+    "code": "315317",
+    "shortCode": "PPC",
+    "semester": 5,
+    "year": 3,
+    "branches": [
+      "CE"
+    ]
   },
   {
     "title": "Elective: 315318- ROAD TRAFFIC ENGINEERING ()",
@@ -3656,7 +5875,14 @@
       "Semester 5",
       "K-Scheme"
     ],
-    "dateAdded": "2026-01-06"
+    "dateAdded": "2026-01-06",
+    "code": "315318",
+    "shortCode": "RTE",
+    "semester": 5,
+    "year": 3,
+    "branches": [
+      "CE"
+    ]
   },
   {
     "title": "Civil Engineering Semester 6",
@@ -3669,7 +5895,14 @@
       "Semester 6",
       "K-Scheme"
     ],
-    "dateAdded": "2026-01-06"
+    "dateAdded": "2026-01-06",
+    "code": null,
+    "shortCode": null,
+    "semester": null,
+    "year": null,
+    "branches": [
+      "CE"
+    ]
   },
   {
     "title": "CONTRACTS AND BILLING (316307)",
@@ -3683,7 +5916,14 @@
       "Semester 6",
       "K-Scheme"
     ],
-    "dateAdded": "2026-01-06"
+    "dateAdded": "2026-01-06",
+    "code": "316307",
+    "shortCode": "CAB",
+    "semester": 6,
+    "year": 3,
+    "branches": [
+      "CE"
+    ]
   },
   {
     "title": "DESIGN OF RCC AND STEEL STRUCTURES (316308)",
@@ -3697,7 +5937,14 @@
       "Semester 6",
       "K-Scheme"
     ],
-    "dateAdded": "2026-01-06"
+    "dateAdded": "2026-01-06",
+    "code": "316308",
+    "shortCode": "DRS",
+    "semester": 6,
+    "year": 3,
+    "branches": [
+      "CE"
+    ]
   },
   {
     "title": "MAINTENANCE AND REPAIRS OF STRUCTURES (316309)",
@@ -3711,7 +5958,14 @@
       "Semester 6",
       "K-Scheme"
     ],
-    "dateAdded": "2026-01-06"
+    "dateAdded": "2026-01-06",
+    "code": "316309",
+    "shortCode": "MRS",
+    "semester": 6,
+    "year": 3,
+    "branches": [
+      "CE"
+    ]
   },
   {
     "title": "Elective: 316310 - BUILDING SERVICES ()",
@@ -3725,7 +5979,14 @@
       "Semester 6",
       "K-Scheme"
     ],
-    "dateAdded": "2026-01-06"
+    "dateAdded": "2026-01-06",
+    "code": "316310",
+    "shortCode": "BSE",
+    "semester": 6,
+    "year": 3,
+    "branches": [
+      "CE"
+    ]
   },
   {
     "title": "Elective: 316311 - EARTHQUAKE RESISTANT BUILDING ()",
@@ -3739,7 +6000,14 @@
       "Semester 6",
       "K-Scheme"
     ],
-    "dateAdded": "2026-01-06"
+    "dateAdded": "2026-01-06",
+    "code": "316311",
+    "shortCode": "ERB",
+    "semester": 6,
+    "year": 3,
+    "branches": [
+      "CE"
+    ]
   },
   {
     "title": "Elective: 316312 - SOLID WASTE MANAGEMENT ()",
@@ -3753,7 +6021,14 @@
       "Semester 6",
       "K-Scheme"
     ],
-    "dateAdded": "2026-01-06"
+    "dateAdded": "2026-01-06",
+    "code": "316312",
+    "shortCode": "SWM",
+    "semester": 6,
+    "year": 3,
+    "branches": [
+      "CE"
+    ]
   },
   {
     "title": "Electrical Engineering Syllabus & Notes",
@@ -3766,7 +6041,14 @@
       "K-Scheme",
       "Syllabus"
     ],
-    "dateAdded": "2026-01-06"
+    "dateAdded": "2026-01-06",
+    "code": null,
+    "shortCode": null,
+    "semester": null,
+    "year": null,
+    "branches": [
+      "EE"
+    ]
   },
   {
     "title": "Electrical Engineering Semester 1",
@@ -3779,7 +6061,14 @@
       "Semester 1",
       "K-Scheme"
     ],
-    "dateAdded": "2026-01-06"
+    "dateAdded": "2026-01-06",
+    "code": null,
+    "shortCode": null,
+    "semester": null,
+    "year": null,
+    "branches": [
+      "EE"
+    ]
   },
   {
     "title": "Electrical Engineering Semester 2",
@@ -3792,7 +6081,14 @@
       "Semester 2",
       "K-Scheme"
     ],
-    "dateAdded": "2026-01-06"
+    "dateAdded": "2026-01-06",
+    "code": null,
+    "shortCode": null,
+    "semester": null,
+    "year": null,
+    "branches": [
+      "EE"
+    ]
   },
   {
     "title": "BASIC MECHANICAL ENGINEERING (312006)",
@@ -3806,7 +6102,15 @@
       "Semester 2",
       "K-Scheme"
     ],
-    "dateAdded": "2026-01-06"
+    "dateAdded": "2026-01-06",
+    "code": "312006",
+    "shortCode": "BME",
+    "semester": 2,
+    "year": 1,
+    "branches": [
+      "COMMON",
+      "ME"
+    ]
   },
   {
     "title": "ELEMENTS OF ELECTRONICS (312309)",
@@ -3820,7 +6124,15 @@
       "Semester 2",
       "K-Scheme"
     ],
-    "dateAdded": "2026-01-06"
+    "dateAdded": "2026-01-06",
+    "code": "312309",
+    "shortCode": "EOE",
+    "semester": 2,
+    "year": 1,
+    "branches": [
+      "EJ",
+      "EE"
+    ]
   },
   {
     "title": "FUNDAMENTAL OF ELECTRICAL ENGINEERING (312310)",
@@ -3834,7 +6146,14 @@
       "Semester 2",
       "K-Scheme"
     ],
-    "dateAdded": "2026-01-06"
+    "dateAdded": "2026-01-06",
+    "code": "312310",
+    "shortCode": "FEE",
+    "semester": 2,
+    "year": 1,
+    "branches": [
+      "EE"
+    ]
   },
   {
     "title": "Electrical Engineering Semester 3",
@@ -3847,7 +6166,14 @@
       "Semester 3",
       "K-Scheme"
     ],
-    "dateAdded": "2026-01-06"
+    "dateAdded": "2026-01-06",
+    "code": null,
+    "shortCode": null,
+    "semester": null,
+    "year": null,
+    "branches": [
+      "EE"
+    ]
   },
   {
     "title": "ELECTRICAL CIRCUITS AND NETWORK (313332)",
@@ -3861,7 +6187,14 @@
       "Semester 3",
       "K-Scheme"
     ],
-    "dateAdded": "2026-01-06"
+    "dateAdded": "2026-01-06",
+    "code": "313332",
+    "shortCode": "ECN",
+    "semester": 3,
+    "year": 2,
+    "branches": [
+      "EE"
+    ]
   },
   {
     "title": "ELECTRICAL POWER GENERATION,TRANSMISSION AND DISTRIBUTION (313333)",
@@ -3875,7 +6208,14 @@
       "Semester 3",
       "K-Scheme"
     ],
-    "dateAdded": "2026-01-06"
+    "dateAdded": "2026-01-06",
+    "code": "313333",
+    "shortCode": "EPG",
+    "semester": 3,
+    "year": 2,
+    "branches": [
+      "EE"
+    ]
   },
   {
     "title": "ELECTRICAL AND ELECTRONIC MEASUREMENT (313334)",
@@ -3889,7 +6229,14 @@
       "Semester 3",
       "K-Scheme"
     ],
-    "dateAdded": "2026-01-06"
+    "dateAdded": "2026-01-06",
+    "code": "313334",
+    "shortCode": "EEM",
+    "semester": 3,
+    "year": 2,
+    "branches": [
+      "EE"
+    ]
   },
   {
     "title": "FUNDAMENTALS OF POWER ELECTRONICS (313335)",
@@ -3903,7 +6250,15 @@
       "Semester 3",
       "K-Scheme"
     ],
-    "dateAdded": "2026-01-06"
+    "dateAdded": "2026-01-06",
+    "code": "313335",
+    "shortCode": "FPE",
+    "semester": 3,
+    "year": 2,
+    "branches": [
+      "EE",
+      "EJ"
+    ]
   },
   {
     "title": "ELECTRICAL MATERIAL AND WIRING PRACTICE (313015)",
@@ -3917,7 +6272,14 @@
       "Semester 3",
       "K-Scheme"
     ],
-    "dateAdded": "2026-01-06"
+    "dateAdded": "2026-01-06",
+    "code": "313015",
+    "shortCode": "EMW",
+    "semester": 3,
+    "year": 2,
+    "branches": [
+      "EE"
+    ]
   },
   {
     "title": "Electrical Engineering Semester 4",
@@ -3930,7 +6292,14 @@
       "Semester 4",
       "K-Scheme"
     ],
-    "dateAdded": "2026-01-06"
+    "dateAdded": "2026-01-06",
+    "code": null,
+    "shortCode": null,
+    "semester": null,
+    "year": null,
+    "branches": [
+      "EE"
+    ]
   },
   {
     "title": "D.C. MACHINES AND TRANSFORMERS (314322)",
@@ -3944,7 +6313,14 @@
       "Semester 4",
       "K-Scheme"
     ],
-    "dateAdded": "2026-01-06"
+    "dateAdded": "2026-01-06",
+    "code": "314322",
+    "shortCode": "DMT",
+    "semester": 4,
+    "year": 2,
+    "branches": [
+      "EE"
+    ]
   },
   {
     "title": "UTILIZATION OF ELECTRICAL ENERGY (314323)",
@@ -3958,7 +6334,14 @@
       "Semester 4",
       "K-Scheme"
     ],
-    "dateAdded": "2026-01-06"
+    "dateAdded": "2026-01-06",
+    "code": "314323",
+    "shortCode": "UEE",
+    "semester": 4,
+    "year": 2,
+    "branches": [
+      "EE"
+    ]
   },
   {
     "title": "DIGITAL ELECTRONICS AND MICROCONTROLLER APPLICATIONS (314324)",
@@ -3972,7 +6355,15 @@
       "Semester 4",
       "K-Scheme"
     ],
-    "dateAdded": "2026-01-06"
+    "dateAdded": "2026-01-06",
+    "code": "314324",
+    "shortCode": "DEM",
+    "semester": 4,
+    "year": 2,
+    "branches": [
+      "EE",
+      "EJ"
+    ]
   },
   {
     "title": "ELECTRICAL ESTIMATING AND CONTRACTING (314325)",
@@ -3986,7 +6377,14 @@
       "Semester 4",
       "K-Scheme"
     ],
-    "dateAdded": "2026-01-06"
+    "dateAdded": "2026-01-06",
+    "code": "314325",
+    "shortCode": "EEC",
+    "semester": 4,
+    "year": 2,
+    "branches": [
+      "EE"
+    ]
   },
   {
     "title": "COMPUTER AIDED DRAWING AND SIMULATION (314008)",
@@ -4000,7 +6398,14 @@
       "Semester 4",
       "K-Scheme"
     ],
-    "dateAdded": "2026-01-06"
+    "dateAdded": "2026-01-06",
+    "code": "314008",
+    "shortCode": "CADS",
+    "semester": 4,
+    "year": 2,
+    "branches": [
+      "EE"
+    ]
   },
   {
     "title": "Electrical Engineering Semester 5",
@@ -4013,7 +6418,14 @@
       "Semester 5",
       "K-Scheme"
     ],
-    "dateAdded": "2026-01-06"
+    "dateAdded": "2026-01-06",
+    "code": null,
+    "shortCode": null,
+    "semester": null,
+    "year": null,
+    "branches": [
+      "EE"
+    ]
   },
   {
     "title": "AC MACHINES PERFORMANCE (315333)",
@@ -4027,7 +6439,14 @@
       "Semester 5",
       "K-Scheme"
     ],
-    "dateAdded": "2026-01-06"
+    "dateAdded": "2026-01-06",
+    "code": "315333",
+    "shortCode": "AMP",
+    "semester": 5,
+    "year": 3,
+    "branches": [
+      "EE"
+    ]
   },
   {
     "title": "SWITCHGEAR AND PROTECTION (315334)",
@@ -4041,7 +6460,14 @@
       "Semester 5",
       "K-Scheme"
     ],
-    "dateAdded": "2026-01-06"
+    "dateAdded": "2026-01-06",
+    "code": "315334",
+    "shortCode": "SAP",
+    "semester": 5,
+    "year": 3,
+    "branches": [
+      "EE"
+    ]
   },
   {
     "title": "Elective: 315335 - ELECTRIC VEHICLE TECHNOLOGY ()",
@@ -4055,7 +6481,14 @@
       "Semester 5",
       "K-Scheme"
     ],
-    "dateAdded": "2026-01-06"
+    "dateAdded": "2026-01-06",
+    "code": "315335",
+    "shortCode": "EVT",
+    "semester": 5,
+    "year": 3,
+    "branches": [
+      "EE"
+    ]
   },
   {
     "title": "Elective: 315336 - POWER SYSTEM OPERATION AND CONTROL ()",
@@ -4069,7 +6502,14 @@
       "Semester 5",
       "K-Scheme"
     ],
-    "dateAdded": "2026-01-06"
+    "dateAdded": "2026-01-06",
+    "code": "315336",
+    "shortCode": "PSO",
+    "semester": 5,
+    "year": 3,
+    "branches": [
+      "EE"
+    ]
   },
   {
     "title": "Elective: 315337 - RENEWABLE ENERGY TECHNOLOGY ()",
@@ -4083,7 +6523,14 @@
       "Semester 5",
       "K-Scheme"
     ],
-    "dateAdded": "2026-01-06"
+    "dateAdded": "2026-01-06",
+    "code": "315337",
+    "shortCode": "RET",
+    "semester": 5,
+    "year": 3,
+    "branches": [
+      "EE"
+    ]
   },
   {
     "title": "Electrical Engineering Semester 6",
@@ -4096,7 +6543,14 @@
       "Semester 6",
       "K-Scheme"
     ],
-    "dateAdded": "2026-01-06"
+    "dateAdded": "2026-01-06",
+    "code": null,
+    "shortCode": null,
+    "semester": null,
+    "year": null,
+    "branches": [
+      "EE"
+    ]
   },
   {
     "title": "EMERGING TRENDS IN ELECTRICAL ENGINEERING (3316326)",
@@ -4110,7 +6564,14 @@
       "Semester 6",
       "K-Scheme"
     ],
-    "dateAdded": "2026-01-06"
+    "dateAdded": "2026-01-06",
+    "code": null,
+    "shortCode": null,
+    "semester": null,
+    "year": null,
+    "branches": [
+      "EE"
+    ]
   },
   {
     "title": "ENERGY CONSERVATION AND AUDIT (316327)",
@@ -4124,7 +6585,14 @@
       "Semester 6",
       "K-Scheme"
     ],
-    "dateAdded": "2026-01-06"
+    "dateAdded": "2026-01-06",
+    "code": "316327",
+    "shortCode": "ECA",
+    "semester": 6,
+    "year": 3,
+    "branches": [
+      "EE"
+    ]
   },
   {
     "title": "MAINTENANCE OF ELECTRICAL EQUIPMENTS (316328)",
@@ -4138,7 +6606,14 @@
       "Semester 6",
       "K-Scheme"
     ],
-    "dateAdded": "2026-01-06"
+    "dateAdded": "2026-01-06",
+    "code": "316328",
+    "shortCode": "MEE",
+    "semester": 6,
+    "year": 3,
+    "branches": [
+      "EE"
+    ]
   },
   {
     "title": "Elective: 316329 - INDUSTRIAL AUTOMATION ()",
@@ -4152,7 +6627,14 @@
       "Semester 6",
       "K-Scheme"
     ],
-    "dateAdded": "2026-01-06"
+    "dateAdded": "2026-01-06",
+    "code": "316329",
+    "shortCode": "IAU",
+    "semester": 6,
+    "year": 3,
+    "branches": [
+      "EE"
+    ]
   },
   {
     "title": "Elective: 316330 - INDUSTRIAL DRIVES AND CONTROL ()",
@@ -4166,7 +6648,14 @@
       "Semester 6",
       "K-Scheme"
     ],
-    "dateAdded": "2026-01-06"
+    "dateAdded": "2026-01-06",
+    "code": "316330",
+    "shortCode": "IDC",
+    "semester": 6,
+    "year": 3,
+    "branches": [
+      "EE"
+    ]
   },
   {
     "title": "Elective: 316331 - POWER SYSTEM ANALYSIS ()",
@@ -4180,7 +6669,14 @@
       "Semester 6",
       "K-Scheme"
     ],
-    "dateAdded": "2026-01-06"
+    "dateAdded": "2026-01-06",
+    "code": "316331",
+    "shortCode": "PSA",
+    "semester": 6,
+    "year": 3,
+    "branches": [
+      "EE"
+    ]
   },
   {
     "title": "EE6K ()",
@@ -4194,7 +6690,14 @@
       "Semester 6",
       "K-Scheme"
     ],
-    "dateAdded": "2026-01-06"
+    "dateAdded": "2026-01-06",
+    "code": null,
+    "shortCode": null,
+    "semester": null,
+    "year": null,
+    "branches": [
+      "EE"
+    ]
   },
   {
     "title": "Artificial Intelligence & Machine Learning Syllabus & Notes",
@@ -4207,7 +6710,14 @@
       "K-Scheme",
       "Syllabus"
     ],
-    "dateAdded": "2026-01-06"
+    "dateAdded": "2026-01-06",
+    "code": null,
+    "shortCode": null,
+    "semester": null,
+    "year": null,
+    "branches": [
+      "AN"
+    ]
   },
   {
     "title": "Artificial Intelligence & Machine Learning Semester 1",
@@ -4220,7 +6730,14 @@
       "Semester 1",
       "K-Scheme"
     ],
-    "dateAdded": "2026-01-06"
+    "dateAdded": "2026-01-06",
+    "code": null,
+    "shortCode": null,
+    "semester": null,
+    "year": null,
+    "branches": [
+      "AN"
+    ]
   },
   {
     "title": "Artificial Intelligence & Machine Learning Semester 2",
@@ -4233,7 +6750,14 @@
       "Semester 2",
       "K-Scheme"
     ],
-    "dateAdded": "2026-01-06"
+    "dateAdded": "2026-01-06",
+    "code": null,
+    "shortCode": null,
+    "semester": null,
+    "year": null,
+    "branches": [
+      "AN"
+    ]
   },
   {
     "title": "Artificial Intelligence & Machine Learning Semester 3",
@@ -4246,7 +6770,14 @@
       "Semester 3",
       "K-Scheme"
     ],
-    "dateAdded": "2026-01-06"
+    "dateAdded": "2026-01-06",
+    "code": null,
+    "shortCode": null,
+    "semester": null,
+    "year": null,
+    "branches": [
+      "AN"
+    ]
   },
   {
     "title": "DATA STRUCTURE USING PYTHON (313306)",
@@ -4260,7 +6791,16 @@
       "Semester 3",
       "K-Scheme"
     ],
-    "dateAdded": "2026-01-06"
+    "dateAdded": "2026-01-06",
+    "code": "313306",
+    "shortCode": "DSP",
+    "semester": 3,
+    "year": 2,
+    "branches": [
+      "AN",
+      "CO",
+      "IF"
+    ]
   },
   {
     "title": "STATISTICAL MODELLING FOR MACHINE LEARNING (313307)",
@@ -4274,7 +6814,14 @@
       "Semester 3",
       "K-Scheme"
     ],
-    "dateAdded": "2026-01-06"
+    "dateAdded": "2026-01-06",
+    "code": "313307",
+    "shortCode": "SML",
+    "semester": 3,
+    "year": 2,
+    "branches": [
+      "AN"
+    ]
   },
   {
     "title": "DATA STORY TELLING AND VISUALIZATION (313004)",
@@ -4288,7 +6835,16 @@
       "Semester 3",
       "K-Scheme"
     ],
-    "dateAdded": "2026-01-06"
+    "dateAdded": "2026-01-06",
+    "code": "313004",
+    "shortCode": "DSV",
+    "semester": 3,
+    "year": 2,
+    "branches": [
+      "AN",
+      "CO",
+      "IF"
+    ]
   },
   {
     "title": "Artificial Intelligence & Machine Learning Semester 4",
@@ -4301,7 +6857,14 @@
       "Semester 4",
       "K-Scheme"
     ],
-    "dateAdded": "2026-01-06"
+    "dateAdded": "2026-01-06",
+    "code": null,
+    "shortCode": null,
+    "semester": null,
+    "year": null,
+    "branches": [
+      "AN"
+    ]
   },
   {
     "title": "MATHEMATICS FOR MACHINE LEARNING (314320)",
@@ -4315,7 +6878,14 @@
       "Semester 4",
       "K-Scheme"
     ],
-    "dateAdded": "2026-01-06"
+    "dateAdded": "2026-01-06",
+    "code": "314320",
+    "shortCode": "MML",
+    "semester": 4,
+    "year": 2,
+    "branches": [
+      "AN"
+    ]
   },
   {
     "title": "Artificial Intelligence & Machine Learning Semester 5",
@@ -4328,7 +6898,14 @@
       "Semester 5",
       "K-Scheme"
     ],
-    "dateAdded": "2026-01-06"
+    "dateAdded": "2026-01-06",
+    "code": null,
+    "shortCode": null,
+    "semester": null,
+    "year": null,
+    "branches": [
+      "AN"
+    ]
   },
   {
     "title": "AI & ML ALGORITHM (315330)",
@@ -4342,7 +6919,14 @@
       "Semester 5",
       "K-Scheme"
     ],
-    "dateAdded": "2026-01-06"
+    "dateAdded": "2026-01-06",
+    "code": "315330",
+    "shortCode": "AML",
+    "semester": 5,
+    "year": 3,
+    "branches": [
+      "AN"
+    ]
   },
   {
     "title": "INTERNSHIP ( 12 WEEKS) (314004)",
@@ -4356,7 +6940,16 @@
       "Semester 5",
       "K-Scheme"
     ],
-    "dateAdded": "2026-01-06"
+    "dateAdded": "2026-01-06",
+    "code": "314004",
+    "shortCode": "PYP",
+    "semester": 4,
+    "year": 2,
+    "branches": [
+      "CO",
+      "IF",
+      "AN"
+    ]
   },
   {
     "title": "Elective: 315327 - CLOUD COMPUTING FOR DATA SCIENCE ()",
@@ -4370,7 +6963,14 @@
       "Semester 5",
       "K-Scheme"
     ],
-    "dateAdded": "2026-01-06"
+    "dateAdded": "2026-01-06",
+    "code": "315327",
+    "shortCode": "CCD",
+    "semester": 5,
+    "year": 3,
+    "branches": [
+      "AN"
+    ]
   },
   {
     "title": "Elective: 315329 - NATURAL LANGUAGE PROCESSING ()",
@@ -4384,7 +6984,14 @@
       "Semester 5",
       "K-Scheme"
     ],
-    "dateAdded": "2026-01-06"
+    "dateAdded": "2026-01-06",
+    "code": "315329",
+    "shortCode": "NLP",
+    "semester": 5,
+    "year": 3,
+    "branches": [
+      "AN"
+    ]
   },
   {
     "title": "Artificial Intelligence & Machine Learning Semester 6",
@@ -4397,7 +7004,14 @@
       "Semester 6",
       "K-Scheme"
     ],
-    "dateAdded": "2026-01-06"
+    "dateAdded": "2026-01-06",
+    "code": null,
+    "shortCode": null,
+    "semester": null,
+    "year": null,
+    "branches": [
+      "AN"
+    ]
   },
   {
     "title": "BIG DATA ANALYTICS (316318)",
@@ -4411,7 +7025,16 @@
       "Semester 6",
       "K-Scheme"
     ],
-    "dateAdded": "2026-01-06"
+    "dateAdded": "2026-01-06",
+    "code": "316318",
+    "shortCode": "BDA",
+    "semester": 6,
+    "year": 3,
+    "branches": [
+      "AN",
+      "CO",
+      "IF"
+    ]
   },
   {
     "title": "PRINCIPLES OF IMAGE PROCESSING (316319)",
@@ -4425,7 +7048,15 @@
       "Semester 6",
       "K-Scheme"
     ],
-    "dateAdded": "2026-01-06"
+    "dateAdded": "2026-01-06",
+    "code": "316319",
+    "shortCode": "PIP",
+    "semester": 6,
+    "year": 3,
+    "branches": [
+      "AN",
+      "EJ"
+    ]
   },
   {
     "title": "NETWORK MANAGEMENT AND ADMINISTRATION (316007)",
@@ -4439,7 +7070,15 @@
       "Semester 6",
       "K-Scheme"
     ],
-    "dateAdded": "2026-01-06"
+    "dateAdded": "2026-01-06",
+    "code": "316007",
+    "shortCode": "NMA",
+    "semester": 6,
+    "year": 3,
+    "branches": [
+      "CO",
+      "IF"
+    ]
   },
   {
     "title": "Elective: 316320 - ADVANCED ALGORITHM IN AI & ML ()",
@@ -4453,7 +7092,14 @@
       "Semester 6",
       "K-Scheme"
     ],
-    "dateAdded": "2026-01-06"
+    "dateAdded": "2026-01-06",
+    "code": "316320",
+    "shortCode": "AAI",
+    "semester": 6,
+    "year": 3,
+    "branches": [
+      "AN"
+    ]
   },
   {
     "title": "Elective: 316323 - REINFORCEMENT LEARNING ()",
@@ -4467,7 +7113,14 @@
       "Semester 6",
       "K-Scheme"
     ],
-    "dateAdded": "2026-01-06"
+    "dateAdded": "2026-01-06",
+    "code": "316323",
+    "shortCode": "RL",
+    "semester": 6,
+    "year": 3,
+    "branches": [
+      "AN"
+    ]
   },
   {
     "title": "AN6K ()",
@@ -4481,7 +7134,14 @@
       "Semester 6",
       "K-Scheme"
     ],
-    "dateAdded": "2026-01-06"
+    "dateAdded": "2026-01-06",
+    "code": null,
+    "shortCode": null,
+    "semester": null,
+    "year": null,
+    "branches": [
+      "AN"
+    ]
   },
   {
     "code": "311302",
@@ -4492,13 +7152,14 @@
     "academic_year": "First Year (FY)",
     "subject_type": "Core",
     "branches": [
-      "AI",
-      "CE",
-      "CM",
-      "EE",
-      "EJ",
+      "COMMON",
+      "CO",
       "IF",
-      "ME"
+      "AN",
+      "ME",
+      "CE",
+      "EE",
+      "EJ"
     ],
     "branches_str": "Artificial Intelligence & Machine Learning, Civil Engineering, Computer Engineering, Electrical Engineering, Electronics & Telecommunication, Information Technology, Mechanical Engineering",
     "slug": "311302-basic-mathematics",
@@ -4523,7 +7184,10 @@
         "year": "2025",
         "season": "Winter"
       }
-    }
+    },
+    "shortCode": "BMS",
+    "year": 1,
+    "category": "notes"
   },
   {
     "code": "311303",
@@ -4534,13 +7198,14 @@
     "academic_year": "First Year (FY)",
     "subject_type": "Core",
     "branches": [
-      "AI",
-      "CE",
-      "CM",
-      "EE",
-      "EJ",
+      "COMMON",
+      "CO",
       "IF",
-      "ME"
+      "AN",
+      "ME",
+      "CE",
+      "EE",
+      "EJ"
     ],
     "branches_str": "Artificial Intelligence & Machine Learning, Civil Engineering, Computer Engineering, Electrical Engineering, Electronics & Telecommunication, Information Technology, Mechanical Engineering",
     "slug": "311303-communication-skills-english",
@@ -4565,7 +7230,10 @@
         "year": "2025",
         "season": "Winter"
       }
-    }
+    },
+    "shortCode": "ENG",
+    "year": 1,
+    "category": "notes"
   },
   {
     "code": "312301",
@@ -4576,13 +7244,14 @@
     "academic_year": "First Year (FY)",
     "subject_type": "Core",
     "branches": [
-      "AI",
-      "CE",
-      "CM",
-      "EE",
-      "EJ",
+      "COMMON",
+      "CO",
       "IF",
-      "ME"
+      "AN",
+      "ME",
+      "CE",
+      "EE",
+      "EJ"
     ],
     "branches_str": "Artificial Intelligence & Machine Learning, Civil Engineering, Computer Engineering, Electrical Engineering, Electronics & Telecommunication, Information Technology, Mechanical Engineering",
     "slug": "312301-applied-mathematics",
@@ -4607,7 +7276,10 @@
         "year": "2025",
         "season": "Winter"
       }
-    }
+    },
+    "shortCode": "AMS",
+    "year": 1,
+    "category": "notes"
   },
   {
     "code": "312303",
@@ -4618,9 +7290,12 @@
     "academic_year": "First Year (FY)",
     "subject_type": "Core",
     "branches": [
-      "AI",
-      "CM",
-      "IF"
+      "COMMON",
+      "CO",
+      "IF",
+      "AN",
+      "EE",
+      "EJ"
     ],
     "branches_str": "Artificial Intelligence & Machine Learning, Computer Engineering, Information Technology",
     "slug": "312303-programming-in-c",
@@ -4645,7 +7320,10 @@
         "year": "2025",
         "season": "Winter"
       }
-    }
+    },
+    "shortCode": "PIC",
+    "year": 1,
+    "category": "notes"
   },
   {
     "code": "312309",
@@ -4656,6 +7334,7 @@
     "academic_year": "First Year (FY)",
     "subject_type": "Core",
     "branches": [
+      "EJ",
       "EE"
     ],
     "branches_str": "Electrical Engineering",
@@ -4681,7 +7360,10 @@
         "year": "2025",
         "season": "Winter"
       }
-    }
+    },
+    "shortCode": "EOE",
+    "year": 1,
+    "category": "notes"
   },
   {
     "code": "312310",
@@ -4717,7 +7399,10 @@
         "year": "2025",
         "season": "Winter"
       }
-    }
+    },
+    "shortCode": "FEE",
+    "year": 1,
+    "category": "notes"
   },
   {
     "code": "312311",
@@ -4728,7 +7413,8 @@
     "academic_year": "First Year (FY)",
     "subject_type": "Core",
     "branches": [
-      "ME"
+      "ME",
+      "CE"
     ],
     "branches_str": "Mechanical Engineering",
     "slug": "312311-engineering-drawing",
@@ -4753,7 +7439,10 @@
         "year": "2025",
         "season": "Winter"
       }
-    }
+    },
+    "shortCode": "EDR",
+    "year": 1,
+    "category": "notes"
   },
   {
     "code": "312312",
@@ -4764,8 +7453,8 @@
     "academic_year": "First Year (FY)",
     "subject_type": "Core",
     "branches": [
-      "CE",
-      "ME"
+      "ME",
+      "CE"
     ],
     "branches_str": "Civil Engineering, Mechanical Engineering",
     "slug": "312312-engineering-mechanics",
@@ -4790,7 +7479,10 @@
         "year": "2025",
         "season": "Winter"
       }
-    }
+    },
+    "shortCode": "EME",
+    "year": 1,
+    "category": "notes"
   },
   {
     "code": "312313",
@@ -4826,7 +7518,10 @@
         "year": "2025",
         "season": "Winter"
       }
-    }
+    },
+    "shortCode": "MTR",
+    "year": 1,
+    "category": "notes"
   },
   {
     "code": "312314",
@@ -4837,7 +7532,8 @@
     "academic_year": "First Year (FY)",
     "subject_type": "Core",
     "branches": [
-      "EJ"
+      "EJ",
+      "EE"
     ],
     "branches_str": "Electronics & Telecommunication",
     "slug": "312314-basic-electronics",
@@ -4862,7 +7558,10 @@
         "year": "2025",
         "season": "Winter"
       }
-    }
+    },
+    "shortCode": "BEL",
+    "year": 1,
+    "category": "notes"
   },
   {
     "code": "312315",
@@ -4873,7 +7572,7 @@
     "academic_year": "First Year (FY)",
     "subject_type": "Core",
     "branches": [
-      "EJ"
+      "EE"
     ],
     "branches_str": "Electronics & Telecommunication",
     "slug": "312315-elements-of-electrical-engineering",
@@ -4898,7 +7597,10 @@
         "year": "2025",
         "season": "Winter"
       }
-    }
+    },
+    "shortCode": "EEE",
+    "year": 1,
+    "category": "notes"
   },
   {
     "code": "312338",
@@ -4934,7 +7636,10 @@
         "year": "2025",
         "season": "Winter"
       }
-    }
+    },
+    "shortCode": "BMC",
+    "year": 1,
+    "category": "notes"
   },
   {
     "code": "312339",
@@ -4970,7 +7675,10 @@
         "year": "2025",
         "season": "Winter"
       }
-    }
+    },
+    "shortCode": "SUR",
+    "year": 1,
+    "category": "notes"
   },
   {
     "code": "313301",
@@ -4981,8 +7689,9 @@
     "academic_year": "Second Year (SY)",
     "subject_type": "Core",
     "branches": [
-      "CM",
-      "IF"
+      "CO",
+      "IF",
+      "AN"
     ],
     "branches_str": "Computer Engineering, Information Technology",
     "slug": "313301-data-structure-using-c",
@@ -5007,7 +7716,10 @@
         "year": "2025",
         "season": "Winter"
       }
-    }
+    },
+    "shortCode": "DSU",
+    "year": 2,
+    "category": "notes"
   },
   {
     "code": "313302",
@@ -5018,9 +7730,9 @@
     "academic_year": "Second Year (SY)",
     "subject_type": "Core",
     "branches": [
-      "AI",
-      "CM",
-      "IF"
+      "CO",
+      "IF",
+      "AN"
     ],
     "branches_str": "Artificial Intelligence & Machine Learning, Computer Engineering, Information Technology",
     "slug": "313302-database-management-system",
@@ -5045,7 +7757,10 @@
         "year": "2025",
         "season": "Winter"
       }
-    }
+    },
+    "shortCode": "DBMS",
+    "year": 2,
+    "category": "notes"
   },
   {
     "code": "313303",
@@ -5056,8 +7771,9 @@
     "academic_year": "Second Year (SY)",
     "subject_type": "Core",
     "branches": [
-      "AI",
-      "CM",
+      "CO",
+      "IF",
+      "AN",
       "EJ"
     ],
     "branches_str": "Artificial Intelligence & Machine Learning, Computer Engineering, Electronics & Telecommunication",
@@ -5083,7 +7799,10 @@
         "year": "2025",
         "season": "Winter"
       }
-    }
+    },
+    "shortCode": "DTE",
+    "year": 2,
+    "category": "notes"
   },
   {
     "code": "313304",
@@ -5094,8 +7813,9 @@
     "academic_year": "Second Year (SY)",
     "subject_type": "Core",
     "branches": [
-      "CM",
-      "IF"
+      "CO",
+      "IF",
+      "AN"
     ],
     "branches_str": "Computer Engineering, Information Technology",
     "slug": "313304-object-oriented-programming-using-c",
@@ -5120,7 +7840,10 @@
         "year": "2025",
         "season": "Winter"
       }
-    }
+    },
+    "shortCode": "OOP",
+    "year": 2,
+    "category": "notes"
   },
   {
     "code": "313305",
@@ -5131,7 +7854,7 @@
     "academic_year": "Second Year (SY)",
     "subject_type": "Core",
     "branches": [
-      "IF"
+      "EJ"
     ],
     "branches_str": "Information Technology",
     "slug": "313305-digital-techniques-and-microprocessors",
@@ -5156,7 +7879,10 @@
         "year": "2025",
         "season": "Winter"
       }
-    }
+    },
+    "shortCode": "DTM",
+    "year": 2,
+    "category": "notes"
   },
   {
     "code": "313306",
@@ -5167,7 +7893,9 @@
     "academic_year": "Second Year (SY)",
     "subject_type": "Core",
     "branches": [
-      "AI"
+      "AN",
+      "CO",
+      "IF"
     ],
     "branches_str": "Artificial Intelligence & Machine Learning",
     "slug": "313306-data-structure-using-python",
@@ -5192,7 +7920,10 @@
         "year": "2025",
         "season": "Winter"
       }
-    }
+    },
+    "shortCode": "DSP",
+    "year": 2,
+    "category": "notes"
   },
   {
     "code": "313307",
@@ -5203,7 +7934,7 @@
     "academic_year": "Second Year (SY)",
     "subject_type": "Core",
     "branches": [
-      "AI"
+      "AN"
     ],
     "branches_str": "Artificial Intelligence & Machine Learning",
     "slug": "313307-statistical-modelling-for-machine-learning",
@@ -5228,7 +7959,10 @@
         "year": "2025",
         "season": "Winter"
       }
-    }
+    },
+    "shortCode": "SML",
+    "year": 2,
+    "category": "notes"
   },
   {
     "code": "313308",
@@ -5239,8 +7973,8 @@
     "academic_year": "Second Year (SY)",
     "subject_type": "Core",
     "branches": [
-      "CE",
-      "ME"
+      "ME",
+      "CE"
     ],
     "branches_str": "Civil Engineering, Mechanical Engineering",
     "slug": "313308-strength-of-materials",
@@ -5265,7 +7999,10 @@
         "year": "2025",
         "season": "Winter"
       }
-    }
+    },
+    "shortCode": "SOM",
+    "year": 2,
+    "category": "notes"
   },
   {
     "code": "313309",
@@ -5301,7 +8038,10 @@
         "year": "2025",
         "season": "Winter"
       }
-    }
+    },
+    "shortCode": "FMM",
+    "year": 2,
+    "category": "notes"
   },
   {
     "code": "313310",
@@ -5337,7 +8077,10 @@
         "year": "2025",
         "season": "Winter"
       }
-    }
+    },
+    "shortCode": "TEN",
+    "year": 2,
+    "category": "notes"
   },
   {
     "code": "313311",
@@ -5373,14 +8116,17 @@
         "year": "2025",
         "season": "Winter"
       }
-    }
+    },
+    "shortCode": "PDR",
+    "year": 2,
+    "category": "notes"
   },
   {
     "code": "313313",
     "title": "Theory of Machines (313313) Question Papers",
     "subject_name": "Theory of Machines",
     "abbreviation": "TOM",
-    "semester": 4,
+    "semester": 3,
     "academic_year": "Second Year (SY)",
     "subject_type": "Core",
     "branches": [
@@ -5409,14 +8155,17 @@
         "year": "2025",
         "season": "Winter"
       }
-    }
+    },
+    "shortCode": "TOM",
+    "year": 2,
+    "category": "notes"
   },
   {
     "code": "313316",
     "title": "Metrology and Measurement (313316) Question Papers",
     "subject_name": "Metrology and Measurement",
     "abbreviation": "MEM",
-    "semester": 4,
+    "semester": 3,
     "academic_year": "Second Year (SY)",
     "subject_type": "Core",
     "branches": [
@@ -5445,7 +8194,10 @@
         "year": "2025",
         "season": "Winter"
       }
-    }
+    },
+    "shortCode": "M&M",
+    "year": 2,
+    "category": "notes"
   },
   {
     "code": "313321",
@@ -5481,7 +8233,10 @@
         "year": "2025",
         "season": "Winter"
       }
-    }
+    },
+    "shortCode": "ASU",
+    "year": 2,
+    "category": "notes"
   },
   {
     "code": "313322",
@@ -5517,7 +8272,10 @@
         "year": "2025",
         "season": "Winter"
       }
-    }
+    },
+    "shortCode": "CTE",
+    "year": 2,
+    "category": "notes"
   },
   {
     "code": "313323",
@@ -5553,7 +8311,10 @@
         "year": "2025",
         "season": "Winter"
       }
-    }
+    },
+    "shortCode": "HEN",
+    "year": 2,
+    "category": "notes"
   },
   {
     "code": "313324",
@@ -5589,7 +8350,10 @@
         "year": "2025",
         "season": "Winter"
       }
-    }
+    },
+    "shortCode": "AEN",
+    "year": 2,
+    "category": "notes"
   },
   {
     "code": "313325",
@@ -5600,7 +8364,8 @@
     "academic_year": "Second Year (SY)",
     "subject_type": "Core",
     "branches": [
-      "EJ"
+      "EJ",
+      "EE"
     ],
     "branches_str": "Electronics & Telecommunication",
     "slug": "313325-circuits-and-networks",
@@ -5625,7 +8390,10 @@
         "year": "2025",
         "season": "Winter"
       }
-    }
+    },
+    "shortCode": "CKN",
+    "year": 2,
+    "category": "notes"
   },
   {
     "code": "313326",
@@ -5661,7 +8429,10 @@
         "year": "2025",
         "season": "Winter"
       }
-    }
+    },
+    "shortCode": "PEC",
+    "year": 2,
+    "category": "notes"
   },
   {
     "code": "313332",
@@ -5697,7 +8468,10 @@
         "year": "2025",
         "season": "Winter"
       }
-    }
+    },
+    "shortCode": "ECN",
+    "year": 2,
+    "category": "notes"
   },
   {
     "code": "313333",
@@ -5733,7 +8507,10 @@
         "year": "2025",
         "season": "Winter"
       }
-    }
+    },
+    "shortCode": "EPG",
+    "year": 2,
+    "category": "notes"
   },
   {
     "code": "313334",
@@ -5769,7 +8546,10 @@
         "year": "2025",
         "season": "Winter"
       }
-    }
+    },
+    "shortCode": "EEM",
+    "year": 2,
+    "category": "notes"
   },
   {
     "code": "313335",
@@ -5780,7 +8560,8 @@
     "academic_year": "Second Year (SY)",
     "subject_type": "Core",
     "branches": [
-      "EE"
+      "EE",
+      "EJ"
     ],
     "branches_str": "Electrical Engineering",
     "slug": "313335-fundamentals-of-power-electronics",
@@ -5805,7 +8586,10 @@
         "year": "2025",
         "season": "Winter"
       }
-    }
+    },
+    "shortCode": "FPE",
+    "year": 2,
+    "category": "notes"
   },
   {
     "code": "314303",
@@ -5841,7 +8625,10 @@
         "year": "2025",
         "season": "Winter"
       }
-    }
+    },
+    "shortCode": "HYD",
+    "year": 2,
+    "category": "notes"
   },
   {
     "code": "314312",
@@ -5877,7 +8664,10 @@
         "year": "2025",
         "season": "Winter"
       }
-    }
+    },
+    "shortCode": "RBT",
+    "year": 2,
+    "category": "notes"
   },
   {
     "code": "314313",
@@ -5913,7 +8703,10 @@
         "year": "2025",
         "season": "Winter"
       }
-    }
+    },
+    "shortCode": "ECV",
+    "year": 2,
+    "category": "notes"
   },
   {
     "code": "314314",
@@ -5949,7 +8742,10 @@
         "year": "2025",
         "season": "Winter"
       }
-    }
+    },
+    "shortCode": "WWE",
+    "year": 2,
+    "category": "notes"
   },
   {
     "code": "314315",
@@ -5985,7 +8781,10 @@
         "year": "2025",
         "season": "Winter"
       }
-    }
+    },
+    "shortCode": "GTE",
+    "year": 2,
+    "category": "notes"
   },
   {
     "code": "314317",
@@ -5996,9 +8795,9 @@
     "academic_year": "Second Year (SY)",
     "subject_type": "Core",
     "branches": [
-      "AI",
-      "CM",
-      "IF"
+      "CO",
+      "IF",
+      "AN"
     ],
     "branches_str": "Artificial Intelligence & Machine Learning, Computer Engineering, Information Technology",
     "slug": "314317-java-programming",
@@ -6023,7 +8822,10 @@
         "year": "2025",
         "season": "Winter"
       }
-    }
+    },
+    "shortCode": "JPR",
+    "year": 2,
+    "category": "notes"
   },
   {
     "code": "314318",
@@ -6034,8 +8836,7 @@
     "academic_year": "Second Year (SY)",
     "subject_type": "Core",
     "branches": [
-      "AI",
-      "CM",
+      "CO",
       "IF"
     ],
     "branches_str": "Artificial Intelligence & Machine Learning, Computer Engineering, Information Technology",
@@ -6061,7 +8862,10 @@
         "year": "2025",
         "season": "Winter"
       }
-    }
+    },
+    "shortCode": "DCN",
+    "year": 2,
+    "category": "notes"
   },
   {
     "code": "314319",
@@ -6072,7 +8876,9 @@
     "academic_year": "Second Year (SY)",
     "subject_type": "Core",
     "branches": [
-      "IF"
+      "CO",
+      "IF",
+      "AN"
     ],
     "branches_str": "Information Technology",
     "slug": "314319-information-security",
@@ -6097,7 +8903,10 @@
         "year": "2025",
         "season": "Winter"
       }
-    }
+    },
+    "shortCode": "OSY",
+    "year": 2,
+    "category": "notes"
   },
   {
     "code": "314320",
@@ -6108,7 +8917,7 @@
     "academic_year": "Second Year (SY)",
     "subject_type": "Core",
     "branches": [
-      "AI"
+      "AN"
     ],
     "branches_str": "Artificial Intelligence & Machine Learning",
     "slug": "314320-mathematics-for-machine-learning",
@@ -6133,7 +8942,10 @@
         "year": "2025",
         "season": "Winter"
       }
-    }
+    },
+    "shortCode": "MML",
+    "year": 2,
+    "category": "notes"
   },
   {
     "code": "314321",
@@ -6144,8 +8956,8 @@
     "academic_year": "Second Year (SY)",
     "subject_type": "Core",
     "branches": [
-      "AI",
-      "CM"
+      "CO",
+      "IF"
     ],
     "branches_str": "Artificial Intelligence & Machine Learning, Computer Engineering",
     "slug": "314321-microprocessor-programming",
@@ -6170,7 +8982,10 @@
         "year": "2025",
         "season": "Winter"
       }
-    }
+    },
+    "shortCode": "MIC",
+    "year": 2,
+    "category": "notes"
   },
   {
     "code": "314322",
@@ -6206,7 +9021,10 @@
         "year": "2025",
         "season": "Winter"
       }
-    }
+    },
+    "shortCode": "DMT",
+    "year": 2,
+    "category": "notes"
   },
   {
     "code": "314323",
@@ -6242,7 +9060,10 @@
         "year": "2025",
         "season": "Winter"
       }
-    }
+    },
+    "shortCode": "UEE",
+    "year": 2,
+    "category": "notes"
   },
   {
     "code": "314324",
@@ -6253,7 +9074,8 @@
     "academic_year": "Second Year (SY)",
     "subject_type": "Core",
     "branches": [
-      "EE"
+      "EE",
+      "EJ"
     ],
     "branches_str": "Electrical Engineering",
     "slug": "314324-digital-electronics-and-microcontroller-applications",
@@ -6278,7 +9100,10 @@
         "year": "2025",
         "season": "Winter"
       }
-    }
+    },
+    "shortCode": "DEM",
+    "year": 2,
+    "category": "notes"
   },
   {
     "code": "314325",
@@ -6314,7 +9139,10 @@
         "year": "2025",
         "season": "Winter"
       }
-    }
+    },
+    "shortCode": "EEC",
+    "year": 2,
+    "category": "notes"
   },
   {
     "code": "314326",
@@ -6350,7 +9178,10 @@
         "year": "2025",
         "season": "Winter"
       }
-    }
+    },
+    "shortCode": "DCS",
+    "year": 2,
+    "category": "notes"
   },
   {
     "code": "314327",
@@ -6386,7 +9217,10 @@
         "year": "2025",
         "season": "Winter"
       }
-    }
+    },
+    "shortCode": "CES",
+    "year": 2,
+    "category": "notes"
   },
   {
     "code": "314328",
@@ -6422,7 +9256,10 @@
         "year": "2025",
         "season": "Winter"
       }
-    }
+    },
+    "shortCode": "MAP",
+    "year": 2,
+    "category": "notes"
   },
   {
     "code": "314340",
@@ -6458,7 +9295,10 @@
         "year": "2025",
         "season": "Winter"
       }
-    }
+    },
+    "shortCode": "PPR",
+    "year": 2,
+    "category": "notes"
   },
   {
     "code": "314363",
@@ -6469,6 +9309,7 @@
     "academic_year": "Second Year (SY)",
     "subject_type": "Core",
     "branches": [
+      "EE",
       "EJ"
     ],
     "branches_str": "Electronics & Telecommunication",
@@ -6494,7 +9335,10 @@
         "year": "2025",
         "season": "Winter"
       }
-    }
+    },
+    "shortCode": "BPE",
+    "year": 2,
+    "category": "notes"
   },
   {
     "code": "315313",
@@ -6530,7 +9374,10 @@
         "year": "2025",
         "season": "Winter"
       }
-    }
+    },
+    "shortCode": "TOS",
+    "year": 3,
+    "category": "notes"
   },
   {
     "code": "315314",
@@ -6566,7 +9413,10 @@
         "year": "2025",
         "season": "Winter"
       }
-    }
+    },
+    "shortCode": "WRE",
+    "year": 3,
+    "category": "notes"
   },
   {
     "code": "315316",
@@ -6602,7 +9452,10 @@
         "year": "2025",
         "season": "Winter"
       }
-    }
+    },
+    "shortCode": "ECG",
+    "year": 3,
+    "category": "notes"
   },
   {
     "code": "315317",
@@ -6638,7 +9491,10 @@
         "year": "2025",
         "season": "Winter"
       }
-    }
+    },
+    "shortCode": "PPC",
+    "year": 3,
+    "category": "notes"
   },
   {
     "code": "315318",
@@ -6674,7 +9530,10 @@
         "year": "2025",
         "season": "Winter"
       }
-    }
+    },
+    "shortCode": "RTE",
+    "year": 3,
+    "category": "notes"
   },
   {
     "code": "315319",
@@ -6685,9 +9544,9 @@
     "academic_year": "Third Year (TY)",
     "subject_type": "Core",
     "branches": [
-      "AI",
-      "CM",
-      "IF"
+      "CO",
+      "IF",
+      "AN"
     ],
     "branches_str": "Artificial Intelligence & Machine Learning, Computer Engineering, Information Technology",
     "slug": "315319-operating-system",
@@ -6712,7 +9571,10 @@
         "year": "2025",
         "season": "Winter"
       }
-    }
+    },
+    "shortCode": "OS",
+    "year": 3,
+    "category": "notes"
   },
   {
     "code": "315321",
@@ -6723,7 +9585,7 @@
     "academic_year": "Third Year (TY)",
     "subject_type": "Elective",
     "branches": [
-      "CM",
+      "CO",
       "IF"
     ],
     "branches_str": "Computer Engineering, Information Technology",
@@ -6749,7 +9611,10 @@
         "year": "2025",
         "season": "Winter"
       }
-    }
+    },
+    "shortCode": "ACN",
+    "year": 3,
+    "category": "notes"
   },
   {
     "code": "315323",
@@ -6760,7 +9625,7 @@
     "academic_year": "Third Year (TY)",
     "subject_type": "Core",
     "branches": [
-      "CM"
+      "CO"
     ],
     "branches_str": "Computer Engineering",
     "slug": "315323-software-engineering",
@@ -6785,7 +9650,10 @@
         "year": "2025",
         "season": "Winter"
       }
-    }
+    },
+    "shortCode": "SEN",
+    "year": 3,
+    "category": "notes"
   },
   {
     "code": "315324",
@@ -6796,8 +9664,8 @@
     "academic_year": "Third Year (TY)",
     "subject_type": "Elective",
     "branches": [
-      "AI",
-      "IF"
+      "IF",
+      "AN"
     ],
     "branches_str": "Artificial Intelligence & Machine Learning, Information Technology",
     "slug": "315324-advance-database-management",
@@ -6822,7 +9690,10 @@
         "year": "2025",
         "season": "Winter"
       }
-    }
+    },
+    "shortCode": "ADM",
+    "year": 3,
+    "category": "notes"
   },
   {
     "code": "315325",
@@ -6833,7 +9704,7 @@
     "academic_year": "Third Year (TY)",
     "subject_type": "Elective",
     "branches": [
-      "CM"
+      "CO"
     ],
     "branches_str": "Computer Engineering",
     "slug": "315325-cloud-computing",
@@ -6858,7 +9729,10 @@
         "year": "2025",
         "season": "Winter"
       }
-    }
+    },
+    "shortCode": "CLC",
+    "year": 3,
+    "category": "notes"
   },
   {
     "code": "315326",
@@ -6869,7 +9743,7 @@
     "academic_year": "Third Year (TY)",
     "subject_type": "Elective",
     "branches": [
-      "CM",
+      "CO",
       "IF"
     ],
     "branches_str": "Computer Engineering, Information Technology",
@@ -6895,7 +9769,10 @@
         "year": "2025",
         "season": "Winter"
       }
-    }
+    },
+    "shortCode": "DAN",
+    "year": 3,
+    "category": "notes"
   },
   {
     "code": "315327",
@@ -6906,7 +9783,7 @@
     "academic_year": "Third Year (TY)",
     "subject_type": "Elective",
     "branches": [
-      "AI"
+      "AN"
     ],
     "branches_str": "Artificial Intelligence & Machine Learning",
     "slug": "315327-cloud-computing-for-data-science",
@@ -6931,7 +9808,10 @@
         "year": "2025",
         "season": "Winter"
       }
-    }
+    },
+    "shortCode": "CCD",
+    "year": 3,
+    "category": "notes"
   },
   {
     "code": "315329",
@@ -6942,7 +9822,7 @@
     "academic_year": "Third Year (TY)",
     "subject_type": "Elective",
     "branches": [
-      "AI"
+      "AN"
     ],
     "branches_str": "Artificial Intelligence & Machine Learning",
     "slug": "315329-natural-language-processing",
@@ -6967,7 +9847,10 @@
         "year": "2025",
         "season": "Winter"
       }
-    }
+    },
+    "shortCode": "NLP",
+    "year": 3,
+    "category": "notes"
   },
   {
     "code": "315330",
@@ -6978,7 +9861,7 @@
     "academic_year": "Third Year (TY)",
     "subject_type": "Core",
     "branches": [
-      "AI"
+      "AN"
     ],
     "branches_str": "Artificial Intelligence & Machine Learning",
     "slug": "315330-ai-and-ml-algorithm",
@@ -7003,7 +9886,10 @@
         "year": "2025",
         "season": "Winter"
       }
-    }
+    },
+    "shortCode": "AML",
+    "year": 3,
+    "category": "notes"
   },
   {
     "code": "315332",
@@ -7039,7 +9925,10 @@
         "year": "2025",
         "season": "Winter"
       }
-    }
+    },
+    "shortCode": "SET",
+    "year": 3,
+    "category": "notes"
   },
   {
     "code": "315333",
@@ -7075,7 +9964,10 @@
         "year": "2025",
         "season": "Winter"
       }
-    }
+    },
+    "shortCode": "AMP",
+    "year": 3,
+    "category": "notes"
   },
   {
     "code": "315334",
@@ -7111,7 +10003,10 @@
         "year": "2025",
         "season": "Winter"
       }
-    }
+    },
+    "shortCode": "SAP",
+    "year": 3,
+    "category": "notes"
   },
   {
     "code": "315335",
@@ -7147,7 +10042,10 @@
         "year": "2025",
         "season": "Winter"
       }
-    }
+    },
+    "shortCode": "EVT",
+    "year": 3,
+    "category": "notes"
   },
   {
     "code": "315336",
@@ -7183,7 +10081,10 @@
         "year": "2025",
         "season": "Winter"
       }
-    }
+    },
+    "shortCode": "PSO",
+    "year": 3,
+    "category": "notes"
   },
   {
     "code": "315337",
@@ -7219,7 +10120,10 @@
         "year": "2025",
         "season": "Winter"
       }
-    }
+    },
+    "shortCode": "RET",
+    "year": 3,
+    "category": "notes"
   },
   {
     "code": "315338",
@@ -7255,7 +10159,10 @@
         "year": "2025",
         "season": "Winter"
       }
-    }
+    },
+    "shortCode": "EMS",
+    "year": 3,
+    "category": "notes"
   },
   {
     "code": "315339",
@@ -7291,7 +10198,10 @@
         "year": "2025",
         "season": "Winter"
       }
-    }
+    },
+    "shortCode": "MWC",
+    "year": 3,
+    "category": "notes"
   },
   {
     "code": "315340",
@@ -7302,7 +10212,8 @@
     "academic_year": "Third Year (TY)",
     "subject_type": "Elective",
     "branches": [
-      "EJ"
+      "EJ",
+      "EE"
     ],
     "branches_str": "Electronics & Telecommunication",
     "slug": "315340-advance-power-electronics",
@@ -7327,7 +10238,10 @@
         "year": "2025",
         "season": "Winter"
       }
-    }
+    },
+    "shortCode": "APE",
+    "year": 3,
+    "category": "notes"
   },
   {
     "code": "315341",
@@ -7338,7 +10252,9 @@
     "academic_year": "Third Year (TY)",
     "subject_type": "Elective",
     "branches": [
-      "EJ"
+      "EJ",
+      "CO",
+      "IF"
     ],
     "branches_str": "Electronics & Telecommunication",
     "slug": "315341-iot-applications",
@@ -7363,7 +10279,10 @@
         "year": "2025",
         "season": "Winter"
       }
-    }
+    },
+    "shortCode": "ITA",
+    "year": 3,
+    "category": "notes"
   },
   {
     "code": "315342",
@@ -7399,7 +10318,10 @@
         "year": "2025",
         "season": "Winter"
       }
-    }
+    },
+    "shortCode": "MRS",
+    "year": 3,
+    "category": "notes"
   },
   {
     "code": "315367",
@@ -7435,7 +10357,10 @@
         "year": "2025",
         "season": "Winter"
       }
-    }
+    },
+    "shortCode": "PDD",
+    "year": 3,
+    "category": "notes"
   },
   {
     "code": "315371",
@@ -7471,7 +10396,10 @@
         "year": "2025",
         "season": "Winter"
       }
-    }
+    },
+    "shortCode": "PEN",
+    "year": 3,
+    "category": "notes"
   },
   {
     "code": "315372",
@@ -7507,7 +10435,10 @@
         "year": "2025",
         "season": "Winter"
       }
-    }
+    },
+    "shortCode": "AEN",
+    "year": 3,
+    "category": "notes"
   },
   {
     "code": "315373",
@@ -7543,7 +10474,10 @@
         "year": "2025",
         "season": "Winter"
       }
-    }
+    },
+    "shortCode": "HVA",
+    "year": 3,
+    "category": "notes"
   },
   {
     "code": "315374",
@@ -7579,7 +10513,10 @@
         "year": "2025",
         "season": "Winter"
       }
-    }
+    },
+    "shortCode": "PPE",
+    "year": 3,
+    "category": "notes"
   },
   {
     "code": "316307",
@@ -7606,7 +10543,10 @@
         "year": "2026",
         "season": "Summer"
       }
-    }
+    },
+    "shortCode": "CAB",
+    "year": 3,
+    "category": "notes"
   },
   {
     "code": "316308",
@@ -7633,7 +10573,10 @@
         "year": "2026",
         "season": "Summer"
       }
-    }
+    },
+    "shortCode": "DRS",
+    "year": 3,
+    "category": "notes"
   },
   {
     "code": "316309",
@@ -7660,7 +10603,10 @@
         "year": "2026",
         "season": "Summer"
       }
-    }
+    },
+    "shortCode": "MRS",
+    "year": 3,
+    "category": "notes"
   },
   {
     "code": "316310",
@@ -7687,7 +10633,10 @@
         "year": "2026",
         "season": "Summer"
       }
-    }
+    },
+    "shortCode": "BSE",
+    "year": 3,
+    "category": "notes"
   },
   {
     "code": "316312",
@@ -7714,7 +10663,10 @@
         "year": "2026",
         "season": "Summer"
       }
-    }
+    },
+    "shortCode": "SWM",
+    "year": 3,
+    "category": "notes"
   },
   {
     "code": "316314",
@@ -7725,7 +10677,8 @@
     "academic_year": "Third Year (TY)",
     "subject_type": "Core",
     "branches": [
-      "CM"
+      "CO",
+      "IF"
     ],
     "branches_str": "Computer Engineering",
     "slug": "316314-software-testing",
@@ -7741,7 +10694,10 @@
         "year": "2026",
         "season": "Summer"
       }
-    }
+    },
+    "shortCode": "STE",
+    "year": 3,
+    "category": "notes"
   },
   {
     "code": "316315",
@@ -7752,7 +10708,7 @@
     "academic_year": "Third Year (TY)",
     "subject_type": "Elective",
     "branches": [
-      "CM",
+      "CO",
       "IF"
     ],
     "branches_str": "Computer Engineering, Information Technology",
@@ -7769,7 +10725,10 @@
         "year": "2026",
         "season": "Summer"
       }
-    }
+    },
+    "shortCode": "DFH",
+    "year": 3,
+    "category": "notes"
   },
   {
     "code": "316316",
@@ -7780,7 +10739,8 @@
     "academic_year": "Third Year (TY)",
     "subject_type": "Elective",
     "branches": [
-      "CM",
+      "AN",
+      "CO",
       "IF"
     ],
     "branches_str": "Computer Engineering, Information Technology",
@@ -7797,7 +10757,10 @@
         "year": "2026",
         "season": "Summer"
       }
-    }
+    },
+    "shortCode": "ML",
+    "year": 3,
+    "category": "notes"
   },
   {
     "code": "316317",
@@ -7808,7 +10771,8 @@
     "academic_year": "Third Year (TY)",
     "subject_type": "Elective",
     "branches": [
-      "CM"
+      "CO",
+      "IF"
     ],
     "branches_str": "Computer Engineering",
     "slug": "316317-network-and-information-security",
@@ -7824,7 +10788,10 @@
         "year": "2026",
         "season": "Summer"
       }
-    }
+    },
+    "shortCode": "NIS",
+    "year": 3,
+    "category": "notes"
   },
   {
     "code": "316318",
@@ -7835,7 +10802,9 @@
     "academic_year": "Third Year (TY)",
     "subject_type": "Core",
     "branches": [
-      "AI"
+      "AN",
+      "CO",
+      "IF"
     ],
     "branches_str": "Artificial Intelligence & Machine Learning",
     "slug": "316318-big-data-analytics",
@@ -7851,7 +10820,10 @@
         "year": "2026",
         "season": "Summer"
       }
-    }
+    },
+    "shortCode": "BDA",
+    "year": 3,
+    "category": "notes"
   },
   {
     "code": "316319",
@@ -7862,7 +10834,8 @@
     "academic_year": "Third Year (TY)",
     "subject_type": "Core",
     "branches": [
-      "AI"
+      "AN",
+      "EJ"
     ],
     "branches_str": "Artificial Intelligence & Machine Learning",
     "slug": "316319-principles-of-image-processing",
@@ -7878,7 +10851,10 @@
         "year": "2026",
         "season": "Summer"
       }
-    }
+    },
+    "shortCode": "PIP",
+    "year": 3,
+    "category": "notes"
   },
   {
     "code": "316320",
@@ -7889,7 +10865,7 @@
     "academic_year": "Third Year (TY)",
     "subject_type": "Elective",
     "branches": [
-      "AI"
+      "AN"
     ],
     "branches_str": "Artificial Intelligence & Machine Learning",
     "slug": "316320-advanced-algorithm-in-ai-and-ml",
@@ -7905,7 +10881,10 @@
         "year": "2026",
         "season": "Summer"
       }
-    }
+    },
+    "shortCode": "AAI",
+    "year": 3,
+    "category": "notes"
   },
   {
     "code": "316321",
@@ -7916,7 +10895,8 @@
     "academic_year": "Third Year (TY)",
     "subject_type": "Elective",
     "branches": [
-      "AI",
+      "AN",
+      "CO",
       "IF"
     ],
     "branches_str": "Artificial Intelligence & Machine Learning, Information Technology",
@@ -7933,7 +10913,10 @@
         "year": "2026",
         "season": "Summer"
       }
-    }
+    },
+    "shortCode": "DWM",
+    "year": 3,
+    "category": "notes"
   },
   {
     "code": "316323",
@@ -7944,7 +10927,7 @@
     "academic_year": "Third Year (TY)",
     "subject_type": "Elective",
     "branches": [
-      "AI"
+      "AN"
     ],
     "branches_str": "Artificial Intelligence & Machine Learning",
     "slug": "316323-reinforcement-learning",
@@ -7960,7 +10943,10 @@
         "year": "2026",
         "season": "Summer"
       }
-    }
+    },
+    "shortCode": "RL",
+    "year": 3,
+    "category": "notes"
   },
   {
     "code": "316325",
@@ -7971,7 +10957,7 @@
     "academic_year": "Third Year (TY)",
     "subject_type": "Core",
     "branches": [
-      "IF"
+      "EJ"
     ],
     "branches_str": "Information Technology",
     "slug": "316325-wireless-and-mobile-network",
@@ -7987,7 +10973,10 @@
         "year": "2026",
         "season": "Summer"
       }
-    }
+    },
+    "shortCode": "WMN",
+    "year": 3,
+    "category": "notes"
   },
   {
     "code": "316327",
@@ -8014,7 +11003,10 @@
         "year": "2026",
         "season": "Summer"
       }
-    }
+    },
+    "shortCode": "ECA",
+    "year": 3,
+    "category": "notes"
   },
   {
     "code": "316328",
@@ -8041,7 +11033,10 @@
         "year": "2026",
         "season": "Summer"
       }
-    }
+    },
+    "shortCode": "MEE",
+    "year": 3,
+    "category": "notes"
   },
   {
     "code": "316329",
@@ -8068,7 +11063,10 @@
         "year": "2026",
         "season": "Summer"
       }
-    }
+    },
+    "shortCode": "IAU",
+    "year": 3,
+    "category": "notes"
   },
   {
     "code": "316330",
@@ -8095,7 +11093,10 @@
         "year": "2026",
         "season": "Summer"
       }
-    }
+    },
+    "shortCode": "IDC",
+    "year": 3,
+    "category": "notes"
   },
   {
     "code": "316331",
@@ -8122,7 +11123,10 @@
         "year": "2026",
         "season": "Summer"
       }
-    }
+    },
+    "shortCode": "PSA",
+    "year": 3,
+    "category": "notes"
   },
   {
     "code": "316332",
@@ -8149,7 +11153,10 @@
         "year": "2026",
         "season": "Summer"
       }
-    }
+    },
+    "shortCode": "ONS",
+    "year": 3,
+    "category": "notes"
   },
   {
     "code": "316334",
@@ -8160,7 +11167,8 @@
     "academic_year": "Third Year (TY)",
     "subject_type": "Elective",
     "branches": [
-      "EJ"
+      "EJ",
+      "EE"
     ],
     "branches_str": "Electronics & Telecommunication",
     "slug": "316334-automation-and-plc",
@@ -8176,7 +11184,10 @@
         "year": "2026",
         "season": "Summer"
       }
-    }
+    },
+    "shortCode": "PLC",
+    "year": 3,
+    "category": "notes"
   },
   {
     "code": "316335",
@@ -8187,7 +11198,8 @@
     "academic_year": "Third Year (TY)",
     "subject_type": "Elective",
     "branches": [
-      "EJ"
+      "EJ",
+      "ME"
     ],
     "branches_str": "Electronics & Telecommunication",
     "slug": "316335-drone-technology",
@@ -8203,7 +11215,10 @@
         "year": "2026",
         "season": "Summer"
       }
-    }
+    },
+    "shortCode": "DRT",
+    "year": 3,
+    "category": "notes"
   },
   {
     "code": "316338",
@@ -8230,7 +11245,10 @@
         "year": "2026",
         "season": "Summer"
       }
-    }
+    },
+    "shortCode": "NDC",
+    "year": 3,
+    "category": "notes"
   },
   {
     "code": "316340",
@@ -8257,7 +11275,10 @@
         "year": "2026",
         "season": "Summer"
       }
-    }
+    },
+    "shortCode": "VLS",
+    "year": 3,
+    "category": "notes"
   },
   {
     "code": "316357",
@@ -8284,7 +11305,10 @@
         "year": "2026",
         "season": "Summer"
       }
-    }
+    },
+    "shortCode": "DME",
+    "year": 3,
+    "category": "notes"
   },
   {
     "code": "316359",
@@ -8311,7 +11335,10 @@
         "year": "2026",
         "season": "Summer"
       }
-    }
+    },
+    "shortCode": "CIM",
+    "year": 3,
+    "category": "notes"
   },
   {
     "code": "316362",
@@ -8338,7 +11365,10 @@
         "year": "2026",
         "season": "Summer"
       }
-    }
+    },
+    "shortCode": "IEQ",
+    "year": 3,
+    "category": "notes"
   },
   {
     "code": "316363",
@@ -8365,7 +11395,10 @@
         "year": "2026",
         "season": "Summer"
       }
-    }
+    },
+    "shortCode": "IHP",
+    "year": 3,
+    "category": "notes"
   },
   {
     "code": "316364",
@@ -8376,7 +11409,8 @@
     "academic_year": "Third Year (TY)",
     "subject_type": "Elective",
     "branches": [
-      "ME"
+      "ME",
+      "EE"
     ],
     "branches_str": "Mechanical Engineering",
     "slug": "316364-alternative-energy-sources-and-energy-management",
@@ -8392,7 +11426,10 @@
         "year": "2026",
         "season": "Summer"
       }
-    }
+    },
+    "shortCode": "AES",
+    "year": 3,
+    "category": "notes"
   },
   {
     "code": "316365",
@@ -8419,7 +11456,10 @@
         "year": "2026",
         "season": "Summer"
       }
-    }
+    },
+    "shortCode": "CCM",
+    "year": 3,
+    "category": "notes"
   },
   {
     "title": "MSBTE Model Answer Papers K-Scheme (All Subjects & Solved Solutions)",
@@ -8439,17 +11479,24 @@
     ],
     "code": "ALL",
     "abbreviation": "MAP",
-    "semester": "All",
+    "semester": null,
     "academic_year": "2026/2025",
     "branches": [
+      "COMMON",
       "CO",
       "IF",
-      "AN"
+      "AN",
+      "ME",
+      "CE",
+      "EE",
+      "EJ"
     ],
     "branches_str": "Computer, IT, AI & ML",
     "slug": "index",
     "papers_count": 60,
-    "dateAdded": "2026-11-10"
+    "dateAdded": "2026-11-10",
+    "shortCode": null,
+    "year": null
   },
   {
     "title": "Data Structures Using C (313301) Model Answer Papers & Solved Solutions",
@@ -8479,7 +11526,9 @@
     "branches_str": "Computer Engineering, Information Technology, AI & Machine Learning",
     "slug": "313301-data-structure-using-c",
     "papers_count": 8,
-    "dateAdded": "2026-11-10"
+    "dateAdded": "2026-11-10",
+    "shortCode": "DSU",
+    "year": 2
   },
   {
     "title": "Database Management System (313302) Model Answer Papers & Solved Solutions",
@@ -8509,7 +11558,9 @@
     "branches_str": "Computer Engineering, Information Technology, AI & Machine Learning",
     "slug": "313302-database-management-system",
     "papers_count": 7,
-    "dateAdded": "2026-11-10"
+    "dateAdded": "2026-11-10",
+    "shortCode": "DBMS",
+    "year": 2
   },
   {
     "title": "Digital Techniques (313303) Model Answer Papers & Solved Solutions",
@@ -8534,12 +11585,15 @@
     "branches": [
       "CO",
       "IF",
-      "AN"
+      "AN",
+      "EJ"
     ],
     "branches_str": "Computer Engineering, Information Technology, AI & Machine Learning",
     "slug": "313303-digital-techniques",
     "papers_count": 6,
-    "dateAdded": "2026-11-10"
+    "dateAdded": "2026-11-10",
+    "shortCode": "DTE",
+    "year": 2
   },
   {
     "title": "Object Oriented Programming (313304) Model Answer Papers & Solved Solutions",
@@ -8569,7 +11623,9 @@
     "branches_str": "Computer Engineering, Information Technology, AI & Machine Learning",
     "slug": "313304-object-oriented-programming-using-c",
     "papers_count": 6,
-    "dateAdded": "2026-11-10"
+    "dateAdded": "2026-11-10",
+    "shortCode": "OOP",
+    "year": 2
   },
   {
     "title": "Operating System (315319) Model Answer Papers & Solved Solutions",
@@ -8599,7 +11655,9 @@
     "branches_str": "Computer Engineering, Information Technology, AI & Machine Learning",
     "slug": "315319-operating-system",
     "papers_count": 7,
-    "dateAdded": "2026-11-10"
+    "dateAdded": "2026-11-10",
+    "shortCode": "OS",
+    "year": 3
   },
   {
     "title": "Advanced Computer Network (315321) Model Answer Papers & Solved Solutions",
@@ -8627,7 +11685,9 @@
     "branches_str": "Computer Engineering, Information Technology",
     "slug": "315321-advance-computer-network",
     "papers_count": 4,
-    "dateAdded": "2026-11-10"
+    "dateAdded": "2026-11-10",
+    "shortCode": "ACN",
+    "year": 3
   },
   {
     "title": "Data Analytics (315326) Model Answer Papers & Solved Solutions",
@@ -8655,7 +11715,9 @@
     "branches_str": "Computer Engineering, Information Technology",
     "slug": "315326-data-analytics",
     "papers_count": 2,
-    "dateAdded": "2026-11-10"
+    "dateAdded": "2026-11-10",
+    "shortCode": "DAN",
+    "year": 3
   },
   {
     "title": "Advanced Database Management (315324) Model Answer Papers & Solved Solutions",
@@ -8683,7 +11745,9 @@
     "branches_str": "Information Technology, AI & Machine Learning",
     "slug": "315324-advance-database-management",
     "papers_count": 2,
-    "dateAdded": "2026-11-10"
+    "dateAdded": "2026-11-10",
+    "shortCode": "ADM",
+    "year": 3
   },
   {
     "title": "Software Engineering (315323) Model Answer Papers & Solved Solutions",
@@ -8709,7 +11773,9 @@
     "branches_str": "Computer Engineering",
     "slug": "315323-software-engineering",
     "papers_count": 8,
-    "dateAdded": "2026-11-10"
+    "dateAdded": "2026-11-10",
+    "shortCode": "SEN",
+    "year": 3
   },
   {
     "title": "Software Engineering and Testing (315332) Model Answer Papers & Solved Solutions",
@@ -8735,7 +11801,9 @@
     "branches_str": "Information Technology",
     "slug": "315332-software-engineering-and-testing",
     "papers_count": 2,
-    "dateAdded": "2026-11-10"
+    "dateAdded": "2026-11-10",
+    "shortCode": "SET",
+    "year": 3
   },
   {
     "title": "Cloud Computing (315325) Model Answer Papers & Solved Solutions",
@@ -8761,7 +11829,9 @@
     "branches_str": "Computer Engineering",
     "slug": "315325-cloud-computing",
     "papers_count": 2,
-    "dateAdded": "2026-11-10"
+    "dateAdded": "2026-11-10",
+    "shortCode": "CLC",
+    "year": 3
   },
   {
     "title": "Cloud Computing for Data Science (315327) Model Answer Papers & Solved Solutions",
@@ -8787,7 +11857,9 @@
     "branches_str": "AI & Machine Learning",
     "slug": "315327-cloud-computing-for-data-science",
     "papers_count": 2,
-    "dateAdded": "2026-11-10"
+    "dateAdded": "2026-11-10",
+    "shortCode": "CCD",
+    "year": 3
   },
   {
     "title": "AI & ML Algorithm (315330) Model Answer Papers & Solved Solutions",
@@ -8813,7 +11885,9 @@
     "branches_str": "AI & Machine Learning",
     "slug": "315330-ai-and-ml-algorithm",
     "papers_count": 2,
-    "dateAdded": "2026-11-10"
+    "dateAdded": "2026-11-10",
+    "shortCode": "AML",
+    "year": 3
   },
   {
     "title": "Natural Language Processing (315329) Model Answer Papers & Solved Solutions",
@@ -8839,6 +11913,8 @@
     "branches_str": "AI & Machine Learning",
     "slug": "315329-natural-language-processing",
     "papers_count": 2,
-    "dateAdded": "2026-11-10"
+    "dateAdded": "2026-11-10",
+    "shortCode": "NLP",
+    "year": 3
   }
 ]
