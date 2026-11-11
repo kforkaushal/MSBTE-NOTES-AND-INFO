@@ -372,4 +372,27 @@ footer .bg-white {
 #mobileNav {
   z-index: 9999 !important;
   -webkit-overflow-scrolling: touch;
+  background-color: #ffffff !important;
+}
+
+/* Ensure fixed navbar across all pages is 100% solid white with elevation (never transparent or overlapping) */
+nav.fixed,
+header.fixed,
+nav.bg-white,
+header.bg-white {
+  background-color: #ffffff !important;
+}
+
+nav.fixed {
+  border-bottom: 1px solid rgba(229, 231, 235, 0.9) !important;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.05), 0 1px 2px 0 rgba(0, 0, 0, 0.03) !important;
+}
+
+/* Utilities */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }

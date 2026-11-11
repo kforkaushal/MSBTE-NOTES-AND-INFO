@@ -212,15 +212,36 @@
             background-clip: text;
         }
 
-        /* Mobile-Friendly Filter Chips (min 42px touch target) */
+        /* Solid Navbar Assurance - Never Transparent, Never Overlapping */
+        nav.fixed,
+        header.fixed {
+            background-color: #ffffff !important;
+            border-bottom: 1px solid rgba(229, 231, 235, 0.95) !important;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05) !important;
+        }
+
+        #mobileNav {
+            background-color: #ffffff !important;
+            z-index: 9999 !important;
+        }
+
+        .nav-dropdown.is-open .dropdown-menu {
+            display: block !important;
+        }
+
+        .nav-dropdown.is-open .dropdown-arrow {
+            transform: rotate(180deg);
+        }
+
+        /* Mobile-Friendly Filter Chips (min 40-44px touch target) */
         .filter-chip {
             display: inline-flex;
             align-items: center;
             justify-content: center;
-            padding: 0.5rem 1rem;
-            min-height: 42px;
+            padding: 0.45rem 0.85rem;
+            min-height: 40px;
             border-radius: 9999px;
-            font-size: 0.85rem;
+            font-size: 0.8125rem;
             font-weight: 500;
             color: #4b5563;
             background-color: #ffffff;
@@ -231,6 +252,14 @@
             cursor: pointer;
             user-select: none;
             text-align: center;
+        }
+
+        @media (min-width: 640px) {
+            .filter-chip {
+                padding: 0.5rem 1rem;
+                min-height: 42px;
+                font-size: 0.85rem;
+            }
         }
 
         .filter-chip:hover {
@@ -252,20 +281,28 @@
             font-weight: 600;
         }
 
-        /* Tactile Interactive Folder Cards */
+        /* Tactile Interactive Folder Cards (Mobile-first responsive padding) */
         .folder-card {
             background: #ffffff;
             border: 1px solid #e5e7eb;
-            border-radius: 1.1rem;
-            padding: 1.1rem 1.2rem;
+            border-radius: 1rem;
+            padding: 0.85rem 0.9rem;
             display: flex;
             align-items: center;
-            gap: 0.9rem;
+            gap: 0.75rem;
             transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
             cursor: pointer;
             position: relative;
             text-align: left;
             user-select: none;
+        }
+
+        @media (min-width: 640px) {
+            .folder-card {
+                border-radius: 1.1rem;
+                padding: 1.1rem 1.2rem;
+                gap: 0.9rem;
+            }
         }
 
         .folder-card:hover {
@@ -404,75 +441,200 @@
     </style>
 </head>
 
-<body class="text-gray-900 pt-16">
+<body class="bg-gray-50 text-gray-900 pt-20 overflow-x-hidden w-full max-w-full">
 
-    <!-- Header Navigation with Dropdown Menu -->
-    <nav class="bg-white/95 backdrop-blur-md shadow-sm fixed top-0 left-0 right-0 z-50 transition-all duration-300">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 flex justify-between items-center h-16">
-            <a href="/" class="flex items-center gap-2.5 group" aria-label="MSBTE Notes & Info Home">
-                <div class="p-1.5 rounded-lg bg-blue-50 text-blue-600 group-hover:bg-blue-600 group-hover:text-white transition-colors duration-300">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" viewBox="0 0 576 512" fill="currentColor">
-                        <path d="M249.6 471.5c10.8 3.8 22.4-4.1 22.4-15.5V78.6c0-4.2-1.6-8.4-5-11C247.4 52 202.4 32 144 32C93.5 32 46.3 45.3 18.1 56.1C6.8 60.5 0 71.7 0 83.8V454.1c0 11.9 12.8 20.2 24.1 16.5C55.6 460.1 105.5 448 144 448c33.9 0 79 14 105.6 23.5zm76.8 0C353 462 398.1 448 432 448c38.5 0 88.4 12.1 119.9 22.6c11.3 3.8 24.1-4.6 24.1-16.5V83.8c0-12.1-6.8-23.3-18.1-27.6C529.7 45.3 482.5 32 432 32c-58.4 0-103.4 20-123 35.6c-3.3 2.6-5 6.8-5 11V456c0 11.4 11.7 19.3 22.4 15.5z" />
-                    </svg>
+    <!-- Header Navigation (Solid White, Elevated, Non-overlapping) -->
+    <nav class="bg-white shadow fixed top-0 left-0 right-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <!-- Left: Logo -->
+                <div class="flex items-center">
+                    <a href="/" class="flex items-center text-blue-600 font-bold text-lg sm:text-xl font-display">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 sm:h-7 sm:w-7 mr-2 text-blue-600 flex-shrink-0" viewBox="0 0 576 512" fill="currentColor">
+                            <path d="M249.6 471.5c10.8 3.8 22.4-4.1 22.4-15.5V78.6c0-4.2-1.6-8.4-5-11C247.4 52 202.4 32 144 32C93.5 32 46.3 45.3 18.1 56.1C6.8 60.5 0 71.7 0 83.8V454.1c0 11.9 12.8 20.2 24.1 16.5C55.6 460.1 105.5 448 144 448c33.9 0 79 14 105.6 23.5zm76.8 0C353 462 398.1 448 432 448c38.5 0 88.4 12.1 119.9 22.6c11.3 3.8 24.1-4.6 24.1-16.5V83.8c0-12.1-6.8-23.3-18.1-27.6C529.7 45.3 482.5 32 432 32c-58.4 0-103.4 20-123 35.6c-3.3 2.6-5 6.8-5 11V456c0 11.4 11.7 19.3 22.4 15.5z"/>
+                        </svg>
+                        <span>MSBTE Notes &amp; Info</span>
+                    </a>
                 </div>
-                <span class="font-bold text-xl font-display text-gray-800">MSBTE Notes &amp; Info</span>
-            </a>
 
-            <!-- Desktop Nav Menu with Sub-menu -->
-            <div class="hidden md:flex items-center space-x-7 text-sm font-medium text-gray-600">
-                <a href="/" class="hover:text-blue-600 transition-colors">Home</a>
+                <!-- Middle: Desktop Nav with Hover & Click Dropdowns -->
+                <div class="hidden md:flex space-x-6 items-center">
+                    <a href="/" class="hover:text-blue-500 font-medium text-gray-700">Home</a>
 
-                <!-- Resources Dropdown -->
-                <div class="relative group py-2">
-                    <button type="button" class="flex items-center gap-1.5 text-blue-600 font-semibold hover:text-blue-700 focus:outline-none" aria-haspopup="true">
-                        <span>Study Materials</span>
-                        <svg class="w-4 h-4 transition-transform duration-200 group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <!-- Notes & Study Dropdown -->
+                    <div class="relative group py-2 nav-dropdown">
+                        <button type="button" onclick="toggleDropdown(this, event)" class="flex items-center gap-1 hover:text-blue-500 font-semibold text-blue-600 focus:outline-none" aria-haspopup="true" aria-expanded="false">
+                            <span>Notes &amp; Study</span>
+                            <svg class="w-4 h-4 transition-transform duration-200 dropdown-arrow" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </button>
+                        <div class="dropdown-menu absolute left-0 top-full -mt-1 w-64 bg-white rounded-xl shadow-xl border border-gray-100 py-2 hidden group-hover:block transition-all z-50">
+                            <a href="/notes/" class="flex items-center gap-2.5 px-4 py-2.5 text-sm text-blue-600 font-bold bg-blue-50/60 border-l-2 border-blue-600">
+                                <span class="w-2 h-2 rounded-full bg-blue-600 flex-shrink-0"></span>
+                                <div>
+                                    <div class="font-bold text-blue-700">Notes &amp; Study Library</div>
+                                    <div class="text-xs text-blue-600">470+ verified K-Scheme study materials</div>
+                                </div>
+                            </a>
+                            <a href="/pyq/" class="flex items-center gap-2.5 px-4 py-2.5 text-sm text-gray-700 hover:bg-rose-50 hover:text-rose-600 font-medium transition">
+                                <span class="w-2 h-2 rounded-full bg-rose-500 flex-shrink-0"></span>
+                                <div>
+                                    <div class="font-semibold text-gray-900">Question Papers (PYQ)</div>
+                                    <div class="text-xs text-gray-500">117+ subjects summer &amp; winter papers</div>
+                                </div>
+                            </a>
+                            <a href="/model-answer/" class="flex items-center gap-2.5 px-4 py-2.5 text-sm text-gray-700 hover:bg-emerald-50 hover:text-emerald-600 font-medium transition">
+                                <span class="w-2 h-2 rounded-full bg-emerald-500 flex-shrink-0"></span>
+                                <div>
+                                    <div class="font-semibold text-gray-900">Model Answer Papers</div>
+                                    <div class="text-xs text-gray-500">Official solved papers &amp; marking schemes</div>
+                                </div>
+                            </a>
+                            <a href="/video-course/" class="flex items-center gap-2.5 px-4 py-2.5 text-sm text-gray-700 hover:bg-purple-50 hover:text-purple-600 font-medium transition">
+                                <span class="w-2 h-2 rounded-full bg-purple-500 flex-shrink-0"></span>
+                                <div>
+                                    <div class="font-semibold text-gray-900">Video Courses</div>
+                                    <div class="text-xs text-gray-500">Engineering tutorials &amp; lectures</div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <a href="/pyq/" class="hover:text-blue-500 font-medium text-gray-700">PYQ Papers</a>
+                    <a href="/model-answer/" class="hover:text-blue-500 font-medium text-gray-700">Model Answers</a>
+                    <a href="/blog/" class="hover:text-blue-500 font-medium text-gray-700">Blog</a>
+                    <a href="/news/" class="hover:text-red-500 font-medium text-gray-700 flex items-center gap-1.5">
+                        <span class="inline-block w-2 h-2 rounded-full bg-red-500 animate-pulse"></span>
+                        <span>News</span>
+                    </a>
+
+                    <!-- Jobs & Career Dropdown -->
+                    <div class="relative group py-2 nav-dropdown">
+                        <button type="button" onclick="toggleDropdown(this, event)" class="flex items-center gap-1 hover:text-blue-500 font-medium text-gray-700 focus:outline-none" aria-haspopup="true" aria-expanded="false">
+                            <span>Jobs</span>
+                            <svg class="w-4 h-4 transition-transform duration-200 dropdown-arrow" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </button>
+                        <div class="dropdown-menu absolute left-0 top-full -mt-1 w-52 bg-white rounded-xl shadow-xl border border-gray-100 py-2 hidden group-hover:block transition-all z-50">
+                            <a href="/jobs/index.html" class="flex items-center gap-2.5 px-4 py-2.5 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-600 font-medium transition">
+                                <span class="w-2 h-2 rounded-full bg-amber-500"></span>
+                                <span>Jobs Portal</span>
+                            </a>
+                            <a href="/internships.html" class="flex items-center gap-2.5 px-4 py-2.5 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-600 font-medium transition">
+                                <span class="w-2 h-2 rounded-full bg-indigo-500"></span>
+                                <span>Internships</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <a href="/contact.html" class="hover:text-blue-500 font-medium text-gray-700">Contact</a>
+                </div>
+
+                <!-- Right: Mobile Menu Toggle Button -->
+                <div class="flex items-center md:hidden">
+                    <button onclick="toggleMobileMenu()" class="mobile-menu-button p-2 text-gray-600 hover:text-blue-600 focus:outline-none min-h-[44px] min-w-[44px] flex items-center justify-center" aria-controls="mobileNav" aria-expanded="false" aria-label="Toggle menu">
+                        <svg id="menuIcon" class="h-6 w-6 transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"/>
+                        </svg>
+                        <svg id="closeIcon" class="h-6 w-6 hidden transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modern Mobile Navigation Overlay Drawer (Scroll-locked, never overlapping) -->
+        <div id="mobileNav" class="fixed inset-0 bg-white z-50 transform translate-x-full transition-transform duration-300 ease-in-out md:hidden overflow-y-auto pt-20 px-6" style="z-index: 9999 !important;">
+            <button onclick="toggleMobileMenu()" class="absolute top-5 right-5 p-2 text-gray-600 hover:text-blue-600 focus:outline-none min-h-[44px] min-w-[44px] flex items-center justify-center" aria-label="Close menu">
+                <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+                </svg>
+            </button>
+
+            <div class="flex flex-col space-y-4">
+                <a href="/" onclick="toggleMobileMenu()" class="text-lg font-display font-bold text-gray-900 border-b border-gray-100 pb-2">Home</a>
+
+                <!-- Notes Mobile Submenu (Accordion) -->
+                <div class="border-b border-gray-100 pb-2">
+                    <button type="button" onclick="toggleMobileSubmenu('mobileNotesSubmenu', 'mobileNotesArrow')" class="w-full flex items-center justify-between text-lg font-display font-bold text-gray-900 py-1.5 focus:outline-none">
+                        <span class="flex items-center gap-2">
+                            <span>Notes &amp; Study</span>
+                            <span class="text-xs font-sans font-semibold px-2 py-0.5 rounded-full bg-blue-100 text-blue-700">4 Links</span>
+                        </span>
+                        <svg id="mobileNotesArrow" class="w-5 h-5 text-gray-500 transition-transform duration-200 transform rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
                         </svg>
                     </button>
-                    <div class="absolute left-0 top-full -mt-1 w-64 bg-white rounded-xl shadow-xl border border-gray-100 py-2 hidden group-hover:block transition-all z-50">
-                        <a href="/notes/" class="flex items-center gap-2.5 px-4 py-2.5 text-sm text-blue-600 font-bold bg-blue-50/60 border-l-2 border-blue-600">
+                    <div id="mobileNotesSubmenu" class="space-y-1 pl-2 pt-1 pb-1 transition-all">
+                        <a href="/notes/" onclick="toggleMobileMenu()" class="flex items-center gap-2.5 py-2 px-3 rounded-lg text-sm font-bold text-blue-600 bg-blue-50 transition border border-blue-100">
                             <span class="w-2 h-2 rounded-full bg-blue-600 flex-shrink-0"></span>
-                            <span>Notes &amp; Study Library</span>
+                            <div>
+                                <div class="font-bold text-blue-700">Notes &amp; Study Library</div>
+                                <div class="text-xs text-blue-600">470+ verified study materials &amp; notes</div>
+                            </div>
                         </a>
-                        <a href="/pyq/" class="flex items-center gap-2.5 px-4 py-2.5 text-sm text-gray-700 hover:bg-rose-50 hover:text-rose-600 font-medium transition">
+                        <a href="/pyq/" onclick="toggleMobileMenu()" class="flex items-center gap-2.5 py-2 px-3 rounded-lg text-sm font-medium text-gray-700 hover:bg-rose-50 transition">
                             <span class="w-2 h-2 rounded-full bg-rose-500 flex-shrink-0"></span>
-                            <span>Question Papers (PYQ)</span>
+                            <div>
+                                <div class="font-semibold text-gray-900">Question Papers (PYQ)</div>
+                                <div class="text-xs text-gray-500">117+ subjects summer &amp; winter papers</div>
+                            </div>
                         </a>
-                        <a href="/model-answer/" class="flex items-center gap-2.5 px-4 py-2.5 text-sm text-gray-700 hover:bg-emerald-50 hover:text-emerald-600 font-medium transition">
+                        <a href="/model-answer/" onclick="toggleMobileMenu()" class="flex items-center gap-2.5 py-2 px-3 rounded-lg text-sm font-medium text-gray-700 hover:bg-emerald-50 transition">
                             <span class="w-2 h-2 rounded-full bg-emerald-500 flex-shrink-0"></span>
-                            <span>Model Answer Papers</span>
+                            <div>
+                                <div class="font-semibold text-gray-900">Model Answer Papers</div>
+                                <div class="text-xs text-gray-500">Official solved papers &amp; marking schemes</div>
+                            </div>
                         </a>
-                        <a href="/video-course/" class="flex items-center gap-2.5 px-4 py-2.5 text-sm text-gray-700 hover:bg-purple-50 hover:text-purple-600 font-medium transition">
+                        <a href="/video-course/" onclick="toggleMobileMenu()" class="flex items-center gap-2.5 py-2 px-3 rounded-lg text-sm font-medium text-gray-700 hover:bg-purple-50 transition">
                             <span class="w-2 h-2 rounded-full bg-purple-500 flex-shrink-0"></span>
-                            <span>Video Courses</span>
+                            <div>
+                                <div class="font-semibold text-gray-900">Video Courses</div>
+                                <div class="text-xs text-gray-500">Engineering tutorials &amp; concept walkthroughs</div>
+                            </div>
                         </a>
                     </div>
                 </div>
 
-                <a href="/pyq/" class="hover:text-blue-600 transition-colors">PYQ Papers</a>
-                <a href="/model-answer/" class="hover:text-blue-600 transition-colors">Model Answers</a>
-                <a href="/blog/" class="hover:text-blue-600 transition-colors">Blog</a>
-            </div>
+                <a href="/pyq/" onclick="toggleMobileMenu()" class="text-lg font-display font-bold text-gray-900 border-b border-gray-100 pb-2">PYQ Papers</a>
+                <a href="/model-answer/" onclick="toggleMobileMenu()" class="text-lg font-display font-bold text-gray-900 border-b border-gray-100 pb-2">Model Answers</a>
+                <a href="/blog/" onclick="toggleMobileMenu()" class="text-lg font-display font-bold text-gray-900 border-b border-gray-100 pb-2">Blog</a>
+                <a href="/news/" onclick="toggleMobileMenu()" class="text-lg font-display font-bold text-red-600 border-b border-gray-100 pb-2 flex items-center justify-between">
+                    <span>News Updates</span>
+                    <span class="text-xs bg-red-100 text-red-600 font-semibold px-2 py-0.5 rounded-full uppercase tracking-wider">Live</span>
+                </a>
 
-            <button onclick="toggleMobileMenu()" class="md:hidden text-gray-700 p-2 rounded-lg hover:bg-gray-100 min-h-[44px] min-w-[44px] flex items-center justify-center"
-                aria-controls="mobileNav" aria-expanded="false" aria-label="Toggle navigation">
-                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
-                </svg>
-            </button>
-        </div>
+                <!-- Jobs Mobile Submenu (Accordion) -->
+                <div class="border-b border-gray-100 pb-2">
+                    <button type="button" onclick="toggleMobileSubmenu('mobileJobsSubmenu', 'mobileJobsArrow')" class="w-full flex items-center justify-between text-lg font-display font-bold text-gray-900 py-1.5 focus:outline-none">
+                        <span class="flex items-center gap-2">
+                            <span>Jobs &amp; Career</span>
+                            <span class="text-xs font-sans font-semibold px-2 py-0.5 rounded-full bg-blue-100 text-blue-700">2 Links</span>
+                        </span>
+                        <svg id="mobileJobsArrow" class="w-5 h-5 text-gray-500 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </button>
+                    <div id="mobileJobsSubmenu" class="hidden space-y-1 pl-2 pt-1 pb-1 transition-all">
+                        <a href="/jobs/index.html" onclick="toggleMobileMenu()" class="flex items-center gap-2.5 py-2 px-3 rounded-lg text-sm font-medium text-gray-700 hover:bg-blue-50 hover:text-blue-600 transition">
+                            <span class="w-2 h-2 rounded-full bg-amber-500"></span>
+                            <div>
+                                <div class="font-semibold text-gray-900">Jobs Portal</div>
+                                <div class="text-xs text-gray-500">MSBTE diploma jobs &amp; freshers hiring</div>
+                            </div>
+                        </a>
+                        <a href="/internships.html" onclick="toggleMobileMenu()" class="flex items-center gap-2.5 py-2 px-3 rounded-lg text-sm font-medium text-gray-700 hover:bg-blue-50 hover:text-blue-600 transition">
+                            <span class="w-2 h-2 rounded-full bg-indigo-500"></span>
+                            <div>
+                                <div class="font-semibold text-gray-900">Internships</div>
+                                <div class="text-xs text-gray-500">Paid &amp; verified summer engineering internships</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
 
-        <!-- Mobile Navigation Menu -->
-        <div id="mobileNav" class="md:hidden hidden bg-white border-t border-gray-100 absolute w-full left-0 z-40 shadow-lg"
-            aria-hidden="true">
-            <div class="px-4 py-3 space-y-1">
-                <a href="/" class="block px-3 py-2.5 rounded-lg text-base font-medium text-gray-700 hover:text-blue-600 hover:bg-blue-50">Home</a>
-                <a href="/notes/" class="block px-3 py-2.5 rounded-lg text-base font-semibold text-blue-600 bg-blue-50">Notes &amp; Study Library</a>
-                <a href="/pyq/" class="block px-3 py-2.5 rounded-lg text-base font-medium text-gray-700 hover:text-rose-600 hover:bg-rose-50">Question Papers (PYQ)</a>
-                <a href="/model-answer/" class="block px-3 py-2.5 rounded-lg text-base font-medium text-gray-700 hover:text-emerald-600 hover:bg-emerald-50">Model Answer Papers</a>
-                <a href="/video-course/" class="block px-3 py-2.5 rounded-lg text-base font-medium text-gray-700 hover:text-purple-600 hover:bg-purple-50">Video Courses</a>
-                <a href="/blog/" class="block px-3 py-2.5 rounded-lg text-base font-medium text-gray-700 hover:text-blue-600 hover:bg-blue-50">Blog</a>
+                <a href="/about.html" onclick="toggleMobileMenu()" class="text-lg font-display font-bold text-gray-900 border-b border-gray-100 pb-2">About</a>
+                <a href="/contact.html" onclick="toggleMobileMenu()" class="text-lg font-display font-bold text-gray-900 border-b border-gray-100 pb-2">Contact</a>
             </div>
         </div>
     </nav>
@@ -481,7 +643,7 @@
     <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 md:py-12">
 
         <!-- Top Breadcrumbs Bar with Clickable Steps -->
-        <nav aria-label="Breadcrumb" class="mb-6 flex items-center space-x-2 text-xs md:text-sm text-gray-500 overflow-x-auto whitespace-nowrap py-1">
+        <nav aria-label="Breadcrumb" class="mb-6 flex items-center space-x-2 text-xs md:text-sm text-gray-500 overflow-x-auto whitespace-nowrap py-1 no-scrollbar">
             <a href="/" class="hover:text-blue-600 transition-colors flex items-center gap-1 font-medium">
                 <svg class="w-4 h-4 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"/>
@@ -507,7 +669,7 @@
                 MSBTE K-Scheme 2026 Master Study Portal
             </div>
 
-            <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold font-display tracking-tight text-gray-900 mb-4 leading-tight">
+            <h1 class="text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-bold font-display tracking-tight text-gray-900 mb-4 leading-tight">
                 MSBTE Notes, PYQ Papers &amp;<br class="hidden sm:inline" />
                 <span class="gradient-text">Model Answer Directory</span>
             </h1>
@@ -517,7 +679,7 @@
             </p>
 
             <!-- KPI Value Stat Badges -->
-            <div class="flex flex-wrap items-center justify-center gap-2.5 sm:gap-4 text-xs font-semibold text-gray-700">
+            <div class="flex flex-wrap items-center justify-center gap-2 sm:gap-3 text-xs font-semibold text-gray-700">
                 <div class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-white border border-gray-200/80 shadow-sm">
                     <span class="w-2 h-2 rounded-full bg-blue-600"></span>
                     <span>470+ Study Resources</span>
@@ -548,7 +710,7 @@
                         </svg>
                     </div>
                     <input type="text" id="search-input"
-                        class="block w-full px-3 py-3.5 sm:py-4 bg-transparent text-gray-900 placeholder-gray-400 focus:outline-none text-sm sm:text-base md:text-lg"
+                        class="block w-full px-3 py-3.5 sm:py-4 bg-transparent text-gray-900 placeholder-gray-400 focus:outline-none text-base md:text-lg"
                         placeholder="Search subjects (Operating System), codes (313301), PYQ, Model Answers..."
                         autocomplete="off">
                     <button type="button" id="search-clear-btn"

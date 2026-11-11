@@ -1008,16 +1008,87 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // Mobile Menu Toggle
+    // Mobile Navigation Menu & Overlay Toggle
     window.toggleMobileMenu = function() {
         const menu = document.getElementById('mobileNav');
-        const button = document.querySelector('button[onclick="toggleMobileMenu()"]');
-        if (menu) {
-            menu.classList.toggle('hidden');
-            const isExpanded = !menu.classList.contains('hidden');
-            if (button) button.setAttribute('aria-expanded', isExpanded);
+        const menuIcon = document.getElementById('menuIcon');
+        const closeIcon = document.getElementById('closeIcon');
+        const button = document.querySelector('.mobile-menu-button');
+        if (!menu) return;
+
+        const isClosed = menu.classList.contains('translate-x-full');
+        if (isClosed) {
+            menu.classList.remove('translate-x-full');
+            if (menuIcon) menuIcon.classList.add('hidden');
+            if (closeIcon) closeIcon.classList.remove('hidden');
+            if (button) button.setAttribute('aria-expanded', 'true');
+            document.body.style.overflow = 'hidden';
+        } else {
+            menu.classList.add('translate-x-full');
+            if (menuIcon) menuIcon.classList.remove('hidden');
+            if (closeIcon) closeIcon.classList.add('hidden');
+            if (button) button.setAttribute('aria-expanded', 'false');
+            document.body.style.overflow = '';
         }
     };
+
+    // Mobile Accordion Submenu Toggle
+    window.toggleMobileSubmenu = function(submenuId, arrowId) {
+        const submenu = document.getElementById(submenuId);
+        const arrow = document.getElementById(arrowId);
+        if (!submenu) return;
+        const isHidden = submenu.classList.contains('hidden');
+        if (isHidden) {
+            submenu.classList.remove('hidden');
+            if (arrow) arrow.classList.add('rotate-180');
+        } else {
+            submenu.classList.add('hidden');
+            if (arrow) arrow.classList.remove('rotate-180');
+        }
+    };
+
+    // Desktop Navigation Dropdown Toggle (for click & touch devices)
+    window.toggleDropdown = function(btn, event) {
+        if (event) event.stopPropagation();
+        const parent = btn.closest('.nav-dropdown');
+        if (!parent) return;
+        const isOpen = parent.classList.contains('is-open');
+        document.querySelectorAll('.nav-dropdown').forEach(d => {
+            if (d !== parent) {
+                d.classList.remove('is-open');
+                const b = d.querySelector('button[aria-expanded]');
+                if (b) b.setAttribute('aria-expanded', 'false');
+            }
+        });
+        if (isOpen) {
+            parent.classList.remove('is-open');
+            btn.setAttribute('aria-expanded', 'false');
+        } else {
+            parent.classList.add('is-open');
+            btn.setAttribute('aria-expanded', 'true');
+        }
+    };
+
+    // Close open dropdowns when tapping outside
+    document.addEventListener('click', (e) => {
+        if (!e.target.closest('.nav-dropdown')) {
+            document.querySelectorAll('.nav-dropdown').forEach(d => {
+                d.classList.remove('is-open');
+                const b = d.querySelector('button[aria-expanded]');
+                if (b) b.setAttribute('aria-expanded', 'false');
+            });
+        }
+    });
+
+    // Close mobile menu on Escape key press
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape') {
+            const menu = document.getElementById('mobileNav');
+            if (menu && !menu.classList.contains('translate-x-full')) {
+                toggleMobileMenu();
+            }
+        }
+    });
 
     // Mobile Floating Bottom Action Dock visibility on scroll
     window.addEventListener('scroll', () => {
