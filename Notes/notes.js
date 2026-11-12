@@ -226,7 +226,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 <div class="w-12 h-12 rounded-xl bg-white shadow-sm border border-gray-100 flex items-center justify-center text-blue-600 mb-2 group-hover:scale-110 transition-transform">
                     <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">${icon}</svg>
                 </div>
-                ${code && code !== 'ALL' ? `<span class="text-xs font-mono font-bold text-gray-500 uppercase tracking-wider">${code}</span>` : ''}
+                ${code && code !== 'ALL' ? `<span class="text-xs font-mono font-semibold text-gray-500 uppercase tracking-wider">${code}</span>` : ''}
             </div>
         `;
     }
@@ -339,7 +339,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         </div>
 
                         <!-- Title -->
-                        <h3 class="text-base md:text-lg font-bold font-display text-gray-900 mb-2 leading-snug group-hover:text-blue-600 transition-colors line-clamp-2">
+                        <h3 class="text-base md:text-lg font-semibold font-display text-gray-900 mb-2 leading-snug group-hover:text-blue-600 transition-colors line-clamp-2">
                             ${highlightedTitle}
                         </h3>
 

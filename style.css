@@ -4,8 +4,8 @@
    Global Typography (Inter & Clash Display)
    Matches the typography applied on the main index.html
    ========================================================================== */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@500;600;700&display=swap');
-@import url('https://api.fontshare.com/v2/css?f[]=clash-display@500,600,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@500;600&display=swap');
+@import url('https://api.fontshare.com/v2/css?f[]=clash-display@600&display=swap');
 
 :root {
   --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
@@ -44,8 +44,9 @@ h4,
 h5,
 h6,
 .font-display {
-  font-family: 'Clash Display', sans-serif !important;
-  font-weight: 600;
+  font-family: 'Clash Display', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !important;
+  font-weight: 600 !important;
+  letter-spacing: -0.02em;
 }
 
 

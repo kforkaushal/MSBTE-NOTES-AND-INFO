@@ -228,8 +228,8 @@ def generate_start_html():
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://api.fontshare.com">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-    <link href="https://api.fontshare.com/v2/css?f[]=clash-display@600,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://api.fontshare.com/v2/css?f[]=clash-display@600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/style.css">
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 
@@ -281,8 +281,9 @@ def generate_start_html():
         }}
 
         h1, h2, h3, h4, .font-display {{
-            font-family: 'Clash Display', sans-serif;
-            letter-spacing: -0.015em;
+            font-family: 'Clash Display', 'Inter', sans-serif !important;
+            font-weight: 600 !important;
+            letter-spacing: -0.02em;
         }}
 
         /* Navbar Solid Elevation */
@@ -410,7 +411,7 @@ def generate_start_html():
             <div class="flex items-center justify-between h-16">
                 <!-- Left: Logo -->
                 <div class="flex items-center">
-                    <a href="/" class="flex items-center text-blue-600 font-bold text-lg sm:text-xl font-display">
+                    <a href="/" class="flex items-center text-blue-600 font-semibold text-lg sm:text-xl font-display">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 sm:h-7 sm:w-7 mr-2 text-blue-600 flex-shrink-0" viewBox="0 0 576 512" fill="currentColor">
                             <path d="M249.6 471.5c10.8 3.8 22.4-4.1 22.4-15.5V78.6c0-4.2-1.6-8.4-5-11C247.4 52 202.4 32 144 32C93.5 32 46.3 45.3 18.1 56.1C6.8 60.5 0 71.7 0 83.8V454.1c0 11.9 12.8 20.2 24.1 16.5C55.6 460.1 105.5 448 144 448c33.9 0 79 14 105.6 23.5zm76.8 0C353 462 398.1 448 432 448c38.5 0 88.4 12.1 119.9 22.6c11.3 3.8 24.1-4.6 24.1-16.5V83.8c0-12.1-6.8-23.3-18.1-27.6C529.7 45.3 482.5 32 432 32c-58.4 0-103.4 20-123 35.6c-3.3 2.6-5 6.8-5 11V456c0 11.4 11.7 19.3 22.4 15.5z"/>
                         </svg>
@@ -421,7 +422,7 @@ def generate_start_html():
                 <!-- Middle: Desktop Nav -->
                 <div class="hidden md:flex space-x-6 items-center">
                     <a href="/" class="hover:text-blue-500 font-medium text-gray-700">Home</a>
-                    <a href="/start.html" class="text-blue-600 font-bold bg-blue-50 px-3 py-1.5 rounded-lg border border-blue-200">Start Here</a>
+                    <a href="/start.html" class="text-blue-600 font-semibold bg-blue-50 px-3 py-1.5 rounded-lg border border-blue-200">Start Here</a>
 
                     <!-- Notes & Study Dropdown -->
                     <div class="relative group py-2 nav-dropdown">
@@ -433,7 +434,7 @@ def generate_start_html():
                             <a href="/notes/" class="flex items-center gap-2.5 px-4 py-2.5 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-600 font-medium transition">
                                 <span class="w-2 h-2 rounded-full bg-blue-600 flex-shrink-0"></span>
                                 <div>
-                                    <div class="font-bold text-gray-900">Notes &amp; Study Library</div>
+                                    <div class="font-medium text-gray-900">Notes &amp; Study Library</div>
                                     <div class="text-xs text-gray-500">470+ verified K-Scheme study materials</div>
                                 </div>
                             </a>
@@ -512,16 +513,19 @@ def generate_start_html():
                 </svg>
             </button>
 
-            <div class="flex flex-col space-y-4">
-                <a href="/" onclick="toggleMobileMenu()" class="text-lg font-display font-bold text-gray-900 border-b border-gray-100 pb-2">Home</a>
-                <a href="/start.html" onclick="toggleMobileMenu()" class="text-lg font-display font-bold text-blue-600 border-b border-gray-100 pb-2">Start Here Hub</a>
+            <div class="flex flex-col space-y-3.5">
+                <a href="/" onclick="toggleMobileMenu()" class="text-base font-semibold text-gray-800 border-b border-gray-100 pb-2.5">Home</a>
+                <a href="/start.html" onclick="toggleMobileMenu()" class="text-base font-semibold text-blue-600 border-b border-gray-100 pb-2.5 flex items-center justify-between">
+                    <span>Start Here Hub</span>
+                    <span class="text-[11px] font-medium bg-blue-50 text-blue-600 px-2 py-0.5 rounded-full border border-blue-200">Start</span>
+                </a>
 
                 <!-- Notes Mobile Submenu (Accordion) -->
-                <div class="border-b border-gray-100 pb-2">
-                    <button type="button" onclick="toggleMobileSubmenu('mobileNotesSubmenu', 'mobileNotesArrow')" class="w-full flex items-center justify-between text-lg font-display font-bold text-gray-900 py-1.5 focus:outline-none">
+                <div class="border-b border-gray-100 pb-2.5">
+                    <button type="button" onclick="toggleMobileSubmenu('mobileNotesSubmenu', 'mobileNotesArrow')" class="w-full flex items-center justify-between text-base font-semibold text-gray-800 py-1 focus:outline-none">
                         <span class="flex items-center gap-2">
                             <span>Study Materials</span>
-                            <span class="text-xs font-sans font-semibold px-2 py-0.5 rounded-full bg-blue-100 text-blue-700">4 Links</span>
+                            <span class="text-xs font-sans font-medium px-2 py-0.5 rounded-full bg-blue-100 text-blue-700">4 Links</span>
                         </span>
                         <svg id="mobileNotesArrow" class="w-5 h-5 text-gray-500 transition-transform duration-200 transform rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
@@ -531,48 +535,48 @@ def generate_start_html():
                         <a href="/notes/" onclick="toggleMobileMenu()" class="flex items-center gap-2.5 py-2 px-3 rounded-lg text-sm font-medium text-gray-700 hover:bg-blue-50 transition">
                             <span class="w-2 h-2 rounded-full bg-blue-600 flex-shrink-0"></span>
                             <div>
-                                <div class="font-bold text-gray-900">Notes &amp; Study Library</div>
+                                <div class="font-medium text-gray-900">Notes &amp; Study Library</div>
                                 <div class="text-xs text-gray-500">470+ verified study materials &amp; notes</div>
                             </div>
                         </a>
                         <a href="/pyq/" onclick="toggleMobileMenu()" class="flex items-center gap-2.5 py-2 px-3 rounded-lg text-sm font-medium text-gray-700 hover:bg-rose-50 transition">
                             <span class="w-2 h-2 rounded-full bg-rose-500 flex-shrink-0"></span>
                             <div>
-                                <div class="font-semibold text-gray-900">Question Papers (PYQ)</div>
+                                <div class="font-medium text-gray-900">Question Papers (PYQ)</div>
                                 <div class="text-xs text-gray-500">117+ subjects summer &amp; winter papers</div>
                             </div>
                         </a>
                         <a href="/model-answer/" onclick="toggleMobileMenu()" class="flex items-center gap-2.5 py-2 px-3 rounded-lg text-sm font-medium text-gray-700 hover:bg-emerald-50 transition">
                             <span class="w-2 h-2 rounded-full bg-emerald-500 flex-shrink-0"></span>
                             <div>
-                                <div class="font-semibold text-gray-900">Model Answer Papers</div>
+                                <div class="font-medium text-gray-900">Model Answer Papers</div>
                                 <div class="text-xs text-gray-500">Official solved papers &amp; marking schemes</div>
                             </div>
                         </a>
                         <a href="/video-course/" onclick="toggleMobileMenu()" class="flex items-center gap-2.5 py-2 px-3 rounded-lg text-sm font-medium text-gray-700 hover:bg-purple-50 transition">
                             <span class="w-2 h-2 rounded-full bg-purple-500 flex-shrink-0"></span>
                             <div>
-                                <div class="font-semibold text-gray-900">Video Courses</div>
+                                <div class="font-medium text-gray-900">Video Courses</div>
                                 <div class="text-xs text-gray-500">Engineering tutorials &amp; concept walkthroughs</div>
                             </div>
                         </a>
                     </div>
                 </div>
 
-                <a href="/pyq/" onclick="toggleMobileMenu()" class="text-lg font-display font-bold text-gray-900 border-b border-gray-100 pb-2">PYQ Papers</a>
-                <a href="/model-answer/" onclick="toggleMobileMenu()" class="text-lg font-display font-bold text-gray-900 border-b border-gray-100 pb-2">Model Answers</a>
-                <a href="/blog/" onclick="toggleMobileMenu()" class="text-lg font-display font-bold text-gray-900 border-b border-gray-100 pb-2">Blog</a>
-                <a href="/news/" onclick="toggleMobileMenu()" class="text-lg font-display font-bold text-red-600 border-b border-gray-100 pb-2 flex items-center justify-between">
+                <a href="/pyq/" onclick="toggleMobileMenu()" class="text-base font-semibold text-gray-800 border-b border-gray-100 pb-2.5">PYQ Papers</a>
+                <a href="/model-answer/" onclick="toggleMobileMenu()" class="text-base font-semibold text-gray-800 border-b border-gray-100 pb-2.5">Model Answers</a>
+                <a href="/blog/" onclick="toggleMobileMenu()" class="text-base font-semibold text-gray-800 border-b border-gray-100 pb-2.5">Blog</a>
+                <a href="/news/" onclick="toggleMobileMenu()" class="text-base font-semibold text-red-600 border-b border-gray-100 pb-2.5 flex items-center justify-between">
                     <span>News Updates</span>
                     <span class="text-xs bg-red-100 text-red-600 font-semibold px-2 py-0.5 rounded-full uppercase tracking-wider">Live</span>
                 </a>
 
                 <!-- Jobs Submenu -->
-                <div class="border-b border-gray-100 pb-2">
-                    <button type="button" onclick="toggleMobileSubmenu('mobileJobsSubmenu', 'mobileJobsArrow')" class="w-full flex items-center justify-between text-lg font-display font-bold text-gray-900 py-1.5 focus:outline-none">
+                <div class="border-b border-gray-100 pb-2.5">
+                    <button type="button" onclick="toggleMobileSubmenu('mobileJobsSubmenu', 'mobileJobsArrow')" class="w-full flex items-center justify-between text-base font-semibold text-gray-800 py-1 focus:outline-none">
                         <span class="flex items-center gap-2">
                             <span>Jobs &amp; Career</span>
-                            <span class="text-xs font-sans font-semibold px-2 py-0.5 rounded-full bg-blue-100 text-blue-700">2 Links</span>
+                            <span class="text-xs font-sans font-medium px-2 py-0.5 rounded-full bg-blue-100 text-blue-700">2 Links</span>
                         </span>
                         <svg id="mobileJobsArrow" class="w-5 h-5 text-gray-500 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
@@ -582,22 +586,22 @@ def generate_start_html():
                         <a href="/Jobs/index.html" onclick="toggleMobileMenu()" class="flex items-center gap-2.5 py-2 px-3 rounded-lg text-sm font-medium text-gray-700 hover:bg-blue-50 hover:text-blue-600 transition">
                             <span class="w-2 h-2 rounded-full bg-amber-500"></span>
                             <div>
-                                <div class="font-semibold text-gray-900">Jobs Portal</div>
+                                <div class="font-medium text-gray-900">Jobs Portal</div>
                                 <div class="text-xs text-gray-500">MSBTE diploma jobs &amp; freshers hiring</div>
                             </div>
                         </a>
                         <a href="/internships.html" onclick="toggleMobileMenu()" class="flex items-center gap-2.5 py-2 px-3 rounded-lg text-sm font-medium text-gray-700 hover:bg-blue-50 hover:text-blue-600 transition">
                             <span class="w-2 h-2 rounded-full bg-indigo-500"></span>
                             <div>
-                                <div class="font-semibold text-gray-900">Internships</div>
+                                <div class="font-medium text-gray-900">Internships</div>
                                 <div class="text-xs text-gray-500">Paid &amp; verified summer engineering internships</div>
                             </div>
                         </a>
                     </div>
                 </div>
 
-                <a href="/about.html" onclick="toggleMobileMenu()" class="text-lg font-display font-bold text-gray-900 border-b border-gray-100 pb-2">About</a>
-                <a href="/contact.html" onclick="toggleMobileMenu()" class="text-lg font-display font-bold text-gray-900 border-b border-gray-100 pb-2">Contact</a>
+                <a href="/about.html" onclick="toggleMobileMenu()" class="text-base font-semibold text-gray-800 border-b border-gray-100 pb-2.5">About</a>
+                <a href="/contact.html" onclick="toggleMobileMenu()" class="text-base font-semibold text-gray-800 border-b border-gray-100 pb-2.5">Contact</a>
             </div>
         </div>
     </nav>
@@ -624,7 +628,7 @@ def generate_start_html():
                 Official MSBTE Student Navigation Map
             </div>
 
-            <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold font-display tracking-tight text-gray-900 mb-4 leading-tight">
+            <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-semibold font-display tracking-tight text-gray-900 mb-4 leading-tight">
                 One Hub, Every <span class="gradient-text">MSBTE Resource</span>
             </h1>
 
@@ -674,7 +678,7 @@ def generate_start_html():
                         </svg>
                     </div>
                     <div>
-                        <h2 class="text-xl font-bold font-display text-gray-900">Instant Subject Finder</h2>
+                        <h2 class="text-xl font-semibold font-display text-gray-900">Instant Subject Finder</h2>
                         <p class="text-xs text-gray-500">Type subject name or 6-digit code (e.g. 313301, OSY, Java, DSU, Mechanics)</p>
                     </div>
                 </div>
@@ -701,7 +705,7 @@ def generate_start_html():
 
                 <!-- Search Results Live Container -->
                 <div id="search-results-box" class="hidden border-t border-gray-100 pt-4 space-y-3">
-                    <div id="search-results-count" class="text-xs font-bold text-gray-500"></div>
+                    <div id="search-results-count" class="text-xs font-semibold text-gray-500"></div>
                     <div id="search-results-list" class="space-y-2.5 max-h-96 overflow-y-auto pr-1"></div>
                 </div>
             </div>
@@ -711,7 +715,7 @@ def generate_start_html():
         <section id="branches" class="mb-16">
             <div class="flex items-center justify-between mb-6">
                 <div>
-                    <h2 class="text-2xl md:text-3xl font-bold font-display text-gray-900 flex items-center gap-2">
+                    <h2 class="text-2xl md:text-3xl font-semibold font-display text-gray-900 flex items-center gap-2">
                         <span class="p-1.5 rounded-xl bg-blue-50 text-blue-600">
                             <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"/></svg>
                         </span>
@@ -728,8 +732,8 @@ def generate_start_html():
                         <div class="w-12 h-12 rounded-2xl bg-indigo-50 border border-indigo-100 flex items-center justify-center text-indigo-600 mb-4 group-hover:bg-indigo-600 group-hover:text-white transition-colors">
                             <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20"><path d="M2 6a2 2 0 012-2h5l2 2h5a2 2 0 012 2v6a2 2 0 01-2 2H4a2 2 0 01-2-2V6z"/></svg>
                         </div>
-                        <span class="text-xs font-bold text-indigo-600 uppercase tracking-wider block mb-1">Code: CO</span>
-                        <h3 class="text-lg font-bold font-display text-gray-900 group-hover:text-indigo-600 transition-colors">Computer Engineering</h3>
+                        <span class="text-xs font-semibold text-indigo-600 uppercase tracking-wider block mb-1">Code: CO</span>
+                        <h3 class="text-lg font-semibold font-display text-gray-900 group-hover:text-indigo-600 transition-colors">Computer Engineering</h3>
                         <p class="text-xs text-gray-500 mt-1 line-clamp-2">Sem 1 to 6 complete K-Scheme curriculum, notes, PYQs, and microprojects.</p>
                     </div>
                     <div class="mt-4 pt-3 border-t border-gray-100 flex items-center justify-between text-xs font-semibold text-indigo-600">
@@ -744,8 +748,8 @@ def generate_start_html():
                         <div class="w-12 h-12 rounded-2xl bg-purple-50 border border-purple-100 flex items-center justify-center text-purple-600 mb-4 group-hover:bg-purple-600 group-hover:text-white transition-colors">
                             <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20"><path d="M2 6a2 2 0 012-2h5l2 2h5a2 2 0 012 2v6a2 2 0 01-2 2H4a2 2 0 01-2-2V6z"/></svg>
                         </div>
-                        <span class="text-xs font-bold text-purple-600 uppercase tracking-wider block mb-1">Code: IF</span>
-                        <h3 class="text-lg font-bold font-display text-gray-900 group-hover:text-purple-600 transition-colors">Information Technology</h3>
+                        <span class="text-xs font-semibold text-purple-600 uppercase tracking-wider block mb-1">Code: IF</span>
+                        <h3 class="text-lg font-semibold font-display text-gray-900 group-hover:text-purple-600 transition-colors">Information Technology</h3>
                         <p class="text-xs text-gray-500 mt-1 line-clamp-2">IT diploma notes, database systems, networking, web development, and papers.</p>
                     </div>
                     <div class="mt-4 pt-3 border-t border-gray-100 flex items-center justify-between text-xs font-semibold text-purple-600">
@@ -760,8 +764,8 @@ def generate_start_html():
                         <div class="w-12 h-12 rounded-2xl bg-pink-50 border border-pink-100 flex items-center justify-center text-pink-600 mb-4 group-hover:bg-pink-600 group-hover:text-white transition-colors">
                             <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20"><path d="M2 6a2 2 0 012-2h5l2 2h5a2 2 0 012 2v6a2 2 0 01-2 2H4a2 2 0 01-2-2V6z"/></svg>
                         </div>
-                        <span class="text-xs font-bold text-pink-600 uppercase tracking-wider block mb-1">Code: AN</span>
-                        <h3 class="text-lg font-bold font-display text-gray-900 group-hover:text-pink-600 transition-colors">AI &amp; Machine Learning</h3>
+                        <span class="text-xs font-semibold text-pink-600 uppercase tracking-wider block mb-1">Code: AN</span>
+                        <h3 class="text-lg font-semibold font-display text-gray-900 group-hover:text-pink-600 transition-colors">AI &amp; Machine Learning</h3>
                         <p class="text-xs text-gray-500 mt-1 line-clamp-2">Python, ML algorithms, cloud computing for data science, and NLP resources.</p>
                     </div>
                     <div class="mt-4 pt-3 border-t border-gray-100 flex items-center justify-between text-xs font-semibold text-pink-600">
@@ -776,8 +780,8 @@ def generate_start_html():
                         <div class="w-12 h-12 rounded-2xl bg-amber-50 border border-amber-100 flex items-center justify-center text-amber-600 mb-4 group-hover:bg-amber-600 group-hover:text-white transition-colors">
                             <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20"><path d="M2 6a2 2 0 012-2h5l2 2h5a2 2 0 012 2v6a2 2 0 01-2 2H4a2 2 0 01-2-2V6z"/></svg>
                         </div>
-                        <span class="text-xs font-bold text-amber-600 uppercase tracking-wider block mb-1">Code: ME</span>
-                        <h3 class="text-lg font-bold font-display text-gray-900 group-hover:text-amber-600 transition-colors">Mechanical Engineering</h3>
+                        <span class="text-xs font-semibold text-amber-600 uppercase tracking-wider block mb-1">Code: ME</span>
+                        <h3 class="text-lg font-semibold font-display text-gray-900 group-hover:text-amber-600 transition-colors">Mechanical Engineering</h3>
                         <p class="text-xs text-gray-500 mt-1 line-clamp-2">Thermodynamics, theory of machines, CAD/CAM, hydraulics, and manual copies.</p>
                     </div>
                     <div class="mt-4 pt-3 border-t border-gray-100 flex items-center justify-between text-xs font-semibold text-amber-600">
@@ -792,8 +796,8 @@ def generate_start_html():
                         <div class="w-12 h-12 rounded-2xl bg-emerald-50 border border-emerald-100 flex items-center justify-center text-emerald-600 mb-4 group-hover:bg-emerald-600 group-hover:text-white transition-colors">
                             <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20"><path d="M2 6a2 2 0 012-2h5l2 2h5a2 2 0 012 2v6a2 2 0 01-2 2H4a2 2 0 01-2-2V6z"/></svg>
                         </div>
-                        <span class="text-xs font-bold text-emerald-600 uppercase tracking-wider block mb-1">Code: CE</span>
-                        <h3 class="text-lg font-bold font-display text-gray-900 group-hover:text-emerald-600 transition-colors">Civil Engineering</h3>
+                        <span class="text-xs font-semibold text-emerald-600 uppercase tracking-wider block mb-1">Code: CE</span>
+                        <h3 class="text-lg font-semibold font-display text-gray-900 group-hover:text-emerald-600 transition-colors">Civil Engineering</h3>
                         <p class="text-xs text-gray-500 mt-1 line-clamp-2">Surveying, concrete technology, structural mechanics, and building construction.</p>
                     </div>
                     <div class="mt-4 pt-3 border-t border-gray-100 flex items-center justify-between text-xs font-semibold text-emerald-600">
@@ -808,8 +812,8 @@ def generate_start_html():
                         <div class="w-12 h-12 rounded-2xl bg-yellow-50 border border-yellow-200 flex items-center justify-center text-yellow-700 mb-4 group-hover:bg-yellow-500 group-hover:text-white transition-colors">
                             <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20"><path d="M2 6a2 2 0 012-2h5l2 2h5a2 2 0 012 2v6a2 2 0 01-2 2H4a2 2 0 01-2-2V6z"/></svg>
                         </div>
-                        <span class="text-xs font-bold text-yellow-800 uppercase tracking-wider block mb-1">Code: EE</span>
-                        <h3 class="text-lg font-bold font-display text-gray-900 group-hover:text-yellow-600 transition-colors">Electrical Engineering</h3>
+                        <span class="text-xs font-semibold text-yellow-800 uppercase tracking-wider block mb-1">Code: EE</span>
+                        <h3 class="text-lg font-semibold font-display text-gray-900 group-hover:text-yellow-600 transition-colors">Electrical Engineering</h3>
                         <p class="text-xs text-gray-500 mt-1 line-clamp-2">Circuits, AC/DC machines, power systems, transmission, and electrical formulas.</p>
                     </div>
                     <div class="mt-4 pt-3 border-t border-gray-100 flex items-center justify-between text-xs font-semibold text-yellow-700">
@@ -824,8 +828,8 @@ def generate_start_html():
                         <div class="w-12 h-12 rounded-2xl bg-teal-50 border border-teal-100 flex items-center justify-center text-teal-600 mb-4 group-hover:bg-teal-600 group-hover:text-white transition-colors">
                             <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20"><path d="M2 6a2 2 0 012-2h5l2 2h5a2 2 0 012 2v6a2 2 0 01-2 2H4a2 2 0 01-2-2V6z"/></svg>
                         </div>
-                        <span class="text-xs font-bold text-teal-600 uppercase tracking-wider block mb-1">Code: EJ</span>
-                        <h3 class="text-lg font-bold font-display text-gray-900 group-hover:text-teal-600 transition-colors">Electronics &amp; TC</h3>
+                        <span class="text-xs font-semibold text-teal-600 uppercase tracking-wider block mb-1">Code: EJ</span>
+                        <h3 class="text-lg font-semibold font-display text-gray-900 group-hover:text-teal-600 transition-colors">Electronics &amp; TC</h3>
                         <p class="text-xs text-gray-500 mt-1 line-clamp-2">Digital techniques, microprocessors, communication protocols, and VLSI.</p>
                     </div>
                     <div class="mt-4 pt-3 border-t border-gray-100 flex items-center justify-between text-xs font-semibold text-teal-600">
@@ -840,8 +844,8 @@ def generate_start_html():
                         <div class="w-12 h-12 rounded-2xl bg-blue-600 text-white flex items-center justify-center mb-4 group-hover:scale-105 transition-transform shadow-md">
                             <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/></svg>
                         </div>
-                        <span class="text-xs font-bold text-blue-700 uppercase tracking-wider block mb-1">Master Archive</span>
-                        <h3 class="text-lg font-bold font-display text-blue-900 group-hover:text-blue-700 transition-colors">All Study Materials</h3>
+                        <span class="text-xs font-semibold text-blue-700 uppercase tracking-wider block mb-1">Master Archive</span>
+                        <h3 class="text-lg font-semibold font-display text-blue-900 group-hover:text-blue-700 transition-colors">All Study Materials</h3>
                         <p class="text-xs text-blue-700/80 mt-1 line-clamp-2">Search 470+ verified resources with branch, semester, and year filters.</p>
                     </div>
                     <div class="mt-4 pt-3 border-t border-blue-200/60 flex items-center justify-between text-xs font-semibold text-blue-700">
@@ -856,7 +860,7 @@ def generate_start_html():
         <section id="semesters" class="mb-16">
             <div class="bg-white rounded-2xl md:rounded-3xl p-6 sm:p-8 border border-gray-200/90 shadow-sm">
                 <div class="mb-6">
-                    <h2 class="text-2xl md:text-3xl font-bold font-display text-gray-900 flex items-center gap-2">
+                    <h2 class="text-2xl md:text-3xl font-semibold font-display text-gray-900 flex items-center gap-2">
                         <span class="p-1.5 rounded-xl bg-purple-50 text-purple-600">
                             <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
                         </span>
@@ -885,7 +889,7 @@ def generate_start_html():
         <!-- SECTION 4: What Do You Need? (All Study Material Hubs) -->
         <section id="materials" class="mb-16">
             <div class="mb-6">
-                <h2 class="text-2xl md:text-3xl font-bold font-display text-gray-900 flex items-center gap-2">
+                <h2 class="text-2xl md:text-3xl font-semibold font-display text-gray-900 flex items-center gap-2">
                     <span class="p-1.5 rounded-xl bg-emerald-50 text-emerald-600">
                         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"/></svg>
                     </span>
@@ -902,8 +906,8 @@ def generate_start_html():
                             <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
                         </div>
                         <div>
-                            <span class="text-xs font-bold text-rose-600 uppercase">117 Subjects</span>
-                            <h3 class="text-lg font-bold font-display text-gray-900 group-hover:text-rose-600 transition-colors">Previous Year Papers (PYQ)</h3>
+                            <span class="text-xs font-semibold text-rose-600 uppercase">117 Subjects</span>
+                            <h3 class="text-lg font-semibold font-display text-gray-900 group-hover:text-rose-600 transition-colors">Previous Year Papers (PYQ)</h3>
                             <p class="text-xs text-gray-500 mt-1">Official Summer &amp; Winter board question papers with Google Drive PDFs.</p>
                         </div>
                     </div>
@@ -916,8 +920,8 @@ def generate_start_html():
                             <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
                         </div>
                         <div>
-                            <span class="text-xs font-bold text-emerald-600 uppercase">Official Solutions</span>
-                            <h3 class="text-lg font-bold font-display text-gray-900 group-hover:text-emerald-600 transition-colors">Model Answer Papers</h3>
+                            <span class="text-xs font-semibold text-emerald-600 uppercase">Official Solutions</span>
+                            <h3 class="text-lg font-semibold font-display text-gray-900 group-hover:text-emerald-600 transition-colors">Model Answer Papers</h3>
                             <p class="text-xs text-gray-500 mt-1">Solved question papers with question-wise MSBTE marking scheme breakdowns.</p>
                         </div>
                     </div>
@@ -930,8 +934,8 @@ def generate_start_html():
                             <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
                         </div>
                         <div>
-                            <span class="text-xs font-bold text-amber-600 uppercase">Super 25 IMPs</span>
-                            <h3 class="text-lg font-bold font-display text-gray-900 group-hover:text-amber-600 transition-colors">Question Banks</h3>
+                            <span class="text-xs font-semibold text-amber-600 uppercase">Super 25 IMPs</span>
+                            <h3 class="text-lg font-semibold font-display text-gray-900 group-hover:text-amber-600 transition-colors">Question Banks</h3>
                             <p class="text-xs text-gray-500 mt-1">High-yield unit-wise question banks for Unit Tests and Board Exam revision.</p>
                         </div>
                     </div>
@@ -944,8 +948,8 @@ def generate_start_html():
                             <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.977l-.51.342a6 6 0 01-3.86.977l-2.387.477a2 2 0 00-1.022.547m3.234-1.234a6 6 0 013.86-.977l1.022.204a2 2 0 011.022.547m-3.234-1.234a6 6 0 00-3.86.977l-1.022.204a2 2 0 00-1.022.547m10.234-4.234a6 6 0 01-3.86-.977l-.51-.342a6 6 0 00-3.86-.977l-2.387-.477a2 2 0 00-1.022.547m3.234-1.234a6 6 0 013.86-.977l1.022.204a2 2 0 011.022.547m-3.234-1.234a6 6 0 00-3.86.977l-1.022.204a2 2 0 00-1.022.547"/></svg>
                         </div>
                         <div>
-                            <span class="text-xs font-bold text-purple-600 uppercase">Practical Answers</span>
-                            <h3 class="text-lg font-bold font-display text-gray-900 group-hover:text-purple-600 transition-colors">Lab Manuals &amp; Practicals</h3>
+                            <span class="text-xs font-semibold text-purple-600 uppercase">Practical Answers</span>
+                            <h3 class="text-lg font-semibold font-display text-gray-900 group-hover:text-purple-600 transition-colors">Lab Manuals &amp; Practicals</h3>
                             <p class="text-xs text-gray-500 mt-1">Solved manual answers, practical test viva questions, and observation tables.</p>
                         </div>
                     </div>
@@ -958,8 +962,8 @@ def generate_start_html():
                             <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/></svg>
                         </div>
                         <div>
-                            <span class="text-xs font-bold text-blue-600 uppercase">Approved Topics</span>
-                            <h3 class="text-lg font-bold font-display text-gray-900 group-hover:text-blue-600 transition-colors">Micro-Project Ideas</h3>
+                            <span class="text-xs font-semibold text-blue-600 uppercase">Approved Topics</span>
+                            <h3 class="text-lg font-semibold font-display text-gray-900 group-hover:text-blue-600 transition-colors">Micro-Project Ideas</h3>
                             <p class="text-xs text-gray-500 mt-1">20+ ready topics, project reports, flowcharts, and source code templates.</p>
                         </div>
                     </div>
@@ -972,8 +976,8 @@ def generate_start_html():
                             <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
                         </div>
                         <div>
-                            <span class="text-xs font-bold text-red-600 uppercase">19 Lectures</span>
-                            <h3 class="text-lg font-bold font-display text-gray-900 group-hover:text-red-600 transition-colors">Video Courses</h3>
+                            <span class="text-xs font-semibold text-red-600 uppercase">19 Lectures</span>
+                            <h3 class="text-lg font-semibold font-display text-gray-900 group-hover:text-red-600 transition-colors">Video Courses</h3>
                             <p class="text-xs text-gray-500 mt-1">Curated concept explanations, DSA walkthroughs, and practical demonstrations.</p>
                         </div>
                     </div>
@@ -986,8 +990,8 @@ def generate_start_html():
                             <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"/></svg>
                         </div>
                         <div>
-                            <span class="text-xs font-bold text-teal-600 uppercase">Curriculum</span>
-                            <h3 class="text-lg font-bold font-display text-gray-900 group-hover:text-teal-600 transition-colors">Syllabus &amp; Schemes</h3>
+                            <span class="text-xs font-semibold text-teal-600 uppercase">Curriculum</span>
+                            <h3 class="text-lg font-semibold font-display text-gray-900 group-hover:text-teal-600 transition-colors">Syllabus &amp; Schemes</h3>
                             <p class="text-xs text-gray-500 mt-1">Official K-Scheme teaching plans, examination scheme, credits, and rules.</p>
                         </div>
                     </div>
@@ -1000,8 +1004,8 @@ def generate_start_html():
                             <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l9-5-9-5-9 5 9 5z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"/></svg>
                         </div>
                         <div>
-                            <span class="text-xs font-bold text-indigo-600 uppercase">Free Certs</span>
-                            <h3 class="text-lg font-bold font-display text-gray-900 group-hover:text-indigo-600 transition-colors">Courses &amp; Certificates</h3>
+                            <span class="text-xs font-semibold text-indigo-600 uppercase">Free Certs</span>
+                            <h3 class="text-lg font-semibold font-display text-gray-900 group-hover:text-indigo-600 transition-colors">Courses &amp; Certificates</h3>
                             <p class="text-xs text-gray-500 mt-1">Data structures beginner bootcamps, certificates, and coding practice.</p>
                         </div>
                     </div>
@@ -1014,8 +1018,8 @@ def generate_start_html():
                             <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
                         </div>
                         <div>
-                            <span class="text-xs font-bold text-cyan-600 uppercase">Test Series</span>
-                            <h3 class="text-lg font-bold font-display text-gray-900 group-hover:text-cyan-600 transition-colors">Mock Tests Portal</h3>
+                            <span class="text-xs font-semibold text-cyan-600 uppercase">Test Series</span>
+                            <h3 class="text-lg font-semibold font-display text-gray-900 group-hover:text-cyan-600 transition-colors">Mock Tests Portal</h3>
                             <p class="text-xs text-gray-500 mt-1">MCQ test practice, unit self-assessment, and automated score evaluations.</p>
                         </div>
                     </div>
@@ -1026,7 +1030,7 @@ def generate_start_html():
         <!-- SECTION 5: Exam Assistance & Academic Tools -->
         <section id="exam-tools" class="mb-16">
             <div class="mb-6">
-                <h2 class="text-2xl md:text-3xl font-bold font-display text-gray-900 flex items-center gap-2">
+                <h2 class="text-2xl md:text-3xl font-semibold font-display text-gray-900 flex items-center gap-2">
                     <span class="p-1.5 rounded-xl bg-rose-50 text-rose-600">
                         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
                     </span>
@@ -1037,29 +1041,29 @@ def generate_start_html():
 
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
                 <a href="/news/" class="p-5 bg-white rounded-2xl border border-gray-200/90 shadow-sm hover:shadow-md transition group block">
-                    <span class="text-xs font-bold text-red-600 uppercase flex items-center gap-1.5 mb-2">
+                    <span class="text-xs font-semibold text-red-600 uppercase flex items-center gap-1.5 mb-2">
                         <span class="w-2 h-2 rounded-full bg-red-500 animate-ping"></span>
                         Live Portal
                     </span>
-                    <h3 class="text-base font-bold font-display text-gray-900 group-hover:text-red-600 transition">MSBTE News Updates</h3>
+                    <h3 class="text-base font-semibold font-display text-gray-900 group-hover:text-red-600 transition">MSBTE News Updates</h3>
                     <p class="text-xs text-gray-500 mt-1">Circulars, exam schedule releases, and academic calendars.</p>
                 </a>
 
                 <a href="/blog/" class="p-5 bg-white rounded-2xl border border-gray-200/90 shadow-sm hover:shadow-md transition group block">
-                    <span class="text-xs font-bold text-blue-600 uppercase block mb-2">Study Strategy</span>
-                    <h3 class="text-base font-bold font-display text-gray-900 group-hover:text-blue-600 transition">Blog &amp; Exam Tips</h3>
+                    <span class="text-xs font-semibold text-blue-600 uppercase block mb-2">Study Strategy</span>
+                    <h3 class="text-base font-semibold font-display text-gray-900 group-hover:text-blue-600 transition">Blog &amp; Exam Tips</h3>
                     <p class="text-xs text-gray-500 mt-1">Passing strategy, timetable analysis, and how to write answers.</p>
                 </a>
 
                 <a href="/forum.html" class="p-5 bg-white rounded-2xl border border-gray-200/90 shadow-sm hover:shadow-md transition group block">
-                    <span class="text-xs font-bold text-purple-600 uppercase block mb-2">Q&amp;A Community</span>
-                    <h3 class="text-base font-bold font-display text-gray-900 group-hover:text-purple-600 transition">Student Forum</h3>
+                    <span class="text-xs font-semibold text-purple-600 uppercase block mb-2">Q&amp;A Community</span>
+                    <h3 class="text-base font-semibold font-display text-gray-900 group-hover:text-purple-600 transition">Student Forum</h3>
                     <p class="text-xs text-gray-500 mt-1">Ask questions, discuss question paper doubts, and connect with peers.</p>
                 </a>
 
                 <a href="https://chat.whatsapp.com/KFcI5VeJOpjLPgp30NXMfQ" target="_blank" rel="noopener noreferrer" class="p-5 bg-white rounded-2xl border border-green-200 shadow-sm hover:shadow-md transition group block">
-                    <span class="text-xs font-bold text-green-600 uppercase block mb-2">Direct Help</span>
-                    <h3 class="text-base font-bold font-display text-gray-900 group-hover:text-green-600 transition">WhatsApp Support</h3>
+                    <span class="text-xs font-semibold text-green-600 uppercase block mb-2">Direct Help</span>
+                    <h3 class="text-base font-semibold font-display text-gray-900 group-hover:text-green-600 transition">WhatsApp Support</h3>
                     <p class="text-xs text-gray-500 mt-1">Join 10,000+ diploma students on official WhatsApp groups.</p>
                 </a>
             </div>
@@ -1068,7 +1072,7 @@ def generate_start_html():
         <!-- SECTION 6: After Diploma (Higher Studies & Careers) -->
         <section id="career" class="mb-16">
             <div class="mb-6">
-                <h2 class="text-2xl md:text-3xl font-bold font-display text-gray-900 flex items-center gap-2">
+                <h2 class="text-2xl md:text-3xl font-semibold font-display text-gray-900 flex items-center gap-2">
                     <span class="p-1.5 rounded-xl bg-amber-50 text-amber-600">
                         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
                     </span>
@@ -1079,26 +1083,26 @@ def generate_start_html():
 
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
                 <a href="/CollegeInfo/" class="hub-card group border-gray-200">
-                    <span class="text-xs font-bold text-indigo-600 uppercase mb-1">District Directory</span>
-                    <h3 class="text-base font-bold font-display text-gray-900 group-hover:text-indigo-600 transition">College Directory</h3>
+                    <span class="text-xs font-semibold text-indigo-600 uppercase mb-1">District Directory</span>
+                    <h3 class="text-base font-semibold font-display text-gray-900 group-hover:text-indigo-600 transition">College Directory</h3>
                     <p class="text-xs text-gray-500 mt-1">Explore engineering colleges across Pune, Mumbai, Nashik, and Nagpur.</p>
                 </a>
 
                 <a href="/blog/msbte-summer-2026-exam-result-date-and-link.html" class="hub-card group border-gray-200">
-                    <span class="text-xs font-bold text-blue-600 uppercase mb-1">DSE 2026 Guide</span>
-                    <h3 class="text-base font-bold font-display text-gray-900 group-hover:text-blue-600 transition">DSE Engineering Admissions</h3>
+                    <span class="text-xs font-semibold text-blue-600 uppercase mb-1">DSE 2026 Guide</span>
+                    <h3 class="text-base font-semibold font-display text-gray-900 group-hover:text-blue-600 transition">DSE Engineering Admissions</h3>
                     <p class="text-xs text-gray-500 mt-1">CAP rounds, cut-off ranks, document checklist, and merit lists.</p>
                 </a>
 
                 <a href="/Jobs/index.html" class="hub-card group border-gray-200">
-                    <span class="text-xs font-bold text-amber-600 uppercase mb-1">Fresher Jobs</span>
-                    <h3 class="text-base font-bold font-display text-gray-900 group-hover:text-amber-600 transition">Diploma Jobs Portal</h3>
+                    <span class="text-xs font-semibold text-amber-600 uppercase mb-1">Fresher Jobs</span>
+                    <h3 class="text-base font-semibold font-display text-gray-900 group-hover:text-amber-600 transition">Diploma Jobs Portal</h3>
                     <p class="text-xs text-gray-500 mt-1">Off-campus drives, apprentice openings, and technical hiring notices.</p>
                 </a>
 
                 <a href="/internships.html" class="hub-card group border-gray-200">
-                    <span class="text-xs font-bold text-emerald-600 uppercase mb-1">Industry Training</span>
-                    <h3 class="text-base font-bold font-display text-gray-900 group-hover:text-emerald-600 transition">Summer Internships</h3>
+                    <span class="text-xs font-semibold text-emerald-600 uppercase mb-1">Industry Training</span>
+                    <h3 class="text-base font-semibold font-display text-gray-900 group-hover:text-emerald-600 transition">Summer Internships</h3>
                     <p class="text-xs text-gray-500 mt-1">Verified mandatory 6-week summer diploma engineering internships.</p>
                 </a>
             </div>
@@ -1123,7 +1127,7 @@ def generate_start_html():
                             <path d="M249.6 471.5c10.8 3.8 22.4-4.1 22.4-15.5V78.6c0-4.2-1.6-8.4-5-11C247.4 52 202.4 32 144 32C93.5 32 46.3 45.3 18.1 56.1C6.8 60.5 0 71.7 0 83.8V454.1c0 11.9 12.8 20.2 24.1 16.5C55.6 460.1 105.5 448 144 448c33.9 0 79 14 105.6 23.5zm76.8 0C353 462 398.1 448 432 448c38.5 0 88.4 12.1 119.9 22.6c11.3 3.8 24.1-4.6 24.1-16.5V83.8c0-12.1-6.8-23.3-18.1-27.6C529.7 45.3 482.5 32 432 32c-58.4 0-103.4 20-123 35.6c-3.3 2.6-5 6.8-5 11V456c0 11.4 11.7 19.3 22.4 15.5z"/>
                         </svg>
                     </div>
-                    <span class="font-bold text-xl text-white font-display">MSBTE Notes &amp; Info</span>
+                    <span class="font-semibold text-xl text-white font-display">MSBTE Notes &amp; Info</span>
                 </a>
                 <p class="text-sm leading-relaxed text-indigo-200">
                     The all-in-one resource hub for MSBTE diploma engineering students across Maharashtra. Free notes, solved model answers, question papers, and syllabus schemes.
@@ -1150,7 +1154,7 @@ def generate_start_html():
                     <p class="flex items-center gap-2.5"><span class="text-indigo-400">WhatsApp:</span> +91 70832 36221</p>
 
                     <a href="https://chat.whatsapp.com/KFcI5VeJOpjLPgp30NXMfQ" target="_blank" rel="noopener noreferrer"
-                        class="inline-flex items-center gap-2 mt-4 bg-[#25D366] text-white px-5 py-2.5 rounded-full font-bold text-sm hover:bg-[#20bd5a] transition-colors shadow-lg min-h-[44px]">
+                        class="inline-flex items-center gap-2 mt-4 bg-[#25D366] text-white px-5 py-2.5 rounded-full font-semibold text-sm hover:bg-[#20bd5a] transition-colors shadow-lg min-h-[44px]">
                         <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
                             <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.008-.57-.008-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
                         </svg>
@@ -1263,9 +1267,9 @@ def generate_start_html():
                 return `
                     <a href="/Branches/${{b.slug}}-Semester-${{semNum}}.html" class="p-3.5 bg-gray-50 hover:bg-blue-50 border border-gray-200/80 hover:border-blue-200 rounded-xl transition flex items-center justify-between group min-h-[44px]">
                         <div class="flex items-center gap-2.5">
-                            <span class="w-8 h-8 rounded-lg bg-white border border-gray-200 font-bold text-xs flex items-center justify-center text-gray-700 group-hover:text-blue-600 shadow-sm">${{b.code}}</span>
+                            <span class="w-8 h-8 rounded-lg bg-white border border-gray-200 font-semibold text-xs flex items-center justify-center text-gray-700 group-hover:text-blue-600 shadow-sm">${{b.code}}</span>
                             <div>
-                                <h4 class="text-sm font-bold text-gray-900 group-hover:text-blue-600 transition leading-tight">${{b.name}}</h4>
+                                <h4 class="text-sm font-semibold text-gray-900 group-hover:text-blue-600 transition leading-tight">${{b.name}}</h4>
                                 <span class="text-[11px] text-gray-500">Semester ${{semNum}} Curriculum</span>
                             </div>
                         </div>
@@ -1352,10 +1356,10 @@ def generate_start_html():
                         <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
                             <div>
                                 <div class="flex items-center gap-2 mb-1">
-                                    <span class="font-mono text-xs font-bold px-2 py-0.5 rounded bg-blue-100 text-blue-800">${{s.code}}</span>
+                                    <span class="font-mono text-xs font-semibold px-2 py-0.5 rounded bg-blue-100 text-blue-800">${{s.code}}</span>
                                     <span class="text-xs font-semibold text-gray-500">${{s.semester}} • ${{s.branches}}</span>
                                 </div>
-                                <h4 class="text-sm font-bold text-gray-900">${{highlightMatch(s.name, query)}}</h4>
+                                <h4 class="text-sm font-semibold text-gray-900">${{highlightMatch(s.name, query)}}</h4>
                             </div>
                             <div class="flex flex-wrap items-center gap-1.5 mt-2 sm:mt-0">
                                 ${{actionPills.join('')}}
