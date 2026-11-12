@@ -6,6 +6,7 @@
 
 ## Site Map & Key Links
 - [Home](https://msbtenotes-info.netlify.app/)
+- [Start Here Hub](https://msbtenotes-info.netlify.app/start.html) - Unified master resource directory across all branches and semesters.
 - [Study Notes](https://msbtenotes-info.netlify.app/#notes) - Subject-wise notes for various branches.
 - [Question Papers & Answers](https://msbtenotes-info.netlify.app/#departments) - Previous year papers and model answers.
 - [Syllabus](https://msbtenotes-info.netlify.app/scheme/index.html) - Curriculum for I & K Schemes.
