@@ -1,23 +1,133 @@
-<svg width="1200" height="630" xmlns="http://www.w3.org/2000/svg">
+<svg width="1200" height="630" viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#1e3a8a;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#190a2e" />
+      <stop offset="45%" stop-color="#3b0764" />
+      <stop offset="100%" stop-color="#6b21a8" />
     </linearGradient>
-    <pattern id="pattern1" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
-      <circle cx="2" cy="2" r="1" fill="rgba(255,255,255,0.1)" />
-    </pattern>
+    <radialGradient id="bgGlow" cx="80%" cy="20%" r="60%">
+      <stop offset="0%" stop-color="#a855f7" stop-opacity="0.38" />
+      <stop offset="100%" stop-color="#a855f7" stop-opacity="0" />
+    </radialGradient>
+    <radialGradient id="cardGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#c084fc" stop-opacity="0.32" />
+      <stop offset="100%" stop-color="#c084fc" stop-opacity="0" />
+    </radialGradient>
+    <filter id="dropShadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="14" stdDeviation="18" flood-color="#000000" flood-opacity="0.32" />
+    </filter>
   </defs>
-  <rect width="1200" height="630" fill="url(#grad1)" />
-  <rect width="1200" height="630" fill="url(#pattern1)" />
-  
-  <text x="600" y="280" font-family="Arial, sans-serif" font-weight="bold" font-size="70" fill="white" text-anchor="middle" dominant-baseline="middle">
-    Elective: 316323 - REINFORCEMENT LEARNING
-  </text>
-  <text x="600" y="380" font-family="Arial, sans-serif" font-size="40" fill="#bfdbfe" text-anchor="middle" dominant-baseline="middle">
-    Code: 
-  </text>
-  <text x="600" y="550" font-family="Arial, sans-serif" font-size="25" fill="rgba(255,255,255,0.8)" text-anchor="middle">
-    msbtenotes-info.netlify.app
-  </text>
+
+  <!-- Background Base -->
+  <rect width="1200" height="630" fill="url(#bgGrad)" />
+  <rect width="1200" height="630" fill="url(#bgGlow)" />
+
+  <!-- Top Left Pill Badge -->
+  <g transform="translate(70, 54)">
+    <rect width="270" height="36" rx="18" fill="rgba(255, 255, 255, 0.12)" stroke="rgba(255, 255, 255, 0.2)" stroke-width="1" />
+    <text x="135" y="23" font-family="'Segoe UI', Inter, -apple-system, sans-serif" font-size="12" font-weight="700" fill="#ffffff" letter-spacing="0.08em" text-anchor="middle">MSBTE NOTES &amp; INFORMATION</text>
+  </g>
+
+  <!-- Main Hero Titles -->
+  <g transform="translate(70, 140)">
+    <!-- Metadata Pill Tag -->
+    <rect width="356" height="32" rx="8" fill="rgba(255, 255, 255, 0.1)" stroke="#c084fc" stroke-width="1.2" />
+    <text x="178" y="21" font-family="'Segoe UI', Inter, monospace" font-size="12" font-weight="700" fill="#c084fc" letter-spacing="0.07em" text-anchor="middle">COURSE CODE: 316323 • SEMESTER 3</text>
+    <!-- Title Line 1 -->
+    <text x="0" y="88" font-family="'Segoe UI', Inter, -apple-system, sans-serif" font-size="50" font-weight="800" fill="#ffffff" letter-spacing="-0.02em">
+      Reinforcement Learning
+    </text>
+    <!-- Subtitle -->
+    <text x="0" y="142" font-family="'Segoe UI', Inter, -apple-system, sans-serif" font-size="23" font-weight="600" fill="#e2e8f0">
+      Artificial Intelligence and Machine Learning • Semester 3
+    </text>
+
+    <!-- Tertiary Tagline -->
+    <text x="0" y="180" font-family="'Segoe UI', Inter, -apple-system, sans-serif" font-size="16" font-weight="400" fill="#94a3b8">
+      All MSBTE resources in one place. Pick your branch. Find everything.
+    </text>
+
+    <!-- Bottom Feature Pills Row 1 -->
+    <g transform="translate(0, 236)">
+      <!-- Notes (Yellow) -->
+      <g transform="translate(0, 0)">
+        <rect width="125" height="42" rx="21" fill="#facc15" />
+        <text x="62" y="26" font-family="'Segoe UI', Inter, sans-serif" font-size="14" font-weight="700" fill="#0f172a" text-anchor="middle">Notes</text>
+      </g>
+      <!-- PYQ (Mint Green) -->
+      <g transform="translate(138, 0)">
+        <rect width="105" height="42" rx="21" fill="#34d399" />
+        <text x="52" y="26" font-family="'Segoe UI', Inter, sans-serif" font-size="14" font-weight="700" fill="#064e3b" text-anchor="middle">PYQ</text>
+      </g>
+      <!-- Model Answers (Coral) -->
+      <g transform="translate(256, 0)">
+        <rect width="185" height="42" rx="21" fill="#f87171" />
+        <text x="92" y="26" font-family="'Segoe UI', Inter, sans-serif" font-size="14" font-weight="700" fill="#450a0a" text-anchor="middle">Model Answers</text>
+      </g>
+      <!-- Mock Tests (Lavender) -->
+      <g transform="translate(454, 0)">
+        <rect width="155" height="42" rx="21" fill="#c084fc" />
+        <text x="77" y="26" font-family="'Segoe UI', Inter, sans-serif" font-size="14" font-weight="700" fill="#3b0764" text-anchor="middle">Mock Tests</text>
+      </g>
+      <!-- Lab Manuals (Warm Orange) -->
+      <g transform="translate(622, 0)">
+        <rect width="165" height="42" rx="21" fill="#fb923c" />
+        <text x="82" y="26" font-family="'Segoe UI', Inter, sans-serif" font-size="14" font-weight="700" fill="#431407" text-anchor="middle">Lab Manuals</text>
+      </g>
+    </g>
+
+    <!-- Bottom Feature Pills Row 2 -->
+    <g transform="translate(0, 296)">
+      <!-- Videos (Cyan) -->
+      <g transform="translate(0, 0)">
+        <rect width="115" height="38" rx="19" fill="#38bdf8" />
+        <text x="57" y="24" font-family="'Segoe UI', Inter, sans-serif" font-size="13" font-weight="700" fill="#0c4a6e" text-anchor="middle">Videos</text>
+      </g>
+      <!-- Syllabus (Pink) -->
+      <g transform="translate(128, 0)">
+        <rect width="125" height="38" rx="19" fill="#f472b6" />
+        <text x="62" y="24" font-family="'Segoe UI', Inter, sans-serif" font-size="13" font-weight="700" fill="#500724" text-anchor="middle">Syllabus</text>
+      </g>
+      <!-- Question Bank (Emerald) -->
+      <g transform="translate(266, 0)">
+        <rect width="175" height="38" rx="19" fill="#6ee7b7" />
+        <text x="87" y="24" font-family="'Segoe UI', Inter, sans-serif" font-size="13" font-weight="700" fill="#064e3b" text-anchor="middle">Question Bank</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- Right Graphic: Layered Card / Document Mockup -->
+  <g transform="translate(885, 145)">
+    <!-- Radial Glow Behind Card -->
+    <circle cx="140" cy="150" r="170" fill="url(#cardGlow)" />
+
+    <!-- Back Card 1 (Translucent Outline) -->
+    <rect x="-30" y="-15" width="250" height="295" rx="32" fill="rgba(255, 255, 255, 0.08)" stroke="rgba(255, 255, 255, 0.22)" stroke-width="1.5" />
+
+    <!-- Middle Card 2 (Semi-Opaque) -->
+    <rect x="-15" y="0" width="250" height="295" rx="32" fill="rgba(255, 255, 255, 0.16)" stroke="rgba(255, 255, 255, 0.32)" stroke-width="1.5" />
+
+    <!-- Front Card 3 (Solid White with Drop Shadow) -->
+    <rect x="0" y="15" width="250" height="295" rx="32" fill="#ffffff" filter="url(#dropShadow)" />
+
+    <!-- Card Inner Elements -->
+    <!-- Primary Colored Accent Bar -->
+    <rect x="28" y="52" width="150" height="22" rx="11" fill="#7c3aed" />
+
+    <!-- Text Placeholder Bars -->
+    <rect x="28" y="94" width="190" height="14" rx="7" fill="#94a3b8" />
+    <rect x="28" y="124" width="140" height="14" rx="7" fill="#cbd5e1" />
+    <rect x="28" y="154" width="180" height="14" rx="7" fill="#94a3b8" />
+    <rect x="28" y="184" width="120" height="14" rx="7" fill="#cbd5e1" />
+  </g>
+
+  <!-- Footer Watermark Bar -->
+  <g transform="translate(70, 580)">
+    <text x="0" y="0" font-family="'Segoe UI', Inter, sans-serif" font-size="13" font-weight="500" fill="#64748b">
+      Maharashtra State Board of Technical Education • K-Scheme 2026
+    </text>
+    <text x="1060" y="0" font-family="'Segoe UI', Inter, sans-serif" font-size="13" font-weight="600" fill="#c084fc" text-anchor="end">
+      msbtenotes-info.netlify.app
+    </text>
+  </g>
 </svg>
