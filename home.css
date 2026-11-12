@@ -1,0 +1,419 @@
+/* ==========================================================================
+   MSBTE Notes & Info - Scoped Home Page Stylesheet (home.css)
+   Strict Scope: All selectors begin with body.home
+   Does NOT affect any other page in the repository.
+   ========================================================================== */
+
+:root {
+  --home-paper: #F6F8FB;
+  --home-surface: #FFFFFF;
+  --home-ink: #13243D;
+  --home-brand: #2563EB;
+  --home-brand-hover: #1D4ED8;
+  --home-marker: #FFE066;
+  --home-red-pen: #C62828;
+  --home-rule: #D5DDE8;
+  --home-muted: #4A5A70;
+  --home-wa: #15803D;
+  --home-wa-hover: #166534;
+}
+
+body.home {
+  background-color: var(--home-paper);
+  color: var(--home-ink);
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* --------------------------------------------------------------------------
+   1. Accessibility & Focus Visible (Hallmark Hard Floor)
+   -------------------------------------------------------------------------- */
+body.home a:focus-visible,
+body.home button:focus-visible,
+body.home input:focus-visible,
+body.home select:focus-visible {
+  outline: 2px solid var(--home-brand) !important;
+  outline-offset: 2px !important;
+}
+
+body.home .skip-link {
+  position: absolute;
+  top: -100px;
+  left: 1rem;
+  background: var(--home-surface);
+  color: var(--home-brand);
+  padding: 0.75rem 1.25rem;
+  font-weight: 600;
+  font-size: 0.875rem;
+  border-radius: 0.5rem;
+  border: 1px solid var(--home-rule);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  z-index: 10000;
+  transition: top 0.2s ease;
+}
+
+body.home .skip-link:focus {
+  top: 1rem;
+}
+
+/* --------------------------------------------------------------------------
+   2. Pure CSS Polyfill for Tailwind 3 Classes (Missing in Tailwind 2 CDN)
+   -------------------------------------------------------------------------- */
+body.home .bg-white\/10 { background-color: rgba(255, 255, 255, 0.1); }
+body.home .bg-white\/15 { background-color: rgba(255, 255, 255, 0.15); }
+body.home .bg-white\/20 { background-color: rgba(255, 255, 255, 0.2); }
+body.home .hover\:bg-white\/20:hover { background-color: rgba(255, 255, 255, 0.2); }
+body.home .hover\:bg-white\/30:hover { background-color: rgba(255, 255, 255, 0.3); }
+
+body.home .border-white\/10 { border-color: rgba(255, 255, 255, 0.1); }
+body.home .border-white\/15 { border-color: rgba(255, 255, 255, 0.15); }
+body.home .border-white\/20 { border-color: rgba(255, 255, 255, 0.2); }
+
+body.home .bg-slate-800\/70 { background-color: rgba(30, 41, 59, 0.7); }
+body.home .bg-slate-800\/80 { background-color: rgba(30, 41, 59, 0.8); }
+body.home .bg-slate-800\/90 { background-color: rgba(30, 41, 59, 0.9); }
+body.home .border-slate-700\/60 { border-color: rgba(51, 65, 85, 0.6); }
+
+body.home .bg-blue-500\/10 { background-color: rgba(59, 130, 246, 0.1); }
+body.home .bg-blue-500\/20 { background-color: rgba(59, 130, 246, 0.2); }
+body.home .border-blue-400\/25 { border-color: rgba(96, 165, 250, 0.25); }
+body.home .border-blue-400\/30 { border-color: rgba(96, 165, 250, 0.3); }
+
+body.home .text-\[10px\] { font-size: 10px; line-height: 14px; }
+body.home .text-\[11px\] { font-size: 11px; line-height: 15px; }
+body.home .leading-\[1\.18\] { line-height: 1.18; }
+body.home .min-h-\[400px\] { min-height: 400px; }
+
+/* --------------------------------------------------------------------------
+   3. Fluid Typography & Hero Notebook Grid (White Page Checked Squares)
+   -------------------------------------------------------------------------- */
+body.home .hero-notebook-grid {
+  background-color: #FFFFFF;
+  background-image: 
+    linear-gradient(to right, rgba(148, 163, 184, 0.18) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(148, 163, 184, 0.18) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+body.home h1.hero-title {
+  font-size: clamp(1.875rem, 4vw + 1rem, 3.25rem);
+  line-height: 1.15;
+  letter-spacing: -0.025em;
+  color: #0F172A;
+}
+
+body.home h2.section-title {
+  font-size: clamp(1.5rem, 2.5vw + 0.5rem, 2.25rem);
+  line-height: 1.25;
+  letter-spacing: -0.02em;
+  color: var(--home-ink);
+}
+
+body.home .home-container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+@media (min-width: 640px) {
+  body.home .home-container {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   4. The Centerpiece: The Board Marks Table (Branch x Semester Matrix)
+   -------------------------------------------------------------------------- */
+body.home .marks-table-wrapper {
+  background: var(--home-surface);
+  border: 1px solid var(--home-rule);
+  border-radius: 8px;
+  overflow-x: auto;
+  box-shadow: 0 1px 3px rgba(19, 36, 61, 0.05);
+  -webkit-overflow-scrolling: touch;
+}
+
+body.home .marks-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+  min-width: 640px; /* guarantees readable columns on all devices */
+}
+
+body.home .marks-table thead {
+  background-color: #F1F5F9;
+  border-bottom: 2px solid var(--home-rule);
+}
+
+body.home .marks-table th {
+  padding: 0.875rem 1rem;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--home-muted);
+}
+
+body.home .marks-table th.th-sem {
+  text-align: center;
+  width: 64px;
+}
+
+body.home .marks-table th.th-action {
+  text-align: right;
+  width: 120px;
+}
+
+body.home .marks-table tbody tr {
+  border-bottom: 1px solid var(--home-rule);
+  transition: background-color 0.15s ease;
+}
+
+body.home .marks-table tbody tr:last-child {
+  border-bottom: none;
+}
+
+body.home .marks-table tbody tr:hover {
+  background-color: #F8FAFC;
+}
+
+body.home .marks-table td {
+  padding: 0.75rem 1rem;
+  vertical-align: middle;
+}
+
+body.home .marks-table .branch-cell {
+  font-weight: 600;
+  color: var(--home-ink);
+}
+
+body.home .marks-table .branch-meta {
+  font-size: 0.75rem;
+  color: var(--home-muted);
+  font-weight: normal;
+}
+
+body.home .marks-table .sem-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 44px;
+  min-height: 44px;
+  padding: 0.25rem 0.5rem;
+  font-size: 0.8125rem;
+  font-weight: 600;
+  color: var(--home-ink);
+  background-color: #F1F5F9;
+  border: 1px solid #E2E8F0;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: all 0.15s ease;
+}
+
+body.home .marks-table .sem-btn:hover,
+body.home .marks-table .sem-btn:focus-visible {
+  background-color: var(--home-marker);
+  border-color: #F59E0B;
+  color: #78350F;
+  transform: translateY(-1px);
+}
+
+body.home .marks-table .portal-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  font-size: 0.8125rem;
+  font-weight: 600;
+  color: var(--home-brand);
+  text-decoration: none;
+  padding: 0.5rem 0.75rem;
+  border-radius: 6px;
+  transition: background-color 0.15s ease;
+}
+
+body.home .marks-table .portal-btn:hover {
+  background-color: #EFF6FF;
+  color: var(--home-brand-hover);
+}
+
+/* --------------------------------------------------------------------------
+   5. Accessible WhatsApp Brand Action (#15803D meets 4.5:1 contrast)
+   -------------------------------------------------------------------------- */
+body.home .btn-whatsapp {
+  background-color: var(--home-wa) !important;
+  color: #FFFFFF !important;
+  font-weight: 600;
+  transition: background-color 0.2s ease, transform 0.15s ease;
+}
+
+body.home .btn-whatsapp:hover {
+  background-color: var(--home-wa-hover) !important;
+}
+
+/* --------------------------------------------------------------------------
+   6. Mobile Back-to-Top Clearance (Sits cleanly ABOVE sticky CTA)
+   -------------------------------------------------------------------------- */
+body.home #backToTopBtn {
+  position: fixed;
+  bottom: 5.75rem !important; /* Clears 4.5rem sticky mobile CTA bar */
+  right: 1.25rem !important;
+  z-index: 45 !important;
+}
+
+@media (min-width: 768px) {
+  body.home #backToTopBtn {
+    bottom: 2rem !important;
+    right: 2rem !important;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   7. Footer Styling (Matches other pages with the brand gradient from style.css)
+   -------------------------------------------------------------------------- */
+body.home footer {
+  background: linear-gradient(to right, #4f46e5, #7c3aed) !important;
+  color: #FFFFFF !important;
+}
+
+body.home footer h3 {
+  color: #FFFFFF !important;
+}
+
+body.home footer p {
+  color: #E0E7FF !important;
+}
+
+body.home footer a {
+  color: #E0E7FF !important;
+  transition: color 0.15s ease;
+}
+
+body.home footer a:hover {
+  color: #FFFFFF !important;
+  text-decoration: underline !important;
+}
+
+/* --------------------------------------------------------------------------
+   8. Reduced Motion Support (Hallmark Accessibility Rule)
+   -------------------------------------------------------------------------- */
+@media (prefers-reduced-motion: reduce) {
+  body.home *,
+  body.home *::before,
+  body.home *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   9. AdSense Responsive Slots (Policy-compliant, zero placeholder text)
+   -------------------------------------------------------------------------- */
+body.home .ads-responsive-container {
+  display: block;
+  width: 100%;
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+  min-height: 90px;
+  text-align: center;
+  overflow: hidden;
+}
+
+body.home .ads-responsive-container ins.adsbygoogle {
+  display: block !important;
+  width: 100% !important;
+  min-height: 90px !important;
+  background: transparent !important;
+}
+
+/* --------------------------------------------------------------------------
+   10. Master Directory Spotlight Banner (Solid High-Contrast Finish)
+   -------------------------------------------------------------------------- */
+body.home .start-here-spotlight {
+  background-color: #0F172A !important;
+  border-radius: 1.5rem;
+  padding: 2.25rem 2rem;
+  color: #FFFFFF !important;
+  border: 1px solid #1E293B !important;
+  box-shadow: 0 12px 30px -8px rgba(15, 23, 42, 0.2);
+}
+
+@media (min-width: 768px) {
+  body.home .start-here-spotlight {
+    padding: 3rem 3.5rem;
+  }
+}
+
+body.home .start-here-spotlight h3 {
+  color: #FFFFFF !important;
+}
+
+body.home .start-here-spotlight p {
+  color: #CBD5E1 !important;
+}
+
+body.home .start-here-spotlight .spotlight-pill {
+  display: inline-block;
+  background-color: #1E293B !important;
+  border: 1px solid #334155 !important;
+  color: #F8FAFC !important;
+  padding: 0.35rem 0.85rem !important;
+  border-radius: 9999px !important;
+  font-size: 0.75rem !important;
+  font-weight: 500 !important;
+  text-decoration: none !important;
+  transition: all 0.2s ease;
+}
+
+body.home .start-here-spotlight .spotlight-pill:hover {
+  background-color: #334155 !important;
+  color: #FFFFFF !important;
+  border-color: #475569 !important;
+}
+
+/* --------------------------------------------------------------------------
+   11. Complete Palette Polyfills (Guarantees zero transparent text/background)
+   -------------------------------------------------------------------------- */
+body.home .bg-slate-50 { background-color: #F8FAFC !important; }
+body.home .bg-slate-100 { background-color: #F1F5F9 !important; }
+body.home .bg-slate-800 { background-color: #1E293B !important; }
+body.home .bg-slate-900 { background-color: #0F172A !important; }
+
+body.home .text-slate-100 { color: #F1F5F9 !important; }
+body.home .text-slate-200 { color: #E2E8F0 !important; }
+body.home .text-slate-300 { color: #CBD5E1 !important; }
+body.home .text-slate-400 { color: #94A3B8 !important; }
+body.home .text-slate-500 { color: #64748B !important; }
+body.home .text-slate-600 { color: #475569 !important; }
+body.home .text-slate-700 { color: #334155 !important; }
+body.home .text-slate-800 { color: #1E293B !important; }
+body.home .text-slate-900 { color: #0F172A !important; }
+
+body.home .border-slate-100 { border-color: #F1F5F9 !important; }
+body.home .border-slate-200 { border-color: #E2E8F0 !important; }
+body.home .border-slate-300 { border-color: #CBD5E1 !important; }
+body.home .border-slate-700 { border-color: #334155 !important; }
+body.home .border-slate-800 { border-color: #1E293B !important; }
+
+/* --------------------------------------------------------------------------
+   12. Student Feedback Carousel & Scrollbar Hide
+   -------------------------------------------------------------------------- */
+body.home #reviewScroll {
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+}
+
+body.home .scrollbar-hide::-webkit-scrollbar {
+  display: none !important;
+}
+
+body.home .scrollbar-hide {
+  -ms-overflow-style: none !important;
+  scrollbar-width: none !important;
+}
