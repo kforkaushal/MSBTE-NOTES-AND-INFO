@@ -428,7 +428,7 @@
         <!-- Middle: Desktop Nav -->
         <div class="hidden md:flex space-x-6 items-center">
           <a href="/" class="hover:text-blue-500 font-medium">Home</a>
-          <a href="/start.html" class="hover:text-blue-500 font-medium text-blue-600">Start Here</a>
+          <a href="/start.html" class="px-3 py-1 rounded-full bg-blue-50 text-blue-600 hover:bg-blue-600 hover:text-white font-semibold text-sm transition flex items-center gap-1.5 border border-blue-100"><span class="w-1.5 h-1.5 rounded-full bg-blue-600"></span>Start Here</a>
 
           <!-- Notes Dropdown -->
           <div class="relative group py-2 nav-dropdown">
@@ -519,7 +519,10 @@
         <a href="/" onclick="toggleMobileMenu()"
           class="text-xl font-display font-bold text-gray-900 border-b border-gray-100 pb-2">Home</a>
         <a href="/start.html" onclick="toggleMobileMenu()"
-          class="text-xl font-display font-bold text-blue-600 border-b border-gray-100 pb-2">Start Here Hub</a>
+          class="text-xl font-display font-bold text-blue-600 border-b border-gray-100 pb-2 flex items-center justify-between">
+          <span>🚀 Start Here Hub</span>
+          <span class="text-xs font-sans font-bold px-2 py-0.5 rounded-full bg-blue-100 text-blue-700">All Resources</span>
+        </a>
 
         <!-- Notes Mobile Submenu (Accordion) -->
         <div class="border-b border-gray-100 pb-2">
@@ -638,14 +641,30 @@
         semester, branch, and syllabus scheme.
       </p>
       <div class="flex flex-col sm:flex-row justify-center gap-3 px-4 sm:px-0">
-        <a href="https://chat.whatsapp.com/KFcI5VeJOpjLPgp30NXMfQ"
-          class="bg-green-500 hover:bg-green-600 text-white font-semibold text-sm md:text-base px-6 py-3 rounded-full inline-flex items-center justify-center transition-all shadow-lg shadow-green-900/20 hover:scale-105">
-          Join WhatsApp Community
+        <a href="/start.html"
+          class="bg-yellow-400 hover:bg-yellow-500 text-gray-950 font-bold text-sm md:text-base px-7 py-3 rounded-full inline-flex items-center justify-center transition-all shadow-lg shadow-yellow-900/20 hover:scale-105">
+          🚀 Start Here (All Resources)
         </a>
-        <a href="/notes/index.html"
+        <a href="/Notes/index.html"
           class="bg-white/10 hover:bg-white/20 backdrop-blur-md text-white border border-white/30 font-semibold text-sm md:text-base px-6 py-3 rounded-full inline-flex items-center justify-center transition-all hover:scale-105">
           Browse Notes
         </a>
+        <a href="https://chat.whatsapp.com/KFcI5VeJOpjLPgp30NXMfQ" target="_blank" rel="noopener noreferrer"
+          class="bg-green-500 hover:bg-green-600 text-white font-semibold text-sm md:text-base px-6 py-3 rounded-full inline-flex items-center justify-center transition-all shadow-lg shadow-green-900/20 hover:scale-105">
+          Join WhatsApp Community
+        </a>
+      </div>
+
+      <!-- Quick Branch Shortcut Chips -->
+      <div class="mt-8 pt-6 border-t border-white/15 flex flex-wrap justify-center items-center gap-2 text-xs md:text-sm">
+        <span class="text-blue-100 font-medium mr-1">Explore Branches:</span>
+        <a href="/Branches/Computer.html" class="px-3 py-1 rounded-full bg-white/15 hover:bg-white/30 text-white transition">💻 Computer</a>
+        <a href="/Branches/Information-Technology.html" class="px-3 py-1 rounded-full bg-white/15 hover:bg-white/30 text-white transition">🌐 IT</a>
+        <a href="/Branches/AI-ML.html" class="px-3 py-1 rounded-full bg-white/15 hover:bg-white/30 text-white transition">🧠 AI-ML</a>
+        <a href="/Branches/Civil.html" class="px-3 py-1 rounded-full bg-white/15 hover:bg-white/30 text-white transition">🏗️ Civil</a>
+        <a href="/Branches/Electrical-Engineering.html" class="px-3 py-1 rounded-full bg-white/15 hover:bg-white/30 text-white transition">⚡ Electrical</a>
+        <a href="/Branches/ETC-Engineering.html" class="px-3 py-1 rounded-full bg-white/15 hover:bg-white/30 text-white transition">📡 E&amp;TC</a>
+        <a href="/Branches/Mechanical-Engineering.html" class="px-3 py-1 rounded-full bg-white/15 hover:bg-white/30 text-white transition">⚙️ Mechanical</a>
       </div>
     </div>
   </section>
@@ -787,81 +806,154 @@
   <section class="py-24 bg-white">
     <div class="max-w-6xl mx-auto px-4 text-center">
       <h2 class="text-3xl md:text-5xl font-display font-extrabold mb-4 text-gray-900">What We Provide</h2>
-      <p class="text-gray-600 mb-12 max-w-2xl mx-auto">Comprehensive resources tailored for MSBTE diploma students.</p>
+      <p class="text-gray-600 mb-12 max-w-2xl mx-auto">Comprehensive, verified resources tailored for MSBTE diploma engineering students.</p>
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
 
-        <a href="/notes/"
-          class="block bg-gradient-to-br from-blue-50 to-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition-transform transform hover:-translate-y-1">
-          <div class="text-blue-600 mb-4 flex items-center justify-center">
-            <svg class="w-10 h-10" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" fill="currentColor">
-              <path
-                d="M320 32c-8.1 0-16.1 1.4-23.7 4.1L15.8 137.4C6.3 140.9 0 149.9 0 160s6.3 19.1 15.8 22.6l57.9 20.9C57.3 229.3 48 259.8 48 291.9l0 28.1c0 28.4-10.8 57.7-22.3 80.8c-6.5 13-13.9 25.8-22.5 37.6C0 442.7-.9 448.3 .9 453.4s6 8.9 11.2 10.2l64 16c4.2 1.1 8.7 .3 12.4-2s6.3-6.1 7.1-10.4c8.6-42.8 4.3-81.2-2.1-108.7C90.3 344.3 86 329.8 80 316.5l0-24.6c0-30.2 10.2-58.7 27.9-81.5c12.9-15.5 29.6-28 49.2-35.7l157-61.7c8.2-3.2 17.5 .8 20.7 9s-.8 17.5-9 20.7l-157 61.7c-12.4 4.9-23.3 12.4-32.2 21.6l159.6 57.6c7.6 2.7 15.6 4.1 23.7 4.1s16.1-1.4 23.7-4.1L624.2 182.6c9.5-3.4 15.8-12.5 15.8-22.6s-6.3-19.1-15.8-22.6L343.7 36.1C336.1 33.4 328.1 32 320 32zM128 408c0 35.3 86 72 192 72s192-36.7 192-72L496.7 262.6 354.5 314c-11.1 4-22.8 6-34.5 6s-23.5-2-34.5-6L143.3 262.6 128 408z" />
-            </svg>
+        <!-- Study Notes -->
+        <a href="/Notes/"
+          class="block bg-gradient-to-br from-blue-50 to-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition-transform transform hover:-translate-y-1 text-left border border-blue-100 group">
+          <div class="text-blue-600 mb-4 flex items-center justify-between">
+            <div class="w-12 h-12 rounded-xl bg-blue-100 flex items-center justify-center">
+              <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" fill="currentColor">
+                <path d="M320 32c-8.1 0-16.1 1.4-23.7 4.1L15.8 137.4C6.3 140.9 0 149.9 0 160s6.3 19.1 15.8 22.6l57.9 20.9C57.3 229.3 48 259.8 48 291.9l0 28.1c0 28.4-10.8 57.7-22.3 80.8c-6.5 13-13.9 25.8-22.5 37.6C0 442.7-.9 448.3 .9 453.4s6 8.9 11.2 10.2l64 16c4.2 1.1 8.7 .3 12.4-2s6.3-6.1 7.1-10.4c8.6-42.8 4.3-81.2-2.1-108.7C90.3 344.3 86 329.8 80 316.5l0-24.6c0-30.2 10.2-58.7 27.9-81.5c12.9-15.5 29.6-28 49.2-35.7l157-61.7c8.2-3.2 17.5 .8 20.7 9s-.8 17.5-9 20.7l-157 61.7c-12.4 4.9-23.3 12.4-32.2 21.6l159.6 57.6c7.6 2.7 15.6 4.1 23.7 4.1s16.1-1.4 23.7-4.1L624.2 182.6c9.5-3.4 15.8-12.5 15.8-22.6s-6.3-19.1-15.8-22.6L343.7 36.1C336.1 33.4 328.1 32 320 32zM128 408c0 35.3 86 72 192 72s192-36.7 192-72L496.7 262.6 354.5 314c-11.1 4-22.8 6-34.5 6s-23.5-2-34.5-6L143.3 262.6 128 408z" />
+              </svg>
+            </div>
+            <span class="text-xs font-bold px-2.5 py-1 rounded-full bg-blue-100 text-blue-700">K-Scheme</span>
           </div>
-          <h3 class="text-xl font-semibold mb-2">Study Notes</h3>
-          <p class="text-gray-600">Well-organized subject-wise notes for all diploma branches.</p>
+          <h3 class="text-xl font-bold mb-2 text-gray-900 group-hover:text-blue-600 transition">Study Notes</h3>
+          <p class="text-gray-600 text-sm leading-relaxed mb-4">Well-organized unit-wise notes, chapter summaries, formula sheets, and handwritten materials for all branches.</p>
+          <span class="text-sm font-semibold text-blue-600 inline-flex items-center gap-1 group-hover:translate-x-1 transition">Browse Notes →</span>
         </a>
 
-        <a href="/notes/msbte-k-scheme-question-banks.html" <a href="/pyq/"
-          class="block bg-gradient-to-br from-purple-50 to-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition-transform transform hover:-translate-y-1">
-          <div class="text-purple-600 mb-4">
-            <svg class="w-10 h-10 mx-auto" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round"
-                d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01" />
-            </svg>
+        <!-- PYQs -->
+        <a href="/pyq/"
+          class="block bg-gradient-to-br from-purple-50 to-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition-transform transform hover:-translate-y-1 text-left border border-purple-100 group">
+          <div class="text-purple-600 mb-4 flex items-center justify-between">
+            <div class="w-12 h-12 rounded-xl bg-purple-100 flex items-center justify-center">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01" />
+              </svg>
+            </div>
+            <span class="text-xs font-bold px-2.5 py-1 rounded-full bg-purple-100 text-purple-700">Board Papers</span>
           </div>
-          <h3 class="text-xl font-semibold mb-2">Question Papers</h3>
-          <p class="text-gray-600">Previous year papers to help you prepare better.</p>
-          <h3 class="text-xl font-semibold mb-2">Question Papers (PYQs)</h3>
-          <p class="text-gray-600">Download Summer 2026 & Winter 2025 board exam papers for all subjects.</p>
+          <h3 class="text-xl font-bold mb-2 text-gray-900 group-hover:text-purple-600 transition">Question Papers (PYQs)</h3>
+          <p class="text-gray-600 text-sm leading-relaxed mb-4">Download Summer 2026 &amp; Winter 2025 previous year MSBTE board exam question papers with answer keys.</p>
+          <span class="text-sm font-semibold text-purple-600 inline-flex items-center gap-1 group-hover:translate-x-1 transition">Explore PYQs →</span>
         </a>
 
-        <a href="/notes/"
-          class="block bg-gradient-to-br from-green-50 to-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition-transform transform hover:-translate-y-1">
-          <div class="text-green-600 mb-4">
-            <svg class="w-10 h-10 mx-auto" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round"
-                d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4" />
-            </svg>
+        <!-- Model Answers -->
+        <a href="/model-answer/"
+          class="block bg-gradient-to-br from-emerald-50 to-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition-transform transform hover:-translate-y-1 text-left border border-emerald-100 group">
+          <div class="text-emerald-600 mb-4 flex items-center justify-between">
+            <div class="w-12 h-12 rounded-xl bg-emerald-100 flex items-center justify-center">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4" />
+              </svg>
+            </div>
+            <span class="text-xs font-bold px-2.5 py-1 rounded-full bg-emerald-100 text-emerald-700">Verified</span>
           </div>
-          <h3 class="text-xl font-semibold mb-2">Answer Sheets</h3>
-          <p class="text-gray-600">Sample answer papers from toppers and guides.</p>
+          <h3 class="text-xl font-bold mb-2 text-gray-900 group-hover:text-emerald-600 transition">Model Answer Papers</h3>
+          <p class="text-gray-600 text-sm leading-relaxed mb-4">Official MSBTE model answers, step-by-step solutions, and marking schemes curated by experienced faculty.</p>
+          <span class="text-sm font-semibold text-emerald-600 inline-flex items-center gap-1 group-hover:translate-x-1 transition">Get Model Answers →</span>
         </a>
 
-        <a href="https://whatsapp.com/channel/0029Vap8lWS3QxRxxdmaSR36" target="_blank" rel="noopener noreferrer"
-          class="block bg-gradient-to-br from-yellow-50 to-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition-transform transform hover:-translate-y-1">
-          <div class="text-yellow-600 mb-4">
-            <svg class="w-10 h-10 mx-auto" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round"
-                d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z" />
-            </svg>
+        <!-- Syllabus & Scheme -->
+        <a href="/scheme/"
+          class="block bg-gradient-to-br from-amber-50 to-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition-transform transform hover:-translate-y-1 text-left border border-amber-100 group">
+          <div class="text-amber-600 mb-4 flex items-center justify-between">
+            <div class="w-12 h-12 rounded-xl bg-amber-100 flex items-center justify-center">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+              </svg>
+            </div>
+            <span class="text-xs font-bold px-2.5 py-1 rounded-full bg-amber-100 text-amber-700">I &amp; K-Scheme</span>
           </div>
-          <h3 class="text-xl font-semibold mb-2">Community Support</h3>
-          <p class="text-gray-600">Doubt-solving & guidance through WhatsApp and groups.</p>
+          <h3 class="text-xl font-bold mb-2 text-gray-900 group-hover:text-amber-600 transition">Syllabus &amp; Curriculum</h3>
+          <p class="text-gray-600 text-sm leading-relaxed mb-4">Official MSBTE K-Scheme curriculum PDFs, credit structures, course outcomes, and evaluation patterns.</p>
+          <span class="text-sm font-semibold text-amber-600 inline-flex items-center gap-1 group-hover:translate-x-1 transition">View Syllabus →</span>
         </a>
 
-        <a href="/notes/"
-          class="block bg-gradient-to-br from-pink-50 to-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition-transform transform hover:-translate-y-1">
-          <div class="text-pink-600 mb-4">
-            <svg class="w-10 h-10 mx-auto" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round"
-                d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.32 1.154l1.519 4.674c.3.921-.755 1.688-1.539 1.154l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.784.534-1.838-.233-1.539-1.154l1.519-4.674a1 1 0 00-.32-1.154l-3.976-2.888c-.784-.57-.382-1.81.588-1.81h4.915a1 1 0 00.95-.69l1.519-4.674z" />
-            </svg>
+        <!-- Lab Manual Answers -->
+        <a href="/Notes/index.html#manuals"
+          class="block bg-gradient-to-br from-cyan-50 to-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition-transform transform hover:-translate-y-1 text-left border border-cyan-100 group">
+          <div class="text-cyan-600 mb-4 flex items-center justify-between">
+            <div class="w-12 h-12 rounded-xl bg-cyan-100 flex items-center justify-center">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" />
+              </svg>
+            </div>
+            <span class="text-xs font-bold px-2.5 py-1 rounded-full bg-cyan-100 text-cyan-700">Practicals</span>
           </div>
-          <h3 class="text-xl font-semibold mb-2">Free & Premium Content</h3>
-          <p class="text-gray-600">Access free and affordable premium study bundles.</p>
+          <h3 class="text-xl font-bold mb-2 text-gray-900 group-hover:text-cyan-600 transition">Lab Manual Answers</h3>
+          <p class="text-gray-600 text-sm leading-relaxed mb-4">Complete solved practical manuals, verified program outputs, observation tables, and lab viva preparation.</p>
+          <span class="text-sm font-semibold text-cyan-600 inline-flex items-center gap-1 group-hover:translate-x-1 transition">Get Manual Answers →</span>
         </a>
 
-        <a href="/blog/"
-          class="block bg-gradient-to-br from-indigo-50 to-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition-transform transform hover:-translate-y-1">
-          <div class="text-indigo-600 mb-4">
-            <svg class="w-10 h-10 mx-auto" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round"
-                d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37a1.724 1.724 0 002.572-1.065z" />
-            </svg>
+        <!-- Mock Tests -->
+        <a href="/mock-tests/"
+          class="block bg-gradient-to-br from-rose-50 to-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition-transform transform hover:-translate-y-1 text-left border border-rose-100 group">
+          <div class="text-rose-600 mb-4 flex items-center justify-between">
+            <div class="w-12 h-12 rounded-xl bg-rose-100 flex items-center justify-center">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg>
+            </div>
+            <span class="text-xs font-bold px-2.5 py-1 rounded-full bg-rose-100 text-rose-700">Online MCQ</span>
           </div>
-          <h3 class="text-xl font-semibold mb-2">Regular Updates</h3>
-          <p class="text-gray-600">Latest syllabus & content aligned with MSBTE updates.</p>
+          <h3 class="text-xl font-bold mb-2 text-gray-900 group-hover:text-rose-600 transition">Mock Tests &amp; Quizzes</h3>
+          <p class="text-gray-600 text-sm leading-relaxed mb-4">Timed chapter-wise practice tests and online MCQ quizzes to evaluate your readiness for board exams.</p>
+          <span class="text-sm font-semibold text-rose-600 inline-flex items-center gap-1 group-hover:translate-x-1 transition">Take Mock Test →</span>
+        </a>
+
+        <!-- Micro-Project Ideas -->
+        <a href="/Notes/4th-sem-computer-microprojects.html"
+          class="block bg-gradient-to-br from-indigo-50 to-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition-transform transform hover:-translate-y-1 text-left border border-indigo-100 group">
+          <div class="text-indigo-600 mb-4 flex items-center justify-between">
+            <div class="w-12 h-12 rounded-xl bg-indigo-100 flex items-center justify-center">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+              </svg>
+            </div>
+            <span class="text-xs font-bold px-2.5 py-1 rounded-full bg-indigo-100 text-indigo-700">Micro-Projects</span>
+          </div>
+          <h3 class="text-xl font-bold mb-2 text-gray-900 group-hover:text-indigo-600 transition">Micro-Project Ideas</h3>
+          <p class="text-gray-600 text-sm leading-relaxed mb-4">20+ innovative diploma microproject topics, synopsis templates, project report formats, and source code.</p>
+          <span class="text-sm font-semibold text-indigo-600 inline-flex items-center gap-1 group-hover:translate-x-1 transition">Explore Topics →</span>
+        </a>
+
+        <!-- Start Here Student Hub -->
+        <a href="/start.html"
+          class="block bg-gradient-to-br from-blue-600 to-indigo-700 text-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition-transform transform hover:-translate-y-1 text-left group">
+          <div class="mb-4 flex items-center justify-between">
+            <div class="w-12 h-12 rounded-xl bg-white/20 flex items-center justify-center text-white">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" />
+              </svg>
+            </div>
+            <span class="text-xs font-bold px-2.5 py-1 rounded-full bg-yellow-400 text-gray-950">Master Directory</span>
+          </div>
+          <h3 class="text-xl font-bold mb-2 text-white group-hover:text-yellow-300 transition">Start Here Hub</h3>
+          <p class="text-blue-100 text-sm leading-relaxed mb-4">One single unified directory where all branches, semesters, notes, PYQs, and model answers are organized.</p>
+          <span class="text-sm font-bold text-yellow-300 inline-flex items-center gap-1 group-hover:translate-x-1 transition">Open Start Hub →</span>
+        </a>
+
+        <!-- Community Support -->
+        <a href="https://chat.whatsapp.com/KFcI5VeJOpjLPgp30NXMfQ" target="_blank" rel="noopener noreferrer"
+          class="block bg-gradient-to-br from-green-50 to-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition-transform transform hover:-translate-y-1 text-left border border-green-100 group">
+          <div class="text-green-600 mb-4 flex items-center justify-between">
+            <div class="w-12 h-12 rounded-xl bg-green-100 flex items-center justify-center">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z" />
+              </svg>
+            </div>
+            <span class="text-xs font-bold px-2.5 py-1 rounded-full bg-green-100 text-green-700">Community</span>
+          </div>
+          <h3 class="text-xl font-bold mb-2 text-gray-900 group-hover:text-green-600 transition">Community &amp; Doubts</h3>
+          <p class="text-gray-600 text-sm leading-relaxed mb-4">Connect with 20,000+ MSBTE diploma students. Instant doubt-solving, timetable alerts, and exam tips.</p>
+          <span class="text-sm font-semibold text-green-600 inline-flex items-center gap-1 group-hover:translate-x-1 transition">Join WhatsApp →</span>
         </a>
 
       </div>
@@ -871,90 +963,244 @@
 
   <!-- Step 4: Departments Section -->
   <section id="departments" class="py-24 bg-gray-50">
-    <div class="max-w-6xl mx-auto px-4 text-center">
+    <div class="max-w-7xl mx-auto px-4 text-center">
       <h2 class="text-3xl md:text-5xl font-display font-extrabold mb-4 text-gray-900">Explore Departments</h2>
-      <p class="text-gray-600 mb-12 max-w-2xl mx-auto">Find specific notes and resources for your engineering branch.
-      </p>
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+      <p class="text-gray-600 mb-12 max-w-2xl mx-auto">Find syllabus, unit notes, question papers, and model answers tailored for your engineering branch.</p>
+      
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 text-left">
 
-        <!-- Card Template Example -->
-        <a href="/branches/Computer.html" class="block bg-white p-6 rounded-xl shadow hover:shadow-lg transition">
-          <div class="flex items-center justify-center mb-4 w-14 h-14 mx-auto rounded-full bg-blue-100 text-blue-600">
-            <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M9 2H15V6H9zM3 6H21V14H3zM7 18H17M12 14V18" />
-            </svg>
+        <!-- Computer Engineering -->
+        <div class="bg-white p-6 rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-100 flex flex-col justify-between group">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <div class="w-12 h-12 rounded-xl bg-blue-100 text-blue-600 flex items-center justify-center">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M9 2H15V6H9zM3 6H21V14H3zM7 18H17M12 14V18" />
+                </svg>
+              </div>
+              <span class="text-xs font-bold px-2.5 py-1 rounded-full bg-blue-50 text-blue-700 border border-blue-100">CO • CW</span>
+            </div>
+            <a href="/Branches/Computer.html" class="block">
+              <h3 class="text-lg font-bold text-gray-900 group-hover:text-blue-600 transition mb-1">Computer Engineering</h3>
+              <p class="text-gray-600 text-xs leading-relaxed mb-4">Programming in C/C++, Java, Python, DSU, DBMS, Computer Networks &amp; OS.</p>
+            </a>
           </div>
-          <h3 class="text-xl font-semibold mb-2 text-blue-600">Computer Engineering</h3>
-          <p class="text-gray-600">Programming, Data Structures, Web Technologies</p>
-        </a>
-
-        <a href="/branches/Civil.html" class="block bg-white p-6 rounded-xl shadow hover:shadow-lg transition">
-          <div
-            class="flex items-center justify-center mb-4 w-14 h-14 mx-auto rounded-full bg-yellow-100 text-yellow-600">
-            <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M3 21h18M6 21V9M18 21V3M12 21V14" />
-            </svg>
+          <div>
+            <div class="text-[11px] font-semibold text-gray-400 uppercase tracking-wider mb-2">Semesters:</div>
+            <div class="flex flex-wrap gap-1.5 mb-4">
+              <a href="/Branches/Computer-Semester-1.html" class="px-2 py-0.5 rounded text-xs bg-gray-100 hover:bg-blue-600 hover:text-white transition font-medium text-gray-700">Sem 1</a>
+              <a href="/Branches/Computer-Semester-2.html" class="px-2 py-0.5 rounded text-xs bg-gray-100 hover:bg-blue-600 hover:text-white transition font-medium text-gray-700">Sem 2</a>
+              <a href="/Branches/Computer-Semester-3.html" class="px-2 py-0.5 rounded text-xs bg-gray-100 hover:bg-blue-600 hover:text-white transition font-medium text-gray-700">Sem 3</a>
+              <a href="/Branches/Computer-Semester-4.html" class="px-2 py-0.5 rounded text-xs bg-gray-100 hover:bg-blue-600 hover:text-white transition font-medium text-gray-700">Sem 4</a>
+              <a href="/Branches/Computer-Semester-5.html" class="px-2 py-0.5 rounded text-xs bg-gray-100 hover:bg-blue-600 hover:text-white transition font-medium text-gray-700">Sem 5</a>
+              <a href="/Branches/Computer-Semester-6.html" class="px-2 py-0.5 rounded text-xs bg-gray-100 hover:bg-blue-600 hover:text-white transition font-medium text-gray-700">Sem 6</a>
+            </div>
+            <a href="/Branches/Computer.html" class="text-xs font-bold text-blue-600 group-hover:underline inline-flex items-center gap-1">View Department Portal →</a>
           </div>
-          <h3 class="text-xl font-semibold mb-2 text-yellow-600">Civil Engineering</h3>
-          <p class="text-gray-600">Construction, Structural Design, Surveying</p>
-        </a>
-
-        <a href="/branches/Mechanical-Engineering.html"
-          class="block bg-white p-6 rounded-xl shadow hover:shadow-lg transition">
-          <div class="flex items-center justify-center mb-4 w-14 h-14 mx-auto rounded-full bg-red-100 text-red-600">
-            <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round"
-                d="M10 21h4M7 3h10M4 7h16a1 1 0 011 1v12a1 1 0 01-1 1H4a1 1 0 01-1-1V8a1 1 0 011-1zm3 0v4m10-4v4m-7 8h4m-4-4v4m4-4v4" />
-            </svg>
-          </div>
-          <h3 class="text-xl font-semibold mb-2 text-red-600">Mechanical Engineering</h3>
-          <p class="text-gray-600">Thermodynamics, Manufacturing, Machine Design</p>
-        </a>
-
-        <a href="/branches/Electrical-Engineering.html"
-          class="block bg-white p-6 rounded-xl shadow hover:shadow-lg transition">
-          <div class="flex items-center justify-center mb-4 w-14 h-14 mx-auto rounded-full bg-green-100 text-green-600">
-            <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14H11V21L20 10H13Z" />
-            </svg>
-          </div>
-          <h3 class="text-xl font-semibold mb-2 text-green-600">Electrical Engineering</h3>
-          <p class="text-gray-600">Power Systems, Electronics, Control Systems</p>
-        </a>
-
-        <a href="/branches/ETC-Engineering.html"
-          class="block bg-white p-6 rounded-xl shadow hover:shadow-lg transition">
-          <div
-            class="flex items-center justify-center mb-4 w-14 h-14 mx-auto rounded-full bg-purple-100 text-purple-600">
-            <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M4 6H20M4 12H20M4 18H11" />
-            </svg>
-          </div>
-          <h3 class="text-xl font-semibold mb-2 text-purple-600">E&TC Engineering</h3>
-          <p class="text-gray-600">Microcontrollers, Signal Systems, Networking</p>
-        </a>
-
-        <a href="/branches/Information-Technology.html"
-          class="block bg-white p-6 rounded-xl shadow hover:shadow-lg transition">
-          <div class="flex items-center justify-center mb-4 w-14 h-14 mx-auto rounded-full bg-pink-100 text-pink-600">
-            <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
-            </svg>
-          </div>
-          <h3 class="text-xl font-semibold mb-2 text-pink-600">Information Technology</h3>
-          <p class="text-gray-600">Cloud, Security, Web & Mobile Development</p>
-        </a>
-        <div
-          class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition transform hover:-translate-y-1 col-span-1 sm:col-span-2 lg:col-span-3 flex flex-col items-center justify-center text-center border border-gray-100">
-          <div class="flex items-center justify-center w-16 h-16 mb-4 rounded-full bg-blue-100 text-blue-600">
-            <svg class="w-7 h-7" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4" />
-            </svg>
-          </div>
-          <h3 class="text-2xl font-display font-bold text-gray-900 mb-2">And More Departments...</h3>
-          <p class="text-gray-600 text-base max-w-md">We’re constantly adding more departments to serve every MSBTE
-            student better. Stay tuned!</p>
         </div>
+
+        <!-- Information Technology -->
+        <div class="bg-white p-6 rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-100 flex flex-col justify-between group">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <div class="w-12 h-12 rounded-xl bg-teal-100 text-teal-600 flex items-center justify-center">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
+                </svg>
+              </div>
+              <span class="text-xs font-bold px-2.5 py-1 rounded-full bg-teal-50 text-teal-700 border border-teal-100">IF</span>
+            </div>
+            <a href="/Branches/Information-Technology.html" class="block">
+              <h3 class="text-lg font-bold text-gray-900 group-hover:text-teal-600 transition mb-1">Information Technology</h3>
+              <p class="text-gray-600 text-xs leading-relaxed mb-4">Web Development, Cloud Computing, Information Security &amp; Database Systems.</p>
+            </a>
+          </div>
+          <div>
+            <div class="text-[11px] font-semibold text-gray-400 uppercase tracking-wider mb-2">Semesters:</div>
+            <div class="flex flex-wrap gap-1.5 mb-4">
+              <a href="/Branches/Information-Technology-Semester-1.html" class="px-2 py-0.5 rounded text-xs bg-gray-100 hover:bg-teal-600 hover:text-white transition font-medium text-gray-700">Sem 1</a>
+              <a href="/Branches/Information-Technology-Semester-2.html" class="px-2 py-0.5 rounded text-xs bg-gray-100 hover:bg-teal-600 hover:text-white transition font-medium text-gray-700">Sem 2</a>
+              <a href="/Branches/Information-Technology-Semester-3.html" class="px-2 py-0.5 rounded text-xs bg-gray-100 hover:bg-teal-600 hover:text-white transition font-medium text-gray-700">Sem 3</a>
+              <a href="/Branches/Information-Technology-Semester-4.html" class="px-2 py-0.5 rounded text-xs bg-gray-100 hover:bg-teal-600 hover:text-white transition font-medium text-gray-700">Sem 4</a>
+              <a href="/Branches/Information-Technology-Semester-5.html" class="px-2 py-0.5 rounded text-xs bg-gray-100 hover:bg-teal-600 hover:text-white transition font-medium text-gray-700">Sem 5</a>
+              <a href="/Branches/Information-Technology-Semester-6.html" class="px-2 py-0.5 rounded text-xs bg-gray-100 hover:bg-teal-600 hover:text-white transition font-medium text-gray-700">Sem 6</a>
+            </div>
+            <a href="/Branches/Information-Technology.html" class="text-xs font-bold text-teal-600 group-hover:underline inline-flex items-center gap-1">View Department Portal →</a>
+          </div>
+        </div>
+
+        <!-- AI & Machine Learning -->
+        <div class="bg-white p-6 rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-100 flex flex-col justify-between group">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <div class="w-12 h-12 rounded-xl bg-purple-100 text-purple-600 flex items-center justify-center">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                </svg>
+              </div>
+              <span class="text-xs font-bold px-2.5 py-1 rounded-full bg-purple-50 text-purple-700 border border-purple-100">AI • AN</span>
+            </div>
+            <a href="/Branches/AI-ML.html" class="block">
+              <h3 class="text-lg font-bold text-gray-900 group-hover:text-purple-600 transition mb-1">AI &amp; Machine Learning</h3>
+              <p class="text-gray-600 text-xs leading-relaxed mb-4">Python, Neural Networks, Statistical Modeling, Machine Learning &amp; Deep Learning.</p>
+            </a>
+          </div>
+          <div>
+            <div class="text-[11px] font-semibold text-gray-400 uppercase tracking-wider mb-2">Semesters:</div>
+            <div class="flex flex-wrap gap-1.5 mb-4">
+              <a href="/Branches/AI-ML-Semester-1.html" class="px-2 py-0.5 rounded text-xs bg-gray-100 hover:bg-purple-600 hover:text-white transition font-medium text-gray-700">Sem 1</a>
+              <a href="/Branches/AI-ML-Semester-2.html" class="px-2 py-0.5 rounded text-xs bg-gray-100 hover:bg-purple-600 hover:text-white transition font-medium text-gray-700">Sem 2</a>
+              <a href="/Branches/AI-ML-Semester-3.html" class="px-2 py-0.5 rounded text-xs bg-gray-100 hover:bg-purple-600 hover:text-white transition font-medium text-gray-700">Sem 3</a>
+              <a href="/Branches/AI-ML-Semester-4.html" class="px-2 py-0.5 rounded text-xs bg-gray-100 hover:bg-purple-600 hover:text-white transition font-medium text-gray-700">Sem 4</a>
+              <a href="/Branches/AI-ML-Semester-5.html" class="px-2 py-0.5 rounded text-xs bg-gray-100 hover:bg-purple-600 hover:text-white transition font-medium text-gray-700">Sem 5</a>
+              <a href="/Branches/AI-ML-Semester-6.html" class="px-2 py-0.5 rounded text-xs bg-gray-100 hover:bg-purple-600 hover:text-white transition font-medium text-gray-700">Sem 6</a>
+            </div>
+            <a href="/Branches/AI-ML.html" class="text-xs font-bold text-purple-600 group-hover:underline inline-flex items-center gap-1">View Department Portal →</a>
+          </div>
+        </div>
+
+        <!-- Civil Engineering -->
+        <div class="bg-white p-6 rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-100 flex flex-col justify-between group">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <div class="w-12 h-12 rounded-xl bg-sky-100 text-sky-600 flex items-center justify-center">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M3 21h18M6 21V9M18 21V3M12 21V14" />
+                </svg>
+              </div>
+              <span class="text-xs font-bold px-2.5 py-1 rounded-full bg-sky-50 text-sky-700 border border-sky-100">CE</span>
+            </div>
+            <a href="/Branches/Civil.html" class="block">
+              <h3 class="text-lg font-bold text-gray-900 group-hover:text-sky-600 transition mb-1">Civil Engineering</h3>
+              <p class="text-gray-600 text-xs leading-relaxed mb-4">Surveying, Concrete Technology, Mechanics of Structures, Hydraulics &amp; Estimation.</p>
+            </a>
+          </div>
+          <div>
+            <div class="text-[11px] font-semibold text-gray-400 uppercase tracking-wider mb-2">Semesters:</div>
+            <div class="flex flex-wrap gap-1.5 mb-4">
+              <a href="/Branches/Civil-Semester-1.html" class="px-2 py-0.5 rounded text-xs bg-gray-100 hover:bg-sky-600 hover:text-white transition font-medium text-gray-700">Sem 1</a>
+              <a href="/Branches/Civil-Semester-2.html" class="px-2 py-0.5 rounded text-xs bg-gray-100 hover:bg-sky-600 hover:text-white transition font-medium text-gray-700">Sem 2</a>
+              <a href="/Branches/Civil-Semester-3.html" class="px-2 py-0.5 rounded text-xs bg-gray-100 hover:bg-sky-600 hover:text-white transition font-medium text-gray-700">Sem 3</a>
+              <a href="/Branches/Civil-Semester-4.html" class="px-2 py-0.5 rounded text-xs bg-gray-100 hover:bg-sky-600 hover:text-white transition font-medium text-gray-700">Sem 4</a>
+              <a href="/Branches/Civil-Semester-5.html" class="px-2 py-0.5 rounded text-xs bg-gray-100 hover:bg-sky-600 hover:text-white transition font-medium text-gray-700">Sem 5</a>
+              <a href="/Branches/Civil-Semester-6.html" class="px-2 py-0.5 rounded text-xs bg-gray-100 hover:bg-sky-600 hover:text-white transition font-medium text-gray-700">Sem 6</a>
+            </div>
+            <a href="/Branches/Civil.html" class="text-xs font-bold text-sky-600 group-hover:underline inline-flex items-center gap-1">View Department Portal →</a>
+          </div>
+        </div>
+
+        <!-- Electrical Engineering -->
+        <div class="bg-white p-6 rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-100 flex flex-col justify-between group">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <div class="w-12 h-12 rounded-xl bg-amber-100 text-amber-600 flex items-center justify-center">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14H11V21L20 10H13Z" />
+                </svg>
+              </div>
+              <span class="text-xs font-bold px-2.5 py-1 rounded-full bg-amber-50 text-amber-700 border border-amber-100">EE • EP</span>
+            </div>
+            <a href="/Branches/Electrical-Engineering.html" class="block">
+              <h3 class="text-lg font-bold text-gray-900 group-hover:text-amber-600 transition mb-1">Electrical Engineering</h3>
+              <p class="text-gray-600 text-xs leading-relaxed mb-4">Power Systems, Electrical Machines, Circuits &amp; Networks, Power Electronics &amp; Drives.</p>
+            </a>
+          </div>
+          <div>
+            <div class="text-[11px] font-semibold text-gray-400 uppercase tracking-wider mb-2">Semesters:</div>
+            <div class="flex flex-wrap gap-1.5 mb-4">
+              <a href="/Branches/Electrical-Engineering-Semester-1.html" class="px-2 py-0.5 rounded text-xs bg-gray-100 hover:bg-amber-600 hover:text-white transition font-medium text-gray-700">Sem 1</a>
+              <a href="/Branches/Electrical-Engineering-Semester-2.html" class="px-2 py-0.5 rounded text-xs bg-gray-100 hover:bg-amber-600 hover:text-white transition font-medium text-gray-700">Sem 2</a>
+              <a href="/Branches/Electrical-Engineering-Semester-3.html" class="px-2 py-0.5 rounded text-xs bg-gray-100 hover:bg-amber-600 hover:text-white transition font-medium text-gray-700">Sem 3</a>
+              <a href="/Branches/Electrical-Engineering-Semester-4.html" class="px-2 py-0.5 rounded text-xs bg-gray-100 hover:bg-amber-600 hover:text-white transition font-medium text-gray-700">Sem 4</a>
+              <a href="/Branches/Electrical-Engineering-Semester-5.html" class="px-2 py-0.5 rounded text-xs bg-gray-100 hover:bg-amber-600 hover:text-white transition font-medium text-gray-700">Sem 5</a>
+              <a href="/Branches/Electrical-Engineering-Semester-6.html" class="px-2 py-0.5 rounded text-xs bg-gray-100 hover:bg-amber-600 hover:text-white transition font-medium text-gray-700">Sem 6</a>
+            </div>
+            <a href="/Branches/Electrical-Engineering.html" class="text-xs font-bold text-amber-600 group-hover:underline inline-flex items-center gap-1">View Department Portal →</a>
+          </div>
+        </div>
+
+        <!-- E&TC Engineering -->
+        <div class="bg-white p-6 rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-100 flex flex-col justify-between group">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <div class="w-12 h-12 rounded-xl bg-rose-100 text-rose-600 flex items-center justify-center">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M4 6H20M4 12H20M4 18H11" />
+                </svg>
+              </div>
+              <span class="text-xs font-bold px-2.5 py-1 rounded-full bg-rose-50 text-rose-700 border border-rose-100">EJ • ET</span>
+            </div>
+            <a href="/Branches/ETC-Engineering.html" class="block">
+              <h3 class="text-lg font-bold text-gray-900 group-hover:text-rose-600 transition mb-1">E&amp;TC Engineering</h3>
+              <p class="text-gray-600 text-xs leading-relaxed mb-4">Digital Electronics, Microcontrollers, Communication Systems, VLSI &amp; Embedded Systems.</p>
+            </a>
+          </div>
+          <div>
+            <div class="text-[11px] font-semibold text-gray-400 uppercase tracking-wider mb-2">Semesters:</div>
+            <div class="flex flex-wrap gap-1.5 mb-4">
+              <a href="/Branches/ETC-Engineering-Semester-1.html" class="px-2 py-0.5 rounded text-xs bg-gray-100 hover:bg-rose-600 hover:text-white transition font-medium text-gray-700">Sem 1</a>
+              <a href="/Branches/ETC-Engineering-Semester-2.html" class="px-2 py-0.5 rounded text-xs bg-gray-100 hover:bg-rose-600 hover:text-white transition font-medium text-gray-700">Sem 2</a>
+              <a href="/Branches/ETC-Engineering-Semester-3.html" class="px-2 py-0.5 rounded text-xs bg-gray-100 hover:bg-rose-600 hover:text-white transition font-medium text-gray-700">Sem 3</a>
+              <a href="/Branches/ETC-Engineering-Semester-4.html" class="px-2 py-0.5 rounded text-xs bg-gray-100 hover:bg-rose-600 hover:text-white transition font-medium text-gray-700">Sem 4</a>
+              <a href="/Branches/ETC-Engineering-Semester-5.html" class="px-2 py-0.5 rounded text-xs bg-gray-100 hover:bg-rose-600 hover:text-white transition font-medium text-gray-700">Sem 5</a>
+              <a href="/Branches/ETC-Engineering-Semester-6.html" class="px-2 py-0.5 rounded text-xs bg-gray-100 hover:bg-rose-600 hover:text-white transition font-medium text-gray-700">Sem 6</a>
+            </div>
+            <a href="/Branches/ETC-Engineering.html" class="text-xs font-bold text-rose-600 group-hover:underline inline-flex items-center gap-1">View Department Portal →</a>
+          </div>
+        </div>
+
+        <!-- Mechanical Engineering -->
+        <div class="bg-white p-6 rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-100 flex flex-col justify-between group">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <div class="w-12 h-12 rounded-xl bg-orange-100 text-orange-600 flex items-center justify-center">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M10 21h4M7 3h10M4 7h16a1 1 0 011 1v12a1 1 0 01-1 1H4a1 1 0 01-1-1V8a1 1 0 011-1zm3 0v4m10-4v4m-7 8h4m-4-4v4m4-4v4" />
+                </svg>
+              </div>
+              <span class="text-xs font-bold px-2.5 py-1 rounded-full bg-orange-50 text-orange-700 border border-orange-100">ME</span>
+            </div>
+            <a href="/Branches/Mechanical-Engineering.html" class="block">
+              <h3 class="text-lg font-bold text-gray-900 group-hover:text-orange-600 transition mb-1">Mechanical Engineering</h3>
+              <p class="text-gray-600 text-xs leading-relaxed mb-4">Thermodynamics, Fluid Mechanics, Theory of Machines, Manufacturing &amp; CAD/CAM.</p>
+            </a>
+          </div>
+          <div>
+            <div class="text-[11px] font-semibold text-gray-400 uppercase tracking-wider mb-2">Semesters:</div>
+            <div class="flex flex-wrap gap-1.5 mb-4">
+              <a href="/Branches/Mechanical-Engineering-Semester-1.html" class="px-2 py-0.5 rounded text-xs bg-gray-100 hover:bg-orange-600 hover:text-white transition font-medium text-gray-700">Sem 1</a>
+              <a href="/Branches/Mechanical-Engineering-Semester-2.html" class="px-2 py-0.5 rounded text-xs bg-gray-100 hover:bg-orange-600 hover:text-white transition font-medium text-gray-700">Sem 2</a>
+              <a href="/Branches/Mechanical-Engineering-Semester-3.html" class="px-2 py-0.5 rounded text-xs bg-gray-100 hover:bg-orange-600 hover:text-white transition font-medium text-gray-700">Sem 3</a>
+              <a href="/Branches/Mechanical-Engineering-Semester-4.html" class="px-2 py-0.5 rounded text-xs bg-gray-100 hover:bg-orange-600 hover:text-white transition font-medium text-gray-700">Sem 4</a>
+              <a href="/Branches/Mechanical-Engineering-Semester-5.html" class="px-2 py-0.5 rounded text-xs bg-gray-100 hover:bg-orange-600 hover:text-white transition font-medium text-gray-700">Sem 5</a>
+              <a href="/Branches/Mechanical-Engineering-Semester-6.html" class="px-2 py-0.5 rounded text-xs bg-gray-100 hover:bg-orange-600 hover:text-white transition font-medium text-gray-700">Sem 6</a>
+            </div>
+            <a href="/Branches/Mechanical-Engineering.html" class="text-xs font-bold text-orange-600 group-hover:underline inline-flex items-center gap-1">View Department Portal →</a>
+          </div>
+        </div>
+
+        <!-- Master Directory Card -->
+        <a href="/start.html"
+          class="bg-gradient-to-br from-indigo-900 to-blue-900 text-white p-6 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 flex flex-col justify-between group transform hover:-translate-y-1">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <div class="w-12 h-12 rounded-xl bg-white/20 text-yellow-300 flex items-center justify-center">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" />
+                </svg>
+              </div>
+              <span class="text-xs font-bold px-2.5 py-1 rounded-full bg-yellow-400 text-gray-950">Directory</span>
+            </div>
+            <h3 class="text-lg font-bold text-white group-hover:text-yellow-300 transition mb-2">All Departments &amp; Schemes</h3>
+            <p class="text-blue-200 text-xs leading-relaxed mb-4">Looking for Automobile, Chemical, I-Scheme older papers, or electives? Find all 200+ subjects organized in our master hub.</p>
+          </div>
+          <div class="pt-4 border-t border-white/20 flex items-center justify-between">
+            <span class="text-xs font-bold text-yellow-300">Start Here Directory</span>
+            <span class="text-sm text-yellow-300 group-hover:translate-x-1 transition font-bold">Open Hub →</span>
+          </div>
+        </a>
+
       </div>
     </div>
   </section>
@@ -972,8 +1218,33 @@
 
     <div class="max-w-7xl mx-auto px-4 relative z-10 text-center">
       <h2 class="text-3xl md:text-5xl font-display font-extrabold mb-6 text-gray-900">Study Resources</h2>
-      <p class="text-gray-600 mb-10 text-lg max-w-2xl mx-auto">Access premium quality study notes, previous year papers,
+      <p class="text-gray-600 mb-8 text-lg max-w-2xl mx-auto">Access premium quality study notes, previous year papers,
         model answer sheets, and micro-projects curated for your success.</p>
+
+      <!-- Quick Resource Nav Badges -->
+      <div class="flex flex-wrap justify-center items-center gap-2 mb-10 max-w-4xl mx-auto">
+        <a href="/Notes/" class="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full text-xs font-bold bg-blue-100 text-blue-700 hover:bg-blue-600 hover:text-white transition">
+          <span>📘</span> All Notes (/Notes/)
+        </a>
+        <a href="/pyq/" class="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full text-xs font-bold bg-purple-100 text-purple-700 hover:bg-purple-600 hover:text-white transition">
+          <span>📄</span> PYQ Papers (/pyq/)
+        </a>
+        <a href="/model-answer/" class="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full text-xs font-bold bg-emerald-100 text-emerald-700 hover:bg-emerald-600 hover:text-white transition">
+          <span>💡</span> Model Answers (/model-answer/)
+        </a>
+        <a href="/scheme/" class="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full text-xs font-bold bg-amber-100 text-amber-800 hover:bg-amber-600 hover:text-white transition">
+          <span>📋</span> Syllabus Copies (/scheme/)
+        </a>
+        <a href="/Notes/index.html#manuals" class="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full text-xs font-bold bg-cyan-100 text-cyan-800 hover:bg-cyan-600 hover:text-white transition">
+          <span>🧪</span> Lab Manuals (/Notes/)
+        </a>
+        <a href="/Notes/4th-sem-computer-microprojects.html" class="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full text-xs font-bold bg-rose-100 text-rose-800 hover:bg-rose-600 hover:text-white transition">
+          <span>🎯</span> Micro-Projects
+        </a>
+        <a href="/start.html" class="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full text-xs font-bold bg-indigo-600 text-white hover:bg-indigo-700 transition shadow-sm">
+          <span>🚀</span> Start Here Directory →
+        </a>
+      </div>
 
       <!-- Enhanced Search Bar -->
       <div class="relative max-w-2xl mx-auto mb-12 group">
@@ -1017,7 +1288,7 @@
       <div
         class="resource-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col h-full">
         <a href="/notes/osy-k-scheme-notes.html" class="flex flex-col h-full group">
-          <div class="h-48 w-full overflow-hidden bg-gray-50 border-b border-gray-100 group"><img
+          <div class="aspect-video w-full overflow-hidden bg-gray-50 border-b border-gray-100 group" style="aspect-ratio: 16 / 9;"><img
               src="/resourse/note-thumbs/OSY_thumbnail.png" alt="Operating System (OSY) K Scheme Notes & Question Bank"
               class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500"
               loading="lazy"></div>
@@ -1044,7 +1315,7 @@
       <div
         class="resource-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col h-full">
         <a href="/notes/mic-k-scheme-notes.html" class="flex flex-col h-full group">
-          <div class="h-48 w-full overflow-hidden bg-gray-50 border-b border-gray-100 group"><img
+          <div class="aspect-video w-full overflow-hidden bg-gray-50 border-b border-gray-100 group" style="aspect-ratio: 16 / 9;"><img
               src="/resourse/note-thumbs/MIC_thumbnail.png" alt="Microprocessor (MIC) K Scheme Notes & Question Bank"
               class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500"
               loading="lazy"></div>
@@ -1071,7 +1342,7 @@
       <div
         class="resource-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col h-full">
         <a href="/notes/dcn-k-scheme-notes.html" class="flex flex-col h-full group">
-          <div class="h-48 w-full overflow-hidden bg-gray-50 border-b border-gray-100 group"><img
+          <div class="aspect-video w-full overflow-hidden bg-gray-50 border-b border-gray-100 group" style="aspect-ratio: 16 / 9;"><img
               src="/resourse/note-thumbs/DCN_thumbnail.png"
               alt="Data Communication & Computer Network (DCN) K Scheme Notes"
               class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500"
@@ -1099,7 +1370,7 @@
       <div
         class="resource-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col h-full">
         <a href="/notes/java-k-scheme-notes.html" class="flex flex-col h-full group">
-          <div class="h-48 w-full overflow-hidden bg-gray-50 border-b border-gray-100 group"><img
+          <div class="aspect-video w-full overflow-hidden bg-gray-50 border-b border-gray-100 group" style="aspect-ratio: 16 / 9;"><img
               src="/resourse/note-thumbs/JPR_thumbnail.png" alt="Java Programming (JPR) K Scheme Notes & Question Bank"
               class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500"
               loading="lazy"></div>
@@ -1126,7 +1397,7 @@
       <div
         class="resource-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col h-full">
         <a href="/notes/ees-k-scheme-notes.html" class="flex flex-col h-full group">
-          <div class="h-48 w-full overflow-hidden bg-gray-50 border-b border-gray-100 group"><img
+          <div class="aspect-video w-full overflow-hidden bg-gray-50 border-b border-gray-100 group" style="aspect-ratio: 16 / 9;"><img
               src="/resourse/note-thumbs/EES_thumbnail.png"
               alt="Environmental Education & Sustainability (EES) K Scheme Notes"
               class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500"
@@ -1154,7 +1425,7 @@
       <div
         class="resource-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col h-full">
         <a href="/notes/oop-k-scheme-notes.html" class="flex flex-col h-full group">
-          <div class="h-48 w-full overflow-hidden bg-gray-50 border-b border-gray-100 group"><img
+          <div class="aspect-video w-full overflow-hidden bg-gray-50 border-b border-gray-100 group" style="aspect-ratio: 16 / 9;"><img
               src="/resourse/note-thumbs/OOP_thumbnail.png"
               alt="Object Oriented Programming with C++ (OOP) K Scheme Notes"
               class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500"
@@ -1182,7 +1453,7 @@
       <div
         class="resource-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col h-full">
         <a href="/notes/dsu-k-scheme-notes.html" class="flex flex-col h-full group">
-          <div class="h-48 w-full overflow-hidden bg-gray-50 border-b border-gray-100 group"><img
+          <div class="aspect-video w-full overflow-hidden bg-gray-50 border-b border-gray-100 group" style="aspect-ratio: 16 / 9;"><img
               src="/resourse/note-thumbs/DSU_thumbnail.png"
               alt="Data Structures Using C (DSU) K Scheme Notes & Question Bank"
               class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500"
@@ -1210,7 +1481,7 @@
       <div
         class="resource-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col h-full">
         <a href="/notes/dbms-k-scheme-notes.html" class="flex flex-col h-full group">
-          <div class="h-48 w-full overflow-hidden bg-gray-50 border-b border-gray-100 group"><img
+          <div class="aspect-video w-full overflow-hidden bg-gray-50 border-b border-gray-100 group" style="aspect-ratio: 16 / 9;"><img
               src="/resourse/note-thumbs/DBMS_thumbnail.png"
               alt="Database Management System (DBMS) K Scheme Notes & Papers"
               class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500"
@@ -1238,7 +1509,7 @@
       <div
         class="resource-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col h-full">
         <a href="/notes/dte-k-scheme-notes.html" class="flex flex-col h-full group">
-          <div class="h-48 w-full overflow-hidden bg-gray-50 border-b border-gray-100 group"><img
+          <div class="aspect-video w-full overflow-hidden bg-gray-50 border-b border-gray-100 group" style="aspect-ratio: 16 / 9;"><img
               src="/resourse/note-thumbs/DTE_thumbnail.png"
               alt="Digital Techniques (DTE) K Scheme Notes, MCQs & Solved Papers"
               class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500"
@@ -1346,7 +1617,7 @@
 
         <div
           class="bg-white rounded-xl shadow-lg overflow-hidden flex flex-col h-full hover:shadow-2xl transition duration-300 transform hover:-translate-y-2 group">
-          <div class="relative overflow-hidden h-48 sm:h-56">
+          <div class="relative overflow-hidden aspect-video w-full" style="aspect-ratio: 16 / 9;">
             <img src="/resourse/blog-resourse/nana-patekar-tribute.jpg"
               alt="Heartfelt Tribute to Nana Patekar — Legendary Indian Actor (1951–2026)"
               class="w-full h-full object-cover group-hover:scale-110 transition duration-500" loading="lazy">
@@ -1389,7 +1660,7 @@
 
         <div
           class="bg-white rounded-xl shadow-lg overflow-hidden flex flex-col h-full hover:shadow-2xl transition duration-300 transform hover:-translate-y-2 group">
-          <div class="relative overflow-hidden h-48 sm:h-56">
+          <div class="relative overflow-hidden aspect-video w-full" style="aspect-ratio: 16 / 9;">
             <img src="/resourse/note-thumbs/OSY_thumbnail.png"
               alt="Operating System OSY 314319 K Scheme Notes Thumbnail"
               class="w-full h-full object-cover group-hover:scale-110 transition duration-500" loading="lazy">
@@ -1432,7 +1703,7 @@
 
         <div
           class="bg-white rounded-xl shadow-lg overflow-hidden flex flex-col h-full hover:shadow-2xl transition duration-300 transform hover:-translate-y-2 group">
-          <div class="relative overflow-hidden h-48 sm:h-56">
+          <div class="relative overflow-hidden aspect-video w-full" style="aspect-ratio: 16 / 9;">
             <img src="/resourse/note-thumbs/MIC_thumbnail.png" alt="Microprocessor MIC 314321 K Scheme Notes Thumbnail"
               class="w-full h-full object-cover group-hover:scale-110 transition duration-500" loading="lazy">
             <div class="absolute top-4 left-4">
@@ -1474,7 +1745,7 @@
 
         <div
           class="bg-white rounded-xl shadow-lg overflow-hidden flex flex-col h-full hover:shadow-2xl transition duration-300 transform hover:-translate-y-2 group">
-          <div class="relative overflow-hidden h-48 sm:h-56">
+          <div class="relative overflow-hidden aspect-video w-full" style="aspect-ratio: 16 / 9;">
             <img src="/resourse/note-thumbs/DCN_thumbnail.png"
               alt="Data Communication & Computer Network DCN 314318 K Scheme Notes Thumbnail"
               class="w-full h-full object-cover group-hover:scale-110 transition duration-500" loading="lazy">
@@ -1517,7 +1788,7 @@
 
         <div
           class="bg-white rounded-xl shadow-lg overflow-hidden flex flex-col h-full hover:shadow-2xl transition duration-300 transform hover:-translate-y-2 group">
-          <div class="relative overflow-hidden h-48 sm:h-56">
+          <div class="relative overflow-hidden aspect-video w-full" style="aspect-ratio: 16 / 9;">
             <img src="/resourse/note-thumbs/JPR_thumbnail.png"
               alt="Java Programming JPR 314317 K Scheme Notes Thumbnail"
               class="w-full h-full object-cover group-hover:scale-110 transition duration-500" loading="lazy">
@@ -1560,7 +1831,7 @@
 
         <div
           class="bg-white rounded-xl shadow-lg overflow-hidden flex flex-col h-full hover:shadow-2xl transition duration-300 transform hover:-translate-y-2 group">
-          <div class="relative overflow-hidden h-48 sm:h-56">
+          <div class="relative overflow-hidden aspect-video w-full" style="aspect-ratio: 16 / 9;">
             <img src="/resourse/note-thumbs/EES_thumbnail.png"
               alt="Environmental Education and Sustainability EES 314301 K Scheme Notes Thumbnail"
               class="w-full h-full object-cover group-hover:scale-110 transition duration-500" loading="lazy">
@@ -2182,13 +2453,15 @@
         <h3 class="text-xl font-semibold mb-4">Quick Links</h3>
         <ul class="space-y-2 text-sm">
           <li><a href="/" class="hover:underline">Home</a></li>
-          <li><a href="/start.html" class="hover:underline text-yellow-300 font-semibold">Start Here Directory</a></li>
-          <li><a href="#departments" class="hover:underline">Departments</a></li>
-          <li><a href="#notes" class="hover:underline">Study Resources</a></li>
-          <li><a href="#blogs" class="hover:underline">Blog</a></li>
-          <li><a href="#about" class="hover:underline">About</a></li>
-          <li><a href="#contact" class="hover:underline">Contact</a></li>
-          <li><a href="/internships" class="hover:underline">Internships</a></li>
+          <li><a href="/start.html" class="hover:underline text-yellow-300 font-bold">🚀 Start Here Directory</a></li>
+          <li><a href="/Notes/" class="hover:underline">Subject Study Notes</a></li>
+          <li><a href="/pyq/" class="hover:underline">Question Papers (PYQ)</a></li>
+          <li><a href="/model-answer/" class="hover:underline">Model Answer Papers</a></li>
+          <li><a href="/scheme/" class="hover:underline">Syllabus &amp; Schemes</a></li>
+          <li><a href="#departments" class="hover:underline">Engineering Departments</a></li>
+          <li><a href="/mock-tests/" class="hover:underline">Mock Tests &amp; Quizzes</a></li>
+          <li><a href="#blogs" class="hover:underline">Blog &amp; News</a></li>
+          <li><a href="/internships.html" class="hover:underline">Internships &amp; Jobs</a></li>
         </ul>
       </div>
       <div>
@@ -2210,7 +2483,7 @@
     <div class="text-center mt-10 text-sm text-blue-100">
       <p>
         <a href="/about.html" class="hover:underline">About</a> |
-        <a href="/sitemap" class="hover:underline">Sitemap</a> |
+        <a href="/sitemap.html" class="hover:underline">Sitemap</a> |
         <a href="/privacy-policy.html" class="hover:underline">Privacy Policy</a> |
         <a href="/contact.html" class="hover:underline">Contact</a>
       </p>

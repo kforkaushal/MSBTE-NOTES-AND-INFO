@@ -144,7 +144,7 @@ document.addEventListener('DOMContentLoaded', () => {
     function createGridCard(post) {
         return `
             <div class="bg-white rounded-xl shadow-lg overflow-hidden flex flex-col h-full hover:shadow-2xl transition duration-300 transform hover:-translate-y-2 group">
-                <div class="relative overflow-hidden h-48 sm:h-56">
+                <div class="relative overflow-hidden aspect-video w-full" style="aspect-ratio: 16 / 9;">
                     <img src="${post.image}" alt="${post.imageAlt || post.title}" class="w-full h-full object-cover group-hover:scale-110 transition duration-500" loading="lazy">
                     <div class="absolute top-4 left-4">
                         <span class="bg-blue-600 text-white text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider shadow-md opacity-90 group-hover:opacity-100 transition duration-300">
