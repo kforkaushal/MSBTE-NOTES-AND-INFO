@@ -441,210 +441,337 @@
         }
     </style>
     <link rel="stylesheet" href="/css/notes-clean.css">
+
+    <script>
+        function toggleMobileMenu() {
+            const menu = document.getElementById('mobileNav');
+            const btn = document.querySelector('.mobile-menu-button');
+            const menuIcon = document.getElementById('menuIcon');
+            const closeIcon = document.getElementById('closeIcon');
+
+            if (!menu) return;
+            const isClosed = menu.classList.contains('translate-x-full');
+
+            if (isClosed) {
+                menu.classList.remove('translate-x-full');
+                if (menuIcon) menuIcon.classList.add('hidden');
+                if (closeIcon) closeIcon.classList.remove('hidden');
+                if (btn) btn.setAttribute('aria-expanded', 'true');
+                document.body.style.overflow = 'hidden';
+            } else {
+                menu.classList.add('translate-x-full');
+                if (menuIcon) menuIcon.classList.remove('hidden');
+                if (closeIcon) closeIcon.classList.add('hidden');
+                if (btn) btn.setAttribute('aria-expanded', 'false');
+                document.body.style.overflow = '';
+            }
+        }
+
+        function toggleMobileSubmenu(submenuId, arrowId) {
+            const sub = document.getElementById(submenuId);
+            const arr = document.getElementById(arrowId);
+            if (!sub) return;
+            const isHidden = sub.classList.contains('hidden');
+            if (isHidden) {
+                sub.classList.remove('hidden');
+                if (arr) arr.classList.add('rotate-180');
+            } else {
+                sub.classList.add('hidden');
+                if (arr) arr.classList.remove('rotate-180');
+            }
+        }
+
+        function toggleDropdown(btn, event) {
+            if (event) event.stopPropagation();
+            const parent = btn.closest('.nav-dropdown');
+            if (!parent) return;
+
+            const isOpen = parent.classList.contains('is-open');
+
+            document.querySelectorAll('.nav-dropdown').forEach(d => {
+                if (d !== parent) {
+                    d.classList.remove('is-open');
+                    const b = d.querySelector('button[aria-expanded]');
+                    if (b) b.setAttribute('aria-expanded', 'false');
+                }
+            });
+
+            if (isOpen) {
+                parent.classList.remove('is-open');
+                btn.setAttribute('aria-expanded', 'false');
+            } else {
+                parent.classList.add('is-open');
+                btn.setAttribute('aria-expanded', 'true');
+            }
+        }
+
+        document.addEventListener('click', (e) => {
+            if (!e.target.closest('.nav-dropdown')) {
+                document.querySelectorAll('.nav-dropdown').forEach(d => {
+                    d.classList.remove('is-open');
+                    const b = d.querySelector('button[aria-expanded]');
+                    if (b) b.setAttribute('aria-expanded', 'false');
+                });
+            }
+        });
+    </script>
+
 </head>
 
 <body class="bg-gray-50 text-gray-900 pt-20 overflow-x-hidden w-full max-w-full">
 
     <!-- Header Navigation (Solid White, Elevated, Non-overlapping) -->
     <nav class="bg-white shadow fixed top-0 left-0 right-0 z-50">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex items-center justify-between h-16">
-                <!-- Left: Logo -->
-                <div class="flex items-center">
-                    <a href="/" class="flex items-center text-blue-600 font-semibold text-lg sm:text-xl font-display">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 sm:h-7 sm:w-7 mr-2 text-blue-600 flex-shrink-0" viewBox="0 0 576 512" fill="currentColor">
-                            <path d="M249.6 471.5c10.8 3.8 22.4-4.1 22.4-15.5V78.6c0-4.2-1.6-8.4-5-11C247.4 52 202.4 32 144 32C93.5 32 46.3 45.3 18.1 56.1C6.8 60.5 0 71.7 0 83.8V454.1c0 11.9 12.8 20.2 24.1 16.5C55.6 460.1 105.5 448 144 448c33.9 0 79 14 105.6 23.5zm76.8 0C353 462 398.1 448 432 448c38.5 0 88.4 12.1 119.9 22.6c11.3 3.8 24.1-4.6 24.1-16.5V83.8c0-12.1-6.8-23.3-18.1-27.6C529.7 45.3 482.5 32 432 32c-58.4 0-103.4 20-123 35.6c-3.3 2.6-5 6.8-5 11V456c0 11.4 11.7 19.3 22.4 15.5z"/>
-                        </svg>
-                        <span>MSBTE Notes &amp; Info</span>
-                    </a>
-                </div>
-
-                <!-- Middle: Desktop Nav with Hover & Click Dropdowns -->
-                <div class="hidden md:flex space-x-6 items-center">
-                    <a href="/" class="hover:text-blue-500 font-medium text-gray-700">Home</a>
-                    <a href="/start.html" class="hover:text-blue-500 font-medium text-gray-700">Start Here</a>
-
-                    <!-- Notes & Study Dropdown -->
-                    <div class="relative group py-2 nav-dropdown">
-                        <button type="button" onclick="toggleDropdown(this, event)" class="flex items-center gap-1 hover:text-blue-500 font-semibold text-blue-600 focus:outline-none" aria-haspopup="true" aria-expanded="false">
-                            <span>Notes &amp; Study</span>
-                            <svg class="w-4 h-4 transition-transform duration-200 dropdown-arrow" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
-                        </button>
-                        <div class="dropdown-menu absolute left-0 top-full -mt-1 w-64 bg-white rounded-xl shadow-xl border border-gray-100 py-2 hidden group-hover:block transition-all z-50">
-                            <a href="/notes/" class="flex items-center gap-2.5 px-4 py-2.5 text-sm text-blue-600 font-semibold bg-blue-50/60 border-l-2 border-blue-600">
-                                <span class="w-2 h-2 rounded-full bg-blue-600 flex-shrink-0"></span>
-                                <div>
-                                    <div class="font-semibold text-blue-700">Notes &amp; Study Library</div>
-                                    <div class="text-xs text-blue-600">470+ verified K-Scheme study materials</div>
-                                </div>
-                            </a>
-                            <a href="/pyq/" class="flex items-center gap-2.5 px-4 py-2.5 text-sm text-gray-700 hover:bg-rose-50 hover:text-rose-600 font-medium transition">
-                                <span class="w-2 h-2 rounded-full bg-rose-500 flex-shrink-0"></span>
-                                <div>
-                                    <div class="font-semibold text-gray-900">Question Papers (PYQ)</div>
-                                    <div class="text-xs text-gray-500">117+ subjects summer &amp; winter papers</div>
-                                </div>
-                            </a>
-                            <a href="/model-answer/" class="flex items-center gap-2.5 px-4 py-2.5 text-sm text-gray-700 hover:bg-emerald-50 hover:text-emerald-600 font-medium transition">
-                                <span class="w-2 h-2 rounded-full bg-emerald-500 flex-shrink-0"></span>
-                                <div>
-                                    <div class="font-semibold text-gray-900">Model Answer Papers</div>
-                                    <div class="text-xs text-gray-500">Official solved papers &amp; marking schemes</div>
-                                </div>
-                            </a>
-                            <a href="/video-course/" class="flex items-center gap-2.5 px-4 py-2.5 text-sm text-gray-700 hover:bg-purple-50 hover:text-purple-600 font-medium transition">
-                                <span class="w-2 h-2 rounded-full bg-purple-500 flex-shrink-0"></span>
-                                <div>
-                                    <div class="font-semibold text-gray-900">Video Courses</div>
-                                    <div class="text-xs text-gray-500">Engineering tutorials &amp; lectures</div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-
-                    <a href="/pyq/" class="hover:text-blue-500 font-medium text-gray-700">PYQ Papers</a>
-                    <a href="/model-answer/" class="hover:text-blue-500 font-medium text-gray-700">Model Answers</a>
-                    <a href="/blog/" class="hover:text-blue-500 font-medium text-gray-700">Blog</a>
-                    <a href="/news/" class="hover:text-red-500 font-medium text-gray-700 flex items-center gap-1.5">
-                        <span class="inline-block w-2 h-2 rounded-full bg-red-500 animate-pulse"></span>
-                        <span>News</span>
-                    </a>
-
-                    <!-- Jobs & Career Dropdown -->
-                    <div class="relative group py-2 nav-dropdown">
-                        <button type="button" onclick="toggleDropdown(this, event)" class="flex items-center gap-1 hover:text-blue-500 font-medium text-gray-700 focus:outline-none" aria-haspopup="true" aria-expanded="false">
-                            <span>Jobs</span>
-                            <svg class="w-4 h-4 transition-transform duration-200 dropdown-arrow" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
-                        </button>
-                        <div class="dropdown-menu absolute left-0 top-full -mt-1 w-52 bg-white rounded-xl shadow-xl border border-gray-100 py-2 hidden group-hover:block transition-all z-50">
-                            <a href="/jobs/index.html" class="flex items-center gap-2.5 px-4 py-2.5 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-600 font-medium transition">
-                                <span class="w-2 h-2 rounded-full bg-amber-500"></span>
-                                <span>Jobs Portal</span>
-                            </a>
-                            <a href="/internships.html" class="flex items-center gap-2.5 px-4 py-2.5 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-600 font-medium transition">
-                                <span class="w-2 h-2 rounded-full bg-indigo-500"></span>
-                                <span>Internships</span>
-                            </a>
-                        </div>
-                    </div>
-
-                    <a href="/contact.html" class="hover:text-blue-500 font-medium text-gray-700">Contact</a>
-                </div>
-
-                <!-- Right: Mobile Menu Toggle Button -->
-                <div class="flex items-center md:hidden">
-                    <button onclick="toggleMobileMenu()" class="mobile-menu-button p-2 text-gray-600 hover:text-blue-600 focus:outline-none min-h-[44px] min-w-[44px] flex items-center justify-center" aria-controls="mobileNav" aria-expanded="false" aria-label="Toggle menu">
-                        <svg id="menuIcon" class="h-6 w-6 transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"/>
-                        </svg>
-                        <svg id="closeIcon" class="h-6 w-6 hidden transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
-                        </svg>
-                    </button>
-                </div>
-            </div>
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16">
+        <!-- Left: Logo -->
+        <div class="flex items-center">
+          <a href="/" class="flex items-center text-blue-600 font-bold text-xl font-display">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 mr-2" viewBox="0 0 576 512" fill="currentColor">
+              <path
+                d="M249.6 471.5c10.8 3.8 22.4-4.1 22.4-15.5V78.6c0-4.2-1.6-8.4-5-11C247.4 52 202.4 32 144 32C93.5 32 46.3 45.3 18.1 56.1C6.8 60.5 0 71.7 0 83.8V454.1c0 11.9 12.8 20.2 24.1 16.5C55.6 460.1 105.5 448 144 448c33.9 0 79 14 105.6 23.5zm76.8 0C353 462 398.1 448 432 448c38.5 0 88.4 12.1 119.9 22.6c11.3 3.8 24.1-4.6 24.1-16.5V83.8c0-12.1-6.8-23.3-18.1-27.6C529.7 45.3 482.5 32 432 32c-58.4 0-103.4 20-123 35.6c-3.3 2.6-5 6.8-5 11V456c0 11.4 11.7 19.3 22.4 15.5z" />
+            </svg>
+            MSBTE Notes & Info
+          </a>
         </div>
 
-        <!-- Modern Mobile Navigation Overlay Drawer (Scroll-locked, never overlapping) -->
-        <div id="mobileNav" class="fixed inset-0 bg-white z-50 transform translate-x-full transition-transform duration-300 ease-in-out md:hidden overflow-y-auto pt-20 px-6" style="z-index: 9999 !important;">
-            <button onclick="toggleMobileMenu()" class="absolute top-5 right-5 p-2 text-gray-600 hover:text-blue-600 focus:outline-none min-h-[44px] min-w-[44px] flex items-center justify-center" aria-label="Close menu">
-                <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
-                </svg>
+        <!-- Middle: Desktop Nav -->
+        <div class="hidden md:flex space-x-6 items-center">
+          <a href="/" class="hover:text-blue-500 font-medium">Home</a>
+          <a href="/start.html"
+            class="px-3 py-1 rounded-full bg-blue-50 text-blue-600 hover:bg-blue-600 hover:text-white font-semibold text-sm transition flex items-center gap-1.5 border border-blue-100"><span
+              class="w-1.5 h-1.5 rounded-full bg-blue-600"></span>Start Here</a>
+
+          <!-- Notes Dropdown -->
+          <div class="relative group py-2 nav-dropdown">
+            <button type="button" onclick="toggleDropdown(this, event)"
+              class="flex items-center gap-1 hover:text-blue-500 font-medium focus:outline-none" aria-haspopup="true"
+              aria-expanded="false">
+              <span>Notes</span>
+              <svg class="w-4 h-4 transition-transform duration-200 group-hover:rotate-180 dropdown-arrow" fill="none"
+                stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+              </svg>
             </button>
-
-            <div class="flex flex-col space-y-3.5">
-                <a href="/" onclick="toggleMobileMenu()" class="text-base font-semibold text-gray-800 border-b border-gray-100 pb-2.5">Home</a>
-                <a href="/start.html" onclick="toggleMobileMenu()" class="text-base font-semibold text-blue-600 border-b border-gray-100 pb-2.5 flex items-center justify-between">
-                    <span>Start Here Hub</span>
-                    <span class="text-[11px] font-medium bg-blue-50 text-blue-600 px-2 py-0.5 rounded-full border border-blue-200">Start</span>
-                </a>
-
-                <!-- Notes Mobile Submenu (Accordion) -->
-                <div class="border-b border-gray-100 pb-2.5">
-                    <button type="button" onclick="toggleMobileSubmenu('mobileNotesSubmenu', 'mobileNotesArrow')" class="w-full flex items-center justify-between text-base font-semibold text-gray-800 py-1 focus:outline-none">
-                        <span class="flex items-center gap-2">
-                            <span>Notes &amp; Study</span>
-                            <span class="text-xs font-sans font-medium px-2 py-0.5 rounded-full bg-blue-100 text-blue-700">4 Links</span>
-                        </span>
-                        <svg id="mobileNotesArrow" class="w-5 h-5 text-gray-500 transition-transform duration-200 transform rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-                        </svg>
-                    </button>
-                    <div id="mobileNotesSubmenu" class="space-y-1 pl-2 pt-1 pb-1 transition-all">
-                        <a href="/notes/" onclick="toggleMobileMenu()" class="flex items-center gap-2.5 py-2 px-3 rounded-lg text-sm font-semibold text-blue-600 bg-blue-50 transition border border-blue-100">
-                            <span class="w-2 h-2 rounded-full bg-blue-600 flex-shrink-0"></span>
-                            <div>
-                                <div class="font-semibold text-blue-700">Notes &amp; Study Library</div>
-                                <div class="text-xs text-blue-600">470+ verified study materials &amp; notes</div>
-                            </div>
-                        </a>
-                        <a href="/pyq/" onclick="toggleMobileMenu()" class="flex items-center gap-2.5 py-2 px-3 rounded-lg text-sm font-medium text-gray-700 hover:bg-rose-50 transition">
-                            <span class="w-2 h-2 rounded-full bg-rose-500 flex-shrink-0"></span>
-                            <div>
-                                <div class="font-medium text-gray-900">Question Papers (PYQ)</div>
-                                <div class="text-xs text-gray-500">117+ subjects summer &amp; winter papers</div>
-                            </div>
-                        </a>
-                        <a href="/model-answer/" onclick="toggleMobileMenu()" class="flex items-center gap-2.5 py-2 px-3 rounded-lg text-sm font-medium text-gray-700 hover:bg-emerald-50 transition">
-                            <span class="w-2 h-2 rounded-full bg-emerald-500 flex-shrink-0"></span>
-                            <div>
-                                <div class="font-medium text-gray-900">Model Answer Papers</div>
-                                <div class="text-xs text-gray-500">Official solved papers &amp; marking schemes</div>
-                            </div>
-                        </a>
-                        <a href="/video-course/" onclick="toggleMobileMenu()" class="flex items-center gap-2.5 py-2 px-3 rounded-lg text-sm font-medium text-gray-700 hover:bg-purple-50 transition">
-                            <span class="w-2 h-2 rounded-full bg-purple-500 flex-shrink-0"></span>
-                            <div>
-                                <div class="font-medium text-gray-900">Video Courses</div>
-                                <div class="text-xs text-gray-500">Engineering tutorials &amp; concept walkthroughs</div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-
-                <a href="/pyq/" onclick="toggleMobileMenu()" class="text-base font-semibold text-gray-800 border-b border-gray-100 pb-2.5">PYQ Papers</a>
-                <a href="/model-answer/" onclick="toggleMobileMenu()" class="text-base font-semibold text-gray-800 border-b border-gray-100 pb-2.5">Model Answers</a>
-                <a href="/blog/" onclick="toggleMobileMenu()" class="text-base font-semibold text-gray-800 border-b border-gray-100 pb-2.5">Blog</a>
-                <a href="/news/" onclick="toggleMobileMenu()" class="text-base font-semibold text-red-600 border-b border-gray-100 pb-2.5 flex items-center justify-between">
-                    <span>News Updates</span>
-                    <span class="text-xs bg-red-100 text-red-600 font-semibold px-2 py-0.5 rounded-full uppercase tracking-wider">Live</span>
-                </a>
-
-                <!-- Jobs Mobile Submenu (Accordion) -->
-                <div class="border-b border-gray-100 pb-2.5">
-                    <button type="button" onclick="toggleMobileSubmenu('mobileJobsSubmenu', 'mobileJobsArrow')" class="w-full flex items-center justify-between text-base font-semibold text-gray-800 py-1 focus:outline-none">
-                        <span class="flex items-center gap-2">
-                            <span>Jobs &amp; Career</span>
-                            <span class="text-xs font-sans font-medium px-2 py-0.5 rounded-full bg-blue-100 text-blue-700">2 Links</span>
-                        </span>
-                        <svg id="mobileJobsArrow" class="w-5 h-5 text-gray-500 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-                        </svg>
-                    </button>
-                    <div id="mobileJobsSubmenu" class="hidden space-y-1 pl-2 pt-1 pb-1 transition-all">
-                        <a href="/jobs/index.html" onclick="toggleMobileMenu()" class="flex items-center gap-2.5 py-2 px-3 rounded-lg text-sm font-medium text-gray-700 hover:bg-blue-50 hover:text-blue-600 transition">
-                            <span class="w-2 h-2 rounded-full bg-amber-500"></span>
-                            <div>
-                                <div class="font-medium text-gray-900">Jobs Portal</div>
-                                <div class="text-xs text-gray-500">MSBTE diploma jobs &amp; freshers hiring</div>
-                            </div>
-                        </a>
-                        <a href="/internships.html" onclick="toggleMobileMenu()" class="flex items-center gap-2.5 py-2 px-3 rounded-lg text-sm font-medium text-gray-700 hover:bg-blue-50 hover:text-blue-600 transition">
-                            <span class="w-2 h-2 rounded-full bg-indigo-500"></span>
-                            <div>
-                                <div class="font-medium text-gray-900">Internships</div>
-                                <div class="text-xs text-gray-500">Paid &amp; verified summer engineering internships</div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-
-                <a href="/about.html" onclick="toggleMobileMenu()" class="text-base font-semibold text-gray-800 border-b border-gray-100 pb-2.5">About</a>
-                <a href="/contact.html" onclick="toggleMobileMenu()" class="text-base font-semibold text-gray-800 border-b border-gray-100 pb-2.5">Contact</a>
+            <div
+              class="dropdown-menu absolute left-0 top-full -mt-1 w-60 bg-white rounded-xl shadow-xl border border-gray-100 py-2 hidden group-hover:block transition-all z-50">
+              <a href="/#notes"
+                class="flex items-center gap-2.5 px-4 py-2.5 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-600 font-medium transition">
+                <span class="w-2 h-2 rounded-full bg-blue-500 flex-shrink-0"></span>
+                <span>Subject Notes</span>
+              </a>
+              <a href="/pyq/"
+                class="flex items-center gap-2.5 px-4 py-2.5 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-600 font-medium transition">
+                <span class="w-2 h-2 rounded-full bg-emerald-500 flex-shrink-0"></span>
+                <span>Question Papers (PYQ)</span>
+              </a>
+              <a href="/model-answer/"
+                class="flex items-center gap-2.5 px-4 py-2.5 text-sm text-blue-600 font-bold hover:bg-blue-50 transition border-l-2 border-blue-600 bg-blue-50/40">
+                <span class="w-2 h-2 rounded-full bg-blue-600 flex-shrink-0"></span>
+                <span>Model Answer Papers</span>
+              </a>
+              <a href="/video-course/"
+                class="flex items-center gap-2.5 px-4 py-2.5 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-600 font-medium transition">
+                <span class="w-2 h-2 rounded-full bg-purple-500 flex-shrink-0"></span>
+                <span>Video Courses</span>
+              </a>
             </div>
+          </div>
+
+          <a href="/#departments" class="hover:text-blue-500 font-medium">Departments</a>
+          <a href="/#blogs" class="hover:text-blue-500 font-medium">Blog</a>
+          <a href="/news/" class="hover:text-blue-500 font-medium">News</a>
+          <a href="/collegeinfo/" class="hover:text-blue-500 font-medium">Colleges</a>
+
+          <!-- Jobs Dropdown -->
+          <div class="relative group py-2 nav-dropdown">
+            <button type="button" onclick="toggleDropdown(this, event)"
+              class="flex items-center gap-1 hover:text-blue-500 font-medium focus:outline-none" aria-haspopup="true"
+              aria-expanded="false">
+              <span>Jobs</span>
+              <svg class="w-4 h-4 transition-transform duration-200 group-hover:rotate-180 dropdown-arrow" fill="none"
+                stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+              </svg>
+            </button>
+            <div
+              class="dropdown-menu absolute left-0 top-full -mt-1 w-52 bg-white rounded-xl shadow-xl border border-gray-100 py-2 hidden group-hover:block transition-all z-50">
+              <a href="/jobs/index.html"
+                class="flex items-center gap-2.5 px-4 py-2.5 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-600 font-medium transition">
+                <span class="text-base">💼</span>
+                <span>Jobs Portal</span>
+              </a>
+              <a href="/internships.html"
+                class="flex items-center gap-2.5 px-4 py-2.5 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-600 font-medium transition">
+                <span class="text-base">🎓</span>
+                <span>Internships</span>
+              </a>
+            </div>
+          </div>
+
+          <a href="/#about" class="hover:text-blue-500 font-medium">About</a>
+          <a href="/#contact" class="hover:text-blue-500 font-medium">Contact</a>
         </div>
-    </nav>
+
+        <!-- Right: Mobile Menu Toggle -->
+        <div class="flex items-center md:hidden">
+          <button onclick="toggleMobileMenu()"
+            class="mobile-menu-button p-2 text-gray-600 hover:text-blue-600 transition-colors focus:outline-none"
+            aria-controls="mobileNav" aria-expanded="false" aria-label="Open menu">
+            <svg id="menuIcon" xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 transition-transform duration-300"
+              fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+            </svg>
+            <svg id="closeIcon" xmlns="http://www.w3.org/2000/svg"
+              class="h-8 w-8 hidden transition-transform duration-300" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modern Mobile Menu Drawer -->
+    <div id="mobileNav"
+      class="fixed inset-0 bg-white transform translate-x-full transition-transform duration-300 ease-in-out md:hidden overflow-y-auto pt-20 px-6 shadow-2xl"
+      style="z-index: 9999;">
+
+      <!-- Close button for overlay -->
+      <button onclick="toggleMobileMenu()"
+        class="absolute top-6 right-6 p-2 text-gray-600 hover:text-blue-600 transition-colors focus:outline-none"
+        aria-label="Close menu">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+        </svg>
+      </button>
+
+      <div class="flex flex-col space-y-3 pb-8">
+        <a href="/" onclick="toggleMobileMenu()"
+          class="text-xl font-display font-bold text-gray-900 border-b border-gray-100 pb-2">Home</a>
+        <a href="/start.html" onclick="toggleMobileMenu()"
+          class="text-xl font-display font-bold text-blue-600 border-b border-gray-100 pb-2 flex items-center justify-between">
+          <span>🚀 Start Here Hub</span>
+          <span class="text-xs font-sans font-bold px-2 py-0.5 rounded-full bg-blue-100 text-blue-700">All
+            Resources</span>
+        </a>
+
+        <!-- Notes Mobile Submenu (Accordion) -->
+        <div class="border-b border-gray-100 pb-2">
+          <button type="button" onclick="toggleMobileSubmenu('mobileNotesSubmenu', 'mobileNotesArrow')"
+            class="w-full flex items-center justify-between text-xl font-display font-bold text-gray-900 py-1.5 focus:outline-none">
+            <span class="flex items-center gap-2">
+              <span>Notes &amp; Study</span>
+              <span class="text-xs font-sans font-semibold px-2 py-0.5 rounded-full bg-blue-100 text-blue-700">4
+                Links</span>
+            </span>
+            <svg id="mobileNotesArrow"
+              class="w-5 h-5 text-gray-500 transition-transform duration-200 transform rotate-180" fill="none"
+              stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+            </svg>
+          </button>
+          <div id="mobileNotesSubmenu" class="space-y-1 pl-2 pt-1 pb-1 transition-all">
+            <a href="/#notes" onclick="toggleMobileMenu()"
+              class="flex items-center gap-2.5 py-2 px-3 rounded-lg text-sm font-medium text-gray-700 hover:bg-blue-50 hover:text-blue-600 transition">
+              <span class="w-2 h-2 rounded-full bg-blue-500 flex-shrink-0"></span>
+              <div>
+                <div class="font-semibold text-gray-900">Subject Notes</div>
+                <div class="text-xs text-gray-500">K-Scheme diploma PDF study notes</div>
+              </div>
+            </a>
+            <a href="/pyq/" onclick="toggleMobileMenu()"
+              class="flex items-center gap-2.5 py-2 px-3 rounded-lg text-sm font-medium text-gray-700 hover:bg-blue-50 hover:text-blue-600 transition">
+              <span class="w-2 h-2 rounded-full bg-emerald-500 flex-shrink-0"></span>
+              <div>
+                <div class="font-semibold text-gray-900">Question Papers (PYQ)</div>
+                <div class="text-xs text-gray-500">Summer 2026 &amp; Winter 2025 papers</div>
+              </div>
+            </a>
+            <a href="/model-answer/" onclick="toggleMobileMenu()"
+              class="flex items-center gap-2.5 py-2 px-3 rounded-lg text-sm font-bold text-blue-600 bg-blue-50/80 hover:bg-blue-50 transition border border-blue-100">
+              <span class="w-2 h-2 rounded-full bg-blue-600 flex-shrink-0"></span>
+              <div>
+                <div class="font-bold text-blue-700">Model Answer Papers</div>
+                <div class="text-xs text-blue-600">Official solved papers &amp; marking schemes</div>
+              </div>
+            </a>
+            <a href="/video-course/" onclick="toggleMobileMenu()"
+              class="flex items-center gap-2.5 py-2 px-3 rounded-lg text-sm font-medium text-gray-700 hover:bg-blue-50 hover:text-blue-600 transition">
+              <span class="w-2 h-2 rounded-full bg-purple-500 flex-shrink-0"></span>
+              <div>
+                <div class="font-semibold text-gray-900">Video Courses</div>
+                <div class="text-xs text-gray-500">Video tutorials and concept lectures</div>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <a href="/#departments" onclick="toggleMobileMenu()"
+          class="text-xl font-display font-bold text-gray-900 border-b border-gray-100 pb-2">Departments</a>
+        <a href="/#blogs" onclick="toggleMobileMenu()"
+          class="text-xl font-display font-bold text-gray-900 border-b border-gray-100 pb-2">Blog</a>
+        <a href="/news/" onclick="toggleMobileMenu()"
+          class="text-xl font-display font-bold text-red-600 border-b border-gray-100 pb-2 flex items-center justify-between">
+          <span>🔴 Breaking News</span>
+          <span class="text-xs bg-red-100 text-red-700 px-2 py-0.5 rounded-full font-sans font-semibold">Live</span>
+        </a>
+        <a href="/collegeinfo/" onclick="toggleMobileMenu()"
+          class="text-xl font-display font-bold text-gray-900 border-b border-gray-100 pb-2">Colleges</a>
+
+        <!-- Jobs Mobile Submenu (Accordion) -->
+        <div class="border-b border-gray-100 pb-2">
+          <button type="button" onclick="toggleMobileSubmenu('mobileJobsSubmenu', 'mobileJobsArrow')"
+            class="w-full flex items-center justify-between text-xl font-display font-bold text-gray-900 py-1.5 focus:outline-none">
+            <span class="flex items-center gap-2">
+              <span>Jobs &amp; Career</span>
+              <span class="text-xs font-sans font-semibold px-2 py-0.5 rounded-full bg-indigo-100 text-indigo-700">2
+                Links</span>
+            </span>
+            <svg id="mobileJobsArrow"
+              class="w-5 h-5 text-gray-500 transition-transform duration-200 transform rotate-180" fill="none"
+              stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+            </svg>
+          </button>
+          <div id="mobileJobsSubmenu" class="space-y-1 pl-2 pt-1 pb-1 transition-all">
+            <a href="/jobs/index.html" onclick="toggleMobileMenu()"
+              class="flex items-center gap-2.5 py-2 px-3 rounded-lg text-base font-medium text-gray-700 hover:bg-blue-50 hover:text-blue-600 transition">
+              <span class="text-lg">💼</span>
+              <div>
+                <div class="font-semibold text-gray-900">Jobs Portal</div>
+                <div class="text-xs text-gray-500">Engineering jobs &amp; campus recruitments</div>
+              </div>
+            </a>
+            <a href="/internships.html" onclick="toggleMobileMenu()"
+              class="flex items-center gap-2.5 py-2 px-3 rounded-lg text-base font-medium text-gray-700 hover:bg-blue-50 hover:text-blue-600 transition">
+              <span class="text-lg">🎓</span>
+              <div>
+                <div class="font-semibold text-gray-900">Internships</div>
+                <div class="text-xs text-gray-500">Verified summer/winter internships</div>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <a href="/#about" onclick="toggleMobileMenu()"
+          class="text-xl font-display font-bold text-gray-900 border-b border-gray-100 pb-2">About</a>
+        <a href="/#contact" onclick="toggleMobileMenu()"
+          class="text-xl font-display font-bold text-gray-900 border-b border-gray-100 pb-2">Contact</a>
+
+        <div class="pt-4">
+          <a href="https://whatsapp.com/channel/0029Vap8lWS3QxRxxdmaSR36" target="_blank" rel="noopener noreferrer"
+            class="btn-whatsapp block w-full text-white text-center py-3.5 rounded-xl font-bold shadow-md transition inline-flex items-center justify-center gap-2">
+            <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24" aria-hidden="true">
+              <path
+                d="M12.004 2C6.48 2 2 6.48 2 12.004c0 1.83.498 3.546 1.365 5.018L2 22l5.127-1.343A9.957 9.957 0 0 0 12.004 22C17.524 22 22 17.52 22 12.004S17.524 2 12.004 2zm5.727 14.17c-.24.674-1.388 1.28-1.928 1.358-.49.071-1.127.1-3.238-.767-2.697-1.109-4.436-3.842-4.57-4.02-.134-.179-1.084-1.442-1.084-2.75 0-1.309.686-1.954.93-2.218.243-.264.53-.33.707-.33.176 0 .353.002.507.01.163.008.382-.062.597.455.22.53.75 1.83.816 1.964.066.134.11.29.02.467-.088.178-.133.288-.265.443-.133.155-.278.347-.397.466-.133.133-.272.278-.117.544.155.265.688 1.134 1.474 1.834 1.012.9 1.865 1.18 2.13 1.313.266.133.42.111.576-.067.155-.177.663-.772.84-1.037.177-.266.354-.221.597-.133.243.089 1.545.729 1.81 1.018.265.289.442.433.508.544.067.111.067.643-.173 1.317z" />
+            </svg>
+            <span>Join WhatsApp Channel</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </nav>
 
     <!-- Main Content Container -->
     <main class="notes-clean max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 md:py-12">
@@ -1396,63 +1523,63 @@
     </section>
 
     <!-- Footer -->
-    <footer class="bg-indigo-950 text-blue-100 py-16 border-t border-indigo-900">
-        <div class="max-w-6xl mx-auto px-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10">
-            <div>
-                <a href="/" class="flex items-center gap-3 mb-5">
-                    <div class="p-2 bg-white/10 rounded-lg text-white">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" viewBox="0 0 576 512" fill="currentColor">
-                            <path d="M249.6 471.5c10.8 3.8 22.4-4.1 22.4-15.5V78.6c0-4.2-1.6-8.4-5-11C247.4 52 202.4 32 144 32C93.5 32 46.3 45.3 18.1 56.1C6.8 60.5 0 71.7 0 83.8V454.1c0 11.9 12.8 20.2 24.1 16.5C55.6 460.1 105.5 448 144 448c33.9 0 79 14 105.6 23.5zm76.8 0C353 462 398.1 448 432 448c38.5 0 88.4 12.1 119.9 22.6c11.3 3.8 24.1-4.6 24.1-16.5V83.8c0-12.1-6.8-23.3-18.1-27.6C529.7 45.3 482.5 32 432 32c-58.4 0-103.4 20-123 35.6c-3.3 2.6-5 6.8-5 11V456c0 11.4 11.7 19.3 22.4 15.5z" />
-                        </svg>
-                    </div>
-                    <span class="font-semibold text-xl text-white font-display">MSBTE Notes</span>
-                </a>
-                <p class="text-sm leading-relaxed text-indigo-200">
-                    We provide free and verified study materials, notes, model answers, and syllabus roadmaps for MSBTE diploma engineering students across all branches.
-                </p>
-            </div>
+    <footer class="text-white pt-10 sm:pt-12 pb-24 md:pb-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+      <div>
+        <h3 class="text-xl font-semibold mb-4">About Us</h3>
+        <p class="text-sm">We provide free and premium study materials, notes, and guidance for MSBTE diploma
+          engineering students across all departments.</p>
+      </div>
+      <div>
+        <h3 class="text-xl font-semibold mb-4">Quick Links</h3>
+        <ul class="space-y-2 text-sm">
+          <li><a href="/" class="hover:underline">Home</a></li>
+          <li><a href="/start.html" class="hover:underline text-sky-400 font-semibold hover:text-sky-300">Start Here
+              Directory</a></li>
+          <li><a href="/Notes/" class="hover:underline">Subject Study Notes</a></li>
+          <li><a href="/pyq/" class="hover:underline">Question Papers (PYQ)</a></li>
+          <li><a href="/model-answer/" class="hover:underline">Model Answer Papers</a></li>
+          <li><a href="/scheme/" class="hover:underline">Syllabus &amp; Schemes</a></li>
+          <li><a href="/#departments" class="hover:underline">Engineering Departments</a></li>
+          <li><a href="/mock-tests/" class="hover:underline">Mock Tests &amp; Quizzes</a></li>
+          <li><a href="/#blogs" class="hover:underline">Blog &amp; News</a></li>
+          <li><a href="/internships.html" class="hover:underline">Internships &amp; Jobs</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="text-xl font-semibold mb-4">Contact</h3>
+        <p class="text-sm mb-2"><a href="mailto:info.mraaglave@gmail.com"
+            class="hover:text-blue-400 transition inline-flex items-center gap-1.5"><span>📧</span><span>info.mraaglave@gmail.com</span></a>
+        </p>
+        <p class="text-sm mb-3"><a href="tel:+917083236221"
+            class="hover:text-blue-400 transition inline-flex items-center gap-1.5"><span>📱</span><span>+91 70832
+              36221</span></a></p>
+        <a href="https://whatsapp.com/channel/0029Vap8lWS3QxRxxdmaSR36" target="_blank" rel="noopener noreferrer"
+          class="inline-block mt-2 btn-whatsapp text-white px-5 py-2.5 rounded-full font-semibold text-sm transition shadow-lg shadow-green-950/30">
+          Join WhatsApp Channel
+        </a>
+      </div>
+    </div>
+    <div class="flex justify-center mt-8">
+      <a href="https://www.producthunt.com/products/msbte-notes-info/reviews/new?utm_source=badge-product_review&utm_medium=badge&utm_source=badge-msbte&#0045;notes&#0045;info"
+        target="_blank"><img
+          src="https://api.producthunt.com/widgets/embed-image/v1/product_review.svg?product_id=1131454&theme=light"
+          alt="MSBTE&#0032;Notes&#0032;&#0038;&#0032;Info - we&#0032;provide&#0032;free&#0032;&#0038;&#0032;premium&#0032;study&#0032;materials&#0032;&#0038;&#0032;notes&#0032;for&#0032;msbte&#0032; | Product Hunt"
+          style="width: 250px; height: 54px;" width="250" height="54" /></a>
+    </div>
+    <div class="text-center mt-10 text-sm text-blue-100">
+      <p>
+        <a href="/about.html" class="hover:underline">About</a> |
+        <a href="/sitemap.html" class="hover:underline">Sitemap</a> |
+        <a href="/privacy-policy.html" class="hover:underline">Privacy Policy</a> |
+        <a href="/contact.html" class="hover:underline">Contact</a>
+      </p>
+      <p class="mt-2 text-xs text-blue-200">Not affiliated with or endorsed by MSBTE. Official information is available
+        at msbte.ac.in.</p>
+      <p class="mt-1">&copy; 2026 MSBTE Notes & Info. All rights reserved.</p>
+    </div>
 
-            <div>
-                <h3 class="text-white font-semibold text-lg mb-5 font-display">Quick Links</h3>
-                <ul class="space-y-2.5 text-sm">
-                    <li><a href="/" class="hover:text-white transition-colors flex items-center gap-2"><span class="w-1.5 h-1.5 bg-blue-400 rounded-full"></span> Home</a></li>
-                    <li><a href="/start.html" class="text-white font-semibold flex items-center gap-2"><span class="w-1.5 h-1.5 bg-emerald-400 rounded-full"></span> Start Here Directory</a></li>
-                    <li><a href="/notes/" class="hover:text-white transition-colors flex items-center gap-2"><span class="w-1.5 h-1.5 bg-blue-400 rounded-full"></span> Notes Library</a></li>
-                    <li><a href="/pyq/" class="hover:text-white transition-colors flex items-center gap-2"><span class="w-1.5 h-1.5 bg-rose-400 rounded-full"></span> Question Papers (PYQ)</a></li>
-                    <li><a href="/model-answer/" class="hover:text-white transition-colors flex items-center gap-2"><span class="w-1.5 h-1.5 bg-emerald-400 rounded-full"></span> Model Answer Papers</a></li>
-                    <li><a href="/video-course/" class="hover:text-white transition-colors flex items-center gap-2"><span class="w-1.5 h-1.5 bg-purple-400 rounded-full"></span> Video Courses</a></li>
-                    <li><a href="/blog/" class="hover:text-white transition-colors flex items-center gap-2"><span class="w-1.5 h-1.5 bg-blue-400 rounded-full"></span> Blog &amp; Updates</a></li>
-                    <li><a href="/about.html" class="hover:text-white transition-colors flex items-center gap-2"><span class="w-1.5 h-1.5 bg-blue-400 rounded-full"></span> About Us</a></li>
-                    <li><a href="/contact.html" class="hover:text-white transition-colors flex items-center gap-2"><span class="w-1.5 h-1.5 bg-blue-400 rounded-full"></span> Contact</a></li>
-                </ul>
-            </div>
-
-            <div>
-                <h3 class="text-white font-semibold text-lg mb-5 font-display">Student Support</h3>
-                <div class="space-y-3 text-sm">
-                    <p class="flex items-center gap-2.5"><span class="text-indigo-400">Email:</span> info.mraaglave@gmail.com</p>
-                    <p class="flex items-center gap-2.5"><span class="text-indigo-400">WhatsApp:</span> +91 70832 36221</p>
-
-                    <a href="https://chat.whatsapp.com/KFcI5VeJOpjLPgp30NXMfQ" target="_blank" rel="noopener noreferrer"
-                        class="inline-flex items-center gap-2 mt-4 bg-[#25D366] text-white px-5 py-2.5 rounded-full font-semibold text-sm hover:bg-[#20bd5a] transition-colors shadow-lg min-h-[44px]">
-                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.008-.57-.008-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
-                        </svg>
-                        Join WhatsApp Group
-                    </a>
-                </div>
-            </div>
-        </div>
-
-        <div class="max-w-6xl mx-auto px-4 mt-12 pt-8 border-t border-indigo-900/60 flex flex-col md:flex-row justify-between items-center text-xs text-indigo-300 gap-4">
-            <p>&copy; 2026 MSBTE Notes &amp; Info. All rights reserved.</p>
-            <div class="flex items-center gap-6">
-                <a href="/blog/" class="hover:text-white transition-colors">Blog</a>
-                <a href="/sitemap" class="hover:text-white transition-colors">Sitemap</a>
-                <a href="/privacy-policy.html" class="hover:text-white transition-colors">Privacy</a>
-            </div>
-        </div>
-    </footer>
+  </footer>
 
     <!-- Scripts -->
     <script src="/Notes/notes.js"></script>
