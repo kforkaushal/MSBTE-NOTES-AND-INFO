@@ -1,0 +1,553 @@
+/* ==========================================================================
+   MSBTE Notes & Resources - Clean Hallmark Stylesheet (notes-clean.css)
+   Scoped to .notes-clean (Page A: Notes/index.html) and #notes (Page B: index.html)
+   Reuses existing site tokens; enforces strict rhythm, clean hierarchy & unity
+   ========================================================================== */
+
+:root,
+.notes-clean {
+  --nc-gradient: linear-gradient(135deg, #2563eb 0%, #7c3aed 100%); /* existing --primary-gradient */
+  --nc-bg:        #f8fafc;      /* existing page background */
+  --nc-surface:   #ffffff;
+  --nc-border:    #e5e7eb;      /* gray-200 */
+  --nc-ink:       #111827;      /* gray-900 */
+  --nc-ink-2:     #4b5563;      /* gray-600 */
+  --nc-ink-muted: #6b7280;      /* gray-500 */
+  --nc-blue:      #2563eb;      /* primary / links / active */
+  --nc-blue-hover:#1d4ed8;
+  --nc-blue-tint: #eff6ff;      /* blue-50 */
+  --nc-radius:    16px;         /* cards (existing rounded-2xl) */
+  --nc-radius-sm: 12px;         /* inputs, chips groups */
+  --nc-shadow:    0 10px 35px -5px rgba(0, 0, 0, 0.05);  /* existing --glass-shadow */
+  --nc-shadow-hover: 0 12px 28px -5px rgba(37, 99, 235, 0.12);
+}
+
+/* --------------------------------------------------------------------------
+   1. Global Accessibility, Focus Visible & Reduced Motion
+   -------------------------------------------------------------------------- */
+.notes-clean a:focus-visible,
+.notes-clean button:focus-visible,
+.notes-clean input:focus-visible,
+.notes-clean select:focus-visible,
+.notes-clean [tabindex="0"]:focus-visible,
+#notes a:focus-visible,
+#notes button:focus-visible,
+#notes input:focus-visible,
+#notes [tabindex="0"]:focus-visible {
+  outline: 2px solid var(--nc-blue) !important;
+  outline-offset: 2px !important;
+}
+
+.notes-clean button,
+.notes-clean a,
+.notes-clean input,
+.notes-clean select,
+.notes-clean [role="button"],
+#notes button,
+#notes a,
+#notes input {
+  touch-action: manipulation;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .notes-clean *,
+  .notes-clean *::before,
+  .notes-clean *::after,
+  #notes *,
+  #notes *::before,
+  #notes *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    transform: none !important;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   2. Target A (Page A: Notes/index.html) - Structural Consistency
+   -------------------------------------------------------------------------- */
+.notes-clean {
+  color: var(--nc-ink);
+  line-height: 1.5;
+}
+
+/* Headings font & weight stay Clash Display 600 */
+.notes-clean h1,
+.notes-clean h2,
+.notes-clean h3,
+.notes-clean h4 {
+  font-family: 'Clash Display', 'Inter', sans-serif !important;
+  font-weight: 600 !important;
+  letter-spacing: -0.02em;
+}
+
+/* Spacing scale: consistent section rhythm */
+.notes-clean .section-spacing {
+  margin-bottom: 48px;
+}
+@media (max-width: 640px) {
+  .notes-clean .section-spacing {
+    margin-bottom: 32px;
+  }
+}
+
+/* Breadcrumb styling */
+.notes-clean nav[aria-label="Breadcrumb"] {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  color: var(--nc-ink-muted);
+  margin-bottom: 24px;
+}
+.notes-clean nav[aria-label="Breadcrumb"] a,
+.notes-clean nav[aria-label="Breadcrumb"] button {
+  color: var(--nc-ink-2);
+  font-weight: 500;
+  transition: color 0.15s ease;
+}
+.notes-clean nav[aria-label="Breadcrumb"] a:hover,
+.notes-clean nav[aria-label="Breadcrumb"] button:hover {
+  color: var(--nc-blue);
+}
+.notes-clean nav[aria-label="Breadcrumb"] #breadcrumb-root {
+  font-weight: 600;
+  color: var(--nc-ink);
+}
+
+/* Hero Section */
+.notes-clean header {
+  text-align: center;
+  margin-bottom: 32px;
+}
+.notes-clean header h1 {
+  font-size: clamp(1.75rem, 3.5vw + 0.5rem, 3rem) !important;
+  line-height: 1.18 !important;
+  color: var(--nc-ink) !important;
+  margin-bottom: 16px !important;
+}
+.notes-clean header p {
+  color: var(--nc-ink-2) !important;
+  font-size: 15px !important;
+  line-height: 1.6 !important;
+  max-width: 720px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 24px !important;
+}
+
+/* Hero Eyebrow Pill */
+.notes-clean header .inline-flex.rounded-full {
+  background: var(--nc-blue-tint) !important;
+  border: 1px solid #bfdbfe !important;
+  color: var(--nc-blue) !important;
+  padding: 6px 14px !important;
+  font-size: 12px !important;
+  font-weight: 600 !important;
+}
+
+/* KPI Badges - unified chip style */
+.notes-clean header .flex.flex-wrap.items-center.justify-center.gap-2 > div,
+.notes-clean header .flex.flex-wrap.items-center.justify-center.gap-2 > div.shadow-sm {
+  background: var(--nc-surface) !important;
+  border: 1px solid var(--nc-border) !important;
+  border-radius: 9999px !important;
+  padding: 6px 14px !important;
+  font-size: 12px !important;
+  font-weight: 600 !important;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04) !important;
+}
+
+/* Search Box Container (.glass-panel) */
+.notes-clean .glass-panel {
+  background: var(--nc-surface) !important;
+  border: 1px solid var(--nc-border) !important;
+  border-radius: var(--nc-radius) !important;
+  box-shadow: var(--nc-shadow) !important;
+  padding: 24px !important;
+  margin-bottom: 32px !important;
+}
+@media (max-width: 640px) {
+  .notes-clean .glass-panel {
+    padding: 16px !important;
+  }
+}
+
+/* Search input glass wrapper */
+.notes-clean .search-glass {
+  background: var(--nc-surface) !important;
+  border: 1.5px solid var(--nc-border) !important;
+  border-radius: var(--nc-radius-sm) !important;
+  transition: all 0.2s ease !important;
+}
+.notes-clean .search-glass:focus-within {
+  border-color: var(--nc-blue) !important;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15) !important;
+}
+.notes-clean #search-input {
+  font-size: 16px !important; /* Prevents iOS auto-zoom */
+  color: var(--nc-ink) !important;
+}
+
+/* Quick-filter Chips (One Chip Style, horizontal scroll on mobile) */
+.notes-clean .mt-4.flex.flex-wrap.items-center {
+  display: flex !important;
+  align-items: center !important;
+  gap: 8px !important;
+  overflow-x: auto !important;
+  flex-wrap: nowrap !important;
+  -webkit-overflow-scrolling: touch !important;
+  padding-bottom: 4px !important;
+  scrollbar-width: none !important;
+}
+.notes-clean .mt-4.flex.flex-wrap.items-center::-webkit-scrollbar {
+  display: none !important;
+}
+@media (min-width: 768px) {
+  .notes-clean .mt-4.flex.flex-wrap.items-center {
+    flex-wrap: wrap !important;
+    overflow-x: visible !important;
+  }
+}
+
+.notes-clean .quick-tag-chip {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  white-space: nowrap !important;
+  padding: 6px 14px !important;
+  min-height: 36px !important;
+  font-size: 12px !important;
+  font-weight: 600 !important;
+  border-radius: 9999px !important;
+  background: var(--nc-bg) !important;
+  border: 1px solid var(--nc-border) !important;
+  color: var(--nc-ink-2) !important;
+  transition: all 0.15s ease !important;
+  cursor: pointer !important;
+}
+.notes-clean .quick-tag-chip:hover {
+  background: var(--nc-blue-tint) !important;
+  border-color: #93c5fd !important;
+  color: var(--nc-blue) !important;
+  transform: translateY(-1px) !important;
+}
+.notes-clean .quick-tag-chip:active {
+  transform: scale(0.98) !important;
+}
+
+/* --------------------------------------------------------------------------
+   3. Unified Card Style (.folder-card and .resource-card)
+   -------------------------------------------------------------------------- */
+.notes-clean .folder-card {
+  background: var(--nc-surface) !important;
+  border: 1px solid var(--nc-border) !important;
+  border-radius: var(--nc-radius) !important;
+  padding: 16px !important;
+  display: flex !important;
+  align-items: center !important;
+  gap: 12px !important;
+  transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease !important;
+  cursor: pointer !important;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04) !important;
+}
+.notes-clean .folder-card:hover {
+  border-color: #93c5fd !important;
+  transform: translateY(-2px) !important;
+  box-shadow: var(--nc-shadow-hover) !important;
+}
+.notes-clean .folder-card:active {
+  transform: scale(0.98) !important;
+}
+.notes-clean .folder-card.folder-active {
+  border-color: var(--nc-blue) !important;
+  box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.2), var(--nc-shadow-hover) !important;
+  background: #fcfdfe !important;
+}
+
+/* Resource Cards in #resource-grid */
+.notes-clean .resource-card {
+  background: var(--nc-surface) !important;
+  border: 1px solid var(--nc-border) !important;
+  border-radius: var(--nc-radius) !important;
+  overflow: hidden !important;
+  display: flex !important;
+  flex-direction: column !important;
+  transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease !important;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04) !important;
+}
+.notes-clean .resource-card:hover {
+  border-color: #93c5fd !important;
+  transform: translateY(-2px) !important;
+  box-shadow: var(--nc-shadow-hover) !important;
+}
+.notes-clean .resource-card:active {
+  transform: scale(0.98) !important;
+}
+
+/* Grid Layout for Resources */
+.notes-clean #resource-grid {
+  display: grid !important;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)) !important;
+  gap: 16px !important;
+}
+@media (max-width: 600px) {
+  .notes-clean #resource-grid {
+    grid-template-columns: 1fr !important;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   4. Filter Matrix Panel, Chips, and Sort Controls
+   -------------------------------------------------------------------------- */
+.notes-clean .filter-chip {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  padding: 6px 14px !important;
+  min-height: 36px !important;
+  border-radius: 9999px !important;
+  font-size: 12px !important;
+  font-weight: 600 !important;
+  color: var(--nc-ink-2) !important;
+  background-color: var(--nc-bg) !important;
+  border: 1px solid var(--nc-border) !important;
+  transition: all 0.15s ease !important;
+  cursor: pointer !important;
+  white-space: nowrap !important;
+}
+.notes-clean .filter-chip:hover {
+  border-color: #93c5fd !important;
+  color: var(--nc-blue) !important;
+  background-color: var(--nc-blue-tint) !important;
+  transform: translateY(-1px) !important;
+}
+.notes-clean .filter-chip:active {
+  transform: scale(0.98) !important;
+}
+.notes-clean .filter-chip.active {
+  background: var(--nc-blue) !important;
+  border-color: var(--nc-blue) !important;
+  color: #ffffff !important;
+  box-shadow: 0 2px 8px rgba(37, 99, 235, 0.25) !important;
+}
+
+/* Section Headings */
+.notes-clean h2 {
+  font-size: 20px !important;
+  color: var(--nc-ink) !important;
+  line-height: 1.3 !important;
+}
+@media (min-width: 640px) {
+  .notes-clean h2 {
+    font-size: 24px !important;
+  }
+}
+.notes-clean h2 + p {
+  font-size: 13px !important;
+  color: var(--nc-ink-muted) !important;
+  line-height: 1.5 !important;
+  margin-top: 4px !important;
+}
+
+/* Sort Dropdown */
+.notes-clean #sort-dropdown {
+  background-color: var(--nc-surface) !important;
+  border: 1px solid var(--nc-border) !important;
+  border-radius: var(--nc-radius-sm) !important;
+  color: var(--nc-ink) !important;
+  font-size: 13px !important;
+  font-weight: 600 !important;
+  padding: 8px 32px 8px 12px !important;
+  transition: border-color 0.15s ease !important;
+}
+.notes-clean #sort-dropdown:focus {
+  border-color: var(--nc-blue) !important;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15) !important;
+}
+
+/* Active Filters Bar */
+.notes-clean #active-filters-bar {
+  background: var(--nc-blue-tint) !important;
+  border: 1px solid #bfdbfe !important;
+  border-radius: var(--nc-radius-sm) !important;
+  padding: 12px 16px !important;
+  margin-bottom: 24px !important;
+}
+
+/* Empty State */
+.notes-clean #no-results {
+  background: var(--nc-surface) !important;
+  border: 1.5px dashed var(--nc-border) !important;
+  border-radius: var(--nc-radius) !important;
+  padding: 48px 24px !important;
+  text-align: center !important;
+  box-shadow: none !important;
+}
+
+/* Pagination Buttons */
+.notes-clean .pagination-btn {
+  min-width: 40px !important;
+  height: 40px !important;
+  padding: 0 14px !important;
+  border-radius: var(--nc-radius-sm) !important;
+  border: 1px solid var(--nc-border) !important;
+  background: var(--nc-surface) !important;
+  color: var(--nc-ink-2) !important;
+  font-size: 13px !important;
+  font-weight: 600 !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  transition: all 0.15s ease !important;
+}
+.notes-clean .pagination-btn:hover:not(:disabled) {
+  border-color: var(--nc-blue) !important;
+  color: var(--nc-blue) !important;
+  background: var(--nc-blue-tint) !important;
+}
+.notes-clean .pagination-btn.active {
+  background: var(--nc-blue) !important;
+  border-color: var(--nc-blue) !important;
+  color: #ffffff !important;
+  box-shadow: 0 2px 6px rgba(37, 99, 235, 0.3) !important;
+}
+
+/* --------------------------------------------------------------------------
+   5. Recommended Books Strip & Amazon Collection Block
+   -------------------------------------------------------------------------- */
+.notes-clean #books {
+  background: var(--nc-surface) !important;
+  border-top: 1px solid var(--nc-border) !important;
+  padding: 48px 0 !important;
+}
+.notes-clean #books .scroller a {
+  border: 1px solid var(--nc-border) !important;
+  border-radius: var(--nc-radius) !important;
+  background: var(--nc-surface) !important;
+  transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease !important;
+}
+.notes-clean #books .scroller a:hover {
+  transform: translateY(-2px) !important;
+  border-color: #93c5fd !important;
+  box-shadow: var(--nc-shadow-hover) !important;
+}
+
+/* --------------------------------------------------------------------------
+   6. Target B (Page B: index.html - #notes Section Only)
+   -------------------------------------------------------------------------- */
+#notes {
+  background-color: var(--nc-bg) !important;
+}
+#notes .section-title {
+  font-family: 'Clash Display', 'Inter', sans-serif !important;
+  font-weight: 600 !important;
+  color: var(--nc-ink) !important;
+}
+
+/* Quick Nav Badges in #notes */
+#notes .flex-wrap a {
+  border-radius: 9999px !important;
+  font-size: 12px !important;
+  font-weight: 600 !important;
+  padding: 6px 14px !important;
+  border: 1px solid var(--nc-border) !important;
+  transition: all 0.15s ease !important;
+}
+#notes .flex-wrap a:hover {
+  border-color: #93c5fd !important;
+  transform: translateY(-1px) !important;
+}
+
+/* Search input in #notes */
+#notes #searchInput {
+  border: 1.5px solid var(--nc-border) !important;
+  border-radius: var(--nc-radius) !important;
+  background: var(--nc-surface) !important;
+  color: var(--nc-ink) !important;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04) !important;
+  font-size: 16px !important; /* Prevents iOS auto-zoom */
+}
+#notes #searchInput:focus {
+  border-color: var(--nc-blue) !important;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15) !important;
+}
+
+/* Filter Tabs in #notes */
+#notes .filter-btn {
+  border-radius: 9999px !important;
+  padding: 8px 18px !important;
+  font-size: 13px !important;
+  font-weight: 600 !important;
+  border: 1px solid var(--nc-border) !important;
+  background: var(--nc-surface) !important;
+  color: var(--nc-ink-2) !important;
+  transition: all 0.15s ease !important;
+}
+#notes .filter-btn:hover {
+  border-color: #93c5fd !important;
+  color: var(--nc-blue) !important;
+  background: var(--nc-blue-tint) !important;
+}
+#notes .filter-btn.active {
+  background: var(--nc-blue) !important;
+  border-color: var(--nc-blue) !important;
+  color: #ffffff !important;
+  box-shadow: 0 2px 8px rgba(37, 99, 235, 0.25) !important;
+}
+
+/* Resource Cards Grid in #notes */
+#notes #notesGrid {
+  display: grid !important;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)) !important;
+  gap: 16px !important;
+}
+@media (max-width: 600px) {
+  #notes #notesGrid {
+    grid-template-columns: 1fr !important;
+  }
+}
+
+#notes .resource-card {
+  border: 1px solid var(--nc-border) !important;
+  border-radius: var(--nc-radius) !important;
+  background: var(--nc-surface) !important;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04) !important;
+  transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease !important;
+}
+#notes .resource-card:hover {
+  border-color: #93c5fd !important;
+  transform: translateY(-2px) !important;
+  box-shadow: var(--nc-shadow-hover) !important;
+}
+#notes .resource-card:active {
+  transform: scale(0.98) !important;
+}
+
+/* Pagination buttons in #notes */
+#notes #pagination-container .pagination-btn {
+  min-width: 40px !important;
+  height: 40px !important;
+  padding: 0 14px !important;
+  border-radius: var(--nc-radius-sm) !important;
+  border: 1px solid var(--nc-border) !important;
+  background: var(--nc-surface) !important;
+  color: var(--nc-ink-2) !important;
+  font-size: 13px !important;
+  font-weight: 600 !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  transition: all 0.15s ease !important;
+}
+#notes #pagination-container .pagination-btn:hover:not(:disabled) {
+  border-color: var(--nc-blue) !important;
+  color: var(--nc-blue) !important;
+  background: var(--nc-blue-tint) !important;
+}
+#notes #pagination-container .pagination-btn.active {
+  background: var(--nc-blue) !important;
+  border-color: var(--nc-blue) !important;
+  color: #ffffff !important;
+  box-shadow: 0 2px 6px rgba(37, 99, 235, 0.3) !important;
+}
