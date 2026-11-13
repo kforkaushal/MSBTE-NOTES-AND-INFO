@@ -417,3 +417,27 @@ body.home .scrollbar-hide {
   -ms-overflow-style: none !important;
   scrollbar-width: none !important;
 }
+
+/* --------------------------------------------------------------------------
+   13. WhatsApp Popup Accessibility & Contrast Enhancements
+   -------------------------------------------------------------------------- */
+body.home #whatsappPopup #joinWhatsappBtn {
+  background-color: #15803D !important;
+  color: #FFFFFF !important;
+}
+
+body.home #whatsappPopup #denyWhatsappBtn {
+  color: #4B5563 !important;
+}
+
+body.home #whatsappPopup #closePopupBtn {
+  color: #4B5563 !important;
+}
+
+/* --------------------------------------------------------------------------
+   14. Cumulative Layout Shift (CLS) Stabilization
+   -------------------------------------------------------------------------- */
+body.home .hero-notebook-grid .flex-wrap {
+  min-height: 48px;
+}
+
