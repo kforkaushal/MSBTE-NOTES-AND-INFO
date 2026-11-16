@@ -327,6 +327,13 @@
             aspect-ratio: 16 / 9;
         }
 
+        .line-clamp-1 {
+            display: -webkit-box;
+            -webkit-line-clamp: 1;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+
         .line-clamp-2 {
             display: -webkit-box;
             -webkit-line-clamp: 2;
@@ -339,6 +346,39 @@
             -webkit-line-clamp: 3;
             -webkit-box-orient: vertical;
             overflow: hidden;
+        }
+
+        /* Search Autocomplete & Feedback Elevated Styling */
+        #search-live-dropdown {
+            background-color: #ffffff !important;
+            border: 1px solid #cbd5e1 !important;
+            box-shadow: 0 20px 35px -5px rgba(0, 0, 0, 0.2), 0 10px 10px -5px rgba(0, 0, 0, 0.05) !important;
+            z-index: 1000 !important;
+            opacity: 1 !important;
+        }
+
+        #search-live-dropdown * {
+            box-sizing: border-box;
+        }
+
+        #search-live-dropdown .search-suggest-item {
+            background-color: #ffffff !important;
+            transition: background-color 0.15s ease;
+        }
+
+        #search-live-dropdown .search-suggest-item:hover,
+        #search-live-dropdown .search-suggest-item.is-selected {
+            background-color: #eff6ff !important;
+        }
+
+        #search-feedback-bar {
+            background-color: #eff6ff !important;
+            border: 1px solid #bfdbfe !important;
+        }
+
+        #search-folders-collapsed-notice {
+            background-color: #eff6ff !important;
+            border: 1px solid #bfdbfe !important;
         }
 
         mark {
@@ -837,29 +877,80 @@
         <!-- Search & Master Navigation Hub -->
         <section class="max-w-5xl mx-auto mb-12">
             <!-- Search Bar Box -->
-            <div class="glass-panel rounded-2xl md:rounded-3xl p-4 sm:p-6 mb-8">
-                <div class="relative search-glass rounded-xl overflow-hidden flex items-center">
-                    <div class="pl-4 sm:pl-5 text-gray-400 pointer-events-none">
-                        <svg class="h-5 w-5 sm:h-6 sm:w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
-                        </svg>
+            <div class="glass-panel rounded-2xl md:rounded-3xl p-4 sm:p-6 mb-8 relative">
+                <!-- Search Input with Live Autocomplete Container -->
+                <div class="relative">
+                    <div class="relative search-glass rounded-xl overflow-hidden flex items-center">
+                        <div class="pl-4 sm:pl-5 text-gray-400 pointer-events-none flex-shrink-0">
+                            <svg class="h-5 w-5 sm:h-6 sm:w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                            </svg>
+                        </div>
+                        <input type="text" id="search-input"
+                            class="block w-full px-3 py-3.5 sm:py-4 bg-transparent text-gray-900 placeholder-gray-400 focus:outline-none text-base md:text-lg"
+                            placeholder="Search subjects (Operating System), codes (313301), PYQ, Model Answers..."
+                            autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+                        <button type="button" id="search-clear-btn"
+                            class="hidden pr-3 text-gray-400 hover:text-gray-600 min-h-[44px] min-w-[44px] flex items-center justify-center transition-colors flex-shrink-0"
+                            aria-label="Clear search">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                            </svg>
+                        </button>
+                        <!-- Quick Jump Search Button -->
+                        <button type="button" id="search-submit-btn"
+                            class="mr-2 sm:mr-3 px-3.5 py-2 bg-blue-600 hover:bg-blue-700 active:scale-95 text-white rounded-lg text-xs font-semibold flex items-center gap-1.5 transition shadow-sm min-h-[44px] flex-shrink-0"
+                            aria-label="Jump to search results">
+                            <span class="hidden sm:inline">Search</span>
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+                            </svg>
+                        </button>
+                        <div class="hidden lg:flex pr-4 items-center pointer-events-none flex-shrink-0">
+                            <kbd class="inline-flex items-center gap-1 px-2.5 py-1 text-xs font-mono font-medium text-gray-500 bg-gray-100 border border-gray-200 rounded-md shadow-sm">
+                                <span>Press</span> <span class="text-blue-600 font-semibold">/</span>
+                            </kbd>
+                        </div>
                     </div>
-                    <input type="text" id="search-input"
-                        class="block w-full px-3 py-3.5 sm:py-4 bg-transparent text-gray-900 placeholder-gray-400 focus:outline-none text-base md:text-lg"
-                        placeholder="Search subjects (Operating System), codes (313301), PYQ, Model Answers..."
-                        autocomplete="off">
-                    <button type="button" id="search-clear-btn"
-                        class="hidden pr-4 text-gray-400 hover:text-gray-600 min-h-[44px] min-w-[44px] flex items-center justify-center transition-colors"
-                        aria-label="Clear search">
-                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+
+                    <!-- Instant Live Autocomplete Dropdown -->
+                    <div id="search-live-dropdown"
+                        class="hidden absolute top-full left-0 right-0 mt-2 z-50 bg-white border border-gray-300 rounded-2xl shadow-2xl overflow-hidden">
+                        <div class="p-3 bg-gray-50 border-b border-gray-200 flex items-center justify-between text-xs text-gray-700 font-semibold">
+                            <span id="search-dropdown-header">Top Matches</span>
+                            <button type="button" id="search-dropdown-close" class="text-gray-400 hover:text-gray-600 p-1 min-h-[32px] min-w-[32px] flex items-center justify-center" aria-label="Close suggestions">
+                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+                            </button>
+                        </div>
+                        <div id="search-dropdown-list" class="bg-white max-h-64 sm:max-h-80 overflow-y-auto divide-y divide-gray-100">
+                            <!-- Populated dynamically via JS -->
+                        </div>
+                        <div class="p-2.5 bg-gray-50 border-t border-gray-200 text-center">
+                            <button type="button" id="search-dropdown-view-all"
+                                class="w-full py-2.5 px-4 bg-blue-600 hover:bg-blue-700 active:scale-95 text-white rounded-xl text-xs md:text-sm font-semibold flex items-center justify-center gap-2 shadow-sm transition">
+                                <span id="search-dropdown-view-all-text">View all matching materials below</span>
+                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"/></svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Instant Active Search Feedback & Direct Jump Banner -->
+                <div id="search-feedback-bar" class="hidden mt-3 p-3 bg-blue-50 border border-blue-200 rounded-xl flex items-center justify-between gap-3">
+                    <div class="flex items-center gap-2 text-xs md:text-sm text-blue-950 font-medium min-w-0">
+                        <span class="flex h-2.5 w-2.5 relative flex-shrink-0">
+                            <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-400 opacity-75"></span>
+                            <span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-blue-600"></span>
+                        </span>
+                        <span id="search-feedback-text" class="truncate">Searching...</span>
+                    </div>
+                    <button type="button" id="search-jump-btn"
+                        class="inline-flex items-center gap-1.5 px-3.5 py-1.5 bg-blue-600 hover:bg-blue-700 active:scale-95 text-white rounded-lg text-xs font-semibold shadow-sm transition min-h-[44px] flex-shrink-0">
+                        <span>Show Results</span>
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"/>
                         </svg>
                     </button>
-                    <div class="hidden md:flex pr-4 items-center pointer-events-none">
-                        <kbd class="inline-flex items-center gap-1 px-2.5 py-1 text-xs font-mono font-medium text-gray-500 bg-gray-100 border border-gray-200 rounded-md shadow-sm">
-                            <span>Press</span> <span class="text-blue-600 font-semibold">/</span>
-                        </kbd>
-                    </div>
                 </div>
 
                 <!-- Popular Search Quick Chips -->
@@ -881,8 +972,23 @@
                 </div>
             </div>
 
-            <!-- SECTION 1: Material Type Folders (PYQ, Model Answers, Notes, Question Banks, Manuals) -->
-            <div class="mb-10">
+            <!-- Notice shown during active search when folders are collapsed -->
+            <div id="search-folders-collapsed-notice" class="hidden mb-6 p-3.5 bg-blue-50 border border-blue-200 rounded-xl flex flex-col sm:flex-row sm:items-center justify-between gap-2.5 text-xs text-blue-900 shadow-sm">
+                <div class="flex items-center gap-2">
+                    <span class="p-1 rounded-md bg-blue-100 text-blue-700 flex-shrink-0">
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                    </span>
+                    <span>Browse folders are collapsed to show your search results instantly without long scrolling.</span>
+                </div>
+                <button type="button" id="toggle-folders-btn" class="font-semibold text-blue-700 hover:text-blue-900 underline self-start sm:self-auto py-1 min-h-[40px] flex items-center">
+                    Show Browse Folders
+                </button>
+            </div>
+
+            <!-- Browse Folders Container (collapsible during active search) -->
+            <div id="browse-folders-wrapper">
+                <!-- SECTION 1: Material Type Folders (PYQ, Model Answers, Notes, Question Banks, Manuals) -->
+                <div class="mb-10">
                 <div class="flex items-center justify-between mb-4">
                     <div>
                         <h2 class="text-xl md:text-2xl font-semibold font-display text-gray-900 flex items-center gap-2">
@@ -1124,6 +1230,8 @@
                     </div>
                 </div>
             </div>
+            <!-- End #browse-folders-wrapper -->
+            </div>
 
             <!-- SECTION 3: Drill-Down Filter Selector Matrix -->
             <div class="bg-white rounded-2xl md:rounded-3xl p-5 md:p-6 border border-gray-200/90 shadow-sm space-y-5">
@@ -1192,7 +1300,7 @@
         </div>
 
         <!-- Resource Section Anchor for smooth scroll -->
-        <div id="resource-section-anchor" class="pt-2"></div>
+        <div id="resource-section-anchor" class="pt-2" style="scroll-margin-top: 90px;"></div>
 
         <!-- Results Header & Status Bar -->
         <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-6 pb-4 border-b border-gray-200">

@@ -42,6 +42,24 @@ document.addEventListener('DOMContentLoaded', () => {
     const folderCardsContainer = document.getElementById('folder-cards-grid');
     const categoryCardsContainer = document.getElementById('category-cards-grid');
 
+    // Live Search & Instant Feedback Elements
+    const searchSubmitBtn = document.getElementById('search-submit-btn');
+    const searchLiveDropdown = document.getElementById('search-live-dropdown');
+    const searchDropdownList = document.getElementById('search-dropdown-list');
+    const searchDropdownClose = document.getElementById('search-dropdown-close');
+    const searchDropdownHeader = document.getElementById('search-dropdown-header');
+    const searchDropdownViewAll = document.getElementById('search-dropdown-view-all');
+    const searchDropdownViewAllText = document.getElementById('search-dropdown-view-all-text');
+    const searchFeedbackBar = document.getElementById('search-feedback-bar');
+    const searchFeedbackText = document.getElementById('search-feedback-text');
+    const searchJumpBtn = document.getElementById('search-jump-btn');
+    const browseFoldersWrapper = document.getElementById('browse-folders-wrapper');
+    const searchFoldersNotice = document.getElementById('search-folders-collapsed-notice');
+    const toggleFoldersBtn = document.getElementById('toggle-folders-btn');
+
+    let foldersForceExpanded = false;
+    let selectedDropdownIndex = -1;
+
     // State
     let resources = [];
     let currentPage = 1;
@@ -229,6 +247,169 @@ document.addEventListener('DOMContentLoaded', () => {
                 ${code && code !== 'ALL' ? `<span class="text-xs font-mono font-semibold text-gray-500 uppercase tracking-wider">${code}</span>` : ''}
             </div>
         `;
+    }
+
+    // Safe HTML Escaping for User Queries
+    function escapeHTML(str) {
+        if (!str) return '';
+        return String(str).replace(/[&<>'"]/g, 
+            tag => ({
+                '&': '&amp;',
+                '<': '&lt;',
+                '>': '&gt;',
+                "'": '&#39;',
+                '"': '&quot;'
+            }[tag] || tag)
+        );
+    }
+
+    // Category SVG Icon for Live Suggestions Dropdown
+    function getDropdownCategoryIcon(category) {
+        const svgIcons = {
+            'pyq': '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>',
+            'model-answer': '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>',
+            'notes': '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/>',
+            'question-bank': '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>',
+            'lab-manual': '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.977l-.51.342a6 6 0 01-3.86.977l-2.387.477a2 2 0 00-1.022.547m3.234-1.234a6 6 0 013.86-.977l1.022.204a2 2 0 011.022.547m-3.234-1.234a6 6 0 00-3.86.977l-1.022.204a2 2 0 00-1.022.547m10.234-4.234a6 6 0 01-3.86-.977l-.51-.342a6 6 0 00-3.86-.977l-2.387-.477a2 2 0 00-1.022.547m3.234-1.234a6 6 0 013.86-.977l1.022.204a2 2 0 011.022.547m-3.234-1.234a6 6 0 00-3.86.977l-1.022.204a2 2 0 00-1.022.547"/>',
+            'video-lecture': '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>'
+        };
+        const path = svgIcons[category] || svgIcons['notes'];
+        return `<svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">${path}</svg>`;
+    }
+
+    // Fast search matching helper for live suggestions
+    function getMatchingResources(query) {
+        if (!query || !query.trim()) return [];
+        const cleanQuery = query.toLowerCase().trim();
+        const terms = cleanQuery.split(/\s+/).filter(Boolean);
+
+        return resources.filter(res => {
+            const title = (res.title || '').toLowerCase();
+            const desc = (res.description || '').toLowerCase();
+            const code = (res.code || '').toLowerCase();
+            const shortCode = (res.shortCode || '').toLowerCase();
+            const cat = (res.category || '').toLowerCase();
+            const tags = (res.tags || []).map(t => t.toLowerCase());
+
+            return terms.every(term => 
+                title.includes(term) ||
+                desc.includes(term) ||
+                code.includes(term) ||
+                shortCode.includes(term) ||
+                cat.includes(term) ||
+                tags.some(tag => tag.includes(term))
+            );
+        });
+    }
+
+    // Close Live Suggestions Dropdown
+    function closeLiveDropdown() {
+        if (searchLiveDropdown) {
+            searchLiveDropdown.classList.add('hidden');
+        }
+        if (searchFeedbackBar && state.search.trim()) {
+            searchFeedbackBar.classList.remove('hidden');
+        }
+        selectedDropdownIndex = -1;
+    }
+
+    // Render Instant Live Autocomplete Suggestions Dropdown
+    function renderLiveDropdown(items, query) {
+        if (!searchLiveDropdown || !searchDropdownList) return;
+        const cleanQuery = (query || '').trim();
+        if (!cleanQuery) {
+            closeLiveDropdown();
+            return;
+        }
+
+        searchLiveDropdown.classList.remove('hidden');
+        if (searchFeedbackBar) {
+            searchFeedbackBar.classList.add('hidden');
+        }
+        selectedDropdownIndex = -1;
+
+        if (items.length === 0) {
+            if (searchDropdownHeader) {
+                searchDropdownHeader.textContent = 'No Direct Matches';
+            }
+            searchDropdownList.innerHTML = `
+                <div class="p-5 text-center text-gray-500">
+                    <div class="w-10 h-10 mx-auto rounded-full bg-gray-100 flex items-center justify-center text-gray-400 mb-2">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.172 16.172a4 4 0 015.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                    </div>
+                    <p class="text-sm font-semibold text-gray-800 mb-1">No direct materials matched "${escapeHTML(cleanQuery)}"</p>
+                    <p class="text-xs text-gray-500">Check spelling or try subject code (e.g. 313301, 314317).</p>
+                </div>
+            `;
+            if (searchDropdownViewAll) {
+                searchDropdownViewAll.classList.add('hidden');
+            }
+            return;
+        }
+
+        if (searchDropdownHeader) {
+            searchDropdownHeader.textContent = `Top Suggestions (${Math.min(items.length, 5)} of ${items.length})`;
+        }
+
+        if (searchDropdownViewAll && searchDropdownViewAllText) {
+            searchDropdownViewAll.classList.remove('hidden');
+            searchDropdownViewAllText.textContent = `View all ${items.length} matching materials below ↓`;
+        }
+
+        const topItems = items.slice(0, 5);
+        let listHTML = '';
+
+        topItems.forEach((res, index) => {
+            const highTitle = highlightText(res.title, cleanQuery);
+            const highDesc = highlightText(res.description || '', cleanQuery);
+            const highCode = res.code && res.code !== 'ALL' ? highlightText(res.code, cleanQuery) : '';
+            const catBadge = getCategoryBadge(res.category);
+            const semBadge = res.semester ? `<span class="text-[11px] font-semibold px-2 py-0.5 rounded-md bg-blue-50 text-blue-700 border border-blue-100">Sem ${res.semester}</span>` : '';
+            const codeBadge = highCode ? `<span class="text-[11px] font-mono font-medium px-2 py-0.5 rounded-md bg-slate-100 text-slate-700">${highCode}</span>` : '';
+            const catIcon = getDropdownCategoryIcon(res.category);
+
+            listHTML += `
+                <a href="${res.url}" ${res.url.startsWith('http') ? 'target="_blank" rel="noopener noreferrer"' : ''}
+                   class="search-suggest-item block p-3.5 hover:bg-blue-50/70 transition-colors focus:outline-none focus:bg-blue-50 text-left cursor-pointer min-h-[48px]"
+                   data-dropdown-index="${index}">
+                    <div class="flex items-start gap-3">
+                        <div class="w-9 h-9 rounded-xl bg-slate-100 border border-slate-200/80 flex items-center justify-center text-blue-600 flex-shrink-0 mt-0.5">
+                            ${catIcon}
+                        </div>
+                        <div class="min-w-0 flex-grow">
+                            <div class="flex flex-wrap items-center gap-1.5 mb-1">
+                                ${catBadge}
+                                ${semBadge}
+                                ${codeBadge}
+                            </div>
+                            <div class="text-sm font-semibold text-gray-900 line-clamp-1 leading-snug">
+                                ${highTitle}
+                            </div>
+                            <div class="text-xs text-gray-500 line-clamp-1 mt-0.5">
+                                ${highDesc || res.title}
+                            </div>
+                        </div>
+                        <div class="flex-shrink-0 text-gray-400 group-hover:text-blue-600 self-center pl-1">
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+                        </div>
+                    </div>
+                </a>
+            `;
+        });
+
+        searchDropdownList.innerHTML = listHTML;
+    }
+
+    // Highlight keyboard selected suggestion
+    function highlightDropdownItem(items, index) {
+        items.forEach((item, i) => {
+            if (i === index) {
+                item.classList.add('is-selected');
+                item.scrollIntoView({ block: 'nearest' });
+            } else {
+                item.classList.remove('is-selected');
+            }
+        });
     }
 
     // Render Resources Grid with Elevated Visual Styling
@@ -460,6 +641,38 @@ document.addEventListener('DOMContentLoaded', () => {
         const countText = `Showing ${filtered.length} of ${resources.length} study materials`;
         if (resultsCountEl) resultsCountEl.textContent = countText;
         if (mobileFloatingCount) mobileFloatingCount.textContent = `${filtered.length} items`;
+
+        // Update Active Search Feedback Banner
+        const isSearchActive = Boolean(searchTerm);
+        if (searchFeedbackBar && searchFeedbackText) {
+            if (isSearchActive) {
+                searchFeedbackBar.classList.remove('hidden');
+                if (filtered.length > 0) {
+                    searchFeedbackText.innerHTML = `Found <strong class="text-blue-900 font-bold">${filtered.length}</strong> study material${filtered.length === 1 ? '' : 's'} for "<strong class="text-blue-900">${escapeHTML(state.search.trim())}</strong>"`;
+                    if (searchJumpBtn) {
+                        searchJumpBtn.innerHTML = `<span>Show Results (${filtered.length})</span><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"/></svg>`;
+                        searchJumpBtn.classList.remove('hidden');
+                    }
+                } else {
+                    searchFeedbackText.innerHTML = `No study materials found for "<strong class="text-blue-900">${escapeHTML(state.search.trim())}</strong>"`;
+                    if (searchJumpBtn) searchJumpBtn.classList.add('hidden');
+                }
+            } else {
+                searchFeedbackBar.classList.add('hidden');
+            }
+        }
+
+        // Collapse / Hide Browse Folders during active search
+        if (browseFoldersWrapper && searchFoldersNotice) {
+            if (isSearchActive && !foldersForceExpanded) {
+                browseFoldersWrapper.classList.add('hidden');
+                searchFoldersNotice.classList.remove('hidden');
+                if (toggleFoldersBtn) toggleFoldersBtn.textContent = 'Show Browse Folders';
+            } else {
+                browseFoldersWrapper.classList.remove('hidden');
+                searchFoldersNotice.classList.add('hidden');
+            }
+        }
 
         // Update Active Filters Status Bar
         renderActiveFiltersBar();
@@ -724,6 +937,8 @@ document.addEventListener('DOMContentLoaded', () => {
         state.sem = 'all';
         state.category = 'all';
         state.search = '';
+        foldersForceExpanded = false;
+        closeLiveDropdown();
         if (searchInput) searchInput.value = '';
         if (searchClearBtn) searchClearBtn.classList.add('hidden');
         currentPage = 1;
@@ -897,7 +1112,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
-    // Debounce search input
+    // Debounce search input & live suggestions
     let searchDebounceTimer = null;
     if (searchInput) {
         searchInput.addEventListener('input', (e) => {
@@ -909,26 +1124,75 @@ document.addEventListener('DOMContentLoaded', () => {
                 searchClearBtn.classList.toggle('hidden', !val.trim());
             }
 
+            if (!val.trim()) {
+                foldersForceExpanded = false;
+                closeLiveDropdown();
+            }
+
             searchDebounceTimer = setTimeout(() => {
                 currentPage = 1;
                 filterAndRender();
-            }, 200);
+
+                if (val.trim()) {
+                    const matches = getMatchingResources(val.trim());
+                    renderLiveDropdown(matches, val.trim());
+                }
+            }, 180);
         });
 
-        // Keyboard Shortcut: press '/' to focus search, 'Escape' to clear
+        // Re-open dropdown when focusing search input if query has characters
+        searchInput.addEventListener('focus', () => {
+            if (state.search && state.search.trim()) {
+                const matches = getMatchingResources(state.search.trim());
+                renderLiveDropdown(matches, state.search.trim());
+            }
+        });
+
+        // Keyboard Shortcut: press '/' to focus search, 'Escape' to clear/close, Arrow keys & Enter for navigation
+        searchInput.addEventListener('keydown', (e) => {
+            const dropdownItems = searchDropdownList ? searchDropdownList.querySelectorAll('.search-suggest-item') : [];
+
+            if (e.key === 'ArrowDown') {
+                if (dropdownItems.length > 0) {
+                    e.preventDefault();
+                    selectedDropdownIndex = (selectedDropdownIndex + 1) % dropdownItems.length;
+                    highlightDropdownItem(dropdownItems, selectedDropdownIndex);
+                }
+            } else if (e.key === 'ArrowUp') {
+                if (dropdownItems.length > 0) {
+                    e.preventDefault();
+                    selectedDropdownIndex = (selectedDropdownIndex - 1 + dropdownItems.length) % dropdownItems.length;
+                    highlightDropdownItem(dropdownItems, selectedDropdownIndex);
+                }
+            } else if (e.key === 'Enter') {
+                e.preventDefault();
+                if (selectedDropdownIndex >= 0 && dropdownItems[selectedDropdownIndex]) {
+                    dropdownItems[selectedDropdownIndex].click();
+                } else {
+                    closeLiveDropdown();
+                    searchInput.blur();
+                    scrollToGrid();
+                }
+            } else if (e.key === 'Escape') {
+                if (searchLiveDropdown && !searchLiveDropdown.classList.contains('hidden')) {
+                    closeLiveDropdown();
+                } else if (searchInput.value) {
+                    searchInput.value = '';
+                    state.search = '';
+                    foldersForceExpanded = false;
+                    if (searchClearBtn) searchClearBtn.classList.add('hidden');
+                    filterAndRender();
+                    searchInput.blur();
+                }
+            }
+        });
+
+        // Global Press '/' to focus search
         document.addEventListener('keydown', (e) => {
-            if (e.key === '/' && document.activeElement !== searchInput) {
+            if (e.key === '/' && document.activeElement !== searchInput && !['input', 'textarea'].includes((document.activeElement.tagName || '').toLowerCase())) {
                 e.preventDefault();
                 searchInput.focus();
                 searchInput.select();
-            } else if (e.key === 'Escape' && document.activeElement === searchInput) {
-                if (searchInput.value) {
-                    searchInput.value = '';
-                    state.search = '';
-                    if (searchClearBtn) searchClearBtn.classList.add('hidden');
-                    filterAndRender();
-                }
-                searchInput.blur();
             }
         });
     }
@@ -941,11 +1205,70 @@ document.addEventListener('DOMContentLoaded', () => {
                 searchInput.focus();
             }
             state.search = '';
+            foldersForceExpanded = false;
             searchClearBtn.classList.add('hidden');
+            closeLiveDropdown();
             currentPage = 1;
             filterAndRender();
         });
     }
+
+    // Dropdown Close Button
+    if (searchDropdownClose) {
+        searchDropdownClose.addEventListener('click', closeLiveDropdown);
+    }
+
+    // Dropdown "View All Results Below" Button
+    if (searchDropdownViewAll) {
+        searchDropdownViewAll.addEventListener('click', () => {
+            closeLiveDropdown();
+            if (searchInput) searchInput.blur();
+            scrollToGrid();
+        });
+    }
+
+    // Search Submit Button (in search bar)
+    if (searchSubmitBtn) {
+        searchSubmitBtn.addEventListener('click', () => {
+            closeLiveDropdown();
+            if (searchInput) searchInput.blur();
+            scrollToGrid();
+        });
+    }
+
+    // Search Jump Button on Feedback Bar
+    if (searchJumpBtn) {
+        searchJumpBtn.addEventListener('click', () => {
+            closeLiveDropdown();
+            if (searchInput) searchInput.blur();
+            scrollToGrid();
+        });
+    }
+
+    // Toggle Browse Folders Button (when folders are collapsed during search)
+    if (toggleFoldersBtn) {
+        toggleFoldersBtn.addEventListener('click', () => {
+            if (browseFoldersWrapper) {
+                const isHidden = browseFoldersWrapper.classList.contains('hidden');
+                if (isHidden) {
+                    browseFoldersWrapper.classList.remove('hidden');
+                    foldersForceExpanded = true;
+                    toggleFoldersBtn.textContent = 'Hide Browse Folders';
+                } else {
+                    browseFoldersWrapper.classList.add('hidden');
+                    foldersForceExpanded = false;
+                    toggleFoldersBtn.textContent = 'Show Browse Folders';
+                }
+            }
+        });
+    }
+
+    // Close Dropdown when clicking outside
+    document.addEventListener('click', (e) => {
+        if (!e.target.closest('#search-input') && !e.target.closest('#search-live-dropdown') && !e.target.closest('#search-submit-btn')) {
+            closeLiveDropdown();
+        }
+    });
 
     // Sort Dropdown
     if (sortDropdown) {
@@ -999,8 +1322,10 @@ document.addEventListener('DOMContentLoaded', () => {
             if (query && searchInput) {
                 searchInput.value = query;
                 state.search = query;
+                foldersForceExpanded = false;
                 if (searchClearBtn) searchClearBtn.classList.remove('hidden');
             }
+            closeLiveDropdown();
             currentPage = 1;
             updateButtonsUI();
             filterAndRender();
