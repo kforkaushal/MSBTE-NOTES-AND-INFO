@@ -30,7 +30,7 @@
     <text x="425" y="27" fill="white" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif" font-weight="700" font-size="16" text-anchor="middle" letter-spacing="1">CODE: 315325</text>
   </g>
 
-  <!-- Title & Abbr -->
+  <!-- Title &amp; Abbr -->
   <text x="130" y="240" fill="white" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif" font-weight="900" font-size="52" letter-spacing="-0.5">Cloud Computing</text>
   
 

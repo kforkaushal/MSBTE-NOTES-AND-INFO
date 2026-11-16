@@ -1,0 +1,155 @@
+import subprocess, time, os
+
+svg_content = '''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+    <defs>
+        <!-- Background Gradients -->
+        <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#0b132b" />
+            <stop offset="50%" stop-color="#1c2541" />
+            <stop offset="100%" stop-color="#0f172a" />
+        </linearGradient>
+
+        <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%" stop-color="#3b82f6" />
+            <stop offset="50%" stop-color="#6366f1" />
+            <stop offset="100%" stop-color="#a855f7" />
+        </linearGradient>
+
+        <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%" stop-color="#f59e0b" />
+            <stop offset="100%" stop-color="#fbbf24" />
+        </linearGradient>
+
+        <linearGradient id="cardGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="rgba(255, 255, 255, 0.08)" />
+            <stop offset="100%" stop-color="rgba(255, 255, 255, 0.03)" />
+        </linearGradient>
+
+        <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+            <path d="M 40 0 L 0 0 0 40" fill="none" stroke="rgba(255, 255, 255, 0.04)" stroke-width="1"/>
+        </pattern>
+
+        <!-- Drop Shadows -->
+        <filter id="cardShadow" x="-10%" y="-10%" width="120%" height="120%">
+            <feDropShadow dx="0" dy="16" stdDeviation="24" flood-color="#000000" flood-opacity="0.5"/>
+        </filter>
+        <filter id="glowEffect" x="-20%" y="-20%" width="140%" height="140%">
+            <feGaussianBlur stdDeviation="60" result="blur" />
+        </filter>
+    </defs>
+
+    <!-- Base Background -->
+    <rect width="1200" height="630" fill="url(#bgGrad)" />
+    <rect width="1200" height="630" fill="url(#grid)" />
+
+    <!-- Ambient Glowing Orbs -->
+    <circle cx="150" cy="120" r="180" fill="#3b82f6" opacity="0.18" filter="url(#glowEffect)" />
+    <circle cx="1050" cy="140" r="220" fill="#8b5cf6" opacity="0.22" filter="url(#glowEffect)" />
+    <circle cx="600" cy="580" r="240" fill="#06b6d4" opacity="0.12" filter="url(#glowEffect)" />
+
+    <!-- Center Card Panel (Frosted Glass Effect) -->
+    <rect x="70" y="60" width="1060" height="510" rx="32" fill="url(#cardGrad)" stroke="rgba(255, 255, 255, 0.15)" stroke-width="1.5" filter="url(#cardShadow)" />
+
+    <!-- Top Badge Pill -->
+    <g transform="translate(600, 115)">
+        <rect x="-210" y="-18" width="420" height="36" rx="18" fill="rgba(37, 99, 235, 0.25)" stroke="rgba(96, 165, 250, 0.5)" stroke-width="1.5"/>
+        <circle cx="-185" cy="0" r="4.5" fill="#10b981" />
+        <text x="-165" y="5" font-family="'Inter', system-ui, sans-serif" font-weight="700" font-size="13" fill="#93c5fd" letter-spacing="2">MSBTE K-SCHEME 2026 • OFFICIAL DIRECTORY</text>
+    </g>
+
+    <!-- Main Title -->
+    <text x="600" y="200" font-family="'Clash Display', 'Inter', system-ui, sans-serif" font-weight="700" font-size="52" fill="#ffffff" text-anchor="middle" letter-spacing="-1">
+        FIRST YEAR DIPLOMA NOTES
+    </text>
+
+    <!-- Gradient Sub-title -->
+    <text x="600" y="255" font-family="'Inter', system-ui, sans-serif" font-weight="800" font-size="28" fill="url(#goldGrad)" text-anchor="middle" letter-spacing="1">
+        SEMESTER 1 &amp; SEMESTER 2 • ALL BRANCHES
+    </text>
+
+    <!-- Thin Divider -->
+    <rect x="420" y="285" width="360" height="3" rx="1.5" fill="url(#accentGrad)" />
+
+    <!-- Description / Scope -->
+    <text x="600" y="325" font-family="'Inter', system-ui, sans-serif" font-weight="500" font-size="18" fill="rgba(226, 232, 240, 0.9)" text-anchor="middle">
+        Complete syllabus notes, branch-wise workshop guides, lab manuals &amp; solved papers
+    </text>
+
+    <!-- 4 Feature Badges Grid -->
+    <!-- Pill 1: 26 Core Subjects -->
+    <g transform="translate(140, 365)">
+        <rect width="210" height="64" rx="16" fill="rgba(255, 255, 255, 0.06)" stroke="rgba(255, 255, 255, 0.12)" stroke-width="1.2"/>
+        <text x="24" y="38" font-size="22">📚</text>
+        <text x="56" y="30" font-family="'Inter', system-ui, sans-serif" font-weight="700" font-size="15" fill="#ffffff">26 Core Subjects</text>
+        <text x="56" y="48" font-family="'Inter', system-ui, sans-serif" font-weight="500" font-size="12" fill="#94a3b8">Sem 1 &amp; Sem 2</text>
+    </g>
+
+    <!-- Pill 2: 100% Free Drive PDFs -->
+    <g transform="translate(370, 365)">
+        <rect width="215" height="64" rx="16" fill="rgba(255, 255, 255, 0.06)" stroke="rgba(255, 255, 255, 0.12)" stroke-width="1.2"/>
+        <text x="24" y="38" font-size="22">⚡</text>
+        <text x="56" y="30" font-family="'Inter', system-ui, sans-serif" font-weight="700" font-size="15" fill="#ffffff">Free Drive PDFs</text>
+        <text x="56" y="48" font-family="'Inter', system-ui, sans-serif" font-weight="500" font-size="12" fill="#94a3b8">Instant Access</text>
+    </g>
+
+    <!-- Pill 3: Workshop Practice -->
+    <g transform="translate(605, 365)">
+        <rect width="215" height="64" rx="16" fill="rgba(255, 255, 255, 0.06)" stroke="rgba(255, 255, 255, 0.12)" stroke-width="1.2"/>
+        <text x="24" y="38" font-size="22">🛠️</text>
+        <text x="56" y="30" font-family="'Inter', system-ui, sans-serif" font-weight="700" font-size="15" fill="#ffffff">Workshop Guides</text>
+        <text x="56" y="48" font-family="'Inter', system-ui, sans-serif" font-weight="500" font-size="12" fill="#94a3b8">CO • ME • CE • EJ</text>
+    </g>
+
+    <!-- Pill 4: Model Answers & PYQ -->
+    <g transform="translate(840, 365)">
+        <rect width="220" height="64" rx="16" fill="rgba(255, 255, 255, 0.06)" stroke="rgba(255, 255, 255, 0.12)" stroke-width="1.2"/>
+        <text x="24" y="38" font-size="22">🎯</text>
+        <text x="56" y="30" font-family="'Inter', system-ui, sans-serif" font-weight="700" font-size="15" fill="#ffffff">Solved Solutions</text>
+        <text x="56" y="48" font-family="'Inter', system-ui, sans-serif" font-weight="500" font-size="12" fill="#94a3b8">PYQ &amp; Question Banks</text>
+    </g>
+
+    <!-- Branch Icons Row -->
+    <g transform="translate(600, 480)">
+        <rect x="-340" y="-18" width="680" height="36" rx="18" fill="rgba(15, 23, 42, 0.6)" stroke="rgba(255, 255, 255, 0.08)" stroke-width="1"/>
+        <text x="0" y="6" font-family="'Inter', system-ui, sans-serif" font-weight="600" font-size="13" fill="#cbd5e1" text-anchor="middle" letter-spacing="1">
+            Computer • IT • AI/ML • Mechanical • Civil • Electrical • Electronics • Chemical
+        </text>
+    </g>
+
+    <!-- Footer Branding -->
+    <g transform="translate(100, 535)">
+        <text x="0" y="0" font-family="'Clash Display', 'Inter', system-ui, sans-serif" font-weight="700" font-size="15" fill="#ffffff" letter-spacing="1">
+            📖 MSBTE NOTES &amp; INFO
+        </text>
+    </g>
+    <g transform="translate(1100, 535)">
+        <text x="0" y="0" font-family="'Inter', system-ui, sans-serif" font-weight="600" font-size="14" fill="#94a3b8" text-anchor="end">
+            msbtenotes-info.netlify.app/notes
+        </text>
+    </g>
+</svg>'''
+
+svg_path = 'resourse/note-thumbs/msbte-first-year-diploma-notes.svg'
+png_path = 'resourse/note-thumbs/msbte-first-year-diploma-notes.png'
+
+with open(svg_path, 'w', encoding='utf-8') as f:
+    f.write(svg_content)
+print(f"Saved: {svg_path}")
+
+# Render to PNG using headless Chrome
+abs_svg = os.path.abspath(svg_path).replace('\\\\', '/')
+abs_png = os.path.abspath(png_path).replace('\\\\', '/')
+
+chrome_path = r"C:\Program Files\Google\Chrome\Application\chrome.exe"
+cmd = [
+    chrome_path,
+    '--headless=new',
+    '--disable-gpu',
+    '--window-size=1200,630',
+    f'--screenshot={abs_png}',
+    f'file:///{abs_svg}'
+]
+
+print("Rendering PNG with Chrome...")
+subprocess.run(cmd, check=True)
+print(f"Successfully generated: {png_path} ({os.path.getsize(png_path)} bytes)")

@@ -1,4 +1,4 @@
-import json
+import json, os
 
 with open('scripts/curated_fy_subjects.json', 'r', encoding='utf-8') as f:
     subjects = json.load(f)
@@ -19,7 +19,7 @@ item_list_json = json.dumps({
     "itemListElement": item_list_elements
 }, indent=4)
 
-# Build Subject Cards HTML
+# Build Subject Cards HTML with Visual Thumbnails & Hallmark Structure
 cards_html = []
 for s in subjects:
     branch_classes = " ".join([f"branch-{b.lower()}" for b in s['branches']])
@@ -42,72 +42,84 @@ for s in subjects:
     
     # PYQ button
     pyq_button = ''
-    if s['pyq_url']:
-        pyq_button = f'''<a href="{s['pyq_url']}" class="h-10 px-3 py-2 rounded-xl text-xs font-semibold bg-gray-50 hover:bg-gray-100 text-gray-700 border border-gray-200 transition flex items-center justify-center gap-1">
+    if s.get('pyq_url'):
+        pyq_button = f'''<a href="{s['pyq_url']}" class="h-10 px-3 py-2 rounded-xl text-xs font-semibold bg-gray-50 hover:bg-gray-100 text-gray-700 border border-gray-200 transition flex items-center justify-center gap-1.5">
+            <svg class="w-3.5 h-3.5 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
             <span>PYQ Papers</span>
         </a>'''
     
     # Syllabus button
     syllabus_button = ''
-    if s['syllabus_url']:
-        syllabus_button = f'''<a href="{s['syllabus_url']}" class="h-10 px-3 py-2 rounded-xl text-xs font-semibold bg-gray-50 hover:bg-gray-100 text-gray-700 border border-gray-200 transition flex items-center justify-center gap-1">
+    if s.get('syllabus_url'):
+        syllabus_button = f'''<a href="{s['syllabus_url']}" class="h-10 px-3 py-2 rounded-xl text-xs font-semibold bg-gray-50 hover:bg-gray-100 text-gray-700 border border-gray-200 transition flex items-center justify-center gap-1.5">
+            <svg class="w-3.5 h-3.5 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/></svg>
             <span>Syllabus</span>
         </a>'''
 
+    # Thumbnail HTML
+    thumb_src = s.get('thumb', '')
+    thumb_html = f'''            <div class="relative w-full aspect-video overflow-hidden bg-gray-50 border-b border-gray-100">
+                <img src="{thumb_src}" alt="{s['name']} ({s['code']}) MSBTE K-Scheme Notes" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500" loading="lazy">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
+            </div>'''
+
     # Card HTML
     card = f'''        <!-- Subject Card: {s['code']} -->
-        <article class="subject-card sem-{s['sem']} {branch_classes} bg-white rounded-2xl border border-gray-200 hover:border-blue-400 p-5 sm:p-6 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between group"
+        <article class="subject-card sem-{s['sem']} {branch_classes} bg-white rounded-2xl border border-gray-200 hover:border-blue-400 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between overflow-hidden group"
              data-code="{s['code']}"
              data-name="{s['name'].lower()}"
              data-subtitle="{s['subtitle'].lower()}"
              data-sem="{s['sem']}"
              data-branches="{branch_data}">
-            <div>
-                <!-- Top Badges -->
-                <div class="flex items-center justify-between gap-2 mb-3">
-                    <div class="flex items-center gap-1.5 flex-wrap">
-                        {sem_badge}
-                        <span class="text-xs font-semibold px-2 py-0.5 rounded-full bg-gray-100 text-gray-600">
-                            {s['category']}
+{thumb_html}
+            <div class="p-5 sm:p-6 flex flex-col flex-grow justify-between">
+                <div>
+                    <!-- Top Badges -->
+                    <div class="flex items-center justify-between gap-2 mb-3">
+                        <div class="flex items-center gap-1.5 flex-wrap">
+                            {sem_badge}
+                            <span class="text-xs font-semibold px-2 py-0.5 rounded-full bg-gray-100 text-gray-600">
+                                {s['category']}
+                            </span>
+                        </div>
+                        <span class="text-xs font-mono font-bold text-gray-700 bg-slate-100 border border-slate-200 px-2 py-0.5 rounded-lg">
+                            {s['code']}
                         </span>
                     </div>
-                    <span class="text-xs font-mono font-bold text-gray-700 bg-slate-100 border border-slate-200 px-2 py-0.5 rounded-lg">
-                        {s['code']}
-                    </span>
+
+                    <!-- Subject Title -->
+                    <h3 class="text-base sm:text-lg font-bold text-gray-900 font-display leading-snug mb-1 group-hover:text-blue-600 transition-colors break-words">
+                        {s['name']}
+                    </h3>
+
+                    <!-- Subtitle / Focus -->
+                    <p class="text-xs font-medium text-blue-600 mb-2 line-clamp-1">
+                        {s['subtitle']}
+                    </p>
+
+                    <!-- Description -->
+                    <p class="text-xs text-gray-600 mb-4 line-clamp-2 leading-relaxed">
+                        {s['desc']}
+                    </p>
+
+                    <!-- Branch Badges -->
+                    <div class="flex items-center gap-1.5 flex-wrap mb-4">
+                        <span class="text-[11px] text-gray-400 font-medium mr-1">Branches:</span>
+                        {branch_pills}
+                    </div>
                 </div>
 
-                <!-- Subject Title -->
-                <h3 class="text-base sm:text-lg font-bold text-gray-900 font-display leading-snug mb-1 group-hover:text-blue-600 transition-colors break-words">
-                    {s['name']}
-                </h3>
-
-                <!-- Subtitle / Focus -->
-                <p class="text-xs font-medium text-blue-600 mb-2 line-clamp-1">
-                    {s['subtitle']}
-                </p>
-
-                <!-- Description -->
-                <p class="text-xs text-gray-600 mb-4 line-clamp-2 leading-relaxed">
-                    {s['desc']}
-                </p>
-
-                <!-- Branch Badges -->
-                <div class="flex items-center gap-1.5 flex-wrap mb-4">
-                    <span class="text-[11px] text-gray-400 font-medium mr-1">Branches:</span>
-                    {branch_pills}
-                </div>
-            </div>
-
-            <!-- Card Actions -->
-            <div class="pt-4 border-t border-gray-100 flex flex-col gap-2">
-                <a href="{s['notes_url']}"
-                   class="w-full h-11 bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 text-white font-semibold py-2 px-4 rounded-xl text-sm transition flex items-center justify-center gap-2 shadow-sm shadow-blue-500/20">
-                    <span>Explore Notes &amp; PDF</span>
-                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
-                </a>
-                <div class="grid grid-cols-2 gap-2">
-                    {syllabus_button}
-                    {pyq_button if pyq_button else '<div class="h-10 px-3 py-2 text-center text-[11px] text-gray-400 font-medium flex items-center justify-center border border-gray-100 rounded-xl">Exam Guide Inside</div>'}
+                <!-- Card Actions -->
+                <div class="pt-4 border-t border-gray-100 flex flex-col gap-2 mt-auto">
+                    <a href="{s['notes_url']}"
+                       class="w-full h-11 bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 text-white font-semibold py-2 px-4 rounded-xl text-sm transition flex items-center justify-center gap-2 shadow-sm shadow-blue-500/20">
+                        <span>Explore Notes &amp; PDF</span>
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+                    </a>
+                    <div class="grid grid-cols-2 gap-2">
+                        {syllabus_button}
+                        {pyq_button if pyq_button else '<div class="h-10 px-3 py-2 text-center text-[11px] text-gray-400 font-medium flex items-center justify-center border border-gray-100 rounded-xl">Exam Guide Inside</div>'}
+                    </div>
                 </div>
             </div>
         </article>'''
@@ -142,13 +154,15 @@ full_html = f'''<!DOCTYPE html>
     <meta name="author" content="MSBTE Notes &amp; Info Team" />
     <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1" />
     <meta name="googlebot" content="index, follow" />
-    <link rel="canonical" href="https://msbtenotes-info.netlify.app/notes/msbte-first-year-diploma-notes" />
+    <meta name="geo.region" content="IN-MH" />
+    <meta name="geo.placename" content="Maharashtra" />
+    <link rel="canonical" href="https://msbtenotes-info.netlify.app/Notes/msbte-first-year-diploma-notes.html" />
 
-    <!-- Open Graph -->
+    <!-- Open Graph (WhatsApp, Facebook, LinkedIn, Telegram) -->
     <meta property="og:title" content="MSBTE First Year Diploma Notes (Semester 1 &amp; 2) K-Scheme | All Branches" />
     <meta property="og:description" content="Download free MSBTE K-Scheme 1st Year (Semester 1 &amp; 2) diploma engineering notes, practical lab manuals, and chapter-wise study materials for all branches." />
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://msbtenotes-info.netlify.app/notes/msbte-first-year-diploma-notes" />
+    <meta property="og:url" content="https://msbtenotes-info.netlify.app/Notes/msbte-first-year-diploma-notes.html" />
     <meta property="og:image" content="https://msbtenotes-info.netlify.app/resourse/note-thumbs/msbte-first-year-diploma-notes.png" />
     <meta property="og:image:secure_url" content="https://msbtenotes-info.netlify.app/resourse/note-thumbs/msbte-first-year-diploma-notes.png" />
     <meta property="og:image:type" content="image/png" />
@@ -158,12 +172,14 @@ full_html = f'''<!DOCTYPE html>
     <meta property="og:locale" content="en_IN" />
     <meta property="og:site_name" content="MSBTE Notes &amp; Info" />
 
-    <!-- Twitter -->
+    <!-- Twitter Cards -->
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:site" content="@msbtenotes" />
-    <meta name="twitter:title" content="MSBTE First Year Notes (Semester 1 &amp; 2) K-Scheme" />
+    <meta name="twitter:creator" content="@msbtenotes" />
+    <meta name="twitter:title" content="MSBTE First Year Notes (Semester 1 &amp; 2) K-Scheme | All Branches" />
     <meta name="twitter:description" content="Comprehensive notes, lab manuals, and question banks for 1st Year MSBTE diploma students across all engineering branches." />
     <meta name="twitter:image" content="https://msbtenotes-info.netlify.app/resourse/note-thumbs/msbte-first-year-diploma-notes.png" />
+    <meta name="twitter:image:alt" content="MSBTE First Year Diploma Notes (Semester 1 &amp; 2) K-Scheme Study Material" />
 
     <!-- Educational Organization Structured Data -->
     <script type="application/ld+json">
@@ -174,6 +190,21 @@ full_html = f'''<!DOCTYPE html>
       "url": "https://msbtenotes-info.netlify.app/",
       "logo": "https://msbtenotes-info.netlify.app/resourse/MSBTE%20NOTES%20AND%20INFORMATION.png",
       "description": "Free study materials, notes, PYQ papers, and model answers for MSBTE diploma engineering students"
+    }}
+    </script>
+
+    <!-- WebSite Search Structured Data -->
+    <script type="application/ld+json">
+    {{
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "MSBTE Notes & Info",
+      "url": "https://msbtenotes-info.netlify.app/",
+      "potentialAction": {{
+        "@type": "SearchAction",
+        "target": "https://msbtenotes-info.netlify.app/Notes/msbte-first-year-diploma-notes.html?q={{search_term_string}}",
+        "query-input": "required name=search_term_string"
+      }}
     }}
     </script>
 
@@ -207,7 +238,23 @@ full_html = f'''<!DOCTYPE html>
         "@type": "CollectionPage",
         "name": "MSBTE First Year Diploma Notes & Study Materials (K-Scheme)",
         "description": "Complete collection of MSBTE K-Scheme Semester 1 and Semester 2 diploma notes, manuals, and solved papers across 26 core subjects.",
-        "url": "https://msbtenotes-info.netlify.app/notes/msbte-first-year-diploma-notes"
+        "url": "https://msbtenotes-info.netlify.app/Notes/msbte-first-year-diploma-notes.html"
+    }}
+    </script>
+
+    <!-- Course Structured Data -->
+    <script type="application/ld+json">
+    {{
+        "@context": "https://schema.org",
+        "@type": "Course",
+        "name": "MSBTE First Year Diploma in Engineering (K-Scheme)",
+        "description": "Comprehensive semester 1 and semester 2 engineering diploma syllabus, notes, solved model answers, and practical workshop guides across all branches.",
+        "provider": {{
+            "@type": "EducationalOrganization",
+            "name": "MSBTE Notes & Info",
+            "url": "https://msbtenotes-info.netlify.app/"
+        }},
+        "educationalCredentialAwarded": "Diploma in Engineering"
     }}
     </script>
 
@@ -258,6 +305,11 @@ full_html = f'''<!DOCTYPE html>
     }}
     </script>
 
+    <!-- Preconnects -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://api.fontshare.com">
+
     <!-- Favicon -->
     <link rel="apple-touch-icon" sizes="180x180" href="/resourse/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/resourse/favicon-32x32.png">
@@ -278,6 +330,38 @@ full_html = f'''<!DOCTYPE html>
             font-family: 'Clash Display', -apple-system, BlinkMacSystemFont, sans-serif;
         }}
 
+        .aspect-video {{
+            aspect-ratio: 16 / 9;
+        }}
+
+        .line-clamp-1 {{
+            display: -webkit-box;
+            -webkit-line-clamp: 1;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }}
+
+        .line-clamp-2 {{
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }}
+
+        .branch-btn.active, .sem-btn.active {{
+            background: linear-gradient(135deg, #2563eb 0%, #4f46e5 100%) !important;
+            color: #ffffff !important;
+            border-color: transparent !important;
+            box-shadow: 0 4px 12px rgba(37, 99, 235, 0.25);
+        }}
+
+        .quick-tag {{
+            transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+        }}
+        .quick-tag:hover {{
+            transform: translateY(-1px);
+        }}
+
         .no-scrollbar::-webkit-scrollbar {{
             display: none;
         }}
@@ -286,67 +370,59 @@ full_html = f'''<!DOCTYPE html>
             scrollbar-width: none;
         }}
 
-        .branch-btn.active {{
-            background: linear-gradient(135deg, #2563eb, #1d4ed8);
-            color: #ffffff;
-            border-color: transparent;
-            box-shadow: 0 4px 12px rgba(37, 99, 235, 0.25);
+        mark {{
+            background-color: #fef08a;
+            color: #111827;
+            padding: 0 2px;
+            border-radius: 2px;
         }}
 
-        .sem-btn.active {{
-            background: #1e293b;
-            color: #ffffff;
-            border-color: transparent;
+        /* Navbar & Mobile drawer styles */
+        nav.fixed, header.fixed {{
+            background-color: #ffffff !important;
+            border-bottom: 1px solid rgba(229, 231, 235, 0.95) !important;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05) !important;
         }}
-
-        .quick-tag {{
-            transition: all 0.2s ease;
-        }}
-        .quick-tag:hover {{
-            transform: translateY(-2px);
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
-        }}
-
-        .btn-whatsapp {{
-            background-color: #25D366;
-        }}
-        .btn-whatsapp:hover {{
-            background-color: #1ebe57;
+        #mobileNav {{
+            background-color: #ffffff !important;
+            z-index: 9999 !important;
         }}
     </style>
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9227354288966999" crossorigin="anonymous"></script>
 </head>
 
-<body class="bg-gray-50 text-gray-900 pt-16 flex flex-col min-h-screen overflow-x-hidden w-full">
+<body class="bg-gray-50 text-gray-800 font-sans min-h-screen flex flex-col pt-16 md:pt-20 overflow-x-hidden">
 
-    <!-- Hallmark Navigation Bar (Same as index.html) -->
-    <nav class="bg-white shadow fixed top-0 left-0 right-0 z-50 w-full">
+    <!-- Primary Hallmark Navigation Bar -->
+    <nav class="fixed top-0 left-0 right-0 z-50 bg-white border-b border-gray-200 transition-all duration-300 shadow-sm" style="background-color: #ffffff;">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex items-center justify-between h-16">
-                <!-- Left: Logo -->
-                <div class="flex items-center min-w-0">
-                    <a href="/" class="flex items-center text-blue-600 font-bold text-lg sm:text-xl font-display truncate">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 mr-2 flex-shrink-0" viewBox="0 0 576 512" fill="currentColor">
-                            <path d="M249.6 471.5c10.8 3.8 22.4-4.1 22.4-15.5V78.6c0-4.2-1.6-8.4-5-11C247.4 52 202.4 32 144 32C93.5 32 46.3 45.3 18.1 56.1C6.8 60.5 0 71.7 0 83.8V454.1c0 11.9 12.8 20.2 24.1 16.5C55.6 460.1 105.5 448 144 448c33.9 0 79 14 105.6 23.5zm76.8 0C353 462 398.1 448 432 448c38.5 0 88.4 12.1 119.9 22.6c11.3 3.8 24.1-4.6 24.1-16.5V83.8c0-12.1-6.8-23.3-18.1-27.6C529.7 45.3 482.5 32 432 32c-58.4 0-103.4 20-123 35.6c-3.3 2.6-5 6.8-5 11V456c0 11.4 11.7 19.3 22.4 15.5z" />
-                        </svg>
-                        <span class="truncate">MSBTE Notes &amp; Info</span>
+            <div class="flex justify-between h-16 md:h-20 items-center">
+                <!-- Left: Brand Logo -->
+                <div class="flex-shrink-0 flex items-center">
+                    <a href="/" class="flex items-center gap-2 group">
+                        <div class="w-9 h-9 md:w-10 md:h-10 rounded-xl bg-gradient-to-tr from-blue-600 to-indigo-600 flex items-center justify-center text-white shadow-md group-hover:scale-105 transition-transform flex-shrink-0">
+                            <svg class="w-5 h-5 md:w-6 md:h-6" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M9 4.804A7.968 7.968 0 005.5 4c-1.255 0-2.443.29-3.5.804v10A7.969 7.969 0 015.5 14c1.669 0 3.218.51 4.5 1.385A7.962 7.962 0 0114.5 14c1.255 0 2.443.29 3.5.804v-10A7.968 7.968 0 0014.5 4c-1.255 0-2.443.29-3.5.804V12a1 1 0 11-2 0V4.804z"/>
+                            </svg>
+                        </div>
+                        <span class="font-display font-semibold text-lg md:text-xl text-gray-900 group-hover:text-blue-600 transition-colors">
+                            MSBTE Notes &amp; Info
+                        </span>
                     </a>
                 </div>
 
-                <!-- Middle: Desktop Nav -->
-                <div class="hidden md:flex space-x-6 items-center">
-                    <a href="/" class="hover:text-blue-500 font-medium">Home</a>
-                    <a href="/start.html"
-                        class="px-3 py-1 rounded-full bg-blue-50 text-blue-600 hover:bg-blue-600 hover:text-white font-semibold text-sm transition flex items-center gap-1.5 border border-blue-100">
-                        <span class="w-1.5 h-1.5 rounded-full bg-blue-600"></span>Start Here
+                <!-- Center: Desktop Nav Links -->
+                <div class="hidden md:flex items-center space-x-1 lg:space-x-4 text-sm font-medium text-gray-700">
+                    <a href="/" class="hover:text-blue-600 px-2 py-1 transition">Home</a>
+                    <a href="/start.html" class="text-blue-600 bg-blue-50/80 px-2.5 py-1 rounded-lg font-semibold hover:bg-blue-100 transition">
+                        Start Here
                     </a>
 
-                    <!-- Notes Dropdown -->
+                    <!-- Study Notes Dropdown -->
                     <div class="relative group py-2 nav-dropdown">
                         <button type="button" onclick="toggleDropdown(this, event)"
-                            class="flex items-center gap-1 hover:text-blue-500 font-medium focus:outline-none" aria-haspopup="true"
+                            class="flex items-center gap-1 hover:text-blue-600 font-semibold focus:outline-none" aria-haspopup="true"
                             aria-expanded="false">
-                            <span class="text-blue-600 font-bold">Notes</span>
+                            <span class="text-blue-600">Notes</span>
                             <svg class="w-4 h-4 transition-transform duration-200 group-hover:rotate-180 dropdown-arrow text-blue-600" fill="none"
                                 stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
@@ -425,7 +501,7 @@ full_html = f'''<!DOCTYPE html>
         </div>
 
         <!-- Modern Mobile Menu Drawer (Same as index.html) -->
-        <div id="mobileNav" class="fixed inset-0 bg-white transform translate-x-full transition-transform duration-300 ease-in-out md:hidden overflow-y-auto pt-20 px-6 shadow-2xl" style="z-index: 9999;">
+        <div id="mobileNav" class="fixed inset-0 bg-white transform translate-x-full transition-transform duration-300 ease-in-out md:hidden overflow-y-auto pt-20 px-6 shadow-2xl invisible pointer-events-none" style="z-index: 9999;">
             <button onclick="toggleMobileMenu()" class="absolute top-5 right-5 p-2 text-gray-500 hover:text-gray-900 rounded-full bg-gray-100 focus:outline-none" aria-label="Close menu">
                 <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
             </button>
@@ -466,9 +542,9 @@ full_html = f'''<!DOCTYPE html>
             <div class="absolute right-1/4 -top-10 w-60 h-60 bg-blue-400 opacity-10 rounded-full blur-2xl pointer-events-none"></div>
             
             <div class="max-w-3xl relative z-10">
-                <div class="inline-flex items-center gap-2 bg-white/15 backdrop-blur-md px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider mb-3 border border-white/20">
+                <div class="inline-flex items-center gap-2 bg-white/15 backdrop-blur-md px-3.5 py-1 rounded-full text-xs font-bold uppercase tracking-wider mb-3 border border-white/20 shadow-sm">
                     <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
-                    MSBTE K-Scheme • 1st Year Hub
+                    <span>MSBTE K-Scheme 2026 • 1st Year Hub</span>
                 </div>
                 <h1 class="text-2xl sm:text-4xl md:text-5xl font-bold font-display leading-tight tracking-tight break-words">
                     MSBTE First Year Diploma Notes &amp; Study Material
@@ -477,19 +553,23 @@ full_html = f'''<!DOCTYPE html>
                     Complete, non-confusing directory of Semester 1 &amp; Semester 2 study materials across all 8 engineering branches. Includes branch-wise workshop practical guides, official syllabus PDFs, handwritten notes, and solved question banks.
                 </p>
 
-                <!-- Stats Strip -->
+                <!-- Stats Strip with Clean SVG Icons -->
                 <div class="mt-5 flex flex-wrap gap-2 sm:gap-3 text-xs sm:text-sm font-semibold">
                     <div class="bg-white/10 backdrop-blur-md px-3 py-1.5 rounded-xl flex items-center gap-1.5 border border-white/10">
-                        <span>📚</span> 26 Core Subjects
+                        <svg class="w-4 h-4 text-blue-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/></svg>
+                        <span>26 Core Subjects</span>
                     </div>
                     <div class="bg-white/10 backdrop-blur-md px-3 py-1.5 rounded-xl flex items-center gap-1.5 border border-white/10">
-                        <span>⚡</span> 80+ Downloadable PDFs
+                        <svg class="w-4 h-4 text-emerald-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/></svg>
+                        <span>80+ Downloadable PDFs</span>
                     </div>
                     <div class="bg-white/10 backdrop-blur-md px-3 py-1.5 rounded-xl flex items-center gap-1.5 border border-white/10">
-                        <span>🎯</span> Distinct Workshop Guides
+                        <svg class="w-4 h-4 text-amber-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+                        <span>4 Distinct Workshop Guides</span>
                     </div>
                     <div class="bg-white/10 backdrop-blur-md px-3 py-1.5 rounded-xl flex items-center gap-1.5 border border-white/10">
-                        <span>🔒</span> 100% Free Drive Access
+                        <svg class="w-4 h-4 text-purple-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+                        <span>100% Free Drive Access</span>
                     </div>
                 </div>
             </div>
@@ -501,31 +581,32 @@ full_html = f'''<!DOCTYPE html>
         <div class="bg-white rounded-2xl border border-gray-200 p-4 shadow-sm min-w-0">
             <div class="flex items-center justify-between mb-2">
                 <span class="text-xs font-bold uppercase tracking-wider text-gray-500 flex items-center gap-1.5">
-                    <span>🔥</span> Most Demanded First Year Subjects
+                    <svg class="w-4 h-4 text-amber-500" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M12.395 2.553a1 1 0 00-1.45-.385c-.345.23-.614.558-.822.88-.527.82-1.146 2.05-1.42 3.19-.28 1.16-.307 2.19-.074 2.923.084.264.205.49.356.678.077.095.166.177.264.244.02.014.04.027.06.039a3.003 3.003 0 01-1.393-.34 3.04 3.04 0 01-1.127-1.173 7.97 7.97 0 01-.818-1.922 1 1 0 00-1.916.488c.17 1.096.536 2.222 1.08 3.235.604 1.127 1.442 2.08 2.453 2.724a8.03 8.03 0 003.542 1.094c.18 0 .36-.008.539-.023a7.994 7.994 0 004.912-2.316 7.96 7.96 0 002.052-4.636c.03-.59-.033-1.18-.184-1.74a7.97 7.97 0 00-1.077-2.348 8.03 8.03 0 00-2.453-2.18c-.684-.396-1.42-.68-2.164-.848a8.07 8.07 0 00-.783-.118z" clip-rule="evenodd"/></svg>
+                    Most Demanded First Year Subjects
                 </span>
                 <span class="text-[11px] text-gray-400 hidden sm:inline">Click to jump directly</span>
             </div>
             <div class="flex items-center gap-2 overflow-x-auto no-scrollbar py-1 min-w-0">
                 <a href="/Notes/311302-basic-mathematics.html" class="quick-tag px-3 py-1.5 rounded-lg bg-blue-50 text-blue-700 hover:bg-blue-600 hover:text-white text-xs font-bold border border-blue-100 transition whitespace-nowrap flex-shrink-0">
-                    📐 Basic Maths (311302)
+                    Basic Maths (311302)
                 </a>
                 <a href="/Notes/311305-basic-science.html" class="quick-tag px-3 py-1.5 rounded-lg bg-emerald-50 text-emerald-700 hover:bg-emerald-600 hover:text-white text-xs font-bold border border-emerald-100 transition whitespace-nowrap flex-shrink-0">
-                    🔬 Basic Science (311305)
+                    Basic Science (311305)
                 </a>
                 <a href="/Notes/311303-communication-skills-english.html" class="quick-tag px-3 py-1.5 rounded-lg bg-amber-50 text-amber-700 hover:bg-amber-600 hover:text-white text-xs font-bold border border-amber-100 transition whitespace-nowrap flex-shrink-0">
-                    💬 English (311303)
+                    English (311303)
                 </a>
                 <a href="/Notes/312301-applied-mathematics.html" class="quick-tag px-3 py-1.5 rounded-lg bg-purple-50 text-purple-700 hover:bg-purple-600 hover:text-white text-xs font-bold border border-purple-100 transition whitespace-nowrap flex-shrink-0">
-                    📐 Applied Maths (312301)
+                    Applied Maths (312301)
                 </a>
                 <a href="/Notes/312303-programming-in-c.html" class="quick-tag px-3 py-1.5 rounded-lg bg-cyan-50 text-cyan-700 hover:bg-cyan-600 hover:text-white text-xs font-bold border border-cyan-100 transition whitespace-nowrap flex-shrink-0">
-                    💻 Programming in C (312303)
+                    Programming in C (312303)
                 </a>
                 <a href="/Notes/312312-engineering-mechanics.html" class="quick-tag px-3 py-1.5 rounded-lg bg-rose-50 text-rose-700 hover:bg-rose-600 hover:text-white text-xs font-bold border border-rose-100 transition whitespace-nowrap flex-shrink-0">
-                    ⚙️ Mechanics (312312)
+                    Mechanics (312312)
                 </a>
                 <a href="/Notes/312310-fundamental-of-electrical-engineering.html" class="quick-tag px-3 py-1.5 rounded-lg bg-yellow-50 text-yellow-800 hover:bg-yellow-600 hover:text-white text-xs font-bold border border-yellow-200 transition whitespace-nowrap flex-shrink-0">
-                    ⚡ Electrical (312310)
+                    Electrical (312310)
                 </a>
             </div>
         </div>
@@ -545,28 +626,28 @@ full_html = f'''<!DOCTYPE html>
                 </label>
                 <div class="flex items-center gap-2 overflow-x-auto no-scrollbar pb-1 min-w-0" id="branch-pills" role="tablist">
                     <button onclick="setBranch('all')" data-branch="all" class="branch-btn active px-3.5 py-2 rounded-xl text-xs sm:text-sm font-bold bg-gray-100 text-gray-700 hover:bg-gray-200 border border-gray-200 transition whitespace-nowrap flex-shrink-0">
-                        🎓 All Branches
+                        All Branches
                     </button>
                     <button onclick="setBranch('co')" data-branch="co" class="branch-btn px-3.5 py-2 rounded-xl text-xs sm:text-sm font-bold bg-gray-100 text-gray-700 hover:bg-gray-200 border border-gray-200 transition whitespace-nowrap flex-shrink-0">
-                        💻 Computer / IT / AI
+                        Computer • IT • AI
                     </button>
                     <button onclick="setBranch('me')" data-branch="me" class="branch-btn px-3.5 py-2 rounded-xl text-xs sm:text-sm font-bold bg-gray-100 text-gray-700 hover:bg-gray-200 border border-gray-200 transition whitespace-nowrap flex-shrink-0">
-                        ⚙️ Mechanical
+                        Mechanical
                     </button>
                     <button onclick="setBranch('ce')" data-branch="ce" class="branch-btn px-3.5 py-2 rounded-xl text-xs sm:text-sm font-bold bg-gray-100 text-gray-700 hover:bg-gray-200 border border-gray-200 transition whitespace-nowrap flex-shrink-0">
-                        🏗️ Civil
+                        Civil
                     </button>
                     <button onclick="setBranch('ee')" data-branch="ee" class="branch-btn px-3.5 py-2 rounded-xl text-xs sm:text-sm font-bold bg-gray-100 text-gray-700 hover:bg-gray-200 border border-gray-200 transition whitespace-nowrap flex-shrink-0">
-                        ⚡ Electrical
+                        Electrical
                     </button>
                     <button onclick="setBranch('ej')" data-branch="ej" class="branch-btn px-3.5 py-2 rounded-xl text-xs sm:text-sm font-bold bg-gray-100 text-gray-700 hover:bg-gray-200 border border-gray-200 transition whitespace-nowrap flex-shrink-0">
-                        📡 Electronics &amp; TC
+                        Electronics (EJ)
                     </button>
                     <button onclick="setBranch('ch')" data-branch="ch" class="branch-btn px-3.5 py-2 rounded-xl text-xs sm:text-sm font-bold bg-gray-100 text-gray-700 hover:bg-gray-200 border border-gray-200 transition whitespace-nowrap flex-shrink-0">
-                        🧪 Chemical
+                        Chemical
                     </button>
                     <button onclick="setBranch('common')" data-branch="common" class="branch-btn px-3.5 py-2 rounded-xl text-xs sm:text-sm font-bold bg-gray-100 text-gray-700 hover:bg-gray-200 border border-gray-200 transition whitespace-nowrap flex-shrink-0">
-                        📚 Common FY Subjects
+                        Common FY
                     </button>
                 </div>
             </div>
@@ -797,190 +878,98 @@ full_html = f'''<!DOCTYPE html>
                 <h3 class="text-xl font-semibold mb-4 font-display">Contact</h3>
                 <p class="text-sm mb-2 text-gray-300">
                     <a href="mailto:info.mraaglave@gmail.com" class="hover:text-blue-400 transition inline-flex items-center gap-1.5">
-                        <span>📧</span><span>info.mraaglave@gmail.com</span>
+                        <svg class="w-4 h-4 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+                        <span>info.mraaglave@gmail.com</span>
                     </a>
                 </p>
-                <p class="text-sm mb-3 text-gray-300">
-                    <a href="tel:+917083236221" class="hover:text-blue-400 transition inline-flex items-center gap-1.5">
-                        <span>📱</span><span>+91 70832 36221</span>
+                <p class="text-sm text-gray-300">
+                    <a href="https://wa.me/917083236221" target="_blank" rel="noopener noreferrer" class="hover:text-emerald-400 transition inline-flex items-center gap-1.5">
+                        <svg class="w-4 h-4 text-emerald-400" fill="currentColor" viewBox="0 0 24 24"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.006c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86s.275.058.376-.058c.101-.116.433-.506.549-.68.116-.173.231-.145.39-.087s1.011.477 1.184.564c.173.087.289.129.332.202.043.073.043.419-.101.824z"/></svg>
+                        <span>WhatsApp: +91 70832 36221</span>
                     </a>
                 </p>
-                <a href="https://whatsapp.com/channel/0029Vap8lWS3QxRxxdmaSR36" target="_blank" rel="noopener noreferrer"
-                    class="inline-block mt-2 btn-whatsapp text-white px-5 py-2.5 rounded-full font-semibold text-sm transition shadow-lg shadow-green-950/30">
-                    Join WhatsApp Channel
-                </a>
+                <div class="mt-4 flex gap-3 text-gray-400">
+                    <a href="https://instagram.com/msbte_notes_info" target="_blank" rel="noopener noreferrer" class="hover:text-pink-400 transition" aria-label="Instagram">
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+                    </a>
+                </div>
             </div>
         </div>
-        <div class="flex justify-center mt-8">
-            <a href="https://www.producthunt.com/products/msbte-notes-info/reviews/new?utm_source=badge-product_review&utm_medium=badge&utm_source=badge-msbte&#0045;notes&#0045;info" target="_blank" rel="noopener noreferrer">
-                <img src="https://api.producthunt.com/widgets/embed-image/v1/product_review.svg?product_id=1131454&theme=light" alt="MSBTE Notes &amp; Info Reviews" style="width: 250px; height: 54px;" width="250" height="54" loading="lazy" />
-            </a>
-        </div>
-        <div class="mt-8 text-center text-xs text-gray-400 border-t border-gray-800 pt-6">
-            <p>&copy; 2026 MSBTE Notes &amp; Info. All rights reserved. Built for Maharashtra Polytechnic Students.</p>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-8 pt-8 border-t border-gray-800 text-center text-xs text-gray-400">
+            <p>&copy; 2026 MSBTE Notes &amp; Info. All rights reserved. Dedicated to diploma engineering students across Maharashtra.</p>
         </div>
     </footer>
 
-    <!-- Interactive Client-side Script -->
+    <!-- Interactive Filtering & Search Script -->
     <script>
-        // State
         let currentBranch = 'all';
         let currentSem = 'all';
-        let currentSearch = '';
+        let searchQuery = '';
 
-        const branchLabels = {{
-            'all': 'All Branches',
-            'co': 'Computer / IT / AI-ML (CO, IF, AN)',
-            'me': 'Mechanical Engineering (ME)',
-            'ce': 'Civil Engineering (CE)',
-            'ee': 'Electrical Engineering (EE)',
-            'ej': 'Electronics & Telecomm (EJ, IE)',
-            'ch': 'Chemical Engineering (CH)',
-            'common': 'Common First Year Subjects'
-        }};
+        function updateCounts() {{
+            const cards = document.querySelectorAll('.subject-card');
+            let sem1Count = 0;
+            let sem2Count = 0;
+            let total = 0;
 
-        function setBranch(branch) {{
-            currentBranch = branch;
-            
-            // Update active pill
-            document.querySelectorAll('.branch-btn').forEach(btn => {{
-                if (btn.getAttribute('data-branch') === branch) {{
-                    btn.classList.add('active');
-                }} else {{
-                    btn.classList.remove('active');
+            cards.forEach(card => {{
+                const branches = card.dataset.branches.split(',');
+                const sem = card.dataset.sem;
+                
+                const matchesBranch = (currentBranch === 'all') || 
+                                     branches.includes(currentBranch) || 
+                                     branches.includes('common');
+
+                if (matchesBranch) {{
+                    total++;
+                    if (sem === '1') sem1Count++;
+                    if (sem === '2') sem2Count++;
                 }}
             }});
 
-            const labelEl = document.getElementById('active-branch-label');
-            if (labelEl) labelEl.textContent = branchLabels[branch] || 'All Branches';
-
-            applyFilters();
-        }}
-
-        function setSemester(sem) {{
-            currentSem = sem;
-
-            // Update active pill
-            document.querySelectorAll('.sem-btn').forEach(btn => {{
-                if (btn.getAttribute('data-sem') === sem) {{
-                    btn.classList.add('active');
-                }} else {{
-                    btn.classList.remove('active');
-                }}
-            }});
-
-            applyFilters();
-        }}
-
-        function handleSearch() {{
-            const input = document.getElementById('subject-search');
-            currentSearch = (input.value || '').trim().toLowerCase();
-            
-            const clearBtn = document.getElementById('search-clear');
-            if (clearBtn) {{
-                if (currentSearch.length > 0) {{
-                    clearBtn.classList.remove('hidden');
-                }} else {{
-                    clearBtn.classList.add('hidden');
-                }}
-            }}
-
-            applyFilters();
-        }}
-
-        function clearSearch() {{
-            const input = document.getElementById('subject-search');
-            input.value = '';
-            currentSearch = '';
-            const clearBtn = document.getElementById('search-clear');
-            if (clearBtn) clearBtn.classList.add('hidden');
-            applyFilters();
-        }}
-
-        function resetAllFilters() {{
-            currentBranch = 'all';
-            currentSem = 'all';
-            currentSearch = '';
-            
-            const input = document.getElementById('subject-search');
-            if (input) input.value = '';
-            
-            const clearBtn = document.getElementById('search-clear');
-            if (clearBtn) clearBtn.classList.add('hidden');
-
-            document.querySelectorAll('.branch-btn').forEach(btn => {{
-                if (btn.getAttribute('data-branch') === 'all') btn.classList.add('active');
-                else btn.classList.remove('active');
-            }});
-
-            document.querySelectorAll('.sem-btn').forEach(btn => {{
-                if (btn.getAttribute('data-sem') === 'all') btn.classList.add('active');
-                else btn.classList.remove('active');
-            }});
-
-            const labelEl = document.getElementById('active-branch-label');
-            if (labelEl) labelEl.textContent = 'All Branches';
-
-            applyFilters();
+            const countAll = document.getElementById('count-all');
+            const countSem1 = document.getElementById('count-sem1');
+            const countSem2 = document.getElementById('count-sem2');
+            if (countAll) countAll.textContent = total;
+            if (countSem1) countSem1.textContent = sem1Count;
+            if (countSem2) countSem2.textContent = sem2Count;
         }}
 
         function applyFilters() {{
             const cards = document.querySelectorAll('.subject-card');
-            const noResults = document.getElementById('no-results');
-            const container = document.getElementById('subjects-container');
-            const resultsText = document.getElementById('results-count-text');
-            const filterBar = document.getElementById('filter-status-bar');
-            const filterTags = document.getElementById('active-filter-tags');
-
+            const query = searchQuery.toLowerCase().trim();
             let visibleCount = 0;
 
             cards.forEach(card => {{
-                const cardSem = card.getAttribute('data-sem');
-                const cardBranches = (card.getAttribute('data-branches') || '').split(',');
-                const cardName = card.getAttribute('data-name') || '';
-                const cardCode = card.getAttribute('data-code') || '';
-                const cardSubtitle = card.getAttribute('data-subtitle') || '';
+                const branches = card.dataset.branches.split(',');
+                const sem = card.dataset.sem;
+                const name = card.dataset.name;
+                const code = card.dataset.code;
+                const subtitle = card.dataset.subtitle;
 
-                // Branch Match
-                let matchBranch = false;
-                if (currentBranch === 'all') {{
-                    matchBranch = true;
-                }} else if (currentBranch === 'common') {{
-                    matchBranch = cardBranches.includes('common');
-                }} else {{
-                    matchBranch = cardBranches.includes(currentBranch) || cardBranches.includes('common');
-                }}
+                const matchesBranch = (currentBranch === 'all') || 
+                                     branches.includes(currentBranch) || 
+                                     branches.includes('common');
 
-                // Semester Match
-                let matchSem = false;
-                if (currentSem === 'all' || currentSem === cardSem) {{
-                    matchSem = true;
-                }}
+                const matchesSem = (currentSem === 'all') || (sem === currentSem);
 
-                // Search Match
-                let matchSearch = false;
-                if (!currentSearch) {{
-                    matchSearch = true;
-                }} else {{
-                    const terms = currentSearch.split(/\\s+/);
-                    const haystack = (cardName + ' ' + cardCode + ' ' + cardSubtitle).toLowerCase();
-                    matchSearch = terms.every(t => haystack.includes(t));
-                }}
+                const matchesSearch = !query || 
+                                     name.includes(query) || 
+                                     code.includes(query) || 
+                                     subtitle.includes(query);
 
-                if (matchBranch && matchSem && matchSearch) {{
-                    card.style.display = 'flex';
+                if (matchesBranch && matchesSem && matchesSearch) {{
+                    card.classList.remove('hidden');
                     visibleCount++;
                 }} else {{
-                    card.style.display = 'none';
+                    card.classList.add('hidden');
                 }}
             }});
 
-            // Update counter text
-            if (resultsText) {{
-                resultsText.textContent = `Showing ${{visibleCount}} of ${{cards.length}} subjects`;
-            }}
+            const noResults = document.getElementById('no-results');
+            const container = document.getElementById('subjects-container');
+            const countText = document.getElementById('results-count-text');
 
-            // Show / hide no results
             if (visibleCount === 0) {{
                 noResults.classList.remove('hidden');
                 container.classList.add('hidden');
@@ -989,65 +978,169 @@ full_html = f'''<!DOCTYPE html>
                 container.classList.remove('hidden');
             }}
 
-            // Show active filters pill bar
-            const hasFilters = (currentBranch !== 'all' || currentSem !== 'all' || currentSearch.length > 0);
-            if (filterBar && filterTags) {{
-                if (hasFilters) {{
-                    filterBar.classList.remove('hidden');
-                    let tagsHTML = '';
-                    if (currentBranch !== 'all') {{
-                        tagsHTML += `<span class="bg-blue-50 text-blue-700 px-2 py-0.5 rounded-md border border-blue-100 font-semibold">Branch: ${{currentBranch.toUpperCase()}}</span>`;
-                    }}
-                    if (currentSem !== 'all') {{
-                        tagsHTML += `<span class="bg-indigo-50 text-indigo-700 px-2 py-0.5 rounded-md border border-indigo-100 font-semibold">Semester ${{currentSem}}</span>`;
-                    }}
-                    if (currentSearch) {{
-                        tagsHTML += `<span class="bg-amber-50 text-amber-700 px-2 py-0.5 rounded-md border border-amber-100 font-semibold">Query: "${{currentSearch}}"</span>`;
-                    }}
-                    filterTags.innerHTML = tagsHTML;
-                }} else {{
-                    filterBar.classList.add('hidden');
-                    filterTags.innerHTML = '';
-                }}
+            if (countText) {{
+                let label = `Showing ${{visibleCount}} subject${{visibleCount === 1 ? '' : 's'}}`;
+                if (currentBranch !== 'all') label += ` for ${{currentBranch.toUpperCase()}}`;
+                if (currentSem !== 'all') label += ` (Sem ${{currentSem}})`;
+                if (query) label += ` matching "${{query}}"`;
+                countText.textContent = label;
+            }}
+
+            updateCounts();
+            updateStatusBar();
+        }}
+
+        function setBranch(branch) {{
+            currentBranch = branch;
+            document.querySelectorAll('.branch-btn').forEach(btn => {{
+                btn.classList.toggle('active', btn.dataset.branch === branch);
+            }});
+            const labelMap = {{
+                'all': 'All Branches',
+                'co': 'Computer / IT / AI',
+                'me': 'Mechanical Engineering',
+                'ce': 'Civil Engineering',
+                'ee': 'Electrical Engineering',
+                'ej': 'Electronics & TC',
+                'ch': 'Chemical Engineering',
+                'common': 'Common First Year'
+            }};
+            const activeLabel = document.getElementById('active-branch-label');
+            if (activeLabel) activeLabel.textContent = labelMap[branch] || branch;
+            applyFilters();
+        }}
+
+        function setSemester(sem) {{
+            currentSem = sem;
+            document.querySelectorAll('.sem-btn').forEach(btn => {{
+                btn.classList.toggle('active', btn.dataset.sem === sem);
+            }});
+            applyFilters();
+        }}
+
+        function handleSearch() {{
+            const input = document.getElementById('subject-search');
+            const clearBtn = document.getElementById('search-clear');
+            searchQuery = input.value;
+            if (clearBtn) {{
+                clearBtn.classList.toggle('hidden', !searchQuery.trim());
+            }}
+            applyFilters();
+        }}
+
+        function clearSearch() {{
+            const input = document.getElementById('subject-search');
+            const clearBtn = document.getElementById('search-clear');
+            if (input) {{
+                input.value = '';
+                searchQuery = '';
+                input.focus();
+            }}
+            if (clearBtn) clearBtn.classList.add('hidden');
+            applyFilters();
+        }}
+
+        function resetAllFilters() {{
+            currentBranch = 'all';
+            currentSem = 'all';
+            searchQuery = '';
+            const input = document.getElementById('subject-search');
+            const clearBtn = document.getElementById('search-clear');
+            if (input) input.value = '';
+            if (clearBtn) clearBtn.classList.add('hidden');
+            setBranch('all');
+            setSemester('all');
+        }}
+
+        function updateStatusBar() {{
+            const bar = document.getElementById('filter-status-bar');
+            const tags = document.getElementById('active-filter-tags');
+            if (!bar || !tags) return;
+
+            const isFiltered = (currentBranch !== 'all') || (currentSem !== 'all') || Boolean(searchQuery.trim());
+            if (!isFiltered) {{
+                bar.classList.add('hidden');
+                return;
+            }}
+
+            bar.classList.remove('hidden');
+            tags.innerHTML = '';
+
+            if (currentBranch !== 'all') {{
+                tags.innerHTML += `<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-blue-50 text-blue-700 font-semibold border border-blue-200">Branch: ${{currentBranch.toUpperCase()}}</span>`;
+            }}
+            if (currentSem !== 'all') {{
+                tags.innerHTML += `<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-indigo-50 text-indigo-700 font-semibold border border-indigo-200">Sem ${{currentSem}}</span>`;
+            }}
+            if (searchQuery.trim()) {{
+                tags.innerHTML += `<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-amber-50 text-amber-700 font-semibold border border-amber-200">"${{searchQuery.trim()}}"</span>`;
             }}
         }}
 
-        // Mobile Nav Drawer Toggle
+        // Mobile Menu Drawer Toggle
         function toggleMobileMenu() {{
-            const nav = document.getElementById('mobileNav');
+            const menu = document.getElementById('mobileNav');
             const menuIcon = document.getElementById('menuIcon');
             const closeIcon = document.getElementById('closeIcon');
-            if (nav) {{
-                nav.classList.toggle('translate-x-full');
-            }}
-            if (menuIcon && closeIcon) {{
-                menuIcon.classList.toggle('hidden');
-                closeIcon.classList.toggle('hidden');
+            const button = document.querySelector('.mobile-menu-button');
+            if (!menu) return;
+
+            const isClosed = menu.classList.contains('translate-x-full');
+            if (isClosed) {{
+                menu.classList.remove('translate-x-full', 'invisible', 'pointer-events-none');
+                if (menuIcon) menuIcon.classList.add('hidden');
+                if (closeIcon) closeIcon.classList.remove('hidden');
+                if (button) button.setAttribute('aria-expanded', 'true');
+                document.body.style.overflow = 'hidden';
+            }} else {{
+                menu.classList.add('translate-x-full', 'invisible', 'pointer-events-none');
+                if (menuIcon) menuIcon.classList.remove('hidden');
+                if (closeIcon) closeIcon.classList.add('hidden');
+                if (button) button.setAttribute('aria-expanded', 'false');
+                document.body.style.overflow = '';
             }}
         }}
 
-        // Desktop Dropdown Toggle for accessibility
-        function toggleDropdown(button, event) {{
-            event.stopPropagation();
-            const parent = button.closest('.nav-dropdown');
-            const menu = parent ? parent.querySelector('.dropdown-menu') : null;
-            if (menu) {{
-                menu.classList.toggle('hidden');
-            }}
-        }}
-
-        document.addEventListener('click', () => {{
-            document.querySelectorAll('.dropdown-menu').forEach(menu => {{
-                menu.classList.add('hidden');
+        // Dropdown toggle for touch devices
+        function toggleDropdown(btn, event) {{
+            if (event) event.stopPropagation();
+            const parent = btn.closest('.nav-dropdown');
+            if (!parent) return;
+            const isOpen = parent.classList.contains('is-open');
+            document.querySelectorAll('.nav-dropdown').forEach(d => {{
+                if (d !== parent) d.classList.remove('is-open');
             }});
+            parent.classList.toggle('is-open', !isOpen);
+        }}
+
+        document.addEventListener('click', (e) => {{
+            if (!e.target.closest('.nav-dropdown')) {{
+                document.querySelectorAll('.nav-dropdown').forEach(d => d.classList.remove('is-open'));
+            }}
+        }});
+
+        // Keyboard shortcuts
+        document.addEventListener('keydown', (e) => {{
+            if (e.key === 'Escape') {{
+                const menu = document.getElementById('mobileNav');
+                if (menu && !menu.classList.contains('translate-x-full')) {{
+                    toggleMobileMenu();
+                }}
+            }}
+        }});
+
+        // Initialize on load
+        document.addEventListener('DOMContentLoaded', () => {{
+            updateCounts();
+            applyFilters();
         }});
     </script>
 </body>
-
 </html>
 '''
 
-with open('Notes/msbte-first-year-diploma-notes.html', 'w', encoding='utf-8') as f:
+output_path = 'Notes/msbte-first-year-diploma-notes.html'
+with open(output_path, 'w', encoding='utf-8') as f:
     f.write(full_html)
 
-print("Updated Notes/msbte-first-year-diploma-notes.html with responsive layout!")
+print(f"Successfully generated: {output_path} ({len(full_html)} chars)")
