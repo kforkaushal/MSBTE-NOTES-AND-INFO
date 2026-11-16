@@ -1,0 +1,473 @@
+[
+  {
+    "code": "311302",
+    "name": "Basic Mathematics",
+    "sem": 1,
+    "branches": [
+      "COMMON",
+      "CO",
+      "IF",
+      "AN",
+      "ME",
+      "CE",
+      "EE",
+      "EJ",
+      "CH"
+    ],
+    "category": "Theory & Practical",
+    "subtitle": "Algebra, Trigonometry, Coordinate Geometry & Differential Calculus",
+    "notes_url": "/Notes/311302-basic-mathematics.html",
+    "syllabus_url": "/Branches/311302-basic-mathematics.html",
+    "pyq_url": "/pyq/311302-basic-mathematics.html",
+    "thumb": "/resourse/note-thumbs/311302-basic-mathematics.png",
+    "desc": "Fundamental mathematics course covering algebra, determinants, matrices, trigonometry, coordinate geometry, and differential calculus for all engineering disciplines.",
+    "badge": "Core Common"
+  },
+  {
+    "code": "311303",
+    "name": "Communication Skills (English)",
+    "sem": 1,
+    "branches": [
+      "COMMON",
+      "CO",
+      "IF",
+      "AN",
+      "ME",
+      "CE",
+      "EE",
+      "EJ",
+      "CH"
+    ],
+    "category": "Theory & Practical",
+    "subtitle": "Technical English, Business Correspondence, Grammar & Oral Communication",
+    "notes_url": "/Notes/311303-communication-skills-english.html",
+    "syllabus_url": "/Branches/311303-communication-skills-english.html",
+    "pyq_url": "/pyq/311303-communication-skills-english.html",
+    "thumb": "/resourse/note-thumbs/311303-communication-skills-english.png",
+    "desc": "Comprehensive English communication guide covering business letters, technical reports, grammar rules, vocabulary building, and professional speaking skills.",
+    "badge": "Core Common"
+  },
+  {
+    "code": "311305",
+    "name": "Basic Science (Physics & Chemistry)",
+    "sem": 1,
+    "branches": [
+      "COMMON",
+      "CO",
+      "IF",
+      "AN",
+      "ME",
+      "CE",
+      "EE",
+      "EJ",
+      "CH"
+    ],
+    "category": "Theory & Practical",
+    "subtitle": "Units & Dimensions, SHM, Optics, Metals, Corrosion & Water Treatment",
+    "notes_url": "/Notes/311305-basic-science.html",
+    "syllabus_url": "/Branches/311305-basic-science.html",
+    "pyq_url": "",
+    "thumb": "/resourse/note-thumbs/311305-basic-science.png",
+    "desc": "Dual-subject curriculum: Basic Physics (measurement, SHM, light, lasers) and Basic Chemistry (water treatment, metals, alloys, corrosion, lubricants) with full lab manuals.",
+    "badge": "Core Common"
+  },
+  {
+    "code": "311002",
+    "name": "Computer Engineering Workshop Practice",
+    "sem": 1,
+    "branches": [
+      "CO",
+      "IF",
+      "AN"
+    ],
+    "category": "Practical Workshop",
+    "subtitle": "PC Assembly, Hardware Identification, RJ-45 LAN Cabling & OS Setup",
+    "notes_url": "/Notes/311002-engineering-workshop-practice.html",
+    "syllabus_url": "/Branches/311002-engineering-workshop-practice.html",
+    "pyq_url": "",
+    "thumb": "/resourse/note-thumbs/311002-engineering-workshop-practice.png",
+    "desc": "Hands-on computer hardware workshop covering PC components, RAM/motherboard installation, network cable crimping (T568A/B), BIOS configuration, and OS deployment.",
+    "badge": "Computer / IT"
+  },
+  {
+    "code": "311005",
+    "name": "Engineering Workshop Practice (Mechanical & Electrical)",
+    "sem": 1,
+    "branches": [
+      "ME",
+      "EE"
+    ],
+    "category": "Practical Workshop",
+    "subtitle": "Fitting, Carpentry, Arc/Gas Welding, Sheet Metal & Electrical Wiring",
+    "notes_url": "/Notes/311005-engineering-workshop-practice.html",
+    "syllabus_url": "/Branches/311005-engineering-workshop-practice.html",
+    "pyq_url": "",
+    "thumb": "/resourse/note-thumbs/311005-engineering-workshop-practice.png",
+    "desc": "Traditional mechanical workshop practice covering precision fitting, wood joints, electric arc welding, sheet metal fabrication, and fundamental home wiring safety.",
+    "badge": "Mech & Electrical"
+  },
+  {
+    "code": "311007",
+    "name": "Electronics Engineering Workshop Practice",
+    "sem": 1,
+    "branches": [
+      "EJ"
+    ],
+    "category": "Practical Workshop",
+    "subtitle": "Component Testing, Breadboard Prototyping, PCB Soldering & CRO Operation",
+    "notes_url": "/Notes/311007-engineering-workshop-practice.html",
+    "syllabus_url": "/Branches/311007-engineering-workshop-practice.html",
+    "pyq_url": "",
+    "thumb": "/resourse/note-thumbs/311007-engineering-workshop-practice.png",
+    "desc": "Practical electronics laboratory training covering component identification (resistors, diodes, ICs), breadboard circuits, soldering/desoldering, and multimeter testing.",
+    "badge": "Electronics & TC"
+  },
+  {
+    "code": "311010",
+    "name": "Civil Engineering Workshop",
+    "sem": 1,
+    "branches": [
+      "CE"
+    ],
+    "category": "Practical Workshop",
+    "subtitle": "Brick Masonry Bonds, Plumbing Joints, Formwork Carpentry & Bar Bending",
+    "notes_url": "/Notes/311010-civil-engineering-workshop.html",
+    "syllabus_url": "/Branches/311010-civil-engineering-workshop.html",
+    "pyq_url": "",
+    "thumb": "/resourse/note-thumbs/311010-civil-engineering-workshop.png",
+    "desc": "Field civil construction workshop covering English/Flemish masonry bonds, GI & PVC plumbing pipe connections, timber shuttering joints, bar bending, and site safety.",
+    "badge": "Civil Engineering"
+  },
+  {
+    "code": "312301",
+    "name": "Applied Mathematics",
+    "sem": 2,
+    "branches": [
+      "COMMON",
+      "CO",
+      "IF",
+      "AN",
+      "ME",
+      "CE",
+      "EE",
+      "EJ",
+      "CH"
+    ],
+    "category": "Theory Course",
+    "subtitle": "Integral Calculus, Definite Integrals, Differential Equations & Numerical Methods",
+    "notes_url": "/Notes/312301-applied-mathematics.html",
+    "syllabus_url": "/Branches/312301-applied-mathematics.html",
+    "pyq_url": "/pyq/312301-applied-mathematics.html",
+    "thumb": "/resourse/note-thumbs/312301-applied-mathematics.png",
+    "desc": "Advanced mathematics for engineering: integration techniques, definite integrals, area/volume calculations, first-order differential equations, and probability distributions.",
+    "badge": "Core Common"
+  },
+  {
+    "code": "312302",
+    "name": "Basic Electrical & Electronics Engineering",
+    "sem": 2,
+    "branches": [
+      "CO",
+      "IF",
+      "AN"
+    ],
+    "category": "Theory & Practical",
+    "subtitle": "AC/DC Fundamentals, Magnetic Circuits, Diodes, Transistors & Logic Gates",
+    "notes_url": "/Notes/312302-basic-electrical-and-electronics-engineering.html",
+    "syllabus_url": "/Branches/312302-basic-electrical-and-electronics-engineering.html",
+    "pyq_url": "",
+    "thumb": "/resourse/note-thumbs/312302-basic-electrical-and-electronics-engineering.png",
+    "desc": "Essential electrical circuits, electromagnetic induction, single-phase AC concepts, transformer basics, PN junction diodes, rectifiers, and fundamental logic circuits.",
+    "badge": "Computer / IT"
+  },
+  {
+    "code": "312303",
+    "name": "Programming in C",
+    "sem": 2,
+    "branches": [
+      "CO",
+      "IF",
+      "AN"
+    ],
+    "category": "Theory & Practical",
+    "subtitle": "Algorithms, Control Flow, Arrays, Strings, Functions, Pointers & File I/O",
+    "notes_url": "/Notes/312303-programming-in-c.html",
+    "syllabus_url": "/Branches/312303-programming-in-c.html",
+    "pyq_url": "/pyq/312303-programming-in-c.html",
+    "thumb": "/resourse/note-thumbs/312303-programming-in-c.png",
+    "desc": "Comprehensive structured programming guide in C covering loops, conditional branching, 1D/2D arrays, functions, pointers, structures, unions, and file handling.",
+    "badge": "Computer / IT"
+  },
+  {
+    "code": "312001",
+    "name": "Linux Basics",
+    "sem": 2,
+    "branches": [
+      "CO",
+      "IF",
+      "AN"
+    ],
+    "category": "Practical Lab",
+    "subtitle": "Linux Shell Commands, File Permissions, Process Management & Shell Scripting",
+    "notes_url": "/Notes/312001-linux-basics.html",
+    "syllabus_url": "/Branches/312001-linux-basics.html",
+    "pyq_url": "",
+    "thumb": "/resourse/note-thumbs/312001-linux-basics.png",
+    "desc": "Operating system command-line fundamentals: Unix/Linux directory hierarchy, file manipulation, grep/sed, user administration, package management, and bash shell scripts.",
+    "badge": "Computer / IT"
+  },
+  {
+    "code": "312002",
+    "name": "Professional Communication",
+    "sem": 2,
+    "branches": [
+      "COMMON",
+      "CO",
+      "IF",
+      "AN",
+      "ME",
+      "CE",
+      "EE",
+      "EJ"
+    ],
+    "category": "Practical Lab",
+    "subtitle": "Presentation Skills, Resume Writing, Group Discussions & Corporate Etiquette",
+    "notes_url": "/Notes/312002-professional-communication.html",
+    "syllabus_url": "/Branches/312002-professional-communication.html",
+    "pyq_url": "",
+    "thumb": "/resourse/note-thumbs/312002-professional-communication.png",
+    "desc": "Workplace communication training: mock interviews, technical presentations, email drafting, meeting minutes, and corporate professional ethics.",
+    "badge": "Soft Skills"
+  },
+  {
+    "code": "312004",
+    "name": "Web Page Designing",
+    "sem": 2,
+    "branches": [
+      "CO",
+      "IF",
+      "AN"
+    ],
+    "category": "Practical Lab",
+    "subtitle": "HTML5, CSS3, Responsive Web Layouts, Bootstrap & JavaScript Basics",
+    "notes_url": "/Notes/312004-web-page-designing.html",
+    "syllabus_url": "/Branches/312004-web-page-designing.html",
+    "pyq_url": "",
+    "thumb": "/resourse/note-thumbs/312004-web-page-designing.png",
+    "desc": "Frontend web development foundations: semantic HTML5 tags, CSS flexbox/grid styling, responsive forms, navigation bars, and basic client-side JavaScript.",
+    "badge": "Computer / IT"
+  },
+  {
+    "code": "312006",
+    "name": "Basic Mechanical Engineering",
+    "sem": 2,
+    "branches": [
+      "ME"
+    ],
+    "category": "Theory & Practical",
+    "subtitle": "Thermodynamics, IC Engines, Power Transmission, Boilers & Pumps",
+    "notes_url": "/Notes/312006-basic-mechanical-engineering.html",
+    "syllabus_url": "/Branches/312006-basic-mechanical-engineering.html",
+    "pyq_url": "",
+    "thumb": "/resourse/note-thumbs/312006-basic-mechanical-engineering.png",
+    "desc": "Core mechanical engineering principles: heat engines, steam generators, pumps, air compressors, belt/gear power transmission, and manufacturing processes.",
+    "badge": "Mechanical"
+  },
+  {
+    "code": "312308",
+    "name": "Applied Science (Physics & Chemistry)",
+    "sem": 2,
+    "branches": [
+      "ME",
+      "CE",
+      "EE"
+    ],
+    "category": "Theory & Practical",
+    "subtitle": "Wave Motion, Photoelectricity, Non-destructive Testing, Electrochemistry & Fuels",
+    "notes_url": "/Notes/312308-applied-science.html",
+    "syllabus_url": "/Branches/312308-applied-science.html",
+    "pyq_url": "",
+    "thumb": "/resourse/note-thumbs/312308-applied-science.png",
+    "desc": "Applied science for core engineering: sound waves, ultrasonic testing, photocells, nanotechnology, galvanic cells, battery technologies, and industrial fuel combustion.",
+    "badge": "Core Branches"
+  },
+  {
+    "code": "312309",
+    "name": "Elements of Electronics",
+    "sem": 2,
+    "branches": [
+      "EJ"
+    ],
+    "category": "Theory & Practical",
+    "subtitle": "Semiconductor Diodes, BJT Amplifiers, JFET, MOSFET & Regulated Power Supplies",
+    "notes_url": "/Notes/312309-elements-of-electronics.html",
+    "syllabus_url": "/Branches/312309-elements-of-electronics.html",
+    "pyq_url": "/pyq/312309-elements-of-electronics.html",
+    "thumb": "/resourse/note-thumbs/312309-elements-of-electronics.png",
+    "desc": "Electronic devices and circuits: semiconductor physics, zener regulators, transistor biasing, small-signal CE amplifiers, FET characteristics, and power supply design.",
+    "badge": "Electronics & TC"
+  },
+  {
+    "code": "312310",
+    "name": "Fundamental of Electrical Engineering",
+    "sem": 2,
+    "branches": [
+      "EE"
+    ],
+    "category": "Theory & Practical",
+    "subtitle": "DC Circuits, Network Theorems, Electromagnetism, AC Waveforms & Polyphase Circuits",
+    "notes_url": "/Notes/312310-fundamental-of-electrical-engineering.html",
+    "syllabus_url": "/Branches/312310-fundamental-of-electrical-engineering.html",
+    "pyq_url": "/pyq/312310-fundamental-of-electrical-engineering.html",
+    "thumb": "/resourse/note-thumbs/312310-fundamental-of-electrical-engineering.png",
+    "desc": "Cornerstone course for electrical engineers: Ohm's & Kirchhoff's laws, superposition/Thevenin theorems, magnetic circuits, sinusoidal AC analysis, and 3-phase star/delta systems.",
+    "badge": "Electrical"
+  },
+  {
+    "code": "312311",
+    "name": "Engineering Drawing",
+    "sem": 2,
+    "branches": [
+      "ME",
+      "CE",
+      "EE"
+    ],
+    "category": "Practical Drafting",
+    "subtitle": "Orthographic Projections, Isometric Views, Sections of Solids & AutoCAD",
+    "notes_url": "/Notes/312311-engineering-drawing.html",
+    "syllabus_url": "/Branches/312311-engineering-drawing.html",
+    "pyq_url": "/pyq/312311-engineering-drawing.html",
+    "thumb": "/resourse/note-thumbs/312311-engineering-drawing.png",
+    "desc": "Technical visualization and drafting: lines, scales, engineering curves, orthographic multiview projection, isometric drawings, sectional views, and 2D computer-aided drafting.",
+    "badge": "Core Branches"
+  },
+  {
+    "code": "312312",
+    "name": "Engineering Mechanics",
+    "sem": 2,
+    "branches": [
+      "ME",
+      "CE"
+    ],
+    "category": "Theory & Practical",
+    "subtitle": "Coplanar Force Systems, Equilibrium, Friction, Centroid, Moment of Inertia & Kinetics",
+    "notes_url": "/Notes/312312-engineering-mechanics.html",
+    "syllabus_url": "/Branches/312312-engineering-mechanics.html",
+    "pyq_url": "/pyq/312312-engineering-mechanics.html",
+    "thumb": "/resourse/note-thumbs/312312-engineering-mechanics.png",
+    "desc": "Statics and dynamics fundamentals: resultant of force systems, Lami's theorem, beam reactions, laws of friction, center of gravity, Newton's laws, work-energy, and impulse.",
+    "badge": "Mech & Civil"
+  },
+  {
+    "code": "312314",
+    "name": "Basic Electronics",
+    "sem": 2,
+    "branches": [
+      "EJ"
+    ],
+    "category": "Theory & Practical",
+    "subtitle": "Diodes, Transistor Characteristics, Operational Amplifiers & Digital Gates",
+    "notes_url": "/Notes/312314-basic-electronics.html",
+    "syllabus_url": "/Branches/312314-basic-electronics.html",
+    "pyq_url": "/pyq/312314-basic-electronics.html",
+    "thumb": "/resourse/note-thumbs/312314-basic-electronics.png",
+    "desc": "Introduction to analog and digital electronic circuits: diode clippers/clampers, bipolar transistors, op-amp configurations (inverting/non-inverting), and Boolean logic gates.",
+    "badge": "Electronics & TC"
+  },
+  {
+    "code": "312315",
+    "name": "Elements of Electrical Engineering",
+    "sem": 2,
+    "branches": [
+      "EJ"
+    ],
+    "category": "Theory & Practical",
+    "subtitle": "Electrical Circuits, AC Machines, Transformers, Measuring Meters & Safety",
+    "notes_url": "/Notes/312315-elements-of-electrical-engineering.html",
+    "syllabus_url": "/Branches/312315-elements-of-electrical-engineering.html",
+    "pyq_url": "/pyq/312315-elements-of-electrical-engineering.html",
+    "thumb": "/resourse/note-thumbs/312315-elements-of-electrical-engineering.png",
+    "desc": "Electrical foundation for electronics students: magnetic circuits, single-phase transformers, DC motors, induction motors, wattmeters, earthing, and electrical safety devices.",
+    "badge": "Electronics & TC"
+  },
+  {
+    "code": "312316",
+    "name": "Electronic Materials & Components",
+    "sem": 2,
+    "branches": [
+      "EJ"
+    ],
+    "category": "Theory & Practical",
+    "subtitle": "Dielectric, Magnetic, Semiconductor Materials, Passive Components & PCB Tech",
+    "notes_url": "/Notes/312316-electronic-materials-and-components.html",
+    "syllabus_url": "/Branches/312316-electronic-materials-and-components.html",
+    "pyq_url": "",
+    "thumb": "/resourse/note-thumbs/312316-electronic-materials-and-components.png",
+    "desc": "Material science for electronics: conductors, insulators, magnetic ferrites, SMD resistors, multilayer capacitors, inductors, relays, switches, and PCB fabrication steps.",
+    "badge": "Electronics & TC"
+  },
+  {
+    "code": "312338",
+    "name": "Building Material & Construction",
+    "sem": 2,
+    "branches": [
+      "CE"
+    ],
+    "category": "Theory & Practical",
+    "subtitle": "Stones, Bricks, Cement, Mortar, Concrete, Masonry & Building Substructure",
+    "notes_url": "/Notes/312338-building-material-and-construction.html",
+    "syllabus_url": "/Branches/312338-building-material-and-construction.html",
+    "pyq_url": "/pyq/312338-building-material-and-construction.html",
+    "thumb": "/resourse/note-thumbs/312338-building-material-and-construction.png",
+    "desc": "Civil engineering construction materials: physical properties and tests for bricks, cement, aggregates, concrete mix design, foundations, masonry walls, damp proofing, and doors/windows.",
+    "badge": "Civil Engineering"
+  },
+  {
+    "code": "312339",
+    "name": "Surveying",
+    "sem": 2,
+    "branches": [
+      "CE"
+    ],
+    "category": "Theory & Practical",
+    "subtitle": "Chain Surveying, Compass Traversing, Leveling, Contouring & Plane Table",
+    "notes_url": "/Notes/312339-surveying.html",
+    "syllabus_url": "/Branches/312339-surveying.html",
+    "pyq_url": "/pyq/312339-surveying.html",
+    "thumb": "/resourse/note-thumbs/312339-surveying.png",
+    "desc": "Fundamental geospatial measurement techniques: linear measurements, prismatic compass surveying, local attraction corrections, Dumpy level operations, differential leveling, and contour plotting.",
+    "badge": "Civil Engineering"
+  },
+  {
+    "code": "312341",
+    "name": "Fundamental of Chemical Engineering & Materials",
+    "sem": 2,
+    "branches": [
+      "CH"
+    ],
+    "category": "Theory & Practical",
+    "subtitle": "Unit Operations, Material Balances, Stoichiometry, Fluid Properties & Corrosion",
+    "notes_url": "/Notes/312341-fundamental-of-chemical-engineering-and-materials.html",
+    "syllabus_url": "/Branches/312341-fundamental-of-chemical-engineering-and-materials.html",
+    "pyq_url": "",
+    "thumb": "/resourse/note-thumbs/312341-fundamental-of-chemical-engineering-and-materials.png",
+    "desc": "Introduction to process engineering: classification of chemical process operations, mass conservation equations, ideal gas laws, fluid viscosity, and material selection for corrosive environments.",
+    "badge": "Chemical Engg"
+  },
+  {
+    "code": "312342",
+    "name": "Solid Fluid Operations",
+    "sem": 2,
+    "branches": [
+      "CH"
+    ],
+    "category": "Theory & Practical",
+    "subtitle": "Particle Sizing, Filtration, Sedimentation, Agitation, Fluid Flow & Fluidization",
+    "notes_url": "/Notes/312342-solid-fluid-operations.html",
+    "syllabus_url": "/Branches/312342-solid-fluid-operations.html",
+    "pyq_url": "",
+    "thumb": "/resourse/note-thumbs/312342-solid-fluid-operations.png",
+    "desc": "Mechanical operations in chemical technology: screen analysis, ball mills, plate and frame filter press, thickeners, cyclones, mixing equipment, and fluidization dynamics.",
+    "badge": "Chemical Engg"
+  }
+]

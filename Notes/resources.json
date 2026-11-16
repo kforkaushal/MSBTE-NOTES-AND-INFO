@@ -334,19 +334,23 @@
     ]
   },
   {
-    "title": "311303 - Communication Skills (English) - First Year First Semester Question Bank",
-    "description": "Download 311303 - Communication Skills (English) question banks, model answers, and study materials for First Year First Semester, First Year.",
+    "title": "Communication Skills (English) (311303) — Comprehensive Notes, Grammar Guide & Question Bank",
+    "description": "Download complete MSBTE K-Scheme Communication Skills (English) handwritten notes, applied grammar guide, business letter writing, unit 1-4 summaries, question bank, and lab manual.",
     "url": "/Notes/311303-communication-skills-english.html",
     "thumbnail": "/resourse/note-thumbs/311303-communication-skills-english.png",
-    "category": "question-bank",
+    "category": "notes",
     "tags": [
-      "311303 - Communication Skills (English)",
-      "First Year First Semester",
-      "First Year",
-      "MSBTE",
-      "K-Scheme"
+      "Communication Skills",
+      "English",
+      "311303",
+      "K-Scheme",
+      "Semester 1",
+      "Grammar",
+      "Handwritten",
+      "Lab Manual",
+      "Question Bank"
     ],
-    "dateAdded": "2026-03-10",
+    "dateAdded": "2026-11-16",
     "code": "311303",
     "shortCode": "ENG",
     "semester": 1,
@@ -392,17 +396,20 @@
     ]
   },
   {
-    "title": "311302 - Basic Mathematics - First Year First Semester Question Bank",
-    "description": "Download 311302 - Basic Mathematics question banks, model answers, and study materials for First Year First Semester, First Year.",
+    "title": "Basic Mathematics (311302) — Complete Formula Sheet, Notes & Question Bank",
+    "description": "Download complete MSBTE K-Scheme Basic Mathematics (311302) chapter notes, algebra, trigonometry, coordinate geometry, calculus formulas, and solved question bank.",
     "url": "/Notes/311302-basic-mathematics.html",
     "thumbnail": "/resourse/note-thumbs/311302-basic-mathematics.png",
-    "category": "question-bank",
+    "category": "notes",
     "tags": [
-      "311302 - Basic Mathematics",
-      "First Year First Semester",
-      "First Year",
-      "MSBTE",
-      "K-Scheme"
+      "Basic Mathematics",
+      "Maths 1",
+      "311302",
+      "K-Scheme",
+      "Semester 1",
+      "Formulas",
+      "Question Bank",
+      "Notes"
     ],
     "dateAdded": "2026-03-10",
     "code": "311302",
@@ -421,21 +428,24 @@
     ]
   },
   {
-    "title": "312301 - Applied Mathematics - First Year Second Semester Question Bank",
-    "description": "Download 312301 - Applied Mathematics question banks, model answers, and study materials for First Year Second Semester, First Year.",
+    "title": "Applied Mathematics (312301) — Calculus, Differential Equations & Question Bank",
+    "description": "Download complete MSBTE K-Scheme Applied Mathematics (312301) calculus notes, differential equations formulas, solved question papers, and question bank.",
     "url": "/Notes/312301-applied-mathematics.html",
     "thumbnail": "/resourse/note-thumbs/312301-applied-mathematics.png",
-    "category": "question-bank",
+    "category": "notes",
     "tags": [
-      "312301 - Applied Mathematics",
-      "First Year Second Semester",
-      "First Year",
-      "MSBTE",
-      "K-Scheme"
+      "Applied Mathematics",
+      "Maths 2",
+      "312301",
+      "K-Scheme",
+      "Semester 2",
+      "Calculus",
+      "Differential Equations",
+      "Question Bank"
     ],
-    "dateAdded": "2026-03-10",
+    "dateAdded": "2026-11-16",
     "code": "312301",
-    "shortCode": "AMS",
+    "shortCode": "M2",
     "semester": 2,
     "year": 1,
     "branches": [
@@ -450,57 +460,57 @@
     ]
   },
   {
-    "title": "312302 - Basic Electrical and Electronics Engineering - First Year Second Semester Question Bank",
-    "description": "Download 312302 - Basic Electrical and Electronics Engineering question banks, model answers, and study materials for First Year Second Semester, First Year.",
+    "title": "Basic Electrical & Electronics Engineering (312302) — Comprehensive Notes & Lab Manual",
+    "description": "Download MSBTE K-Scheme Basic Electrical and Electronics Engineering (312302) core study notes, AC/DC circuits, semiconductor diodes, question bank, and lab manual.",
     "url": "/Notes/312302-basic-electrical-and-electronics-engineering.html",
     "thumbnail": "/resourse/note-thumbs/312302-basic-electrical-and-electronics-engineering.png",
-    "category": "question-bank",
+    "category": "notes",
     "tags": [
-      "312302 - Basic Electrical and Electronics Engineering",
-      "First Year Second Semester",
-      "First Year",
-      "MSBTE",
-      "K-Scheme"
+      "BEEE",
+      "Electrical",
+      "Electronics",
+      "312302",
+      "K-Scheme",
+      "Semester 2",
+      "Lab Manual",
+      "Question Bank"
     ],
-    "dateAdded": "2026-03-10",
+    "dateAdded": "2026-11-16",
     "code": "312302",
-    "shortCode": "BEE",
+    "shortCode": "BEEE",
     "semester": 2,
     "year": 1,
     "branches": [
-      "COMMON",
       "CO",
       "IF",
-      "AN",
-      "ME",
-      "CE"
+      "AN"
     ]
   },
   {
-    "title": "312303 - Programming in C - First Year Second Semester Question Bank",
-    "description": "Download 312303 - Programming in C question banks, model answers, and study materials for First Year Second Semester, First Year.",
+    "title": "Programming in C (312303) — Complete Notes, Code Examples & Lab Manual",
+    "description": "Download MSBTE K-Scheme Programming in C (312303) complete notes, control structures, arrays, pointers, functions, solved question bank, and practical lab manual.",
     "url": "/Notes/312303-programming-in-c.html",
     "thumbnail": "/resourse/note-thumbs/312303-programming-in-c.png",
-    "category": "question-bank",
+    "category": "notes",
     "tags": [
-      "312303 - Programming in C",
-      "First Year Second Semester",
-      "First Year",
-      "MSBTE",
-      "K-Scheme"
+      "Programming in C",
+      "C Language",
+      "PCI",
+      "312303",
+      "K-Scheme",
+      "Semester 2",
+      "Code Examples",
+      "Lab Manual"
     ],
-    "dateAdded": "2026-03-10",
+    "dateAdded": "2026-11-16",
     "code": "312303",
-    "shortCode": "PIC",
+    "shortCode": "PCI",
     "semester": 2,
     "year": 1,
     "branches": [
-      "COMMON",
       "CO",
       "IF",
-      "AN",
-      "EE",
-      "EJ"
+      "AN"
     ]
   },
   {
@@ -913,70 +923,79 @@
     ]
   },
   {
-    "title": "312316 - Electronic Materials and Components - First Year Second Semester Question Bank",
-    "description": "Download 312316 - Electronic Materials and Components question banks, model answers, and study materials for First Year Second Semester, First Year.",
+    "title": "Electronic Materials and Components (312316) — Notes, Question Bank & Lab Manual",
+    "description": "Download MSBTE K-Scheme Electronic Materials and Components (312316) complete notes, magnetic materials, dielectric materials, question bank, and lab manual.",
     "url": "/Notes/312316-electronic-materials-and-components.html",
     "thumbnail": "/resourse/note-thumbs/312316-electronic-materials-and-components.png",
-    "category": "question-bank",
+    "category": "notes",
     "tags": [
-      "312316 - Electronic Materials and Components",
-      "First Year Second Semester",
-      "First Year",
-      "MSBTE",
-      "K-Scheme"
+      "Electronic Materials",
+      "EMC",
+      "312316",
+      "K-Scheme",
+      "Semester 2",
+      "Lab Manual",
+      "Question Bank"
     ],
-    "dateAdded": "2026-03-10",
+    "dateAdded": "2026-11-16",
     "code": "312316",
     "shortCode": "EMC",
     "semester": 2,
     "year": 1,
     "branches": [
-      "EJ"
+      "EJ",
+      "IE"
     ]
   },
   {
-    "title": "312314 - Basic Electronics - First Year Second Semester Question Bank",
-    "description": "Download 312314 - Basic Electronics question banks, model answers, and study materials for First Year Second Semester, First Year.",
+    "title": "Basic Electronics (312314) — Complete Notes, Question Bank & Lab Manual",
+    "description": "Download MSBTE K-Scheme Basic Electronics (312314) complete notes, PN junction diodes, rectifiers, transistors, question bank, and practical lab manual.",
     "url": "/Notes/312314-basic-electronics.html",
     "thumbnail": "/resourse/note-thumbs/312314-basic-electronics.png",
-    "category": "question-bank",
+    "category": "notes",
     "tags": [
-      "312314 - Basic Electronics",
-      "First Year Second Semester",
-      "First Year",
-      "MSBTE",
-      "K-Scheme"
+      "Basic Electronics",
+      "BEL",
+      "312314",
+      "K-Scheme",
+      "Semester 2",
+      "Diodes",
+      "Transistors",
+      "Lab Manual"
     ],
-    "dateAdded": "2026-03-10",
+    "dateAdded": "2026-11-16",
     "code": "312314",
     "shortCode": "BEL",
     "semester": 2,
     "year": 1,
     "branches": [
       "EJ",
-      "EE"
+      "IE"
     ]
   },
   {
-    "title": "312315 - Elements of Electrical Engineering - First Year Second Semester Question Bank",
-    "description": "Download 312315 - Elements of Electrical Engineering question banks, model answers, and study materials for First Year Second Semester, First Year.",
+    "title": "Elements of Electrical Engineering (312315) — Comprehensive Notes & Lab Manual",
+    "description": "Download MSBTE K-Scheme Elements of Electrical Engineering (312315) reference e-book, core study notes, transformers, motors, question bank, and lab manual.",
     "url": "/Notes/312315-elements-of-electrical-engineering.html",
     "thumbnail": "/resourse/note-thumbs/312315-elements-of-electrical-engineering.png",
-    "category": "question-bank",
+    "category": "notes",
     "tags": [
-      "312315 - Elements of Electrical Engineering",
-      "First Year Second Semester",
-      "First Year",
-      "MSBTE",
-      "K-Scheme"
+      "Elements of Electrical Engineering",
+      "EEE",
+      "312315",
+      "K-Scheme",
+      "Semester 2",
+      "Transformers",
+      "Lab Manual"
     ],
-    "dateAdded": "2026-03-10",
+    "dateAdded": "2026-11-16",
     "code": "312315",
     "shortCode": "EEE",
     "semester": 2,
     "year": 1,
     "branches": [
-      "EE"
+      "EJ",
+      "IE"
     ]
   },
   {
@@ -13120,113 +13139,102 @@
     ]
   },
   {
-    "title": "Engineering Workshop Practice — Project & Practical Workshop Guide",
-    "description": "Download MSBTE K-Scheme Engineering Workshop Practice (311002) notes and study materials for Semester 1 diploma engineering.",
+    "title": "Computer Engineering Workshop Practice (311002) — Official Curriculum & Lab Guide",
+    "description": "Download MSBTE K-Scheme Computer Engineering Workshop Practice (311002) official curriculum, PC assembly guide, network cabling, and OS setup notes.",
     "url": "/Notes/311002-engineering-workshop-practice.html",
     "thumbnail": "/resourse/note-thumbs/311002-engineering-workshop-practice.png",
     "category": "notes",
     "tags": [
-      "notes",
-      "k-scheme",
-      "msbte",
-      "semester 1",
+      "Engineering Workshop",
+      "Computer Workshop",
       "311002",
-      "Engineering Workshop Practice",
       "K-Scheme",
-      "Semester 1"
+      "Semester 1",
+      "PC Assembly",
+      "Networking"
     ],
     "dateAdded": "2026-11-16",
     "code": "311002",
-    "shortCode": "311002",
+    "shortCode": "EWP-CO",
     "semester": 1,
     "year": 1,
     "branches": [
-      "COMMON",
       "CO",
       "IF",
-      "AN",
-      "ME",
-      "CE",
-      "EE",
-      "EJ"
+      "AN"
     ]
   },
   {
-    "title": "Engineering Workshop Practice — Project & Practical Workshop Guide",
-    "description": "Download MSBTE K-Scheme Engineering Workshop Practice (311005) notes and study materials for Semester 1 diploma engineering.",
+    "title": "Engineering Workshop Practice (311005) — Practical Workshop Guide (Fitting, Carpentry, Welding)",
+    "description": "Download MSBTE K-Scheme Engineering Workshop Practice (311005) practical project guide, fitting, welding, carpentry, sheet metal jobs, and official syllabus.",
     "url": "/Notes/311005-engineering-workshop-practice.html",
     "thumbnail": "/resourse/note-thumbs/311005-engineering-workshop-practice.png",
     "category": "notes",
     "tags": [
-      "notes",
-      "k-scheme",
-      "msbte",
-      "semester 1",
+      "Engineering Workshop",
+      "Workshop Practice",
       "311005",
-      "Engineering Workshop Practice",
       "K-Scheme",
-      "Semester 1"
+      "Semester 1",
+      "Fitting",
+      "Welding",
+      "Carpentry"
     ],
     "dateAdded": "2026-11-16",
     "code": "311005",
-    "shortCode": "311005",
+    "shortCode": "EWP-ME",
     "semester": 1,
     "year": 1,
     "branches": [
-      "COMMON",
-      "CO",
-      "IF",
-      "AN",
       "ME",
-      "CE",
-      "EE",
-      "EJ"
+      "EE"
     ]
   },
   {
-    "title": "Engineering Workshop Practice — Project & Practical Workshop Guide",
-    "description": "Download MSBTE K-Scheme Engineering Workshop Practice (311007) notes and study materials for Semester 1 diploma engineering.",
+    "title": "Electronics Engineering Workshop Practice (311007) — Soldering, PCB & Circuit Guide",
+    "description": "Download MSBTE K-Scheme Electronics Workshop Practice (311007) practical guide, PCB soldering, electronic component testing, and breadboard prototyping.",
     "url": "/Notes/311007-engineering-workshop-practice.html",
     "thumbnail": "/resourse/note-thumbs/311007-engineering-workshop-practice.png",
     "category": "notes",
     "tags": [
-      "notes",
-      "k-scheme",
-      "msbte",
-      "semester 1",
+      "Engineering Workshop",
+      "Electronics Workshop",
       "311007",
-      "Engineering Workshop Practice",
       "K-Scheme",
-      "Semester 1"
+      "Semester 1",
+      "Soldering",
+      "PCB",
+      "Components"
     ],
     "dateAdded": "2026-11-16",
     "code": "311007",
-    "shortCode": "311007",
+    "shortCode": "EWP-EJ",
     "semester": 1,
     "year": 1,
     "branches": [
-      "EJ"
+      "EJ",
+      "IE"
     ]
   },
   {
-    "title": "Engineering Workshop Practice — Project & Practical Workshop Guide",
-    "description": "Download MSBTE K-Scheme Civil Engineering Workshop (311010) notes and study materials for Semester 1 diploma engineering.",
+    "title": "Civil Engineering Workshop (311010) — Masonry, Plumbing & Construction Guide",
+    "description": "Download MSBTE K-Scheme Civil Engineering Workshop (311010) practical guide, brick masonry bonds, plumbing joints, bar bending, and site safety.",
     "url": "/Notes/311010-civil-engineering-workshop.html",
     "thumbnail": "/resourse/note-thumbs/311010-civil-engineering-workshop.png",
     "category": "notes",
     "tags": [
-      "notes",
-      "k-scheme",
-      "msbte",
-      "semester 1",
+      "Civil Workshop",
       "311010",
-      "Civil Engineering Workshop",
       "K-Scheme",
-      "Semester 1"
+      "Semester 1",
+      "Masonry",
+      "Plumbing",
+      "Bar Bending",
+      "Construction"
     ],
     "dateAdded": "2026-11-16",
     "code": "311010",
-    "shortCode": "311010",
+    "shortCode": "CEW",
     "semester": 1,
     "year": 1,
     "branches": [
@@ -13234,474 +13242,24 @@
     ]
   },
   {
-    "title": "Communication Skills (English) — Applied English Grammar Guide",
-    "description": "Download MSBTE K-Scheme Communication Skills (English) (311303) notes and study materials for Semester 1 diploma engineering.",
-    "url": "/Notes/311303-communication-skills-english.html",
-    "thumbnail": "/resourse/note-thumbs/311303-communication-skills-english.png",
-    "category": "notes",
-    "tags": [
-      "notes",
-      "k-scheme",
-      "msbte",
-      "semester 1",
-      "311303",
-      "Communication Skills (English)",
-      "K-Scheme",
-      "Semester 1"
-    ],
-    "dateAdded": "2026-11-16",
-    "code": "311303",
-    "shortCode": "311303",
-    "semester": 1,
-    "year": 1,
-    "branches": [
-      "COMMON",
-      "CO",
-      "IF",
-      "AN",
-      "ME",
-      "CE",
-      "EE",
-      "EJ"
-    ]
-  },
-  {
-    "title": "Communication Skills (English) — Business & Technical Letter Writing",
-    "description": "Download MSBTE K-Scheme Communication Skills (English) (311303) notes and study materials for Semester 1 diploma engineering.",
-    "url": "/Notes/311303-communication-skills-english.html",
-    "thumbnail": "/resourse/note-thumbs/311303-communication-skills-english.png",
-    "category": "notes",
-    "tags": [
-      "notes",
-      "k-scheme",
-      "msbte",
-      "semester 1",
-      "311303",
-      "Communication Skills (English)",
-      "K-Scheme",
-      "Semester 1"
-    ],
-    "dateAdded": "2026-11-16",
-    "code": "311303",
-    "shortCode": "311303",
-    "semester": 1,
-    "year": 1,
-    "branches": [
-      "COMMON",
-      "CO",
-      "IF",
-      "AN",
-      "ME",
-      "CE",
-      "EE",
-      "EJ"
-    ]
-  },
-  {
-    "title": "Communication Skills (English) — Complete Handwritten Notes",
-    "description": "Download MSBTE K-Scheme Communication Skills (English) (311303) notes and study materials for Semester 1 diploma engineering.",
-    "url": "/Notes/311303-communication-skills-english.html",
-    "thumbnail": "/resourse/note-thumbs/311303-communication-skills-english.png",
-    "category": "notes",
-    "tags": [
-      "notes",
-      "k-scheme",
-      "msbte",
-      "semester 1",
-      "handwritten",
-      "311303",
-      "Communication Skills (English)",
-      "K-Scheme",
-      "Semester 1"
-    ],
-    "dateAdded": "2026-11-16",
-    "code": "311303",
-    "shortCode": "311303",
-    "semester": 1,
-    "year": 1,
-    "branches": [
-      "COMMON",
-      "CO",
-      "IF",
-      "AN",
-      "ME",
-      "CE",
-      "EE",
-      "EJ"
-    ]
-  },
-  {
-    "title": "Communication Skills (English) — Complete Study Notes",
-    "description": "Download MSBTE K-Scheme Communication Skills (English) (311303) notes and study materials for Semester 1 diploma engineering.",
-    "url": "/Notes/311303-communication-skills-english.html",
-    "thumbnail": "/resourse/note-thumbs/311303-communication-skills-english.png",
-    "category": "notes",
-    "tags": [
-      "notes",
-      "k-scheme",
-      "msbte",
-      "semester 1",
-      "311303",
-      "Communication Skills (English)",
-      "K-Scheme",
-      "Semester 1"
-    ],
-    "dateAdded": "2026-11-16",
-    "code": "311303",
-    "shortCode": "311303",
-    "semester": 1,
-    "year": 1,
-    "branches": [
-      "COMMON",
-      "CO",
-      "IF",
-      "AN",
-      "ME",
-      "CE",
-      "EE",
-      "EJ"
-    ]
-  },
-  {
-    "title": "Communication Skills (English) — MCQs & One Word Answers",
-    "description": "Download MSBTE K-Scheme Communication Skills (English) (311303) notes and study materials for Semester 1 diploma engineering.",
-    "url": "/Notes/311303-communication-skills-english.html",
-    "thumbnail": "/resourse/note-thumbs/311303-communication-skills-english.png",
-    "category": "notes",
-    "tags": [
-      "notes",
-      "k-scheme",
-      "msbte",
-      "semester 1",
-      "mcq",
-      "311303",
-      "Communication Skills (English)",
-      "K-Scheme",
-      "Semester 1"
-    ],
-    "dateAdded": "2026-11-16",
-    "code": "311303",
-    "shortCode": "311303",
-    "semester": 1,
-    "year": 1,
-    "branches": [
-      "COMMON",
-      "CO",
-      "IF",
-      "AN",
-      "ME",
-      "CE",
-      "EE",
-      "EJ"
-    ]
-  },
-  {
-    "title": "Communication Skills (English) — Units 1 to 4 Comprehensive Notes",
-    "description": "Download MSBTE K-Scheme Communication Skills (English) (311303) notes and study materials for Semester 1 diploma engineering.",
-    "url": "/Notes/311303-communication-skills-english.html",
-    "thumbnail": "/resourse/note-thumbs/311303-communication-skills-english.png",
-    "category": "notes",
-    "tags": [
-      "notes",
-      "k-scheme",
-      "msbte",
-      "semester 1",
-      "311303",
-      "Communication Skills (English)",
-      "K-Scheme",
-      "Semester 1"
-    ],
-    "dateAdded": "2026-11-16",
-    "code": "311303",
-    "shortCode": "311303",
-    "semester": 1,
-    "year": 1,
-    "branches": [
-      "COMMON",
-      "CO",
-      "IF",
-      "AN",
-      "ME",
-      "CE",
-      "EE",
-      "EJ"
-    ]
-  },
-  {
-    "title": "Communication Skills (English) Lab Manual",
-    "description": "Download MSBTE K-Scheme Communication Skills (English) (311303) lab manual and study materials for Semester 1 diploma engineering.",
-    "url": "/Notes/311303-communication-skills-english.html",
-    "thumbnail": "/resourse/note-thumbs/311303-communication-skills-english.png",
-    "category": "lab-manual",
-    "tags": [
-      "lab_manual",
-      "k-scheme",
-      "311303",
-      "semester 1",
-      "msbte",
-      "Communication Skills (English)",
-      "K-Scheme",
-      "Semester 1"
-    ],
-    "dateAdded": "2026-11-16",
-    "code": "311303",
-    "shortCode": "311303",
-    "semester": 1,
-    "year": 1,
-    "branches": [
-      "COMMON",
-      "CO",
-      "IF",
-      "AN",
-      "ME",
-      "CE",
-      "EE",
-      "EJ"
-    ]
-  },
-  {
-    "title": "Basic Science (Chemistry) — Module 1 Notes",
-    "description": "Download MSBTE K-Scheme Basic Science (311305) notes and study materials for Semester 1 diploma engineering.",
+    "title": "Basic Science (Physics & Chemistry) (311305) — Complete Notes & Lab Manuals",
+    "description": "Download MSBTE K-Scheme Basic Science (311305) complete notes for Physics (Units, SHM, Optics) and Chemistry (Metals, Corrosion, Water Treatment) with practical lab manuals.",
     "url": "/Notes/311305-basic-science.html",
     "thumbnail": "/resourse/note-thumbs/311305-basic-science.png",
     "category": "notes",
     "tags": [
-      "notes",
-      "k-scheme",
-      "msbte",
-      "semester 1",
-      "311305",
       "Basic Science",
+      "Physics",
+      "Chemistry",
+      "311305",
       "K-Scheme",
-      "Semester 1"
+      "Semester 1",
+      "Lab Manual",
+      "Question Bank"
     ],
     "dateAdded": "2026-11-16",
     "code": "311305",
-    "shortCode": "311305",
-    "semester": 1,
-    "year": 1,
-    "branches": [
-      "COMMON",
-      "CO",
-      "IF",
-      "AN",
-      "ME",
-      "CE",
-      "EE",
-      "EJ"
-    ]
-  },
-  {
-    "title": "Basic Science (Chemistry) — Module 4 Notes",
-    "description": "Download MSBTE K-Scheme Basic Science (311305) notes and study materials for Semester 1 diploma engineering.",
-    "url": "/Notes/311305-basic-science.html",
-    "thumbnail": "/resourse/note-thumbs/311305-basic-science.png",
-    "category": "notes",
-    "tags": [
-      "notes",
-      "k-scheme",
-      "msbte",
-      "semester 1",
-      "311305",
-      "Basic Science",
-      "K-Scheme",
-      "Semester 1"
-    ],
-    "dateAdded": "2026-11-16",
-    "code": "311305",
-    "shortCode": "311305",
-    "semester": 1,
-    "year": 1,
-    "branches": [
-      "COMMON",
-      "CO",
-      "IF",
-      "AN",
-      "ME",
-      "CE",
-      "EE",
-      "EJ"
-    ]
-  },
-  {
-    "title": "Basic Science (Chemistry) — Practical & Experiment File",
-    "description": "Download MSBTE K-Scheme Basic Science (311305) notes and study materials for Semester 1 diploma engineering.",
-    "url": "/Notes/311305-basic-science.html",
-    "thumbnail": "/resourse/note-thumbs/311305-basic-science.png",
-    "category": "notes",
-    "tags": [
-      "notes",
-      "k-scheme",
-      "msbte",
-      "semester 1",
-      "311305",
-      "Basic Science",
-      "K-Scheme",
-      "Semester 1"
-    ],
-    "dateAdded": "2026-11-16",
-    "code": "311305",
-    "shortCode": "311305",
-    "semester": 1,
-    "year": 1,
-    "branches": [
-      "COMMON",
-      "CO",
-      "IF",
-      "AN",
-      "ME",
-      "CE",
-      "EE",
-      "EJ"
-    ]
-  },
-  {
-    "title": "Basic Science (Chemistry) Lab Manual",
-    "description": "Download MSBTE K-Scheme Basic Science (311305) lab manual and study materials for Semester 1 diploma engineering.",
-    "url": "/Notes/311305-basic-science.html",
-    "thumbnail": "/resourse/note-thumbs/311305-basic-science.png",
-    "category": "lab-manual",
-    "tags": [
-      "lab_manual",
-      "k-scheme",
-      "311305",
-      "semester 1",
-      "msbte",
-      "Basic Science",
-      "K-Scheme",
-      "Semester 1"
-    ],
-    "dateAdded": "2026-11-16",
-    "code": "311305",
-    "shortCode": "311305",
-    "semester": 1,
-    "year": 1,
-    "branches": [
-      "COMMON",
-      "CO",
-      "IF",
-      "AN",
-      "ME",
-      "CE",
-      "EE",
-      "EJ"
-    ]
-  },
-  {
-    "title": "Basic Science (Physics) — Comprehensive Study Notes",
-    "description": "Download MSBTE K-Scheme Basic Science (311305) notes and study materials for Semester 1 diploma engineering.",
-    "url": "/Notes/311305-basic-science.html",
-    "thumbnail": "/resourse/note-thumbs/311305-basic-science.png",
-    "category": "notes",
-    "tags": [
-      "notes",
-      "k-scheme",
-      "msbte",
-      "semester 1",
-      "311305",
-      "Basic Science",
-      "K-Scheme",
-      "Semester 1"
-    ],
-    "dateAdded": "2026-11-16",
-    "code": "311305",
-    "shortCode": "311305",
-    "semester": 1,
-    "year": 1,
-    "branches": [
-      "COMMON",
-      "CO",
-      "IF",
-      "AN",
-      "ME",
-      "CE",
-      "EE",
-      "EJ"
-    ]
-  },
-  {
-    "title": "Basic Science (Physics) — Practical & Experiment File",
-    "description": "Download MSBTE K-Scheme Basic Science (311305) notes and study materials for Semester 1 diploma engineering.",
-    "url": "/Notes/311305-basic-science.html",
-    "thumbnail": "/resourse/note-thumbs/311305-basic-science.png",
-    "category": "notes",
-    "tags": [
-      "notes",
-      "k-scheme",
-      "msbte",
-      "semester 1",
-      "311305",
-      "Basic Science",
-      "K-Scheme",
-      "Semester 1"
-    ],
-    "dateAdded": "2026-11-16",
-    "code": "311305",
-    "shortCode": "311305",
-    "semester": 1,
-    "year": 1,
-    "branches": [
-      "COMMON",
-      "CO",
-      "IF",
-      "AN",
-      "ME",
-      "CE",
-      "EE",
-      "EJ"
-    ]
-  },
-  {
-    "title": "Basic Science (Physics) — Simple Harmonic Motion (SHM) Notes",
-    "description": "Download MSBTE K-Scheme Basic Science (311305) notes and study materials for Semester 1 diploma engineering.",
-    "url": "/Notes/311305-basic-science.html",
-    "thumbnail": "/resourse/note-thumbs/311305-basic-science.png",
-    "category": "notes",
-    "tags": [
-      "notes",
-      "k-scheme",
-      "msbte",
-      "semester 1",
-      "311305",
-      "Basic Science",
-      "K-Scheme",
-      "Semester 1"
-    ],
-    "dateAdded": "2026-11-16",
-    "code": "311305",
-    "shortCode": "311305",
-    "semester": 1,
-    "year": 1,
-    "branches": [
-      "COMMON",
-      "CO",
-      "IF",
-      "AN",
-      "ME",
-      "CE",
-      "EE",
-      "EJ"
-    ]
-  },
-  {
-    "title": "Basic Science (Physics) Lab Manual",
-    "description": "Download MSBTE K-Scheme Basic Science (311305) lab manual and study materials for Semester 1 diploma engineering.",
-    "url": "/Notes/311305-basic-science.html",
-    "thumbnail": "/resourse/note-thumbs/311305-basic-science.png",
-    "category": "lab-manual",
-    "tags": [
-      "lab_manual",
-      "k-scheme",
-      "311305",
-      "semester 1",
-      "msbte",
-      "Basic Science",
-      "K-Scheme",
-      "Semester 1"
-    ],
-    "dateAdded": "2026-11-16",
-    "code": "311305",
-    "shortCode": "311305",
+    "shortCode": "BSC",
     "semester": 1,
     "year": 1,
     "branches": [
@@ -13837,451 +13395,30 @@
     ]
   },
   {
-    "title": "Applied Mathematics — Complete Calculus & Differential Equations Notes",
-    "description": "Download MSBTE K-Scheme Applied Mathematics (312301) notes and study materials for Semester 2 diploma engineering.",
-    "url": "/Notes/312301-applied-mathematics.html",
-    "thumbnail": "/resourse/note-thumbs/312301-applied-mathematics.png",
-    "category": "notes",
-    "tags": [
-      "notes",
-      "k-scheme",
-      "msbte",
-      "semester 2",
-      "312301",
-      "Applied Mathematics",
-      "K-Scheme",
-      "Semester 2"
-    ],
-    "dateAdded": "2026-11-16",
-    "code": "312301",
-    "shortCode": "312301",
-    "semester": 2,
-    "year": 1,
-    "branches": [
-      "COMMON",
-      "CO",
-      "IF",
-      "AN",
-      "ME",
-      "CE",
-      "EE",
-      "EJ"
-    ]
-  },
-  {
-    "title": "Applied Mathematics — Comprehensive Notes & Solved Problems",
-    "description": "Download MSBTE K-Scheme Applied Mathematics (312301) notes and study materials for Semester 2 diploma engineering.",
-    "url": "/Notes/312301-applied-mathematics.html",
-    "thumbnail": "/resourse/note-thumbs/312301-applied-mathematics.png",
-    "category": "notes",
-    "tags": [
-      "notes",
-      "k-scheme",
-      "msbte",
-      "semester 2",
-      "312301",
-      "Applied Mathematics",
-      "K-Scheme",
-      "Semester 2"
-    ],
-    "dateAdded": "2026-11-16",
-    "code": "312301",
-    "shortCode": "312301",
-    "semester": 2,
-    "year": 1,
-    "branches": [
-      "COMMON",
-      "CO",
-      "IF",
-      "AN",
-      "ME",
-      "CE",
-      "EE",
-      "EJ"
-    ]
-  },
-  {
-    "title": "Basic Electrical and Electronics Engineering — Comprehensive Notes",
-    "description": "Download MSBTE K-Scheme Basic Electrical And Electronics Engineering (312302) notes and study materials for Semester 2 diploma engineering.",
-    "url": "/Notes/312302-basic-electrical-and-electronics-engineering.html",
-    "thumbnail": "/resourse/note-thumbs/312302-basic-electrical-and-electronics-engineering.png",
-    "category": "notes",
-    "tags": [
-      "notes",
-      "k-scheme",
-      "msbte",
-      "semester 2",
-      "312302",
-      "Basic Electrical And Electronics Engineering",
-      "K-Scheme",
-      "Semester 2"
-    ],
-    "dateAdded": "2026-11-16",
-    "code": "312302",
-    "shortCode": "312302",
-    "semester": 2,
-    "year": 1,
-    "branches": [
-      "COMMON",
-      "CO",
-      "IF",
-      "AN",
-      "ME",
-      "CE",
-      "EE",
-      "EJ"
-    ]
-  },
-  {
-    "title": "Basic Electrical and Electronics Engineering — Core Notes",
-    "description": "Download MSBTE K-Scheme Basic Electrical And Electronics Engineering (312302) notes and study materials for Semester 2 diploma engineering.",
-    "url": "/Notes/312302-basic-electrical-and-electronics-engineering.html",
-    "thumbnail": "/resourse/note-thumbs/312302-basic-electrical-and-electronics-engineering.png",
-    "category": "notes",
-    "tags": [
-      "notes",
-      "k-scheme",
-      "msbte",
-      "semester 2",
-      "312302",
-      "Basic Electrical And Electronics Engineering",
-      "K-Scheme",
-      "Semester 2"
-    ],
-    "dateAdded": "2026-11-16",
-    "code": "312302",
-    "shortCode": "312302",
-    "semester": 2,
-    "year": 1,
-    "branches": [
-      "COMMON",
-      "CO",
-      "IF",
-      "AN",
-      "ME",
-      "CE",
-      "EE",
-      "EJ"
-    ]
-  },
-  {
-    "title": "Basic Electrical and Electronics Engineering Lab Manual",
-    "description": "Download MSBTE K-Scheme Basic Electrical And Electronics Engineering (312302) lab manual and study materials for Semester 2 diploma engineering.",
-    "url": "/Notes/312302-basic-electrical-and-electronics-engineering.html",
-    "thumbnail": "/resourse/note-thumbs/312302-basic-electrical-and-electronics-engineering.png",
-    "category": "lab-manual",
-    "tags": [
-      "lab_manual",
-      "k-scheme",
-      "312302",
-      "semester 2",
-      "msbte",
-      "Basic Electrical And Electronics Engineering",
-      "K-Scheme",
-      "Semester 2"
-    ],
-    "dateAdded": "2026-11-16",
-    "code": "312302",
-    "shortCode": "312302",
-    "semester": 2,
-    "year": 1,
-    "branches": [
-      "COMMON",
-      "CO",
-      "IF",
-      "AN",
-      "ME",
-      "CE",
-      "EE",
-      "EJ"
-    ]
-  },
-  {
-    "title": "Programming in C — CO 2I PCI 2",
-    "description": "Download MSBTE K-Scheme Programming In C (312303) notes and study materials for Semester 2 diploma engineering.",
-    "url": "/Notes/312303-programming-in-c.html",
-    "thumbnail": "/resourse/note-thumbs/312303-programming-in-c.png",
-    "category": "notes",
-    "tags": [
-      "notes",
-      "k-scheme",
-      "msbte",
-      "semester 2",
-      "312303",
-      "Programming In C",
-      "K-Scheme",
-      "Semester 2"
-    ],
-    "dateAdded": "2026-11-16",
-    "code": "312303",
-    "shortCode": "312303",
-    "semester": 2,
-    "year": 1,
-    "branches": [
-      "COMMON",
-      "CO",
-      "IF",
-      "AN",
-      "ME",
-      "CE",
-      "EE",
-      "EJ"
-    ]
-  },
-  {
-    "title": "Programming in C — Comprehensive Notes & Code Examples (Part 1)",
-    "description": "Download MSBTE K-Scheme Programming In C (312303) notes and study materials for Semester 2 diploma engineering.",
-    "url": "/Notes/312303-programming-in-c.html",
-    "thumbnail": "/resourse/note-thumbs/312303-programming-in-c.png",
-    "category": "notes",
-    "tags": [
-      "notes",
-      "k-scheme",
-      "msbte",
-      "semester 2",
-      "312303",
-      "Programming In C",
-      "K-Scheme",
-      "Semester 2"
-    ],
-    "dateAdded": "2026-11-16",
-    "code": "312303",
-    "shortCode": "312303",
-    "semester": 2,
-    "year": 1,
-    "branches": [
-      "COMMON",
-      "CO",
-      "IF",
-      "AN",
-      "ME",
-      "CE",
-      "EE",
-      "EJ"
-    ]
-  },
-  {
-    "title": "Programming in C — Comprehensive Notes & Code Examples (Part 2)",
-    "description": "Download MSBTE K-Scheme Programming In C (312303) notes and study materials for Semester 2 diploma engineering.",
-    "url": "/Notes/312303-programming-in-c.html",
-    "thumbnail": "/resourse/note-thumbs/312303-programming-in-c.png",
-    "category": "notes",
-    "tags": [
-      "notes",
-      "k-scheme",
-      "msbte",
-      "semester 2",
-      "312303",
-      "Programming In C",
-      "K-Scheme",
-      "Semester 2"
-    ],
-    "dateAdded": "2026-11-16",
-    "code": "312303",
-    "shortCode": "312303",
-    "semester": 2,
-    "year": 1,
-    "branches": [
-      "COMMON",
-      "CO",
-      "IF",
-      "AN",
-      "ME",
-      "CE",
-      "EE",
-      "EJ"
-    ]
-  },
-  {
-    "title": "Programming in C Lab Manual",
-    "description": "Download MSBTE K-Scheme Programming In C (312303) lab manual and study materials for Semester 2 diploma engineering.",
-    "url": "/Notes/312303-programming-in-c.html",
-    "thumbnail": "/resourse/note-thumbs/312303-programming-in-c.png",
-    "category": "lab-manual",
-    "tags": [
-      "lab_manual",
-      "k-scheme",
-      "312303",
-      "semester 2",
-      "msbte",
-      "Programming In C",
-      "K-Scheme",
-      "Semester 2"
-    ],
-    "dateAdded": "2026-11-16",
-    "code": "312303",
-    "shortCode": "312303",
-    "semester": 2,
-    "year": 1,
-    "branches": [
-      "COMMON",
-      "CO",
-      "IF",
-      "AN",
-      "ME",
-      "CE",
-      "EE",
-      "EJ"
-    ]
-  },
-  {
-    "title": "Applied Science (Chemistry) — Complete Study Notes",
-    "description": "Download MSBTE K-Scheme Applied Science (312308) notes and study materials for Semester 2 diploma engineering.",
+    "title": "Applied Science (Physics & Chemistry) (312308) — Complete Notes & Lab Manuals",
+    "description": "Download MSBTE K-Scheme Applied Science (312308) complete study notes for Applied Physics and Applied Chemistry, solved previous year papers, and practical lab manuals.",
     "url": "/Notes/312308-applied-science.html",
     "thumbnail": "/resourse/note-thumbs/312308-applied-science.png",
     "category": "notes",
     "tags": [
-      "notes",
-      "k-scheme",
-      "msbte",
-      "semester 2",
-      "312308",
       "Applied Science",
+      "Physics",
+      "Chemistry",
+      "312308",
       "K-Scheme",
-      "Semester 2"
+      "Semester 2",
+      "Lab Manual",
+      "Solved Papers"
     ],
     "dateAdded": "2026-11-16",
     "code": "312308",
-    "shortCode": "312308",
+    "shortCode": "ASC",
     "semester": 2,
     "year": 1,
     "branches": [
-      "COMMON",
-      "CO",
-      "IF",
-      "AN",
       "ME",
       "CE",
-      "EE",
-      "EJ"
-    ]
-  },
-  {
-    "title": "Applied Science (Chemistry) Lab Manual",
-    "description": "Download MSBTE K-Scheme Applied Science (312308) lab manual and study materials for Semester 2 diploma engineering.",
-    "url": "/Notes/312308-applied-science.html",
-    "thumbnail": "/resourse/note-thumbs/312308-applied-science.png",
-    "category": "lab-manual",
-    "tags": [
-      "lab_manual",
-      "k-scheme",
-      "312308",
-      "semester 2",
-      "msbte",
-      "Applied Science",
-      "K-Scheme",
-      "Semester 2"
-    ],
-    "dateAdded": "2026-11-16",
-    "code": "312308",
-    "shortCode": "312308",
-    "semester": 2,
-    "year": 1,
-    "branches": [
-      "COMMON",
-      "CO",
-      "IF",
-      "AN",
-      "ME",
-      "CE",
-      "EE",
-      "EJ"
-    ]
-  },
-  {
-    "title": "Applied Science (Physics) — Complete Study Notes",
-    "description": "Download MSBTE K-Scheme Applied Science (312308) notes and study materials for Semester 2 diploma engineering.",
-    "url": "/Notes/312308-applied-science.html",
-    "thumbnail": "/resourse/note-thumbs/312308-applied-science.png",
-    "category": "notes",
-    "tags": [
-      "notes",
-      "k-scheme",
-      "msbte",
-      "semester 2",
-      "312308",
-      "Applied Science",
-      "K-Scheme",
-      "Semester 2"
-    ],
-    "dateAdded": "2026-11-16",
-    "code": "312308",
-    "shortCode": "312308",
-    "semester": 2,
-    "year": 1,
-    "branches": [
-      "COMMON",
-      "CO",
-      "IF",
-      "AN",
-      "ME",
-      "CE",
-      "EE",
-      "EJ"
-    ]
-  },
-  {
-    "title": "Applied Science (Physics) — Previous Year Paper & Solved Questions",
-    "description": "Download MSBTE K-Scheme Applied Science (312308) notes and study materials for Semester 2 diploma engineering.",
-    "url": "/Notes/312308-applied-science.html",
-    "thumbnail": "/resourse/note-thumbs/312308-applied-science.png",
-    "category": "notes",
-    "tags": [
-      "notes",
-      "k-scheme",
-      "msbte",
-      "semester 2",
-      "312308",
-      "Applied Science",
-      "K-Scheme",
-      "Semester 2"
-    ],
-    "dateAdded": "2026-11-16",
-    "code": "312308",
-    "shortCode": "312308",
-    "semester": 2,
-    "year": 1,
-    "branches": [
-      "COMMON",
-      "CO",
-      "IF",
-      "AN",
-      "ME",
-      "CE",
-      "EE",
-      "EJ"
-    ]
-  },
-  {
-    "title": "Applied Science (Physics) Lab Manual",
-    "description": "Download MSBTE K-Scheme Applied Science (312308) lab manual and study materials for Semester 2 diploma engineering.",
-    "url": "/Notes/312308-applied-science.html",
-    "thumbnail": "/resourse/note-thumbs/312308-applied-science.png",
-    "category": "lab-manual",
-    "tags": [
-      "lab_manual",
-      "k-scheme",
-      "312308",
-      "semester 2",
-      "msbte",
-      "Applied Science",
-      "K-Scheme",
-      "Semester 2"
-    ],
-    "dateAdded": "2026-11-16",
-    "code": "312308",
-    "shortCode": "312308",
-    "semester": 2,
-    "year": 1,
-    "branches": [
-      "COMMON",
-      "CO",
-      "IF",
-      "AN",
-      "ME",
-      "CE",
-      "EE",
-      "EJ"
+      "EE"
     ]
   },
   {
@@ -14310,299 +13447,24 @@
     ]
   },
   {
-    "title": "Fundamental of Electrical Engineering — DC Circuits & Network Theorems",
-    "description": "Download MSBTE K-Scheme Fundamental Of Electrical Engineering (312310) notes and study materials for Semester 2 diploma engineering.",
+    "title": "Fundamental of Electrical Engineering (312310) — Complete Units, Revision Notes & Lab Manual",
+    "description": "Download MSBTE K-Scheme Fundamental of Electrical Engineering (312310) complete unit notes (DC circuits, magnetic circuits), short revision notes in English & Hindi, and lab manual.",
     "url": "/Notes/312310-fundamental-of-electrical-engineering.html",
     "thumbnail": "/resourse/note-thumbs/312310-fundamental-of-electrical-engineering.png",
     "category": "notes",
     "tags": [
-      "notes",
-      "k-scheme",
-      "msbte",
-      "semester 2",
+      "Fundamental of Electrical Engineering",
+      "FEE",
       "312310",
-      "Fundamental Of Electrical Engineering",
       "K-Scheme",
-      "Semester 2"
+      "Semester 2",
+      "DC Circuits",
+      "Revision Notes",
+      "Lab Manual"
     ],
     "dateAdded": "2026-11-16",
     "code": "312310",
-    "shortCode": "312310",
-    "semester": 2,
-    "year": 1,
-    "branches": [
-      "EE"
-    ]
-  },
-  {
-    "title": "Fundamental of Electrical Engineering — Electric & Magnetic Circuits",
-    "description": "Download MSBTE K-Scheme Fundamental Of Electrical Engineering (312310) notes and study materials for Semester 2 diploma engineering.",
-    "url": "/Notes/312310-fundamental-of-electrical-engineering.html",
-    "thumbnail": "/resourse/note-thumbs/312310-fundamental-of-electrical-engineering.png",
-    "category": "notes",
-    "tags": [
-      "notes",
-      "k-scheme",
-      "msbte",
-      "semester 2",
-      "312310",
-      "Fundamental Of Electrical Engineering",
-      "K-Scheme",
-      "Semester 2"
-    ],
-    "dateAdded": "2026-11-16",
-    "code": "312310",
-    "shortCode": "312310",
-    "semester": 2,
-    "year": 1,
-    "branches": [
-      "EE"
-    ]
-  },
-  {
-    "title": "Fundamental of Electrical Engineering — Short Revision Notes (English)",
-    "description": "Download MSBTE K-Scheme Fundamental Of Electrical Engineering (312310) notes and study materials for Semester 2 diploma engineering.",
-    "url": "/Notes/312310-fundamental-of-electrical-engineering.html",
-    "thumbnail": "/resourse/note-thumbs/312310-fundamental-of-electrical-engineering.png",
-    "category": "notes",
-    "tags": [
-      "notes",
-      "k-scheme",
-      "msbte",
-      "semester 2",
-      "312310",
-      "Fundamental Of Electrical Engineering",
-      "K-Scheme",
-      "Semester 2"
-    ],
-    "dateAdded": "2026-11-16",
-    "code": "312310",
-    "shortCode": "312310",
-    "semester": 2,
-    "year": 1,
-    "branches": [
-      "EE"
-    ]
-  },
-  {
-    "title": "Fundamental of Electrical Engineering — Short Revision Notes (Hindi)",
-    "description": "Download MSBTE K-Scheme Fundamental Of Electrical Engineering (312310) notes and study materials for Semester 2 diploma engineering.",
-    "url": "/Notes/312310-fundamental-of-electrical-engineering.html",
-    "thumbnail": "/resourse/note-thumbs/312310-fundamental-of-electrical-engineering.png",
-    "category": "notes",
-    "tags": [
-      "notes",
-      "k-scheme",
-      "msbte",
-      "semester 2",
-      "312310",
-      "Fundamental Of Electrical Engineering",
-      "K-Scheme",
-      "Semester 2"
-    ],
-    "dateAdded": "2026-11-16",
-    "code": "312310",
-    "shortCode": "312310",
-    "semester": 2,
-    "year": 1,
-    "branches": [
-      "EE"
-    ]
-  },
-  {
-    "title": "Fundamental of Electrical Engineering — Unit 1: DC Circuits (Part 02)",
-    "description": "Download MSBTE K-Scheme Fundamental Of Electrical Engineering (312310) notes and study materials for Semester 2 diploma engineering.",
-    "url": "/Notes/312310-fundamental-of-electrical-engineering.html",
-    "thumbnail": "/resourse/note-thumbs/312310-fundamental-of-electrical-engineering.png",
-    "category": "notes",
-    "tags": [
-      "notes",
-      "k-scheme",
-      "msbte",
-      "semester 2",
-      "312310",
-      "Fundamental Of Electrical Engineering",
-      "K-Scheme",
-      "Semester 2"
-    ],
-    "dateAdded": "2026-11-16",
-    "code": "312310",
-    "shortCode": "312310",
-    "semester": 2,
-    "year": 1,
-    "branches": [
-      "EE"
-    ]
-  },
-  {
-    "title": "Fundamental of Electrical Engineering — Unit 1: DC Circuits (Part 03)",
-    "description": "Download MSBTE K-Scheme Fundamental Of Electrical Engineering (312310) notes and study materials for Semester 2 diploma engineering.",
-    "url": "/Notes/312310-fundamental-of-electrical-engineering.html",
-    "thumbnail": "/resourse/note-thumbs/312310-fundamental-of-electrical-engineering.png",
-    "category": "notes",
-    "tags": [
-      "notes",
-      "k-scheme",
-      "msbte",
-      "semester 2",
-      "312310",
-      "Fundamental Of Electrical Engineering",
-      "K-Scheme",
-      "Semester 2"
-    ],
-    "dateAdded": "2026-11-16",
-    "code": "312310",
-    "shortCode": "312310",
-    "semester": 2,
-    "year": 1,
-    "branches": [
-      "EE"
-    ]
-  },
-  {
-    "title": "Fundamental of Electrical Engineering — Unit 1: DC Circuits (Part 04)",
-    "description": "Download MSBTE K-Scheme Fundamental Of Electrical Engineering (312310) notes and study materials for Semester 2 diploma engineering.",
-    "url": "/Notes/312310-fundamental-of-electrical-engineering.html",
-    "thumbnail": "/resourse/note-thumbs/312310-fundamental-of-electrical-engineering.png",
-    "category": "notes",
-    "tags": [
-      "notes",
-      "k-scheme",
-      "msbte",
-      "semester 2",
-      "312310",
-      "Fundamental Of Electrical Engineering",
-      "K-Scheme",
-      "Semester 2"
-    ],
-    "dateAdded": "2026-11-16",
-    "code": "312310",
-    "shortCode": "312310",
-    "semester": 2,
-    "year": 1,
-    "branches": [
-      "EE"
-    ]
-  },
-  {
-    "title": "Fundamental of Electrical Engineering — Unit 1: DC Circuits (Part 05)",
-    "description": "Download MSBTE K-Scheme Fundamental Of Electrical Engineering (312310) notes and study materials for Semester 2 diploma engineering.",
-    "url": "/Notes/312310-fundamental-of-electrical-engineering.html",
-    "thumbnail": "/resourse/note-thumbs/312310-fundamental-of-electrical-engineering.png",
-    "category": "notes",
-    "tags": [
-      "notes",
-      "k-scheme",
-      "msbte",
-      "semester 2",
-      "312310",
-      "Fundamental Of Electrical Engineering",
-      "K-Scheme",
-      "Semester 2"
-    ],
-    "dateAdded": "2026-11-16",
-    "code": "312310",
-    "shortCode": "312310",
-    "semester": 2,
-    "year": 1,
-    "branches": [
-      "EE"
-    ]
-  },
-  {
-    "title": "Fundamental of Electrical Engineering — Unit 1: DC Circuits (Part 06)",
-    "description": "Download MSBTE K-Scheme Fundamental Of Electrical Engineering (312310) notes and study materials for Semester 2 diploma engineering.",
-    "url": "/Notes/312310-fundamental-of-electrical-engineering.html",
-    "thumbnail": "/resourse/note-thumbs/312310-fundamental-of-electrical-engineering.png",
-    "category": "notes",
-    "tags": [
-      "notes",
-      "k-scheme",
-      "msbte",
-      "semester 2",
-      "312310",
-      "Fundamental Of Electrical Engineering",
-      "K-Scheme",
-      "Semester 2"
-    ],
-    "dateAdded": "2026-11-16",
-    "code": "312310",
-    "shortCode": "312310",
-    "semester": 2,
-    "year": 1,
-    "branches": [
-      "EE"
-    ]
-  },
-  {
-    "title": "Fundamental of Electrical Engineering — Unit 1: DC Circuits (Part 07)",
-    "description": "Download MSBTE K-Scheme Fundamental Of Electrical Engineering (312310) notes and study materials for Semester 2 diploma engineering.",
-    "url": "/Notes/312310-fundamental-of-electrical-engineering.html",
-    "thumbnail": "/resourse/note-thumbs/312310-fundamental-of-electrical-engineering.png",
-    "category": "notes",
-    "tags": [
-      "notes",
-      "k-scheme",
-      "msbte",
-      "semester 2",
-      "312310",
-      "Fundamental Of Electrical Engineering",
-      "K-Scheme",
-      "Semester 2"
-    ],
-    "dateAdded": "2026-11-16",
-    "code": "312310",
-    "shortCode": "312310",
-    "semester": 2,
-    "year": 1,
-    "branches": [
-      "EE"
-    ]
-  },
-  {
-    "title": "Fundamental of Electrical Engineering — Unit 1: DC Circuits (Part 08)",
-    "description": "Download MSBTE K-Scheme Fundamental Of Electrical Engineering (312310) notes and study materials for Semester 2 diploma engineering.",
-    "url": "/Notes/312310-fundamental-of-electrical-engineering.html",
-    "thumbnail": "/resourse/note-thumbs/312310-fundamental-of-electrical-engineering.png",
-    "category": "notes",
-    "tags": [
-      "notes",
-      "k-scheme",
-      "msbte",
-      "semester 2",
-      "312310",
-      "Fundamental Of Electrical Engineering",
-      "K-Scheme",
-      "Semester 2"
-    ],
-    "dateAdded": "2026-11-16",
-    "code": "312310",
-    "shortCode": "312310",
-    "semester": 2,
-    "year": 1,
-    "branches": [
-      "EE"
-    ]
-  },
-  {
-    "title": "Fundamental of Electrical Engineering Lab Manual",
-    "description": "Download MSBTE K-Scheme Fundamental Of Electrical Engineering (312310) lab manual and study materials for Semester 2 diploma engineering.",
-    "url": "/Notes/312310-fundamental-of-electrical-engineering.html",
-    "thumbnail": "/resourse/note-thumbs/312310-fundamental-of-electrical-engineering.png",
-    "category": "lab-manual",
-    "tags": [
-      "lab_manual",
-      "k-scheme",
-      "312310",
-      "semester 2",
-      "msbte",
-      "Fundamental Of Electrical Engineering",
-      "K-Scheme",
-      "Semester 2"
-    ],
-    "dateAdded": "2026-11-16",
-    "code": "312310",
-    "shortCode": "312310",
+    "shortCode": "FEE",
     "semester": 2,
     "year": 1,
     "branches": [
@@ -14635,272 +13497,50 @@
     ]
   },
   {
-    "title": "Engineering Mechanics — Complete Handwritten Notes",
-    "description": "Download MSBTE K-Scheme Engineering Mechanics (312312) notes and study materials for Semester 2 diploma engineering.",
+    "title": "Engineering Mechanics (312312) — Handwritten Notes, Solved Papers & Lab Manual",
+    "description": "Download MSBTE K-Scheme Engineering Mechanics (312312) complete handwritten notes, equilibrium, friction, centroids, solved previous year papers, and practical lab manual.",
     "url": "/Notes/312312-engineering-mechanics.html",
     "thumbnail": "/resourse/note-thumbs/312312-engineering-mechanics.png",
     "category": "notes",
     "tags": [
-      "notes",
-      "k-scheme",
-      "msbte",
-      "semester 2",
-      "handwritten",
-      "312312",
       "Engineering Mechanics",
+      "Mechanics",
+      "312312",
       "K-Scheme",
-      "Semester 2"
+      "Semester 2",
+      "Handwritten",
+      "Solved Papers",
+      "Lab Manual"
     ],
     "dateAdded": "2026-11-16",
     "code": "312312",
-    "shortCode": "312312",
+    "shortCode": "EMS",
     "semester": 2,
     "year": 1,
     "branches": [
-      "COMMON",
-      "CO",
-      "IF",
-      "AN",
       "ME",
-      "CE",
-      "EE",
-      "EJ"
+      "CE"
     ]
   },
   {
-    "title": "Engineering Mechanics — Previous Year Solved Question Paper",
-    "description": "Download MSBTE K-Scheme Engineering Mechanics (312312) notes and study materials for Semester 2 diploma engineering.",
-    "url": "/Notes/312312-engineering-mechanics.html",
-    "thumbnail": "/resourse/note-thumbs/312312-engineering-mechanics.png",
-    "category": "notes",
-    "tags": [
-      "notes",
-      "k-scheme",
-      "msbte",
-      "semester 2",
-      "312312",
-      "Engineering Mechanics",
-      "K-Scheme",
-      "Semester 2"
-    ],
-    "dateAdded": "2026-11-16",
-    "code": "312312",
-    "shortCode": "312312",
-    "semester": 2,
-    "year": 1,
-    "branches": [
-      "COMMON",
-      "CO",
-      "IF",
-      "AN",
-      "ME",
-      "CE",
-      "EE",
-      "EJ"
-    ]
-  },
-  {
-    "title": "Engineering Mechanics Lab Manual",
-    "description": "Download MSBTE K-Scheme Engineering Mechanics (312312) lab manual and study materials for Semester 2 diploma engineering.",
-    "url": "/Notes/312312-engineering-mechanics.html",
-    "thumbnail": "/resourse/note-thumbs/312312-engineering-mechanics.png",
-    "category": "lab-manual",
-    "tags": [
-      "lab_manual",
-      "k-scheme",
-      "312312",
-      "semester 2",
-      "msbte",
-      "Engineering Mechanics",
-      "K-Scheme",
-      "Semester 2"
-    ],
-    "dateAdded": "2026-11-16",
-    "code": "312312",
-    "shortCode": "312312",
-    "semester": 2,
-    "year": 1,
-    "branches": [
-      "COMMON",
-      "CO",
-      "IF",
-      "AN",
-      "ME",
-      "CE",
-      "EE",
-      "EJ"
-    ]
-  },
-  {
-    "title": "Basic Electronics Lab Manual",
-    "description": "Download MSBTE K-Scheme Basic Electronics (312314) lab manual and study materials for Semester 2 diploma engineering.",
-    "url": "/Notes/312314-basic-electronics.html",
-    "thumbnail": "/resourse/note-thumbs/312314-basic-electronics.png",
-    "category": "lab-manual",
-    "tags": [
-      "lab_manual",
-      "k-scheme",
-      "312314",
-      "semester 2",
-      "msbte",
-      "Basic Electronics",
-      "K-Scheme",
-      "Semester 2"
-    ],
-    "dateAdded": "2026-11-16",
-    "code": "312314",
-    "shortCode": "312314",
-    "semester": 2,
-    "year": 1,
-    "branches": [
-      "EJ"
-    ]
-  },
-  {
-    "title": "Elements of Electrical Engineering — Comprehensive Reference E-Book",
-    "description": "Download MSBTE K-Scheme Elements Of Electrical Engineering (312315) notes and study materials for Semester 2 diploma engineering.",
-    "url": "/Notes/312315-elements-of-electrical-engineering.html",
-    "thumbnail": "/resourse/note-thumbs/312315-elements-of-electrical-engineering.png",
-    "category": "notes",
-    "tags": [
-      "notes",
-      "k-scheme",
-      "msbte",
-      "semester 2",
-      "e-book",
-      "312315",
-      "Elements Of Electrical Engineering",
-      "K-Scheme",
-      "Semester 2"
-    ],
-    "dateAdded": "2026-11-16",
-    "code": "312315",
-    "shortCode": "312315",
-    "semester": 2,
-    "year": 1,
-    "branches": [
-      "EJ"
-    ]
-  },
-  {
-    "title": "Elements of Electrical Engineering — Core Study Notes",
-    "description": "Download MSBTE K-Scheme Elements Of Electrical Engineering (312315) notes and study materials for Semester 2 diploma engineering.",
-    "url": "/Notes/312315-elements-of-electrical-engineering.html",
-    "thumbnail": "/resourse/note-thumbs/312315-elements-of-electrical-engineering.png",
-    "category": "notes",
-    "tags": [
-      "notes",
-      "k-scheme",
-      "msbte",
-      "semester 2",
-      "312315",
-      "Elements Of Electrical Engineering",
-      "K-Scheme",
-      "Semester 2"
-    ],
-    "dateAdded": "2026-11-16",
-    "code": "312315",
-    "shortCode": "312315",
-    "semester": 2,
-    "year": 1,
-    "branches": [
-      "EJ"
-    ]
-  },
-  {
-    "title": "Elements of Electrical Engineering — EJ 2I",
-    "description": "Download MSBTE K-Scheme Elements Of Electrical Engineering (312315) notes and study materials for Semester 2 diploma engineering.",
-    "url": "/Notes/312315-elements-of-electrical-engineering.html",
-    "thumbnail": "/resourse/note-thumbs/312315-elements-of-electrical-engineering.png",
-    "category": "notes",
-    "tags": [
-      "notes",
-      "k-scheme",
-      "msbte",
-      "semester 2",
-      "312315",
-      "Elements Of Electrical Engineering",
-      "K-Scheme",
-      "Semester 2"
-    ],
-    "dateAdded": "2026-11-16",
-    "code": "312315",
-    "shortCode": "312315",
-    "semester": 2,
-    "year": 1,
-    "branches": [
-      "EJ"
-    ]
-  },
-  {
-    "title": "Elements of Electrical Engineering Lab Manual",
-    "description": "Download MSBTE K-Scheme Elements Of Electrical Engineering (312315) lab manual and study materials for Semester 2 diploma engineering.",
-    "url": "/Notes/312315-elements-of-electrical-engineering.html",
-    "thumbnail": "/resourse/note-thumbs/312315-elements-of-electrical-engineering.png",
-    "category": "lab-manual",
-    "tags": [
-      "lab_manual",
-      "k-scheme",
-      "312315",
-      "semester 2",
-      "msbte",
-      "Elements Of Electrical Engineering",
-      "K-Scheme",
-      "Semester 2"
-    ],
-    "dateAdded": "2026-11-16",
-    "code": "312315",
-    "shortCode": "312315",
-    "semester": 2,
-    "year": 1,
-    "branches": [
-      "EJ"
-    ]
-  },
-  {
-    "title": "Electronic Materials and Components Lab Manual",
-    "description": "Download MSBTE K-Scheme Electronic Materials And Components (312316) lab manual and study materials for Semester 2 diploma engineering.",
-    "url": "/Notes/312316-electronic-materials-and-components.html",
-    "thumbnail": "/resourse/note-thumbs/312316-electronic-materials-and-components.png",
-    "category": "lab-manual",
-    "tags": [
-      "lab_manual",
-      "k-scheme",
-      "312316",
-      "semester 2",
-      "msbte",
-      "Electronic Materials And Components",
-      "K-Scheme",
-      "Semester 2"
-    ],
-    "dateAdded": "2026-11-16",
-    "code": "312316",
-    "shortCode": "312316",
-    "semester": 2,
-    "year": 1,
-    "branches": [
-      "EJ"
-    ]
-  },
-  {
-    "title": "Building Material and Construction — Building Construction Notes",
-    "description": "Download MSBTE K-Scheme Building Material And Construction (312338) notes and study materials for Semester 2 diploma engineering.",
+    "title": "Building Material and Construction (312338) — Complete Notes & Lab Manual",
+    "description": "Download MSBTE K-Scheme Building Material and Construction (312338) notes on stones, bricks, cement, concrete, building construction, and lab manual.",
     "url": "/Notes/312338-building-material-and-construction.html",
     "thumbnail": "/resourse/note-thumbs/312338-building-material-and-construction.png",
     "category": "notes",
     "tags": [
-      "notes",
-      "k-scheme",
-      "msbte",
-      "semester 2",
+      "Building Material",
+      "Construction",
+      "BMC",
       "312338",
-      "Building Material And Construction",
       "K-Scheme",
-      "Semester 2"
+      "Semester 2",
+      "Civil Engineering",
+      "Lab Manual"
     ],
     "dateAdded": "2026-11-16",
     "code": "312338",
-    "shortCode": "312338",
+    "shortCode": "BMC",
     "semester": 2,
     "year": 1,
     "branches": [
@@ -14908,99 +13548,24 @@
     ]
   },
   {
-    "title": "Building Material and Construction — Complete Notes",
-    "description": "Download MSBTE K-Scheme Building Material And Construction (312338) notes and study materials for Semester 2 diploma engineering.",
-    "url": "/Notes/312338-building-material-and-construction.html",
-    "thumbnail": "/resourse/note-thumbs/312338-building-material-and-construction.png",
-    "category": "notes",
-    "tags": [
-      "notes",
-      "k-scheme",
-      "msbte",
-      "semester 2",
-      "312338",
-      "Building Material And Construction",
-      "K-Scheme",
-      "Semester 2"
-    ],
-    "dateAdded": "2026-11-16",
-    "code": "312338",
-    "shortCode": "312338",
-    "semester": 2,
-    "year": 1,
-    "branches": [
-      "CE"
-    ]
-  },
-  {
-    "title": "Building Material and Construction Lab Manual",
-    "description": "Download MSBTE K-Scheme Building Material And Construction (312338) lab manual and study materials for Semester 2 diploma engineering.",
-    "url": "/Notes/312338-building-material-and-construction.html",
-    "thumbnail": "/resourse/note-thumbs/312338-building-material-and-construction.png",
-    "category": "lab-manual",
-    "tags": [
-      "lab_manual",
-      "k-scheme",
-      "312338",
-      "semester 2",
-      "msbte",
-      "Building Material And Construction",
-      "K-Scheme",
-      "Semester 2"
-    ],
-    "dateAdded": "2026-11-16",
-    "code": "312338",
-    "shortCode": "312338",
-    "semester": 2,
-    "year": 1,
-    "branches": [
-      "CE"
-    ]
-  },
-  {
-    "title": "Surveying — Introduction & Fundamental Notes",
-    "description": "Download MSBTE K-Scheme Surveying (312339) notes and study materials for Semester 2 diploma engineering.",
+    "title": "Surveying (312339) — Comprehensive Notes & Lab Manual",
+    "description": "Download MSBTE K-Scheme Surveying (312339) chain, compass, leveling notes, measurement guides, and practical lab manual.",
     "url": "/Notes/312339-surveying.html",
     "thumbnail": "/resourse/note-thumbs/312339-surveying.png",
     "category": "notes",
     "tags": [
-      "notes",
-      "k-scheme",
-      "msbte",
-      "semester 2",
-      "312339",
       "Surveying",
+      "SUR",
+      "312339",
       "K-Scheme",
-      "Semester 2"
+      "Semester 2",
+      "Civil Engineering",
+      "Leveling",
+      "Lab Manual"
     ],
     "dateAdded": "2026-11-16",
     "code": "312339",
-    "shortCode": "312339",
-    "semester": 2,
-    "year": 1,
-    "branches": [
-      "CE"
-    ]
-  },
-  {
-    "title": "Surveying Lab Manual",
-    "description": "Download MSBTE K-Scheme Surveying (312339) lab manual and study materials for Semester 2 diploma engineering.",
-    "url": "/Notes/312339-surveying.html",
-    "thumbnail": "/resourse/note-thumbs/312339-surveying.png",
-    "category": "lab-manual",
-    "tags": [
-      "lab_manual",
-      "k-scheme",
-      "312339",
-      "semester 2",
-      "msbte",
-      "Surveying",
-      "K-Scheme",
-      "Semester 2"
-    ],
-    "dateAdded": "2026-11-16",
-    "code": "312339",
-    "shortCode": "312339",
+    "shortCode": "SUR",
     "semester": 2,
     "year": 1,
     "branches": [

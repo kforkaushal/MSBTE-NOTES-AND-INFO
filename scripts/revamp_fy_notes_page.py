@@ -1,0 +1,1053 @@
+import json
+
+with open('scripts/curated_fy_subjects.json', 'r', encoding='utf-8') as f:
+    subjects = json.load(f)
+
+# Build JSON-LD ItemList
+item_list_elements = []
+for idx, s in enumerate(subjects, 1):
+    item_list_elements.append({
+        "@type": "ListItem",
+        "position": idx,
+        "name": f"{s['code']} - {s['name']}",
+        "url": f"https://msbtenotes-info.netlify.app{s['notes_url']}"
+    })
+
+item_list_json = json.dumps({
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    "itemListElement": item_list_elements
+}, indent=4)
+
+# Build Subject Cards HTML
+cards_html = []
+for s in subjects:
+    branch_classes = " ".join([f"branch-{b.lower()}" for b in s['branches']])
+    branch_data = ",".join([b.lower() for b in s['branches']])
+    
+    # Branch pills HTML
+    if "COMMON" in s['branches']:
+        branch_pills = '<span class="text-[11px] font-bold px-2 py-0.5 rounded-md bg-blue-50 text-blue-700 border border-blue-100">All Branches (Common)</span>'
+    else:
+        pills = []
+        for b in s['branches']:
+            pills.append(f'<span class="text-[11px] font-bold px-2 py-0.5 rounded-md bg-gray-100 text-gray-700 border border-gray-200">{b}</span>')
+        branch_pills = "".join(pills)
+    
+    # Semester badge styling
+    if s['sem'] == 1:
+        sem_badge = '<span class="text-xs font-bold px-2.5 py-1 rounded-full bg-blue-100 text-blue-800">Sem 1</span>'
+    else:
+        sem_badge = '<span class="text-xs font-bold px-2.5 py-1 rounded-full bg-indigo-100 text-indigo-800">Sem 2</span>'
+    
+    # PYQ button
+    pyq_button = ''
+    if s['pyq_url']:
+        pyq_button = f'''<a href="{s['pyq_url']}" class="h-10 px-3 py-2 rounded-xl text-xs font-semibold bg-gray-50 hover:bg-gray-100 text-gray-700 border border-gray-200 transition flex items-center justify-center gap-1">
+            <span>PYQ Papers</span>
+        </a>'''
+    
+    # Syllabus button
+    syllabus_button = ''
+    if s['syllabus_url']:
+        syllabus_button = f'''<a href="{s['syllabus_url']}" class="h-10 px-3 py-2 rounded-xl text-xs font-semibold bg-gray-50 hover:bg-gray-100 text-gray-700 border border-gray-200 transition flex items-center justify-center gap-1">
+            <span>Syllabus</span>
+        </a>'''
+
+    # Card HTML
+    card = f'''        <!-- Subject Card: {s['code']} -->
+        <article class="subject-card sem-{s['sem']} {branch_classes} bg-white rounded-2xl border border-gray-200 hover:border-blue-400 p-5 sm:p-6 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between group"
+             data-code="{s['code']}"
+             data-name="{s['name'].lower()}"
+             data-subtitle="{s['subtitle'].lower()}"
+             data-sem="{s['sem']}"
+             data-branches="{branch_data}">
+            <div>
+                <!-- Top Badges -->
+                <div class="flex items-center justify-between gap-2 mb-3">
+                    <div class="flex items-center gap-1.5 flex-wrap">
+                        {sem_badge}
+                        <span class="text-xs font-semibold px-2 py-0.5 rounded-full bg-gray-100 text-gray-600">
+                            {s['category']}
+                        </span>
+                    </div>
+                    <span class="text-xs font-mono font-bold text-gray-700 bg-slate-100 border border-slate-200 px-2 py-0.5 rounded-lg">
+                        {s['code']}
+                    </span>
+                </div>
+
+                <!-- Subject Title -->
+                <h3 class="text-base sm:text-lg font-bold text-gray-900 font-display leading-snug mb-1 group-hover:text-blue-600 transition-colors break-words">
+                    {s['name']}
+                </h3>
+
+                <!-- Subtitle / Focus -->
+                <p class="text-xs font-medium text-blue-600 mb-2 line-clamp-1">
+                    {s['subtitle']}
+                </p>
+
+                <!-- Description -->
+                <p class="text-xs text-gray-600 mb-4 line-clamp-2 leading-relaxed">
+                    {s['desc']}
+                </p>
+
+                <!-- Branch Badges -->
+                <div class="flex items-center gap-1.5 flex-wrap mb-4">
+                    <span class="text-[11px] text-gray-400 font-medium mr-1">Branches:</span>
+                    {branch_pills}
+                </div>
+            </div>
+
+            <!-- Card Actions -->
+            <div class="pt-4 border-t border-gray-100 flex flex-col gap-2">
+                <a href="{s['notes_url']}"
+                   class="w-full h-11 bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 text-white font-semibold py-2 px-4 rounded-xl text-sm transition flex items-center justify-center gap-2 shadow-sm shadow-blue-500/20">
+                    <span>Explore Notes &amp; PDF</span>
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+                </a>
+                <div class="grid grid-cols-2 gap-2">
+                    {syllabus_button}
+                    {pyq_button if pyq_button else '<div class="h-10 px-3 py-2 text-center text-[11px] text-gray-400 font-medium flex items-center justify-center border border-gray-100 rounded-xl">Exam Guide Inside</div>'}
+                </div>
+            </div>
+        </article>'''
+    cards_html.append(card)
+
+cards_block = "\n\n".join(cards_html)
+
+full_html = f'''<!DOCTYPE html>
+<html lang="en" class="overflow-x-hidden">
+
+<head>
+    <!-- Consent default (deny until user chooses) -->
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() {{ dataLayer.push(arguments); }}
+        gtag('consent', 'default', {{ 'ad_storage': 'denied', 'analytics_storage': 'denied' }});
+    </script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-H5G5CCD95W"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() {{ dataLayer.push(arguments); }}
+        gtag('js', new Date());
+        gtag('config', 'G-H5G5CCD95W');
+    </script>
+    <!-- Meta -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
+    <title>MSBTE First Year Diploma Notes (Semester 1 &amp; 2) K-Scheme | All Branches</title>
+    <meta name="description" content="Download free MSBTE K-Scheme 1st Year (Semester 1 &amp; 2) diploma engineering notes, workshop practical guides, official syllabus PDFs, and question papers for all branches." />
+    <meta name="keywords" content="MSBTE 1st year notes, msbte semester 1 notes, msbte semester 2 notes, msbte k scheme first year, msbte diploma study material, msbte basic science notes, msbte basic mathematics notes, msbte applied mathematics notes, msbte c programming notes" />
+    <meta name="author" content="MSBTE Notes &amp; Info Team" />
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1" />
+    <meta name="googlebot" content="index, follow" />
+    <link rel="canonical" href="https://msbtenotes-info.netlify.app/notes/msbte-first-year-diploma-notes" />
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="MSBTE First Year Diploma Notes (Semester 1 &amp; 2) K-Scheme | All Branches" />
+    <meta property="og:description" content="Download free MSBTE K-Scheme 1st Year (Semester 1 &amp; 2) diploma engineering notes, practical lab manuals, and chapter-wise study materials for all branches." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://msbtenotes-info.netlify.app/notes/msbte-first-year-diploma-notes" />
+    <meta property="og:image" content="https://msbtenotes-info.netlify.app/resourse/note-thumbs/msbte-first-year-diploma-notes.png" />
+    <meta property="og:image:secure_url" content="https://msbtenotes-info.netlify.app/resourse/note-thumbs/msbte-first-year-diploma-notes.png" />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="MSBTE First Year Diploma Notes (Semester 1 &amp; 2) K-Scheme Study Material" />
+    <meta property="og:locale" content="en_IN" />
+    <meta property="og:site_name" content="MSBTE Notes &amp; Info" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@msbtenotes" />
+    <meta name="twitter:title" content="MSBTE First Year Notes (Semester 1 &amp; 2) K-Scheme" />
+    <meta name="twitter:description" content="Comprehensive notes, lab manuals, and question banks for 1st Year MSBTE diploma students across all engineering branches." />
+    <meta name="twitter:image" content="https://msbtenotes-info.netlify.app/resourse/note-thumbs/msbte-first-year-diploma-notes.png" />
+
+    <!-- Educational Organization Structured Data -->
+    <script type="application/ld+json">
+    {{
+      "@context": "https://schema.org",
+      "@type": "EducationalOrganization",
+      "name": "MSBTE Notes & Info",
+      "url": "https://msbtenotes-info.netlify.app/",
+      "logo": "https://msbtenotes-info.netlify.app/resourse/MSBTE%20NOTES%20AND%20INFORMATION.png",
+      "description": "Free study materials, notes, PYQ papers, and model answers for MSBTE diploma engineering students"
+    }}
+    </script>
+
+    <!-- Breadcrumb Structured Data -->
+    <script type="application/ld+json">
+    {{
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [{{
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://msbtenotes-info.netlify.app/"
+      }},{{
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Notes",
+        "item": "https://msbtenotes-info.netlify.app/#notes"
+      }},{{
+        "@type": "ListItem",
+        "position": 3,
+        "name": "1st Year Diploma Notes"
+      }}]
+    }}
+    </script>
+
+    <!-- CollectionPage Structured Data -->
+    <script type="application/ld+json">
+    {{
+        "@context": "https://schema.org",
+        "@type": "CollectionPage",
+        "name": "MSBTE First Year Diploma Notes & Study Materials (K-Scheme)",
+        "description": "Complete collection of MSBTE K-Scheme Semester 1 and Semester 2 diploma notes, manuals, and solved papers across 26 core subjects.",
+        "url": "https://msbtenotes-info.netlify.app/notes/msbte-first-year-diploma-notes"
+    }}
+    </script>
+
+    <!-- ItemList Structured Data -->
+    <script type="application/ld+json">
+    {item_list_json}
+    </script>
+
+    <!-- FAQ Structured Data -->
+    <script type="application/ld+json">
+    {{
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {{
+                "@type": "Question",
+                "name": "Which subjects are covered in MSBTE First Year K-Scheme?",
+                "acceptedAnswer": {{
+                    "@type": "Answer",
+                    "text": "The K-Scheme First Year curriculum covers 26 core subjects across Semester 1 and Semester 2, including Basic Mathematics (311302), Basic Science (311305), Communication Skills (311303), Applied Mathematics (312301), Programming in C (312303), Engineering Mechanics (312312), and branch-specific Workshop Practice courses."
+                }}
+            }},
+            {{
+                "@type": "Question",
+                "name": "Why are there different workshop practice subject codes for first year?",
+                "acceptedAnswer": {{
+                    "@type": "Answer",
+                    "text": "Under the MSBTE K-Scheme, workshop practice is tailored to each engineering branch: Computer/IT/AI students take 311002 (PC Hardware & Networking), Mechanical/Electrical students take 311005 (Fitting, Welding, Carpentry), Electronics students take 311007 (PCB Soldering & Circuit Prototyping), and Civil students take 311010 (Masonry, Plumbing & Construction)."
+                }}
+            }},
+            {{
+                "@type": "Question",
+                "name": "Are these MSBTE First Year notes and manuals free to download?",
+                "acceptedAnswer": {{
+                    "@type": "Answer",
+                    "text": "Yes, 100% of study notes, syllabus PDFs, lab manuals, and previous year question papers on MSBTE Notes & Info are completely free to read online and download via Google Drive."
+                }}
+            }},
+            {{
+                "@type": "Question",
+                "name": "How should first-year diploma students prepare for MSBTE board exams?",
+                "acceptedAnswer": {{
+                    "@type": "Answer",
+                    "text": "First-year students should focus on mastering fundamental formulas for Mathematics, maintaining accurate practical lab journals, practicing previous year question papers, and revising chapter-wise notes provided on this portal."
+                }}
+            }}
+        ]
+    }}
+    </script>
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/resourse/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/resourse/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/resourse/favicon-16x16.png">
+    <link rel="manifest" href="/resourse/site.webmanifest">
+    <link rel="icon" href="/resourse/favicon.ico" type="image/x-icon">
+
+    <!-- CSS -->
+    <link rel="preload" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" as="style">
+    <link rel="preload" href="https://api.fontshare.com/v2/css?f[]=clash-display@600&display=swap" as="style">
+    <link rel="preload" href="/style.css" as="style">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://api.fontshare.com/v2/css?f[]=clash-display@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/style.css">
+
+    <style>
+        h1, h2, h3, h4, .font-display {{
+            font-family: 'Clash Display', -apple-system, BlinkMacSystemFont, sans-serif;
+        }}
+
+        .no-scrollbar::-webkit-scrollbar {{
+            display: none;
+        }}
+        .no-scrollbar {{
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }}
+
+        .branch-btn.active {{
+            background: linear-gradient(135deg, #2563eb, #1d4ed8);
+            color: #ffffff;
+            border-color: transparent;
+            box-shadow: 0 4px 12px rgba(37, 99, 235, 0.25);
+        }}
+
+        .sem-btn.active {{
+            background: #1e293b;
+            color: #ffffff;
+            border-color: transparent;
+        }}
+
+        .quick-tag {{
+            transition: all 0.2s ease;
+        }}
+        .quick-tag:hover {{
+            transform: translateY(-2px);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
+        }}
+
+        .btn-whatsapp {{
+            background-color: #25D366;
+        }}
+        .btn-whatsapp:hover {{
+            background-color: #1ebe57;
+        }}
+    </style>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9227354288966999" crossorigin="anonymous"></script>
+</head>
+
+<body class="bg-gray-50 text-gray-900 pt-16 flex flex-col min-h-screen overflow-x-hidden w-full">
+
+    <!-- Hallmark Navigation Bar (Same as index.html) -->
+    <nav class="bg-white shadow fixed top-0 left-0 right-0 z-50 w-full">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <!-- Left: Logo -->
+                <div class="flex items-center min-w-0">
+                    <a href="/" class="flex items-center text-blue-600 font-bold text-lg sm:text-xl font-display truncate">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 mr-2 flex-shrink-0" viewBox="0 0 576 512" fill="currentColor">
+                            <path d="M249.6 471.5c10.8 3.8 22.4-4.1 22.4-15.5V78.6c0-4.2-1.6-8.4-5-11C247.4 52 202.4 32 144 32C93.5 32 46.3 45.3 18.1 56.1C6.8 60.5 0 71.7 0 83.8V454.1c0 11.9 12.8 20.2 24.1 16.5C55.6 460.1 105.5 448 144 448c33.9 0 79 14 105.6 23.5zm76.8 0C353 462 398.1 448 432 448c38.5 0 88.4 12.1 119.9 22.6c11.3 3.8 24.1-4.6 24.1-16.5V83.8c0-12.1-6.8-23.3-18.1-27.6C529.7 45.3 482.5 32 432 32c-58.4 0-103.4 20-123 35.6c-3.3 2.6-5 6.8-5 11V456c0 11.4 11.7 19.3 22.4 15.5z" />
+                        </svg>
+                        <span class="truncate">MSBTE Notes &amp; Info</span>
+                    </a>
+                </div>
+
+                <!-- Middle: Desktop Nav -->
+                <div class="hidden md:flex space-x-6 items-center">
+                    <a href="/" class="hover:text-blue-500 font-medium">Home</a>
+                    <a href="/start.html"
+                        class="px-3 py-1 rounded-full bg-blue-50 text-blue-600 hover:bg-blue-600 hover:text-white font-semibold text-sm transition flex items-center gap-1.5 border border-blue-100">
+                        <span class="w-1.5 h-1.5 rounded-full bg-blue-600"></span>Start Here
+                    </a>
+
+                    <!-- Notes Dropdown -->
+                    <div class="relative group py-2 nav-dropdown">
+                        <button type="button" onclick="toggleDropdown(this, event)"
+                            class="flex items-center gap-1 hover:text-blue-500 font-medium focus:outline-none" aria-haspopup="true"
+                            aria-expanded="false">
+                            <span class="text-blue-600 font-bold">Notes</span>
+                            <svg class="w-4 h-4 transition-transform duration-200 group-hover:rotate-180 dropdown-arrow text-blue-600" fill="none"
+                                stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </button>
+                        <div class="dropdown-menu absolute left-0 top-full -mt-1 w-64 bg-white rounded-xl shadow-xl border border-gray-100 py-2 hidden group-hover:block transition-all z-50">
+                            <a href="/#notes" class="flex items-center gap-2.5 px-4 py-2.5 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-600 font-medium transition">
+                                <span class="w-2 h-2 rounded-full bg-blue-500 flex-shrink-0"></span>
+                                <span>All Subject Notes</span>
+                            </a>
+                            <a href="/Notes/msbte-first-year-diploma-notes.html" class="flex items-center gap-2.5 px-4 py-2.5 text-sm text-blue-600 font-bold bg-blue-50/60 border-l-2 border-blue-600 transition">
+                                <span class="w-2 h-2 rounded-full bg-blue-600 flex-shrink-0"></span>
+                                <span>1st Year Portal (Sem 1 &amp; 2)</span>
+                            </a>
+                            <a href="/pyq/" class="flex items-center gap-2.5 px-4 py-2.5 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-600 font-medium transition">
+                                <span class="w-2 h-2 rounded-full bg-emerald-500 flex-shrink-0"></span>
+                                <span>Question Papers (PYQ)</span>
+                            </a>
+                            <a href="/model-answer/" class="flex items-center gap-2.5 px-4 py-2.5 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-600 font-medium transition">
+                                <span class="w-2 h-2 rounded-full bg-amber-500 flex-shrink-0"></span>
+                                <span>Model Answer Papers</span>
+                            </a>
+                            <a href="/video-course/" class="flex items-center gap-2.5 px-4 py-2.5 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-600 font-medium transition">
+                                <span class="w-2 h-2 rounded-full bg-purple-500 flex-shrink-0"></span>
+                                <span>Video Courses</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <a href="/#departments" class="hover:text-blue-500 font-medium">Departments</a>
+                    <a href="/blog/" class="hover:text-blue-500 font-medium">Blog</a>
+                    <a href="/news/" class="hover:text-blue-500 font-medium">News</a>
+                    <a href="/collegeinfo/" class="hover:text-blue-500 font-medium">Colleges</a>
+
+                    <!-- Jobs Dropdown -->
+                    <div class="relative group py-2 nav-dropdown">
+                        <button type="button" onclick="toggleDropdown(this, event)"
+                            class="flex items-center gap-1 hover:text-blue-500 font-medium focus:outline-none" aria-haspopup="true"
+                            aria-expanded="false">
+                            <span>Jobs</span>
+                            <svg class="w-4 h-4 transition-transform duration-200 group-hover:rotate-180 dropdown-arrow" fill="none"
+                                stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </button>
+                        <div class="dropdown-menu absolute left-0 top-full -mt-1 w-52 bg-white rounded-xl shadow-xl border border-gray-100 py-2 hidden group-hover:block transition-all z-50">
+                            <a href="/jobs/index.html" class="flex items-center gap-2.5 px-4 py-2.5 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-600 font-medium transition">
+                                <span class="text-base">💼</span>
+                                <span>Jobs Portal</span>
+                            </a>
+                            <a href="/internships.html" class="flex items-center gap-2.5 px-4 py-2.5 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-600 font-medium transition">
+                                <span class="text-base">🎓</span>
+                                <span>Internships</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <a href="/about.html" class="hover:text-blue-500 font-medium">About</a>
+                    <a href="/contact.html" class="hover:text-blue-500 font-medium">Contact</a>
+                </div>
+
+                <!-- Right: Mobile Menu Toggle -->
+                <div class="flex items-center md:hidden flex-shrink-0">
+                    <button onclick="toggleMobileMenu()"
+                        class="mobile-menu-button p-2.5 text-gray-600 hover:text-blue-600 transition-colors focus:outline-none rounded-lg"
+                        aria-controls="mobileNav" aria-expanded="false" aria-label="Open menu">
+                        <svg id="menuIcon" xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                        </svg>
+                        <svg id="closeIcon" xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modern Mobile Menu Drawer (Same as index.html) -->
+        <div id="mobileNav" class="fixed inset-0 bg-white transform translate-x-full transition-transform duration-300 ease-in-out md:hidden overflow-y-auto pt-20 px-6 shadow-2xl" style="z-index: 9999;">
+            <button onclick="toggleMobileMenu()" class="absolute top-5 right-5 p-2 text-gray-500 hover:text-gray-900 rounded-full bg-gray-100 focus:outline-none" aria-label="Close menu">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+            </button>
+            <div class="space-y-4">
+                <a href="/" class="block py-2 text-lg font-semibold text-gray-800 border-b border-gray-100">Home</a>
+                <a href="/start.html" class="block py-2 text-lg font-semibold text-blue-600 border-b border-gray-100">Start Here Guide</a>
+                <a href="/#notes" class="block py-2 text-lg font-semibold text-gray-800 border-b border-gray-100">All Subject Notes</a>
+                <a href="/Notes/msbte-first-year-diploma-notes.html" class="block py-2 text-lg font-bold text-blue-600 border-b border-gray-100 bg-blue-50/50 rounded-xl px-3">1st Year Portal (Sem 1 &amp; 2)</a>
+                <a href="/pyq/" class="block py-2 text-lg font-semibold text-gray-800 border-b border-gray-100">Question Papers (PYQ)</a>
+                <a href="/model-answer/" class="block py-2 text-lg font-semibold text-gray-800 border-b border-gray-100">Model Answer Papers</a>
+                <a href="/blog/" class="block py-2 text-lg font-semibold text-gray-800 border-b border-gray-100">Blog</a>
+                <a href="/news/" class="block py-2 text-lg font-semibold text-gray-800 border-b border-gray-100">News &amp; Updates</a>
+                <a href="/collegeinfo/" class="block py-2 text-lg font-semibold text-gray-800 border-b border-gray-100">Colleges</a>
+                <a href="/jobs/index.html" class="block py-2 text-lg font-semibold text-gray-800 border-b border-gray-100">Jobs Portal</a>
+                <a href="/about.html" class="block py-2 text-lg font-semibold text-gray-800 border-b border-gray-100">About Us</a>
+                <a href="/contact.html" class="block py-2 text-lg font-semibold text-gray-800">Contact Us</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Breadcrumb -->
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-4 pb-2 w-full min-w-0">
+        <nav class="flex text-sm text-gray-500" aria-label="Breadcrumb">
+            <ol class="flex items-center space-x-2 flex-wrap">
+                <li><a href="/" class="hover:text-blue-600">Home</a></li>
+                <li><span>&rsaquo;</span></li>
+                <li><a href="/#notes" class="hover:text-blue-600">Notes</a></li>
+                <li><span>&rsaquo;</span></li>
+                <li class="text-gray-900 font-semibold truncate max-w-xs">1st Year Diploma Portal</li>
+            </ol>
+        </nav>
+    </div>
+
+    <!-- Hero Header (Hallmark Pattern) -->
+    <header class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-3 pb-6 w-full min-w-0">
+        <div class="bg-gradient-to-r from-blue-700 via-indigo-700 to-purple-800 rounded-3xl p-5 sm:p-10 text-white shadow-xl relative overflow-hidden">
+            <div class="absolute -right-10 -bottom-10 w-80 h-80 bg-white opacity-5 rounded-full blur-3xl pointer-events-none"></div>
+            <div class="absolute right-1/4 -top-10 w-60 h-60 bg-blue-400 opacity-10 rounded-full blur-2xl pointer-events-none"></div>
+            
+            <div class="max-w-3xl relative z-10">
+                <div class="inline-flex items-center gap-2 bg-white/15 backdrop-blur-md px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider mb-3 border border-white/20">
+                    <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+                    MSBTE K-Scheme • 1st Year Hub
+                </div>
+                <h1 class="text-2xl sm:text-4xl md:text-5xl font-bold font-display leading-tight tracking-tight break-words">
+                    MSBTE First Year Diploma Notes &amp; Study Material
+                </h1>
+                <p class="mt-3 text-xs sm:text-base text-blue-100 leading-relaxed font-normal">
+                    Complete, non-confusing directory of Semester 1 &amp; Semester 2 study materials across all 8 engineering branches. Includes branch-wise workshop practical guides, official syllabus PDFs, handwritten notes, and solved question banks.
+                </p>
+
+                <!-- Stats Strip -->
+                <div class="mt-5 flex flex-wrap gap-2 sm:gap-3 text-xs sm:text-sm font-semibold">
+                    <div class="bg-white/10 backdrop-blur-md px-3 py-1.5 rounded-xl flex items-center gap-1.5 border border-white/10">
+                        <span>📚</span> 26 Core Subjects
+                    </div>
+                    <div class="bg-white/10 backdrop-blur-md px-3 py-1.5 rounded-xl flex items-center gap-1.5 border border-white/10">
+                        <span>⚡</span> 80+ Downloadable PDFs
+                    </div>
+                    <div class="bg-white/10 backdrop-blur-md px-3 py-1.5 rounded-xl flex items-center gap-1.5 border border-white/10">
+                        <span>🎯</span> Distinct Workshop Guides
+                    </div>
+                    <div class="bg-white/10 backdrop-blur-md px-3 py-1.5 rounded-xl flex items-center gap-1.5 border border-white/10">
+                        <span>🔒</span> 100% Free Drive Access
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Quick Jump Strip (Most Demanded 1st Year Subjects) -->
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-5 w-full min-w-0">
+        <div class="bg-white rounded-2xl border border-gray-200 p-4 shadow-sm min-w-0">
+            <div class="flex items-center justify-between mb-2">
+                <span class="text-xs font-bold uppercase tracking-wider text-gray-500 flex items-center gap-1.5">
+                    <span>🔥</span> Most Demanded First Year Subjects
+                </span>
+                <span class="text-[11px] text-gray-400 hidden sm:inline">Click to jump directly</span>
+            </div>
+            <div class="flex items-center gap-2 overflow-x-auto no-scrollbar py-1 min-w-0">
+                <a href="/Notes/311302-basic-mathematics.html" class="quick-tag px-3 py-1.5 rounded-lg bg-blue-50 text-blue-700 hover:bg-blue-600 hover:text-white text-xs font-bold border border-blue-100 transition whitespace-nowrap flex-shrink-0">
+                    📐 Basic Maths (311302)
+                </a>
+                <a href="/Notes/311305-basic-science.html" class="quick-tag px-3 py-1.5 rounded-lg bg-emerald-50 text-emerald-700 hover:bg-emerald-600 hover:text-white text-xs font-bold border border-emerald-100 transition whitespace-nowrap flex-shrink-0">
+                    🔬 Basic Science (311305)
+                </a>
+                <a href="/Notes/311303-communication-skills-english.html" class="quick-tag px-3 py-1.5 rounded-lg bg-amber-50 text-amber-700 hover:bg-amber-600 hover:text-white text-xs font-bold border border-amber-100 transition whitespace-nowrap flex-shrink-0">
+                    💬 English (311303)
+                </a>
+                <a href="/Notes/312301-applied-mathematics.html" class="quick-tag px-3 py-1.5 rounded-lg bg-purple-50 text-purple-700 hover:bg-purple-600 hover:text-white text-xs font-bold border border-purple-100 transition whitespace-nowrap flex-shrink-0">
+                    📐 Applied Maths (312301)
+                </a>
+                <a href="/Notes/312303-programming-in-c.html" class="quick-tag px-3 py-1.5 rounded-lg bg-cyan-50 text-cyan-700 hover:bg-cyan-600 hover:text-white text-xs font-bold border border-cyan-100 transition whitespace-nowrap flex-shrink-0">
+                    💻 Programming in C (312303)
+                </a>
+                <a href="/Notes/312312-engineering-mechanics.html" class="quick-tag px-3 py-1.5 rounded-lg bg-rose-50 text-rose-700 hover:bg-rose-600 hover:text-white text-xs font-bold border border-rose-100 transition whitespace-nowrap flex-shrink-0">
+                    ⚙️ Mechanics (312312)
+                </a>
+                <a href="/Notes/312310-fundamental-of-electrical-engineering.html" class="quick-tag px-3 py-1.5 rounded-lg bg-yellow-50 text-yellow-800 hover:bg-yellow-600 hover:text-white text-xs font-bold border border-yellow-200 transition whitespace-nowrap flex-shrink-0">
+                    ⚡ Electrical (312310)
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content Container -->
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-16 flex-grow w-full min-w-0">
+
+        <!-- Controls: Multi-Dimensional Filter Bar -->
+        <section class="bg-white p-4 sm:p-5 rounded-2xl border border-gray-200 shadow-sm mb-8 space-y-4 min-w-0" aria-label="Filters">
+            
+            <!-- Row 1: Branch Selector Tabs (Touch Friendly) -->
+            <div class="min-w-0">
+                <label class="block text-xs font-bold text-gray-500 uppercase tracking-wider mb-2 flex items-center justify-between">
+                    <span>Select Your Engineering Branch</span>
+                    <span id="active-branch-label" class="text-blue-600 font-semibold truncate ml-2">All Branches</span>
+                </label>
+                <div class="flex items-center gap-2 overflow-x-auto no-scrollbar pb-1 min-w-0" id="branch-pills" role="tablist">
+                    <button onclick="setBranch('all')" data-branch="all" class="branch-btn active px-3.5 py-2 rounded-xl text-xs sm:text-sm font-bold bg-gray-100 text-gray-700 hover:bg-gray-200 border border-gray-200 transition whitespace-nowrap flex-shrink-0">
+                        🎓 All Branches
+                    </button>
+                    <button onclick="setBranch('co')" data-branch="co" class="branch-btn px-3.5 py-2 rounded-xl text-xs sm:text-sm font-bold bg-gray-100 text-gray-700 hover:bg-gray-200 border border-gray-200 transition whitespace-nowrap flex-shrink-0">
+                        💻 Computer / IT / AI
+                    </button>
+                    <button onclick="setBranch('me')" data-branch="me" class="branch-btn px-3.5 py-2 rounded-xl text-xs sm:text-sm font-bold bg-gray-100 text-gray-700 hover:bg-gray-200 border border-gray-200 transition whitespace-nowrap flex-shrink-0">
+                        ⚙️ Mechanical
+                    </button>
+                    <button onclick="setBranch('ce')" data-branch="ce" class="branch-btn px-3.5 py-2 rounded-xl text-xs sm:text-sm font-bold bg-gray-100 text-gray-700 hover:bg-gray-200 border border-gray-200 transition whitespace-nowrap flex-shrink-0">
+                        🏗️ Civil
+                    </button>
+                    <button onclick="setBranch('ee')" data-branch="ee" class="branch-btn px-3.5 py-2 rounded-xl text-xs sm:text-sm font-bold bg-gray-100 text-gray-700 hover:bg-gray-200 border border-gray-200 transition whitespace-nowrap flex-shrink-0">
+                        ⚡ Electrical
+                    </button>
+                    <button onclick="setBranch('ej')" data-branch="ej" class="branch-btn px-3.5 py-2 rounded-xl text-xs sm:text-sm font-bold bg-gray-100 text-gray-700 hover:bg-gray-200 border border-gray-200 transition whitespace-nowrap flex-shrink-0">
+                        📡 Electronics &amp; TC
+                    </button>
+                    <button onclick="setBranch('ch')" data-branch="ch" class="branch-btn px-3.5 py-2 rounded-xl text-xs sm:text-sm font-bold bg-gray-100 text-gray-700 hover:bg-gray-200 border border-gray-200 transition whitespace-nowrap flex-shrink-0">
+                        🧪 Chemical
+                    </button>
+                    <button onclick="setBranch('common')" data-branch="common" class="branch-btn px-3.5 py-2 rounded-xl text-xs sm:text-sm font-bold bg-gray-100 text-gray-700 hover:bg-gray-200 border border-gray-200 transition whitespace-nowrap flex-shrink-0">
+                        📚 Common FY Subjects
+                    </button>
+                </div>
+            </div>
+
+            <!-- Row 2: Semester Filter Pills & Search Input -->
+            <div class="pt-3 border-t border-gray-100 flex flex-col md:flex-row items-stretch md:items-center justify-between gap-4 min-w-0">
+                <!-- Semester Filter Pills -->
+                <div class="flex items-center gap-2 overflow-x-auto no-scrollbar min-w-0" id="sem-pills">
+                    <button onclick="setSemester('all')" data-sem="all" class="sem-btn active px-3.5 py-2 rounded-xl text-xs sm:text-sm font-bold bg-gray-100 text-gray-700 hover:bg-gray-200 border border-gray-200 transition whitespace-nowrap flex-shrink-0">
+                        All Semesters (<span id="count-all">26</span>)
+                    </button>
+                    <button onclick="setSemester('1')" data-sem="1" class="sem-btn px-3.5 py-2 rounded-xl text-xs sm:text-sm font-bold bg-gray-100 text-gray-700 hover:bg-gray-200 border border-gray-200 transition whitespace-nowrap flex-shrink-0">
+                        Semester 1 (<span id="count-sem1">7</span>)
+                    </button>
+                    <button onclick="setSemester('2')" data-sem="2" class="sem-btn px-3.5 py-2 rounded-xl text-xs sm:text-sm font-bold bg-gray-100 text-gray-700 hover:bg-gray-200 border border-gray-200 transition whitespace-nowrap flex-shrink-0">
+                        Semester 2 (<span id="count-sem2">19</span>)
+                    </button>
+                </div>
+
+                <!-- Instant Search Input -->
+                <div class="relative w-full md:w-80">
+                    <input type="text" id="subject-search" placeholder="Search subject or code (e.g. 311302)..."
+                        class="w-full pl-10 pr-9 py-2.5 bg-gray-50 border border-gray-200 rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-blue-600 focus:bg-white transition"
+                        oninput="handleSearch()" autocomplete="off">
+                    <svg class="w-4 h-4 text-gray-400 absolute left-3.5 top-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
+                    <button id="search-clear" onclick="clearSearch()" class="hidden absolute right-3 top-3 text-gray-400 hover:text-gray-600 focus:outline-none" aria-label="Clear Search">
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Active Filter Status & Reset -->
+            <div id="filter-status-bar" class="hidden pt-2 flex items-center justify-between text-xs text-gray-500">
+                <div class="flex items-center gap-2 flex-wrap" id="active-filter-tags">
+                    <!-- Populated via JS -->
+                </div>
+                <button onclick="resetAllFilters()" class="text-blue-600 hover:text-blue-800 font-semibold flex items-center gap-1">
+                    <span>Reset All</span>
+                    <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"/></svg>
+                </button>
+            </div>
+        </section>
+
+        <!-- Dynamic Counter -->
+        <div class="flex items-center justify-between mb-6 px-1">
+            <p id="results-count-text" class="text-sm font-semibold text-gray-700">
+                Showing all 26 core subjects
+            </p>
+            <span class="text-xs text-gray-400 font-mono">MSBTE K-Scheme</span>
+        </div>
+
+        <!-- Subjects Grid (Hallmark Cards) -->
+        <section class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6" id="subjects-container" aria-label="Subject Cards">
+{cards_block}
+        </section>
+
+        <!-- No Results Fallback -->
+        <div id="no-results" class="hidden text-center py-16 bg-white rounded-3xl border border-gray-200 p-8 shadow-sm">
+            <div class="w-16 h-16 mx-auto rounded-full bg-blue-50 text-blue-600 flex items-center justify-center mb-4">
+                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.172 16.172a4 4 0 015.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+            </div>
+            <h3 class="text-xl font-bold text-gray-900 font-display mb-1">No subjects match your filter</h3>
+            <p class="text-sm text-gray-500 mb-6 max-w-md mx-auto">
+                We couldn't find any first-year subjects matching your current branch, semester, or search query.
+            </p>
+            <button onclick="resetAllFilters()" class="px-6 py-2.5 bg-blue-600 hover:bg-blue-700 text-white rounded-xl font-semibold text-sm transition shadow-sm">
+                View All 26 Subjects
+            </button>
+        </div>
+
+        <!-- Clarification Guide: Workshop Practice Differences in K-Scheme -->
+        <section class="mt-16 bg-gradient-to-br from-slate-900 to-blue-950 text-white p-6 sm:p-10 rounded-3xl shadow-xl">
+            <div class="max-w-3xl">
+                <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold bg-blue-500/20 text-blue-300 border border-blue-400/30 uppercase tracking-wider mb-3">
+                    💡 Important Clarification for First Year Students
+                </span>
+                <h2 class="text-2xl sm:text-3xl font-bold font-display leading-tight">
+                    Understanding the 4 Workshop Practice Subjects in K-Scheme
+                </h2>
+                <p class="mt-3 text-sm sm:text-base text-slate-300 leading-relaxed">
+                    Under the previous I-Scheme, many branches shared a generic workshop manual. Under the <strong>MSBTE K-Scheme</strong>, the Board introduced 4 separate, branch-tailored workshop curricula so you only learn skills relevant to your discipline:
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-8">
+                <!-- 311002 -->
+                <div class="bg-white/10 backdrop-blur-md p-5 rounded-2xl border border-white/10 hover:border-blue-400 transition">
+                    <div class="flex items-center justify-between mb-2">
+                        <span class="text-xs font-mono font-bold text-blue-300 bg-blue-900/60 px-2 py-0.5 rounded">Code 311002</span>
+                        <span class="text-xs font-bold text-emerald-400">CO, IF, AN</span>
+                    </div>
+                    <h3 class="text-base font-bold text-white mb-1">Computer Engineering Workshop Practice</h3>
+                    <p class="text-xs text-slate-300 leading-relaxed">
+                        Covers desktop PC assembly, RAM/SSD hardware identification, RJ-45 Cat6 LAN cable crimping, BIOS settings, and Windows/Linux OS installation.
+                    </p>
+                </div>
+
+                <!-- 311005 -->
+                <div class="bg-white/10 backdrop-blur-md p-5 rounded-2xl border border-white/10 hover:border-blue-400 transition">
+                    <div class="flex items-center justify-between mb-2">
+                        <span class="text-xs font-mono font-bold text-blue-300 bg-blue-900/60 px-2 py-0.5 rounded">Code 311005</span>
+                        <span class="text-xs font-bold text-amber-400">ME, EE</span>
+                    </div>
+                    <h3 class="text-base font-bold text-white mb-1">Engineering Workshop Practice (Mech &amp; Elect)</h3>
+                    <p class="text-xs text-slate-300 leading-relaxed">
+                        Traditional manufacturing workshop: bench fitting, wood carpentry joints, electric arc welding, sheet metal fabrication, and basic domestic electrical wiring.
+                    </p>
+                </div>
+
+                <!-- 311007 -->
+                <div class="bg-white/10 backdrop-blur-md p-5 rounded-2xl border border-white/10 hover:border-blue-400 transition">
+                    <div class="flex items-center justify-between mb-2">
+                        <span class="text-xs font-mono font-bold text-blue-300 bg-blue-900/60 px-2 py-0.5 rounded">Code 311007</span>
+                        <span class="text-xs font-bold text-purple-400">EJ, IE</span>
+                    </div>
+                    <h3 class="text-base font-bold text-white mb-1">Electronics Engineering Workshop Practice</h3>
+                    <p class="text-xs text-slate-300 leading-relaxed">
+                        Electronic components color-coding, testing with DMM and CRO, breadboard prototyping, printed circuit board (PCB) soldering, and desoldering safety.
+                    </p>
+                </div>
+
+                <!-- 311010 -->
+                <div class="bg-white/10 backdrop-blur-md p-5 rounded-2xl border border-white/10 hover:border-blue-400 transition">
+                    <div class="flex items-center justify-between mb-2">
+                        <span class="text-xs font-mono font-bold text-blue-300 bg-blue-900/60 px-2 py-0.5 rounded">Code 311010</span>
+                        <span class="text-xs font-bold text-sky-400">CE</span>
+                    </div>
+                    <h3 class="text-base font-bold text-white mb-1">Civil Engineering Workshop</h3>
+                    <p class="text-xs text-slate-300 leading-relaxed">
+                        Field construction skills: English/Flemish brick masonry bonds, plumbing GI/PVC pipe threading and joints, construction formwork, and bar bending basics.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Student FAQ Accordion Section -->
+        <section class="mt-16 bg-white p-6 sm:p-10 rounded-3xl border border-gray-200 shadow-sm" aria-label="Frequently Asked Questions">
+            <div class="text-center max-w-2xl mx-auto mb-8">
+                <span class="text-xs font-bold uppercase tracking-wider text-blue-600 bg-blue-50 px-3 py-1 rounded-full">
+                    Got Questions?
+                </span>
+                <h2 class="text-2xl sm:text-3xl font-bold font-display text-gray-900 mt-2">
+                    Frequently Asked Questions (MSBTE 1st Year)
+                </h2>
+                <p class="text-sm text-gray-500 mt-1">
+                    Everything you need to know about MSBTE K-Scheme First Year curriculum, exams, and notes.
+                </p>
+            </div>
+
+            <div class="max-w-3xl mx-auto space-y-4">
+                <details class="group bg-gray-50 rounded-2xl p-5 border border-gray-200/80 [&_summary::-webkit-details-marker]:hidden cursor-pointer">
+                    <summary class="flex items-center justify-between font-bold text-gray-900 text-sm sm:text-base">
+                        <span>What is the passing criteria in MSBTE K-Scheme for 1st Year?</span>
+                        <span class="text-blue-600 group-open:rotate-180 transition-transform">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+                        </span>
+                    </summary>
+                    <p class="mt-3 text-xs sm:text-sm text-gray-600 leading-relaxed border-t border-gray-200 pt-3">
+                        In MSBTE K-Scheme, theory subjects typically carry 100 marks total (70 marks End Semester Exam + 30 marks Progressive Assessment). To pass a subject, students must score at least 28 marks out of 70 in the theory board exam (40%) and an aggregate of 40% across both theory and internal tests.
+                    </p>
+                </details>
+
+                <details class="group bg-gray-50 rounded-2xl p-5 border border-gray-200/80 [&_summary::-webkit-details-marker]:hidden cursor-pointer">
+                    <summary class="flex items-center justify-between font-bold text-gray-900 text-sm sm:text-base">
+                        <span>How are 1st year subjects divided between Semester 1 and Semester 2?</span>
+                        <span class="text-blue-600 group-open:rotate-180 transition-transform">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+                        </span>
+                    </summary>
+                    <p class="mt-3 text-xs sm:text-sm text-gray-600 leading-relaxed border-t border-gray-200 pt-3">
+                        Semester 1 focuses on common engineering foundations: Basic Mathematics (311302), Communication Skills in English (311303), Basic Science (311305), and Branch Workshop Practice. In Semester 2, students study Applied Mathematics (312301) along with department core subjects such as Programming in C (312303 for Computer/IT), Engineering Mechanics (312312 for Mech/Civil), or Electrical Engineering (312310 for Electrical).
+                    </p>
+                </details>
+
+                <details class="group bg-gray-50 rounded-2xl p-5 border border-gray-200/80 [&_summary::-webkit-details-marker]:hidden cursor-pointer">
+                    <summary class="flex items-center justify-between font-bold text-gray-900 text-sm sm:text-base">
+                        <span>Are all notes and lab manuals on this website free?</span>
+                        <span class="text-blue-600 group-open:rotate-180 transition-transform">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+                        </span>
+                    </summary>
+                    <p class="mt-3 text-xs sm:text-sm text-gray-600 leading-relaxed border-t border-gray-200 pt-3">
+                        Yes, 100% of study notes, syllabus PDFs, lab manuals, and previous year question papers on MSBTE Notes &amp; Info are completely free to read online and download via Google Drive. There are no paywalls or sign-up requirements.
+                    </p>
+                </details>
+
+                <details class="group bg-gray-50 rounded-2xl p-5 border border-gray-200/80 [&_summary::-webkit-details-marker]:hidden cursor-pointer">
+                    <summary class="flex items-center justify-between font-bold text-gray-900 text-sm sm:text-base">
+                        <span>Where can I find MSBTE Model Answer papers and PYQs?</span>
+                        <span class="text-blue-600 group-open:rotate-180 transition-transform">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+                        </span>
+                    </summary>
+                    <p class="mt-3 text-xs sm:text-sm text-gray-600 leading-relaxed border-t border-gray-200 pt-3">
+                        You can access our dedicated <a href="/pyq/" class="text-blue-600 font-semibold underline">PYQ Hub</a> for question papers and the <a href="/model-answer/" class="text-blue-600 font-semibold underline">Model Answer Portal</a> for official solved solution sets. Each subject card above also has a direct PYQ shortcut where papers are available.
+                    </p>
+                </details>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Hallmark Footer (Exact same as index.html) -->
+    <footer class="text-white pt-10 sm:pt-12 pb-24 md:pb-12 mt-auto w-full" style="background-color: #0f172a;">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+            <div>
+                <h3 class="text-xl font-semibold mb-4 font-display">About Us</h3>
+                <p class="text-sm text-gray-300 leading-relaxed">
+                    We provide free and premium study materials, notes, lab manuals, and guidance for MSBTE diploma engineering students across all departments in Maharashtra.
+                </p>
+            </div>
+            <div>
+                <h3 class="text-xl font-semibold mb-4 font-display">Quick Links</h3>
+                <ul class="space-y-2 text-sm text-gray-300">
+                    <li><a href="/" class="hover:underline">Home</a></li>
+                    <li><a href="/start.html" class="hover:underline text-sky-400 font-semibold hover:text-sky-300">Start Here Directory</a></li>
+                    <li><a href="/Notes/" class="hover:underline">Subject Study Notes</a></li>
+                    <li><a href="/Notes/msbte-first-year-diploma-notes.html" class="hover:underline text-blue-400 font-semibold">1st Year Diploma Portal</a></li>
+                    <li><a href="/pyq/" class="hover:underline">Question Papers (PYQ)</a></li>
+                    <li><a href="/model-answer/" class="hover:underline">Model Answer Papers</a></li>
+                    <li><a href="/scheme/" class="hover:underline">Syllabus &amp; Schemes</a></li>
+                    <li><a href="/#departments" class="hover:underline">Engineering Departments</a></li>
+                    <li><a href="/blog/" class="hover:underline">Blog &amp; News</a></li>
+                    <li><a href="/internships.html" class="hover:underline">Internships &amp; Jobs</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="text-xl font-semibold mb-4 font-display">Contact</h3>
+                <p class="text-sm mb-2 text-gray-300">
+                    <a href="mailto:info.mraaglave@gmail.com" class="hover:text-blue-400 transition inline-flex items-center gap-1.5">
+                        <span>📧</span><span>info.mraaglave@gmail.com</span>
+                    </a>
+                </p>
+                <p class="text-sm mb-3 text-gray-300">
+                    <a href="tel:+917083236221" class="hover:text-blue-400 transition inline-flex items-center gap-1.5">
+                        <span>📱</span><span>+91 70832 36221</span>
+                    </a>
+                </p>
+                <a href="https://whatsapp.com/channel/0029Vap8lWS3QxRxxdmaSR36" target="_blank" rel="noopener noreferrer"
+                    class="inline-block mt-2 btn-whatsapp text-white px-5 py-2.5 rounded-full font-semibold text-sm transition shadow-lg shadow-green-950/30">
+                    Join WhatsApp Channel
+                </a>
+            </div>
+        </div>
+        <div class="flex justify-center mt-8">
+            <a href="https://www.producthunt.com/products/msbte-notes-info/reviews/new?utm_source=badge-product_review&utm_medium=badge&utm_source=badge-msbte&#0045;notes&#0045;info" target="_blank" rel="noopener noreferrer">
+                <img src="https://api.producthunt.com/widgets/embed-image/v1/product_review.svg?product_id=1131454&theme=light" alt="MSBTE Notes &amp; Info Reviews" style="width: 250px; height: 54px;" width="250" height="54" loading="lazy" />
+            </a>
+        </div>
+        <div class="mt-8 text-center text-xs text-gray-400 border-t border-gray-800 pt-6">
+            <p>&copy; 2026 MSBTE Notes &amp; Info. All rights reserved. Built for Maharashtra Polytechnic Students.</p>
+        </div>
+    </footer>
+
+    <!-- Interactive Client-side Script -->
+    <script>
+        // State
+        let currentBranch = 'all';
+        let currentSem = 'all';
+        let currentSearch = '';
+
+        const branchLabels = {{
+            'all': 'All Branches',
+            'co': 'Computer / IT / AI-ML (CO, IF, AN)',
+            'me': 'Mechanical Engineering (ME)',
+            'ce': 'Civil Engineering (CE)',
+            'ee': 'Electrical Engineering (EE)',
+            'ej': 'Electronics & Telecomm (EJ, IE)',
+            'ch': 'Chemical Engineering (CH)',
+            'common': 'Common First Year Subjects'
+        }};
+
+        function setBranch(branch) {{
+            currentBranch = branch;
+            
+            // Update active pill
+            document.querySelectorAll('.branch-btn').forEach(btn => {{
+                if (btn.getAttribute('data-branch') === branch) {{
+                    btn.classList.add('active');
+                }} else {{
+                    btn.classList.remove('active');
+                }}
+            }});
+
+            const labelEl = document.getElementById('active-branch-label');
+            if (labelEl) labelEl.textContent = branchLabels[branch] || 'All Branches';
+
+            applyFilters();
+        }}
+
+        function setSemester(sem) {{
+            currentSem = sem;
+
+            // Update active pill
+            document.querySelectorAll('.sem-btn').forEach(btn => {{
+                if (btn.getAttribute('data-sem') === sem) {{
+                    btn.classList.add('active');
+                }} else {{
+                    btn.classList.remove('active');
+                }}
+            }});
+
+            applyFilters();
+        }}
+
+        function handleSearch() {{
+            const input = document.getElementById('subject-search');
+            currentSearch = (input.value || '').trim().toLowerCase();
+            
+            const clearBtn = document.getElementById('search-clear');
+            if (clearBtn) {{
+                if (currentSearch.length > 0) {{
+                    clearBtn.classList.remove('hidden');
+                }} else {{
+                    clearBtn.classList.add('hidden');
+                }}
+            }}
+
+            applyFilters();
+        }}
+
+        function clearSearch() {{
+            const input = document.getElementById('subject-search');
+            input.value = '';
+            currentSearch = '';
+            const clearBtn = document.getElementById('search-clear');
+            if (clearBtn) clearBtn.classList.add('hidden');
+            applyFilters();
+        }}
+
+        function resetAllFilters() {{
+            currentBranch = 'all';
+            currentSem = 'all';
+            currentSearch = '';
+            
+            const input = document.getElementById('subject-search');
+            if (input) input.value = '';
+            
+            const clearBtn = document.getElementById('search-clear');
+            if (clearBtn) clearBtn.classList.add('hidden');
+
+            document.querySelectorAll('.branch-btn').forEach(btn => {{
+                if (btn.getAttribute('data-branch') === 'all') btn.classList.add('active');
+                else btn.classList.remove('active');
+            }});
+
+            document.querySelectorAll('.sem-btn').forEach(btn => {{
+                if (btn.getAttribute('data-sem') === 'all') btn.classList.add('active');
+                else btn.classList.remove('active');
+            }});
+
+            const labelEl = document.getElementById('active-branch-label');
+            if (labelEl) labelEl.textContent = 'All Branches';
+
+            applyFilters();
+        }}
+
+        function applyFilters() {{
+            const cards = document.querySelectorAll('.subject-card');
+            const noResults = document.getElementById('no-results');
+            const container = document.getElementById('subjects-container');
+            const resultsText = document.getElementById('results-count-text');
+            const filterBar = document.getElementById('filter-status-bar');
+            const filterTags = document.getElementById('active-filter-tags');
+
+            let visibleCount = 0;
+
+            cards.forEach(card => {{
+                const cardSem = card.getAttribute('data-sem');
+                const cardBranches = (card.getAttribute('data-branches') || '').split(',');
+                const cardName = card.getAttribute('data-name') || '';
+                const cardCode = card.getAttribute('data-code') || '';
+                const cardSubtitle = card.getAttribute('data-subtitle') || '';
+
+                // Branch Match
+                let matchBranch = false;
+                if (currentBranch === 'all') {{
+                    matchBranch = true;
+                }} else if (currentBranch === 'common') {{
+                    matchBranch = cardBranches.includes('common');
+                }} else {{
+                    matchBranch = cardBranches.includes(currentBranch) || cardBranches.includes('common');
+                }}
+
+                // Semester Match
+                let matchSem = false;
+                if (currentSem === 'all' || currentSem === cardSem) {{
+                    matchSem = true;
+                }}
+
+                // Search Match
+                let matchSearch = false;
+                if (!currentSearch) {{
+                    matchSearch = true;
+                }} else {{
+                    const terms = currentSearch.split(/\\s+/);
+                    const haystack = (cardName + ' ' + cardCode + ' ' + cardSubtitle).toLowerCase();
+                    matchSearch = terms.every(t => haystack.includes(t));
+                }}
+
+                if (matchBranch && matchSem && matchSearch) {{
+                    card.style.display = 'flex';
+                    visibleCount++;
+                }} else {{
+                    card.style.display = 'none';
+                }}
+            }});
+
+            // Update counter text
+            if (resultsText) {{
+                resultsText.textContent = `Showing ${{visibleCount}} of ${{cards.length}} subjects`;
+            }}
+
+            // Show / hide no results
+            if (visibleCount === 0) {{
+                noResults.classList.remove('hidden');
+                container.classList.add('hidden');
+            }} else {{
+                noResults.classList.add('hidden');
+                container.classList.remove('hidden');
+            }}
+
+            // Show active filters pill bar
+            const hasFilters = (currentBranch !== 'all' || currentSem !== 'all' || currentSearch.length > 0);
+            if (filterBar && filterTags) {{
+                if (hasFilters) {{
+                    filterBar.classList.remove('hidden');
+                    let tagsHTML = '';
+                    if (currentBranch !== 'all') {{
+                        tagsHTML += `<span class="bg-blue-50 text-blue-700 px-2 py-0.5 rounded-md border border-blue-100 font-semibold">Branch: ${{currentBranch.toUpperCase()}}</span>`;
+                    }}
+                    if (currentSem !== 'all') {{
+                        tagsHTML += `<span class="bg-indigo-50 text-indigo-700 px-2 py-0.5 rounded-md border border-indigo-100 font-semibold">Semester ${{currentSem}}</span>`;
+                    }}
+                    if (currentSearch) {{
+                        tagsHTML += `<span class="bg-amber-50 text-amber-700 px-2 py-0.5 rounded-md border border-amber-100 font-semibold">Query: "${{currentSearch}}"</span>`;
+                    }}
+                    filterTags.innerHTML = tagsHTML;
+                }} else {{
+                    filterBar.classList.add('hidden');
+                    filterTags.innerHTML = '';
+                }}
+            }}
+        }}
+
+        // Mobile Nav Drawer Toggle
+        function toggleMobileMenu() {{
+            const nav = document.getElementById('mobileNav');
+            const menuIcon = document.getElementById('menuIcon');
+            const closeIcon = document.getElementById('closeIcon');
+            if (nav) {{
+                nav.classList.toggle('translate-x-full');
+            }}
+            if (menuIcon && closeIcon) {{
+                menuIcon.classList.toggle('hidden');
+                closeIcon.classList.toggle('hidden');
+            }}
+        }}
+
+        // Desktop Dropdown Toggle for accessibility
+        function toggleDropdown(button, event) {{
+            event.stopPropagation();
+            const parent = button.closest('.nav-dropdown');
+            const menu = parent ? parent.querySelector('.dropdown-menu') : null;
+            if (menu) {{
+                menu.classList.toggle('hidden');
+            }}
+        }}
+
+        document.addEventListener('click', () => {{
+            document.querySelectorAll('.dropdown-menu').forEach(menu => {{
+                menu.classList.add('hidden');
+            }});
+        }});
+    </script>
+</body>
+
+</html>
+'''
+
+with open('Notes/msbte-first-year-diploma-notes.html', 'w', encoding='utf-8') as f:
+    f.write(full_html)
+
+print("Updated Notes/msbte-first-year-diploma-notes.html with responsive layout!")
