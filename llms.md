@@ -6,6 +6,7 @@
 
 ## Site Map & Key Links
 - [Home](https://msbtenotes-info.netlify.app/)
+- [First Year Diploma Notes](https://msbtenotes-info.netlify.app/Notes/msbte-first-year-diploma-notes.html) - Master Semester 1 & 2 K-Scheme notes directory across 25 subjects.
 - [Study Notes](https://msbtenotes-info.netlify.app/#notes) - Subject-wise notes for various branches.
 - [Question Papers & Answers](https://msbtenotes-info.netlify.app/#departments) - Previous year papers and model answers.
 - [Syllabus](https://msbtenotes-info.netlify.app/scheme/index.html) - Curriculum for I & K Schemes.
