@@ -136,19 +136,7 @@
 }
 </script>
 
-  <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "WebSite",
-  "name": "MSBTE Notes & Info",
-  "url": "https://msbtenotes-info.netlify.app/",
-  "potentialAction": {
-    "@type": "SearchAction",
-    "target": "https://msbtenotes-info.netlify.app/notes/?q={search_term_string}",
-    "query-input": "required name=search_term_string"
-  }
-}
-</script>
+  
 
   <!-- FAQ Structured Data -->
   <script type="application/ld+json">
@@ -242,14 +230,6 @@
   "name": "MSBTE Notes & Info",
   "description": "Free MSBTE diploma engineering notes, question papers, and study materials for all branches",
   "url": "https://msbtenotes-info.netlify.app",
-  "potentialAction": {
-    "@type": "SearchAction",
-    "target": {
-      "@type": "EntryPoint",
-      "urlTemplate": "https://msbtenotes-info.netlify.app?search={search_term_string}"
-    },
-    "query-input": "required name=search_term_string"
-  },
   "publisher": {
     "@type": "Organization",
     "name": "MSBTE Notes & Info",
@@ -516,7 +496,7 @@
         <!-- Middle: Desktop Nav -->
         <div class="hidden md:flex space-x-6 items-center">
           <a href="/" class="hover:text-blue-500 font-medium">Home</a>
-          <a href="/start.html"
+          <a href="/start"
             class="px-3 py-1 rounded-full bg-blue-50 text-blue-600 hover:bg-blue-600 hover:text-white font-semibold text-sm transition flex items-center gap-1.5 border border-blue-100"><span
               class="w-1.5 h-1.5 rounded-full bg-blue-600"></span>Start Here</a>
 
@@ -574,12 +554,12 @@
             </button>
             <div
               class="dropdown-menu absolute left-0 top-full -mt-1 w-52 bg-white rounded-xl shadow-xl border border-gray-100 py-2 hidden group-hover:block transition-all z-50">
-              <a href="/jobs/index.html"
+              <a href="/jobs/"
                 class="flex items-center gap-2.5 px-4 py-2.5 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-600 font-medium transition">
                 <span class="text-base">💼</span>
                 <span>Jobs Portal</span>
               </a>
-              <a href="/internships.html"
+              <a href="/internships"
                 class="flex items-center gap-2.5 px-4 py-2.5 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-600 font-medium transition">
                 <span class="text-base">🎓</span>
                 <span>Internships</span>
@@ -627,7 +607,7 @@
       <div class="flex flex-col space-y-3 pb-8">
         <a href="/" onclick="toggleMobileMenu()"
           class="text-xl font-display font-bold text-gray-900 border-b border-gray-100 pb-2">Home</a>
-        <a href="/start.html" onclick="toggleMobileMenu()"
+        <a href="/start" onclick="toggleMobileMenu()"
           class="text-xl font-display font-bold text-blue-600 border-b border-gray-100 pb-2 flex items-center justify-between">
           <span>🚀 Start Here Hub</span>
           <span class="text-xs font-sans font-bold px-2 py-0.5 rounded-full bg-blue-100 text-blue-700">All
@@ -713,7 +693,7 @@
             </svg>
           </button>
           <div id="mobileJobsSubmenu" class="space-y-1 pl-2 pt-1 pb-1 transition-all">
-            <a href="/jobs/index.html" onclick="toggleMobileMenu()"
+            <a href="/jobs/" onclick="toggleMobileMenu()"
               class="flex items-center gap-2.5 py-2 px-3 rounded-lg text-base font-medium text-gray-700 hover:bg-blue-50 hover:text-blue-600 transition">
               <span class="text-lg">💼</span>
               <div>
@@ -721,7 +701,7 @@
                 <div class="text-xs text-gray-500">Engineering jobs &amp; campus recruitments</div>
               </div>
             </a>
-            <a href="/internships.html" onclick="toggleMobileMenu()"
+            <a href="/internships" onclick="toggleMobileMenu()"
               class="flex items-center gap-2.5 py-2 px-3 rounded-lg text-base font-medium text-gray-700 hover:bg-blue-50 hover:text-blue-600 transition">
               <span class="text-lg">🎓</span>
               <div>
@@ -780,7 +760,7 @@
 
         <!-- Primary Action Buttons -->
         <div class="flex flex-wrap justify-center items-center gap-3 px-2 sm:px-0">
-          <a href="/start.html"
+          <a href="/start"
             class="bg-blue-600 hover:bg-blue-700 text-white font-semibold text-sm md:text-base px-6 py-3 rounded-xl inline-flex items-center justify-center gap-2 transition shadow-md hover:-translate-y-0.5">
             <span>Start Here (All Resources)</span>
           </a>
@@ -800,7 +780,7 @@
             class="bg-white hover:bg-gray-50 text-gray-800 hover:text-blue-600 border border-gray-300 hover:border-blue-400 font-semibold text-sm md:text-base px-5 py-3 rounded-xl inline-flex items-center justify-center gap-2 transition shadow-sm hover:-translate-y-0.5">
             <span>Model Answers</span>
           </a>
-          <a href="/Notes/index.html"
+          <a href="/notes/"
             class="bg-white hover:bg-gray-50 text-gray-800 hover:text-blue-600 border border-gray-300 hover:border-blue-400 font-semibold text-sm md:text-base px-5 py-3 rounded-xl inline-flex items-center justify-center gap-2 transition shadow-sm hover:-translate-y-0.5">
             <span>Browse Notes</span>
           </a>
@@ -809,19 +789,19 @@
         <!-- Quick Branch Shortcut Chips -->
         <div class="mt-8 pt-6 border-t border-gray-200 flex flex-wrap justify-center items-center gap-2 text-xs">
           <span class="text-gray-500 font-medium mr-1">Quick Jump:</span>
-          <a href="/Branches/Computer.html"
+          <a href="/branches/computer"
             class="px-3 py-1.5 rounded-lg bg-white hover:bg-blue-50 text-gray-700 hover:text-blue-700 border border-gray-200 hover:border-blue-300 shadow-xs transition font-medium">Computer</a>
-          <a href="/Branches/Information-Technology.html"
+          <a href="/branches/information-technology"
             class="px-3 py-1.5 rounded-lg bg-white hover:bg-blue-50 text-gray-700 hover:text-blue-700 border border-gray-200 hover:border-blue-300 shadow-xs transition font-medium">IT</a>
-          <a href="/Branches/AI-ML.html"
+          <a href="/branches/ai-ml"
             class="px-3 py-1.5 rounded-lg bg-white hover:bg-blue-50 text-gray-700 hover:text-blue-700 border border-gray-200 hover:border-blue-300 shadow-xs transition font-medium">AI-ML</a>
-          <a href="/Branches/Civil.html"
+          <a href="/branches/civil"
             class="px-3 py-1.5 rounded-lg bg-white hover:bg-blue-50 text-gray-700 hover:text-blue-700 border border-gray-200 hover:border-blue-300 shadow-xs transition font-medium">Civil</a>
-          <a href="/Branches/Electrical-Engineering.html"
+          <a href="/branches/electrical-engineering"
             class="px-3 py-1.5 rounded-lg bg-white hover:bg-blue-50 text-gray-700 hover:text-blue-700 border border-gray-200 hover:border-blue-300 shadow-xs transition font-medium">Electrical</a>
-          <a href="/Branches/ETC-Engineering.html"
+          <a href="/branches/etc-engineering"
             class="px-3 py-1.5 rounded-lg bg-white hover:bg-blue-50 text-gray-700 hover:text-blue-700 border border-gray-200 hover:border-blue-300 shadow-xs transition font-medium">E&amp;TC</a>
-          <a href="/Branches/Mechanical-Engineering.html"
+          <a href="/branches/mechanical-engineering"
             class="px-3 py-1.5 rounded-lg bg-white hover:bg-blue-50 text-gray-700 hover:text-blue-700 border border-gray-200 hover:border-blue-300 shadow-xs transition font-medium">Mechanical</a>
         </div>
       </div>
@@ -882,7 +862,7 @@
                 tribute to his powerful legacy in Marathi and Hindi cinema.
               </p>
               <div class="mt-auto">
-                <a href="/blog/nana-patekar-tribute.html" aria-label="Read more about Nana Patekar Tribute"
+                <a href="/blog/nana-patekar-tribute" aria-label="Read more about Nana Patekar Tribute"
                   class="inline-flex items-center text-blue-600 font-bold text-sm group-hover:underline">
                   Read More
                   <svg class="w-4 h-4 ml-2 group-hover:translate-x-1 transition duration-300" fill="none"
@@ -899,7 +879,7 @@
             class="bg-white rounded-xl shadow-lg overflow-hidden flex flex-col h-full hover:shadow-2xl transition duration-300 transform hover:-translate-y-2 group">
             <div class="relative overflow-hidden aspect-video w-full" style="aspect-ratio: 16 / 9;">
               <img src="/resourse/note-thumbs/OSY_thumbnail.webp"
-                alt="Operating System OSY 314319 K Scheme Notes Thumbnail"
+                alt="Operating System OSY 315319 K Scheme Notes Thumbnail"
                 class="w-full h-full object-cover group-hover:scale-110 transition duration-500"
                 width="640" height="360" loading="lazy" decoding="async">
               <div class="absolute top-4 left-4">
@@ -922,11 +902,10 @@
                 Operating System (OSY) K Scheme Notes & Question Bank | MSBTE Diploma
               </h3>
               <p class="text-gray-600 text-sm mb-6 line-clamp-3 leading-relaxed">
-                Free MSBTE K-Scheme 314319 – Operating System (OSY) unit-wise notes, important question bank, model
-                answers, and complete revision roadmaps for 4th Semester.
+                Free MSBTE K-Scheme 315319 – Operating System (OSY) unit-wise notes, important question bank, model answers, and complete revision roadmaps for 5th Semester.
               </p>
               <div class="mt-auto">
-                <a href="/notes/osy-k-scheme-notes.html" aria-label="Read more about Operating System OSY K Scheme Notes"
+                <a href="/notes/osy-k-scheme-notes" aria-label="Read more about Operating System OSY K Scheme Notes"
                   class="inline-flex items-center text-blue-600 font-bold text-sm group-hover:underline">
                   Read More
                   <svg class="w-4 h-4 ml-2 group-hover:translate-x-1 transition duration-300" fill="none"
@@ -970,7 +949,7 @@
                 question bank, and complete revision roadmaps for 4th Semester.
               </p>
               <div class="mt-auto">
-                <a href="/notes/mic-k-scheme-notes.html" aria-label="Read more about Microprocessor MIC K Scheme Notes"
+                <a href="/notes/mic-k-scheme-notes" aria-label="Read more about Microprocessor MIC K Scheme Notes"
                   class="inline-flex items-center text-blue-600 font-bold text-sm group-hover:underline">
                   Read More
                   <svg class="w-4 h-4 ml-2 group-hover:translate-x-1 transition duration-300" fill="none"
@@ -1015,7 +994,7 @@
                 questions, and solved model answer papers for 4th Semester.
               </p>
               <div class="mt-auto">
-                <a href="/notes/dcn-k-scheme-notes.html" aria-label="Read more about Data Communication and Computer Network DCN K Scheme Notes"
+                <a href="/notes/dcn-k-scheme-notes" aria-label="Read more about Data Communication and Computer Network DCN K Scheme Notes"
                   class="inline-flex items-center text-blue-600 font-bold text-sm group-hover:underline">
                   Read More
                   <svg class="w-4 h-4 ml-2 group-hover:translate-x-1 transition duration-300" fill="none"
@@ -1060,7 +1039,7 @@
                 viva Q&A, and practice mock test papers for 4th Semester.
               </p>
               <div class="mt-auto">
-                <a href="/notes/java-k-scheme-notes.html" aria-label="Read more about Java Programming JPR K Scheme Notes"
+                <a href="/notes/java-k-scheme-notes" aria-label="Read more about Java Programming JPR K Scheme Notes"
                   class="inline-flex items-center text-blue-600 font-bold text-sm group-hover:underline">
                   Read More
                   <svg class="w-4 h-4 ml-2 group-hover:translate-x-1 transition duration-300" fill="none"
@@ -1105,7 +1084,7 @@
                 revision notes, IMP question bank, and online MCQ sets.
               </p>
               <div class="mt-auto">
-                <a href="/notes/ees-k-scheme-notes.html" aria-label="Read more about Environmental Education and Sustainability EES K Scheme Notes"
+                <a href="/notes/ees-k-scheme-notes" aria-label="Read more about Environmental Education and Sustainability EES K Scheme Notes"
                   class="inline-flex items-center text-blue-600 font-bold text-sm group-hover:underline">
                   Read More
                   <svg class="w-4 h-4 ml-2 group-hover:translate-x-1 transition duration-300" fill="none"
@@ -1119,14 +1098,8 @@
           </div>
           <noscript>
             <div class="col-span-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-              <div class="p-4 bg-white rounded-xl shadow"><a href="/blog/nana-patekar-tribute.html"
-                  class="font-bold text-blue-600 hover:underline">Nana Patekar Passes Away at 75: Heartfelt Tribute to
-                  the
-                  Legend</a>
-                <p class="text-sm text-gray-600 mt-2">The Indian film industry mourns as legendary actor Nana Patekar
-                  passes away at 75. Read our heartfelt tribute to his powerful legacy in Marathi and Hindi cinema.</p>
-              </div>
-              <div class="p-4 bg-white rounded-xl shadow"><a href="/notes/osy-k-scheme-notes.html"
+              <div class="p-4 bg-white rounded-xl shadow"><a href="/blog/msbte-winter-2025-exam-form" class="font-bold text-blue-600 hover:underline">MSBTE Winter Exam Form 2026: Last Date, Login Link & Fees</a><p class="text-sm text-gray-600 mt-2">Fill MSBTE Winter diploma exam form online. Direct login link, step-by-step instructions, regular & late fee schedules, and confirmation steps.</p></div>
+              <div class="p-4 bg-white rounded-xl shadow"><a href="/notes/osy-k-scheme-notes"
                   class="font-bold text-blue-600 hover:underline">Operating System (OSY) K Scheme Notes & Question Bank
                   |
                   MSBTE Diploma</a>
@@ -1134,28 +1107,28 @@
                   notes,
                   important question bank, model answers, and complete revision roadmaps for 4th Semester.</p>
               </div>
-              <div class="p-4 bg-white rounded-xl shadow"><a href="/notes/mic-k-scheme-notes.html"
+              <div class="p-4 bg-white rounded-xl shadow"><a href="/notes/mic-k-scheme-notes"
                   class="font-bold text-blue-600 hover:underline">Microprocessor (MIC) K Scheme Notes & Question Bank |
                   MSBTE Diploma</a>
                 <p class="text-sm text-gray-600 mt-2">Download free MSBTE K Scheme Microprocessor (MIC - 314321)
                   unit-wise
                   notes, 8086 architecture PDFs, IMP question bank, and complete revision roadmaps for 4th Semester.</p>
               </div>
-              <div class="p-4 bg-white rounded-xl shadow"><a href="/notes/dcn-k-scheme-notes.html"
+              <div class="p-4 bg-white rounded-xl shadow"><a href="/notes/dcn-k-scheme-notes"
                   class="font-bold text-blue-600 hover:underline">Data Communication & Computer Network (DCN) K Scheme
                   Notes | MSBTE Diploma</a>
                 <p class="text-sm text-gray-600 mt-2">Free MSBTE K Scheme Data Communication & Computer Network (DCN -
                   314318) complete notes, chapter PDFs, IMP questions, and solved model answer papers for 4th Semester.
                 </p>
               </div>
-              <div class="p-4 bg-white rounded-xl shadow"><a href="/notes/java-k-scheme-notes.html"
+              <div class="p-4 bg-white rounded-xl shadow"><a href="/notes/java-k-scheme-notes"
                   class="font-bold text-blue-600 hover:underline">Java Programming (JPR) K Scheme Notes & Question Bank
                   |
                   MSBTE Diploma</a>
                 <p class="text-sm text-gray-600 mt-2">Free download MSBTE K Scheme Java Programming (JPR - 314317) Unit
                   1-6 mega notes, Super 25 question bank, viva Q&A, and practice mock test papers for 4th Semester.</p>
               </div>
-              <div class="p-4 bg-white rounded-xl shadow"><a href="/notes/ees-k-scheme-notes.html"
+              <div class="p-4 bg-white rounded-xl shadow"><a href="/notes/ees-k-scheme-notes"
                   class="font-bold text-blue-600 hover:underline">Environmental Education & Sustainability (EES) K
                   Scheme
                   Notes | MSBTE Diploma</a>
@@ -1163,13 +1136,13 @@
                   (EES
                   - 314301) official syllabus, complete revision notes, IMP question bank, and online MCQ sets.</p>
               </div>
-              <div class="p-4 bg-white rounded-xl shadow"><a href="/notes/oop-k-scheme-notes.html"
+              <div class="p-4 bg-white rounded-xl shadow"><a href="/notes/oop-k-scheme-notes"
                   class="font-bold text-blue-600 hover:underline">Object Oriented Programming with C++ (OOP) K Scheme
                   Notes | MSBTE Diploma</a>
                 <p class="text-sm text-gray-600 mt-2">Free download MSBTE K Scheme Object-Oriented Programming Using C++
                   (OOP - 313304) Unit 1-5 notes, complete PPTs, inheritance guides, and course outcome materials.</p>
               </div>
-              <div class="p-4 bg-white rounded-xl shadow"><a href="/notes/dsu-k-scheme-notes.html"
+              <div class="p-4 bg-white rounded-xl shadow"><a href="/notes/dsu-k-scheme-notes"
                   class="font-bold text-blue-600 hover:underline">Data Structures Using C (DSU) K Scheme Notes &
                   Question
                   Bank | MSBTE Diploma</a>
@@ -1177,14 +1150,14 @@
                   313301)
                   unit-wise notes, Stacks and Queues PDFs, solved question paper with answers, and question bank.</p>
               </div>
-              <div class="p-4 bg-white rounded-xl shadow"><a href="/notes/dbms-k-scheme-notes.html"
+              <div class="p-4 bg-white rounded-xl shadow"><a href="/notes/dbms-k-scheme-notes"
                   class="font-bold text-blue-600 hover:underline">Database Management System (DBMS) K Scheme Notes &
                   Papers | MSBTE Diploma</a>
                 <p class="text-sm text-gray-600 mt-2">Free download MSBTE K Scheme Database Management System (DBMS -
                   313302) Unit 1-5 notes, complete revision guides, IMP question banks, and Winter 2023 solved papers.
                 </p>
               </div>
-              <div class="p-4 bg-white rounded-xl shadow"><a href="/notes/dte-k-scheme-notes.html"
+              <div class="p-4 bg-white rounded-xl shadow"><a href="/notes/dte-k-scheme-notes"
                   class="font-bold text-blue-600 hover:underline">Digital Techniques (DTE) K Scheme Notes, MCQs & Solved
                   Papers | MSBTE Diploma</a>
                 <p class="text-sm text-gray-600 mt-2">Free download MSBTE K Scheme Digital Techniques (DTE - 313303)
@@ -1193,7 +1166,7 @@
                 </p>
               </div>
               <div class="p-4 bg-white rounded-xl shadow"><a
-                  href="/blog/engineering-admissions-institute-level-round-merit-based-2026.html"
+                  href="/blog/engineering-admissions-institute-level-round-merit-based-2026"
                   class="font-bold text-blue-600 hover:underline">Engineering Admission 2026: Institute-Level Round
                   Strictly Merit-Based, CET Cell Guidelines</a>
                 <p class="text-sm text-gray-600 mt-2">Maharashtra CET Cell issues strict merit rules for 2026
@@ -1201,14 +1174,14 @@
                 </p>
               </div>
               <div class="p-4 bg-white rounded-xl shadow"><a
-                  href="/blog/msbte-academic-calendar-2026-27-winter-exam-date.html"
+                  href="/blog/msbte-academic-calendar-2026-27-winter-exam-date"
                   class="font-bold text-blue-600 hover:underline">MSBTE Academic Calendar 2026-27 Released: Key Dates
                   for
                   Odd Sem, Winter Exam & Enrolment</a>
                 <p class="text-sm text-gray-600 mt-2">MSBTE Academic Calendar 2026-27 official schedule released for Odd
                   Semesters (Sem 1, 3 & 5). Check term start dates, Winter 2026 exam dates & K-Scheme updates.</p>
               </div>
-              <div class="p-4 bg-white rounded-xl shadow"><a href="/blog/dse-admission-2026-27-maharashtra.html"
+              <div class="p-4 bg-white rounded-xl shadow"><a href="/blog/dse-admission-2026-27-maharashtra"
                   class="font-bold text-blue-600 hover:underline">DSE Admission 2026-27 Maharashtra: Dates, Schedule,
                   Registration & Eligibility</a>
                 <p class="text-sm text-gray-600 mt-2">Complete guide on DSE Admission 2026-27 in Maharashtra for Direct
@@ -1216,7 +1189,7 @@
                   verification process.</p>
               </div>
               <div class="p-4 bg-white rounded-xl shadow"><a
-                  href="/blog/be-vs-btech-difference-which-is-better-2026.html"
+                  href="/blog/be-vs-btech-difference-which-is-better-2026"
                   class="font-bold text-blue-600 hover:underline">BE vs BTech: Key Differences, Eligibility, Salary,
                   Jobs
                   & Which is Better? (2026 Guide)</a>
@@ -1226,7 +1199,7 @@
                   placements, salary, higher studies, and which degree is better in 2026.</p>
               </div>
               <div class="p-4 bg-white rounded-xl shadow"><a
-                  href="/blog/top-100-engineering-project-ideas-diploma-students-2026.html"
+                  href="/blog/top-100-engineering-project-ideas-diploma-students-2026"
                   class="font-bold text-blue-600 hover:underline">Top 100 Engineering Project Ideas for Diploma Students
                   (2026)</a>
                 <p class="text-sm text-gray-600 mt-2">Explore the top 100+ engineering project ideas for diploma and
@@ -1234,7 +1207,7 @@
                 </p>
               </div>
               <div class="p-4 bg-white rounded-xl shadow"><a
-                  href="/blog/sppu-engineering-be-btech-result-declared-2026.html"
+                  href="/blog/sppu-engineering-be-btech-result-declared-2026"
                   class="font-bold text-blue-600 hover:underline">SPPU BE & BTech Result 2026 Declared at unipune.ac.in
                   |
                   Direct Link</a>
@@ -1243,35 +1216,35 @@
                   Engineering on 15 July 2026. Get the official direct link and revaluation details here.</p>
               </div>
               <div class="p-4 bg-white rounded-xl shadow"><a
-                  href="/blog/sppu-be-2019-pattern-summer-2026-timetable.html"
+                  href="/blog/sppu-be-2019-pattern-summer-2026-timetable"
                   class="font-bold text-blue-600 hover:underline">SPPU BE 2019 Pattern End-Sem Exam Timetable –
                   April/May 2026 (Summer Session)</a>
                 <p class="text-sm text-gray-600 mt-2">SPPU has officially released the BE 2019 Pattern End-Sem Exam
                   Timetable for Summer Session 2026. Check branch-wise dates, timings, and important instructions for BE
                   students.</p>
               </div>
-              <div class="p-4 bg-white rounded-xl shadow"><a href="/blog/msbte-notes-k-scheme-2025-26.html"
+              <div class="p-4 bg-white rounded-xl shadow"><a href="/blog/msbte-notes-k-scheme-2025-26"
                   class="font-bold text-blue-600 hover:underline">MSBTE Notes K Scheme 2025-26 | All Branch PDF Download
                   Free</a>
                 <p class="text-sm text-gray-600 mt-2">Download free MSBTE Notes for K Scheme – All branches, all
                   semesters. Get PDF notes, syllabus, lab manuals, micro-projects, and question banks in English &
                   Marathi. Updated for Summer 2026 exams.</p>
               </div>
-              <div class="p-4 bg-white rounded-xl shadow"><a href="/blog/msbte-exam-ready-material-499.html"
+              <div class="p-4 bg-white rounded-xl shadow"><a href="/blog/msbte-exam-ready-material-499"
                   class="font-bold text-blue-600 hover:underline">MSBTE Exam à¤šà¥à¤¯à¤¾ à¤†à¤§à¥€ à¤¹à¥‡ à¤¬à¤˜ |
                   Ultimate Question Bank à¤«à¤•à¥à¤¤ ₹499 à¤®à¤§à¥à¤¯à¥‡</a>
                 <p class="text-sm text-gray-600 mt-2">Get the Ultimate MSBTE Question Bank Bundle. 50+ syllabus-based
                   questions, PYQs, and high-probability topics for every semester and branch at just ₹499 per subject.
                 </p>
               </div>
-              <div class="p-4 bg-white rounded-xl shadow"><a href="/blog/msbte-notes-summer-exam-2026.html"
+              <div class="p-4 bg-white rounded-xl shadow"><a href="/blog/msbte-notes-summer-exam-2026"
                   class="font-bold text-blue-600 hover:underline">MSBTE Notes For Summer Exam 2026 | Free & Paid Guess
                   Papers</a>
                 <p class="text-sm text-gray-600 mt-2">Get the ultimate MSBTE Notes for Summer Exam 2026. Access free
                   study
                   materials and buy premium guess papers for all subjects to score high marks in your diploma exams.</p>
               </div>
-              <div class="p-4 bg-white rounded-xl shadow"><a href="/blog/all-india-ncat-2026.html"
+              <div class="p-4 bg-white rounded-xl shadow"><a href="/blog/all-india-ncat-2026"
                   class="font-bold text-blue-600 hover:underline">All India NCAT 2026: Naukri Campus Aptitude Test | Win
                   ₹20 Lakhs</a>
                 <p class="text-sm text-gray-600 mt-2">Enroll now for All India NCAT 2026. Benchmark your college
@@ -1279,7 +1252,7 @@
                   skills against peers, win from a ₹20 Lakhs prize pool, and secure paid internships with leading
                   brands. Free for all UG/PG students.</p>
               </div>
-              <div class="p-4 bg-white rounded-xl shadow"><a href="/blog/cm-fellowship-maharashtra-2026.html"
+              <div class="p-4 bg-white rounded-xl shadow"><a href="/blog/cm-fellowship-maharashtra-2026"
                   class="font-bold text-blue-600 hover:underline">CM Fellowship Maharashtra 2026: ₹61,500 Stipend &
                   IIT
                   Bombay Course | Apply Now</a>
@@ -1288,15 +1261,8 @@
                   a ₹61,500/month stipend, Grade-A officer status, and a Public Policy Certificate from IIT Bombay.
                   Check eligibility, selection process & how to apply.</p>
               </div>
-              <div class="p-4 bg-white rounded-xl shadow"><a href="/blog/asha-bhosle-death-news.html"
-                  class="font-bold text-blue-600 hover:underline">Asha Bhosle Death News: Legendary Singer Passes Away
-                  at
-                  92 | Tribute & Legacy</a>
-                <p class="text-sm text-gray-600 mt-2">Legendary playback singer Asha Bhosle passed away on April 12,
-                  2026,
-                  at 92. Full tribute, career highlights, PM Modi's tribute, and funeral details.</p>
-              </div>
-              <div class="p-4 bg-white rounded-xl shadow"><a href="/blog/k-scheme-guess-papers.html"
+              <div class="p-4 bg-white rounded-xl shadow"><a href="/blog/dpharm-exit-exam-cancelled-2026" class="font-bold text-blue-600 hover:underline">D.Pharm Exit Exam 2026 Cancelled: Latest Update & Next Steps</a><p class="text-sm text-gray-600 mt-2">PCI officially cancelled the D.Pharm Exit Exam for 2026. Complete notification breakdown, eligibility rules, and PCI registration guidelines.</p></div>
+              <div class="p-4 bg-white rounded-xl shadow"><a href="/blog/k-scheme-guess-papers"
                   class="font-bold text-blue-600 hover:underline">MSBTE K Scheme Guess Papers & Important Questions</a>
                 <p class="text-sm text-gray-600 mt-2">Access crucial MSBTE K Scheme Guess Papers and Important Questions
                   for multiple subjects from Basic Mathematics to VLSI Applications.</p>
@@ -1352,23 +1318,23 @@
               answers are cataloged.
             </p>
             <div class="flex flex-wrap gap-2 mb-6">
-              <a href="/Notes/index.html?type=notes"
+              <a href="/notes/?type=notes"
                 class="spotlight-pill px-3 py-1 rounded-full bg-gray-800 hover:bg-gray-700 text-gray-100 hover:text-white text-xs font-medium border border-gray-700 transition">Subject Notes</a>
               <a href="/pyq/"
                 class="spotlight-pill px-3 py-1 rounded-full bg-gray-800 hover:bg-gray-700 text-gray-100 hover:text-white text-xs font-medium border border-gray-700 transition">PYQ Papers</a>
               <a href="/model-answer/"
                 class="spotlight-pill px-3 py-1 rounded-full bg-gray-800 hover:bg-gray-700 text-gray-100 hover:text-white text-xs font-medium border border-gray-700 transition">Model Answers</a>
-              <a href="/Notes/index.html?type=lab-manual"
+              <a href="/notes/?type=lab-manual"
                 class="spotlight-pill px-3 py-1 rounded-full bg-gray-800 hover:bg-gray-700 text-gray-100 hover:text-white text-xs font-medium border border-gray-700 transition">Lab Manuals</a>
               <a href="/scheme/"
                 class="spotlight-pill px-3 py-1 rounded-full bg-gray-800 hover:bg-gray-700 text-gray-100 hover:text-white text-xs font-medium border border-gray-700 transition">Syllabus Copies</a>
-              <a href="/Notes/index.html?type=micro-project"
+              <a href="/notes/?type=micro-project"
                 class="spotlight-pill px-3 py-1 rounded-full bg-gray-800 hover:bg-gray-700 text-gray-100 hover:text-white text-xs font-medium border border-gray-700 transition">Micro-Projects</a>
-              <a href="/Notes/index.html?type=question-bank"
+              <a href="/notes/?type=question-bank"
                 class="spotlight-pill px-3 py-1 rounded-full bg-gray-800 hover:bg-gray-700 text-gray-100 hover:text-white text-xs font-medium border border-gray-700 transition">Question Banks</a>
             </div>
             <div class="flex flex-wrap items-center gap-4">
-              <a href="/start.html"
+              <a href="/start"
                 class="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-blue-600 hover:bg-blue-500 text-white font-semibold text-sm sm:text-base transition shadow-md shadow-blue-900/50">
                 <span>Open Start Here Directory</span>
                 <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -1383,7 +1349,7 @@
         <!-- 6 Core Resource Cards Grid (Unified Card Style) -->
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 text-left">
           <!-- Study Notes -->
-          <a href="/Notes/"
+          <a href="/notes/"
             class="bg-white p-6 rounded-2xl shadow-sm hover:shadow-md transition duration-300 border border-gray-200 hover:border-blue-300 group flex flex-col justify-between">
             <div>
               <div class="text-blue-600 mb-4 flex items-center justify-between">
@@ -1480,7 +1446,7 @@
           </a>
 
           <!-- Lab Manual Answers -->
-          <a href="/Notes/index.html?type=lab-manual"
+          <a href="/notes/?type=lab-manual"
             class="bg-white p-6 rounded-2xl shadow-sm hover:shadow-md transition duration-300 border border-gray-200 hover:border-blue-300 group flex flex-col justify-between">
             <div>
               <div class="text-blue-600 mb-4 flex items-center justify-between">
@@ -1504,7 +1470,7 @@
           </a>
 
           <!-- Micro-Projects -->
-          <a href="/Notes/index.html?type=micro-project"
+          <a href="/notes/?type=micro-project"
             class="bg-white p-6 rounded-2xl shadow-sm hover:shadow-md transition duration-300 border border-gray-200 hover:border-blue-300 group flex flex-col justify-between">
             <div>
               <div class="text-blue-600 mb-4 flex items-center justify-between">
@@ -1543,7 +1509,7 @@
 
         <!-- Quick Resource Nav Badges -->
         <div class="flex flex-wrap justify-center items-center gap-2 mb-10 max-w-4xl mx-auto">
-          <a href="/Notes/index.html?type=notes"
+          <a href="/notes/?type=notes"
             class="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full text-xs font-semibold bg-blue-50 text-blue-700 hover:bg-blue-600 hover:text-white border border-blue-100 transition">
             All Subject Notes
           </a>
@@ -1559,19 +1525,19 @@
             class="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full text-xs font-semibold bg-amber-50 text-amber-800 hover:bg-amber-600 hover:text-white border border-amber-100 transition">
             Syllabus Copies
           </a>
-          <a href="/Notes/index.html?type=lab-manual"
+          <a href="/notes/?type=lab-manual"
             class="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full text-xs font-semibold bg-cyan-50 text-cyan-800 hover:bg-cyan-600 hover:text-white border border-cyan-100 transition">
             Lab Manual Answers
           </a>
-          <a href="/Notes/index.html?type=micro-project"
+          <a href="/notes/?type=micro-project"
             class="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full text-xs font-semibold bg-rose-50 text-rose-800 hover:bg-rose-600 hover:text-white border border-rose-100 transition">
             Micro-Project Ideas
           </a>
-          <a href="/Notes/index.html?type=question-bank"
+          <a href="/notes/?type=question-bank"
             class="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full text-xs font-semibold bg-indigo-50 text-indigo-800 hover:bg-indigo-600 hover:text-white border border-indigo-100 transition">
             Question Banks
           </a>
-          <a href="/start.html"
+          <a href="/start"
             class="inline-flex items-center gap-1.5 px-4 py-1.5 rounded-full text-xs font-semibold bg-blue-600 text-white hover:bg-blue-700 transition shadow-sm">
             <span>Start Here Directory &rarr;</span>
           </a>
@@ -1618,7 +1584,7 @@
 
           <div
             class="resource-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col h-full">
-            <a href="/notes/osy-k-scheme-notes.html" class="flex flex-col h-full group">
+            <a href="/notes/osy-k-scheme-notes" class="flex flex-col h-full group">
               <div class="aspect-video w-full overflow-hidden bg-gray-50 border-b border-gray-100 group"
                 style="aspect-ratio: 16 / 9;"><img src="/resourse/note-thumbs/OSY_thumbnail.png"
                   alt="Operating System (OSY) K Scheme Notes & Question Bank"
@@ -1647,7 +1613,7 @@
 
           <div
             class="resource-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col h-full">
-            <a href="/notes/mic-k-scheme-notes.html" class="flex flex-col h-full group">
+            <a href="/notes/mic-k-scheme-notes" class="flex flex-col h-full group">
               <div class="aspect-video w-full overflow-hidden bg-gray-50 border-b border-gray-100 group"
                 style="aspect-ratio: 16 / 9;"><img src="/resourse/note-thumbs/MIC_thumbnail.png"
                   alt="Microprocessor (MIC) K Scheme Notes & Question Bank"
@@ -1676,7 +1642,7 @@
 
           <div
             class="resource-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col h-full">
-            <a href="/notes/dcn-k-scheme-notes.html" class="flex flex-col h-full group">
+            <a href="/notes/dcn-k-scheme-notes" class="flex flex-col h-full group">
               <div class="aspect-video w-full overflow-hidden bg-gray-50 border-b border-gray-100 group"
                 style="aspect-ratio: 16 / 9;"><img src="/resourse/note-thumbs/DCN_thumbnail.png"
                   alt="Data Communication & Computer Network (DCN) K Scheme Notes"
@@ -1705,7 +1671,7 @@
 
           <div
             class="resource-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col h-full">
-            <a href="/notes/java-k-scheme-notes.html" class="flex flex-col h-full group">
+            <a href="/notes/java-k-scheme-notes" class="flex flex-col h-full group">
               <div class="aspect-video w-full overflow-hidden bg-gray-50 border-b border-gray-100 group"
                 style="aspect-ratio: 16 / 9;"><img src="/resourse/note-thumbs/JPR_thumbnail.png"
                   alt="Java Programming (JPR) K Scheme Notes & Question Bank"
@@ -1733,7 +1699,7 @@
 
           <div
             class="resource-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col h-full">
-            <a href="/notes/ees-k-scheme-notes.html" class="flex flex-col h-full group">
+            <a href="/notes/ees-k-scheme-notes" class="flex flex-col h-full group">
               <div class="aspect-video w-full overflow-hidden bg-gray-50 border-b border-gray-100 group"
                 style="aspect-ratio: 16 / 9;"><img src="/resourse/note-thumbs/EES_thumbnail.png"
                   alt="Environmental Education & Sustainability (EES) K Scheme Notes"
@@ -1762,7 +1728,7 @@
 
           <div
             class="resource-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col h-full">
-            <a href="/notes/oop-k-scheme-notes.html" class="flex flex-col h-full group">
+            <a href="/notes/oop-k-scheme-notes" class="flex flex-col h-full group">
               <div class="aspect-video w-full overflow-hidden bg-gray-50 border-b border-gray-100 group"
                 style="aspect-ratio: 16 / 9;"><img src="/resourse/note-thumbs/OOP_thumbnail.png"
                   alt="Object Oriented Programming with C++ (OOP) K Scheme Notes"
@@ -1792,7 +1758,7 @@
 
           <div
             class="resource-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col h-full">
-            <a href="/notes/dsu-k-scheme-notes.html" class="flex flex-col h-full group">
+            <a href="/notes/dsu-k-scheme-notes" class="flex flex-col h-full group">
               <div class="aspect-video w-full overflow-hidden bg-gray-50 border-b border-gray-100 group"
                 style="aspect-ratio: 16 / 9;"><img src="/resourse/note-thumbs/DSU_thumbnail.png"
                   alt="Data Structures Using C (DSU) K Scheme Notes & Question Bank"
@@ -1822,7 +1788,7 @@
 
           <div
             class="resource-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col h-full">
-            <a href="/notes/dbms-k-scheme-notes.html" class="flex flex-col h-full group">
+            <a href="/notes/dbms-k-scheme-notes" class="flex flex-col h-full group">
               <div class="aspect-video w-full overflow-hidden bg-gray-50 border-b border-gray-100 group"
                 style="aspect-ratio: 16 / 9;"><img src="/resourse/note-thumbs/DBMS_thumbnail.png"
                   alt="Database Management System (DBMS) K Scheme Notes & Papers"
@@ -1851,7 +1817,7 @@
 
           <div
             class="resource-card bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col h-full">
-            <a href="/notes/dte-k-scheme-notes.html" class="flex flex-col h-full group">
+            <a href="/notes/dte-k-scheme-notes" class="flex flex-col h-full group">
               <div class="aspect-video w-full overflow-hidden bg-gray-50 border-b border-gray-100 group"
                 style="aspect-ratio: 16 / 9;"><img src="/resourse/note-thumbs/DTE_thumbnail.png"
                   alt="Digital Techniques (DTE) K Scheme Notes, MCQs & Solved Papers"
@@ -1880,35 +1846,35 @@
           </div>
           <noscript>
             <div class="col-span-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-              <div class="p-4 bg-white rounded-xl shadow"><a href="/notes/osy-k-scheme-notes.html"
+              <div class="p-4 bg-white rounded-xl shadow"><a href="/notes/osy-k-scheme-notes"
                   class="font-bold text-blue-600 hover:underline">Operating System (OSY) K Scheme Notes & Question
                   Bank</a>
                 <p class="text-sm text-gray-600 mt-2">Free MSBTE K-Scheme 314319 – Operating System (OSY) unit-wise
                   notes,
                   important question bank, model answers, and complete revision roadmaps for 4th Semester.</p>
               </div>
-              <div class="p-4 bg-white rounded-xl shadow"><a href="/notes/mic-k-scheme-notes.html"
+              <div class="p-4 bg-white rounded-xl shadow"><a href="/notes/mic-k-scheme-notes"
                   class="font-bold text-blue-600 hover:underline">Microprocessor (MIC) K Scheme Notes & Question
                   Bank</a>
                 <p class="text-sm text-gray-600 mt-2">Download free MSBTE K Scheme Microprocessor (MIC - 314321)
                   unit-wise
                   notes, 8086 architecture PDFs, IMP question bank, and complete revision roadmaps for 4th Semester.</p>
               </div>
-              <div class="p-4 bg-white rounded-xl shadow"><a href="/notes/dcn-k-scheme-notes.html"
+              <div class="p-4 bg-white rounded-xl shadow"><a href="/notes/dcn-k-scheme-notes"
                   class="font-bold text-blue-600 hover:underline">Data Communication & Computer Network (DCN) K Scheme
                   Notes</a>
                 <p class="text-sm text-gray-600 mt-2">Free MSBTE K Scheme Data Communication & Computer Network (DCN -
                   314318) complete notes, chapter PDFs, IMP questions, and solved model answer papers for 4th Semester.
                 </p>
               </div>
-              <div class="p-4 bg-white rounded-xl shadow"><a href="/notes/java-k-scheme-notes.html"
+              <div class="p-4 bg-white rounded-xl shadow"><a href="/notes/java-k-scheme-notes"
                   class="font-bold text-blue-600 hover:underline">Java Programming (JPR) K Scheme Notes & Question
                   Bank</a>
                 <p class="text-sm text-gray-600 mt-2">Free download MSBTE K Scheme Java Programming (JPR - 314317) Unit
                   1-6
                   mega notes, Super 25 question bank, viva Q&A, and practice mock test papers for 4th Semester.</p>
               </div>
-              <div class="p-4 bg-white rounded-xl shadow"><a href="/notes/ees-k-scheme-notes.html"
+              <div class="p-4 bg-white rounded-xl shadow"><a href="/notes/ees-k-scheme-notes"
                   class="font-bold text-blue-600 hover:underline">Environmental Education & Sustainability (EES) K
                   Scheme
                   Notes</a>
@@ -1916,13 +1882,13 @@
                   (EES -
                   314301) official syllabus, complete revision notes, IMP question bank, and online MCQ sets.</p>
               </div>
-              <div class="p-4 bg-white rounded-xl shadow"><a href="/notes/oop-k-scheme-notes.html"
+              <div class="p-4 bg-white rounded-xl shadow"><a href="/notes/oop-k-scheme-notes"
                   class="font-bold text-blue-600 hover:underline">Object Oriented Programming with C++ (OOP) K Scheme
                   Notes</a>
                 <p class="text-sm text-gray-600 mt-2">Free download MSBTE K Scheme Object-Oriented Programming Using C++
                   (OOP - 313304) Unit 1-5 notes, complete PPTs, inheritance guides, and course outcome materials.</p>
               </div>
-              <div class="p-4 bg-white rounded-xl shadow"><a href="/notes/dsu-k-scheme-notes.html"
+              <div class="p-4 bg-white rounded-xl shadow"><a href="/notes/dsu-k-scheme-notes"
                   class="font-bold text-blue-600 hover:underline">Data Structures Using C (DSU) K Scheme Notes &
                   Question
                   Bank</a>
@@ -1930,14 +1896,14 @@
                   313301)
                   unit-wise notes, Stacks and Queues PDFs, solved question paper with answers, and question bank.</p>
               </div>
-              <div class="p-4 bg-white rounded-xl shadow"><a href="/notes/dbms-k-scheme-notes.html"
+              <div class="p-4 bg-white rounded-xl shadow"><a href="/notes/dbms-k-scheme-notes"
                   class="font-bold text-blue-600 hover:underline">Database Management System (DBMS) K Scheme Notes &
                   Papers</a>
                 <p class="text-sm text-gray-600 mt-2">Free download MSBTE K Scheme Database Management System (DBMS -
                   313302) Unit 1-5 notes, complete revision guides, IMP question banks, and Winter 2023 solved papers.
                 </p>
               </div>
-              <div class="p-4 bg-white rounded-xl shadow"><a href="/notes/dte-k-scheme-notes.html"
+              <div class="p-4 bg-white rounded-xl shadow"><a href="/notes/dte-k-scheme-notes"
                   class="font-bold text-blue-600 hover:underline">Digital Techniques (DTE) K Scheme Notes, MCQs & Solved
                   Papers</a>
                 <p class="text-sm text-gray-600 mt-2">Free download MSBTE K Scheme Digital Techniques (DTE - 313303)
@@ -1957,17 +1923,17 @@
         <!-- Filter Notes Directory Shortcuts -->
         <div class="mt-8 text-center flex flex-wrap justify-center items-center gap-2 text-xs">
           <span class="text-gray-500 font-medium">Quick Filter Portal:</span>
-          <a href="/Notes/index.html?type=notes"
+          <a href="/notes/?type=notes"
             class="px-3 py-1 rounded-lg bg-gray-50 hover:bg-blue-50 text-gray-700 hover:text-blue-700 border border-gray-200 transition font-medium">Notes</a>
-          <a href="/Notes/index.html?type=lab-manual"
+          <a href="/notes/?type=lab-manual"
             class="px-3 py-1 rounded-lg bg-gray-50 hover:bg-blue-50 text-gray-700 hover:text-blue-700 border border-gray-200 transition font-medium">Lab Manuals</a>
-          <a href="/Notes/index.html?type=micro-project"
+          <a href="/notes/?type=micro-project"
             class="px-3 py-1 rounded-lg bg-gray-50 hover:bg-blue-50 text-gray-700 hover:text-blue-700 border border-gray-200 transition font-medium">Micro-Projects</a>
-          <a href="/Notes/index.html?type=question-bank"
+          <a href="/notes/?type=question-bank"
             class="px-3 py-1 rounded-lg bg-gray-50 hover:bg-blue-50 text-gray-700 hover:text-blue-700 border border-gray-200 transition font-medium">Question Banks</a>
-          <a href="/Notes/index.html?type=model-answer"
+          <a href="/notes/?type=model-answer"
             class="px-3 py-1 rounded-lg bg-gray-50 hover:bg-blue-50 text-gray-700 hover:text-blue-700 border border-gray-200 transition font-medium">Model Answers</a>
-          <a href="/Notes/index.html?type=pyq"
+          <a href="/notes/?type=pyq"
             class="px-3 py-1 rounded-lg bg-gray-50 hover:bg-blue-50 text-gray-700 hover:text-blue-700 border border-gray-200 transition font-medium">PYQ Papers</a>
         </div>
       </div>
@@ -1998,7 +1964,7 @@
               unit-wise notes, and question papers for all MSBTE engineering branches.</p>
           </div>
           <div class="flex items-center gap-2 flex-shrink-0">
-            <a href="/start.html"
+            <a href="/start"
               class="inline-flex items-center gap-1.5 px-4 py-2 text-sm font-semibold text-blue-600 bg-blue-50 hover:bg-blue-100 rounded-lg transition border border-blue-200">
               <span>All Schemes Hub</span>
               <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -2029,20 +1995,20 @@
                   <div class="branch-cell">Computer Engineering</div>
                   <div class="branch-meta">Code: CO • CW | C, Java, Python, DBMS, OS</div>
                 </td>
-                <td class="text-center"><a href="/Branches/Computer-Semester-1.html" class="sem-btn"
+                <td class="text-center"><a href="/branches/computer-semester-1" class="sem-btn"
                     aria-label="Computer Engineering Semester 1 notes (K-Scheme)" title="Computer Engineering Semester 1 Notes (K-Scheme)">S1</a></td>
-                <td class="text-center"><a href="/Branches/Computer-Semester-2.html" class="sem-btn"
+                <td class="text-center"><a href="/branches/computer-semester-2" class="sem-btn"
                     aria-label="Computer Engineering Semester 2 notes (K-Scheme)" title="Computer Engineering Semester 2 Notes (K-Scheme)">S2</a></td>
-                <td class="text-center"><a href="/Branches/Computer-Semester-3.html" class="sem-btn"
+                <td class="text-center"><a href="/branches/computer-semester-3" class="sem-btn"
                     aria-label="Computer Engineering Semester 3 notes (K-Scheme)" title="Computer Engineering Semester 3 Notes (K-Scheme)">S3</a></td>
-                <td class="text-center"><a href="/Branches/Computer-Semester-4.html" class="sem-btn"
+                <td class="text-center"><a href="/branches/computer-semester-4" class="sem-btn"
                     aria-label="Computer Engineering Semester 4 notes (K-Scheme)" title="Computer Engineering Semester 4 Notes (K-Scheme)">S4</a></td>
-                <td class="text-center"><a href="/Branches/Computer-Semester-5.html" class="sem-btn"
+                <td class="text-center"><a href="/branches/computer-semester-5" class="sem-btn"
                     aria-label="Computer Engineering Semester 5 notes (K-Scheme)" title="Computer Engineering Semester 5 Notes (K-Scheme)">S5</a></td>
-                <td class="text-center"><a href="/Branches/Computer-Semester-6.html" class="sem-btn"
+                <td class="text-center"><a href="/branches/computer-semester-6" class="sem-btn"
                     aria-label="Computer Engineering Semester 6 notes (K-Scheme)" title="Computer Engineering Semester 6 Notes (K-Scheme)">S6</a></td>
                 <td class="text-right">
-                  <a href="/Branches/Computer.html" class="portal-btn">View CO &rarr;</a>
+                  <a href="/branches/computer" class="portal-btn">View CO &rarr;</a>
                 </td>
               </tr>
 
@@ -2052,20 +2018,20 @@
                   <div class="branch-cell">Information Technology</div>
                   <div class="branch-meta">Code: IF | Web Dev, Cloud, Network Security</div>
                 </td>
-                <td class="text-center"><a href="/Branches/Information-Technology-Semester-1.html" class="sem-btn"
+                <td class="text-center"><a href="/branches/information-technology-semester-1" class="sem-btn"
                     aria-label="Information Technology Semester 1 notes (K-Scheme)" title="Information Technology Semester 1 Notes (K-Scheme)">S1</a></td>
-                <td class="text-center"><a href="/Branches/Information-Technology-Semester-2.html" class="sem-btn"
+                <td class="text-center"><a href="/branches/information-technology-semester-2" class="sem-btn"
                     aria-label="Information Technology Semester 2 notes (K-Scheme)" title="Information Technology Semester 2 Notes (K-Scheme)">S2</a></td>
-                <td class="text-center"><a href="/Branches/Information-Technology-Semester-3.html" class="sem-btn"
+                <td class="text-center"><a href="/branches/information-technology-semester-3" class="sem-btn"
                     aria-label="Information Technology Semester 3 notes (K-Scheme)" title="Information Technology Semester 3 Notes (K-Scheme)">S3</a></td>
-                <td class="text-center"><a href="/Branches/Information-Technology-Semester-4.html" class="sem-btn"
+                <td class="text-center"><a href="/branches/information-technology-semester-4" class="sem-btn"
                     aria-label="Information Technology Semester 4 notes (K-Scheme)" title="Information Technology Semester 4 Notes (K-Scheme)">S4</a></td>
-                <td class="text-center"><a href="/Branches/Information-Technology-Semester-5.html" class="sem-btn"
+                <td class="text-center"><a href="/branches/information-technology-semester-5" class="sem-btn"
                     aria-label="Information Technology Semester 5 notes (K-Scheme)" title="Information Technology Semester 5 Notes (K-Scheme)">S5</a></td>
-                <td class="text-center"><a href="/Branches/Information-Technology-Semester-6.html" class="sem-btn"
+                <td class="text-center"><a href="/branches/information-technology-semester-6" class="sem-btn"
                     aria-label="Information Technology Semester 6 notes (K-Scheme)" title="Information Technology Semester 6 Notes (K-Scheme)">S6</a></td>
                 <td class="text-right">
-                  <a href="/Branches/Information-Technology.html" class="portal-btn">View IF &rarr;</a>
+                  <a href="/branches/information-technology" class="portal-btn">View IF &rarr;</a>
                 </td>
               </tr>
 
@@ -2075,20 +2041,20 @@
                   <div class="branch-cell">AI &amp; Machine Learning</div>
                   <div class="branch-meta">Code: AI • AN | Python, Neural Networks, ML</div>
                 </td>
-                <td class="text-center"><a href="/Branches/AI-ML-Semester-1.html" class="sem-btn"
+                <td class="text-center"><a href="/branches/ai-ml-semester-1" class="sem-btn"
                     aria-label="AI & Machine Learning Semester 1 notes (K-Scheme)" title="AI & Machine Learning Semester 1 Notes (K-Scheme)">S1</a></td>
-                <td class="text-center"><a href="/Branches/AI-ML-Semester-2.html" class="sem-btn"
+                <td class="text-center"><a href="/branches/ai-ml-semester-2" class="sem-btn"
                     aria-label="AI & Machine Learning Semester 2 notes (K-Scheme)" title="AI & Machine Learning Semester 2 Notes (K-Scheme)">S2</a></td>
-                <td class="text-center"><a href="/Branches/AI-ML-Semester-3.html" class="sem-btn"
+                <td class="text-center"><a href="/branches/ai-ml-semester-3" class="sem-btn"
                     aria-label="AI & Machine Learning Semester 3 notes (K-Scheme)" title="AI & Machine Learning Semester 3 Notes (K-Scheme)">S3</a></td>
-                <td class="text-center"><a href="/Branches/AI-ML-Semester-4.html" class="sem-btn"
+                <td class="text-center"><a href="/branches/ai-ml-semester-4" class="sem-btn"
                     aria-label="AI & Machine Learning Semester 4 notes (K-Scheme)" title="AI & Machine Learning Semester 4 Notes (K-Scheme)">S4</a></td>
-                <td class="text-center"><a href="/Branches/AI-ML-Semester-5.html" class="sem-btn"
+                <td class="text-center"><a href="/branches/ai-ml-semester-5" class="sem-btn"
                     aria-label="AI & Machine Learning Semester 5 notes (K-Scheme)" title="AI & Machine Learning Semester 5 Notes (K-Scheme)">S5</a></td>
-                <td class="text-center"><a href="/Branches/AI-ML-Semester-6.html" class="sem-btn"
+                <td class="text-center"><a href="/branches/ai-ml-semester-6" class="sem-btn"
                     aria-label="AI & Machine Learning Semester 6 notes (K-Scheme)" title="AI & Machine Learning Semester 6 Notes (K-Scheme)">S6</a></td>
                 <td class="text-right">
-                  <a href="/Branches/AI-ML.html" class="portal-btn">View AI &rarr;</a>
+                  <a href="/branches/ai-ml" class="portal-btn">View AI &rarr;</a>
                 </td>
               </tr>
 
@@ -2098,20 +2064,20 @@
                   <div class="branch-cell">Civil Engineering</div>
                   <div class="branch-meta">Code: CE | Surveying, Mechanics, Concrete, Geotech</div>
                 </td>
-                <td class="text-center"><a href="/Branches/Civil-Semester-1.html" class="sem-btn"
+                <td class="text-center"><a href="/branches/civil-semester-1" class="sem-btn"
                     aria-label="Civil Engineering Semester 1 notes (K-Scheme)" title="Civil Engineering Semester 1 Notes (K-Scheme)">S1</a></td>
-                <td class="text-center"><a href="/Branches/Civil-Semester-2.html" class="sem-btn"
+                <td class="text-center"><a href="/branches/civil-semester-2" class="sem-btn"
                     aria-label="Civil Engineering Semester 2 notes (K-Scheme)" title="Civil Engineering Semester 2 Notes (K-Scheme)">S2</a></td>
-                <td class="text-center"><a href="/Branches/Civil-Semester-3.html" class="sem-btn"
+                <td class="text-center"><a href="/branches/civil-semester-3" class="sem-btn"
                     aria-label="Civil Engineering Semester 3 notes (K-Scheme)" title="Civil Engineering Semester 3 Notes (K-Scheme)">S3</a></td>
-                <td class="text-center"><a href="/Branches/Civil-Semester-4.html" class="sem-btn"
+                <td class="text-center"><a href="/branches/civil-semester-4" class="sem-btn"
                     aria-label="Civil Engineering Semester 4 notes (K-Scheme)" title="Civil Engineering Semester 4 Notes (K-Scheme)">S4</a></td>
-                <td class="text-center"><a href="/Branches/Civil-Semester-5.html" class="sem-btn"
+                <td class="text-center"><a href="/branches/civil-semester-5" class="sem-btn"
                     aria-label="Civil Engineering Semester 5 notes (K-Scheme)" title="Civil Engineering Semester 5 Notes (K-Scheme)">S5</a></td>
-                <td class="text-center"><a href="/Branches/Civil-Semester-6.html" class="sem-btn"
+                <td class="text-center"><a href="/branches/civil-semester-6" class="sem-btn"
                     aria-label="Civil Engineering Semester 6 notes (K-Scheme)" title="Civil Engineering Semester 6 Notes (K-Scheme)">S6</a></td>
                 <td class="text-right">
-                  <a href="/Branches/Civil.html" class="portal-btn">View CE &rarr;</a>
+                  <a href="/branches/civil" class="portal-btn">View CE &rarr;</a>
                 </td>
               </tr>
 
@@ -2121,20 +2087,20 @@
                   <div class="branch-cell">Electrical Engineering</div>
                   <div class="branch-meta">Code: EE | Circuits, Machines, Power Systems, Control</div>
                 </td>
-                <td class="text-center"><a href="/Branches/Electrical-Engineering-Semester-1.html" class="sem-btn"
+                <td class="text-center"><a href="/branches/electrical-engineering-semester-1" class="sem-btn"
                     aria-label="Electrical Engineering Semester 1 notes (K-Scheme)" title="Electrical Engineering Semester 1 Notes (K-Scheme)">S1</a></td>
-                <td class="text-center"><a href="/Branches/Electrical-Engineering-Semester-2.html" class="sem-btn"
+                <td class="text-center"><a href="/branches/electrical-engineering-semester-2" class="sem-btn"
                     aria-label="Electrical Engineering Semester 2 notes (K-Scheme)" title="Electrical Engineering Semester 2 Notes (K-Scheme)">S2</a></td>
-                <td class="text-center"><a href="/Branches/Electrical-Engineering-Semester-3.html" class="sem-btn"
+                <td class="text-center"><a href="/branches/electrical-engineering-semester-3" class="sem-btn"
                     aria-label="Electrical Engineering Semester 3 notes (K-Scheme)" title="Electrical Engineering Semester 3 Notes (K-Scheme)">S3</a></td>
-                <td class="text-center"><a href="/Branches/Electrical-Engineering-Semester-4.html" class="sem-btn"
+                <td class="text-center"><a href="/branches/electrical-engineering-semester-4" class="sem-btn"
                     aria-label="Electrical Engineering Semester 4 notes (K-Scheme)" title="Electrical Engineering Semester 4 Notes (K-Scheme)">S4</a></td>
-                <td class="text-center"><a href="/Branches/Electrical-Engineering-Semester-5.html" class="sem-btn"
+                <td class="text-center"><a href="/branches/electrical-engineering-semester-5" class="sem-btn"
                     aria-label="Electrical Engineering Semester 5 notes (K-Scheme)" title="Electrical Engineering Semester 5 Notes (K-Scheme)">S5</a></td>
-                <td class="text-center"><a href="/Branches/Electrical-Engineering-Semester-6.html" class="sem-btn"
+                <td class="text-center"><a href="/branches/electrical-engineering-semester-6" class="sem-btn"
                     aria-label="Electrical Engineering Semester 6 notes (K-Scheme)" title="Electrical Engineering Semester 6 Notes (K-Scheme)">S6</a></td>
                 <td class="text-right">
-                  <a href="/Branches/Electrical-Engineering.html" class="portal-btn">View EE &rarr;</a>
+                  <a href="/branches/electrical-engineering" class="portal-btn">View EE &rarr;</a>
                 </td>
               </tr>
 
@@ -2144,20 +2110,20 @@
                   <div class="branch-cell">Electronics &amp; Telecommunication</div>
                   <div class="branch-meta">Code: EJ • ETC | Signals, Microcontrollers, VLSI</div>
                 </td>
-                <td class="text-center"><a href="/Branches/ETC-Engineering-Semester-1.html" class="sem-btn"
+                <td class="text-center"><a href="/branches/etc-engineering-semester-1" class="sem-btn"
                     aria-label="Electronics & Telecommunication Semester 1 notes (K-Scheme)" title="Electronics & Telecommunication Semester 1 Notes (K-Scheme)">S1</a></td>
-                <td class="text-center"><a href="/Branches/ETC-Engineering-Semester-2.html" class="sem-btn"
+                <td class="text-center"><a href="/branches/etc-engineering-semester-2" class="sem-btn"
                     aria-label="Electronics & Telecommunication Semester 2 notes (K-Scheme)" title="Electronics & Telecommunication Semester 2 Notes (K-Scheme)">S2</a></td>
-                <td class="text-center"><a href="/Branches/ETC-Engineering-Semester-3.html" class="sem-btn"
+                <td class="text-center"><a href="/branches/etc-engineering-semester-3" class="sem-btn"
                     aria-label="Electronics & Telecommunication Semester 3 notes (K-Scheme)" title="Electronics & Telecommunication Semester 3 Notes (K-Scheme)">S3</a></td>
-                <td class="text-center"><a href="/Branches/ETC-Engineering-Semester-4.html" class="sem-btn"
+                <td class="text-center"><a href="/branches/etc-engineering-semester-4" class="sem-btn"
                     aria-label="Electronics & Telecommunication Semester 4 notes (K-Scheme)" title="Electronics & Telecommunication Semester 4 Notes (K-Scheme)">S4</a></td>
-                <td class="text-center"><a href="/Branches/ETC-Engineering-Semester-5.html" class="sem-btn"
+                <td class="text-center"><a href="/branches/etc-engineering-semester-5" class="sem-btn"
                     aria-label="Electronics & Telecommunication Semester 5 notes (K-Scheme)" title="Electronics & Telecommunication Semester 5 Notes (K-Scheme)">S5</a></td>
-                <td class="text-center"><a href="/Branches/ETC-Engineering-Semester-6.html" class="sem-btn"
+                <td class="text-center"><a href="/branches/etc-engineering-semester-6" class="sem-btn"
                     aria-label="Electronics & Telecommunication Semester 6 notes (K-Scheme)" title="Electronics & Telecommunication Semester 6 Notes (K-Scheme)">S6</a></td>
                 <td class="text-right">
-                  <a href="/Branches/ETC-Engineering.html" class="portal-btn">View EJ &rarr;</a>
+                  <a href="/branches/etc-engineering" class="portal-btn">View EJ &rarr;</a>
                 </td>
               </tr>
 
@@ -2167,20 +2133,20 @@
                   <div class="branch-cell">Mechanical Engineering</div>
                   <div class="branch-meta">Code: ME | Thermo, SOM, TOM, Fluid Mechanics, CAD/CAM</div>
                 </td>
-                <td class="text-center"><a href="/Branches/Mechanical-Engineering-Semester-1.html" class="sem-btn"
+                <td class="text-center"><a href="/branches/mechanical-engineering-semester-1" class="sem-btn"
                     aria-label="Mechanical Engineering Semester 1 notes (K-Scheme)" title="Mechanical Engineering Semester 1 Notes (K-Scheme)">S1</a></td>
-                <td class="text-center"><a href="/Branches/Mechanical-Engineering-Semester-2.html" class="sem-btn"
+                <td class="text-center"><a href="/branches/mechanical-engineering-semester-2" class="sem-btn"
                     aria-label="Mechanical Engineering Semester 2 notes (K-Scheme)" title="Mechanical Engineering Semester 2 Notes (K-Scheme)">S2</a></td>
-                <td class="text-center"><a href="/Branches/Mechanical-Engineering-Semester-3.html" class="sem-btn"
+                <td class="text-center"><a href="/branches/mechanical-engineering-semester-3" class="sem-btn"
                     aria-label="Mechanical Engineering Semester 3 notes (K-Scheme)" title="Mechanical Engineering Semester 3 Notes (K-Scheme)">S3</a></td>
-                <td class="text-center"><a href="/Branches/Mechanical-Engineering-Semester-4.html" class="sem-btn"
+                <td class="text-center"><a href="/branches/mechanical-engineering-semester-4" class="sem-btn"
                     aria-label="Mechanical Engineering Semester 4 notes (K-Scheme)" title="Mechanical Engineering Semester 4 Notes (K-Scheme)">S4</a></td>
-                <td class="text-center"><a href="/Branches/Mechanical-Engineering-Semester-5.html" class="sem-btn"
+                <td class="text-center"><a href="/branches/mechanical-engineering-semester-5" class="sem-btn"
                     aria-label="Mechanical Engineering Semester 5 notes (K-Scheme)" title="Mechanical Engineering Semester 5 Notes (K-Scheme)">S5</a></td>
-                <td class="text-center"><a href="/Branches/Mechanical-Engineering-Semester-6.html" class="sem-btn"
+                <td class="text-center"><a href="/branches/mechanical-engineering-semester-6" class="sem-btn"
                     aria-label="Mechanical Engineering Semester 6 notes (K-Scheme)" title="Mechanical Engineering Semester 6 Notes (K-Scheme)">S6</a></td>
                 <td class="text-right">
-                  <a href="/Branches/Mechanical-Engineering.html" class="portal-btn">View ME &rarr;</a>
+                  <a href="/branches/mechanical-engineering" class="portal-btn">View ME &rarr;</a>
                 </td>
               </tr>
             </tbody>
@@ -2195,7 +2161,7 @@
             <p class="text-gray-600 text-sm mt-0.5">Explore all 200+ diploma subjects, elective courses, and previous
               schemes in our master index.</p>
           </div>
-          <a href="/start.html"
+          <a href="/start"
             class="inline-flex items-center gap-1.5 px-5 py-2.5 bg-blue-600 hover:bg-blue-700 text-white text-sm font-semibold rounded-lg transition shadow-sm flex-shrink-0">
             <span>Open Master Directory</span>
             <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -2218,7 +2184,7 @@
         </p>
 
         <div class="max-w-2xl mx-auto">
-          <a href="/scheme/index.html"
+          <a href="/scheme/index"
             class="block bg-white p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border border-gray-200 hover:border-blue-300">
             <div class="flex flex-col sm:flex-row items-center justify-center text-center sm:text-left gap-6">
               <div
@@ -2356,7 +2322,7 @@
 
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
           <!-- Internships & Courses Card -->
-          <a href="/internships.html"
+          <a href="/internships"
             class="block group bg-white p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 text-center border border-indigo-50 hover:border-indigo-200">
             <div class="text-indigo-600 mb-6 transform group-hover:scale-110 transition-transform duration-500">
               <svg xmlns="http://www.w3.org/2000/svg" class="w-14 h-14 mx-auto" viewBox="0 0 640 512"
@@ -2373,7 +2339,7 @@
           </a>
 
           <!-- Job Portal Card -->
-          <a href="/jobs/index.html"
+          <a href="/jobs/"
             class="block group bg-white p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 text-center border border-purple-50 hover:border-purple-200">
             <div class="text-purple-600 mb-6 transform group-hover:scale-110 transition-transform duration-500">
               <svg xmlns="http://www.w3.org/2000/svg" class="w-14 h-14 mx-auto" viewBox="0 0 512 512" fill="currentColor" aria-hidden="true">
@@ -2434,7 +2400,7 @@
         <!-- Student Feedback Header & 4.9 Rating -->
         <div class="pt-8 border-t border-gray-100">
           <h2 class="text-3xl md:text-5xl font-display font-extrabold text-gray-900 mb-2">Student Feedback</h2>
-          <p class="text-gray-600 mb-4 text-lg">Trusted by 1000+ diploma students across Maharashtra</p>
+          <p class="text-gray-600 mb-4 text-lg">Trusted by 20,000+ diploma students across Maharashtra</p>
 
           <div class="flex justify-center mb-8 text-yellow-400 text-lg items-center gap-2">
             <div class="flex text-yellow-400 text-xl tracking-wider">
@@ -2604,7 +2570,7 @@
           </p>
           <p class="mt-2 text-xs sm:text-sm text-gray-500">
             Change your choices anytime in
-            <a href="/privacy-policy.html" class="underline hover:text-blue-600">Privacy Policy</a>.
+            <a href="/privacy-policy" class="underline hover:text-blue-600">Privacy Policy</a>.
           </p>
         </div>
 
@@ -2669,16 +2635,16 @@
         <h3 class="text-xl font-semibold mb-4">Quick Links</h3>
         <ul class="space-y-2 text-sm">
           <li><a href="/" class="hover:underline">Home</a></li>
-          <li><a href="/start.html" class="hover:underline text-sky-400 font-semibold hover:text-sky-300">Start Here
+          <li><a href="/start" class="hover:underline text-sky-400 font-semibold hover:text-sky-300">Start Here
               Directory</a></li>
-          <li><a href="/Notes/" class="hover:underline">Subject Study Notes</a></li>
+          <li><a href="/notes/" class="hover:underline">Subject Study Notes</a></li>
           <li><a href="/pyq/" class="hover:underline">Question Papers (PYQ)</a></li>
           <li><a href="/model-answer/" class="hover:underline">Model Answer Papers</a></li>
           <li><a href="/scheme/" class="hover:underline">Syllabus &amp; Schemes</a></li>
           <li><a href="#departments" class="hover:underline">Engineering Departments</a></li>
           <li><a href="/mock-tests/" class="hover:underline">Mock Tests &amp; Quizzes</a></li>
           <li><a href="#blogs" class="hover:underline">Blog &amp; News</a></li>
-          <li><a href="/internships.html" class="hover:underline">Internships &amp; Jobs</a></li>
+          <li><a href="/internships" class="hover:underline">Internships &amp; Jobs</a></li>
         </ul>
       </div>
       <div>
@@ -2704,10 +2670,10 @@
     </div>
     <div class="text-center mt-10 text-sm text-blue-100">
       <p>
-        <a href="/about.html" class="hover:underline">About</a> |
-        <a href="/sitemap.html" class="hover:underline">Sitemap</a> |
-        <a href="/privacy-policy.html" class="hover:underline">Privacy Policy</a> |
-        <a href="/contact.html" class="hover:underline">Contact</a>
+        <a href="/about" class="hover:underline">About</a> |
+        <a href="/sitemap" class="hover:underline">Sitemap</a> |
+        <a href="/privacy-policy" class="hover:underline">Privacy Policy</a> |
+        <a href="/contact" class="hover:underline">Contact</a>
       </p>
       <p class="mt-2 text-xs text-blue-200">Not affiliated with or endorsed by MSBTE. Official information is available
         at msbte.ac.in.</p>

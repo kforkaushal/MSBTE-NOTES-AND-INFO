@@ -1,0 +1,553 @@
+<USER_REQUEST>
+# SEO Upgrade Plan — MSBTE Notes & Info
+
+**Site:** https://msbtenotes-info.netlify.app/
+**Prepared:** 19 Nov 2026
+**Scope:** SEO layer only. Nothing in this plan removes or rewrites your existing notes, PDFs, blog text, design or URLs. Items that would change visible text are marked **[Visible]** and are optional.
+
+Labels used below:
+- **[Safe]** touches only `<head>`, HTML attributes, invisible markup or config files.
+- **[Visible]** adds or changes text a visitor can see.
+- **Effort:** S = under 1 hour, M = a few hours, L = a day or more.
+
+---
+
+## 1. Evidence base, and what I could not verify
+
+| Source | What I used | Limit |
+|---|---|---|
+| Google results for `msbte notes` | India, desktop, 3 reads merged, pulled 19 Nov 2026 | One keyword only (credits ran out) |
+| Your Search Console | 16 Aug – 16 Nov 2026: queries and pages | Property: `https://msbtenotes-info.netlify.app/` |
+| URL Inspection | 10 of your URLs | Reads Google's stored status, not a live crawl |
+| Live fetch of your pages | Home, `/sitemap`, `/pyq/`, `/notes/osy-k-scheme-notes`, `/blog/msbte-notes-k-scheme-2025-26` | The fetch returns text and meta tags, not `<script>` contents |
+| Competitor pages | `campusify-plus.vercel.app` fetched in full; all others from Google titles and snippets only | I did not see competitors' backlinks or full HTML |
+
+**Not verified (check with Section 12):** JSON-LD contents, `robots.txt` contents, `sitemap.xml` contents, Core Web Vitals, backlinks, keyword search volumes.
+Search Console reports "rich results: PASS" for the home page, `/notes/`, `/model-answer/` and the OSY notes page, so some structured data exists. I cannot tell which types.
+
+---
+
+## 2. Where you stand today
+
+### 2.1 Headline numbers (Search Console, last 3 months)
+
+| Page | Clicks | Impressions | CTR | Avg position |
+|---|---|---|---|---|
+| `/` (home) | 98 | 994 | 9.9% | 22.5 |
+| `/blog/50-capstone-project-ideas-computer-engineering` | 83 | 998 | 8.3% | 20.9 |
+| `/blog/msbte-winter-2025-exam-form` | 79 | 2,855 | 2.8% | 7.6 |
+| `/notes/` | 38 | 477 | 8.0% | 37.6 |
+| `/blog/msbte-summer-2026-final-timetable-declared-diploma` | 23 | 1,673 | 1.4% | 10.4 |
+| `/blog/dpharm-exit-exam-cancelled-2026` | 22 | 1,608 | 1.4% | 5.6 |
+| `/notes/dsa-handwritten-notes` | 19 | 252 | 7.5% | 21.5 |
+| `/model-answer/` | 16 | 238 | 6.7% | 14.1 |
+
+### 2.2 What the data says
+
+1. **Your traffic comes from exam-update posts, not from notes.** Individual notes pages get single-digit clicks. The notes hub `/notes/` sits at position 37.6.
+2. **The head terms are weak.** `msbte notes`: 129 impressions, 2 clicks, average position 60.2. `msbte study material`: 54 impressions, position 52.4. `msbte k scheme notes`: position 39.
+3. **Brand search works.** `msbte notes and info`: 13 clicks from 14 impressions.
+4. **Many pages rank in positions 7–12 but get almost no clicks.** This is a snippet problem, not a ranking problem (Section 5.1).
+
+| Page | Impressions | Clicks | CTR | Position |
+|---|---|---|---|---|
+| `/blog/mahadbt-scholarship-error-solutions` | 2,043 | 11 | 0.5% | 7.7 |
+| `/blog/dse-admission-schedule-2026` | 895 | 1 | 0.1% | 9.8 |
+| `/blog/sppu-summer-2026-exam-roadmap` | 690 | 2 | 0.3% | 8.7 |
+| `/blog/post-matric-scholarship-obc` | 585 | 3 | 0.5% | 14.6 |
+| `/blog/msbte-summer-2026-exam-roadmap` | 926 | 9 | 1.0% | 12.8 |
+| `/blog/autonomous-engineering-colleges-maharashtra` | 955 | 9 | 0.9% | 18.9 |
+
+---
+
+## 3. Who ranks for "msbte notes", and why
+
+### 3.1 The results (best position across 3 reads)
+
+| # | Best pos. | Site | Title as shown by Google |
+|---|---|---|---|
+| 1 | 1 | `msbte.engg-info.website` | Industrial Engineering and Management |
+| 2 | 1 | `campusifyplus.in` | MSBTE IF5K Notes For Winter 2026 |
+| 3 | 1 | (domain not returned) | MSBTE Notes PDF of All Branch - All Subject |
+| 4 | 2 | `studynotesmsbte.blogspot.com` | COMPUTER & AI&ML ENGINEERING SUBJECT NOTES (snippet starts "27 Apr 2026") |
+| 5 | 2 | `superprofile.bio` (Campusify) | CO6K Combo Notes (SFT+MAL+ETI+MAN) |
+| 6 | 5 | `scribd.com` | MSBTE Study Materials by Campusify |
+| 7 | 5 | `msbtenotesbooks.wordpress.com` | Msbtenotes – Msbte notes for I scheme (2022) |
+| 8 | 2 | YouTube | "MSBTE Notes & Information", 818 subscribers, 37 videos |
+| 9 | 3 | Quora | Msbte Diploma Notes |
+| 10 | 4 | `msbteresultandmodelanswer.wordpress.com` | Notes – Msbte (2018) |
+
+Row 8 looks like your own channel (the handle `@msbte-notes-and-info` is linked from your notes pages). Your YouTube channel is outranking your website for your own head term.
+
+### 3.2 Patterns (inferred from titles and snippets)
+
+1. **Google shows specific subject or branch pages for the broad term, not homepages.** #1 is a single subject page. #2 is a single branch-semester page. Your depth pages are what should compete here, and right now they carry weak titles.
+2. **Winning title formula:** brand word + scheme/branch code + "Notes" + exam season and year. Example: "MSBTE IF5K Notes For Winter 2026".
+3. **Visible freshness.** The #4 result shows a dated snippet ("27 Apr 2026").
+4. **The field is weak.** Several results are 2018–2022 blogs, Quora and Scribd. This is beatable.
+5. **An AI Overview appeared in all 3 reads** of this query (see Section 8).
+6. **The strongest commercial competitor (Campusify) wins on brand and codes, not depth.** Their landing page uses meta keywords with subject codes ("MSBTE OSY 315319, MSBTE SEN 315323, MSBTE ACN 315321"), a student count (2.7L+), a 4.8/5 rating, testimonials and a short FAQ. It is a one-page course funnel with far fewer pages than yours.
+
+### 3.3 Gap table
+
+| Factor | Top results | Your site | Gap |
+|---|---|---|---|
+| Subject codes in titles | Yes (IF5K, CO6K, 22516) | Partly (OSY page has one, and it is inconsistent, see P0-4) | Medium |
+| Season/year in titles | Yes ("Winter 2026") | Home and hubs: no | High |
+| Visible dates | Yes | Blog yes; notes pages no | Medium |
+| One clear canonical URL per page | Yes | Mixed (Section 4, P0-1) | High |
+| Pages Google knows about | n/a | At least one semester page "unknown to Google" | High |
+| Brand entity (YouTube, social, `sameAs`) | n/a | YouTube ranks, site does not link the entity together | Medium |
+| Internal links from high-traffic posts to notes | n/a | Weak | High |
+| Topic focus | Narrow (MSBTE notes) | News, obituaries, scholarships mixed with notes | Medium |
+
+---
+
+## 4. Audit: what is missing or broken
+
+### P0: fix first (indexing and consistency)
+
+#### P0-1. Conflicting canonical and URL variants **[Safe] · Effort M**
+**Evidence**
+- `/start` declares its canonical as `/start.html`, yet the whole site links to `/start`. Search Console classes `/start` as "Alternate page with proper canonical tag".
+- `/Notes/` (capital N) redirects to `/notes/`. Your home page links to both `/Notes/` and `/notes/`.
+- Search Console shows the same page type in three forms: `/pyq/315339-mobile-and-wireless-communication.html`, `/pyq/315313-theory-of-structures`, `/pyq/312313-manufacturing-technology/`.
+- Capitalised paths also earn impressions: `/Blog/dpharm-exit-exam-cancelled-2026.html`, `/Branches/elective-315374-power-plant-engineering.html`.
+- `/scheme/i-scheme.html` and `/scheme/k-scheme.html` are indexed with `.html`, while your HTML sitemap links `/scheme/i-scheme`.
+
+**Fix**
+1. Pick one rule: lowercase, no `.html`, no trailing slash except hubs that already use it (`/notes/`, `/pyq/`, `/model-answer/`, `/blog/`).
+2. Make every `<link rel="canonical">` self-referencing and in that format. For `/start`, the canonical must be `https://msbtenotes-info.netlify.app/start`.
+3. Update internal links to that format (find `/Notes/`, `.html`, and `/#notes`).
+4. In Netlify, confirm "Pretty URLs" is on so `.html` versions 301 to the clean URL. Verify with `curl -sI` (Section 12).
+5. Do **not** add `/Notes/* → /notes/*` redirect rules. Some Netlify redirect matching is case-insensitive and a lowercase-to-lowercase rule can loop. Fix links and canonicals instead.
+
+#### P0-2. Sitemap setup is inconsistent **[Safe] · Effort M**
+**Evidence**
+- Search Console shows the home page was discovered through three sitemaps: `/SITEMAP.XML` (uppercase), `/rss.xml` and one more. `/pyq/` and `/notes/` show `/sitemap.xml`.
+- Three different "sitemap" URLs exist: `/sitemap` (HTML page), `/sitemap.html` (what Google crawls), `/sitemap.xml` (footer link on `/pyq/`). The HTML sitemap says "last updated August 2026" and claims 400+ pages and 67 posts.
+
+**Fix**
+1. Keep one XML sitemap index at `/sitemap.xml` (lowercase) and remove `/SITEMAP.XML` in Search Console.
+2. Split it by section: `sitemap-blog.xml`, `sitemap-notes.xml`, `sitemap-pyq.xml`, `sitemap-model-answer.xml`, `sitemap-branches.xml`, `sitemap-colleges.xml`.
+3. List only canonical, 200-status, indexable URLs. Include accurate `<lastmod>` (only change it when the page content changes).
+4. Keep `/rss.xml` as a feed only, not a sitemap.
+5. Footer "Sitemap" link: point to the HTML sitemap everywhere (`/sitemap`) and add `<link rel="sitemap" href="/sitemap.xml">` in `<head>`.
+6. Add `Sitemap: https://msbtenotes-info.netlify.app/sitemap.xml` to `robots.txt` (template in 6.2).
+
+#### P0-3. Semester pages may not be indexed **[Safe] · Effort M**
+**Evidence:** URL Inspection for `/branches/computer-semester-4` returned "URL is unknown to Google". Your home page links to 42 semester pages (7 branches × 6 semesters) and the HTML sitemap claims 180+ branch pages. Only one was checked, and Google may know it under another variant, but this is the exact page type that should capture "computer engineering sem 4 msbte notes" searches.
+
+**Fix**
+1. In Search Console → Pages, filter by `/branches/` and see how many are "Discovered/Crawled – currently not indexed" or missing.
+2. Make sure every branch/semester page is in the sitemap (P0-2) and linked from its branch hub and from the matching subject pages.
+3. Each branch-semester page needs a unique title, description and one paragraph of intro text (Section 5.1). Thin, near-identical pages are the usual reason Google skips them.
+
+#### P0-4. Operating System code mismatch **[Safe for meta/schema, Visible for H1] · Effort S**
+**Evidence**
+- `/notes/osy-k-scheme-notes` is titled "OSY (314319) Operating System …", its meta description says "4th Sem", and the homepage card says "314319 … 4th Semester". The same page's body text calls it a "fifth-semester subject".
+- Your own `/pyq/` listing shows **Operating System = 315319, Sem 5** and **314319 = Information Security (IT), Sem 4**. The page also links to `/notes/315319-operating-system`.
+- People search with the code: your Search Console shows "osy model answer paper 315319" and "315339 model answer"; Campusify's meta keywords use "MSBTE OSY 315319".
+
+**Fix:** Confirm the code and semester against the official MSBTE K-scheme PDF, then correct title, meta description, `og:title`, schema and (optionally) the H1 so they all say the same code. Re-check the other 7 notes pages that carry a code in the title (DBMS 313302, DSU 313301, DTE 313303, OOP 313304, JPR 314317, DCN 314318, MIC 314321) against the same PDF. Your `/pyq/` list agrees with all of those.
+
+#### P0-5. Navigation links to anchors, not pages **[Safe] · Effort S**
+**Evidence:** On the OSY notes page, the nav item "Notes" and the breadcrumb "Notes" link to `/#notes`; "Blog" on the home page links to `/#blogs`.
+**Fix:** Point them at `/notes/` and `/blog/`. Real URLs pass link signals and appear in breadcrumbs; fragment links do not.
+
+---
+
+### P1: do within 2–4 weeks
+
+#### P1-1. Title and meta formulas for notes, PYQ and model-answer pages **[Safe] · Effort M**
+Competitors win with code + subject + "Notes PDF" + scheme. Formulas and drafts are in Section 5.1.
+
+#### P1-2. Homepage title and description **[Safe] · Effort S**
+Current title: `MSBTE Notes & Info – Diploma Notes & Question Papers`. It has no "PDF", "free", year or scheme, which are the words in the competing titles. Draft in 5.1.
+
+#### P1-3. Snippet rewrites for high-impression posts **[Safe] · Effort M**
+See table 2.2 and drafts in 5.1. Pages with 0.1–1.4% CTR at positions 5–13 are the cheapest wins on the site.
+
+#### P1-4. Stale-year titles **[Safe for title/meta, Visible for body] · Effort S**
+- `/blog/msbte-notes-k-scheme-2025-26` (published 1 May 2026) says "2025-26" and "Updated for Summer 2026 exams". It is now November 2026 and Winter 2026 exams are next. Retitle and re-describe it; add a visible "Last updated" date. Keep the slug.
+- `/blog/msbte-winter-2025-exam-form` ranks at 7.6 for "msbte winter exam form" with 2,855 impressions. Check the page clearly covers the current exam cycle; if Winter 2026 has its own post, link the two both ways and use one as the canonical target.
+- Summer 2026 timetable posts: add a visible link to your Winter 2026 timetable post at the top.
+
+#### P1-5. Pages competing with each other **[Safe: canonical/links; Visible: merging] · Effort M**
+Eleven clusters in Section 7. The OSY, DBMS, DSU, DTE, OOP, JPR, DCN and MIC pairs follow the same pattern: `x-k-scheme-notes` and `code-subject-name`.
+
+#### P1-6. Structured data pack **[Safe] · Effort M**
+Templates in 5.2. Validate every template in the Rich Results Test before rollout, since I could not read your current JSON-LD.
+
+#### P1-7. Internal linking from posts to notes **[Visible, additive] · Effort M**
+Your exam-update posts earn most of your impressions and link to the notes weakly. Add a "Study material for this exam" block at the end of each post (3–4 links) pointing to `/notes/`, the branch hub, `/pyq/` and `/model-answer/`. Use descriptive anchors such as "MSBTE K-Scheme question papers", not "click here".
+
+#### P1-8. Weak link anchors in the department table **[Safe] · Effort S**
+The home page table links each semester with the anchor text "S1" … "S6". Keep the visible text, add `aria-label="Computer Engineering Semester 1 notes (K-Scheme)"` and a matching `title`. Screen readers and crawlers then get a descriptive anchor.
+
+#### P1-9. Author and trust signals **[Visible, additive] · Effort S**
+Every page is authored by "MSBTE Notes & Info Team". Add a short byline with a real name and a one-line credential (for example, "MSBTE diploma holder, Computer Engineering"), link it to `/about`, and mirror it in `Article.author` schema. Reword claims such as "Official MSBTE model answers" and "Board verified" so they do not sit next to "Not affiliated with MSBTE" and contradict it.
+
+#### P1-10. Ratings and student counts **[Visible] · Effort S**
+- The home page shows "4.9 average rating", four testimonials with relative dates ("1 week ago") and generated DiceBear avatars.
+- It says "Trusted by 1000+ diploma students" next to "20,000+ Active Students".
+- **Do not add `Review` or `AggregateRating` schema** to these. Google does not give review rich results for an organization's reviews of itself, and unverifiable ratings are a trust risk. Make the two student counts agree, and attach a real source or date to the testimonials or remove them.
+
+#### P1-11. Text encoding problem in the blog index **[Safe] · Effort S**
+The home page blog list shows garbled text such as `â€“` (for "–") and `â‚¹` (for "₹") in SPPU, ₹499, NCAT and CM Fellowship titles, and the Marathi title appears as `à¤šà¥à¤¯à¤¾…`. Other characters on the same page render correctly, so this looks like a double-encoding bug in whatever builds the blog index (UTF-8 text read or written as Windows-1252/Latin-1). Verify with `view-source:` in a browser. If it is real, fix the build step; the individual post pages looked fine in the fetch.
+
+#### P1-12. Topic mix **[Safe: noindex; Visible: removal] · Effort S**
+The first card in "Read Our Blog" is a celebrity obituary, and the sitemap lists several more (Asha Bhosle, Ajit Pawar, Nana Patekar). I could not verify those stories. They do not serve students looking for notes. Options, mildest first:
+1. Move them out of the home page feed and into a "News" section.
+2. Add `<meta name="robots" content="noindex, follow">` to them.
+3. Remove them.
+I would keep the exam, admission and scholarship posts, since they bring most of your impressions, and link them to notes (P1-7).
+
+---
+
+### P2: later
+
+- **P2-1. Consolidate old properties [Safe] · S.** `mraaglave.github.io/msbte-notes/` still appears in Google for brand-style queries, and `msbte.rf.gd` is verified in your Search Console. If either duplicates this site, add `<link rel="canonical">` to the matching page on this site (and a visible "moved" link), and link them to the new site.
+- **P2-2. Unnecessary meta tags [Safe] · S.** `meta keywords`, `geo.*`, `classification`, `subject`, `audience`, `language`, `category` are ignored by Google. They are harmless, but removing them reduces template noise. Keep `description`, `robots`, `canonical`, `og:*`, `twitter:*`.
+- **P2-3. Language [Safe] · S.** Pages that are fully Marathi should carry `<html lang="mr">`; English pages `lang="en-IN"`.
+- **P2-4. Image file names [Safe] · S.** `resourse/` (misspelled) and file names with spaces (`MSBTE NOTES AND INFORMATION.png`). Not urgent. If you rename, keep the old files or redirect them so existing links and Search Console image data survive.
+- **P2-5. Cache headers [Safe] · S.** See `_headers` in 6.3.
+- **P2-6. Non-public pages [Safe] · S.** `/jobs/bookmarked-jobs` looks per-user. Use `noindex` rather than `Disallow` so Google can read the tag.
+- **P2-7. Core Web Vitals [Safe] · M.** Not measured (Section 12). Your pages use WebP thumbnails, which is good; check image dimensions and the large home page.
+- **P2-8. Custom domain [Infra] · L.** `netlify.app` is not a blocker (blogspot and wordpress.com subdomains rank in the same results), but a brand domain makes the site portable and easier to cite. Moving later costs more as you grow. If you move, 301 every URL, keep the old site live, and use Search Console's change-of-address tool.
+- **P2-9. Marathi content [Visible, additive] · L.** Your own FAQ promises English and Marathi notes. Marathi title queries are a separate, less competitive set of searches.
+
+---
+
+## 5. Copy-paste templates
+
+### 5.1 Titles and meta descriptions
+
+Rules: title 50–60 characters, description 120–155 characters, lead with the words people type, include the code and scheme, add season/year only when the page is genuinely for that cycle. Do not put facts in a snippet that the page does not contain.
+
+**Formulas**
+
+| Page type | Title formula | Description formula |
+|---|---|---|
+| Subject notes | `[ABBR] [code] [Subject] Notes PDF – MSBTE K-Scheme` | Free MSBTE K-Scheme [Subject] ([ABBR] [code]) notes: [what the page really has]. For [Branch] Sem [n]. |
+| Branch-semester | `[Branch] Sem [n] MSBTE K-Scheme Notes, Syllabus & Papers` | All [Branch] Semester [n] subjects: notes, syllabus, question papers and model answers for the K-Scheme. |
+| Question paper | `[code] [Subject] Question Paper – MSBTE [Season] [Year]` | [Subject] ([code]) MSBTE [Season] [Year] question paper with answer key. |
+| News post | `[Event] [Year]: [Dates / Link / Steps]` | Plain answer to the search in the first sentence, then what the page covers. |
+
+**Drafts (check every fact against the page before use; `[ ]` = fill in)**
+
+Home
+```
+T: MSBTE Notes PDF 2026 – Free K-Scheme Notes, PYQ & Answers
+D: Free MSBTE notes PDF for all diploma branches and semesters: K-Scheme & I-Scheme study material, question papers, model answers and lab manuals.
+```
+Question papers hub (`/pyq/`)
+```
+T: MSBTE K-Scheme Question Papers – Summer 2026, Winter 2025
+D: Download MSBTE K-Scheme previous year question papers for 116 subjects across Computer, IT, AI-ML, Mechanical, Civil, Electrical and E&TC.
+```
+Model answers hub (`/model-answer/`)
+```
+T: MSBTE Model Answer Papers PDF – K-Scheme All Subjects
+D: MSBTE K-Scheme model answer papers with marking schemes, sorted by branch, semester and subject code. Free PDF downloads.
+```
+OSY notes (confirm code and semester first, see P0-4)
+```
+T: OSY 315319 Operating System Notes PDF – MSBTE K-Scheme
+D: Free MSBTE K-Scheme Operating System (OSY 315319) notes: unit-wise PDFs, IMP question bank and Winter 2024 answer key for Computer Engineering.
+```
+DBMS
+```
+T: DBMS 313302 Notes PDF – MSBTE K-Scheme Sem 3
+D: Free MSBTE K-Scheme Database Management System (DBMS 313302) unit 1-5 notes, IMP question bank and Winter 2023 solved papers.
+```
+Java
+```
+T: JPR 314317 Java Programming Notes PDF – MSBTE K-Scheme
+D: Free MSBTE K-Scheme Java Programming (JPR 314317) unit 1-6 notes, Super 25 question bank, viva Q&A and practice mock papers.
+```
+K-Scheme guide post (`/blog/msbte-notes-k-scheme-2025-26`, keep slug)
+```
+T: MSBTE K-Scheme Notes 2026-27: All Branches, Free PDF
+D: Branch-wise MSBTE K-Scheme notes, syllabus, lab manuals and question banks for Computer, IT, Civil, Mechanical, Electrical and E&TC. Updated [date].
+```
+High-impression posts (fill `[ ]` from the page)
+```
+T: MSBTE Winter Exam Form [Year]: Last Date, Login Link & Fees
+T: MahaDBT Scholarship Errors: Causes & Step-by-Step Fixes
+T: D.Pharm Exit Exam 2026 Cancelled: Update & What Next
+T: DSE Admission 2026-27 Maharashtra: Dates, CAP, Documents
+T: Autonomous Engineering Colleges Maharashtra: List [Year]
+```
+
+For news posts, put the direct answer (date, link, yes/no) in the first sentence of the description; for the 0.1–0.5% CTR pages the current snippet is probably not matching the query.
+
+### 5.2 Structured data (JSON-LD)
+
+Place in `<head>`. Replace `{{ }}`. Validate each in Google's Rich Results Test and the Schema Markup Validator. Check what you already have first (Section 12) and merge rather than duplicate.
+
+**Home page: Organization + WebSite**
+```json
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://msbtenotes-info.netlify.app/#org",
+      "name": "MSBTE Notes & Info",
+      "url": "https://msbtenotes-info.netlify.app/",
+      "logo": "https://msbtenotes-info.netlify.app/resourse/MSBTE%20NOTES%20AND%20INFORMATION.png",
+      "sameAs": [
+        "https://www.youtube.com/@msbte-notes-and-info",
+        "https://whatsapp.com/channel/0029Vap8lWS3QxRxxdmaSR36",
+        "https://www.producthunt.com/products/msbte-notes-info"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://msbtenotes-info.netlify.app/#website",
+      "url": "https://msbtenotes-info.netlify.app/",
+      "name": "MSBTE Notes & Info",
+      "inLanguage": "en-IN",
+      "publisher": { "@id": "https://msbtenotes-info.netlify.app/#org" }
+    }
+  ]
+}
+```
+Skip `SearchAction`; Google retired the sitelinks search box.
+
+**Notes page: Article + BreadcrumbList (+ FAQPage)**
+The breadcrumb in the markup must match the visible breadcrumb (Home › Notes › subject).
+```json
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "headline": "{{H1 text}}",
+      "description": "{{meta description}}",
+      "image": "{{og:image URL}}",
+      "datePublished": "{{2026-10-06}}",
+      "dateModified": "{{2026-10-08}}",
+      "inLanguage": "en-IN",
+      "author": { "@type": "Person", "name": "{{real author name}}", "url": "https://msbtenotes-info.netlify.app/about" },
+      "publisher": { "@id": "https://msbtenotes-info.netlify.app/#org" },
+      "mainEntityOfPage": "{{canonical URL}}"
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home",  "item": "https://msbtenotes-info.netlify.app/" },
+        { "@type": "ListItem", "position": 2, "name": "Notes", "item": "https://msbtenotes-info.netlify.app/notes/" },
+        { "@type": "ListItem", "position": 3, "name": "{{Subject (ABBR code)}}" }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "{{FAQ question exactly as on page}}",
+          "acceptedAnswer": { "@type": "Answer", "text": "{{answer exactly as on page}}" }
+        }
+      ]
+    }
+  ]
+}
+```
+FAQ note: Google limits FAQ rich results to well-known government and health sites, so do not expect an expandable FAQ in your results. The markup is still harmless and helps machine reading. Only mark up questions that are visible on the page.
+
+**Pages with an embedded YouTube video: VideoObject** (video rich results are supported)
+```json
+{
+  "@context": "https://schema.org",
+  "@type": "VideoObject",
+  "name": "{{video title}}",
+  "description": "{{what the video covers}}",
+  "thumbnailUrl": "https://i.ytimg.com/vi/{{VIDEO_ID}}/hqdefault.jpg",
+  "uploadDate": "{{YYYY-MM-DD}}",
+  "embedUrl": "https://www.youtube.com/embed/{{VIDEO_ID}}",
+  "publisher": { "@id": "https://msbtenotes-info.netlify.app/#org" }
+}
+```
+
+**Hubs (`/notes/`, `/pyq/`, `/model-answer/`):** add `BreadcrumbList` and a `CollectionPage`. `ItemList` does not produce rich results for this content type, so treat it as optional.
+
+### 5.3 Hub-page text that carries rankings **[Visible, additive]**
+`/notes/` is at position 37.6 with 477 impressions. Add 120–200 words above the list that answer "what is here": which schemes (K and I), which branches, how notes are organised, how often they are updated, a link to `/pyq/`, `/model-answer/` and `/scheme/`. Do the same for each branch-semester page (60–100 words: subject list with codes, exam season dates you can verify).
+
+---
+
+## 6. Config files (Netlify)
+
+### 6.1 Canonical rules (summary)
+- Every indexable page: self-referencing canonical, lowercase, no `.html`.
+- Hubs keep the trailing slash they already use.
+- A page you do not want indexed: `<meta name="robots" content="noindex, follow">`.
+
+### 6.2 `robots.txt`
+```
+User-agent: *
+Allow: /
+
+# Only if this is a per-user page; prefer a noindex tag on the page itself
+# Disallow: /jobs/bookmarked-jobs
+
+Sitemap: https://msbtenotes-info.netlify.app/sitemap.xml
+```
+Do not block `/resourse/` or any CSS/JS.
+
+### 6.3 `_headers`
+```
+/resourse/*
+  Cache-Control: public, max-age=604800
+
+/*
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
+```
+
+### 6.4 Sitemap rules
+- One index (`/sitemap.xml`) pointing to the section sitemaps in P0-2.
+- Same URL format as the canonicals. Never list a URL that redirects.
+- `<lastmod>` only from real content changes. A build step that stamps every file with the deploy date makes Google ignore the field.
+- Submit only the index in Search Console.
+
+---
+
+## 7. Pages competing with each other
+
+| Cluster | URLs | Evidence | Safest action |
+|---|---|---|---|
+| Operating System | `/notes/osy-k-scheme-notes`, `/notes/315319-operating-system`, `/model-answer/315319-operating-system`, `/pyq/315319-operating-system` | `/notes/315319-operating-system`: 19 impressions at 23.1; model answer: 25 at 36.8 | Give each a distinct job in its title (notes, question banks, model answer, PYQ), fix the code (P0-4), cross-link with exact anchors |
+| Other subject pairs | DSU, DBMS, DTE, OOP, JPR, DCN, MIC: `x-k-scheme-notes` plus `code-subject` slug | Same pattern | Same as above |
+| Programming in C | `/blog/programming-in-c-312303`, `/blog/programming-in-c-312303-v2`, `/notes/312303-programming-in-c`, `/pyq/312303-programming-in-c` | `-v2`: 436 impressions at 7.6; original: 41 at 33.6 | Canonical on the original pointing to `-v2` (or 301 if the original is obsolete) |
+| DSE admission | `/blog/dse-admission-2026-27-maharashtra`, `/blog/dse-admission-schedule-2026` | "dse admission 2026" at 10.9 goes to the schedule page | Keep one as the pillar; the other links to it, or canonical to the pillar |
+| Autonomous colleges | `/blog/autonomous-engineering-colleges-maharashtra`, `/blog/autonomous-engineering-maharashtra` | The second has 1 impression | Canonical (or 301) to the first |
+| Engineering colleges | `/blog/top-20-…`, `/top-5-…`, `/top-engineering-colleges-pune` | "best engineering colleges in maharashtra": 114 impressions at 26.4 | Top-20 is the pillar; the other two link to it with that phrase |
+| Winter 2025 results | `…winter-2025-result`, `…result-revaluation-guide`, `…photocopy-reevaluation`, `msbte-result-update-jan-2025` | Each gets 400–770 impressions, positions 10–21 | One pillar plus "step" posts linking up; canonical superseded update posts |
+| Summer 2026 timetable | `…final-timetable-declared-diploma`, `…exam-time-table`, `…institute-wise-…`, `…online-exam-schedule` | Several posts for one search | One pillar; the rest link to it |
+| Summer 2026 results | `…result-declared`, `…exam-result-date-and-link`, `…expected-result-date` | Overlapping intent | Canonical the "expected date" post to the final one |
+| Academic calendars | `…2025-26`, `…2026-27-winter-exam-date` | 749 at 13.4 and 793 at 8.3 | Keep both; add a visible "current year" link between them |
+| K-Scheme notes | `/blog/msbte-notes-k-scheme-2025-26`, `/notes/`, `/` | All target "msbte k scheme notes" | Blog = guide, `/notes/` = target for "msbte notes"; blog links to `/notes/` with that anchor |
+
+Use a `rel=canonical` before any merge or redirect: it keeps the page live and visible while consolidating signals.
+
+---
+
+## 8. Keyword map (from your Search Console data)
+
+Search volumes were not available (credits exhausted), so impressions below are a demand proxy for your own site only. Position is the 3-month average.
+
+| Query cluster | Impressions | Position | Target page | Action |
+|---|---|---|---|---|
+| msbte notes | 129 | 60.2 | `/notes/` | Hub text (5.3), title (5.1), links from posts |
+| msbte study material | 54 | 52.4 | `/notes/` | Same |
+| msbte k scheme notes / books pdf | 2–3 each | 29–55 | `/blog/msbte-notes-k-scheme-…` and `/notes/` | Retitle; link to the hub |
+| msbte model answer paper | 113 | 9.8 | `/model-answer/` | Title (5.1), intro text, link from every PYQ page |
+| msbte exam form / winter exam form / login | 170 + 167 + 126 + 82 | 2–10 | exam-form post | Snippet rewrite (5.1), freshness (P1-4) |
+| k scheme | 116 | 6.3 | `/scheme/k-scheme` | Title with "MSBTE K-Scheme syllabus, curriculum & credits" |
+| msbte resources | 54 | 5.8 | `/start` | Fix canonical (P0-1) |
+| msbte result winter | 78 | 10.3 | winter result post | Snippet rewrite |
+| computer engineering capstone project ideas | 82 + 37 + 13 | 9–15 | capstone post | Already working; link to notes and project services |
+| autonomous engineering colleges in maharashtra | 39 + 44 + 34 | 8–24 | autonomous colleges post | Resolve duplicate (Section 7) |
+| best engineering colleges in maharashtra | 114 | 26.4 | top-20 post | Pillar + links |
+| dsa notes / java handwritten notes pdf | 27 / 23 | 21.6 / 51 | `/notes/dsa-handwritten-notes`, `/notes/advanced-java-notes` | Retitle with "PDF" and "handwritten" |
+| mahadbt login / error | 60 + 100 | 8–24 | MahaDBT and Aaple Sarkar posts | Snippet rewrite |
+
+Suggested next step once you have credits: pull volume and difficulty for these 20 cluster heads plus the subject-code queries (e.g. "315319 model answer", "osy 315319 notes", "313302 dbms notes").
+
+---
+
+## 9. Getting cited in AI answers (GEO/AEO)
+
+An AI Overview showed on "msbte notes" in all three reads, so being quotable matters. There is no guaranteed lever; these are low-cost habits:
+1. **Answer first.** Start each notes, model-answer and news page with 1–2 plain sentences that answer the title (the K-Scheme post already has a "TL;DR" block, which is a good pattern to copy to every notes page).
+2. **Hard facts in tables:** subject code, semester, branch, scheme, marks scheme, exam season. Small tables are easy to quote.
+3. **Visible dates and an author line** on every page (P1-9).
+4. **Link to the official source** (`msbte.ac.in`) for anything official, and say so on the page.
+5. **Entity consistency:** the same name, logo and `sameAs` links everywhere (5.2), and a YouTube description that links back to the site.
+6. **Do not block AI crawlers** in `robots.txt` if you want to be cited. `llms.txt` has no proven effect; treat it as optional.
+
+---
+
+## 10. Roadmap
+
+| When | Do | Where in this file |
+|---|---|---|
+| **Week 1** | Canonical and URL rules; one sitemap index; check `/branches/` indexing; fix OSY code; real nav links | P0-1 to P0-5 |
+| **Weeks 2–3** | Homepage and hub titles; notes title formulas; 10 snippet rewrites; year updates on the K-Scheme guide | P1-1 to P1-4, 5.1 |
+| **Weeks 3–4** | Schema pack; descriptive anchors for the department table; encoding bug; ratings clean-up | P1-6, P1-8, P1-10, P1-11 |
+| **Days 30–60** | "Study material" blocks on posts; byline and about page; resolve duplicate clusters with canonicals; hub text | P1-5, P1-7, P1-9, 5.3 |
+| **Days 60–90** | Consolidate old properties; decide on custom domain; Marathi pages; re-check rankings | P2 |
+
+---
+
+## 11. Measuring the result
+
+Weekly, in Search Console (compare 28 days against the previous 28):
+- Impressions, clicks and average position for the "msbte notes" cluster (Section 8).
+- Pages report: number indexed under `/branches/`, `/notes/`, `/pyq/`; "Duplicate, Google chose different canonical" and "Alternate page with proper canonical" counts should fall.
+- CTR on the 10 rewritten posts.
+- Sitemaps report: one index, discovered URLs equal the number you expect.
+- Rich results: Breadcrumb and Article items valid; no warnings from the schema templates.
+Allow several weeks before judging ranking changes; snippet and canonical changes can show sooner than rank changes.
+
+---
+
+## 12. Checks I could not run for you
+
+```bash
+# robots.txt and sitemaps
+curl -sI https://msbtenotes-info.netlify.app/robots.txt
+curl -s  https://msbtenotes-info.netlify.app/robots.txt
+curl -sI https://msbtenotes-info.netlify.app/sitemap.xml
+curl -s  https://msbtenotes-info.netlify.app/sitemap.xml | head -40
+
+# URL variants (expect a single 301 hop to the clean lowercase URL)
+curl -sI https://msbtenotes-info.netlify.app/Notes/
+curl -sI https://msbtenotes-info.netlify.app/scheme/i-scheme.html
+curl -sI https://msbtenotes-info.netlify.app/start
+
+# Which structured data is already there
+curl -s https://msbtenotes-info.netlify.app/ | grep -o '"@type":"[A-Za-z]*"' | sort | uniq -c
+curl -s https://msbtenotes-info.netlify.app/notes/osy-k-scheme-notes | grep -o '"@type":"[A-Za-z]*"' | sort | uniq -c
+
+# Encoding problem (should print nothing if fixed)
+curl -s https://msbtenotes-info.netlify.app/ | grep -o 'â€“\|â‚¹' | head
+```
+Also run: Rich Results Test on 4 page types, PageSpeed Insights on `/`, `/notes/`, one notes page and one branch page, and the Search Console Pages report filtered by `/branches/`.
+
+---
+
+## 13. Do-not-touch list (honouring "without changing existing data")
+
+- Notes text, PDF and Google Drive links, question banks, model answers.
+- Blog post bodies (apart from the optional additions marked [Visible]).
+- Page layouts, colours, components, navigation labels.
+- Existing URLs and slugs (use canonicals and internal links, not renames).
+
+---
+
+## 14. Sources
+
+- Google results for "msbte notes", India desktop, 19 Nov 2026 (OpenSEO SERP read).
+- Search Console data for `https://msbtenotes-info.netlify.app/`, 16 Aug – 16 Nov 2026, and URL Inspection results for 10 URLs.
+- Live pages: https://msbtenotes-info.netlify.app/ · https://msbtenotes-info.netlify.app/sitemap · https://msbtenotes-info.netlify.app/pyq/ · https://msbtenotes-info.netlify.app/notes/osy-k-scheme-notes · https://msbtenotes-info.netlify.app/blog/msbte-notes-k-scheme-2025-26
+- Competitor page fetched: https://campusify-plus.vercel.app
+- Product Hunt listing: https://www.producthunt.com/products/msbte-notes-info/launches
+- Old site seen in results: https://mraaglave.github.io/msbte-notes/about.html
+</USER_REQUEST>
+<ADDITIONAL_METADATA>
+The current local time is: 2026-11-19T10:38:25+05:30.
+
+The user's current state is as follows:
+Active Document: c:\Users\bitbu\OneDrive\Documents\GitHub\MSBTE-NOTES-AND-INFO\scripts\revamp_fy_notes_page.py (LANGUAGE_UNSPECIFIED)
+Cursor is on line: 1
+Other open documents:
+- c:\Users\bitbu\OneDrive\Documents\GitHub\MSBTE-NOTES-AND-INFO\Blog\msbte-summer-2026-exam-result-date-and-link.html (LANGUAGE_UNSPECIFIED)
+- c:\Users\bitbu\OneDrive\Documents\GitHub\MSBTE-NOTES-AND-INFO\rss.xml (LANGUAGE_UNSPECIFIED)
+- c:\Users\bitbu\OneDrive\Documents\GitHub\MSBTE-NOTES-AND-INFO\sitemap.xml (LANGUAGE_UNSPECIFIED)
+- c:\Users\bitbu\OneDrive\Documents\GitHub\MSBTE-NOTES-AND-INFO\courses\certificate.html (LANGUAGE_UNSPECIFIED)
+- c:\Users\bitbu\OneDrive\Documents\GitHub\MSBTE-NOTES-AND-INFO\Notes\osy-k-scheme-notes.html (LANGUAGE_UNSPECIFIED)
+</ADDITIONAL_METADATA>

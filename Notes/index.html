@@ -93,12 +93,7 @@
       "@context": "https://schema.org",
       "@type": "WebSite",
       "name": "MSBTE Notes & Info",
-      "url": "https://msbtenotes-info.netlify.app/",
-      "potentialAction": {
-        "@type": "SearchAction",
-        "target": "https://msbtenotes-info.netlify.app/notes/?q={search_term_string}",
-        "query-input": "required name=search_term_string"
-      }
+      "url": "https://msbtenotes-info.netlify.app/"
     }
     </script>
 
@@ -579,7 +574,7 @@
         <!-- Middle: Desktop Nav -->
         <div class="hidden md:flex space-x-6 items-center">
           <a href="/" class="hover:text-blue-500 font-medium">Home</a>
-          <a href="/start.html"
+          <a href="/start"
             class="px-3 py-1 rounded-full bg-blue-50 text-blue-600 hover:bg-blue-600 hover:text-white font-semibold text-sm transition flex items-center gap-1.5 border border-blue-100"><span
               class="w-1.5 h-1.5 rounded-full bg-blue-600"></span>Start Here</a>
 
@@ -637,12 +632,12 @@
             </button>
             <div
               class="dropdown-menu absolute left-0 top-full -mt-1 w-52 bg-white rounded-xl shadow-xl border border-gray-100 py-2 hidden group-hover:block transition-all z-50">
-              <a href="/jobs/index.html"
+              <a href="/jobs/"
                 class="flex items-center gap-2.5 px-4 py-2.5 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-600 font-medium transition">
                 <span class="text-base">💼</span>
                 <span>Jobs Portal</span>
               </a>
-              <a href="/internships.html"
+              <a href="/internships"
                 class="flex items-center gap-2.5 px-4 py-2.5 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-600 font-medium transition">
                 <span class="text-base">🎓</span>
                 <span>Internships</span>
@@ -690,7 +685,7 @@
       <div class="flex flex-col space-y-3 pb-8">
         <a href="/" onclick="toggleMobileMenu()"
           class="text-xl font-display font-bold text-gray-900 border-b border-gray-100 pb-2">Home</a>
-        <a href="/start.html" onclick="toggleMobileMenu()"
+        <a href="/start" onclick="toggleMobileMenu()"
           class="text-xl font-display font-bold text-blue-600 border-b border-gray-100 pb-2 flex items-center justify-between">
           <span>🚀 Start Here Hub</span>
           <span class="text-xs font-sans font-bold px-2 py-0.5 rounded-full bg-blue-100 text-blue-700">All
@@ -776,7 +771,7 @@
             </svg>
           </button>
           <div id="mobileJobsSubmenu" class="space-y-1 pl-2 pt-1 pb-1 transition-all">
-            <a href="/jobs/index.html" onclick="toggleMobileMenu()"
+            <a href="/jobs/" onclick="toggleMobileMenu()"
               class="flex items-center gap-2.5 py-2 px-3 rounded-lg text-base font-medium text-gray-700 hover:bg-blue-50 hover:text-blue-600 transition">
               <span class="text-lg">💼</span>
               <div>
@@ -784,7 +779,7 @@
                 <div class="text-xs text-gray-500">Engineering jobs &amp; campus recruitments</div>
               </div>
             </a>
-            <a href="/internships.html" onclick="toggleMobileMenu()"
+            <a href="/internships" onclick="toggleMobileMenu()"
               class="flex items-center gap-2.5 py-2 px-3 rounded-lg text-base font-medium text-gray-700 hover:bg-blue-50 hover:text-blue-600 transition">
               <span class="text-lg">🎓</span>
               <div>
@@ -1354,7 +1349,7 @@
             <!-- Initial static cards rendered for instant display & crawler SEO -->
             <!-- Card 1: Model Answer -->
             <article class="resource-card bg-white rounded-2xl shadow-sm border border-gray-200/90 overflow-hidden flex flex-col h-full">
-                <a href="/model-answer/313301-data-structure-using-c.html" class="flex flex-col h-full group">
+                <a href="/model-answer/313301-data-structure-using-c" class="flex flex-col h-full group">
                     <div class="relative w-full aspect-video overflow-hidden bg-gray-50 border-b border-gray-100">
                         <img src="/resourse/msbte_subject_thumbnails/313301_Data_Structures_Using_C.png" alt="Data Structures Using C (313301) Model Answer Paper" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500" loading="lazy">
                     </div>
@@ -1382,7 +1377,7 @@
 
             <!-- Card 2: PYQ Paper -->
             <article class="resource-card bg-white rounded-2xl shadow-sm border border-gray-200/90 overflow-hidden flex flex-col h-full">
-                <a href="/pyq/314319-information-security.html" class="flex flex-col h-full group">
+                <a href="/pyq/314319-information-security" class="flex flex-col h-full group">
                     <div class="relative w-full aspect-video overflow-hidden bg-gray-50 border-b border-gray-100">
                         <img src="/resourse/note-thumbs/OSY_thumbnail.png" alt="Operating System (314319) Previous Year Question Papers" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500" loading="lazy">
                     </div>
@@ -1410,7 +1405,7 @@
 
             <!-- Card 3: Notes -->
             <article class="resource-card bg-white rounded-2xl shadow-sm border border-gray-200/90 overflow-hidden flex flex-col h-full">
-                <a href="/notes/java-k-scheme-notes.html" class="flex flex-col h-full group">
+                <a href="/notes/java-k-scheme-notes" class="flex flex-col h-full group">
                     <div class="relative w-full aspect-video overflow-hidden bg-gray-50 border-b border-gray-100">
                         <img src="/resourse/note-thumbs/JPR_thumbnail.png" alt="Java Programming (JPR) K Scheme Notes & Question Bank" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500" loading="lazy">
                     </div>
@@ -1464,15 +1459,15 @@
                 <ul class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 text-sm">
                     <li><a href="/pyq/" class="text-rose-600 font-semibold hover:underline">MSBTE PYQ Question Papers Hub (117+ Subjects)</a></li>
                     <li><a href="/model-answer/" class="text-emerald-600 font-semibold hover:underline">MSBTE Model Answer Papers Hub (Solved Solutions)</a></li>
-                    <li><a href="/notes/osy-k-scheme-notes.html" class="text-blue-600 hover:underline">Operating System (OSY - 314319) K Scheme Notes</a></li>
-                    <li><a href="/notes/mic-k-scheme-notes.html" class="text-blue-600 hover:underline">Microprocessor (MIC - 314321) K Scheme Notes</a></li>
-                    <li><a href="/notes/dcn-k-scheme-notes.html" class="text-blue-600 hover:underline">Data Communication (DCN - 314318) K Scheme Notes</a></li>
-                    <li><a href="/notes/java-k-scheme-notes.html" class="text-blue-600 hover:underline">Java Programming (JPR - 314317) K Scheme Notes</a></li>
-                    <li><a href="/notes/ees-k-scheme-notes.html" class="text-blue-600 hover:underline">Environmental Education (EES - 314301) Notes</a></li>
-                    <li><a href="/notes/oop-k-scheme-notes.html" class="text-blue-600 hover:underline">Object Oriented Programming with C++ (OOP - 313304)</a></li>
-                    <li><a href="/notes/dsu-k-scheme-notes.html" class="text-blue-600 hover:underline">Data Structures Using C (DSU - 313301) Notes</a></li>
-                    <li><a href="/notes/dbms-k-scheme-notes.html" class="text-blue-600 hover:underline">Database Management System (DBMS - 313302) Notes</a></li>
-                    <li><a href="/notes/dte-k-scheme-notes.html" class="text-blue-600 hover:underline">Digital Techniques (DTE - 313303) Notes</a></li>
+                    <li><a href="/notes/osy-k-scheme-notes" class="text-blue-600 hover:underline">Operating System (OSY - 314319) K Scheme Notes</a></li>
+                    <li><a href="/notes/mic-k-scheme-notes" class="text-blue-600 hover:underline">Microprocessor (MIC - 314321) K Scheme Notes</a></li>
+                    <li><a href="/notes/dcn-k-scheme-notes" class="text-blue-600 hover:underline">Data Communication (DCN - 314318) K Scheme Notes</a></li>
+                    <li><a href="/notes/java-k-scheme-notes" class="text-blue-600 hover:underline">Java Programming (JPR - 314317) K Scheme Notes</a></li>
+                    <li><a href="/notes/ees-k-scheme-notes" class="text-blue-600 hover:underline">Environmental Education (EES - 314301) Notes</a></li>
+                    <li><a href="/notes/oop-k-scheme-notes" class="text-blue-600 hover:underline">Object Oriented Programming with C++ (OOP - 313304)</a></li>
+                    <li><a href="/notes/dsu-k-scheme-notes" class="text-blue-600 hover:underline">Data Structures Using C (DSU - 313301) Notes</a></li>
+                    <li><a href="/notes/dbms-k-scheme-notes" class="text-blue-600 hover:underline">Database Management System (DBMS - 313302) Notes</a></li>
+                    <li><a href="/notes/dte-k-scheme-notes" class="text-blue-600 hover:underline">Digital Techniques (DTE - 313303) Notes</a></li>
                 </ul>
             </div>
         </noscript>
@@ -1639,7 +1634,7 @@
         <h3 class="text-xl font-semibold mb-4">Quick Links</h3>
         <ul class="space-y-2 text-sm">
           <li><a href="/" class="hover:underline">Home</a></li>
-          <li><a href="/start.html" class="hover:underline text-sky-400 font-semibold hover:text-sky-300">Start Here
+          <li><a href="/start" class="hover:underline text-sky-400 font-semibold hover:text-sky-300">Start Here
               Directory</a></li>
           <li><a href="/notes/" class="hover:underline">Subject Study Notes</a></li>
           <li><a href="/pyq/" class="hover:underline">Question Papers (PYQ)</a></li>
@@ -1648,7 +1643,7 @@
           <li><a href="/#departments" class="hover:underline">Engineering Departments</a></li>
           <li><a href="/mock-tests/" class="hover:underline">Mock Tests &amp; Quizzes</a></li>
           <li><a href="/blog/" class="hover:underline">Blog &amp; News</a></li>
-          <li><a href="/internships.html" class="hover:underline">Internships &amp; Jobs</a></li>
+          <li><a href="/internships" class="hover:underline">Internships &amp; Jobs</a></li>
         </ul>
       </div>
       <div>
@@ -1674,10 +1669,10 @@
     </div>
     <div class="text-center mt-10 text-sm text-blue-100">
       <p>
-        <a href="/about.html" class="hover:underline">About</a> |
-        <a href="/sitemap.html" class="hover:underline">Sitemap</a> |
-        <a href="/privacy-policy.html" class="hover:underline">Privacy Policy</a> |
-        <a href="/contact.html" class="hover:underline">Contact</a>
+        <a href="/about" class="hover:underline">About</a> |
+        <a href="/sitemap" class="hover:underline">Sitemap</a> |
+        <a href="/privacy-policy" class="hover:underline">Privacy Policy</a> |
+        <a href="/contact" class="hover:underline">Contact</a>
       </p>
       <p class="mt-2 text-xs text-blue-200">Not affiliated with or endorsed by MSBTE. Official information is available
         at msbte.ac.in.</p>

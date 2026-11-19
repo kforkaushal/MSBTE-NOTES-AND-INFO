@@ -1,8 +1,8 @@
 # ------------------------------------------
 # 1. Known legacy slug & course code fixes (Issue 1.13 & Phase 2)
 # ------------------------------------------
-/notes/314319-operating-system    /notes/315319-operating-system.html    301!
-/notes/314319-operating-system.html    /notes/315319-operating-system.html    301!
+/notes/314319-operating-system    /notes/315319-operating-system    301!
+/notes/314319-operating-system.html    /notes/315319-operating-system    301!
 /blog/autonomous-engineering-maharashtra    /blog/autonomous-engineering-colleges-maharashtra    301!
 /blog/autonomous-engineering-maharashtra.html    /blog/autonomous-engineering-colleges-maharashtra    301!
 /Blog/autonomous-engineering-maharashtra.html    /blog/autonomous-engineering-colleges-maharashtra    301!
@@ -17,21 +17,8 @@
 /Ads.txt    /ads.txt    301!
 
 # ------------------------------------------
-# 3. Uppercase path to canonical lowercase 301 redirects (Section 3.1)
+# 3. Clean canonical 301 redirects (Case folding handled via clean internal links & canonicals)
 # ------------------------------------------
-/Blog/*    /blog/:splat    301!
-/Notes/*    /notes/:splat    301!
-/Branches/*    /branches/:splat    301!
-/CollegeInfo/*    /collegeinfo/:splat    301!
-/Jobs/*    /jobs/:splat    301!
-/Courses/*    /courses/:splat    301!
-/News/*    /news/:splat    301!
-/PYQ/*     /pyq/:splat     301!
-
-
-# ------------------------------------------
-
-/Model-Answer/*    /model-answer/:splat    301!
 /model-answers/*   /model-answer/:splat    301!
 /model-answers     /model-answer/          301!
 
