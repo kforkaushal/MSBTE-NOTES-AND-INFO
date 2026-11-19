@@ -12,14 +12,15 @@
     </script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sitemap — MSBTE Notes & Info | All Pages</title>
-    <meta name="description" content="Complete sitemap of MSBTE Notes & Info. Navigate all pages — diploma notes, blog posts, question banks, college info, video courses, lab manuals and more." />
+    <title>Sitemap — MSBTE Notes &amp; Info | All Pages &amp; Subjects</title>
+    <meta name="description" content="Complete sitemap of MSBTE Notes &amp; Info (612+ pages). Easily browse diploma notes, question papers (PYQ), model answers, branch syllabus, lab manuals, college cut-offs, and blog updates." />
     <meta name="robots" content="index, follow" />
     <link rel="canonical" href="https://msbtenotes-info.netlify.app/sitemap" />
-    <meta property="og:title" content="Sitemap — MSBTE Notes & Info" />
-    <meta property="og:description" content="Full site index of MSBTE Notes & Info. Find study notes, blogs, question banks, college lists, video courses and more." />
+    <meta property="og:title" content="Sitemap — MSBTE Notes &amp; Info" />
+    <meta property="og:description" content="Full site index of MSBTE Notes &amp; Info. Find study notes, PYQ question papers, model answers, blogs, college cut-offs, and video courses." />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://msbtenotes-info.netlify.app/sitemap" />
+    <meta property="og:image" content="https://msbtenotes-info.netlify.app/resourse/msbte-notes-og.png" />
 
     <!-- Favicon -->
     <link rel="apple-touch-icon" sizes="180x180" href="/resourse/apple-touch-icon.png">
@@ -44,7 +45,7 @@
             --orange: #d97706;
             --pink: #db2777;
             --indigo: #4f46e5;
-            --bg: #f0f4ff;
+            --bg: #f8faff;
             --card-bg: #ffffff;
             --text: #1e293b;
             --muted: #64748b;
@@ -57,16 +58,16 @@
             font-family: 'Inter', sans-serif;
             background: var(--bg);
             color: var(--text);
-            background-image: radial-gradient(circle at 20% 20%, rgba(37,99,235,0.06) 0%, transparent 50%),
-                              radial-gradient(circle at 80% 80%, rgba(124,58,237,0.05) 0%, transparent 50%);
+            background-image: radial-gradient(circle at 15% 15%, rgba(37,99,235,0.05) 0%, transparent 40%),
+                              radial-gradient(circle at 85% 85%, rgba(124,58,237,0.05) 0%, transparent 40%);
             min-height: 100vh;
         }
 
         h1, h2, h3, .font-display { font-family: 'Outfit', 'Clash Display', sans-serif; }
 
-        /* ─── NAV ─── */
+        /* NAV */
         nav {
-            background: rgba(255,255,255,0.95);
+            background: rgba(255,255,255,0.96);
             backdrop-filter: blur(12px);
             border-bottom: 1px solid var(--border);
             position: sticky;
@@ -75,7 +76,7 @@
             padding: 0 1.5rem;
         }
         .nav-inner {
-            max-width: 1200px;
+            max-width: 1240px;
             margin: 0 auto;
             display: flex;
             justify-content: space-between;
@@ -85,9 +86,9 @@
         .nav-logo {
             display: flex;
             align-items: center;
-            gap: 0.5rem;
+            gap: 0.6rem;
             font-weight: 700;
-            font-size: 1.1rem;
+            font-size: 1.15rem;
             color: var(--blue);
             text-decoration: none;
             font-family: 'Outfit', sans-serif;
@@ -105,13 +106,13 @@
         }
         .nav-back:hover { background: var(--blue-dark); }
 
-        /* ─── HEADER ─── */
+        /* HEADER */
         .site-header {
             text-align: center;
             padding: 3.5rem 1.5rem 2rem;
         }
         .site-header h1 {
-            font-size: clamp(2rem, 5vw, 3.5rem);
+            font-size: clamp(2rem, 5vw, 3.4rem);
             font-weight: 800;
             background: linear-gradient(135deg, var(--blue) 0%, var(--purple) 100%);
             -webkit-background-clip: text;
@@ -123,20 +124,20 @@
             margin-top: 0.75rem;
             color: var(--muted);
             font-size: 1.05rem;
-            max-width: 580px;
+            max-width: 640px;
             margin-left: auto;
             margin-right: auto;
         }
 
-        /* ─── SEARCH ─── */
+        /* SEARCH */
         .search-wrap {
-            max-width: 560px;
-            margin: 1.5rem auto 0;
+            max-width: 580px;
+            margin: 1.75rem auto 0;
             position: relative;
         }
         .search-wrap input {
             width: 100%;
-            padding: 0.85rem 1.25rem 0.85rem 3rem;
+            padding: 0.9rem 1.25rem 0.9rem 3.2rem;
             border: 2px solid var(--border);
             border-radius: 99px;
             font-size: 0.95rem;
@@ -146,59 +147,64 @@
         }
         .search-wrap input:focus {
             border-color: var(--blue);
-            box-shadow: 0 0 0 4px rgba(37,99,235,0.1);
+            box-shadow: 0 0 0 4px rgba(37,99,235,0.12);
         }
         .search-wrap .search-icon {
             position: absolute;
-            left: 1rem;
+            left: 1.15rem;
             top: 50%;
             transform: translateY(-50%);
             color: var(--muted);
         }
         #search-count {
             text-align: center;
-            margin-top: 0.5rem;
+            margin-top: 0.6rem;
             color: var(--muted);
             font-size: 0.875rem;
             min-height: 1.25rem;
         }
 
-        /* ─── STATS BAR ─── */
+        /* STATS BAR */
         .stats-bar {
             display: flex;
             justify-content: center;
-            gap: 2rem;
+            gap: 1.5rem;
             flex-wrap: wrap;
             padding: 1.25rem 1.5rem;
-            margin-bottom: 0.5rem;
+            margin-bottom: 0.75rem;
         }
         .stat-item {
             display: flex;
             align-items: center;
             gap: 0.5rem;
-            font-size: 0.9rem;
+            font-size: 0.885rem;
             color: var(--muted);
+            background: white;
+            padding: 0.4rem 0.9rem;
+            border-radius: 99px;
+            border: 1px solid var(--border);
+            box-shadow: 0 1px 3px rgba(0,0,0,0.03);
         }
         .stat-item strong { color: var(--text); font-weight: 700; }
 
-        /* ─── LAYOUT ─── */
+        /* CONTAINER */
         .sitemap-container {
-            max-width: 1200px;
+            max-width: 1240px;
             margin: 0 auto;
             padding: 0 1.5rem 5rem;
         }
 
-        /* ─── SECTION ─── */
+        /* SECTION */
         .sm-section {
             background: var(--card-bg);
             border: 1px solid var(--border);
             border-radius: 1.25rem;
             margin-bottom: 1.5rem;
             overflow: hidden;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+            box-shadow: 0 2px 8px rgba(0,0,0,0.03);
             transition: box-shadow 0.2s;
         }
-        .sm-section:hover { box-shadow: 0 4px 20px rgba(0,0,0,0.08); }
+        .sm-section:hover { box-shadow: 0 6px 20px rgba(0,0,0,0.06); }
 
         .sm-section-header {
             display: flex;
@@ -207,11 +213,11 @@
             padding: 1.25rem 1.5rem;
             cursor: pointer;
             user-select: none;
-            background: linear-gradient(135deg, rgba(37,99,235,0.04), rgba(124,58,237,0.04));
+            background: linear-gradient(135deg, rgba(37,99,235,0.03), rgba(124,58,237,0.03));
             border-bottom: 1px solid transparent;
             transition: background 0.2s;
         }
-        .sm-section-header:hover { background: linear-gradient(135deg, rgba(37,99,235,0.07), rgba(124,58,237,0.06)); }
+        .sm-section-header:hover { background: linear-gradient(135deg, rgba(37,99,235,0.06), rgba(124,58,237,0.05)); }
         .sm-section-header.open { border-bottom-color: var(--border); }
 
         .sm-section-title {
@@ -238,8 +244,9 @@
             color: var(--blue);
             font-size: 0.75rem;
             font-weight: 700;
-            padding: 0.2rem 0.6rem;
+            padding: 0.2rem 0.65rem;
             border-radius: 99px;
+            white-space: nowrap;
         }
         .sm-chevron {
             color: var(--muted);
@@ -254,7 +261,7 @@
         }
         .sm-body.open { display: block; }
 
-        /* ─── SUBSECTION ─── */
+        /* SUBSECTION */
         .sm-sub {
             margin-bottom: 1.5rem;
         }
@@ -270,21 +277,21 @@
             border-bottom: 1px solid var(--border);
         }
 
-        /* ─── LINK GRID ─── */
+        /* LINK GRID */
         .link-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
-            gap: 0.4rem;
+            grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+            gap: 0.45rem;
         }
-        .link-grid.cols-2 { grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); }
-        .link-grid.cols-3 { grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); }
-        .link-grid.cols-4 { grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); }
+        .link-grid.cols-2 { grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); }
+        .link-grid.cols-3 { grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); }
+        .link-grid.cols-4 { grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); }
 
         .sm-link {
             display: flex;
             align-items: center;
             gap: 0.45rem;
-            padding: 0.45rem 0.65rem;
+            padding: 0.5rem 0.7rem;
             border-radius: 0.5rem;
             color: #374151;
             text-decoration: none;
@@ -321,7 +328,7 @@
             flex-shrink: 0;
         }
 
-        /* ─── BRANCH TABS ─── */
+        /* TABS */
         .branch-tabs {
             display: flex;
             gap: 0.5rem;
@@ -329,9 +336,9 @@
             margin-bottom: 1rem;
         }
         .branch-tab {
-            padding: 0.4rem 0.9rem;
+            padding: 0.45rem 1rem;
             border-radius: 99px;
-            font-size: 0.8rem;
+            font-size: 0.82rem;
             font-weight: 600;
             cursor: pointer;
             border: 2px solid var(--border);
@@ -348,14 +355,12 @@
         .branch-panel { display: none; }
         .branch-panel.active { display: block; }
 
-        /* ─── HIDDEN BY SEARCH ─── */
-        .sm-link.hidden-search { display: none; }
-        .sm-section.all-hidden { opacity: 0.4; }
+        .sm-link.hidden-search { display: none !important; }
+        .sm-section.all-hidden { opacity: 0.4; display: none; }
 
-        /* ─── FOOTER ─── */
         footer {
             text-align: center;
-            padding: 2rem;
+            padding: 2.5rem 1.5rem;
             color: var(--muted);
             font-size: 0.875rem;
             border-top: 1px solid var(--border);
@@ -364,9 +369,10 @@
         footer a { color: var(--blue); text-decoration: none; }
 
         @media (max-width: 640px) {
-            .link-grid { grid-template-columns: 1fr 1fr; }
+            .link-grid { grid-template-columns: 1fr; }
             .link-grid.cols-2 { grid-template-columns: 1fr; }
-            .stats-bar { gap: 1rem; }
+            .stats-bar { gap: 0.5rem; }
+            .stat-item { font-size: 0.8rem; padding: 0.35rem 0.75rem; }
         }
     </style>
 </head>
@@ -375,7 +381,7 @@
 
     <nav>
         <div class="nav-inner">
-            <a href="/" class="nav-logo" aria-label="MSBTE Notes & Info Home">
+            <a href="/" class="nav-logo" aria-label="MSBTE Notes &amp; Info Home">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" fill="currentColor">
                     <path d="M249.6 471.5c10.8 3.8 22.4-4.1 22.4-15.5V78.6c0-4.2-1.6-8.4-5-11C247.4 52 202.4 32 144 32C93.5 32 46.3 45.3 18.1 56.1C6.8 60.5 0 71.7 0 83.8V454.1c0 11.9 12.8 20.2 24.1 16.5C55.6 460.1 105.5 448 144 448c33.9 0 79 14 105.6 23.5zm76.8 0C353 462 398.1 448 432 448c38.5 0 88.4 12.1 119.9 22.6c11.3 3.8 24.1-4.6 24.1-16.5V83.8c0-12.1-6.8-23.3-18.1-27.6C529.7 45.3 482.5 32 432 32c-58.4 0-103.4 20-123 35.6c-3.3 2.6-5 6.8-5 11V456c0 11.4 11.7 19.3 22.4 15.5z"/>
                 </svg>
@@ -386,365 +392,421 @@
     </nav>
 
     <header class="site-header">
-        <h1>📍 Site Map</h1>
-        <p>Every page on MSBTE Notes &amp; Info — organized by category so you find what you need fast.</p>
+        <h1>📍 Site Map &amp; Directory</h1>
+        <p>Comprehensive directory of all 612+ pages across notes, previous year question papers (PYQ), model answers, branch syllabi, lab manuals, and exam updates.</p>
         <div class="search-wrap">
             <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                 <circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/>
             </svg>
-            <input type="text" id="sitemap-search" placeholder="Search pages, subjects, topics…" autocomplete="off" />
+            <input type="text" id="sitemap-search" placeholder="Search pages, subjects, question papers, codes (e.g. 311302)..." autocomplete="off" />
         </div>
         <div id="search-count"></div>
     </header>
 
     <div class="stats-bar">
-        <div class="stat-item">📄 <strong>400+</strong> total pages</div>
-        <div class="stat-item">📰 <strong>67</strong> blog posts</div>
-        <div class="stat-item">📚 <strong>180+</strong> branch pages</div>
-        <div class="stat-item">🏫 <strong>24</strong> districts</div>
-        <div class="stat-item">🎥 <strong>6</strong> video courses</div>
+        <div class="stat-item">📄 <strong>612</strong> Total Pages</div>
+        <div class="stat-item">📝 <strong>118</strong> PYQ Collections</div>
+        <div class="stat-item">📚 <strong>89</strong> Notes &amp; Guides</div>
+        <div class="stat-item">🎓 <strong>244</strong> Branch Pages</div>
+        <div class="stat-item">📰 <strong>71</strong> Blog Posts</div>
+        <div class="stat-item">✅ <strong>15</strong> Model Answers</div>
+        <div class="stat-item">🏫 <strong>21</strong> Districts</div>
     </div>
 
     <main class="sitemap-container" id="sitemap-root">
 
-        <!-- ════════ 1. CORE PAGES ════════ -->
+        <!-- ════════ 1. CORE & MAIN PAGES ════════ -->
         <div class="sm-section">
             <div class="sm-section-header open" onclick="toggleSection(this)">
                 <div class="sm-section-title">
                     <div class="sm-icon" style="background:#dbeafe;">🏠</div>
-                    <h2>Core &amp; Info Pages</h2>
+                    <h2>Core &amp; Main Navigation</h2>
                 </div>
                 <div style="display:flex;align-items:center;gap:0.75rem">
-                    <span class="sm-badge">10 pages</span>
+                    <span class="sm-badge">11 pages</span>
                     <svg class="sm-chevron" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path d="m6 9 6 6 6-6"/></svg>
                 </div>
             </div>
             <div class="sm-body open">
                 <div class="link-grid cols-2">
                     <a href="/" class="sm-link hot"><span class="dot"></span>🏠 Home</a>
-                    <a href="/services.html" class="sm-link"><span class="dot"></span>⚡ Services</a>
-                    <a href="/videos.html" class="sm-link"><span class="dot"></span>🎥 Videos &amp; Tutorials</a>
-                    <a href="/internships.html" class="sm-link"><span class="dot"></span>💼 Internships</a>
-                    <a href="/forum.html" class="sm-link"><span class="dot"></span>💬 Forum / Community</a>
-                    <a href="/sitemap.html" class="sm-link"><span class="dot"></span>📍 Sitemap (this page)</a>
-                    <a href="/about.html" class="sm-link"><span class="dot"></span>ℹ️ About Us</a>
-                    <a href="/contact.html" class="sm-link"><span class="dot"></span>📬 Contact Us</a>
-                    <a href="/links.html" class="sm-link"><span class="dot"></span>🔗 Our Links</a>
-                    <a href="/privacy-policy.html" class="sm-link"><span class="dot"></span>🔒 Privacy Policy</a>
+                    <a href="/start.html" class="sm-link hot"><span class="dot"></span>🚀 Start Here Guide</a>
+                    <a href="/services" class="sm-link hot"><span class="dot"></span>⚡ Services</a>
+                    <a href="/videos" class="sm-link hot"><span class="dot"></span>🎥 Videos & Tutorials</a>
+                    <a href="/internships" class="sm-link hot"><span class="dot"></span>💼 Internships Portal</a>
+                    <a href="/forum" class="sm-link hot"><span class="dot"></span>💬 Forum / Community</a>
+                    <a href="/sitemap" class="sm-link hot"><span class="dot"></span>📍 Sitemap (HTML)</a>
+                    <a href="/about" class="sm-link hot"><span class="dot"></span>ℹ️ About Us</a>
+                    <a href="/contact" class="sm-link hot"><span class="dot"></span>📬 Contact Us</a>
+                    <a href="/links" class="sm-link hot"><span class="dot"></span>🔗 Official Links</a>
+                    <a href="/privacy-policy" class="sm-link hot"><span class="dot"></span>🔒 Privacy Policy</a>
                 </div>
             </div>
         </div>
 
-        <!-- ════════ 2. BLOG ════════ -->
-        <div class="sm-section">
-            <div class="sm-section-header open" onclick="toggleSection(this)">
-                <div class="sm-section-title">
-                    <div class="sm-icon" style="background:#fce7f3;">📰</div>
-                    <h2>Blog &amp; Articles</h2>
-                </div>
-                <div style="display:flex;align-items:center;gap:0.75rem">
-                    <span class="sm-badge">67 posts</span>
-                    <svg class="sm-chevron" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path d="m6 9 6 6 6-6"/></svg>
-                </div>
-            </div>
-            <div class="sm-body open">
-                <div class="sm-sub">
-                    <div class="sm-sub-title">📌 Index</div>
-                    <div class="link-grid cols-2">
-                        <a href="/blog/" class="sm-link hot"><span class="dot"></span>All Blog Posts</a>
-                    </div>
-                </div>
-
-                <div class="sm-sub">
-                    <div class="sm-sub-title">🎓 MSBTE Exam Updates (2026)</div>
-                    <div class="link-grid">
-                        <a href="/blog/msbte-winter-2026-exam-timetable-final.html" class="sm-link hot new"><span class="dot"></span>MSBTE Winter 2026 Final Timetable</a>
-                        <a href="/blog/msbte-notes-summer-exam-2026.html" class="sm-link hot new"><span class="dot"></span>MSBTE Notes Summer Exam 2026</a>
-                        <a href="/blog/msbte-notes-k-scheme-2025-26.html" class="sm-link hot"><span class="dot"></span>MSBTE Notes K Scheme 2025-26</a>
-                        <a href="/blog/msbte-summer-2026-result-declared.html" class="sm-link hot"><span class="dot"></span>Summer 2026 Result Declared</a>
-                        <a href="/blog/msbte-summer-2026-photocopy-reevaluation.html" class="sm-link hot"><span class="dot"></span>Summer 2026 Re-Evaluation Guide</a>
-                        <a href="/blog/msbte-summer-2026-exam-result-date-and-link.html" class="sm-link"><span class="dot"></span>Summer 2026 Result Date &amp; Link</a>
-                        <a href="/blog/msbte-summer-2026-expected-result-date.html" class="sm-link"><span class="dot"></span>Summer 2026 Expected Result Date</a>
-                        <a href="/blog/msbte-summer-2026-final-timetable-declared-diploma.html" class="sm-link"><span class="dot"></span>Summer 2026 Final Timetable</a>
-                        <a href="/blog/msbte-summer-2026-exam-time-table.html" class="sm-link"><span class="dot"></span>Summer 2026 Exam Time Table</a>
-                        <a href="/blog/msbte-summer-2026-exam-roadmap.html" class="sm-link"><span class="dot"></span>Summer 2026 Exam Roadmap</a>
-                        <a href="/blog/msbte-summer-2026-hall-ticket.html" class="sm-link"><span class="dot"></span>Summer 2026 Hall Ticket</a>
-                        <a href="/blog/msbte-institute-wise-summer-2026-timetable.html" class="sm-link"><span class="dot"></span>Institute-wise Summer 2026 Timetable</a>
-                        <a href="/blog/msbte-summer-2026-last-minute-tips.html" class="sm-link"><span class="dot"></span>Summer 2026 Last-Minute Tips</a>
-                        <a href="/blog/msbte-summer-2026-online-exam-schedule.html" class="sm-link"><span class="dot"></span>Summer 2026 Online Exam Schedule</a>
-                        <a href="/blog/msbte-summer-2026-online-exam-subject-codes.html" class="sm-link"><span class="dot"></span>Summer 2026 Online Exam Subject Codes</a>
-                        <a href="/blog/msbte-summer-2026-online-exam-login-guide.html" class="sm-link"><span class="dot"></span>Summer 2026 Online Exam Login Guide</a>
-                        <a href="/blog/msbte-summer-2026-phase6-rescheduled.html" class="sm-link"><span class="dot"></span>Summer 2026 Phase 6 Rescheduled</a>
-                        <a href="/blog/msbte-academic-calendar-2025-26.html" class="sm-link"><span class="dot"></span>Academic Calendar 2025-26</a>
-                        <a href="/blog/k-scheme-guess-papers.html" class="sm-link"><span class="dot"></span>K Scheme Guess Papers</a>
-                        <a href="/blog/msbte-exam-ready-material-499.html" class="sm-link"><span class="dot"></span>Exam Ready Material ₹499</a>
-                        <a href="/blog/fake-news-alert-msbte-exams.html" class="sm-link"><span class="dot"></span>Fake News Alert — MSBTE Exams</a>
-                    </div>
-                </div>
-
-                <div class="sm-sub">
-                    <div class="sm-sub-title">📋 MSBTE Winter 2025</div>
-                    <div class="link-grid">
-                        <a href="/blog/msbte-winter-2025-result-revaluation-guide.html" class="sm-link"><span class="dot"></span>Winter 2025 Result &amp; Revaluation Guide</a>
-                        <a href="/blog/msbte-winter-2025-result.html" class="sm-link"><span class="dot"></span>Winter 2025 Result</a>
-                        <a href="/blog/msbte-winter-2025-photocopy-reevaluation.html" class="sm-link"><span class="dot"></span>Winter 2025 Photocopy &amp; Re-Evaluation</a>
-                        <a href="/blog/msbte-result-update-jan-2025.html" class="sm-link"><span class="dot"></span>Winter 2025 Result Update (Jan)</a>
-                        <a href="/blog/msbte-winter-2025-hall-ticket.html" class="sm-link"><span class="dot"></span>Winter 2025 Hall Ticket</a>
-                        <a href="/blog/msbte-winter-2025-timetable.html" class="sm-link"><span class="dot"></span>Winter 2025 Timetable</a>
-                        <a href="/blog/Msbte-winter-2025-exam-form.html" class="sm-link"><span class="dot"></span>Winter 2025 Exam Form</a>
-                        <a href="/blog/msbte-winter-2025-study-strategies.html" class="sm-link"><span class="dot"></span>Winter 2025 Study Strategies</a>
-                    </div>
-                </div>
-
-                <div class="sm-sub">
-                    <div class="sm-sub-title">🏛️ SPPU &amp; Entrance Exams</div>
-                    <div class="link-grid">
-                        <a href="/blog/sppu-engineering-be-btech-result-declared-2026.html" class="sm-link hot"><span class="dot"></span>SPPU BE/BTech Result 2026</a>
-                        <a href="/blog/sppu-result-winter-2025.html" class="sm-link"><span class="dot"></span>SPPU Result Winter 2025</a>
-                        <a href="/blog/sppu-be-2019-pattern-summer-2026-timetable.html" class="sm-link"><span class="dot"></span>SPPU BE 2019 Pattern Timetable</a>
-                        <a href="/blog/sppu-summer-2026-exam-roadmap.html" class="sm-link"><span class="dot"></span>SPPU Summer 2026 Exam Roadmap</a>
-                        <a href="/blog/sppu-kumbh-mela-credits-2026.html" class="sm-link"><span class="dot"></span>SPPU Kumbh Mela Credits 2026</a>
-                        <a href="/blog/mht-cet-pcm-result-2026-highlights.html" class="sm-link"><span class="dot"></span>MHT CET PCM Result 2026</a>
-                        <a href="/blog/dse-admission-2026-27-maharashtra.html" class="sm-link hot new"><span class="dot"></span>DSE Admission 2026-27 Maharashtra</a>
-                        <a href="/blog/dse-admission-schedule-2026.html" class="sm-link"><span class="dot"></span>DSE Admission Schedule 2026</a>
-                        <a href="/blog/ugc-new-rules-2026.html" class="sm-link"><span class="dot"></span>UGC New Rules 2026</a>
-                    </div>
-                </div>
-
-                <div class="sm-sub">
-                    <div class="sm-sub-title">📖 Study Resources</div>
-                    <div class="link-grid">
-                        <a href="/blog/computer-engineering-diploma-notes.html" class="sm-link hot"><span class="dot"></span>Computer Engineering Diploma Notes</a>
-                        <a href="/blog/programming-in-c-312303-v2.html" class="sm-link hot"><span class="dot"></span>312303 Programming in C (Full Guide)</a>
-                        <a href="/blog/programming-in-c-312303.html" class="sm-link"><span class="dot"></span>Programming in C Notes PDF</a>
-                        <a href="/blog/50-capstone-project-ideas-computer-engineering.html" class="sm-link"><span class="dot"></span>50 Capstone Project Ideas (CS)</a>
-                        <a href="/blog/top-100-engineering-project-ideas-diploma-students-2026.html" class="sm-link hot"><span class="dot"></span>Top 100 Engineering Project Ideas 2026</a>
-                        <a href="/blog/dbms-guess-paper-free.html" class="sm-link"><span class="dot"></span>DBMS Guess Paper (Free)</a>
-                        <a href="/blog/how-to-study-smarter-using-ai-msbte.html" class="sm-link"><span class="dot"></span>Study Smarter with AI</a>
-                    </div>
-                </div>
-
-                <div class="sm-sub">
-                    <div class="sm-sub-title">🎓 Career &amp; Scholarships</div>
-                    <div class="link-grid">
-                        <a href="/blog/be-vs-btech-difference-which-is-better-2026.html" class="sm-link hot"><span class="dot"></span>BE vs BTech — Which is Better? 2026</a>
-                        <a href="/blog/what-to-do-after-diploma.html" class="sm-link hot"><span class="dot"></span>What to Do After Diploma?</a>
-                        <a href="/blog/what-to-do-after-10th.html" class="sm-link hot"><span class="dot"></span>What to Do After 10th?</a>
-                        <a href="/blog/skills-2025.html" class="sm-link"><span class="dot"></span>Top 5 Skills for Engineers 2025</a>
-                        <a href="/blog/5-Free-Courses.html" class="sm-link"><span class="dot"></span>5 Free MAANG-Level Courses</a>
-                        <a href="/blog/niti-aayog-internship-2026.html" class="sm-link"><span class="dot"></span>NITI Aayog Internship 2026</a>
-                        <a href="/blog/cm-fellowship-maharashtra-2026.html" class="sm-link"><span class="dot"></span>CM Fellowship Maharashtra 2026</a>
-                        <a href="/blog/all-india-ncat-2026.html" class="sm-link"><span class="dot"></span>All India NCAT 2026</a>
-                        <a href="/blog/naukri-young-turks-2025.html" class="sm-link"><span class="dot"></span>Naukri Young Turks 2025</a>
-                        <a href="/blog/mahadbt-scholarship-error-solutions.html" class="sm-link"><span class="dot"></span>MahaDBT Scholarship Errors Guide</a>
-                        <a href="/blog/aaple-sarkar-dbt-portal-guide.html" class="sm-link"><span class="dot"></span>Aaple Sarkar DBT Portal Guide</a>
-                        <a href="/blog/post-matric-scholarship-obc.html" class="sm-link"><span class="dot"></span>Post Matric Scholarship OBC</a>
-                        <a href="/blog/professional-software-project-development.html" class="sm-link"><span class="dot"></span>Professional Project Dev Services</a>
-                    </div>
-                </div>
-
-                <div class="sm-sub">
-                    <div class="sm-sub-title">🏫 College &amp; Education News</div>
-                    <div class="link-grid">
-                        <a href="/blog/top-20-engineering-colleges-maharashtra.html" class="sm-link hot"><span class="dot"></span>Top 20 Engineering Colleges Maharashtra</a>
-                        <a href="/blog/top-5-engineering-colleges-maharashtra.html" class="sm-link"><span class="dot"></span>Top 5 Engineering Colleges Maharashtra</a>
-                        <a href="/blog/top-engineering-colleges-pune.html" class="sm-link"><span class="dot"></span>Top Engineering Colleges in Pune</a>
-                        <a href="/blog/autonomous-engineering-colleges-maharashtra.html" class="sm-link"><span class="dot"></span>Autonomous Engineering Colleges Maharashtra</a>
-                        <a href="/blog/dpharm-exit-exam-cancelled-2026.html" class="sm-link"><span class="dot"></span>D.Pharm Exit Exam Cancelled 2026</a>
-                        <a href="/blog/asha-bhosle-death-news.html" class="sm-link"><span class="dot"></span>Asha Bhosle — Tribute (April 2026)</a>
-                        <a href="/blog/ajit-pawar-death-news.html" class="sm-link"><span class="dot"></span>Ajit Pawar Death News</a>
-                        <a href="/blog/nana-patekar-tribute.html" class="sm-link"><span class="dot"></span>Nana Patekar — Tribute (October 2026)</a>
-                        <a href="/blog/engineering-day-2025.html" class="sm-link"><span class="dot"></span>Engineer's Day 2025</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- ════════ 3. NOTES ════════ -->
+        <!-- ════════ 2. STUDY NOTES & QUESTION BANKS ════════ -->
         <div class="sm-section">
             <div class="sm-section-header open" onclick="toggleSection(this)">
                 <div class="sm-section-title">
                     <div class="sm-icon" style="background:#d1fae5;">📚</div>
-                    <h2>Study Notes &amp; Question Banks</h2>
+                    <h2>Study Notes &amp; First Year Portal</h2>
                 </div>
                 <div style="display:flex;align-items:center;gap:0.75rem">
-                    <span class="sm-badge">60+ pages</span>
+                    <span class="sm-badge">89 pages</span>
                     <svg class="sm-chevron" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path d="m6 9 6 6 6-6"/></svg>
                 </div>
             </div>
             <div class="sm-body open">
                 <div class="sm-sub">
-                    <div class="sm-sub-title">📌 Hub Pages</div>
+                    <div class="sm-sub-title">📌 Key Hubs &amp; Portals</div>
                     <div class="link-grid cols-2">
-                        <a href="/notes/" class="sm-link hot"><span class="dot"></span>All Notes &amp; Resources Hub</a>
-                        <a href="/Notes/msbte-first-year-diploma-notes.html" class="sm-link hot new"><span class="dot"></span>1st Year Diploma Notes (Sem 1 &amp; 2)</a>
+                        <a href="/notes/" class="sm-link hot"><span class="dot"></span>All Study Notes Hub</a>
+                        <a href="/Notes/msbte-first-year-diploma-notes.html" class="sm-link hot new"><span class="dot"></span>1st Year Diploma Portal (Sem 1 &amp; 2)</a>
                         <a href="/notes/msbte-k-scheme-question-banks.html" class="sm-link hot"><span class="dot"></span>K-Scheme All Question Banks</a>
-                        <a href="/notes/python-handbook.html" class="sm-link"><span class="dot"></span>Python Handbook</a>
-                        <a href="/notes/advanced-java-notes.html" class="sm-link"><span class="dot"></span>Advanced Java Handwritten Notes</a>
-                        <a href="/notes/dsa-handwritten-notes.html" class="sm-link"><span class="dot"></span>DSA Handwritten Notes</a>
-                        <a href="/notes/dte-lab-manual.html" class="sm-link"><span class="dot"></span>Digital Techniques Lab Manual</a>
-                        <a href="/notes/4th-sem-computer-microprojects.html" class="sm-link"><span class="dot"></span>4th Sem Computer Micro-Projects</a>
                     </div>
                 </div>
 
                 <div class="sm-sub">
-                    <div class="sm-sub-title">🏦 Branch Question Banks</div>
-                    <div class="link-grid">
-                        <a href="/notes/msbte-computer-engg-question-bank.html" class="sm-link"><span class="dot"></span>Computer Engg Q-Bank</a>
-                        <a href="/notes/msbte-it-engg-question-bank.html" class="sm-link"><span class="dot"></span>IT Engg Q-Bank</a>
-                        <a href="/notes/msbte-civil-engg-question-bank.html" class="sm-link"><span class="dot"></span>Civil Engg Q-Bank</a>
-                        <a href="/notes/msbte-mech-engg-question-bank.html" class="sm-link"><span class="dot"></span>Mechanical Engg Q-Bank</a>
-                        <a href="/notes/msbte-electrical-engg-question-bank.html" class="sm-link"><span class="dot"></span>Electrical Engg Q-Bank</a>
-                        <a href="/notes/msbte-etc-engg-question-bank.html" class="sm-link"><span class="dot"></span>ETC Engg Q-Bank</a>
+                    <div class="sm-sub-title">🛠️ Workshop Practical Guides</div>
+                    <div class="link-grid cols-2">
+                        <a href="/Notes/311002-engineering-workshop-practice.html" class="sm-link hot"><span class="dot"></span>Workshop Practice Guide (311002 — ME/Auto/Prod)</a>
+                        <a href="/Notes/311005-engineering-workshop-practice.html" class="sm-link hot"><span class="dot"></span>Workshop Practice Guide (311005 — EE/EP)</a>
+                        <a href="/Notes/311007-engineering-workshop-practice.html" class="sm-link hot"><span class="dot"></span>Workshop Practice Guide (311007 — EJ/ETC)</a>
+                        <a href="/Notes/311010-civil-engineering-workshop.html" class="sm-link hot"><span class="dot"></span>Civil Engineering Workshop (311010 — CE)</a>
                     </div>
                 </div>
 
                 <div class="sm-sub">
-                    <div class="sm-sub-title">📘 Subject Notes — Semester 1 &amp; 2</div>
+                    <div class="sm-sub-title">📘 All Subject Notes &amp; Handbooks</div>
                     <div class="link-grid">
-                        <a href="/Notes/311002-engineering-workshop-practice.html" class="sm-link"><span class="dot"></span>Engineering Workshop Practice (311002)</a>
-                        <a href="/Notes/311005-engineering-workshop-practice.html" class="sm-link"><span class="dot"></span>Engineering Workshop Practice (311005)</a>
-                        <a href="/Notes/311007-engineering-workshop-practice.html" class="sm-link"><span class="dot"></span>Engineering Workshop Practice (311007)</a>
-                        <a href="/Notes/311010-civil-engineering-workshop.html" class="sm-link"><span class="dot"></span>Civil Engineering Workshop (311010)</a>
-                        <a href="/Notes/311305-basic-science.html" class="sm-link"><span class="dot"></span>Basic Science (311305)</a>
-                        <a href="/Notes/312001-linux-basics.html" class="sm-link"><span class="dot"></span>Linux Basics (312001)</a>
-                        <a href="/Notes/312002-professional-communication.html" class="sm-link"><span class="dot"></span>Professional Communication (312002)</a>
-                        <a href="/Notes/312004-web-page-designing.html" class="sm-link"><span class="dot"></span>Web Page Designing (312004)</a>
-                        <a href="/Notes/312006-basic-mechanical-engineering.html" class="sm-link"><span class="dot"></span>Basic Mechanical Engineering (312006)</a>
-                        <a href="/Notes/312308-applied-science.html" class="sm-link"><span class="dot"></span>Applied Science (312308)</a>
-                        <a href="/Notes/312309-elements-of-electronics.html" class="sm-link"><span class="dot"></span>Elements of Electronics (312309)</a>
-                        <a href="/Notes/312310-fundamental-of-electrical-engineering.html" class="sm-link"><span class="dot"></span>Fundamental of Electrical Engineering (312310)</a>
-                        <a href="/Notes/312311-engineering-drawing.html" class="sm-link"><span class="dot"></span>Engineering Drawing (312311)</a>
-                        <a href="/Notes/312312-engineering-mechanics.html" class="sm-link"><span class="dot"></span>Engineering Mechanics (312312)</a>
-                        <a href="/Notes/312338-building-material-and-construction.html" class="sm-link"><span class="dot"></span>Building Material and Construction (312338)</a>
-                        <a href="/Notes/312339-surveying.html" class="sm-link"><span class="dot"></span>Surveying (312339)</a>
-                        <a href="/Notes/312341-fundamental-of-chemical-engineering-and-materials.html" class="sm-link"><span class="dot"></span>Chemical Engineering Materials (312341)</a>
-                        <a href="/Notes/312342-solid-fluid-operations.html" class="sm-link"><span class="dot"></span>Solid Fluid Operations (312342)</a>
-                        <a href="/notes/311302-basic-mathematics.html" class="sm-link"><span class="dot"></span>Basic Mathematics (311302)</a>
-                        <a href="/notes/311303-communication-skills-english.html" class="sm-link"><span class="dot"></span>Communication Skills English (311303)</a>
-                        <a href="/notes/311305-basic-chemistry.html" class="sm-link"><span class="dot"></span>Basic Chemistry (311305)</a>
-                        <a href="/notes/311305-basic-physics.html" class="sm-link"><span class="dot"></span>Basic Physics (311305)</a>
-                        <a href="/notes/312301-applied-mathematics.html" class="sm-link"><span class="dot"></span>Applied Mathematics (312301)</a>
-                        <a href="/notes/312302-basic-electrical-and-electronics-engineering.html" class="sm-link"><span class="dot"></span>Basic EEE (312302)</a>
-                        <a href="/notes/312303-programming-in-c.html" class="sm-link hot"><span class="dot"></span>Programming in C (312303)</a>
-                        <a href="/notes/312314-basic-electronics.html" class="sm-link"><span class="dot"></span>Basic Electronics (312314)</a>
-                        <a href="/notes/312315-elements-of-electrical-engineering.html" class="sm-link"><span class="dot"></span>Elements of EE (312315)</a>
-                        <a href="/notes/312316-electronic-materials-and-components.html" class="sm-link"><span class="dot"></span>Electronic Materials (312316)</a>
-                    </div>
-                </div>
-
-                <div class="sm-sub">
-                    <div class="sm-sub-title">📗 Subject Notes — Semester 3</div>
-                    <div class="link-grid">
-                        <a href="/notes/313301-data-structure-using-c.html" class="sm-link"><span class="dot"></span>Data Structure Using C (313301)</a>
-                        <a href="/notes/313302-database-management-system.html" class="sm-link hot"><span class="dot"></span>DBMS (313302)</a>
-                        <a href="/notes/313303-digital-techniques.html" class="sm-link"><span class="dot"></span>Digital Techniques (313303)</a>
-                        <a href="/notes/313304-object-oriented-programming-using-c.html" class="sm-link"><span class="dot"></span>OOP Using C++ (313304)</a>
-                        <a href="/notes/313324-analog-electronics.html" class="sm-link"><span class="dot"></span>Analog Electronics (313324)</a>
-                        <a href="/notes/313325-circuits-networks.html" class="sm-link"><span class="dot"></span>Circuits &amp; Networks (313325)</a>
-                        <a href="/notes/313326-principles-of-electronic-communication.html" class="sm-link"><span class="dot"></span>Principles of Comm (313326)</a>
-                    </div>
-                </div>
-
-                <div class="sm-sub">
-                    <div class="sm-sub-title">📙 Subject Notes — Semester 4 &amp; 5</div>
-                    <div class="link-grid">
-                        <a href="/notes/314317-java-programming.html" class="sm-link hot"><span class="dot"></span>Java Programming (314317)</a>
-                        <a href="/notes/314318-data-communication-and-computer-network.html" class="sm-link"><span class="dot"></span>DCCN (314318)</a>
-                        <a href="/notes/314321-microprocessor-programming.html" class="sm-link"><span class="dot"></span>Microprocessor Programming (314321)</a>
-                        <a href="/notes/314301-environmental-education-and-sustainability.html" class="sm-link"><span class="dot"></span>Environmental Edu (314301)</a>
-                        <a href="/notes/314326-digital-communication-systems.html" class="sm-link"><span class="dot"></span>Digital Comm Systems (314326)</a>
-                        <a href="/notes/314327-consumer-electronic-systems.html" class="sm-link"><span class="dot"></span>Consumer Electronics (314327)</a>
-                        <a href="/notes/314328-microcontroller-applications.html" class="sm-link"><span class="dot"></span>Microcontroller (314328)</a>
-                        <a href="/notes/314363-basic-power-electronics.html" class="sm-link"><span class="dot"></span>Basic Power Electronics (314363)</a>
-                        <a href="/notes/315301-management.html" class="sm-link"><span class="dot"></span>Management (315301)</a>
-                        <a href="/notes/315319-operating-system.html" class="sm-link hot"><span class="dot"></span>Operating System (315319)</a>
-                        <a href="/notes/315321-advance-computer-network.html" class="sm-link"><span class="dot"></span>Advanced CN (315321)</a>
-                        <a href="/notes/315323-software-engineering.html" class="sm-link"><span class="dot"></span>Software Engineering (315323)</a>
-                        <a href="/notes/315326-data-analytics.html" class="sm-link"><span class="dot"></span>Data Analytics (315326)</a>
-                        <a href="/notes/315338-embedded-system.html" class="sm-link"><span class="dot"></span>Embedded Systems (315338)</a>
-                        <a href="/notes/315339-mobile-wireless-communication.html" class="sm-link"><span class="dot"></span>Mobile &amp; Wireless Comm (315339)</a>
-                        <a href="/notes/315342-microwave-engineering-radar-system.html" class="sm-link"><span class="dot"></span>Microwave Engg (315342)</a>
-                    </div>
-                </div>
-
-                <div class="sm-sub">
-                    <div class="sm-sub-title">📕 Subject Notes — Semester 6 / Electives</div>
-                    <div class="link-grid">
-                        <a href="/notes/316313-emerging-trends-in-computer-engineering-and-it.html" class="sm-link"><span class="dot"></span>Emerging Trends CS/IT (316313)</a>
-                        <a href="/notes/316314-software-testing.html" class="sm-link"><span class="dot"></span>Software Testing (316314)</a>
-                        <a href="/notes/316315-digital-forensic-and-hacking-techniques.html" class="sm-link"><span class="dot"></span>Digital Forensics (316315)</a>
-                        <a href="/notes/316317-network-and-information-security.html" class="sm-link"><span class="dot"></span>Network Security (316317)</a>
-                        <a href="/notes/316332-optical-network-and-satellite-communication.html" class="sm-link"><span class="dot"></span>Optical Networks (316332)</a>
-                        <a href="/notes/316337-emerging-trends-in-electronics.html" class="sm-link"><span class="dot"></span>Emerging Trends Electronics (316337)</a>
-                        <a href="/notes/316338-computer-network-data-communication.html" class="sm-link"><span class="dot"></span>CN &amp; Data Comm (316338)</a>
-                        <a href="/notes/316340-vlsi-applications.html" class="sm-link"><span class="dot"></span>VLSI Applications (316340)</a>
-                    </div>
-                </div>
-
-                <div class="sm-sub">
-                    <div class="sm-sub-title">🔬 Micro-Project Ideas</div>
-                    <div class="link-grid">
-                        <a href="/notes/20-microproject-ideas-oop.html" class="sm-link"><span class="dot"></span>OOP Micro-Project Ideas</a>
-                        <a href="/notes/20-microproject-ideas-dbms.html" class="sm-link"><span class="dot"></span>DBMS Micro-Project Ideas</a>
-                        <a href="/notes/20-microproject-ideas-os.html" class="sm-link"><span class="dot"></span>OS Micro-Project Ideas</a>
-                        <a href="/notes/20-microproject-ideas-web.html" class="sm-link"><span class="dot"></span>Web Dev Micro-Project Ideas</a>
-                        <a href="/notes/20-microproject-ideas-cn.html" class="sm-link"><span class="dot"></span>Computer Networks Micro-Projects</a>
-                        <a href="/notes/20-microproject-ideas-se.html" class="sm-link"><span class="dot"></span>Software Engineering Micro-Projects</a>
+                        <a href="/Notes/20-microproject-ideas-cn.html" class="sm-link"><span class="dot"></span>20 Computer Networks (CN) Microproject Ideas 2026 Diploma</a>
+                        <a href="/Notes/20-microproject-ideas-dbms.html" class="sm-link"><span class="dot"></span>20 DBMS Microproject Ideas 2026 Diploma SQL Database</a>
+                        <a href="/Notes/20-microproject-ideas-oop.html" class="sm-link"><span class="dot"></span>20 OOP Microproject Ideas 2026 Diploma C++ Java Projects</a>
+                        <a href="/Notes/20-microproject-ideas-os.html" class="sm-link"><span class="dot"></span>20 OS Microproject Ideas 2026 Diploma C++ Linux Projects</a>
+                        <a href="/Notes/20-microproject-ideas-se.html" class="sm-link"><span class="dot"></span>20 Software Engineering Microproject Ideas 2026 SRS UML</a>
+                        <a href="/Notes/20-microproject-ideas-web.html" class="sm-link"><span class="dot"></span>20 Python & Web Dev Microproject Ideas 2026 HTML CSS JS</a>
+                        <a href="/Notes/311002-engineering-workshop-practice.html" class="sm-link"><span class="dot"></span>311002 Computer Engineering Workshop Practice  & Syllabus ()</a>
+                        <a href="/Notes/311005-engineering-workshop-practice.html" class="sm-link"><span class="dot"></span>311005 Engineering Workshop Practice  & Study Material ()</a>
+                        <a href="/Notes/311007-engineering-workshop-practice.html" class="sm-link"><span class="dot"></span>311007 Electronics Engineering Workshop Practice  & Syllabus ()</a>
+                        <a href="/Notes/311010-civil-engineering-workshop.html" class="sm-link"><span class="dot"></span>311010 Civil Engineering Workshop  & Study Material ()</a>
+                        <a href="/Notes/311302-basic-mathematics.html" class="sm-link"><span class="dot"></span>311302 Basic Mathematics  & Question Papers</a>
+                        <a href="/Notes/311303-communication-skills-english.html" class="sm-link"><span class="dot"></span>311303 Communication Skills English</a>
+                        <a href="/Notes/311305-basic-chemistry.html" class="sm-link"><span class="dot"></span>311305 Basic Chemistry  & Question Papers</a>
+                        <a href="/Notes/311305-basic-physics.html" class="sm-link"><span class="dot"></span>311305 Basic Physics  & Question Papers</a>
+                        <a href="/Notes/311305-basic-science.html" class="sm-link"><span class="dot"></span>311305 Basic Science  & Study Material ()</a>
+                        <a href="/Notes/312001-linux-basics.html" class="sm-link"><span class="dot"></span>312001 Linux Basics  & Study Material ()</a>
+                        <a href="/Notes/312002-professional-communication.html" class="sm-link"><span class="dot"></span>312002 Professional Communication  & Study Material ()</a>
+                        <a href="/Notes/312004-web-page-designing.html" class="sm-link"><span class="dot"></span>312004 Web Page Designing  & Study Material ()</a>
+                        <a href="/Notes/312006-basic-mechanical-engineering.html" class="sm-link"><span class="dot"></span>312006 Basic Mechanical Engineering  & Study Material ()</a>
+                        <a href="/Notes/312301-applied-mathematics.html" class="sm-link"><span class="dot"></span>312301 Applied Mathematics  & Question Papers</a>
+                        <a href="/Notes/312302-basic-electrical-and-electronics-engineering.html" class="sm-link"><span class="dot"></span>312302 Question Papers &</a>
+                        <a href="/Notes/312303-programming-in-c.html" class="sm-link"><span class="dot"></span>312303 Programming In C  & Question Papers</a>
+                        <a href="/Notes/312308-applied-science.html" class="sm-link"><span class="dot"></span>312308 Applied Science  & Study Material ()</a>
+                        <a href="/Notes/312309-elements-of-electronics.html" class="sm-link"><span class="dot"></span>312309 Elements Of Electronics  & Study Material ()</a>
+                        <a href="/Notes/312310-fundamental-of-electrical-engineering.html" class="sm-link"><span class="dot"></span>312310 Fundamental Of Electrical Engineering  & Study Material ()</a>
+                        <a href="/Notes/312311-engineering-drawing.html" class="sm-link"><span class="dot"></span>312311 Engineering Drawing  & Study Material ()</a>
+                        <a href="/Notes/312312-engineering-mechanics.html" class="sm-link"><span class="dot"></span>312312 Engineering Mechanics  & Study Material ()</a>
+                        <a href="/Notes/312314-basic-electronics.html" class="sm-link"><span class="dot"></span>312314 Basic Electronics  & Question Papers</a>
+                        <a href="/Notes/312315-elements-of-electrical-engineering.html" class="sm-link"><span class="dot"></span>312315 Elements Of Electrical Engineering</a>
+                        <a href="/Notes/312316-electronic-materials-and-components.html" class="sm-link"><span class="dot"></span>312316 Electronic Materials And Components</a>
+                        <a href="/Notes/312338-building-material-and-construction.html" class="sm-link"><span class="dot"></span>312338 Building Material And Construction  & Study Material ()</a>
+                        <a href="/Notes/312339-surveying.html" class="sm-link"><span class="dot"></span>312339 Surveying  & Study Material ()</a>
+                        <a href="/Notes/312341-fundamental-of-chemical-engineering-and-materials.html" class="sm-link"><span class="dot"></span>312341 Fundamental Of Chemical Engineering And Materials  & Study Material ()</a>
+                        <a href="/Notes/312342-solid-fluid-operations.html" class="sm-link"><span class="dot"></span>312342 Solid Fluid Operations  & Study Material ()</a>
+                        <a href="/Notes/313301-data-structure-using-c.html" class="sm-link"><span class="dot"></span>313301 Data Structure Using C  & Question Papers</a>
+                        <a href="/Notes/313302-database-management-system.html" class="sm-link"><span class="dot"></span>313302 Database Management System</a>
+                        <a href="/Notes/313303-digital-techniques.html" class="sm-link"><span class="dot"></span>313303 Digital Techniques  & Question Papers</a>
+                        <a href="/Notes/313304-object-oriented-programming-using-c.html" class="sm-link"><span class="dot"></span>313304 Object Oriented Programming Using C</a>
+                        <a href="/Notes/313324-analog-electronics.html" class="sm-link"><span class="dot"></span>313324 Analog Electronics  & Question Papers</a>
+                        <a href="/Notes/313325-circuits-networks.html" class="sm-link"><span class="dot"></span>313325 Circuits Networks  & Question Papers</a>
+                        <a href="/Notes/313326-principles-of-electronic-communication.html" class="sm-link"><span class="dot"></span>313326 Principles Of Electronic Communication</a>
+                        <a href="/Notes/314301-environmental-education-and-sustainability.html" class="sm-link"><span class="dot"></span>314301 Question Papers &</a>
+                        <a href="/Notes/314317-java-programming.html" class="sm-link"><span class="dot"></span>314317 Java Programming  & Question Papers</a>
+                        <a href="/Notes/314318-data-communication-and-computer-network.html" class="sm-link"><span class="dot"></span>314318 Data Communication And Computer Network</a>
+                        <a href="/Notes/314321-microprocessor-programming.html" class="sm-link"><span class="dot"></span>314321 Microprocessor Programming</a>
+                        <a href="/Notes/314326-digital-communication-systems.html" class="sm-link"><span class="dot"></span>314326 Digital Communication Systems</a>
+                        <a href="/Notes/314327-consumer-electronic-systems.html" class="sm-link"><span class="dot"></span>314327 Consumer Electronic Systems</a>
+                        <a href="/Notes/314328-microcontroller-applications.html" class="sm-link"><span class="dot"></span>314328 Microcontroller Applications</a>
+                        <a href="/Notes/314363-basic-power-electronics.html" class="sm-link"><span class="dot"></span>314363 Basic Power Electronics  & Question Papers</a>
+                        <a href="/Notes/315301-management.html" class="sm-link"><span class="dot"></span>315301 Management  & Question Papers</a>
+                        <a href="/Notes/315319-operating-system.html" class="sm-link"><span class="dot"></span>315319 Operating System  & Question Papers</a>
+                        <a href="/Notes/315321-advance-computer-network.html" class="sm-link"><span class="dot"></span>315321 Advance Computer Network</a>
+                        <a href="/Notes/315323-software-engineering.html" class="sm-link"><span class="dot"></span>315323 Software Engineering  & Question Papers</a>
+                        <a href="/Notes/315326-data-analytics.html" class="sm-link"><span class="dot"></span>315326 Data Analytics  & Question Papers</a>
+                        <a href="/Notes/315338-embedded-system.html" class="sm-link"><span class="dot"></span>315338 Embedded System  & Question Papers</a>
+                        <a href="/Notes/315339-mobile-wireless-communication.html" class="sm-link"><span class="dot"></span>315339 Mobile Wireless Communication</a>
+                        <a href="/Notes/315342-microwave-engineering-radar-system.html" class="sm-link"><span class="dot"></span>315342 Microwave Engineering Radar System</a>
+                        <a href="/Notes/316313-emerging-trends-in-computer-engineering-and-it.html" class="sm-link"><span class="dot"></span>316313 Question Papers &</a>
+                        <a href="/Notes/316314-software-testing.html" class="sm-link"><span class="dot"></span>316314 Software Testing  & Question Papers</a>
+                        <a href="/Notes/316315-digital-forensic-and-hacking-techniques.html" class="sm-link"><span class="dot"></span>316315 Digital Forensic And Hacking Techniques</a>
+                        <a href="/Notes/316317-network-and-information-security.html" class="sm-link"><span class="dot"></span>316317 Network And Information Security</a>
+                        <a href="/Notes/316332-optical-network-and-satellite-communication.html" class="sm-link"><span class="dot"></span>316332 Question Papers &</a>
+                        <a href="/Notes/316337-emerging-trends-in-electronics.html" class="sm-link"><span class="dot"></span>316337 Emerging Trends In Electronics</a>
+                        <a href="/Notes/316338-computer-network-data-communication.html" class="sm-link"><span class="dot"></span>316338 Computer Network Data Communication</a>
+                        <a href="/Notes/316340-vlsi-applications.html" class="sm-link"><span class="dot"></span>316340 Vlsi Applications  & Question Papers</a>
+                        <a href="/Notes/4th-sem-computer-microprojects.html" class="sm-link"><span class="dot"></span>100+ Microproject Ideas for 4th Sem Computer Engg 2026</a>
+                        <a href="/Notes/advanced-java-notes.html" class="sm-link"><span class="dot"></span>Advanced Java J2EE  2026  Free PDF Download</a>
+                        <a href="/Notes/dbms-k-scheme-notes.html" class="sm-link"><span class="dot"></span>Database Management System (DBMS) K Scheme  & Papers</a>
+                        <a href="/Notes/dcn-k-scheme-notes.html" class="sm-link"><span class="dot"></span>Data Communication & Computer Network (DCN) K Scheme</a>
+                        <a href="/Notes/dsa-handwritten-notes.html" class="sm-link"><span class="dot"></span>DSA Handwritten  2026</a>
+                        <a href="/Notes/dsu-k-scheme-notes.html" class="sm-link"><span class="dot"></span>DSU (313301) K Scheme  & Question Bank</a>
+                        <a href="/Notes/dte-k-scheme-notes.html" class="sm-link"><span class="dot"></span>DTE (313303) K Scheme  & Question Bank</a>
+                        <a href="/Notes/dte-lab-manual.html" class="sm-link"><span class="dot"></span>Digital Techniques (313303) Lab Manual</a>
+                        <a href="/Notes/ees-k-scheme-notes.html" class="sm-link"><span class="dot"></span>EES (314301) K Scheme  & Question Bank</a>
+                        <a href="/Notes/java-k-scheme-notes.html" class="sm-link"><span class="dot"></span>Java JPR (314317) K Scheme  & Question Bank</a>
+                        <a href="/Notes/mic-k-scheme-notes.html" class="sm-link"><span class="dot"></span>MIC (314321) Microprocessor K Scheme</a>
+                        <a href="/Notes/msbte-civil-engg-question-bank.html" class="sm-link"><span class="dot"></span>Civil Engineering Question Bank ()</a>
+                        <a href="/Notes/msbte-computer-engg-question-bank.html" class="sm-link"><span class="dot"></span>Computer Engineering Question Bank ()</a>
+                        <a href="/Notes/msbte-electrical-engg-question-bank.html" class="sm-link"><span class="dot"></span>Electrical Engineering Question Bank ()</a>
+                        <a href="/Notes/msbte-etc-engg-question-bank.html" class="sm-link"><span class="dot"></span>E&TC Engineering Question Bank ()</a>
+                        <a href="/Notes/msbte-it-engg-question-bank.html" class="sm-link"><span class="dot"></span>IT Engineering Question Bank ()</a>
+                        <a href="/Notes/msbte-k-scheme-question-banks.html" class="sm-link"><span class="dot"></span>Question Banks – Branch & Semester Wise</a>
+                        <a href="/Notes/msbte-mech-engg-question-bank.html" class="sm-link"><span class="dot"></span>Mechanical Engineering Question Bank ()</a>
+                        <a href="/Notes/note_page_template.html" class="sm-link"><span class="dot"></span>{{TITLE_TAG}}</a>
+                        <a href="/Notes/oop-k-scheme-notes.html" class="sm-link"><span class="dot"></span>OOP C++ (313304) K Scheme  & Question Bank</a>
+                        <a href="/Notes/osy-k-scheme-notes.html" class="sm-link"><span class="dot"></span>OSY (314319) Operating System K Scheme</a>
+                        <a href="/Notes/python-handbook.html" class="sm-link"><span class="dot"></span>The Ultimate Python Handbook PDF - Download</a>
                     </div>
                 </div>
             </div>
         </div>
 
-        <!-- ════════ 4. LAB MANUALS ════════ -->
+        <!-- ════════ 3. LAB MANUALS ════════ -->
         <div class="sm-section">
             <div class="sm-section-header" onclick="toggleSection(this)">
                 <div class="sm-section-title">
                     <div class="sm-icon" style="background:#fef3c7;">🔬</div>
-                    <h2>Lab Manuals</h2>
+                    <h2>Lab Manuals &amp; Practical Solutions</h2>
                 </div>
                 <div style="display:flex;align-items:center;gap:0.75rem">
-                    <span class="sm-badge">23 manuals</span>
+                    <span class="sm-badge">22 manuals</span>
                     <svg class="sm-chevron" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path d="m6 9 6 6 6-6"/></svg>
                 </div>
             </div>
             <div class="sm-body">
                 <div class="link-grid">
-                    <a href="/notes/Manual/programming-in-c-lab-manual.html" class="sm-link hot"><span class="dot"></span>Programming in C (312303)</a>
-                    <a href="/notes/Manual/312303-pic-programming-in-c-manual-answers.html" class="sm-link hot"><span class="dot"></span>PIC Manual Answers (312303)</a>
-                    <a href="/notes/Manual/engineering-mechanics-lab-manual.html" class="sm-link"><span class="dot"></span>Engineering Mechanics (312312)</a>
-                    <a href="/notes/Manual/building-material-construction-lab-manual.html" class="sm-link"><span class="dot"></span>Building Material &amp; Construction (312338)</a>
-                    <a href="/notes/Manual/applied-science-physics-lab-manual.html" class="sm-link"><span class="dot"></span>Applied Science Physics (312308)</a>
-                    <a href="/notes/Manual/applied-science-chemistry-lab-manual.html" class="sm-link"><span class="dot"></span>Applied Science Chemistry (312308)</a>
-                    <a href="/notes/Manual/web-page-designing-lab-manual.html" class="sm-link"><span class="dot"></span>Web Page Designing (312004)</a>
-                    <a href="/notes/Manual/basic-electrical-electronics-lab-manual.html" class="sm-link"><span class="dot"></span>Basic EEE Lab (312302)</a>
-                    <a href="/notes/Manual/fundamentals-electrical-engineering-lab-manual.html" class="sm-link"><span class="dot"></span>Fundamentals of EE (312310)</a>
-                    <a href="/notes/Manual/basic-mechanical-engineering-lab-manual.html" class="sm-link"><span class="dot"></span>Basic Mechanical Engg (312006)</a>
-                    <a href="/notes/Manual/basic-electronics-lab-manual.html" class="sm-link"><span class="dot"></span>Basic Electronics (312314)</a>
-                    <a href="/notes/Manual/electronic-materials-components-lab-manual.html" class="sm-link"><span class="dot"></span>Electronic Materials (312316)</a>
-                    <a href="/notes/Manual/elements-electrical-engineering-lab-manual.html" class="sm-link"><span class="dot"></span>Elements of EE (312315)</a>
-                    <a href="/notes/Manual/elements-of-electronics-lab-manual.html" class="sm-link"><span class="dot"></span>Elements of Electronics (312309)</a>
-                    <a href="/notes/Manual/solid-fluid-operations-lab-manual.html" class="sm-link"><span class="dot"></span>Solid Fluid Operations (312342)</a>
-                    <a href="/notes/Manual/surveying-lab-manual.html" class="sm-link"><span class="dot"></span>Surveying (312339)</a>
-                    <a href="/notes/Manual/linux-basics-lab-manual.html" class="sm-link"><span class="dot"></span>Linux Basics (312001)</a>
-                    <a href="/notes/Manual/chemical-engineering-materials-lab-manual.html" class="sm-link"><span class="dot"></span>Chemical Engg Materials (312341)</a>
-                    <a href="/notes/Manual/bsc-lab-manual.html" class="sm-link"><span class="dot"></span>BSC Lab Manual</a>
-                    <a href="/notes/Manual/bsp-lab-manual.html" class="sm-link"><span class="dot"></span>BSP Lab Manual</a>
-                    <a href="/notes/Manual/cse-lab-manual.html" class="sm-link"><span class="dot"></span>CSE Lab Manual</a>
-                    <a href="/notes/Manual/pco-lab-manual.html" class="sm-link"><span class="dot"></span>PCO Lab Manual</a>
+                    <a href="/Notes/Manual/312303-pic-programming-in-c-manual-answers.html" class="sm-link"><span class="dot"></span>312303 PIC Programming in C Manual Answers</a>
+                    <a href="/Notes/Manual/applied-science-chemistry-lab-manual.html" class="sm-link"><span class="dot"></span>Applied Science Chemistry (312308) Lab Manual  PDF</a>
+                    <a href="/Notes/Manual/applied-science-physics-lab-manual.html" class="sm-link"><span class="dot"></span>Applied Science Physics (312308) Lab Manual  PDF</a>
+                    <a href="/Notes/Manual/basic-electrical-electronics-lab-manual.html" class="sm-link"><span class="dot"></span>Basic Electrical and Electronics Engineering (312302) Lab</a>
+                    <a href="/Notes/Manual/basic-electronics-lab-manual.html" class="sm-link"><span class="dot"></span>Basic Electronics (312314) Lab Manual</a>
+                    <a href="/Notes/Manual/basic-mechanical-engineering-lab-manual.html" class="sm-link"><span class="dot"></span>Basic Mechanical Engg (312006) Lab Manual  PDF</a>
+                    <a href="/Notes/Manual/bsc-lab-manual.html" class="sm-link"><span class="dot"></span>Basic Science (Chemistry) (311305) Lab Manual</a>
+                    <a href="/Notes/Manual/bsp-lab-manual.html" class="sm-link"><span class="dot"></span>Basic Science (Physics) (311305) Lab Manual</a>
+                    <a href="/Notes/Manual/building-material-construction-lab-manual.html" class="sm-link"><span class="dot"></span>Building Material and Construction (312338) Lab Manual</a>
+                    <a href="/Notes/Manual/chemical-engineering-materials-lab-manual.html" class="sm-link"><span class="dot"></span>Fundamental of Chemical Engineering and Materials (312341)</a>
+                    <a href="/Notes/Manual/cse-lab-manual.html" class="sm-link"><span class="dot"></span>Communication Skills (311303) Lab Manual</a>
+                    <a href="/Notes/Manual/electronic-materials-components-lab-manual.html" class="sm-link"><span class="dot"></span>Electronic Materials & Components (312316) Lab Manual</a>
+                    <a href="/Notes/Manual/elements-electrical-engineering-lab-manual.html" class="sm-link"><span class="dot"></span>Elements of Electrical Engg (312315) Lab Manual  PDF</a>
+                    <a href="/Notes/Manual/elements-of-electronics-lab-manual.html" class="sm-link"><span class="dot"></span>Elements of Electronics (312309) Lab Manual  PDF</a>
+                    <a href="/Notes/Manual/engineering-mechanics-lab-manual.html" class="sm-link"><span class="dot"></span>Engineering Mechanics (312312) Lab Manual  PDF</a>
+                    <a href="/Notes/Manual/fundamentals-electrical-engineering-lab-manual.html" class="sm-link"><span class="dot"></span>Fundamentals of Electrical Engg (312310) Lab Manual</a>
+                    <a href="/Notes/Manual/linux-basics-lab-manual.html" class="sm-link"><span class="dot"></span>Linux Basics (312001) Lab Manual</a>
+                    <a href="/Notes/Manual/pco-lab-manual.html" class="sm-link"><span class="dot"></span>Professional Communication (312002) Lab Manual</a>
+                    <a href="/Notes/Manual/programming-in-c-lab-manual.html" class="sm-link"><span class="dot"></span>Programming in C (312303) Lab Manual</a>
+                    <a href="/Notes/Manual/solid-fluid-operations-lab-manual.html" class="sm-link"><span class="dot"></span>Solid Fluid Operations (312342) Lab Manual  PDF</a>
+                    <a href="/Notes/Manual/surveying-lab-manual.html" class="sm-link"><span class="dot"></span>Surveying (312339) Lab Manual</a>
+                    <a href="/Notes/Manual/web-page-designing-lab-manual.html" class="sm-link"><span class="dot"></span>Web Page Designing (312004) Lab Manual</a>
                 </div>
             </div>
         </div>
 
-        <!-- ════════ 5. BRANCHES ════════ -->
+        <!-- ════════ 4. PREVIOUS YEAR QUESTION PAPERS (PYQ) ════════ -->
         <div class="sm-section">
             <div class="sm-section-header open" onclick="toggleSection(this)">
                 <div class="sm-section-title">
-                    <div class="sm-icon" style="background:#ede9fe;">🎓</div>
-                    <h2>Branches — Semester-wise Pages</h2>
+                    <div class="sm-icon" style="background:#ede9fe;">📝</div>
+                    <h2>Previous Year Question Papers (PYQ)</h2>
                 </div>
                 <div style="display:flex;align-items:center;gap:0.75rem">
-                    <span class="sm-badge">180+ pages</span>
+                    <span class="sm-badge">118 subjects</span>
+                    <svg class="sm-chevron" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path d="m6 9 6 6 6-6"/></svg>
+                </div>
+            </div>
+            <div class="sm-body open">
+                <div class="sm-sub">
+                    <div class="sm-sub-title">📌 Main Portal</div>
+                    <div class="link-grid cols-2">
+                        <a href="/pyq/" class="sm-link hot new"><span class="dot"></span>🎯 All MSBTE Question Papers Hub</a>
+                    </div>
+                </div>
+
+                <div class="sm-sub">
+                    <div class="sm-sub-title">📄 All Subject Question Papers</div>
+                    <div class="link-grid">
+                        <a href="/pyq/311302-basic-mathematics.html" class="sm-link"><span class="dot"></span>311302 Basic Mathematics (BMS) Question Paper PDF Download</a>
+                        <a href="/pyq/311303-communication-skills-english.html" class="sm-link"><span class="dot"></span>311303 Communication Skills (English) (CMS) Question Paper PDF Download</a>
+                        <a href="/pyq/312301-applied-mathematics.html" class="sm-link"><span class="dot"></span>312301 Applied Mathematics (AMS) Question Paper PDF Download</a>
+                        <a href="/pyq/312303-programming-in-c.html" class="sm-link"><span class="dot"></span>312303 Programming in C (PIC) Question Paper PDF Download</a>
+                        <a href="/pyq/312309-elements-of-electronics.html" class="sm-link"><span class="dot"></span>312309 Elements of Electronics (EOE) Question Paper PDF Download</a>
+                        <a href="/pyq/312310-fundamental-of-electrical-engineering.html" class="sm-link"><span class="dot"></span>312310 Fundamental of Electrical Engineering (FEE) Question Paper PDF Download</a>
+                        <a href="/pyq/312311-engineering-drawing.html" class="sm-link"><span class="dot"></span>312311 Engineering Drawing (EDR) Question Paper PDF Download</a>
+                        <a href="/pyq/312312-engineering-mechanics.html" class="sm-link"><span class="dot"></span>312312 Engineering Mechanics (EGM) Question Paper PDF Download</a>
+                        <a href="/pyq/312313-manufacturing-technology.html" class="sm-link"><span class="dot"></span>312313 Manufacturing Technology (MAN) Question Paper PDF Download</a>
+                        <a href="/pyq/312314-basic-electronics.html" class="sm-link"><span class="dot"></span>312314 Basic Electronics (BEL) Question Paper PDF Download</a>
+                        <a href="/pyq/312315-elements-of-electrical-engineering.html" class="sm-link"><span class="dot"></span>312315 Elements of Electrical Engineering (ELE) Question Paper PDF Download</a>
+                        <a href="/pyq/312338-building-material-and-construction.html" class="sm-link"><span class="dot"></span>312338 Building Material and Construction (BMC) Question Paper PDF Download</a>
+                        <a href="/pyq/312339-surveying.html" class="sm-link"><span class="dot"></span>312339 Surveying (SUR) Question Paper PDF Download</a>
+                        <a href="/pyq/313301-data-structure-using-c.html" class="sm-link"><span class="dot"></span>313301 Data Structure using C (DSU) Question Paper PDF Download</a>
+                        <a href="/pyq/313302-database-management-system.html" class="sm-link"><span class="dot"></span>313302 Database Management System (DMS) Question Paper PDF Download</a>
+                        <a href="/pyq/313303-digital-techniques.html" class="sm-link"><span class="dot"></span>313303 Digital Techniques (DTE) Question Paper PDF Download</a>
+                        <a href="/pyq/313304-object-oriented-programming-using-c.html" class="sm-link"><span class="dot"></span>313304 Object Oriented Programming using C++ (OOP) Question Paper PDF Download</a>
+                        <a href="/pyq/313305-digital-techniques-and-microprocessors.html" class="sm-link"><span class="dot"></span>313305 Digital Techniques and Microprocessors (DTM) Question Paper PDF Download</a>
+                        <a href="/pyq/313306-data-structure-using-python.html" class="sm-link"><span class="dot"></span>313306 Data Structure using Python (DSP) Question Paper PDF Download</a>
+                        <a href="/pyq/313307-statistical-modelling-for-machine-learning.html" class="sm-link"><span class="dot"></span>313307 Statistical Modelling for Machine Learning (SML) Question Paper PDF Download</a>
+                        <a href="/pyq/313308-strength-of-materials.html" class="sm-link"><span class="dot"></span>313308 Strength of Materials (SOM) Question Paper PDF Download</a>
+                        <a href="/pyq/313309-fluid-mechanics-and-machinery.html" class="sm-link"><span class="dot"></span>313309 Fluid Mechanics and Machinery (FMM) Question Paper PDF Download</a>
+                        <a href="/pyq/313310-thermal-engineering.html" class="sm-link"><span class="dot"></span>313310 Thermal Engineering (TEN) Question Paper PDF Download</a>
+                        <a href="/pyq/313311-production-drawing.html" class="sm-link"><span class="dot"></span>313311 Production Drawing (PRD) Question Paper PDF Download</a>
+                        <a href="/pyq/313313-theory-of-machines.html" class="sm-link"><span class="dot"></span>313313 Theory of Machines (TOM) Question Paper PDF Download</a>
+                        <a href="/pyq/313316-metrology-and-measurement.html" class="sm-link"><span class="dot"></span>313316 Metrology and Measurement (MEM) Question Paper PDF Download</a>
+                        <a href="/pyq/313321-advanced-surveying.html" class="sm-link"><span class="dot"></span>313321 Advanced Surveying (ASY) Question Paper PDF Download</a>
+                        <a href="/pyq/313322-concrete-technology.html" class="sm-link"><span class="dot"></span>313322 Concrete Technology (CTE) Question Paper PDF Download</a>
+                        <a href="/pyq/313323-highway-engineering.html" class="sm-link"><span class="dot"></span>313323 Highway Engineering (HEN) Question Paper PDF Download</a>
+                        <a href="/pyq/313324-analog-electronics.html" class="sm-link"><span class="dot"></span>313324 Analog Electronics (AEL) Question Paper PDF Download</a>
+                        <a href="/pyq/313325-circuits-and-networks.html" class="sm-link"><span class="dot"></span>313325 Circuits and Networks (CNE) Question Paper PDF Download</a>
+                        <a href="/pyq/313326-principles-of-electronic-communication.html" class="sm-link"><span class="dot"></span>313326 Principles of Electronic Communication (PEC) Question Paper PDF Download</a>
+                        <a href="/pyq/313332-electrical-circuits-and-network.html" class="sm-link"><span class="dot"></span>313332 Electrical Circuits and Network (ECN) Question Paper PDF Download</a>
+                        <a href="/pyq/313333-electrical-power-generation-transmission-and-distribution.html" class="sm-link"><span class="dot"></span>313333 Electrical Power Generation, Transmission and Distribution (PGD) Question Paper PDF Download</a>
+                        <a href="/pyq/313334-electrical-and-electronic-measurement.html" class="sm-link"><span class="dot"></span>313334 Electrical and Electronic Measurement (EEM) Question Paper PDF Download</a>
+                        <a href="/pyq/313335-fundamentals-of-power-electronics.html" class="sm-link"><span class="dot"></span>313335 Fundamentals of Power Electronics (FPE) Question Paper PDF Download</a>
+                        <a href="/pyq/314303-hydraulics.html" class="sm-link"><span class="dot"></span>314303 Hydraulics (HYD) Question Paper PDF Download</a>
+                        <a href="/pyq/314312-railway-bridge-and-tunnel-engineering.html" class="sm-link"><span class="dot"></span>314312 Railway, Bridge and Tunnel Engineering (RBT) Question Paper PDF Download</a>
+                        <a href="/pyq/314313-estimating-costing-and-valuation.html" class="sm-link"><span class="dot"></span>314313 Estimating, Costing and Valuation (ECV) Question Paper PDF Download</a>
+                        <a href="/pyq/314314-water-and-wastewater-engineering.html" class="sm-link"><span class="dot"></span>314314 Water and Wastewater Engineering (WWE) Question Paper PDF Download</a>
+                        <a href="/pyq/314315-geotechnical-engineering.html" class="sm-link"><span class="dot"></span>314315 Geotechnical Engineering (GTE) Question Paper PDF Download</a>
+                        <a href="/pyq/314317-java-programming.html" class="sm-link"><span class="dot"></span>314317 Java Programming (JPR) Question Paper PDF Download</a>
+                        <a href="/pyq/314318-data-communication-and-computer-network.html" class="sm-link"><span class="dot"></span>314318 Data Communication and Computer Network (DCN) Question Paper PDF Download</a>
+                        <a href="/pyq/314319-information-security.html" class="sm-link"><span class="dot"></span>314319 Information Security (IFS) Question Paper PDF Download</a>
+                        <a href="/pyq/314320-mathematics-for-machine-learning.html" class="sm-link"><span class="dot"></span>314320 Mathematics for Machine Learning (MML) Question Paper PDF Download</a>
+                        <a href="/pyq/314321-microprocessor-programming.html" class="sm-link"><span class="dot"></span>314321 Microprocessor Programming (MPP) Question Paper PDF Download</a>
+                        <a href="/pyq/314322-d-c-machines-and-transformers.html" class="sm-link"><span class="dot"></span>314322 D.C. Machines and Transformers (DCT) Question Paper PDF Download</a>
+                        <a href="/pyq/314322-dc-machines-and-transformers.html" class="sm-link"><span class="dot"></span>314322 D.C. Machines and Transformers PYQ Question Paper PDF Download</a>
+                        <a href="/pyq/314323-utilization-of-electrical-energy.html" class="sm-link"><span class="dot"></span>314323 Utilization of Electrical Energy (UEE) Question Paper PDF Download</a>
+                        <a href="/pyq/314324-digital-electronics-and-microcontroller-applications.html" class="sm-link"><span class="dot"></span>314324 Digital Electronics and Microcontroller Applications (DEM) Question Paper PDF Download</a>
+                        <a href="/pyq/314325-electrical-estimating-and-contracting.html" class="sm-link"><span class="dot"></span>314325 Electrical Estimating and Contracting (EEC) Question Paper PDF Download</a>
+                        <a href="/pyq/314326-digital-communication-systems.html" class="sm-link"><span class="dot"></span>314326 Digital Communication Systems (DCS) Question Paper PDF Download</a>
+                        <a href="/pyq/314327-consumer-electronic-systems.html" class="sm-link"><span class="dot"></span>314327 Consumer Electronic Systems (CES) Question Paper PDF Download</a>
+                        <a href="/pyq/314328-microcontroller-and-applications.html" class="sm-link"><span class="dot"></span>314328 Microcontroller and Applications (MAP) Question Paper PDF Download</a>
+                        <a href="/pyq/314340-production-processes.html" class="sm-link"><span class="dot"></span>314340 Production Processes (PRP) Question Paper PDF Download</a>
+                        <a href="/pyq/314363-basic-power-electronics.html" class="sm-link"><span class="dot"></span>314363 Basic Power Electronics (BPE) Question Paper PDF Download</a>
+                        <a href="/pyq/315313-theory-of-structures.html" class="sm-link"><span class="dot"></span>315313 Theory of Structures (TOS) Question Paper PDF Download</a>
+                        <a href="/pyq/315314-water-resource-engineering.html" class="sm-link"><span class="dot"></span>315314 Water Resource Engineering (WRE) Question Paper PDF Download</a>
+                        <a href="/pyq/315316-energy-conservation-and-green-building.html" class="sm-link"><span class="dot"></span>315316 Energy Conservation and Green Building (ECG) Question Paper PDF Download</a>
+                        <a href="/pyq/315317-precast-and-prestressed-concrete-structures.html" class="sm-link"><span class="dot"></span>315317 Precast and Prestressed Concrete Structures (PCS) Question Paper PDF Download</a>
+                        <a href="/pyq/315318-road-traffic-engineering.html" class="sm-link"><span class="dot"></span>315318 Road Traffic Engineering (RTE) Question Paper PDF Download</a>
+                        <a href="/pyq/315319-operating-system.html" class="sm-link"><span class="dot"></span>315319 Operating System (OSY) Question Paper PDF Download</a>
+                        <a href="/pyq/315321-advance-computer-network.html" class="sm-link"><span class="dot"></span>315321 Advance Computer Network (ACN) Question Paper PDF Download</a>
+                        <a href="/pyq/315323-software-engineering.html" class="sm-link"><span class="dot"></span>315323 Software Engineering (STE) Question Paper PDF Download</a>
+                        <a href="/pyq/315324-advance-database-management.html" class="sm-link"><span class="dot"></span>315324 Advance Database Management (ADM) Question Paper PDF Download</a>
+                        <a href="/pyq/315325-cloud-computing.html" class="sm-link"><span class="dot"></span>315325 Cloud Computing (CLC) Question Paper PDF Download</a>
+                        <a href="/pyq/315326-data-analytics.html" class="sm-link"><span class="dot"></span>315326 Data Analytics (DAN) Question Paper PDF Download</a>
+                        <a href="/pyq/315327-cloud-computing-for-data-science.html" class="sm-link"><span class="dot"></span>315327 Cloud Computing for Data Science (CDS) Question Paper PDF Download</a>
+                        <a href="/pyq/315329-natural-language-processing.html" class="sm-link"><span class="dot"></span>315329 Natural Language Processing (NLP) Question Paper PDF Download</a>
+                        <a href="/pyq/315330-ai-and-ml-algorithm.html" class="sm-link"><span class="dot"></span>315330 AI and ML Algorithm (AML) Question Paper PDF Download</a>
+                        <a href="/pyq/315332-software-engineering-and-testing.html" class="sm-link"><span class="dot"></span>315332 Software Engineering and Testing (SET) Question Paper PDF Download</a>
+                        <a href="/pyq/315333-ac-machines-performance.html" class="sm-link"><span class="dot"></span>315333 AC Machines Performance (ACM) Question Paper PDF Download</a>
+                        <a href="/pyq/315334-switchgear-and-protection.html" class="sm-link"><span class="dot"></span>315334 Switchgear and Protection (SAP) Question Paper PDF Download</a>
+                        <a href="/pyq/315335-electric-vehicle-technology.html" class="sm-link"><span class="dot"></span>315335 Electric Vehicle Technology (EVT) Question Paper PDF Download</a>
+                        <a href="/pyq/315336-power-system-operation-and-control.html" class="sm-link"><span class="dot"></span>315336 Power System Operation and Control (PSO) Question Paper PDF Download</a>
+                        <a href="/pyq/315337-renewable-energy-technology.html" class="sm-link"><span class="dot"></span>315337 Renewable Energy Technology (RET) Question Paper PDF Download</a>
+                        <a href="/pyq/315338-embedded-system.html" class="sm-link"><span class="dot"></span>315338 Embedded System (EMB) Question Paper PDF Download</a>
+                        <a href="/pyq/315339-mobile-and-wireless-communication.html" class="sm-link"><span class="dot"></span>315339 Mobile and Wireless Communication (MWC) Question Paper PDF Download</a>
+                        <a href="/pyq/315340-advance-power-electronics.html" class="sm-link"><span class="dot"></span>315340 Advance Power Electronics (APE) Question Paper PDF Download</a>
+                        <a href="/pyq/315341-iot-applications.html" class="sm-link"><span class="dot"></span>315341 IOT Applications (IOT) Question Paper PDF Download</a>
+                        <a href="/pyq/315342-microwave-engineering-and-radar-system.html" class="sm-link"><span class="dot"></span>315342 Microwave Engineering and Radar System (MER) Question Paper PDF Download</a>
+                        <a href="/pyq/315367-product-design-and-development.html" class="sm-link"><span class="dot"></span>315367 Product Design and Development (PDD) Question Paper PDF Download</a>
+                        <a href="/pyq/315371-power-engineering.html" class="sm-link"><span class="dot"></span>315371 Power Engineering (PEN) Question Paper PDF Download</a>
+                        <a href="/pyq/315372-automobile-engineering.html" class="sm-link"><span class="dot"></span>315372 Automobile Engineering (AEN) Question Paper PDF Download</a>
+                        <a href="/pyq/315373-heating-ventilation-air-conditioning.html" class="sm-link"><span class="dot"></span>315373 Heating Ventilation Air Conditioning (HVC) Question Paper PDF Download</a>
+                        <a href="/pyq/315374-power-plant-engineering.html" class="sm-link"><span class="dot"></span>315374 Power Plant Engineering (PPE) Question Paper PDF Download</a>
+                        <a href="/pyq/316307-contracts-and-billing.html" class="sm-link"><span class="dot"></span>316307 Contracts and Billing (CAB) Question Paper PDF Download</a>
+                        <a href="/pyq/316308-design-of-rcc-and-steel-structures.html" class="sm-link"><span class="dot"></span>316308 Design of RCC and Steel Structures (DRS) Question Paper PDF Download</a>
+                        <a href="/pyq/316309-maintenance-and-repairs-of-structures.html" class="sm-link"><span class="dot"></span>316309 Maintenance and Repairs of Structures (MRS) Question Paper PDF Download</a>
+                        <a href="/pyq/316310-building-services.html" class="sm-link"><span class="dot"></span>316310 Building Services (BSI) Question Paper PDF Download</a>
+                        <a href="/pyq/316312-solid-waste-management.html" class="sm-link"><span class="dot"></span>316312 Solid Waste Management (SWM) Question Paper PDF Download</a>
+                        <a href="/pyq/316314-software-testing.html" class="sm-link"><span class="dot"></span>316314 Software Testing (STG) Question Paper PDF Download</a>
+                        <a href="/pyq/316315-digital-forensic-and-hacking-techniques.html" class="sm-link"><span class="dot"></span>316315 Digital Forensic and Hacking Techniques (DFH) Question Paper PDF Download</a>
+                        <a href="/pyq/316316-machine-learning.html" class="sm-link"><span class="dot"></span>316316 Machine Learning (MLT) Question Paper PDF Download</a>
+                        <a href="/pyq/316317-network-and-information-security.html" class="sm-link"><span class="dot"></span>316317 Network and Information Security (NIS) Question Paper PDF Download</a>
+                        <a href="/pyq/316318-big-data-analytics.html" class="sm-link"><span class="dot"></span>316318 Big Data Analytics (BDA) Question Paper PDF Download</a>
+                        <a href="/pyq/316319-principles-of-image-processing.html" class="sm-link"><span class="dot"></span>316319 Principles of Image Processing (PIP) Question Paper PDF Download</a>
+                        <a href="/pyq/316320-advanced-algorithm-in-ai-and-ml.html" class="sm-link"><span class="dot"></span>316320 Advanced Algorithm in AI and ML (AAM) Question Paper PDF Download</a>
+                        <a href="/pyq/316321-data-warehousing-with-mining-techniques.html" class="sm-link"><span class="dot"></span>316321 Data Warehousing with Mining Techniques (DWM) Question Paper PDF Download</a>
+                        <a href="/pyq/316323-reinforcement-learning.html" class="sm-link"><span class="dot"></span>316323 Reinforcement Learning (RLE) Question Paper PDF Download</a>
+                        <a href="/pyq/316325-wireless-and-mobile-network.html" class="sm-link"><span class="dot"></span>316325 Wireless and Mobile Network (WMN) Question Paper PDF Download</a>
+                        <a href="/pyq/316327-energy-conservation-and-audit.html" class="sm-link"><span class="dot"></span>316327 Energy Conservation and Audit (ECA) Question Paper PDF Download</a>
+                        <a href="/pyq/316328-maintenance-of-electrical-equipments.html" class="sm-link"><span class="dot"></span>316328 Maintenance of Electrical Equipments (MEE) Question Paper PDF Download</a>
+                        <a href="/pyq/316329-industrial-automation.html" class="sm-link"><span class="dot"></span>316329 Industrial Automation (INA) Question Paper PDF Download</a>
+                        <a href="/pyq/316330-industrial-drives-and-control.html" class="sm-link"><span class="dot"></span>316330 Industrial Drives and Control (IDC) Question Paper PDF Download</a>
+                        <a href="/pyq/316331-power-system-analysis.html" class="sm-link"><span class="dot"></span>316331 Power System Analysis (PSA) Question Paper PDF Download</a>
+                        <a href="/pyq/316332-optical-network-and-satellite-communication.html" class="sm-link"><span class="dot"></span>316332 Optical Network and Satellite Communication (ONS) Question Paper PDF Download</a>
+                        <a href="/pyq/316334-automation-and-plc.html" class="sm-link"><span class="dot"></span>316334 Automation and PLC (AMP) Question Paper PDF Download</a>
+                        <a href="/pyq/316335-drone-technology.html" class="sm-link"><span class="dot"></span>316335 Drone Technology (DNT) Question Paper PDF Download</a>
+                        <a href="/pyq/316338-computer-network-and-data-communication.html" class="sm-link"><span class="dot"></span>316338 Computer Network and Data Communication (CND) Question Paper PDF Download</a>
+                        <a href="/pyq/316340-vlsi-applications.html" class="sm-link"><span class="dot"></span>316340 VLSI Applications (VLS) Question Paper PDF Download</a>
+                        <a href="/pyq/316357-design-of-machine-elements.html" class="sm-link"><span class="dot"></span>316357 Design of Machine Elements (DME) Question Paper PDF Download</a>
+                        <a href="/pyq/316359-computer-integrated-manufacturing-systems.html" class="sm-link"><span class="dot"></span>316359 Computer Integrated Manufacturing Systems (CIM) Question Paper PDF Download</a>
+                        <a href="/pyq/316362-industrial-engineering-and-quality-control.html" class="sm-link"><span class="dot"></span>316362 Industrial Engineering and Quality Control (IEQ) Question Paper PDF Download</a>
+                        <a href="/pyq/316363-industrial-hydraulics-and-pneumatics.html" class="sm-link"><span class="dot"></span>316363 Industrial Hydraulics and Pneumatics (IHP) Question Paper PDF Download</a>
+                        <a href="/pyq/316364-alternative-energy-sources-and-energy-management.html" class="sm-link"><span class="dot"></span>316364 Alternative Energy Sources and Energy Management (AES) Question Paper PDF Download</a>
+                        <a href="/pyq/316365-cold-chain-management.html" class="sm-link"><span class="dot"></span>316365 Cold Chain Management (CCM) Question Paper PDF Download</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ════════ 5. MODEL ANSWER PAPERS ════════ -->
+        <div class="sm-section">
+            <div class="sm-section-header open" onclick="toggleSection(this)">
+                <div class="sm-section-title">
+                    <div class="sm-icon" style="background:#ecfdf5;">✅</div>
+                    <h2>MSBTE Model Answer Papers</h2>
+                </div>
+                <div style="display:flex;align-items:center;gap:0.75rem">
+                    <span class="sm-badge">15 papers</span>
+                    <svg class="sm-chevron" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path d="m6 9 6 6 6-6"/></svg>
+                </div>
+            </div>
+            <div class="sm-body open">
+                <div class="sm-sub">
+                    <div class="sm-sub-title">📌 Main Portal</div>
+                    <div class="link-grid cols-2">
+                        <a href="/model-answer/" class="sm-link hot new"><span class="dot"></span>🏆 All Official Model Answer Papers Hub</a>
+                    </div>
+                </div>
+
+                <div class="sm-sub">
+                    <div class="sm-sub-title">📋 Subject Model Answers</div>
+                    <div class="link-grid">
+                        <a href="/model-answer/313301-data-structure-using-c.html" class="sm-link hot"><span class="dot"></span>Data Structures Using C (313301) Model Answer Papers</a>
+                        <a href="/model-answer/313302-database-management-system.html" class="sm-link hot"><span class="dot"></span>Database Management System (313302) Model Answer Papers</a>
+                        <a href="/model-answer/313303-digital-techniques.html" class="sm-link hot"><span class="dot"></span>Digital Techniques (313303) Model Answer Papers</a>
+                        <a href="/model-answer/313304-object-oriented-programming-using-c.html" class="sm-link hot"><span class="dot"></span>Object Oriented Programming (313304) Model Answer Papers</a>
+                        <a href="/model-answer/315319-operating-system.html" class="sm-link hot"><span class="dot"></span>Operating System (315319) Model Answer Papers</a>
+                        <a href="/model-answer/315321-advance-computer-network.html" class="sm-link hot"><span class="dot"></span>Advanced Computer Network (315321) Model Answer Papers</a>
+                        <a href="/model-answer/315323-software-engineering.html" class="sm-link hot"><span class="dot"></span>Software Engineering (315323) Model Answer Papers</a>
+                        <a href="/model-answer/315324-advance-database-management.html" class="sm-link hot"><span class="dot"></span>Advanced Database Management (315324) Model Answer Papers</a>
+                        <a href="/model-answer/315325-cloud-computing.html" class="sm-link hot"><span class="dot"></span>Cloud Computing (315325) Model Answer Papers</a>
+                        <a href="/model-answer/315326-data-analytics.html" class="sm-link hot"><span class="dot"></span>Data Analytics (315326) Model Answer Papers</a>
+                        <a href="/model-answer/315327-cloud-computing-for-data-science.html" class="sm-link hot"><span class="dot"></span>Cloud Computing for Data Science (315327) Model Answer Papers</a>
+                        <a href="/model-answer/315329-natural-language-processing.html" class="sm-link hot"><span class="dot"></span>Natural Language Processing (315329) Model Answer Papers</a>
+                        <a href="/model-answer/315330-ai-and-ml-algorithm.html" class="sm-link hot"><span class="dot"></span>AI & ML Algorithm (315330) Model Answer Papers</a>
+                        <a href="/model-answer/315332-software-engineering-and-testing.html" class="sm-link hot"><span class="dot"></span>Software Engineering and Testing (315332) Model Answer Papers</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ════════ 6. BRANCHES & SEMESTERS ════════ -->
+        <div class="sm-section">
+            <div class="sm-section-header open" onclick="toggleSection(this)">
+                <div class="sm-section-title">
+                    <div class="sm-icon" style="background:#e0e7ff;">🎓</div>
+                    <h2>Branches — Semester-wise Pages &amp; Syllabus</h2>
+                </div>
+                <div style="display:flex;align-items:center;gap:0.75rem">
+                    <span class="sm-badge">244 pages</span>
                     <svg class="sm-chevron" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path d="m6 9 6 6 6-6"/></svg>
                 </div>
             </div>
@@ -752,17 +814,18 @@
                 <div class="branch-tabs" id="branchTabs">
                     <button class="branch-tab active" onclick="switchBranch('computer', this)">💻 Computer</button>
                     <button class="branch-tab" onclick="switchBranch('it', this)">🖥️ IT</button>
+                    <button class="branch-tab" onclick="switchBranch('aiml', this)">🤖 AI-ML</button>
                     <button class="branch-tab" onclick="switchBranch('civil', this)">🏗️ Civil</button>
                     <button class="branch-tab" onclick="switchBranch('mechanical', this)">⚙️ Mechanical</button>
                     <button class="branch-tab" onclick="switchBranch('electrical', this)">⚡ Electrical</button>
                     <button class="branch-tab" onclick="switchBranch('etc', this)">📡 ETC</button>
-                    <button class="branch-tab" onclick="switchBranch('aiml', this)">🤖 AI-ML</button>
+                    <button class="branch-tab" onclick="switchBranch('all_subjects', this)">📚 All Branch Subjects</button>
                 </div>
 
                 <!-- Computer -->
                 <div class="branch-panel active" id="branch-computer">
                     <div class="sm-sub">
-                        <div class="sm-sub-title">K Scheme — Semesters</div>
+                        <div class="sm-sub-title">Computer Engineering (CO) — K-Scheme Semesters</div>
                         <div class="link-grid cols-3">
                             <a href="/branches/Computer.html" class="sm-link hot"><span class="dot"></span>Computer Branch Hub</a>
                             <a href="/branches/Computer-Semester-1.html" class="sm-link"><span class="dot"></span>Semester 1</a>
@@ -774,7 +837,7 @@
                         </div>
                     </div>
                     <div class="sm-sub">
-                        <div class="sm-sub-title">I Scheme — Semesters</div>
+                        <div class="sm-sub-title">Computer Engineering — I-Scheme Semesters</div>
                         <div class="link-grid cols-3">
                             <a href="/branches/Computer-I-Scheme.html" class="sm-link hot"><span class="dot"></span>Computer I-Scheme Hub</a>
                             <a href="/branches/Computer-I-Scheme-Semester-1.html" class="sm-link"><span class="dot"></span>I-Scheme Sem 1</a>
@@ -784,43 +847,12 @@
                             <a href="/branches/Computer-I-Scheme-Semester-5.html" class="sm-link"><span class="dot"></span>I-Scheme Sem 5</a>
                         </div>
                     </div>
-                    <div class="sm-sub">
-                        <div class="sm-sub-title">Key Subjects</div>
-                        <div class="link-grid">
-                            <a href="/branches/314317-java-programming.html" class="sm-link"><span class="dot"></span>Java Programming</a>
-                            <a href="/branches/313303-digital-techniques.html" class="sm-link"><span class="dot"></span>Digital Techniques</a>
-                            <a href="/branches/314004-python-programming.html" class="sm-link"><span class="dot"></span>Python Programming</a>
-                            <a href="/branches/314005-ui-ux-design.html" class="sm-link"><span class="dot"></span>UI/UX Design</a>
-                            <a href="/branches/315319-operating-system.html" class="sm-link"><span class="dot"></span>Operating System</a>
-                            <a href="/branches/315323-software-engineering.html" class="sm-link"><span class="dot"></span>Software Engineering</a>
-                            <a href="/branches/315321-advanced-computer-network.html" class="sm-link"><span class="dot"></span>Advanced CN</a>
-                            <a href="/branches/315325-cloud-computing.html" class="sm-link"><span class="dot"></span>Cloud Computing</a>
-                            <a href="/branches/315326-data-analytics.html" class="sm-link"><span class="dot"></span>Data Analytics</a>
-                            <a href="/branches/314318-data-communication-and-computer-network.html" class="sm-link"><span class="dot"></span>DCCN</a>
-                            <a href="/branches/314321-microprocessor-programming.html" class="sm-link"><span class="dot"></span>Microprocessor Programming</a>
-                            <a href="/branches/316313-emerging-trends-in-computer-engineering-and-information-technology.html" class="sm-link"><span class="dot"></span>Emerging Trends CS/IT</a>
-                            <a href="/branches/316314-software-testing.html" class="sm-link"><span class="dot"></span>Software Testing</a>
-                            <a href="/branches/316006-mobile-application-development.html" class="sm-link"><span class="dot"></span>Mobile App Dev</a>
-                            <a href="/branches/316005-client-side-scripting.html" class="sm-link"><span class="dot"></span>Client-Side Scripting</a>
-                            <a href="/branches/316007-network-management-and-administration.html" class="sm-link"><span class="dot"></span>Network Mgmt</a>
-                            <a href="/branches/elective-316315-digital-forensic-and-hacking-techniques.html" class="sm-link"><span class="dot"></span>Digital Forensics (Elective)</a>
-                            <a href="/branches/elective-316317-network-and-information-security.html" class="sm-link"><span class="dot"></span>Network Security (Elective)</a>
-                            <a href="/branches/elective-315321-advance-computer-network.html" class="sm-link"><span class="dot"></span>Advance CN (Elective)</a>
-                            <a href="/branches/elective-315324-advance-database-management.html" class="sm-link"><span class="dot"></span>Advance DBMS (Elective)</a>
-                            <a href="/branches/elective-315325-cloud-computing.html" class="sm-link"><span class="dot"></span>Cloud Computing (Elective)</a>
-                            <a href="/branches/elective-315326-data-analytics.html" class="sm-link"><span class="dot"></span>Data Analytics (Elective)</a>
-                            <a href="/branches/314301-environmental-education-and-sustainability.html" class="sm-link"><span class="dot"></span>Environmental Education</a>
-                            <a href="/branches/315002-entrepreneurship-development-and-startups.html" class="sm-link"><span class="dot"></span>Entrepreneurship</a>
-                            <a href="/branches/315003-seminar-and-project-initiation-course.html" class="sm-link"><span class="dot"></span>Seminar &amp; Project Initiation</a>
-                            <a href="/branches/315004-internship-12-weeks.html" class="sm-link"><span class="dot"></span>Internship (12 Weeks)</a>
-                        </div>
-                    </div>
                 </div>
 
                 <!-- IT -->
                 <div class="branch-panel" id="branch-it">
                     <div class="sm-sub">
-                        <div class="sm-sub-title">K Scheme — Semesters</div>
+                        <div class="sm-sub-title">Information Technology (IF) — K-Scheme Semesters</div>
                         <div class="link-grid cols-3">
                             <a href="/branches/Information-Technology.html" class="sm-link hot"><span class="dot"></span>IT Branch Hub</a>
                             <a href="/branches/Information-Technology-Semester-1.html" class="sm-link"><span class="dot"></span>Semester 1</a>
@@ -831,149 +863,12 @@
                             <a href="/branches/Information-Technology-Semester-6.html" class="sm-link"><span class="dot"></span>Semester 6</a>
                         </div>
                     </div>
-                    <div class="sm-sub">
-                        <div class="sm-sub-title">IT Electives</div>
-                        <div class="link-grid">
-                            <a href="/branches/elective-316316-machine-learning.html" class="sm-link"><span class="dot"></span>Machine Learning</a>
-                            <a href="/branches/elective-316320-advanced-algorithm-in-ai-ml.html" class="sm-link"><span class="dot"></span>Advanced AI-ML Algorithms</a>
-                            <a href="/branches/elective-316321-data-warehousing-with-mining-techniques.html" class="sm-link"><span class="dot"></span>Data Warehousing &amp; Mining</a>
-                            <a href="/branches/elective-316323-reinforcement-learning.html" class="sm-link"><span class="dot"></span>Reinforcement Learning</a>
-                            <a href="/branches/316318-big-data-analytics.html" class="sm-link"><span class="dot"></span>Big Data Analytics</a>
-                            <a href="/branches/316319-principles-of-image-processing.html" class="sm-link"><span class="dot"></span>Image Processing</a>
-                            <a href="/branches/elective-315327-cloud-computing-for-data-science.html" class="sm-link"><span class="dot"></span>Cloud for Data Science</a>
-                            <a href="/branches/elective-315329-natural-language-processing.html" class="sm-link"><span class="dot"></span>Natural Language Processing</a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Civil -->
-                <div class="branch-panel" id="branch-civil">
-                    <div class="sm-sub">
-                        <div class="sm-sub-title">K Scheme — Semesters</div>
-                        <div class="link-grid cols-3">
-                            <a href="/branches/Civil.html" class="sm-link hot"><span class="dot"></span>Civil Branch Hub</a>
-                            <a href="/branches/Civil-Semester-1.html" class="sm-link"><span class="dot"></span>Semester 1</a>
-                            <a href="/branches/Civil-Semester-2.html" class="sm-link"><span class="dot"></span>Semester 2</a>
-                            <a href="/branches/Civil-Semester-3.html" class="sm-link"><span class="dot"></span>Semester 3</a>
-                            <a href="/branches/Civil-Semester-4.html" class="sm-link"><span class="dot"></span>Semester 4</a>
-                            <a href="/branches/Civil-Semester-5.html" class="sm-link"><span class="dot"></span>Semester 5</a>
-                            <a href="/branches/Civil-Semester-6.html" class="sm-link"><span class="dot"></span>Semester 6</a>
-                        </div>
-                    </div>
-                    <div class="sm-sub">
-                        <div class="sm-sub-title">Civil Electives</div>
-                        <div class="link-grid">
-                            <a href="/branches/elective-315316-energy-conservation-and-green-building.html" class="sm-link"><span class="dot"></span>Energy Conservation &amp; Green Building</a>
-                            <a href="/branches/elective-315317-precast-and-prestressed-concrete-structures.html" class="sm-link"><span class="dot"></span>Precast &amp; Prestressed Concrete</a>
-                            <a href="/branches/elective-315318-road-traffic-engineering.html" class="sm-link"><span class="dot"></span>Road Traffic Engineering</a>
-                            <a href="/branches/elective-316310-building-services.html" class="sm-link"><span class="dot"></span>Building Services</a>
-                            <a href="/branches/elective-316311-earthquake-resistant-building.html" class="sm-link"><span class="dot"></span>Earthquake Resistant Building</a>
-                            <a href="/branches/elective-316312-solid-waste-management.html" class="sm-link"><span class="dot"></span>Solid Waste Management</a>
-                            <a href="/branches/316307-contracts-and-billing.html" class="sm-link"><span class="dot"></span>Contracts &amp; Billing</a>
-                            <a href="/branches/316308-design-of-rcc-and-steel-structures.html" class="sm-link"><span class="dot"></span>Design of RCC &amp; Steel</a>
-                            <a href="/branches/316309-maintenance-and-repairs-of-structures.html" class="sm-link"><span class="dot"></span>Maintenance &amp; Repairs</a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Mechanical -->
-                <div class="branch-panel" id="branch-mechanical">
-                    <div class="sm-sub">
-                        <div class="sm-sub-title">K Scheme — Semesters</div>
-                        <div class="link-grid cols-3">
-                            <a href="/branches/Mechanical-Engineering.html" class="sm-link hot"><span class="dot"></span>Mechanical Branch Hub</a>
-                            <a href="/branches/Mechanical-Engineering-Semester-1.html" class="sm-link"><span class="dot"></span>Semester 1</a>
-                            <a href="/branches/Mechanical-Engineering-Semester-2.html" class="sm-link"><span class="dot"></span>Semester 2</a>
-                            <a href="/branches/Mechanical-Engineering-Semester-3.html" class="sm-link"><span class="dot"></span>Semester 3</a>
-                            <a href="/branches/Mechanical-Engineering-Semester-4.html" class="sm-link"><span class="dot"></span>Semester 4</a>
-                            <a href="/branches/Mechanical-Engineering-Semester-5.html" class="sm-link"><span class="dot"></span>Semester 5</a>
-                            <a href="/branches/Mechanical-Engineering-Semester-6.html" class="sm-link"><span class="dot"></span>Semester 6</a>
-                        </div>
-                    </div>
-                    <div class="sm-sub">
-                        <div class="sm-sub-title">Mechanical Electives</div>
-                        <div class="link-grid">
-                            <a href="/branches/elective-315367-product-design-and-development" class="sm-link"><span class="dot"></span>Product Design &amp; Development</a>
-                            <a href="/branches/elective-315373-heating-ventilation-air-conditioning.html" class="sm-link"><span class="dot"></span>HVAC</a>
-                            <a href="/branches/elective-315374-power-plant-engineering.html" class="sm-link"><span class="dot"></span>Power Plant Engineering</a>
-                            <a href="/branches/316357-design-of-machine-elements.html" class="sm-link"><span class="dot"></span>Design of Machine Elements</a>
-                            <a href="/branches/316362-industrial-engineering-and-quality-control.html" class="sm-link"><span class="dot"></span>Industrial Engg &amp; QC</a>
-                            <a href="/branches/316363-industrial-hydraulics-and-pneumatics.html" class="sm-link"><span class="dot"></span>Industrial Hydraulics &amp; Pneumatics</a>
-                            <a href="/branches/elective-316359-computer-integrated-manufacturing-systems.html" class="sm-link"><span class="dot"></span>CIM Systems</a>
-                            <a href="/branches/elective-316364-alternative-energy-sources-and-energy-management.html" class="sm-link"><span class="dot"></span>Alternative Energy Sources</a>
-                            <a href="/branches/elective-316365-cold-chain-management.html" class="sm-link"><span class="dot"></span>Cold Chain Management</a>
-                            <a href="/branches/315363-emerging-trends-in-mechanical-engineering.html" class="sm-link"><span class="dot"></span>Emerging Trends Mech</a>
-                            <a href="/branches/315371-power-engineering.html" class="sm-link"><span class="dot"></span>Power Engineering</a>
-                            <a href="/branches/315372-automobile-engineering.html" class="sm-link"><span class="dot"></span>Automobile Engineering</a>
-                            <a href="/branches/316013-3d-modelling-and-additive-manufacturing.html" class="sm-link"><span class="dot"></span>3D Modelling &amp; Additive Mfg</a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Electrical -->
-                <div class="branch-panel" id="branch-electrical">
-                    <div class="sm-sub">
-                        <div class="sm-sub-title">K Scheme — Semesters</div>
-                        <div class="link-grid cols-3">
-                            <a href="/branches/Electrical-Engineering.html" class="sm-link hot"><span class="dot"></span>Electrical Branch Hub</a>
-                            <a href="/branches/Electrical-Engineering-Semester-1.html" class="sm-link"><span class="dot"></span>Semester 1</a>
-                            <a href="/branches/Electrical-Engineering-Semester-2.html" class="sm-link"><span class="dot"></span>Semester 2</a>
-                            <a href="/branches/Electrical-Engineering-Semester-3.html" class="sm-link"><span class="dot"></span>Semester 3</a>
-                            <a href="/branches/Electrical-Engineering-Semester-4.html" class="sm-link"><span class="dot"></span>Semester 4</a>
-                            <a href="/branches/Electrical-Engineering-Semester-5.html" class="sm-link"><span class="dot"></span>Semester 5</a>
-                            <a href="/branches/Electrical-Engineering-Semester-6.html" class="sm-link"><span class="dot"></span>Semester 6</a>
-                        </div>
-                    </div>
-                    <div class="sm-sub">
-                        <div class="sm-sub-title">Electrical Electives</div>
-                        <div class="link-grid">
-                            <a href="/branches/elective-315335-electric-vehicle-technology.html" class="sm-link"><span class="dot"></span>Electric Vehicle Technology</a>
-                            <a href="/branches/elective-315336-power-system-operation-and-control.html" class="sm-link"><span class="dot"></span>Power System Operation &amp; Control</a>
-                            <a href="/branches/elective-315337-renewable-energy-technology.html" class="sm-link"><span class="dot"></span>Renewable Energy Technology</a>
-                            <a href="/branches/elective-315340-advance-power-electronics.html" class="sm-link"><span class="dot"></span>Advance Power Electronics</a>
-                            <a href="/branches/elective-315341-iot-applications.html" class="sm-link"><span class="dot"></span>IoT Applications</a>
-                            <a href="/branches/316326-emerging-trends-in-electrical-engineering.html" class="sm-link"><span class="dot"></span>Emerging Trends Electrical</a>
-                            <a href="/branches/316327-energy-conservation-and-audit.html" class="sm-link"><span class="dot"></span>Energy Conservation &amp; Audit</a>
-                            <a href="/branches/316328-maintenance-of-electrical-equipments.html" class="sm-link"><span class="dot"></span>Maintenance of Electrical Equipment</a>
-                            <a href="/branches/elective-316329-industrial-automation.html" class="sm-link"><span class="dot"></span>Industrial Automation</a>
-                            <a href="/branches/elective-316330-industrial-drives-and-control.html" class="sm-link"><span class="dot"></span>Industrial Drives &amp; Control</a>
-                            <a href="/branches/elective-316331-power-system-analysis.html" class="sm-link"><span class="dot"></span>Power System Analysis</a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- ETC -->
-                <div class="branch-panel" id="branch-etc">
-                    <div class="sm-sub">
-                        <div class="sm-sub-title">K Scheme — Semesters</div>
-                        <div class="link-grid cols-3">
-                            <a href="/branches/ETC-Engineering.html" class="sm-link hot"><span class="dot"></span>ETC Branch Hub</a>
-                            <a href="/branches/ETC-Engineering-Semester-1.html" class="sm-link"><span class="dot"></span>Semester 1</a>
-                            <a href="/branches/ETC-Engineering-Semester-2.html" class="sm-link"><span class="dot"></span>Semester 2</a>
-                            <a href="/branches/ETC-Engineering-Semester-3.html" class="sm-link"><span class="dot"></span>Semester 3</a>
-                            <a href="/branches/ETC-Engineering-Semester-4.html" class="sm-link"><span class="dot"></span>Semester 4</a>
-                            <a href="/branches/ETC-Engineering-Semester-5.html" class="sm-link"><span class="dot"></span>Semester 5</a>
-                            <a href="/branches/ETC-Engineering-Semester-6.html" class="sm-link"><span class="dot"></span>Semester 6</a>
-                        </div>
-                    </div>
-                    <div class="sm-sub">
-                        <div class="sm-sub-title">ETC Electives</div>
-                        <div class="link-grid">
-                            <a href="/branches/elective-315342-microwave-engineering-radar-system.html" class="sm-link"><span class="dot"></span>Microwave Engg &amp; Radar</a>
-                            <a href="/branches/316332-optical-network-and-satellite-communication.html" class="sm-link"><span class="dot"></span>Optical Network &amp; Satellite Comm</a>
-                            <a href="/branches/316337-emerging-trends-in-electronics.html" class="sm-link"><span class="dot"></span>Emerging Trends Electronics</a>
-                            <a href="/branches/316338-computer-network-data-communication.html" class="sm-link"><span class="dot"></span>CN &amp; Data Communication</a>
-                            <a href="/branches/elective-316335-drone-technology.html" class="sm-link"><span class="dot"></span>Drone Technology</a>
-                            <a href="/branches/elective-316340-vlsi-applications.html" class="sm-link"><span class="dot"></span>VLSI Applications</a>
-                            <a href="/branches/elective-316334-automation-plc.html" class="sm-link"><span class="dot"></span>Automation &amp; PLC</a>
-                        </div>
-                    </div>
                 </div>
 
                 <!-- AI-ML -->
                 <div class="branch-panel" id="branch-aiml">
                     <div class="sm-sub">
-                        <div class="sm-sub-title">K Scheme — Semesters</div>
+                        <div class="sm-sub-title">Artificial Intelligence &amp; Machine Learning (AIML)</div>
                         <div class="link-grid cols-3">
                             <a href="/branches/AI-ML.html" class="sm-link hot"><span class="dot"></span>AI-ML Branch Hub</a>
                             <a href="/branches/AI-ML-Semester-1.html" class="sm-link"><span class="dot"></span>Semester 1</a>
@@ -985,43 +880,377 @@
                         </div>
                     </div>
                 </div>
+
+                <!-- Civil -->
+                <div class="branch-panel" id="branch-civil">
+                    <div class="sm-sub">
+                        <div class="sm-sub-title">Civil Engineering (CE) — K-Scheme Semesters</div>
+                        <div class="link-grid cols-3">
+                            <a href="/branches/Civil.html" class="sm-link hot"><span class="dot"></span>Civil Branch Hub</a>
+                            <a href="/branches/Civil-Semester-1.html" class="sm-link"><span class="dot"></span>Semester 1</a>
+                            <a href="/branches/Civil-Semester-2.html" class="sm-link"><span class="dot"></span>Semester 2</a>
+                            <a href="/branches/Civil-Semester-3.html" class="sm-link"><span class="dot"></span>Semester 3</a>
+                            <a href="/branches/Civil-Semester-4.html" class="sm-link"><span class="dot"></span>Semester 4</a>
+                            <a href="/branches/Civil-Semester-5.html" class="sm-link"><span class="dot"></span>Semester 5</a>
+                            <a href="/branches/Civil-Semester-6.html" class="sm-link"><span class="dot"></span>Semester 6</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Mechanical -->
+                <div class="branch-panel" id="branch-mechanical">
+                    <div class="sm-sub">
+                        <div class="sm-sub-title">Mechanical Engineering (ME) — K-Scheme Semesters</div>
+                        <div class="link-grid cols-3">
+                            <a href="/branches/Mechanical-Engineering.html" class="sm-link hot"><span class="dot"></span>Mechanical Branch Hub</a>
+                            <a href="/branches/Mechanical-Engineering-Semester-1.html" class="sm-link"><span class="dot"></span>Semester 1</a>
+                            <a href="/branches/Mechanical-Engineering-Semester-2.html" class="sm-link"><span class="dot"></span>Semester 2</a>
+                            <a href="/branches/Mechanical-Engineering-Semester-3.html" class="sm-link"><span class="dot"></span>Semester 3</a>
+                            <a href="/branches/Mechanical-Engineering-Semester-4.html" class="sm-link"><span class="dot"></span>Semester 4</a>
+                            <a href="/branches/Mechanical-Engineering-Semester-5.html" class="sm-link"><span class="dot"></span>Semester 5</a>
+                            <a href="/branches/Mechanical-Engineering-Semester-6.html" class="sm-link"><span class="dot"></span>Semester 6</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Electrical -->
+                <div class="branch-panel" id="branch-electrical">
+                    <div class="sm-sub">
+                        <div class="sm-sub-title">Electrical Engineering (EE) — K-Scheme Semesters</div>
+                        <div class="link-grid cols-3">
+                            <a href="/branches/Electrical-Engineering.html" class="sm-link hot"><span class="dot"></span>Electrical Branch Hub</a>
+                            <a href="/branches/Electrical-Engineering-Semester-1.html" class="sm-link"><span class="dot"></span>Semester 1</a>
+                            <a href="/branches/Electrical-Engineering-Semester-2.html" class="sm-link"><span class="dot"></span>Semester 2</a>
+                            <a href="/branches/Electrical-Engineering-Semester-3.html" class="sm-link"><span class="dot"></span>Semester 3</a>
+                            <a href="/branches/Electrical-Engineering-Semester-4.html" class="sm-link"><span class="dot"></span>Semester 4</a>
+                            <a href="/branches/Electrical-Engineering-Semester-5.html" class="sm-link"><span class="dot"></span>Semester 5</a>
+                            <a href="/branches/Electrical-Engineering-Semester-6.html" class="sm-link"><span class="dot"></span>Semester 6</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ETC -->
+                <div class="branch-panel" id="branch-etc">
+                    <div class="sm-sub">
+                        <div class="sm-sub-title">Electronics &amp; Telecommunication (EJ/ETC)</div>
+                        <div class="link-grid cols-3">
+                            <a href="/branches/ETC-Engineering.html" class="sm-link hot"><span class="dot"></span>ETC Branch Hub</a>
+                            <a href="/branches/ETC-Engineering-Semester-1.html" class="sm-link"><span class="dot"></span>Semester 1</a>
+                            <a href="/branches/ETC-Engineering-Semester-2.html" class="sm-link"><span class="dot"></span>Semester 2</a>
+                            <a href="/branches/ETC-Engineering-Semester-3.html" class="sm-link"><span class="dot"></span>Semester 3</a>
+                            <a href="/branches/ETC-Engineering-Semester-4.html" class="sm-link"><span class="dot"></span>Semester 4</a>
+                            <a href="/branches/ETC-Engineering-Semester-5.html" class="sm-link"><span class="dot"></span>Semester 5</a>
+                            <a href="/branches/ETC-Engineering-Semester-6.html" class="sm-link"><span class="dot"></span>Semester 6</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- All Subjects -->
+                <div class="branch-panel" id="branch-all_subjects">
+                    <div class="sm-sub">
+                        <div class="sm-sub-title">All Branch Subject Syllabus Guides &amp; Electives</div>
+                        <div class="link-grid">
+                            <a href="/Branches/311001-fundamentals-of-ict.html" class="sm-link"><span class="dot"></span>311001 Fundamentals Of Ict  & Syllabus</a>
+                            <a href="/Branches/311002-engineering-workshop-practice.html" class="sm-link"><span class="dot"></span>311002 Engineering Workshop Practice  & Syllabus</a>
+                            <a href="/Branches/311003-yoga-and-meditation.html" class="sm-link"><span class="dot"></span>311003 Yoga And Meditation  & Syllabus</a>
+                            <a href="/Branches/311005-engineering-workshop-practice.html" class="sm-link"><span class="dot"></span>311005 Engineering Workshop Practice  & Syllabus</a>
+                            <a href="/Branches/311006-engineering-graphics.html" class="sm-link"><span class="dot"></span>311006 Engineering Graphics  & Syllabus</a>
+                            <a href="/Branches/311007-engineering-workshop-practice.html" class="sm-link"><span class="dot"></span>311007 Engineering Workshop Practice  & Syllabus</a>
+                            <a href="/Branches/311008-engineering-graphics.html" class="sm-link"><span class="dot"></span>311008 Engineering Graphics  & Syllabus</a>
+                            <a href="/Branches/311010-civil-engineering-workshop.html" class="sm-link"><span class="dot"></span>311010 Civil Engineering Workshop  & Syllabus</a>
+                            <a href="/Branches/311302-basic-mathematics.html" class="sm-link"><span class="dot"></span>311302 Basic Mathematics  & Syllabus</a>
+                            <a href="/Branches/311303-communication-skills-english.html" class="sm-link"><span class="dot"></span>311303 Communication Skills English  & Syllabus</a>
+                            <a href="/Branches/311305-basic-science.html" class="sm-link"><span class="dot"></span>311305 Basic Science  & Syllabus</a>
+                            <a href="/Branches/312001-linux-basics.html" class="sm-link"><span class="dot"></span>312001 Linux Basics  & Syllabus</a>
+                            <a href="/Branches/312002-professional-communication.html" class="sm-link"><span class="dot"></span>312002 Professional Communication  & Syllabus</a>
+                            <a href="/Branches/312002-professionalcommunication.html" class="sm-link"><span class="dot"></span>312002 Professionalcommunication  & Syllabus</a>
+                            <a href="/Branches/312003-social-and-life-skills.html" class="sm-link"><span class="dot"></span>312003 Social And Life Skills  & Syllabus</a>
+                            <a href="/Branches/312003-socialandlifeskills.html" class="sm-link"><span class="dot"></span>312003 Socialandlifeskills  & Syllabus</a>
+                            <a href="/Branches/312004-web-page-designing.html" class="sm-link"><span class="dot"></span>312004 Web Page Designing  & Syllabus</a>
+                            <a href="/Branches/312006-basic-mechanical-engineering.html" class="sm-link"><span class="dot"></span>312006 Basic Mechanical Engineering  & Syllabus</a>
+                            <a href="/Branches/312008-electronics-workshop-practice.html" class="sm-link"><span class="dot"></span>312008 Electronics Workshop Practice  & Syllabus</a>
+                            <a href="/Branches/312009-programming-in-c-language.html" class="sm-link"><span class="dot"></span>312009 Programming In C Language  & Syllabus</a>
+                            <a href="/Branches/312020-basic-electrical-and-electronics.html" class="sm-link"><span class="dot"></span>312020 Basic Electrical And Electronics</a>
+                            <a href="/Branches/312301-applied-mathematics.html" class="sm-link"><span class="dot"></span>312301 Applied Mathematics  & Syllabus</a>
+                            <a href="/Branches/312301-appliedmathematics.html" class="sm-link"><span class="dot"></span>312301 Appliedmathematics  & Syllabus</a>
+                            <a href="/Branches/312302-basic-electrical-and-electronics-engineering.html" class="sm-link"><span class="dot"></span>312302 Notes & Syllabus</a>
+                            <a href="/Branches/312303-programming-in-c.html" class="sm-link"><span class="dot"></span>312303 Programming In C  & Syllabus</a>
+                            <a href="/Branches/312308-applied-science.html" class="sm-link"><span class="dot"></span>312308 Applied Science  & Syllabus</a>
+                            <a href="/Branches/312308-appliedscience.html" class="sm-link"><span class="dot"></span>312308 Appliedscience  & Syllabus</a>
+                            <a href="/Branches/312309-elements-of-electronics.html" class="sm-link"><span class="dot"></span>312309 Elements Of Electronics  & Syllabus</a>
+                            <a href="/Branches/312310-fundamental-of-electrical-engineering.html" class="sm-link"><span class="dot"></span>312310 Fundamental Of Electrical Engineering</a>
+                            <a href="/Branches/312311-engineering-drawing.html" class="sm-link"><span class="dot"></span>312311 Engineering Drawing  & Syllabus</a>
+                            <a href="/Branches/312312-engineering-mechanics.html" class="sm-link"><span class="dot"></span>312312 Engineering Mechanics  & Syllabus</a>
+                            <a href="/Branches/312312-engineeringmechanics.html" class="sm-link"><span class="dot"></span>312312 Engineeringmechanics  & Syllabus</a>
+                            <a href="/Branches/312313-manufacturing-technology.html" class="sm-link"><span class="dot"></span>312313 Manufacturing Technology  & Syllabus</a>
+                            <a href="/Branches/312314-basic-electronics.html" class="sm-link"><span class="dot"></span>312314 Basic Electronics  & Syllabus</a>
+                            <a href="/Branches/312315-elements-of-electrical-engineering.html" class="sm-link"><span class="dot"></span>312315 Elements Of Electrical Engineering</a>
+                            <a href="/Branches/312316-electronic-materials-and-components.html" class="sm-link"><span class="dot"></span>312316 Electronic Materials And Components</a>
+                            <a href="/Branches/312338-buildingmaterialandconstruction.html" class="sm-link"><span class="dot"></span>312338 Buildingmaterialandconstruction</a>
+                            <a href="/Branches/312339-surveying.html" class="sm-link"><span class="dot"></span>312339 Surveying  & Syllabus</a>
+                            <a href="/Branches/313001-computer-graphics.html" class="sm-link"><span class="dot"></span>313001 Computer Graphics  & Syllabus</a>
+                            <a href="/Branches/313002-essence-of-indian-constitution.html" class="sm-link"><span class="dot"></span>313002 Essence Of Indian Constitution  & Syllabus</a>
+                            <a href="/Branches/313003-applied-multimedia-techniques.html" class="sm-link"><span class="dot"></span>313003 Applied Multimedia Techniques  & Syllabus</a>
+                            <a href="/Branches/313004-data-story-telling-and-visualization.html" class="sm-link"><span class="dot"></span>313004 Data Story Telling And Visualization</a>
+                            <a href="/Branches/313006-computer-aided-drafting.html" class="sm-link"><span class="dot"></span>313006 Computer Aided Drafting  & Syllabus</a>
+                            <a href="/Branches/313007-fundamentals-of-python-programming.html" class="sm-link"><span class="dot"></span>313007 Fundamentals Of Python Programming</a>
+                            <a href="/Branches/313009-building-planning-drawing-with-cad.html" class="sm-link"><span class="dot"></span>313009 Building Planning Drawing With Cad</a>
+                            <a href="/Branches/313010-construction-management.html" class="sm-link"><span class="dot"></span>313010 Construction Management  & Syllabus</a>
+                            <a href="/Branches/313011-basic-python-programming.html" class="sm-link"><span class="dot"></span>313011 Basic Python Programming  & Syllabus</a>
+                            <a href="/Branches/313012-electronic-measurements-instrumentation.html" class="sm-link"><span class="dot"></span>313012 Electronic Measurements Instrumentation</a>
+                            <a href="/Branches/313015-electrical-material-and-wiring-practice.html" class="sm-link"><span class="dot"></span>313015 Electrical Material And Wiring Practice</a>
+                            <a href="/Branches/313301-data-structure-using-c.html" class="sm-link"><span class="dot"></span>313301 Data Structure Using C  & Syllabus</a>
+                            <a href="/Branches/313302-database-management-system.html" class="sm-link"><span class="dot"></span>313302 Database Management System  & Syllabus</a>
+                            <a href="/Branches/313303-digital-techniques.html" class="sm-link"><span class="dot"></span>313303 Digital Techniques  & Syllabus</a>
+                            <a href="/Branches/313304-object-oriented-programming-using-c.html" class="sm-link"><span class="dot"></span>313304 Object Oriented Programming Using C</a>
+                            <a href="/Branches/313305-digital-techniques-and-microprocessors.html" class="sm-link"><span class="dot"></span>313305 Digital Techniques And Microprocessors</a>
+                            <a href="/Branches/313306-data-structure-using-python.html" class="sm-link"><span class="dot"></span>313306 Data Structure Using Python  & Syllabus</a>
+                            <a href="/Branches/313307-statistical-modelling-for-machine-learning.html" class="sm-link"><span class="dot"></span>313307 Notes & Syllabus</a>
+                            <a href="/Branches/313308-strength-of-materials.html" class="sm-link"><span class="dot"></span>313308 Strength Of Materials  & Syllabus</a>
+                            <a href="/Branches/313309-fluid-mechanics-and-machinery.html" class="sm-link"><span class="dot"></span>313309 Fluid Mechanics And Machinery  & Syllabus</a>
+                            <a href="/Branches/313310-thermal-engineering.html" class="sm-link"><span class="dot"></span>313310 Thermal Engineering  & Syllabus</a>
+                            <a href="/Branches/313311-production-drawing.html" class="sm-link"><span class="dot"></span>313311 Production Drawing  & Syllabus</a>
+                            <a href="/Branches/313313-theory-of-machines.html" class="sm-link"><span class="dot"></span>313313 Theory Of Machines  & Syllabus</a>
+                            <a href="/Branches/313316-metrology-and-measurement.html" class="sm-link"><span class="dot"></span>313316 Metrology And Measurement  & Syllabus</a>
+                            <a href="/Branches/313317-mechanical-engineering-materials.html" class="sm-link"><span class="dot"></span>313317 Mechanical Engineering Materials</a>
+                            <a href="/Branches/313321-advanced-surveying.html" class="sm-link"><span class="dot"></span>313321 Advanced Surveying  & Syllabus</a>
+                            <a href="/Branches/313322-concrete-technology.html" class="sm-link"><span class="dot"></span>313322 Concrete Technology  & Syllabus</a>
+                            <a href="/Branches/313323-highway-engineering.html" class="sm-link"><span class="dot"></span>313323 Highway Engineering  & Syllabus</a>
+                            <a href="/Branches/313324-analog-electronics.html" class="sm-link"><span class="dot"></span>313324 Analog Electronics  & Syllabus</a>
+                            <a href="/Branches/313325-circuits-networks.html" class="sm-link"><span class="dot"></span>313325 Circuits Networks  & Syllabus</a>
+                            <a href="/Branches/313326-principles-of-electronic-communication.html" class="sm-link"><span class="dot"></span>313326 Principles Of Electronic Communication</a>
+                            <a href="/Branches/313332-electrical-circuits-and-network.html" class="sm-link"><span class="dot"></span>313332 Electrical Circuits And Network</a>
+                            <a href="/Branches/313333-electrical-power-generation-transmission-and-distribution.html" class="sm-link"><span class="dot"></span>313333 Notes & Syllabus</a>
+                            <a href="/Branches/313334-electrical-and-electronic-measurement.html" class="sm-link"><span class="dot"></span>313334 Electrical And Electronic Measurement</a>
+                            <a href="/Branches/313335-fundamentals-of-power-electronics.html" class="sm-link"><span class="dot"></span>313335 Fundamentals Of Power Electronics</a>
+                            <a href="/Branches/314004-internship-12-weeks.html" class="sm-link"><span class="dot"></span>314004 Internship 12 Weeks  & Syllabus</a>
+                            <a href="/Branches/314004-python-programming.html" class="sm-link"><span class="dot"></span>314004 Python Programming  & Syllabus</a>
+                            <a href="/Branches/314005-ui-ux-design.html" class="sm-link"><span class="dot"></span>314005 Ui Ux Design  & Syllabus</a>
+                            <a href="/Branches/314006-internet-of-things.html" class="sm-link"><span class="dot"></span>314006 Internet Of Things  & Syllabus</a>
+                            <a href="/Branches/314008-computer-aided-drawing-and-simulation.html" class="sm-link"><span class="dot"></span>314008 Computer Aided Drawing And Simulation</a>
+                            <a href="/Branches/314009-electronic-equipment-maintenance-simulation.html" class="sm-link"><span class="dot"></span>314009 Notes & Syllabus</a>
+                            <a href="/Branches/314014-entrepreneurship-development-and-startups.html" class="sm-link"><span class="dot"></span>314014 Entrepreneurship Development And Startups</a>
+                            <a href="/Branches/314017-basics-of-mechatronics.html" class="sm-link"><span class="dot"></span>314017 Basics Of Mechatronics  & Syllabus</a>
+                            <a href="/Branches/314018-cnc-programming.html" class="sm-link"><span class="dot"></span>314018 Cnc Programming  & Syllabus</a>
+                            <a href="/Branches/314301-environmental-education-and-sustainability.html" class="sm-link"><span class="dot"></span>314301 Notes & Syllabus</a>
+                            <a href="/Branches/314301-environmental-education.html" class="sm-link"><span class="dot"></span>314301-environmental-education.html</a>
+                            <a href="/Branches/314303-hydraulics.html" class="sm-link"><span class="dot"></span>314303 Hydraulics  & Syllabus</a>
+                            <a href="/Branches/314312-railway-bridge-and-tunnel-engineering.html" class="sm-link"><span class="dot"></span>314312 Railway Bridge And Tunnel Engineering</a>
+                            <a href="/Branches/314313-estimating-costing-and-valuation.html" class="sm-link"><span class="dot"></span>314313 Estimating Costing And Valuation</a>
+                            <a href="/Branches/314314-water-and-wastewater-engineering.html" class="sm-link"><span class="dot"></span>314314 Water And Wastewater Engineering</a>
+                            <a href="/Branches/314315-geotechnical-engineering.html" class="sm-link"><span class="dot"></span>314315 Geotechnical Engineering  & Syllabus</a>
+                            <a href="/Branches/314317-java-programming.html" class="sm-link"><span class="dot"></span>314317 Java Programming  & Syllabus</a>
+                            <a href="/Branches/314318-data-communication-and-computer-network.html" class="sm-link"><span class="dot"></span>314318 Data Communication And Computer Network</a>
+                            <a href="/Branches/314318-data-communication-network.html" class="sm-link"><span class="dot"></span>314318-data-communication-network.html</a>
+                            <a href="/Branches/314319-information-security.html" class="sm-link"><span class="dot"></span>314319 Information Security  & Syllabus</a>
+                            <a href="/Branches/314320-mathematics-for-machine-learning.html" class="sm-link"><span class="dot"></span>314320 Mathematics For Machine Learning</a>
+                            <a href="/Branches/314321-microprocessor-programming.html" class="sm-link"><span class="dot"></span>314321 Microprocessor Programming  & Syllabus</a>
+                            <a href="/Branches/314322-d-c-machines-and-transformers.html" class="sm-link"><span class="dot"></span>314322 D C Machines And Transformers  & Syllabus</a>
+                            <a href="/Branches/314323-utilization-of-electrical-energy.html" class="sm-link"><span class="dot"></span>314323 Utilization Of Electrical Energy</a>
+                            <a href="/Branches/314324-digital-electronics-and-microcontroller-applications.html" class="sm-link"><span class="dot"></span>314324 Notes & Syllabus</a>
+                            <a href="/Branches/314325-electrical-estimating-and-contracting.html" class="sm-link"><span class="dot"></span>314325 Electrical Estimating And Contracting</a>
+                            <a href="/Branches/314326-digital-communication-systems.html" class="sm-link"><span class="dot"></span>314326 Digital Communication Systems  & Syllabus</a>
+                            <a href="/Branches/314327-consumer-electronic-systems.html" class="sm-link"><span class="dot"></span>314327 Consumer Electronic Systems  & Syllabus</a>
+                            <a href="/Branches/314328-microcontroller-applications.html" class="sm-link"><span class="dot"></span>314328 Microcontroller Applications  & Syllabus</a>
+                            <a href="/Branches/314340-production-processes.html" class="sm-link"><span class="dot"></span>314340 Production Processes  & Syllabus</a>
+                            <a href="/Branches/314363-basic-power-electronics.html" class="sm-link"><span class="dot"></span>314363 Basic Power Electronics  & Syllabus</a>
+                            <a href="/Branches/315002-entrepreneurship-development-and-startups.html" class="sm-link"><span class="dot"></span>315002 Entrepreneurship Development And Startups</a>
+                            <a href="/Branches/315002-entrepreneurship-development.html" class="sm-link"><span class="dot"></span>315002 Entrepreneurship Development  & Syllabus</a>
+                            <a href="/Branches/315003-seminar-and-project-initiation-course.html" class="sm-link"><span class="dot"></span>315003 Seminar And Project Initiation Course</a>
+                            <a href="/Branches/315003-seminar-project-initiation.html" class="sm-link"><span class="dot"></span>315003 Seminar Project Initiation  & Syllabus</a>
+                            <a href="/Branches/315004-internship-12-weeks.html" class="sm-link"><span class="dot"></span>315004 Internship 12 Weeks  & Syllabus</a>
+                            <a href="/Branches/315004-internship.html" class="sm-link"><span class="dot"></span>315004 Internship  & Syllabus</a>
+                            <a href="/Branches/315004-internship12-weeks.html" class="sm-link"><span class="dot"></span>315004 Internship12 Weeks  & Syllabus</a>
+                            <a href="/Branches/315301-management.html" class="sm-link"><span class="dot"></span>315301 Management  & Syllabus</a>
+                            <a href="/Branches/315313-theory-of-structures.html" class="sm-link"><span class="dot"></span>315313 Theory Of Structures  & Syllabus</a>
+                            <a href="/Branches/315314-water-resource-engineering.html" class="sm-link"><span class="dot"></span>315314 Water Resource Engineering  & Syllabus</a>
+                            <a href="/Branches/315315-emerging-trends-in-civil-engineering.html" class="sm-link"><span class="dot"></span>315315 Emerging Trends In Civil Engineering</a>
+                            <a href="/Branches/315319-operating-system.html" class="sm-link"><span class="dot"></span>315319 Operating System  & Syllabus</a>
+                            <a href="/Branches/315321-advanced-computer-network.html" class="sm-link"><span class="dot"></span>315321 Advanced Computer Network  & Syllabus</a>
+                            <a href="/Branches/315323-software-engineering.html" class="sm-link"><span class="dot"></span>315323 Software Engineering  & Syllabus</a>
+                            <a href="/Branches/315325-cloud-computing.html" class="sm-link"><span class="dot"></span>315325 Cloud Computing  & Syllabus</a>
+                            <a href="/Branches/315326-data-analytics.html" class="sm-link"><span class="dot"></span>315326 Data Analytics  & Syllabus</a>
+                            <a href="/Branches/315330-ai-ml-algorithm.html" class="sm-link"><span class="dot"></span>315330 Ai Ml Algorithm  & Syllabus</a>
+                            <a href="/Branches/315332-software-engineering-and-testing.html" class="sm-link"><span class="dot"></span>315332 Software Engineering And Testing</a>
+                            <a href="/Branches/315333-ac-machines-performance.html" class="sm-link"><span class="dot"></span>315333 Ac Machines Performance  & Syllabus</a>
+                            <a href="/Branches/315334-switchgear-and-protection.html" class="sm-link"><span class="dot"></span>315334 Switchgear And Protection  & Syllabus</a>
+                            <a href="/Branches/315338-embedded-system.html" class="sm-link"><span class="dot"></span>315338 Embedded System  & Syllabus</a>
+                            <a href="/Branches/315339-mobile-wireless-communication.html" class="sm-link"><span class="dot"></span>315339 Mobile Wireless Communication  & Syllabus</a>
+                            <a href="/Branches/315363-emerging-trends-in-mechanical-engineering.html" class="sm-link"><span class="dot"></span>315363 Emerging Trends In Mechanical Engineering</a>
+                            <a href="/Branches/315371-power-engineering.html" class="sm-link"><span class="dot"></span>315371 Power Engineering  & Syllabus</a>
+                            <a href="/Branches/315372-automobile-engineering.html" class="sm-link"><span class="dot"></span>315372 Automobile Engineering  & Syllabus</a>
+                            <a href="/Branches/316004-capstone-project.html" class="sm-link"><span class="dot"></span>316004 Capstone Project  & Syllabus</a>
+                            <a href="/Branches/316005-client-side-scripting.html" class="sm-link"><span class="dot"></span>316005 Client Side Scripting  & Syllabus</a>
+                            <a href="/Branches/316006-mobile-application-development.html" class="sm-link"><span class="dot"></span>316006 Mobile Application Development  & Syllabus</a>
+                            <a href="/Branches/316007-network-management-and-administration.html" class="sm-link"><span class="dot"></span>316007 Network Management And Administration</a>
+                            <a href="/Branches/316013-3d-modelling-and-additive-manufacturing.html" class="sm-link"><span class="dot"></span>316013 3D Modelling And Additive Manufacturing</a>
+                            <a href="/Branches/316307-contracts-and-billing.html" class="sm-link"><span class="dot"></span>316307 Contracts And Billing  & Syllabus</a>
+                            <a href="/Branches/316308-design-of-rcc-and-steel-structures.html" class="sm-link"><span class="dot"></span>316308 Design Of Rcc And Steel Structures</a>
+                            <a href="/Branches/316309-maintenance-and-repairs-of-structures.html" class="sm-link"><span class="dot"></span>316309 Maintenance And Repairs Of Structures</a>
+                            <a href="/Branches/316313-emerging-trends-in-computer-engineering-and-information-technology.html" class="sm-link"><span class="dot"></span>316313 Notes & Syllabus</a>
+                            <a href="/Branches/316314-software-testing.html" class="sm-link"><span class="dot"></span>316314 Software Testing  & Syllabus</a>
+                            <a href="/Branches/316318-big-data-analytics.html" class="sm-link"><span class="dot"></span>316318 Big Data Analytics  & Syllabus</a>
+                            <a href="/Branches/316319-principles-of-image-processing.html" class="sm-link"><span class="dot"></span>316319 Principles Of Image Processing  & Syllabus</a>
+                            <a href="/Branches/316325-wireless-and-mobile-network.html" class="sm-link"><span class="dot"></span>316325 Wireless And Mobile Network  & Syllabus</a>
+                            <a href="/Branches/316326-emerging-trends-in-electrical-engineering.html" class="sm-link"><span class="dot"></span>316326 Emerging Trends In Electrical Engineering</a>
+                            <a href="/Branches/316327-energy-conservation-and-audit.html" class="sm-link"><span class="dot"></span>316327 Energy Conservation And Audit  & Syllabus</a>
+                            <a href="/Branches/316328-maintenance-of-electrical-equipments.html" class="sm-link"><span class="dot"></span>316328 Maintenance Of Electrical Equipments</a>
+                            <a href="/Branches/316332-optical-network-and-satellite-communication.html" class="sm-link"><span class="dot"></span>316332 Notes & Syllabus</a>
+                            <a href="/Branches/316337-emerging-trends-in-electronics.html" class="sm-link"><span class="dot"></span>316337 Emerging Trends In Electronics  & Syllabus</a>
+                            <a href="/Branches/316338-computer-network-data-communication.html" class="sm-link"><span class="dot"></span>316338 Computer Network Data Communication</a>
+                            <a href="/Branches/316357-design-of-machine-elements.html" class="sm-link"><span class="dot"></span>316357 Design Of Machine Elements  & Syllabus</a>
+                            <a href="/Branches/316362-industrial-engineering-and-quality-control.html" class="sm-link"><span class="dot"></span>316362 Notes & Syllabus</a>
+                            <a href="/Branches/316363-industrial-hydraulics-and-pneumatics.html" class="sm-link"><span class="dot"></span>316363 Industrial Hydraulics And Pneumatics</a>
+                            <a href="/Branches/ee6k.html" class="sm-link"><span class="dot"></span>EE6K Scheme (EE6K)   & Syllabus PDF</a>
+                            <a href="/Branches/elective-315316-energy-conservation-and-green-building.html" class="sm-link"><span class="dot"></span>(ENERGY CONSERVATION AND GREEN BUILDING)  & Syllabus</a>
+                            <a href="/Branches/elective-315317-precast-and-prestressed-concrete-structures.html" class="sm-link"><span class="dot"></span>Notes & Syllabus</a>
+                            <a href="/Branches/elective-315318-road-traffic-engineering.html" class="sm-link"><span class="dot"></span>(ROAD TRAFFIC ENGINEERING) Syllabus &</a>
+                            <a href="/Branches/elective-315321-advance-computer-network.html" class="sm-link"><span class="dot"></span>(ADVANCE COMPUTER NETWORK) Syllabus &</a>
+                            <a href="/Branches/elective-315324-advance-database-management.html" class="sm-link"><span class="dot"></span>(ADVANCE DATABASE MANAGEMENT) Syllabus &</a>
+                            <a href="/Branches/elective-315325-cloud-computing.html" class="sm-link"><span class="dot"></span>(CLOUD COMPUTING) Syllabus &  PDF</a>
+                            <a href="/Branches/elective-315326-data-analytics.html" class="sm-link"><span class="dot"></span>(DATA ANALYTICS) Syllabus &  PDF</a>
+                            <a href="/Branches/elective-315327-cloud-computing-for-data-science.html" class="sm-link"><span class="dot"></span>(CLOUD COMPUTING FOR DATA SCIENCE) Syllabus &</a>
+                            <a href="/Branches/elective-315329-natural-language-processing.html" class="sm-link"><span class="dot"></span>(NATURAL LANGUAGE PROCESSING) Syllabus &</a>
+                            <a href="/Branches/elective-315335-electric-vehicle-technology.html" class="sm-link"><span class="dot"></span>(ELECTRIC VEHICLE TECHNOLOGY) Syllabus &</a>
+                            <a href="/Branches/elective-315336-power-system-operation-and-control.html" class="sm-link"><span class="dot"></span>(POWER SYSTEM OPERATION AND CONTROL)  & Syllabus</a>
+                            <a href="/Branches/elective-315337-renewable-energy-technology.html" class="sm-link"><span class="dot"></span>(RENEWABLE ENERGY TECHNOLOGY) Syllabus &</a>
+                            <a href="/Branches/elective-315340-advance-power-electronics.html" class="sm-link"><span class="dot"></span>(ADVANCE POWER ELECTRONICS) Syllabus &</a>
+                            <a href="/Branches/elective-315341-iot-applications.html" class="sm-link"><span class="dot"></span>(IOT APPLICATIONS) Syllabus &  PDF</a>
+                            <a href="/Branches/elective-315342-microwave-engineering-radar-system.html" class="sm-link"><span class="dot"></span>(MICROWAVE ENGINEERING & RADAR SYSTEM)  & Syllabus</a>
+                            <a href="/Branches/elective-315367-product-design-and-development.html" class="sm-link"><span class="dot"></span>(PRODUCT DESIGN AND DEVELOPMENT) Syllabus &</a>
+                            <a href="/Branches/elective-315373-heating-ventilation-air-conditioning.html" class="sm-link"><span class="dot"></span>(HEATING VENTILATION AIR CONDITIONING)  & Syllabus</a>
+                            <a href="/Branches/elective-315374-power-plant-engineering.html" class="sm-link"><span class="dot"></span>(POWER PLANT ENGINEERING) Syllabus &</a>
+                            <a href="/Branches/elective-316310-building-services.html" class="sm-link"><span class="dot"></span>(BUILDING SERVICES) Syllabus &  PDF</a>
+                            <a href="/Branches/elective-316311-earthquake-resistant-building.html" class="sm-link"><span class="dot"></span>(EARTHQUAKE RESISTANT BUILDING) Syllabus &</a>
+                            <a href="/Branches/elective-316312-solid-waste-management.html" class="sm-link"><span class="dot"></span>(SOLID WASTE MANAGEMENT) Syllabus &</a>
+                            <a href="/Branches/elective-316315-digital-forensic-and-hacking-techniques.html" class="sm-link"><span class="dot"></span>(DIGITAL FORENSIC AND HACKING TECHNIQUES)  & Syllabus</a>
+                            <a href="/Branches/elective-316316-machine-learning.html" class="sm-link"><span class="dot"></span>(MACHINE LEARNING) Syllabus &  PDF</a>
+                            <a href="/Branches/elective-316317-network-and-information-security.html" class="sm-link"><span class="dot"></span>(NETWORK AND INFORMATION SECURITY) Syllabus &</a>
+                            <a href="/Branches/elective-316320-advanced-algorithm-in-ai-ml.html" class="sm-link"><span class="dot"></span>(ADVANCED ALGORITHM IN AI & ML) Syllabus &</a>
+                            <a href="/Branches/elective-316321-data-warehousing-with-mining-techniques.html" class="sm-link"><span class="dot"></span>(DATA WAREHOUSING WITH MINING TECHNIQUES)  & Syllabus</a>
+                            <a href="/Branches/elective-316323-reinforcement-learning.html" class="sm-link"><span class="dot"></span>(REINFORCEMENT LEARNING) Syllabus &</a>
+                            <a href="/Branches/elective-316329-industrial-automation.html" class="sm-link"><span class="dot"></span>(INDUSTRIAL AUTOMATION) Syllabus &</a>
+                            <a href="/Branches/elective-316330-industrial-drives-and-control.html" class="sm-link"><span class="dot"></span>(INDUSTRIAL DRIVES AND CONTROL) Syllabus &</a>
+                            <a href="/Branches/elective-316331-power-system-analysis.html" class="sm-link"><span class="dot"></span>(POWER SYSTEM ANALYSIS) Syllabus &</a>
+                            <a href="/Branches/elective-316334-automation-plc.html" class="sm-link"><span class="dot"></span>(AUTOMATION & PLC) Syllabus &  PDF</a>
+                            <a href="/Branches/elective-316335-drone-technology.html" class="sm-link"><span class="dot"></span>(DRONE TECHNOLOGY) Syllabus &  PDF</a>
+                            <a href="/Branches/elective-316340-vlsi-applications.html" class="sm-link"><span class="dot"></span>(VLSI APPLICATIONS) Syllabus &  PDF</a>
+                            <a href="/Branches/elective-316359-computer-integrated-manufacturing-systems.html" class="sm-link"><span class="dot"></span>Notes & Syllabus</a>
+                            <a href="/Branches/elective-316364-alternative-energy-sources-and-energy-management.html" class="sm-link"><span class="dot"></span>Notes & Syllabus</a>
+                            <a href="/Branches/elective-316365-cold-chain-management.html" class="sm-link"><span class="dot"></span>(COLD CHAIN MANAGEMENT) Syllabus &</a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
 
-        <!-- ════════ 6. VIDEO COURSES ════════ -->
+        <!-- ════════ 7. BLOG & ARTICLES ════════ -->
         <div class="sm-section">
-            <div class="sm-section-header" onclick="toggleSection(this)">
+            <div class="sm-section-header open" onclick="toggleSection(this)">
                 <div class="sm-section-title">
-                    <div class="sm-icon" style="background:#fee2e2;">🎥</div>
-                    <h2>Video Courses</h2>
+                    <div class="sm-icon" style="background:#fce7f3;">📰</div>
+                    <h2>Blog Posts &amp; MSBTE Examination News</h2>
                 </div>
                 <div style="display:flex;align-items:center;gap:0.75rem">
-                    <span class="sm-badge">7 pages</span>
+                    <span class="sm-badge">71 posts</span>
                     <svg class="sm-chevron" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path d="m6 9 6 6 6-6"/></svg>
                 </div>
             </div>
-            <div class="sm-body">
-                <div class="link-grid cols-2">
-                    <a href="/video-course/" class="sm-link hot"><span class="dot"></span>🎬 All Video Courses Hub</a>
-                    <a href="/video-course/programming-in-c.html" class="sm-link"><span class="dot"></span>Programming in C (Video)</a>
-                    <a href="/video-course/python-for-beginners.html" class="sm-link"><span class="dot"></span>Python for Beginners (Video)</a>
-                    <a href="/video-course/programming-with-python.html" class="sm-link"><span class="dot"></span>Programming with Python (Video)</a>
-                    <a href="/video-course/java-programming.html" class="sm-link"><span class="dot"></span>Java Programming (Video)</a>
-                    <a href="/video-course/basic-mathematics.html" class="sm-link"><span class="dot"></span>Basic Mathematics (Video)</a>
-                    <a href="/video-course/applied-mathematics.html" class="sm-link"><span class="dot"></span>Applied Mathematics (Video)</a>
+            <div class="sm-body open">
+                <div class="sm-sub">
+                    <div class="sm-sub-title">📌 Blog Index</div>
+                    <div class="link-grid cols-2">
+                        <a href="/blog/" class="sm-link hot new"><span class="dot"></span>All Official Blog Posts &amp; Updates</a>
+                    </div>
+                </div>
+
+                <div class="sm-sub">
+                    <div class="sm-sub-title">📰 All Published Articles</div>
+                    <div class="link-grid">
+                        <a href="/Blog/5-Free-Courses.html" class="sm-link"><span class="dot"></span>5 Free Certificate Courses 2026</a>
+                        <a href="/Blog/50-capstone-project-ideas-computer-engineering.html" class="sm-link"><span class="dot"></span>50 Capstone Project Ideas for Computer Engineering ()</a>
+                        <a href="/Blog/Msbte-winter-2025-exam-form.html" class="sm-link"><span class="dot"></span>Winter 2025 Exam Form Fill up Dates, Last Date</a>
+                        <a href="/Blog/aaple-sarkar-dbt-portal-guide.html" class="sm-link"><span class="dot"></span>Aaple Sarkar DBT Portal (Mahadbt) 2026</a>
+                        <a href="/Blog/ajit-pawar-death-news.html" class="sm-link"><span class="dot"></span>Ajit Pawar Death News: Maharashtra Deputy CM Dies</a>
+                        <a href="/Blog/all-india-ncat-2026.html" class="sm-link hot"><span class="dot"></span>All India NCAT 2026: Campus Aptitude Test</a>
+                        <a href="/Blog/asha-bhosle-death-news.html" class="sm-link"><span class="dot"></span>Asha Bhosle Passes Away at 92</a>
+                        <a href="/Blog/autonomous-engineering-colleges-maharashtra.html" class="sm-link"><span class="dot"></span>List of Autonomous Engineering Colleges in Maharashtra 2025</a>
+                        <a href="/Blog/be-vs-btech-difference-which-is-better-2026.html" class="sm-link hot"><span class="dot"></span>BE vs BTech Difference: Course, Jobs & Salary Guide (2026)</a>
+                        <a href="/Blog/blog-frame.html" class="sm-link"><span class="dot"></span>Unlocking the : A Deep Dive into the New Syllabus</a>
+                        <a href="/Blog/cm-fellowship-maharashtra-2026.html" class="sm-link hot"><span class="dot"></span>CM Fellowship Maharashtra 2026: Apply Now</a>
+                        <a href="/Blog/computer-engineering-diploma-notes.html" class="sm-link"><span class="dot"></span>Computer Engg Diploma All Sem Subject  and Books</a>
+                        <a href="/Blog/dbms-guess-paper-free.html" class="sm-link"><span class="dot"></span>DBMS Guess Paper 2026 Free</a>
+                        <a href="/Blog/dpharm-exit-exam-cancelled-2026.html" class="sm-link hot"><span class="dot"></span>D.Pharm Exit Exam Halted: PCI Allows Direct Registration</a>
+                        <a href="/Blog/dse-admission-2026-27-maharashtra.html" class="sm-link hot"><span class="dot"></span>DSE Admission 2026-27 Maharashtra: Dates, Schedule & Cutoffs</a>
+                        <a href="/Blog/dse-admission-schedule-2026.html" class="sm-link hot"><span class="dot"></span>DSE Admission Schedule 2026 Announced</a>
+                        <a href="/Blog/engineering-admissions-institute-level-round-merit-based-2026.html" class="sm-link hot"><span class="dot"></span>Engineering Admission 2026: Institute-Level Round Rules</a>
+                        <a href="/Blog/engineering-day-2025.html" class="sm-link"><span class="dot"></span>Happy Engineer's Day 2025</a>
+                        <a href="/Blog/fake-news-alert-msbte-exams.html" class="sm-link"><span class="dot"></span>Summer 2026 Exam Cancelled? Here Is The Truth</a>
+                        <a href="/Blog/how-to-study-smarter-using-ai-msbte.html" class="sm-link"><span class="dot"></span>How to Study Smarter with AI:  Diploma Student Guide</a>
+                        <a href="/Blog/k-scheme-guess-papers.html" class="sm-link"><span class="dot"></span>K Scheme Guess Papers & Questions PDF</a>
+                        <a href="/Blog/mahadbt-scholarship-error-solutions.html" class="sm-link"><span class="dot"></span>MahaDBT Scholarship Errors & Solutions 2026</a>
+                        <a href="/Blog/mht-cet-pcm-result-2026-highlights.html" class="sm-link hot"><span class="dot"></span>MHT CET Result 2026 Highlights</a>
+                        <a href="/Blog/msbte-academic-calendar-2025-26.html" class="sm-link"><span class="dot"></span>Academic Calendar 2025-26: Key Dates for Exams & Terms</a>
+                        <a href="/Blog/msbte-academic-calendar-2026-27-winter-exam-date.html" class="sm-link hot"><span class="dot"></span>Academic Calendar 2026-27: Winter Exam Schedule</a>
+                        <a href="/Blog/msbte-exam-ready-material-499.html" class="sm-link"><span class="dot"></span>Ultimate Question Bank</a>
+                        <a href="/Blog/msbte-institute-wise-summer-2026-timetable.html" class="sm-link hot"><span class="dot"></span>Institute-Wise Summer 2026 Timetable</a>
+                        <a href="/Blog/msbte-notes-k-scheme-2025-26.html" class="sm-link"><span class="dot"></span>Notes K Scheme 2025-26</a>
+                        <a href="/Blog/msbte-notes-summer-exam-2026.html" class="sm-link hot"><span class="dot"></span>For Summer Exam 2026</a>
+                        <a href="/Blog/msbte-result-update-jan-2025.html" class="sm-link hot"><span class="dot"></span>Result 2025 LIVE</a>
+                        <a href="/Blog/msbte-summer-2026-exam-result-date-and-link.html" class="sm-link hot"><span class="dot"></span>Result Summer Exam 2026 Date and Link</a>
+                        <a href="/Blog/msbte-summer-2026-exam-roadmap.html" class="sm-link hot"><span class="dot"></span>Summer 2026 Exam Time Table & Dates</a>
+                        <a href="/Blog/msbte-summer-2026-exam-time-table.html" class="sm-link hot"><span class="dot"></span>Summer 2026 Exam Timetable & Date Sheet</a>
+                        <a href="/Blog/msbte-summer-2026-expected-result-date.html" class="sm-link hot"><span class="dot"></span>Summer 2026 Result Date OUT?</a>
+                        <a href="/Blog/msbte-summer-2026-final-timetable-declared-diploma.html" class="sm-link hot"><span class="dot"></span>Summer 2026 Final Timetable Declared</a>
+                        <a href="/Blog/msbte-summer-2026-hall-ticket.html" class="sm-link hot"><span class="dot"></span>Summer 2026 Hall Ticket Download</a>
+                        <a href="/Blog/msbte-summer-2026-last-minute-tips.html" class="sm-link hot"><span class="dot"></span>Summer 2026 Last Minute Study Tips & Exam Strategies</a>
+                        <a href="/Blog/msbte-summer-2026-online-exam-login-guide.html" class="sm-link hot"><span class="dot"></span>Summer 2026 Online Exam Login Guide – Earn While</a>
+                        <a href="/Blog/msbte-summer-2026-online-exam-schedule.html" class="sm-link hot"><span class="dot"></span>Summer 2026 Online Exam Schedule Released – Official</a>
+                        <a href="/Blog/msbte-summer-2026-online-exam-subject-codes.html" class="sm-link hot"><span class="dot"></span>Summer 2026 Online Exam Subject Codes &ndash; All 6 Phases</a>
+                        <a href="/Blog/msbte-summer-2026-phase6-rescheduled.html" class="sm-link hot"><span class="dot"></span>Mechanical Engg Materials Exam Rescheduled – 22343</a>
+                        <a href="/Blog/msbte-summer-2026-photocopy-reevaluation.html" class="sm-link hot"><span class="dot"></span>Summer 2026 Photocopy & Re-Evaluation</a>
+                        <a href="/Blog/msbte-summer-2026-result-declared.html" class="sm-link hot"><span class="dot"></span>Summer 2026 Result Declared: Direct Link &amp; Updates</a>
+                        <a href="/Blog/msbte-winter-2025-hall-ticket.html" class="sm-link"><span class="dot"></span>Winter 2025 Hall Ticket Download</a>
+                        <a href="/Blog/msbte-winter-2025-photocopy-reevaluation.html" class="sm-link"><span class="dot"></span>Winter 2025 Photocopy & Re</a>
+                        <a href="/Blog/msbte-winter-2025-result-revaluation-guide.html" class="sm-link hot"><span class="dot"></span>Winter 2025 Result OUT</a>
+                        <a href="/Blog/msbte-winter-2025-result.html" class="sm-link hot"><span class="dot"></span>Result Winter 2026 (Winter 2025 Exam)</a>
+                        <a href="/Blog/msbte-winter-2025-study-strategies.html" class="sm-link"><span class="dot"></span>Winter 2025 Exam Study Strategies</a>
+                        <a href="/Blog/msbte-winter-2025-timetable.html" class="sm-link hot"><span class="dot"></span>Winter 2025 FINAL Theory Exam Timetable</a>
+                        <a href="/Blog/msbte-winter-2026-exam-timetable-final.html" class="sm-link hot"><span class="dot"></span>Winter 2026 Timetable Declared (FINAL)</a>
+                        <a href="/Blog/nana-patekar-tribute.html" class="sm-link"><span class="dot"></span>Nana Patekar Passes Away at 75: Tribute to the Legend</a>
+                        <a href="/Blog/naukri-young-turks-2025.html" class="sm-link"><span class="dot"></span>Naukri Campus Young Turks 2025</a>
+                        <a href="/Blog/niti-aayog-internship-2026.html" class="sm-link hot"><span class="dot"></span>NITI Aayog Internship 2026 Apply Online - Eligibility & Date</a>
+                        <a href="/Blog/post-matric-scholarship-obc.html" class="sm-link"><span class="dot"></span>Post Matric Scholarship for OBC Students Diploma Guide</a>
+                        <a href="/Blog/professional-software-project-development.html" class="sm-link"><span class="dot"></span>Professional Final Year Project Development Services</a>
+                        <a href="/Blog/programming-in-c-312303-v2.html" class="sm-link"><span class="dot"></span>312303 Programming in C , Model Answers</a>
+                        <a href="/Blog/programming-in-c-312303.html" class="sm-link"><span class="dot"></span>Programming in C (312303)  PDF</a>
+                        <a href="/Blog/skills-2025.html" class="sm-link"><span class="dot"></span>Top 5 Skills Engineers Need in 2025</a>
+                        <a href="/Blog/sppu-be-2019-pattern-summer-2026-timetable.html" class="sm-link hot"><span class="dot"></span>SPPU BE 2019 Pattern Timetable – Summer Session 2026</a>
+                        <a href="/Blog/sppu-engineering-be-btech-result-declared-2026.html" class="sm-link hot"><span class="dot"></span>SPPU BE & BTech Result 2026 Declared at unipune.ac.in</a>
+                        <a href="/Blog/sppu-kumbh-mela-credits-2026.html" class="sm-link hot"><span class="dot"></span>SPPU to Grant Academic Credits for Kumbh Mela</a>
+                        <a href="/Blog/sppu-result-winter-2025.html" class="sm-link hot"><span class="dot"></span>SPPU Result OUT For Winter Session 2025</a>
+                        <a href="/Blog/sppu-summer-2026-exam-roadmap.html" class="sm-link hot"><span class="dot"></span>SPPU Summer 2026 Engineering Exam Roadmap &amp; Tentative Dates</a>
+                        <a href="/Blog/top-100-engineering-project-ideas-diploma-students-2026.html" class="sm-link hot"><span class="dot"></span>Top 100 Engineering Projects for Diploma Students (2026)</a>
+                        <a href="/Blog/top-20-engineering-colleges-maharashtra.html" class="sm-link"><span class="dot"></span>Top 20 Engineering Colleges in Maharashtra for MHT CET 2026</a>
+                        <a href="/Blog/top-5-engineering-colleges-maharashtra.html" class="sm-link"><span class="dot"></span>Top 5 Engineering Colleges in Maharashtra (2025-26 Guide)</a>
+                        <a href="/Blog/top-engineering-colleges-pune.html" class="sm-link"><span class="dot"></span>Top Engineering Colleges in Pune 2026</a>
+                        <a href="/Blog/ugc-new-rules-2026.html" class="sm-link hot"><span class="dot"></span>UGC Reforms 2026: New Rules for PhD, Faculty & Foreign</a>
+                        <a href="/Blog/what-to-do-after-10th.html" class="sm-link"><span class="dot"></span>What to do after 10th? Career Paths & Diploma Guide (2026)</a>
+                        <a href="/Blog/what-to-do-after-diploma.html" class="sm-link"><span class="dot"></span>What to do after Diploma? Best Career Options & Jobs (2026)</a>
+                    </div>
                 </div>
             </div>
         </div>
 
-        <!-- ════════ 7. COLLEGE INFO ════════ -->
+        <!-- ════════ 8. COLLEGES BY DISTRICT ════════ -->
         <div class="sm-section">
             <div class="sm-section-header" onclick="toggleSection(this)">
                 <div class="sm-section-title">
                     <div class="sm-icon" style="background:#d1fae5;">🏫</div>
-                    <h2>Colleges by District</h2>
+                    <h2>Colleges &amp; Cut-offs by District</h2>
                 </div>
                 <div style="display:flex;align-items:center;gap:0.75rem">
-                    <span class="sm-badge">25 pages</span>
+                    <span class="sm-badge">22 pages</span>
                     <svg class="sm-chevron" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path d="m6 9 6 6 6-6"/></svg>
                 </div>
             </div>
@@ -1029,43 +1258,70 @@
                 <div class="sm-sub">
                     <div class="sm-sub-title">Hub</div>
                     <div class="link-grid cols-2">
-                        <a href="/collegeinfo/" class="sm-link hot"><span class="dot"></span>🏛️ All Maharashtra Colleges</a>
+                        <a href="/collegeinfo/" class="sm-link hot"><span class="dot"></span>🏛️ All Maharashtra Colleges Hub</a>
                     </div>
                 </div>
                 <div class="sm-sub">
                     <div class="sm-sub-title">Maharashtra Districts</div>
                     <div class="link-grid cols-4">
-                        <a href="/collegeinfo/pune.html" class="sm-link hot"><span class="dot"></span>Pune</a>
-                        <a href="/collegeinfo/mumbai.html" class="sm-link hot"><span class="dot"></span>Mumbai</a>
-                        <a href="/collegeinfo/nagpur.html" class="sm-link"><span class="dot"></span>Nagpur</a>
-                        <a href="/collegeinfo/nashik.html" class="sm-link"><span class="dot"></span>Nashik</a>
-                        <a href="/collegeinfo/amravati.html" class="sm-link"><span class="dot"></span>Amravati</a>
-                        <a href="/collegeinfo/jalgaon.html" class="sm-link"><span class="dot"></span>Jalgaon</a>
-                        <a href="/collegeinfo/kolhapur.html" class="sm-link"><span class="dot"></span>Kolhapur</a>
-                        <a href="/collegeinfo/solapur.html" class="sm-link"><span class="dot"></span>Solapur</a>
-                        <a href="/collegeinfo/ahmednagar.html" class="sm-link"><span class="dot"></span>Ahmednagar</a>
-                        <a href="/collegeinfo/akola.html" class="sm-link"><span class="dot"></span>Akola</a>
-                        <a href="/collegeinfo/chandrapur.html" class="sm-link"><span class="dot"></span>Chandrapur</a>
-                        <a href="/collegeinfo/dhule.html" class="sm-link"><span class="dot"></span>Dhule</a>
-                        <a href="/collegeinfo/nandurbar.html" class="sm-link"><span class="dot"></span>Nandurbar</a>
-                        <a href="/collegeinfo/raigad.html" class="sm-link"><span class="dot"></span>Raigad</a>
-                        <a href="/collegeinfo/ratnagiri.html" class="sm-link"><span class="dot"></span>Ratnagiri</a>
-                        <a href="/collegeinfo/sangli.html" class="sm-link"><span class="dot"></span>Sangli</a>
-                        <a href="/collegeinfo/satara.html" class="sm-link"><span class="dot"></span>Satara</a>
-                        <a href="/collegeinfo/sindhudurg.html" class="sm-link"><span class="dot"></span>Sindhudurg</a>
-                        <a href="/collegeinfo/wardha.html" class="sm-link"><span class="dot"></span>Wardha</a>
-                        <a href="/collegeinfo/yavatmal.html" class="sm-link"><span class="dot"></span>Yavatmal</a>
+                        <a href="/CollegeInfo/ahmednagar.html" class="sm-link"><span class="dot"></span>Top Engineering Colleges in Ahmednagar 2026</a>
+                        <a href="/CollegeInfo/akola.html" class="sm-link"><span class="dot"></span>Top Engineering Colleges in Akola 2026</a>
+                        <a href="/CollegeInfo/amravati.html" class="sm-link"><span class="dot"></span>Top Engineering Colleges in Amravati 2026</a>
+                        <a href="/CollegeInfo/article-template.html" class="sm-link"><span class="dot"></span>Article Title - College Info -   & Info</a>
+                        <a href="/CollegeInfo/chandrapur.html" class="sm-link"><span class="dot"></span>Top Engineering Colleges in Chandrapur 2026</a>
+                        <a href="/CollegeInfo/dhule.html" class="sm-link"><span class="dot"></span>Top Engineering Colleges in Dhule 2026</a>
+                        <a href="/CollegeInfo/jalgaon.html" class="sm-link"><span class="dot"></span>Top Engineering Colleges in Jalgaon 2026</a>
+                        <a href="/CollegeInfo/kolhapur.html" class="sm-link"><span class="dot"></span>Top Engineering Colleges in Kolhapur 2026</a>
+                        <a href="/CollegeInfo/mumbai.html" class="sm-link"><span class="dot"></span>Top Engineering Colleges in Mumbai 2026</a>
+                        <a href="/CollegeInfo/nagpur.html" class="sm-link"><span class="dot"></span>Top Engineering Colleges in Nagpur 2026</a>
+                        <a href="/CollegeInfo/nandurbar.html" class="sm-link"><span class="dot"></span>Top Engineering Colleges in Nandurbar 2026</a>
+                        <a href="/CollegeInfo/nashik.html" class="sm-link"><span class="dot"></span>Top Engineering Colleges in Nashik 2026</a>
+                        <a href="/CollegeInfo/pune.html" class="sm-link"><span class="dot"></span>Top Engineering Colleges in Pune 2026</a>
+                        <a href="/CollegeInfo/raigad.html" class="sm-link"><span class="dot"></span>Top Engineering Colleges in Raigad 2026</a>
+                        <a href="/CollegeInfo/ratnagiri.html" class="sm-link"><span class="dot"></span>Top Engineering Colleges in Ratnagiri 2026</a>
+                        <a href="/CollegeInfo/sangli.html" class="sm-link"><span class="dot"></span>Top Engineering Colleges in Sangli 2026</a>
+                        <a href="/CollegeInfo/satara.html" class="sm-link"><span class="dot"></span>Top Engineering Colleges in Satara 2026</a>
+                        <a href="/CollegeInfo/sindhudurg.html" class="sm-link"><span class="dot"></span>Top Engineering Colleges in Sindhudurg 2026</a>
+                        <a href="/CollegeInfo/solapur.html" class="sm-link"><span class="dot"></span>Top Engineering Colleges in Solapur 2026</a>
+                        <a href="/CollegeInfo/wardha.html" class="sm-link"><span class="dot"></span>Top Engineering Colleges in Wardha 2026</a>
+                        <a href="/CollegeInfo/yavatmal.html" class="sm-link"><span class="dot"></span>Top Engineering Colleges in Yavatmal 2026</a>
                     </div>
                 </div>
             </div>
         </div>
 
-        <!-- ════════ 8. SCHEMES ════════ -->
+        <!-- ════════ 9. VIDEO COURSES ════════ -->
+        <div class="sm-section">
+            <div class="sm-section-header" onclick="toggleSection(this)">
+                <div class="sm-section-title">
+                    <div class="sm-icon" style="background:#fee2e2;">🎥</div>
+                    <h2>Video Courses &amp; Lectures</h2>
+                </div>
+                <div style="display:flex;align-items:center;gap:0.75rem">
+                    <span class="sm-badge">8 courses</span>
+                    <svg class="sm-chevron" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path d="m6 9 6 6 6-6"/></svg>
+                </div>
+            </div>
+            <div class="sm-body">
+                <div class="link-grid cols-2">
+                    <a href="/video-course/index.html" class="sm-link"><span class="dot"></span>All Video Courses Hub</a>
+                    <a href="/video-course/applied-mathematics.html" class="sm-link"><span class="dot"></span>Applied Mathematics (Sem 2) -  Video Course</a>
+                    <a href="/video-course/basic-mathematics.html" class="sm-link"><span class="dot"></span>Basic Mathematics () -  Video Course</a>
+                    <a href="/video-course/java-programming.html" class="sm-link"><span class="dot"></span>Java Programming (314317) -  Diploma Course</a>
+                    <a href="/video-course/programming-in-c.html" class="sm-link"><span class="dot"></span>Programming in C (PIC 22226) -  Diploma Course</a>
+                    <a href="/video-course/programming-with-python.html" class="sm-link"><span class="dot"></span>Programming with Python (22616) -  Diploma Course</a>
+                    <a href="/video-course/python-for-beginners.html" class="sm-link"><span class="dot"></span>Python for Beginners -  Video Course</a>
+                    <a href="/video-course/topic-template.html" class="sm-link"><span class="dot"></span>Topic Name -  Video Course</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- ════════ 10. CURRICULUM SCHEMES ════════ -->
         <div class="sm-section">
             <div class="sm-section-header" onclick="toggleSection(this)">
                 <div class="sm-section-title">
                     <div class="sm-icon" style="background:#e0e7ff;">📋</div>
-                    <h2>I-Scheme &amp; K-Scheme</h2>
+                    <h2>MSBTE Curriculum Schemes</h2>
                 </div>
                 <div style="display:flex;align-items:center;gap:0.75rem">
                     <span class="sm-badge">3 pages</span>
@@ -1074,53 +1330,36 @@
             </div>
             <div class="sm-body">
                 <div class="link-grid cols-2">
-                    <a href="/scheme/" class="sm-link hot"><span class="dot"></span>Schemes Hub</a>
-                    <a href="/scheme/k-scheme.html" class="sm-link hot"><span class="dot"></span>K Scheme Resources</a>
-                    <a href="/scheme/i-scheme.html" class="sm-link"><span class="dot"></span>I Scheme Resources</a>
+                    <a href="/scheme/index.html" class="sm-link"><span class="dot"></span>MSBTE Curriculum Schemes Directory</a>
+                    <a href="/scheme/i-scheme.html" class="sm-link"><span class="dot"></span>I-Scheme Syllabus & Curriculum – All Branches</a>
+                    <a href="/scheme/k-scheme.html" class="sm-link"><span class="dot"></span>Syllabus & Curriculum – All Branches</a>
                 </div>
             </div>
         </div>
 
-        <!-- ════════ 9. CAREER ════════ -->
+        <!-- ════════ 11. CAREER, JOBS, COURSES & TESTS ════════ -->
         <div class="sm-section">
             <div class="sm-section-header" onclick="toggleSection(this)">
                 <div class="sm-section-title">
                     <div class="sm-icon" style="background:#fef9c3;">💼</div>
-                    <h2>Career, Jobs &amp; Courses</h2>
+                    <h2>Career, Jobs, Courses &amp; Mock Tests</h2>
                 </div>
                 <div style="display:flex;align-items:center;gap:0.75rem">
-                    <span class="sm-badge">8 pages</span>
+                    <span class="sm-badge">9 pages</span>
                     <svg class="sm-chevron" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path d="m6 9 6 6 6-6"/></svg>
                 </div>
             </div>
             <div class="sm-body">
                 <div class="link-grid cols-2">
-                    <a href="/internships.html" class="sm-link hot"><span class="dot"></span>Internships Portal</a>
-                    <a href="/jobs/" class="sm-link hot"><span class="dot"></span>Jobs Portal</a>
-                    <a href="/jobs/bookmarked-jobs.html" class="sm-link"><span class="dot"></span>Bookmarked Jobs</a>
-                    <a href="/mock-tests/" class="sm-link"><span class="dot"></span>Mock Tests</a>
-                    <a href="/courses/DSA-Basic.html" class="sm-link"><span class="dot"></span>DSA Basic Course</a>
-                    <a href="/courses/certificate.html" class="sm-link"><span class="dot"></span>Certificate Courses</a>
-                    <a href="/videos.html" class="sm-link"><span class="dot"></span>Videos &amp; Tutorials</a>
-                </div>
-            </div>
-        </div>
-
-        <!-- ════════ 10. NEWS ════════ -->
-        <div class="sm-section">
-            <div class="sm-section-header" onclick="toggleSection(this)">
-                <div class="sm-section-title">
-                    <div class="sm-icon" style="background:#fce7f3;">📡</div>
-                    <h2>Breaking News</h2>
-                </div>
-                <div style="display:flex;align-items:center;gap:0.75rem">
-                    <span class="sm-badge">1 page</span>
-                    <svg class="sm-chevron" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path d="m6 9 6 6 6-6"/></svg>
-                </div>
-            </div>
-            <div class="sm-body">
-                <div class="link-grid cols-2">
-                    <a href="/news/" class="sm-link hot"><span class="dot"></span>📰 Latest News &amp; Updates</a>
+                    <a href="/Jobs/index.html" class="sm-link"><span class="dot"></span>Diploma Engineering Jobs Portal</a>
+                    <a href="/Jobs/bookmarked-jobs.html" class="sm-link"><span class="dot"></span>Bookmarked Jobs -   & Info</a>
+                    <a href="/Jobs/job-detail.html" class="sm-link"><span class="dot"></span>Job Details -   & Info</a>
+                    <a href="/Jobs/jobs.html" class="sm-link"><span class="dot"></span>jobs.html</a>
+                    <a href="/Courses/DSA-Basic.html" class="sm-link"><span class="dot"></span>Free DSA Course 2025</a>
+                    <a href="/Courses/certificate.html" class="sm-link"><span class="dot"></span>Free DSA Course Certificate</a>
+                    <a href="/mock-tests/index.html" class="sm-link"><span class="dot"></span>Online MSBTE Mock Tests</a>
+                    <a href="/mock-tests/test.html" class="sm-link"><span class="dot"></span>test.html</a>
+                    <a href="/News/index.html" class="sm-link"><span class="dot"></span>Latest MSBTE News & Notifications</a>
                 </div>
             </div>
         </div>
@@ -1128,8 +1367,8 @@
     </main>
 
     <footer>
-        <p>© 2026 MSBTE Notes &amp; Info — <a href="/">Home</a> · <a href="/about.html">About</a> · <a href="/contact.html">Contact</a> · <a href="/privacy-policy.html">Privacy</a></p>
-        <p style="margin-top:0.5rem;">Sitemap last updated: August 2026</p>
+        <p>© 2026 MSBTE Notes &amp; Info — <a href="/">Home</a> · <a href="/notes/">Notes</a> · <a href="/pyq/">PYQ</a> · <a href="/model-answer/">Model Answer</a> · <a href="/about.html">About</a> · <a href="/contact.html">Contact</a> · <a href="/privacy-policy.html">Privacy</a></p>
+        <p style="margin-top:0.5rem;">Sitemap updated: November 2026 • 600+ Verified Pages</p>
     </footer>
 
     <script src="/whatsapp-popup.js" defer></script>
@@ -1147,7 +1386,8 @@
             document.querySelectorAll('.branch-tab').forEach(t => t.classList.remove('active'));
             document.querySelectorAll('.branch-panel').forEach(p => p.classList.remove('active'));
             tabEl.classList.add('active');
-            document.getElementById('branch-' + branchId).classList.add('active');
+            const target = document.getElementById('branch-' + branchId);
+            if (target) target.classList.add('active');
         }
 
         /* ── Sitemap search ── */
@@ -1166,7 +1406,7 @@
             // Open all sections when searching
             document.querySelectorAll('.sm-section-header').forEach(h => {
                 h.classList.add('open');
-                h.nextElementSibling.classList.add('open');
+                if (h.nextElementSibling) h.nextElementSibling.classList.add('open');
             });
             document.querySelectorAll('.branch-panel').forEach(p => p.classList.add('active'));
 
@@ -1184,7 +1424,7 @@
                 section.classList.toggle('all-hidden', !anyVisible);
             });
 
-            countEl.textContent = visible > 0 ? `Found ${visible} page${visible !== 1 ? 's' : ''}` : 'No pages found';
+            countEl.textContent = visible > 0 ? `Found ${visible} matching page${visible !== 1 ? 's' : ''}` : 'No matching pages found';
         });
     </script>
 </body>
