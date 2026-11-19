@@ -18,7 +18,7 @@
   </sitemap>
   <sitemap>
     <loc>https://msbtenotes-info.netlify.app/sitemap-branches.xml</loc>
-    <lastmod>2026-11-16</lastmod>
+    <lastmod>2026-11-19</lastmod>
   </sitemap>
   <sitemap>
     <loc>https://msbtenotes-info.netlify.app/sitemap-blog.xml</loc>
@@ -26,6 +26,10 @@
   </sitemap>
   <sitemap>
     <loc>https://msbtenotes-info.netlify.app/sitemap-colleges.xml</loc>
+    <lastmod>2026-11-19</lastmod>
+  </sitemap>
+  <sitemap>
+    <loc>https://msbtenotes-info.netlify.app/sitemap-video-courses.xml</loc>
     <lastmod>2026-11-19</lastmod>
   </sitemap>
 </sitemapindex>
