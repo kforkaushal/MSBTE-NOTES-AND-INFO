@@ -328,99 +328,132 @@
             }
         }
 
-        /* ULTRA-RESPONSIVE MOBILE UI/UX TRANSFORMATION (< 768px) */
+        /* AUTHENTIC 4-COLUMN BOARD ANSWER TABLE (Smooth Low-Width Scroll on Mobile) */
+        .table-wrapper {
+            overflow-x: auto;
+            -webkit-overflow-scrolling: touch;
+            width: 100%;
+            background-color: #ffffff;
+            border-radius: 0.5rem;
+        }
+        .ans-table {
+            width: 100%;
+            border-collapse: collapse;
+            background-color: #ffffff;
+            min-width: 680px; /* Keeps authentic 4-column MSBTE board format perfectly aligned */
+        }
+
         @media (max-width: 767px) {
-            .ans-table, .ans-table tbody, .ans-table tr.sub-q-row {
-                display: block;
-                width: 100%;
+            .ans-table {
+                min-width: 640px;
+                font-size: 0.8125rem;
             }
-            .ans-table thead {
-                display: none;
+            .col-qno {
+                width: 36px !important;
+                padding: 8px 3px !important;
+                font-size: 0.75rem !important;
             }
-            .ans-table tr.q-header-row {
-                display: block;
-                width: 100%;
-                margin-top: 1.25rem;
-                margin-bottom: 0.75rem;
-                border-radius: 0.75rem;
-                overflow: hidden;
+            .col-sub {
+                width: 40px !important;
+                padding: 8px 3px !important;
+                font-size: 0.8125rem !important;
             }
-            .ans-table tr.q-header-row td {
-                display: block;
-                width: 100%;
-                padding: 0.75rem 1rem !important;
+            .col-ans {
+                width: auto !important;
+                padding: 10px 12px !important;
+                font-size: 0.8125rem !important;
+                line-height: 1.55 !important;
             }
-            tr.sub-q-row {
-                display: block;
-                width: 100%;
-                margin-bottom: 1.25rem;
-                background: #ffffff;
-                border: 1px solid #e2e8f0;
-                border-radius: 0.875rem;
-                overflow: hidden;
-                box-shadow: 0 2px 6px -1px rgba(0, 0, 0, 0.06);
+            .col-marks {
+                width: 86px !important;
+                padding: 8px 4px !important;
+                font-size: 0.75rem !important;
             }
-            tr.sub-q-row td.col-qno {
-                display: none;
+            .q-header-row td {
+                padding: 8px 10px !important;
+                font-size: 0.875rem !important;
             }
-            tr.sub-q-row td.col-sub {
-                display: flex;
-                align-items: center;
-                justify-content: space-between;
-                width: 100%;
-                text-align: left;
-                background: #f1f5f9;
-                border-bottom: 1px solid #e2e8f0;
-                padding: 0.625rem 1rem;
-                font-size: 0.95rem;
-                font-weight: 800;
-                color: #1e3a8a;
+            .sticky-toolbar {
+                top: 56px;
+                padding: 6px 8px;
             }
-            tr.sub-q-row td.col-sub::after {
-                content: "Sub-Question";
-                font-size: 0.75rem;
-                font-weight: 600;
-                text-transform: uppercase;
-                letter-spacing: 0.05em;
-                color: #64748b;
-            }
-            tr.sub-q-row td.col-ans {
-                display: block;
-                width: 100%;
-                padding: 1rem;
-                border: none;
-                font-size: 0.875rem;
-            }
-            tr.sub-q-row td.col-marks {
-                display: block;
-                width: 100%;
-                background: #eff6ff;
-                border: none;
-                border-top: 1px dashed #bfdbfe;
-                padding: 0.625rem 1rem;
-                text-align: left;
-            }
-            tr.sub-q-row td.col-marks .space-y-1 {
-                display: flex;
-                flex-wrap: wrap;
-                align-items: center;
-                justify-content: space-between;
-                gap: 0.5rem;
-            }
-            tr.sub-q-row td.col-marks .tag-pill {
-                display: inline-block;
-                margin-bottom: 0;
-            }
-            tr.sub-q-row td.col-marks .border-t {
-                border-top: none !important;
-                margin-top: 0 !important;
-                padding-top: 0 !important;
-            }
-            .ad-row, .ad-row td {
-                display: block;
-                width: 100%;
+            .board-header {
+                padding: 12px 14px !important;
             }
         }
+
+        /* SOLID COLOR FALLBACKS & UTILITIES (Fixes all transparent / missing background colors) */
+        .board-sheet {
+            background-color: #ffffff;
+            border: 1px solid #cbd5e1;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+        }
+        .board-header {
+            background: linear-gradient(135deg, #0a2558 0%, #04183a 100%) !important;
+            color: #ffffff !important;
+        }
+        .header-helpline-box {
+            background-color: #07193d !important;
+            border: 1px solid #3b82f6 !important;
+            color: #bfdbfe !important;
+        }
+        .header-meta-box {
+            background-color: #17326b !important;
+            border: 1px solid #2563eb !important;
+            color: #ffffff !important;
+        }
+        .examiner-notice-box {
+            background-color: #fffbeb !important;
+            border: 1px solid #f59e0b !important;
+            color: #78350f !important;
+        }
+        .guidelines-box {
+            background-color: #f8fafc !important;
+            border-bottom: 1px solid #e2e8f0 !important;
+        }
+
+        /* Scoring Sheet - Rich Solid Navy Gradient & High Contrast */
+        #scoring-sheet {
+            background: linear-gradient(135deg, #0b1528 0%, #071e3d 100%) !important;
+            color: #ffffff !important;
+            border-top: 4px solid #f59e0b !important;
+        }
+        .scoring-card-dark {
+            background-color: rgba(255, 255, 255, 0.08) !important;
+            border: 1px solid rgba(255, 255, 255, 0.18) !important;
+        }
+        .scoring-item-dark {
+            background-color: rgba(255, 255, 255, 0.06) !important;
+            border-radius: 4px;
+            padding: 6px 8px;
+        }
+        .scoring-table-head {
+            background-color: rgba(255, 255, 255, 0.15) !important;
+            color: #ffffff !important;
+            font-weight: 700;
+        }
+        .scoring-tip-box {
+            background-color: rgba(245, 158, 11, 0.15) !important;
+            border: 1px solid rgba(245, 158, 11, 0.4) !important;
+        }
+
+        /* Text & Color Utilities */
+        .text-amber-300, .accent-amber { color: #fcd34d !important; }
+        .text-emerald-300, .accent-emerald { color: #6ee7b7 !important; }
+        .text-emerald-700 { color: #047857 !important; }
+        .text-blue-300, .accent-blue { color: #93c5fd !important; }
+        .text-amber-900 { color: #78350f !important; }
+        .text-amber-950 { color: #451a03 !important; }
+        .bg-slate-50 { background-color: #f8fafc !important; }
+        .border-slate-200 { border-color: #e2e8f0 !important; }
+        .text-slate-400 { color: #94a3b8 !important; }
+        .sub-q-row:hover { background-color: #f8fafc !important; }
+
+        /* Dropdown Navigation rules */
+        .dropdown-menu { display: none; }
+        .nav-dropdown:hover .dropdown-menu,
+        .nav-dropdown.is-open .dropdown-menu { display: block; }
+        .nav-dropdown.is-open .dropdown-arrow { transform: rotate(180deg); }
     </style>
 </head>
 <body class="bg-gray-100 text-gray-900 pt-16 font-sans protected-zone">
@@ -475,23 +508,121 @@
                     </a>
                 </div>
 
-                <!-- Mobile Menu Button -->
-                <div class="flex md:hidden items-center">
-                    <button type="button" onclick="toggleMobileNav()" class="text-gray-600 hover:text-blue-600 focus:outline-none p-2" aria-label="Toggle Navigation">
-                        <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+                <!-- Right: Mobile Menu Toggle -->
+                <div class="flex items-center md:hidden">
+                    <button onclick="toggleMobileMenu()" class="mobile-menu-button p-2 text-gray-600 hover:text-blue-600 focus:outline-none" aria-controls="mobileNav" aria-expanded="false" aria-label="Toggle menu">
+                        <svg id="menuIcon" class="h-6 w-6 transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"/>
+                        </svg>
+                        <svg id="closeIcon" class="h-6 w-6 hidden transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+                        </svg>
                     </button>
                 </div>
             </div>
         </div>
 
-        <!-- Mobile dropdown drawer -->
-        <div id="mobile-nav-menu" class="hidden md:hidden bg-white border-b border-gray-200 px-4 pt-2 pb-4 space-y-2">
-            <a href="/" class="block px-3 py-2 text-gray-700 font-medium hover:bg-blue-50 rounded-lg">Home</a>
-            <a href="/notes/" class="block px-3 py-2 text-gray-700 font-medium hover:bg-blue-50 rounded-lg">Subject Notes</a>
-            <a href="/pyq/" class="block px-3 py-2 text-gray-700 font-medium hover:bg-blue-50 rounded-lg">Question Papers (PYQ)</a>
-            <a href="/model-answer/" class="block px-3 py-2 text-blue-600 font-bold bg-blue-50/50 rounded-lg">Model Answer Papers</a>
-            <a href="/model-answer/315319-operating-system" class="block px-3 py-2 text-gray-700 font-medium hover:bg-blue-50 rounded-lg">OSY (315319) Main Hub</a>
-            <a href="https://whatsapp.com/channel/0029Vap8lWS3QxRxxdmaSR36" target="_blank" class="block px-3 py-2 text-green-700 font-semibold bg-green-50 rounded-lg">Join WhatsApp Group</a>
+        <!-- Modern Mobile Navigation Overlay Drawer -->
+        <div id="mobileNav" class="fixed inset-0 bg-white z-50 transform translate-x-full transition-transform duration-300 ease-in-out md:hidden overflow-y-auto pt-20 px-6" style="z-index: 9999 !important;">
+            <button onclick="toggleMobileMenu()" class="absolute top-5 right-5 p-2 text-gray-600 hover:text-blue-600 focus:outline-none" aria-label="Close menu">
+                <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+                </svg>
+            </button>
+
+            <div class="flex flex-col space-y-4">
+                <a href="/" onclick="toggleMobileMenu()" class="text-lg font-display font-bold text-gray-900 border-b border-gray-100 pb-2">Home</a>
+
+                <!-- Notes Mobile Submenu (Accordion) -->
+                <div class="border-b border-gray-100 pb-2">
+                    <button type="button" onclick="toggleMobileSubmenu('mobileNotesSubmenu', 'mobileNotesArrow')" class="w-full flex items-center justify-between text-lg font-display font-bold text-gray-900 py-1.5 focus:outline-none">
+                        <span class="flex items-center gap-2">
+                            <span>Notes &amp; Study</span>
+                            <span class="text-xs font-sans font-semibold px-2 py-0.5 rounded-full bg-blue-100 text-blue-700">4 Links</span>
+                        </span>
+                        <svg id="mobileNotesArrow" class="w-5 h-5 text-gray-500 transition-transform duration-200 transform rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </button>
+                    <div id="mobileNotesSubmenu" class="space-y-1 pl-2 pt-1 pb-1 transition-all">
+                        <a href="/notes/" onclick="toggleMobileMenu()" class="flex items-center gap-2.5 py-2 px-3 rounded-lg text-sm font-medium text-gray-700 hover:bg-blue-50 hover:text-blue-600 transition">
+                            <span class="w-2 h-2 rounded-full bg-blue-500 flex-shrink-0"></span>
+                            <div>
+                                <div class="font-semibold text-gray-900">Subject Notes</div>
+                                <div class="text-xs text-gray-500">Curated notes, unit test IMPs &amp; manuals</div>
+                            </div>
+                        </a>
+                        <a href="/pyq/" onclick="toggleMobileMenu()" class="flex items-center gap-2.5 py-2 px-3 rounded-lg text-sm font-medium text-gray-700 hover:bg-blue-50 transition">
+                            <span class="w-2 h-2 rounded-full bg-emerald-500 flex-shrink-0"></span>
+                            <div>
+                                <div class="font-semibold text-gray-900">Question Papers (PYQ)</div>
+                                <div class="text-xs text-gray-500">Board question papers archive</div>
+                            </div>
+                        </a>
+                        <a href="/model-answer/" onclick="toggleMobileMenu()" class="flex items-center gap-2.5 py-2 px-3 rounded-lg text-sm font-bold text-blue-600 bg-blue-50 transition border border-blue-100">
+                            <span class="w-2 h-2 rounded-full bg-blue-600 flex-shrink-0"></span>
+                            <div>
+                                <div class="font-bold text-blue-700">Model Answer Papers</div>
+                                <div class="text-xs text-blue-600">Official solved papers &amp; marking schemes</div>
+                            </div>
+                        </a>
+                        <a href="/video-course/" onclick="toggleMobileMenu()" class="flex items-center gap-2.5 py-2 px-3 rounded-lg text-sm font-medium text-gray-700 hover:bg-blue-50 hover:text-blue-600 transition">
+                            <span class="w-2 h-2 rounded-full bg-purple-500 flex-shrink-0"></span>
+                            <div>
+                                <div class="font-semibold text-gray-900">Video Courses</div>
+                                <div class="text-xs text-gray-500">Engineering tutorials &amp; concept walkthroughs</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <a href="/#departments" onclick="toggleMobileMenu()" class="text-lg font-display font-bold text-gray-900 border-b border-gray-100 pb-2">Departments</a>
+                <a href="/blog/" onclick="toggleMobileMenu()" class="text-lg font-display font-bold text-gray-900 border-b border-gray-100 pb-2">Blog</a>
+                <a href="/news/" onclick="toggleMobileMenu()" class="text-lg font-display font-bold text-red-600 border-b border-gray-100 pb-2 flex items-center justify-between">
+                    <span>News Updates</span>
+                    <span class="text-xs bg-red-100 text-red-600 font-semibold px-2 py-0.5 rounded-full uppercase tracking-wider">Live</span>
+                </a>
+                <a href="/collegeinfo/" onclick="toggleMobileMenu()" class="text-lg font-display font-bold text-gray-900 border-b border-gray-100 pb-2">Colleges</a>
+
+                <!-- Jobs & Career Mobile Submenu (Accordion) -->
+                <div class="border-b border-gray-100 pb-2">
+                    <button type="button" onclick="toggleMobileSubmenu('mobileJobsSubmenu', 'mobileJobsArrow')" class="w-full flex items-center justify-between text-lg font-display font-bold text-gray-900 py-1.5 focus:outline-none">
+                        <span class="flex items-center gap-2">
+                            <span>Jobs &amp; Career</span>
+                            <span class="text-xs font-sans font-semibold px-2 py-0.5 rounded-full bg-blue-100 text-blue-700">2 Links</span>
+                        </span>
+                        <svg id="mobileJobsArrow" class="w-5 h-5 text-gray-500 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </button>
+                    <div id="mobileJobsSubmenu" class="hidden space-y-1 pl-2 pt-1 pb-1 transition-all">
+                        <a href="/jobs/" onclick="toggleMobileMenu()" class="flex items-center gap-2.5 py-2 px-3 rounded-lg text-sm font-medium text-gray-700 hover:bg-blue-50 hover:text-blue-600 transition">
+                            <span class="w-2 h-2 rounded-full bg-amber-500 flex-shrink-0"></span>
+                            <div>
+                                <div class="font-semibold text-gray-900">Jobs Portal</div>
+                                <div class="text-xs text-gray-500">MSBTE diploma jobs &amp; freshers hiring</div>
+                            </div>
+                        </a>
+                        <a href="/internships" onclick="toggleMobileMenu()" class="flex items-center gap-2.5 py-2 px-3 rounded-lg text-sm font-medium text-gray-700 hover:bg-blue-50 hover:text-blue-600 transition">
+                            <span class="w-2 h-2 rounded-full bg-indigo-500 flex-shrink-0"></span>
+                            <div>
+                                <div class="font-semibold text-gray-900">Internships</div>
+                                <div class="text-xs text-gray-500">Industry internships for diploma students</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <a href="/about" onclick="toggleMobileMenu()" class="text-lg font-display font-bold text-gray-900 border-b border-gray-100 pb-2">About Us</a>
+                <a href="/contact" onclick="toggleMobileMenu()" class="text-lg font-display font-bold text-gray-900 border-b border-gray-100 pb-2">Contact</a>
+
+                <div class="pt-2">
+                    <a href="https://whatsapp.com/channel/0029Vap8lWS3QxRxxdmaSR36" target="_blank" rel="noopener noreferrer" class="w-full flex items-center justify-center gap-2 bg-green-600 hover:bg-green-700 text-white font-bold py-3 px-4 rounded-xl shadow transition">
+                        <svg class="w-5 h-5 fill-current" viewBox="0 0 448 512"><path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/></svg>
+                        <span>Join WhatsApp Community (15k+)</span>
+                    </a>
+                </div>
+            </div>
         </div>
     </nav>
 
@@ -556,7 +687,7 @@
                             <div class="text-xs text-blue-100 font-semibold tracking-wide">ALSO KNOWN AS <span class="text-amber-300 font-bold">ACADEMIA</span> &bull; OFFICIAL MODEL ANSWER FORMAT</div>
                         </div>
                     </div>
-                    <div class="text-xs sm:text-right bg-blue-950/40 p-3 rounded-lg border border-blue-400/30">
+                    <div class="text-xs sm:text-right header-helpline-box p-3 rounded-lg shadow-sm">
                         <div class="text-blue-200">Helpline / Community: <span class="text-white font-bold font-mono">7083236221</span></div>
                         <div class="text-blue-200">Official Portal: <span class="text-amber-300 font-mono font-bold">msbtenotes-info.netlify.app</span></div>
                         <div class="text-emerald-300 font-semibold mt-0.5">&bull; Verified Faculty Solutions &bull;</div>
@@ -565,19 +696,19 @@
 
                 <!-- Subject Bar -->
                 <div class="mt-5 pt-4 border-t border-blue-700/60 grid grid-cols-2 sm:grid-cols-4 gap-3 text-xs sm:text-sm">
-                    <div class="bg-blue-900/60 p-2.5 rounded border border-blue-700/40">
+                    <div class="header-meta-box p-2.5 rounded shadow-sm">
                         <span class="text-blue-300 block text-xs">COURSE / SUBJECT:</span>
                         <strong class="text-white text-base">OPERATING SYSTEMS</strong>
                     </div>
-                    <div class="bg-blue-900/60 p-2.5 rounded border border-blue-700/40">
+                    <div class="header-meta-box p-2.5 rounded shadow-sm">
                         <span class="text-blue-300 block text-xs">SUBJECT CODE:</span>
                         <strong class="text-amber-300 text-base font-mono">315319 (OSY)</strong>
                     </div>
-                    <div class="bg-blue-900/60 p-2.5 rounded border border-blue-700/40">
+                    <div class="header-meta-box p-2.5 rounded shadow-sm">
                         <span class="text-blue-300 block text-xs">SCHEME &amp; SEMESTER:</span>
                         <strong class="text-white text-base">K-SCHEME (5th SEM)</strong>
                     </div>
-                    <div class="bg-blue-900/60 p-2.5 rounded border border-blue-700/40">
+                    <div class="header-meta-box p-2.5 rounded shadow-sm">
                         <span class="text-blue-300 block text-xs">EXAM SESSION &amp; MARKS:</span>
                         <strong class="text-white text-base">WINTER 2026 (70 MARKS)</strong>
                     </div>
@@ -585,7 +716,7 @@
             </header>
 
             <!-- Guidelines / Instructions Box -->
-            <div class="bg-slate-50 p-4 sm:p-5 border-b border-gray-200">
+            <div class="guidelines-box p-4 sm:p-5">
                 <!-- How much to write table -->
                 <div class="mb-4">
                     <h2 class="text-xs uppercase font-extrabold tracking-wider text-gray-700 mb-2 flex items-center gap-1.5">
@@ -628,7 +759,7 @@
                 </div>
 
                 <!-- Collapsible Examiner Instructions -->
-                <div class="border border-amber-300 bg-amber-50/70 rounded-lg p-3 text-xs text-amber-950">
+                <div class="examiner-notice-box rounded-lg p-3 text-xs shadow-sm">
                     <div class="font-bold text-amber-900 mb-1 flex items-center justify-between">
                         <span class="flex items-center gap-1.5">
                             <svg class="w-4 h-4 text-amber-700" fill="currentColor" viewBox="0 0 20 20"><path d="M10 2a8 8 0 100 16 8 8 0 000-16zm0 14a6 6 0 110-12 6 6 0 010 12zm-1-5h2v2H9v-2zm0-6h2v4H9V5z"></path></svg>
@@ -645,17 +776,27 @@
                 </div>
             </div>
 
-            <!-- AD 1: Top Responsive AdSense Unit -->
-            <div class="my-4 px-3 sm:px-6 text-center no-print">
-                <div class="text-[10px] uppercase font-bold text-gray-400 tracking-wider mb-1">Advertisement</div>
-                <div class="bg-white rounded-xl p-2 sm:p-3 border border-gray-200/80 shadow-sm overflow-hidden max-w-4xl mx-auto">
-                    <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-9227354288966999" data-ad-slot="1275037071" data-ad-format="auto" data-full-width-responsive="true"></ins>
-                    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
-                </div>
+            <!-- AD 1: Responsive Ad Unit -->
+            <div class="my-4 px-2 sm:px-4 text-center no-print overflow-hidden max-w-4xl mx-auto">
+                <ins class="adsbygoogle"
+                     style="display:block"
+                     data-ad-client="ca-pub-9227354288966999"
+                     data-ad-slot="1275037071"
+                     data-ad-format="auto"
+                     data-full-width-responsive="true"></ins>
+                <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
             </div>
 
-            <!-- TABLE CONTAINER (Responsive Desktop Table + Mobile Cards) -->
-            <div class="custom-scroll">
+            <!-- Mobile Swipe Helper Indicator -->
+            <div class="md:hidden flex items-center justify-between text-xs text-blue-900 bg-blue-50 border border-blue-200 px-3 py-2 rounded-lg mx-2 mb-2 no-print">
+                <span class="flex items-center gap-1.5 font-semibold">
+                    <svg class="w-4 h-4 text-blue-600 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4"></path></svg>
+                    <span>Swipe horizontally to view full 4-column answer sheet</span>
+                </span>
+            </div>
+
+            <!-- TABLE CONTAINER (Authentic MSBTE 4-Column Table with smooth low-width scroll on mobile) -->
+            <div class="table-wrapper custom-scroll">
                 <table class="ans-table text-gray-800">
                     <thead>
                         <tr>
@@ -1243,21 +1384,18 @@
     </td>
 </tr>
 
-<!-- AD 2: Responsive AdSense Banner (Between Q.2 & Q.3) -->
-<tr class="ad-row no-print">
-    <td colspan="4" class="p-3 sm:p-4 bg-slate-50 border-y border-slate-200">
-        <div class="max-w-4xl mx-auto text-center overflow-hidden">
-            <span class="text-[10px] uppercase font-bold tracking-wider text-slate-400 block mb-1">Advertisement</span>
-            <ins class="adsbygoogle"
-                 style="display:block; text-align:center;"
-                 data-ad-layout="in-article"
-                 data-ad-format="fluid"
-                 data-ad-client="ca-pub-9227354288966999"
-                 data-ad-slot="7917907402"></ins>
-            <script>
-                 (adsbygoogle = window.adsbygoogle || []).push({});
-            </script>
-        </div>
+<!-- AD 2: Responsive Ad (Between Q.2 & Q.3) -->
+<tr class="no-print">
+    <td colspan="4" class="p-2 sm:p-3 text-center bg-gray-50 border-t border-b border-gray-200">
+        <ins class="adsbygoogle"
+             style="display:block; text-align:center;"
+             data-ad-layout="in-article"
+             data-ad-format="fluid"
+             data-ad-client="ca-pub-9227354288966999"
+             data-ad-slot="7917907402"></ins>
+        <script>
+             (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
     </td>
 </tr>
 
@@ -1840,21 +1978,18 @@
     </td>
 </tr>
 
-<!-- AD 3: Responsive AdSense Banner (Between Q.4 & Q.5) -->
-<tr class="ad-row no-print">
-    <td colspan="4" class="p-3 sm:p-4 bg-slate-50 border-y border-slate-200">
-        <div class="max-w-4xl mx-auto text-center overflow-hidden">
-            <span class="text-[10px] uppercase font-bold tracking-wider text-slate-400 block mb-1">Advertisement</span>
-            <ins class="adsbygoogle"
-                 style="display:block; text-align:center;"
-                 data-ad-layout="in-article"
-                 data-ad-format="fluid"
-                 data-ad-client="ca-pub-9227354288966999"
-                 data-ad-slot="7917907402"></ins>
-            <script>
-                 (adsbygoogle = window.adsbygoogle || []).push({});
-            </script>
-        </div>
+<!-- AD 3: Responsive Ad (Between Q.4 & Q.5) -->
+<tr class="no-print">
+    <td colspan="4" class="p-2 sm:p-3 text-center bg-gray-50 border-t border-b border-gray-200">
+        <ins class="adsbygoogle"
+             style="display:block; text-align:center;"
+             data-ad-layout="in-article"
+             data-ad-format="fluid"
+             data-ad-client="ca-pub-9227354288966999"
+             data-ad-slot="7917907402"></ins>
+        <script>
+             (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
     </td>
 </tr>
 
@@ -2513,62 +2648,59 @@
     </td>
 </tr>
 
-<!-- AD 4: Responsive AdSense Banner (End of Table Q.6) -->
-<tr class="ad-row no-print">
-    <td colspan="4" class="p-3 sm:p-4 bg-slate-50 border-y border-slate-200">
-        <div class="max-w-4xl mx-auto text-center overflow-hidden">
-            <span class="text-[10px] uppercase font-bold tracking-wider text-slate-400 block mb-1">Advertisement</span>
-            <ins class="adsbygoogle"
-                 style="display:block"
-                 data-ad-client="ca-pub-9227354288966999"
-                 data-ad-slot="1275037071"
-                 data-ad-format="auto"
-                 data-full-width-responsive="true"></ins>
-            <script>
-                 (adsbygoogle = window.adsbygoogle || []).push({});
-            </script>
-        </div>
+<!-- AD 4: Responsive Ad (End of Table Q.6) -->
+<tr class="no-print">
+    <td colspan="4" class="p-2 sm:p-3 text-center bg-gray-50 border-t border-b border-gray-200">
+        <ins class="adsbygoogle"
+             style="display:block"
+             data-ad-client="ca-pub-9227354288966999"
+             data-ad-slot="1275037071"
+             data-ad-format="auto"
+             data-full-width-responsive="true"></ins>
+        <script>
+             (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
     </td>
 </tr>
 
                     </tbody>
                 </table>
-            </div> <!-- End overflow-x-auto -->
+            </div> <!-- End table-wrapper -->
 
             <!-- ⭐ LAST-MINUTE SCORING SHEET & VERIFIED NUMERICALS -->
-            <section id="scoring-sheet" class="bg-gradient-to-br from-slate-900 to-blue-950 text-white p-5 sm:p-7 border-t-4 border-amber-400">
+            <section id="scoring-sheet" class="text-white p-5 sm:p-7">
                 <div class="flex items-center gap-2 mb-4">
-                    <span class="text-2xl">&starf;</span>
+                    <span class="text-2xl text-amber-300">&starf;</span>
                     <h2 class="text-xl sm:text-2xl font-bold font-display tracking-tight text-amber-300">LAST-MINUTE SCORING SHEET &amp; FORMULAS</h2>
                 </div>
 
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-xs sm:text-sm">
                     <!-- Formulas Box -->
-                    <div class="bg-white/10 backdrop-blur rounded-lg p-4 border border-white/10">
+                    <div class="scoring-card-dark rounded-lg p-4">
                         <strong class="text-amber-300 block text-base font-bold mb-2">Essential Numerical Formulas (Mandatory in Exam):</strong>
                         <ul class="space-y-1.5 font-mono text-xs">
-                            <li class="bg-white/5 p-1.5 rounded"><strong class="text-blue-300">Turnaround Time (TAT):</strong> TAT = CT &minus; AT</li>
-                            <li class="bg-white/5 p-1.5 rounded"><strong class="text-blue-300">Waiting Time (WT):</strong> WT = TAT &minus; BT</li>
-                            <li class="bg-white/5 p-1.5 rounded"><strong class="text-blue-300">Average Waiting Time:</strong> AWT = (&Sigma; WT) / Total Processes</li>
-                            <li class="bg-white/5 p-1.5 rounded"><strong class="text-blue-300">Page Fault Ratio:</strong> Total Faults / Total References</li>
-                            <li class="bg-white/5 p-1.5 rounded"><strong class="text-blue-300">Hit Ratio:</strong> 1 &minus; Fault Ratio = (Hits / References) &times; 100%</li>
-                            <li class="bg-white/5 p-1.5 rounded"><strong class="text-blue-300">Paging Address:</strong> Physical = (Frame No &times; Page Size) + Offset</li>
+                            <li class="scoring-item-dark"><strong class="text-blue-300">Turnaround Time (TAT):</strong> TAT = CT &minus; AT</li>
+                            <li class="scoring-item-dark"><strong class="text-blue-300">Waiting Time (WT):</strong> WT = TAT &minus; BT</li>
+                            <li class="scoring-item-dark"><strong class="text-blue-300">Average Waiting Time:</strong> AWT = (&Sigma; WT) / Total Processes</li>
+                            <li class="scoring-item-dark"><strong class="text-blue-300">Page Fault Ratio:</strong> Total Faults / Total References</li>
+                            <li class="scoring-item-dark"><strong class="text-blue-300">Hit Ratio:</strong> 1 &minus; Fault Ratio = (Hits / References) &times; 100%</li>
+                            <li class="scoring-item-dark"><strong class="text-blue-300">Paging Address:</strong> Physical = (Frame No &times; Page Size) + Offset</li>
                         </ul>
                     </div>
 
                     <!-- Verified Answers Summary Table -->
-                    <div class="bg-white/10 backdrop-blur rounded-lg p-4 border border-white/10">
+                    <div class="scoring-card-dark rounded-lg p-4">
                         <strong class="text-amber-300 block text-base font-bold mb-2">Verified Numerical Results of this Paper:</strong>
                         <div class="overflow-x-auto">
-                            <table class="w-full text-xs text-left border border-white/20">
-                                <thead class="bg-white/20 text-white font-bold">
+                            <table class="w-full text-xs text-left border border-white border-opacity-20">
+                                <thead class="scoring-table-head">
                                     <tr>
-                                        <th class="p-2 border border-white/20">Question</th>
-                                        <th class="p-2 border border-white/20">Topic</th>
-                                        <th class="p-2 border border-white/20">Verified Final Answer</th>
+                                        <th class="p-2 border border-white border-opacity-20">Question</th>
+                                        <th class="p-2 border border-white border-opacity-20">Topic</th>
+                                        <th class="p-2 border border-white border-opacity-20">Verified Final Answer</th>
                                     </tr>
                                 </thead>
-                                <tbody class="divide-y divide-white/10 font-mono">
+                                <tbody class="divide-y divide-white divide-opacity-10 font-mono">
                                     <tr>
                                         <td class="p-2 font-bold text-amber-300">Q.4 (b)</td>
                                         <td class="p-2 font-sans">FCFS Numerical</td>
@@ -2596,9 +2728,9 @@
                 </div>
 
                 <!-- Strategic Exam Tips -->
-                <div class="mt-4 p-3 bg-amber-400/20 rounded-lg border border-amber-300/30 text-xs sm:text-sm">
+                <div class="mt-4 scoring-tip-box rounded-lg p-3 text-xs sm:text-sm">
                     <strong class="text-amber-300 block mb-1">MSBTE Topper Exam Strategy:</strong>
-                    <p class="text-gray-200">
+                    <p class="text-gray-100">
                         1. In <strong>Q.1</strong>, pick direct definitions and shell syntax questions — finish all 5 in under 15 minutes to secure 10 full marks.<br>
                         2. In <strong>Q.2–Q.4</strong>, prioritize questions that demand a diagram or comparison table (e.g. Process states, CLI vs GUI, Paging vs Segmentation). Evaluators award full marks easily for neat sketches.<br>
                         3. <strong>Solve numericals first:</strong> Q4b, Q5b, Q6a, and Q6b offer 100% objective step marks. Always draw labelled Gantt charts and clearly box/underline your final calculated value!
@@ -2620,15 +2752,15 @@
                 <span>Related OSY (315319) Resources &amp; Question Papers</span>
             </h3>
             <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 text-xs sm:text-sm">
-                <a href="/model-answer/315319-operating-system" class="p-3 bg-blue-50/60 hover:bg-blue-100 rounded-lg border border-blue-200 text-blue-900 font-semibold flex items-center justify-between transition">
+                <a href="/model-answer/315319-operating-system" class="p-3 bg-blue-50 hover:bg-blue-100 rounded-lg border border-blue-200 text-blue-900 font-semibold flex items-center justify-between transition">
                     <span>All OSY Model Answers</span>
                     <svg class="w-4 h-4 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
                 </a>
-                <a href="/Notes/osy-k-scheme-notes.html" class="p-3 bg-emerald-50/60 hover:bg-emerald-100 rounded-lg border border-emerald-200 text-emerald-900 font-semibold flex items-center justify-between transition">
+                <a href="/Notes/osy-k-scheme-notes.html" class="p-3 bg-green-50 hover:bg-green-100 rounded-lg border border-green-200 text-green-900 font-semibold flex items-center justify-between transition">
                     <span>OSY Chapter-Wise Notes</span>
-                    <svg class="w-4 h-4 text-emerald-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                    <svg class="w-4 h-4 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
                 </a>
-                <a href="/pyq/315319-operating-system/" class="p-3 bg-purple-50/60 hover:bg-purple-100 rounded-lg border border-purple-200 text-purple-900 font-semibold flex items-center justify-between transition">
+                <a href="/pyq/315319-operating-system/" class="p-3 bg-purple-50 hover:bg-purple-100 rounded-lg border border-purple-200 text-purple-900 font-semibold flex items-center justify-between transition">
                     <span>OSY Previous Year Papers (PYQ)</span>
                     <svg class="w-4 h-4 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
                 </a>
@@ -2742,11 +2874,39 @@
         </div>
     </footer>
 
-    <!-- Interactive Client Scripts -->
+    <!-- Interactive Client Scripts & Mobile Drawer Logic -->
     <script>
-        function toggleMobileNav() {
-            const menu = document.getElementById('mobile-nav-menu');
-            if (menu) menu.classList.toggle('hidden');
+        function toggleMobileMenu() {
+            const menu = document.getElementById('mobileNav');
+            const menuIcon = document.getElementById('menuIcon');
+            const closeIcon = document.getElementById('closeIcon');
+            if (!menu) return;
+            const isClosed = menu.classList.contains('translate-x-full');
+            if (isClosed) {
+                menu.classList.remove('translate-x-full');
+                if (menuIcon) menuIcon.classList.add('hidden');
+                if (closeIcon) closeIcon.classList.remove('hidden');
+                document.body.style.overflow = 'hidden';
+            } else {
+                menu.classList.add('translate-x-full');
+                if (menuIcon) menuIcon.classList.remove('hidden');
+                if (closeIcon) closeIcon.classList.add('hidden');
+                document.body.style.overflow = '';
+            }
+        }
+
+        function toggleMobileSubmenu(submenuId, arrowId) {
+            const sub = document.getElementById(submenuId);
+            const arr = document.getElementById(arrowId);
+            if (!sub) return;
+            const isHidden = sub.classList.contains('hidden');
+            if (isHidden) {
+                sub.classList.remove('hidden');
+                if (arr) arr.classList.add('rotate-180');
+            } else {
+                sub.classList.add('hidden');
+                if (arr) arr.classList.remove('rotate-180');
+            }
         }
 
         function copyPageLink() {
@@ -2795,11 +2955,11 @@
     </script>
 
     <!-- Anti-Print & Anti-Save Notification Toast -->
-    <div id="protection-toast" class="fixed bottom-6 right-6 z-50 bg-slate-900/95 text-white px-5 py-3 rounded-xl shadow-2xl border border-amber-400/40 text-xs sm:text-sm flex items-center gap-3 transform translate-y-24 opacity-0 transition-all duration-300 pointer-events-none">
-        <svg class="w-5 h-5 text-amber-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path></svg>
+    <div id="protection-toast" class="fixed bottom-6 right-6 z-50 text-white px-5 py-3 rounded-xl shadow-2xl text-xs sm:text-sm flex items-center gap-3 transform translate-y-24 opacity-0 transition-all duration-300 pointer-events-none" style="background-color: #0f172a; border: 1px solid #f59e0b; color: #ffffff;">
+        <svg class="w-5 h-5 text-amber-300 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path></svg>
         <div>
             <div class="font-bold text-amber-300">Protected Educational Document</div>
-            <div class="text-slate-300">Printing, saving, and downloading are disabled. Please study online on MSBTE Notes &amp; Info.</div>
+            <div class="toast-sub" style="color: #cbd5e1;">Printing, saving, and downloading are disabled. Please study online on MSBTE Notes &amp; Info.</div>
         </div>
     </div>
 
@@ -2809,7 +2969,7 @@
             const toast = document.getElementById('protection-toast');
             if (!toast) return;
             if (message) {
-                const sub = toast.querySelector('.text-slate-300');
+                const sub = toast.querySelector('.toast-sub');
                 if (sub) sub.textContent = message;
             }
             toast.classList.remove('translate-y-24', 'opacity-0');
