@@ -213,14 +213,25 @@
             box-shadow: 0 4px 20px -2px rgba(0, 0, 0, 0.08);
             border: 1px solid #e2e8f0;
         }
+        /* Global Fit-To-Screen Layout Guard */
+        html, body {
+            overflow-x: hidden;
+            max-width: 100vw;
+        }
+        main {
+            overflow-x: hidden;
+            max-width: 100%;
+        }
         .board-header {
             background: linear-gradient(135deg, #042a73 0%, #0a4aa6 100%);
             color: #ffffff;
         }
         .ans-table {
             border-collapse: collapse;
-            width: 100%;
+            width: 100% !important;
+            max-width: 100% !important;
             background-color: #ffffff;
+            table-layout: fixed;
         }
         .ans-table th {
             background-color: #042a73;
@@ -239,6 +250,9 @@
         }
         /* Desktop Default Column Widths (≥ 768px) */
         @media (min-width: 768px) {
+            .ans-table {
+                table-layout: auto;
+            }
             .col-qno {
                 width: 6%;
                 min-width: 48px;
@@ -355,79 +369,99 @@
             }
         }
 
-        /* AUTHENTIC 4-COLUMN BOARD ANSWER TABLE (Fit-To-Screen on Mobile while Scrollable) */
+        /* AUTHENTIC 4-COLUMN BOARD ANSWER TABLE (Strict Fit-To-Screen Table Mode - No Horizontal Scroll) */
         .table-wrapper {
-            overflow-x: auto;
-            -webkit-overflow-scrolling: touch;
-            width: 100%;
+            overflow-x: hidden !important;
+            width: 100% !important;
+            max-width: 100% !important;
             background-color: #ffffff;
             border-radius: 0.5rem;
         }
 
         @media (max-width: 767px) {
+            .table-wrapper {
+                overflow-x: hidden !important;
+                width: 100% !important;
+                max-width: 100% !important;
+            }
             .ans-table {
                 width: 100% !important;
-                min-width: 100% !important;
-                font-size: 0.8125rem;
-                table-layout: auto;
+                max-width: 100% !important;
+                font-size: 0.775rem;
+                table-layout: fixed !important;
+                border-collapse: collapse;
             }
             .ans-table th {
-                padding: 6px 3px !important;
-                font-size: 0.675rem !important;
+                padding: 6px 1px !important;
+                font-size: 0.65rem !important;
                 letter-spacing: 0 !important;
                 text-align: center;
             }
             .col-qno {
-                width: 34px !important;
-                min-width: 32px !important;
-                max-width: 38px !important;
-                padding: 8px 2px !important;
+                width: 32px !important;
+                min-width: 30px !important;
+                max-width: 34px !important;
+                padding: 8px 1px !important;
                 text-align: center !important;
                 font-size: 0.725rem !important;
                 font-weight: 800 !important;
                 color: #1e293b !important;
                 background-color: #ffffff !important;
+                word-break: break-all;
             }
             .col-sub {
-                width: 30px !important;
-                min-width: 28px !important;
-                max-width: 34px !important;
-                padding: 8px 2px !important;
+                width: 26px !important;
+                min-width: 24px !important;
+                max-width: 28px !important;
+                padding: 8px 1px !important;
                 text-align: center !important;
                 font-size: 0.75rem !important;
                 font-weight: 800 !important;
                 color: #1d4ed8 !important;
                 background-color: #ffffff !important;
+                word-break: break-all;
             }
             .col-ans {
                 width: auto !important;
                 padding: 10px 8px !important;
-                font-size: 0.8125rem !important;
-                line-height: 1.55 !important;
-                word-break: break-word;
+                font-size: 0.775rem !important;
+                line-height: 1.5 !important;
+                word-break: break-word !important;
+                overflow-wrap: anywhere !important;
                 background-color: #ffffff !important;
+                min-width: 0 !important;
             }
             .col-marks {
-                width: 58px !important;
-                min-width: 54px !important;
-                max-width: 64px !important;
-                padding: 8px 2px !important;
+                width: 48px !important;
+                min-width: 46px !important;
+                max-width: 52px !important;
+                padding: 8px 1px !important;
                 text-align: center !important;
-                font-size: 0.675rem !important;
+                font-size: 0.625rem !important;
                 background-color: #ffffff !important;
                 border-left: 1px solid #e2e8f0;
+                word-break: break-word;
             }
             .col-marks .tag-pill {
-                font-size: 0.625rem !important;
-                padding: 1px 3px !important;
-                display: inline-block;
-                white-space: nowrap;
+                font-size: 0.575rem !important;
+                padding: 1px 2px !important;
+                display: block;
+                width: 100%;
+                text-align: center;
+                white-space: normal;
+                line-height: 1.2;
             }
             .col-marks .space-y-1 {
                 display: flex;
                 flex-direction: column;
                 align-items: center;
                 gap: 2px;
+                width: 100%;
+            }
+            .col-marks .text-xs, .col-marks .font-mono {
+                font-size: 0.625rem !important;
+                display: block;
+                line-height: 1.2;
             }
             .q-header-row td {
                 padding: 8px 8px !important;
@@ -440,6 +474,27 @@
             .board-header {
                 padding: 12px 10px !important;
             }
+            /* Internal comparison & calculation tables inside answers strictly fit within screen */
+            .col-ans table {
+                font-size: 0.675rem !important;
+                width: 100% !important;
+                max-width: 100% !important;
+                table-layout: fixed !important;
+                word-break: break-word !important;
+            }
+            .col-ans table th, .col-ans table td {
+                padding: 3px 2px !important;
+                word-break: break-word !important;
+            }
+            .col-ans svg, .col-ans img {
+                max-width: 100% !important;
+                height: auto !important;
+            }
+            .col-ans pre, .col-ans code {
+                white-space: pre-wrap !important;
+                word-break: break-word !important;
+                max-width: 100% !important;
+            }
         }
 
         /* SOLID COLOR FALLBACKS & UTILITIES */
@@ -447,6 +502,8 @@
             background-color: #ffffff;
             border: 1px solid #e2e8f0;
             box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
+            overflow-x: hidden;
+            max-width: 100%;
         }
         .board-header {
             background: linear-gradient(135deg, #0a2558 0%, #04183a 100%) !important;
@@ -855,17 +912,17 @@
                 <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
             </div>
 
-            <!-- Mobile Sheet Info Indicator -->
-            <div class="md:hidden flex items-center justify-between text-xs text-blue-900 bg-blue-50 border border-blue-200 px-3 py-2 rounded-lg mx-2 mb-2 no-print">
-                <span class="flex items-center gap-1.5 font-semibold">
+            <!-- Mobile Sheet Info Indicator (100% Fit-To-Screen) -->
+            <div class="md:hidden flex items-center justify-between text-xs text-blue-900 bg-blue-50 border border-blue-200 px-3 py-2 rounded-lg mx-2 mb-2 no-print font-semibold">
+                <span class="flex items-center gap-1.5">
                     <svg class="w-4 h-4 text-blue-600 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
-                    <span>Official 4-Column Format &bull; Fit-To-Screen Mode</span>
+                    <span>Official 4-Column Board Format</span>
                 </span>
-                <span class="text-[10px] text-blue-600 font-medium">Scrollable for wide tables</span>
+                <span class="text-[10px] text-blue-700 font-bold bg-blue-100/90 px-2 py-0.5 rounded">100% Fit-To-Screen</span>
             </div>
 
-            <!-- TABLE CONTAINER (Authentic MSBTE 4-Column Table with smooth low-width scroll on mobile) -->
-            <div class="table-wrapper custom-scroll">
+            <!-- TABLE CONTAINER (Authentic MSBTE 4-Column Board Sheet - 100% Fit-To-Screen Table) -->
+            <div class="table-wrapper">
                 <table class="ans-table text-gray-800">
                     <thead>
                         <tr>
@@ -2145,17 +2202,34 @@
                 <span>1. OPTIMAL (OPT / MIN) Algorithm (3 Marks)</span>
                 <span class="text-xs font-normal text-blue-800 bg-blue-100 px-2 py-0.5 rounded">Rule: Replace page that will NOT be used for longest time in FUTURE</span>
             </div>
-            <div class="overflow-x-auto my-2">
+
+            <!-- Steps 1 to 10 -->
+            <div class="my-2">
+                <div class="text-[11px] font-bold text-blue-900 mb-1">Steps 1 to 10:</div>
                 <table class="w-full text-center font-mono text-xs border border-gray-300 bg-white">
-                    <tr class="bg-gray-100 font-bold"><td class="border p-1 w-12 font-sans">Step:</td><td class="border p-1">1</td><td class="border p-1">2</td><td class="border p-1">3</td><td class="border p-1">4</td><td class="border p-1">5</td><td class="border p-1">6</td><td class="border p-1">7</td><td class="border p-1">8</td><td class="border p-1">9</td><td class="border p-1">10</td><td class="border p-1">11</td><td class="border p-1">12</td><td class="border p-1">13</td><td class="border p-1">14</td><td class="border p-1">15</td><td class="border p-1">16</td><td class="border p-1">17</td><td class="border p-1">18</td><td class="border p-1">19</td><td class="border p-1">20</td></tr>
-                    <tr class="bg-blue-50 font-bold text-blue-900"><td class="border p-1 font-sans">Ref:</td><td class="border p-1">7</td><td class="border p-1">0</td><td class="border p-1">1</td><td class="border p-1">2</td><td class="border p-1">0</td><td class="border p-1">3</td><td class="border p-1">0</td><td class="border p-1">4</td><td class="border p-1">2</td><td class="border p-1">3</td><td class="border p-1">0</td><td class="border p-1">3</td><td class="border p-1">2</td><td class="border p-1">1</td><td class="border p-1">2</td><td class="border p-1">0</td><td class="border p-1">1</td><td class="border p-1">7</td><td class="border p-1">0</td><td class="border p-1">1</td></tr>
-                    <tr><td class="border p-1 font-bold bg-gray-50 font-sans">F1</td><td class="border p-1">7</td><td class="border p-1">7</td><td class="border p-1">7</td><td class="border p-1 font-bold text-blue-700 bg-blue-50">2</td><td class="border p-1">2</td><td class="border p-1">2</td><td class="border p-1">2</td><td class="border p-1">2</td><td class="border p-1">2</td><td class="border p-1">2</td><td class="border p-1">2</td><td class="border p-1">2</td><td class="border p-1">2</td><td class="border p-1">2</td><td class="border p-1">2</td><td class="border p-1">2</td><td class="border p-1">2</td><td class="border p-1 font-bold text-blue-700 bg-blue-50">7</td><td class="border p-1">7</td><td class="border p-1">7</td></tr>
-                    <tr><td class="border p-1 font-bold bg-gray-50 font-sans">F2</td><td class="border p-1 text-gray-300">-</td><td class="border p-1">0</td><td class="border p-1">0</td><td class="border p-1">0</td><td class="border p-1">0</td><td class="border p-1">0</td><td class="border p-1">0</td><td class="border p-1 font-bold text-blue-700 bg-blue-50">4</td><td class="border p-1">4</td><td class="border p-1">4</td><td class="border p-1 font-bold text-blue-700 bg-blue-50">0</td><td class="border p-1">0</td><td class="border p-1">0</td><td class="border p-1">0</td><td class="border p-1">0</td><td class="border p-1">0</td><td class="border p-1">0</td><td class="border p-1">0</td><td class="border p-1">0</td><td class="border p-1">0</td></tr>
-                    <tr><td class="border p-1 font-bold bg-gray-50 font-sans">F3</td><td class="border p-1 text-gray-300">-</td><td class="border p-1 text-gray-300">-</td><td class="border p-1">1</td><td class="border p-1">1</td><td class="border p-1">1</td><td class="border p-1 font-bold text-blue-700 bg-blue-50">3</td><td class="border p-1">3</td><td class="border p-1">3</td><td class="border p-1">3</td><td class="border p-1">3</td><td class="border p-1">3</td><td class="border p-1">3</td><td class="border p-1">3</td><td class="border p-1 font-bold text-blue-700 bg-blue-50">1</td><td class="border p-1">1</td><td class="border p-1">1</td><td class="border p-1">1</td><td class="border p-1">1</td><td class="border p-1">1</td><td class="border p-1">1</td></tr>
-                    <tr class="font-bold"><td class="border p-1 font-sans">Status</td><td class="border p-1 bg-red-100 text-red-700">F</td><td class="border p-1 bg-red-100 text-red-700">F</td><td class="border p-1 bg-red-100 text-red-700">F</td><td class="border p-1 bg-red-100 text-red-700">F</td><td class="border p-1 bg-green-100 text-green-700">H</td><td class="border p-1 bg-red-100 text-red-700">F</td><td class="border p-1 bg-green-100 text-green-700">H</td><td class="border p-1 bg-red-100 text-red-700">F</td><td class="border p-1 bg-green-100 text-green-700">H</td><td class="border p-1 bg-green-100 text-green-700">H</td><td class="border p-1 bg-red-100 text-red-700">F</td><td class="border p-1 bg-green-100 text-green-700">H</td><td class="border p-1 bg-green-100 text-green-700">H</td><td class="border p-1 bg-red-100 text-red-700">F</td><td class="border p-1 bg-green-100 text-green-700">H</td><td class="border p-1 bg-green-100 text-green-700">H</td><td class="border p-1 bg-green-100 text-green-700">H</td><td class="border p-1 bg-red-100 text-red-700">F</td><td class="border p-1 bg-green-100 text-green-700">H</td><td class="border p-1 bg-green-100 text-green-700">H</td></tr>
+                    <tr class="bg-gray-100 font-bold"><td class="border p-1 w-10 font-sans">Step:</td><td class="border p-1">1</td><td class="border p-1">2</td><td class="border p-1">3</td><td class="border p-1">4</td><td class="border p-1">5</td><td class="border p-1">6</td><td class="border p-1">7</td><td class="border p-1">8</td><td class="border p-1">9</td><td class="border p-1">10</td></tr>
+                    <tr class="bg-blue-50 font-bold text-blue-900"><td class="border p-1 font-sans">Ref:</td><td class="border p-1">7</td><td class="border p-1">0</td><td class="border p-1">1</td><td class="border p-1">2</td><td class="border p-1">0</td><td class="border p-1">3</td><td class="border p-1">0</td><td class="border p-1">4</td><td class="border p-1">2</td><td class="border p-1">3</td></tr>
+                    <tr><td class="border p-1 font-bold bg-gray-50 font-sans">F1</td><td class="border p-1">7</td><td class="border p-1">7</td><td class="border p-1">7</td><td class="border p-1 font-bold text-blue-700 bg-blue-50">2</td><td class="border p-1">2</td><td class="border p-1">2</td><td class="border p-1">2</td><td class="border p-1">2</td><td class="border p-1">2</td><td class="border p-1">2</td></tr>
+                    <tr><td class="border p-1 font-bold bg-gray-50 font-sans">F2</td><td class="border p-1 text-gray-300">-</td><td class="border p-1">0</td><td class="border p-1">0</td><td class="border p-1">0</td><td class="border p-1">0</td><td class="border p-1">0</td><td class="border p-1">0</td><td class="border p-1 font-bold text-blue-700 bg-blue-50">4</td><td class="border p-1">4</td><td class="border p-1">4</td></tr>
+                    <tr><td class="border p-1 font-bold bg-gray-50 font-sans">F3</td><td class="border p-1 text-gray-300">-</td><td class="border p-1 text-gray-300">-</td><td class="border p-1">1</td><td class="border p-1">1</td><td class="border p-1">1</td><td class="border p-1 font-bold text-blue-700 bg-blue-50">3</td><td class="border p-1">3</td><td class="border p-1">3</td><td class="border p-1">3</td><td class="border p-1">3</td></tr>
+                    <tr class="font-bold"><td class="border p-1 font-sans">Status</td><td class="border p-1 bg-red-100 text-red-700">F</td><td class="border p-1 bg-red-100 text-red-700">F</td><td class="border p-1 bg-red-100 text-red-700">F</td><td class="border p-1 bg-red-100 text-red-700">F</td><td class="border p-1 bg-green-100 text-green-700">H</td><td class="border p-1 bg-red-100 text-red-700">F</td><td class="border p-1 bg-green-100 text-green-700">H</td><td class="border p-1 bg-red-100 text-red-700">F</td><td class="border p-1 bg-green-100 text-green-700">H</td><td class="border p-1 bg-green-100 text-green-700">H</td></tr>
                 </table>
             </div>
-            <div class="text-xs text-gray-700 space-y-0.5 font-medium">
+
+            <!-- Steps 11 to 20 -->
+            <div class="my-2">
+                <div class="text-[11px] font-bold text-blue-900 mb-1">Steps 11 to 20:</div>
+                <table class="w-full text-center font-mono text-xs border border-gray-300 bg-white">
+                    <tr class="bg-gray-100 font-bold"><td class="border p-1 w-10 font-sans">Step:</td><td class="border p-1">11</td><td class="border p-1">12</td><td class="border p-1">13</td><td class="border p-1">14</td><td class="border p-1">15</td><td class="border p-1">16</td><td class="border p-1">17</td><td class="border p-1">18</td><td class="border p-1">19</td><td class="border p-1">20</td></tr>
+                    <tr class="bg-blue-50 font-bold text-blue-900"><td class="border p-1 font-sans">Ref:</td><td class="border p-1">0</td><td class="border p-1">3</td><td class="border p-1">2</td><td class="border p-1">1</td><td class="border p-1">2</td><td class="border p-1">0</td><td class="border p-1">1</td><td class="border p-1">7</td><td class="border p-1">0</td><td class="border p-1">1</td></tr>
+                    <tr><td class="border p-1 font-bold bg-gray-50 font-sans">F1</td><td class="border p-1">2</td><td class="border p-1">2</td><td class="border p-1">2</td><td class="border p-1">2</td><td class="border p-1">2</td><td class="border p-1">2</td><td class="border p-1">2</td><td class="border p-1 font-bold text-blue-700 bg-blue-50">7</td><td class="border p-1">7</td><td class="border p-1">7</td></tr>
+                    <tr><td class="border p-1 font-bold bg-gray-50 font-sans">F2</td><td class="border p-1 font-bold text-blue-700 bg-blue-50">0</td><td class="border p-1">0</td><td class="border p-1">0</td><td class="border p-1">0</td><td class="border p-1">0</td><td class="border p-1">0</td><td class="border p-1">0</td><td class="border p-1">0</td><td class="border p-1">0</td><td class="border p-1">0</td></tr>
+                    <tr><td class="border p-1 font-bold bg-gray-50 font-sans">F3</td><td class="border p-1">3</td><td class="border p-1">3</td><td class="border p-1">3</td><td class="border p-1 font-bold text-blue-700 bg-blue-50">1</td><td class="border p-1">1</td><td class="border p-1">1</td><td class="border p-1">1</td><td class="border p-1">1</td><td class="border p-1">1</td><td class="border p-1">1</td></tr>
+                    <tr class="font-bold"><td class="border p-1 font-sans">Status</td><td class="border p-1 bg-red-100 text-red-700">F</td><td class="border p-1 bg-green-100 text-green-700">H</td><td class="border p-1 bg-green-100 text-green-700">H</td><td class="border p-1 bg-red-100 text-red-700">F</td><td class="border p-1 bg-green-100 text-green-700">H</td><td class="border p-1 bg-green-100 text-green-700">H</td><td class="border p-1 bg-green-100 text-green-700">H</td><td class="border p-1 bg-red-100 text-red-700">F</td><td class="border p-1 bg-green-100 text-green-700">H</td><td class="border p-1 bg-green-100 text-green-700">H</td></tr>
+                </table>
+            </div>
+
+            <div class="text-xs text-gray-700 space-y-0.5 font-medium mt-2">
                 <div>&bull; <strong>Total Page Faults (Optimal)</strong> = <span class="text-red-700 font-bold font-mono text-sm">9</span> &nbsp;|&nbsp; <strong>Total Hits</strong> = <span class="text-green-700 font-bold font-mono text-sm">11</span></div>
                 <div>&bull; <strong>Hit Ratio</strong> = 11 / 20 = <span class="text-blue-900 font-bold font-mono">55.0%</span> &nbsp;|&nbsp; <strong>Fault Ratio</strong> = 9 / 20 = 45.0%</div>
             </div>
@@ -2167,17 +2241,34 @@
                 <span>2. LEAST RECENTLY USED (LRU) Algorithm (3 Marks)</span>
                 <span class="text-xs font-normal text-gray-700 bg-gray-200 px-2 py-0.5 rounded">Rule: Replace page that has NOT been used for longest time in PAST</span>
             </div>
-            <div class="overflow-x-auto my-2">
+
+            <!-- Steps 1 to 10 -->
+            <div class="my-2">
+                <div class="text-[11px] font-bold text-gray-900 mb-1">Steps 1 to 10:</div>
                 <table class="w-full text-center font-mono text-xs border border-gray-300 bg-white">
-                    <tr class="bg-gray-100 font-bold"><td class="border p-1 w-12 font-sans">Step:</td><td class="border p-1">1</td><td class="border p-1">2</td><td class="border p-1">3</td><td class="border p-1">4</td><td class="border p-1">5</td><td class="border p-1">6</td><td class="border p-1">7</td><td class="border p-1">8</td><td class="border p-1">9</td><td class="border p-1">10</td><td class="border p-1">11</td><td class="border p-1">12</td><td class="border p-1">13</td><td class="border p-1">14</td><td class="border p-1">15</td><td class="border p-1">16</td><td class="border p-1">17</td><td class="border p-1">18</td><td class="border p-1">19</td><td class="border p-1">20</td></tr>
-                    <tr class="bg-blue-50 font-bold text-blue-900"><td class="border p-1 font-sans">Ref:</td><td class="border p-1">7</td><td class="border p-1">0</td><td class="border p-1">1</td><td class="border p-1">2</td><td class="border p-1">0</td><td class="border p-1">3</td><td class="border p-1">0</td><td class="border p-1">4</td><td class="border p-1">2</td><td class="border p-1">3</td><td class="border p-1">0</td><td class="border p-1">3</td><td class="border p-1">2</td><td class="border p-1">1</td><td class="border p-1">2</td><td class="border p-1">0</td><td class="border p-1">1</td><td class="border p-1">7</td><td class="border p-1">0</td><td class="border p-1">1</td></tr>
-                    <tr><td class="border p-1 font-bold bg-gray-50 font-sans">F1</td><td class="border p-1">7</td><td class="border p-1">7</td><td class="border p-1">7</td><td class="border p-1 font-bold text-blue-700 bg-blue-50">2</td><td class="border p-1">2</td><td class="border p-1">2</td><td class="border p-1">2</td><td class="border p-1 font-bold text-blue-700 bg-blue-50">4</td><td class="border p-1">4</td><td class="border p-1">4</td><td class="border p-1 font-bold text-blue-700 bg-blue-50">0</td><td class="border p-1">0</td><td class="border p-1">0</td><td class="border p-1 font-bold text-blue-700 bg-blue-50">1</td><td class="border p-1">1</td><td class="border p-1">1</td><td class="border p-1">1</td><td class="border p-1">1</td><td class="border p-1">1</td><td class="border p-1">1</td></tr>
-                    <tr><td class="border p-1 font-bold bg-gray-50 font-sans">F2</td><td class="border p-1 text-gray-300">-</td><td class="border p-1">0</td><td class="border p-1">0</td><td class="border p-1">0</td><td class="border p-1">0</td><td class="border p-1">0</td><td class="border p-1">0</td><td class="border p-1">0</td><td class="border p-1">0</td><td class="border p-1 font-bold text-blue-700 bg-blue-50">3</td><td class="border p-1">3</td><td class="border p-1">3</td><td class="border p-1">3</td><td class="border p-1">3</td><td class="border p-1">3</td><td class="border p-1 font-bold text-blue-700 bg-blue-50">0</td><td class="border p-1">0</td><td class="border p-1">0</td><td class="border p-1">0</td><td class="border p-1">0</td></tr>
-                    <tr><td class="border p-1 font-bold bg-gray-50 font-sans">F3</td><td class="border p-1 text-gray-300">-</td><td class="border p-1 text-gray-300">-</td><td class="border p-1">1</td><td class="border p-1">1</td><td class="border p-1">1</td><td class="border p-1 font-bold text-blue-700 bg-blue-50">3</td><td class="border p-1">3</td><td class="border p-1">3</td><td class="border p-1 font-bold text-blue-700 bg-blue-50">2</td><td class="border p-1">2</td><td class="border p-1">2</td><td class="border p-1">2</td><td class="border p-1">2</td><td class="border p-1">2</td><td class="border p-1">2</td><td class="border p-1">2</td><td class="border p-1">2</td><td class="border p-1 font-bold text-blue-700 bg-blue-50">7</td><td class="border p-1">7</td><td class="border p-1">7</td></tr>
-                    <tr class="font-bold"><td class="border p-1 font-sans">Status</td><td class="border p-1 bg-red-100 text-red-700">F</td><td class="border p-1 bg-red-100 text-red-700">F</td><td class="border p-1 bg-red-100 text-red-700">F</td><td class="border p-1 bg-red-100 text-red-700">F</td><td class="border p-1 bg-green-100 text-green-700">H</td><td class="border p-1 bg-red-100 text-red-700">F</td><td class="border p-1 bg-green-100 text-green-700">H</td><td class="border p-1 bg-red-100 text-red-700">F</td><td class="border p-1 bg-red-100 text-red-700">F</td><td class="border p-1 bg-red-100 text-red-700">F</td><td class="border p-1 bg-red-100 text-red-700">F</td><td class="border p-1 bg-green-100 text-green-700">H</td><td class="border p-1 bg-green-100 text-green-700">H</td><td class="border p-1 bg-red-100 text-red-700">F</td><td class="border p-1 bg-green-100 text-green-700">H</td><td class="border p-1 bg-red-100 text-red-700">F</td><td class="border p-1 bg-green-100 text-green-700">H</td><td class="border p-1 bg-red-100 text-red-700">F</td><td class="border p-1 bg-green-100 text-green-700">H</td><td class="border p-1 bg-green-100 text-green-700">H</td></tr>
+                    <tr class="bg-gray-100 font-bold"><td class="border p-1 w-10 font-sans">Step:</td><td class="border p-1">1</td><td class="border p-1">2</td><td class="border p-1">3</td><td class="border p-1">4</td><td class="border p-1">5</td><td class="border p-1">6</td><td class="border p-1">7</td><td class="border p-1">8</td><td class="border p-1">9</td><td class="border p-1">10</td></tr>
+                    <tr class="bg-blue-50 font-bold text-blue-900"><td class="border p-1 font-sans">Ref:</td><td class="border p-1">7</td><td class="border p-1">0</td><td class="border p-1">1</td><td class="border p-1">2</td><td class="border p-1">0</td><td class="border p-1">3</td><td class="border p-1">0</td><td class="border p-1">4</td><td class="border p-1">2</td><td class="border p-1">3</td></tr>
+                    <tr><td class="border p-1 font-bold bg-gray-50 font-sans">F1</td><td class="border p-1">7</td><td class="border p-1">7</td><td class="border p-1">7</td><td class="border p-1 font-bold text-blue-700 bg-blue-50">2</td><td class="border p-1">2</td><td class="border p-1">2</td><td class="border p-1">2</td><td class="border p-1 font-bold text-blue-700 bg-blue-50">4</td><td class="border p-1">4</td><td class="border p-1">4</td></tr>
+                    <tr><td class="border p-1 font-bold bg-gray-50 font-sans">F2</td><td class="border p-1 text-gray-300">-</td><td class="border p-1">0</td><td class="border p-1">0</td><td class="border p-1">0</td><td class="border p-1">0</td><td class="border p-1">0</td><td class="border p-1">0</td><td class="border p-1">0</td><td class="border p-1">0</td><td class="border p-1 font-bold text-blue-700 bg-blue-50">3</td></tr>
+                    <tr><td class="border p-1 font-bold bg-gray-50 font-sans">F3</td><td class="border p-1 text-gray-300">-</td><td class="border p-1 text-gray-300">-</td><td class="border p-1">1</td><td class="border p-1">1</td><td class="border p-1">1</td><td class="border p-1 font-bold text-blue-700 bg-blue-50">3</td><td class="border p-1">3</td><td class="border p-1">3</td><td class="border p-1 font-bold text-blue-700 bg-blue-50">2</td><td class="border p-1">2</td></tr>
+                    <tr class="font-bold"><td class="border p-1 font-sans">Status</td><td class="border p-1 bg-red-100 text-red-700">F</td><td class="border p-1 bg-red-100 text-red-700">F</td><td class="border p-1 bg-red-100 text-red-700">F</td><td class="border p-1 bg-red-100 text-red-700">F</td><td class="border p-1 bg-green-100 text-green-700">H</td><td class="border p-1 bg-red-100 text-red-700">F</td><td class="border p-1 bg-green-100 text-green-700">H</td><td class="border p-1 bg-red-100 text-red-700">F</td><td class="border p-1 bg-red-100 text-red-700">F</td><td class="border p-1 bg-red-100 text-red-700">F</td></tr>
                 </table>
             </div>
-            <div class="text-xs text-gray-700 space-y-0.5 font-medium">
+
+            <!-- Steps 11 to 20 -->
+            <div class="my-2">
+                <div class="text-[11px] font-bold text-gray-900 mb-1">Steps 11 to 20:</div>
+                <table class="w-full text-center font-mono text-xs border border-gray-300 bg-white">
+                    <tr class="bg-gray-100 font-bold"><td class="border p-1 w-10 font-sans">Step:</td><td class="border p-1">11</td><td class="border p-1">12</td><td class="border p-1">13</td><td class="border p-1">14</td><td class="border p-1">15</td><td class="border p-1">16</td><td class="border p-1">17</td><td class="border p-1">18</td><td class="border p-1">19</td><td class="border p-1">20</td></tr>
+                    <tr class="bg-blue-50 font-bold text-blue-900"><td class="border p-1 font-sans">Ref:</td><td class="border p-1">0</td><td class="border p-1">3</td><td class="border p-1">2</td><td class="border p-1">1</td><td class="border p-1">2</td><td class="border p-1">0</td><td class="border p-1">1</td><td class="border p-1">7</td><td class="border p-1">0</td><td class="border p-1">1</td></tr>
+                    <tr><td class="border p-1 font-bold bg-gray-50 font-sans">F1</td><td class="border p-1 font-bold text-blue-700 bg-blue-50">0</td><td class="border p-1">0</td><td class="border p-1">0</td><td class="border p-1 font-bold text-blue-700 bg-blue-50">1</td><td class="border p-1">1</td><td class="border p-1">1</td><td class="border p-1">1</td><td class="border p-1">1</td><td class="border p-1">1</td><td class="border p-1">1</td></tr>
+                    <tr><td class="border p-1 font-bold bg-gray-50 font-sans">F2</td><td class="border p-1">3</td><td class="border p-1">3</td><td class="border p-1">3</td><td class="border p-1">3</td><td class="border p-1">3</td><td class="border p-1 font-bold text-blue-700 bg-blue-50">0</td><td class="border p-1">0</td><td class="border p-1">0</td><td class="border p-1">0</td><td class="border p-1">0</td></tr>
+                    <tr><td class="border p-1 font-bold bg-gray-50 font-sans">F3</td><td class="border p-1">2</td><td class="border p-1">2</td><td class="border p-1">2</td><td class="border p-1">2</td><td class="border p-1">2</td><td class="border p-1">2</td><td class="border p-1">2</td><td class="border p-1 font-bold text-blue-700 bg-blue-50">7</td><td class="border p-1">7</td><td class="border p-1">7</td></tr>
+                    <tr class="font-bold"><td class="border p-1 font-sans">Status</td><td class="border p-1 bg-red-100 text-red-700">F</td><td class="border p-1 bg-green-100 text-green-700">H</td><td class="border p-1 bg-green-100 text-green-700">H</td><td class="border p-1 bg-red-100 text-red-700">F</td><td class="border p-1 bg-green-100 text-green-700">H</td><td class="border p-1 bg-red-100 text-red-700">F</td><td class="border p-1 bg-green-100 text-green-700">H</td><td class="border p-1 bg-red-100 text-red-700">F</td><td class="border p-1 bg-green-100 text-green-700">H</td><td class="border p-1 bg-green-100 text-green-700">H</td></tr>
+                </table>
+            </div>
+
+            <div class="text-xs text-gray-700 space-y-0.5 font-medium mt-2">
                 <div>&bull; <strong>Total Page Faults (LRU)</strong> = <span class="text-red-700 font-bold font-mono text-sm">12</span> &nbsp;|&nbsp; <strong>Total Hits</strong> = <span class="text-green-700 font-bold font-mono text-sm">8</span></div>
                 <div>&bull; <strong>Hit Ratio</strong> = 8 / 20 = <span class="text-blue-900 font-bold font-mono">40.0%</span> &nbsp;|&nbsp; <strong>Fault Ratio</strong> = 12 / 20 = 60.0%</div>
             </div>
