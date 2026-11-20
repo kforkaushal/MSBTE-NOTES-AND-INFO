@@ -220,6 +220,7 @@
         .ans-table {
             border-collapse: collapse;
             width: 100%;
+            background-color: #ffffff;
         }
         .ans-table th {
             background-color: #042a73;
@@ -236,37 +237,43 @@
             vertical-align: top;
             background-color: #ffffff;
         }
-        .col-qno {
-            width: 6%;
-            text-align: center;
-            font-weight: 700;
-            color: #1e293b;
-            background-color: #ffffff !important;
-            padding: 12px 6px;
-        }
-        .col-sub {
-            width: 7%;
-            text-align: center;
-            font-weight: 700;
-            color: #1d4ed8;
-            background-color: #ffffff !important;
-            padding: 12px 6px;
-        }
-        .col-ans {
-            width: 73%;
-            padding: 16px 20px;
-            color: #1e293b;
-            line-height: 1.65;
-            background-color: #ffffff !important;
-        }
-        .col-marks {
-            width: 14%;
-            padding: 12px 8px;
-            text-align: center;
-            background-color: #ffffff !important;
-            color: #1d4ed8;
-            font-weight: 600;
-            border-left: 1px solid #e2e8f0;
+        /* Desktop Default Column Widths (≥ 768px) */
+        @media (min-width: 768px) {
+            .col-qno {
+                width: 6%;
+                min-width: 48px;
+                text-align: center;
+                font-weight: 700;
+                color: #1e293b;
+                background-color: #ffffff !important;
+                padding: 12px 6px;
+            }
+            .col-sub {
+                width: 6%;
+                min-width: 48px;
+                text-align: center;
+                font-weight: 700;
+                color: #1d4ed8;
+                background-color: #ffffff !important;
+                padding: 12px 6px;
+            }
+            .col-ans {
+                width: 74%;
+                padding: 16px 20px;
+                color: #1e293b;
+                line-height: 1.65;
+                background-color: #ffffff !important;
+            }
+            .col-marks {
+                width: 14%;
+                min-width: 110px;
+                padding: 12px 8px;
+                text-align: center;
+                background-color: #ffffff !important;
+                color: #1d4ed8;
+                font-weight: 600;
+                border-left: 1px solid #e2e8f0;
+            }
         }
         .q-header-row td {
             background-color: #0f172a !important;
@@ -348,7 +355,7 @@
             }
         }
 
-        /* AUTHENTIC 4-COLUMN BOARD ANSWER TABLE (Smooth Low-Width Scroll on Mobile) */
+        /* AUTHENTIC 4-COLUMN BOARD ANSWER TABLE (Fit-To-Screen on Mobile while Scrollable) */
         .table-wrapper {
             overflow-x: auto;
             -webkit-overflow-scrolling: touch;
@@ -356,49 +363,82 @@
             background-color: #ffffff;
             border-radius: 0.5rem;
         }
-        .ans-table {
-            width: 100%;
-            border-collapse: collapse;
-            background-color: #ffffff;
-            min-width: 680px; /* Keeps authentic 4-column MSBTE board format perfectly aligned */
-        }
 
         @media (max-width: 767px) {
             .ans-table {
-                min-width: 640px;
+                width: 100% !important;
+                min-width: 100% !important;
                 font-size: 0.8125rem;
+                table-layout: auto;
+            }
+            .ans-table th {
+                padding: 6px 3px !important;
+                font-size: 0.675rem !important;
+                letter-spacing: 0 !important;
+                text-align: center;
             }
             .col-qno {
-                width: 36px !important;
-                padding: 8px 3px !important;
-                font-size: 0.75rem !important;
+                width: 34px !important;
+                min-width: 32px !important;
+                max-width: 38px !important;
+                padding: 8px 2px !important;
+                text-align: center !important;
+                font-size: 0.725rem !important;
+                font-weight: 800 !important;
+                color: #1e293b !important;
+                background-color: #ffffff !important;
             }
             .col-sub {
-                width: 40px !important;
-                padding: 8px 3px !important;
-                font-size: 0.8125rem !important;
+                width: 30px !important;
+                min-width: 28px !important;
+                max-width: 34px !important;
+                padding: 8px 2px !important;
+                text-align: center !important;
+                font-size: 0.75rem !important;
+                font-weight: 800 !important;
+                color: #1d4ed8 !important;
+                background-color: #ffffff !important;
             }
             .col-ans {
                 width: auto !important;
-                padding: 10px 12px !important;
+                padding: 10px 8px !important;
                 font-size: 0.8125rem !important;
                 line-height: 1.55 !important;
+                word-break: break-word;
+                background-color: #ffffff !important;
             }
             .col-marks {
-                width: 86px !important;
-                padding: 8px 4px !important;
-                font-size: 0.75rem !important;
+                width: 58px !important;
+                min-width: 54px !important;
+                max-width: 64px !important;
+                padding: 8px 2px !important;
+                text-align: center !important;
+                font-size: 0.675rem !important;
+                background-color: #ffffff !important;
+                border-left: 1px solid #e2e8f0;
+            }
+            .col-marks .tag-pill {
+                font-size: 0.625rem !important;
+                padding: 1px 3px !important;
+                display: inline-block;
+                white-space: nowrap;
+            }
+            .col-marks .space-y-1 {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 2px;
             }
             .q-header-row td {
-                padding: 8px 10px !important;
-                font-size: 0.875rem !important;
+                padding: 8px 8px !important;
+                font-size: 0.8125rem !important;
             }
             .sticky-toolbar {
                 top: 56px;
                 padding: 6px 8px;
             }
             .board-header {
-                padding: 12px 14px !important;
+                padding: 12px 10px !important;
             }
         }
 
@@ -815,12 +855,13 @@
                 <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
             </div>
 
-            <!-- Mobile Swipe Helper Indicator -->
+            <!-- Mobile Sheet Info Indicator -->
             <div class="md:hidden flex items-center justify-between text-xs text-blue-900 bg-blue-50 border border-blue-200 px-3 py-2 rounded-lg mx-2 mb-2 no-print">
                 <span class="flex items-center gap-1.5 font-semibold">
-                    <svg class="w-4 h-4 text-blue-600 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4"></path></svg>
-                    <span>Swipe horizontally to view full 4-column answer sheet</span>
+                    <svg class="w-4 h-4 text-blue-600 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                    <span>Official 4-Column Format &bull; Fit-To-Screen Mode</span>
                 </span>
+                <span class="text-[10px] text-blue-600 font-medium">Scrollable for wide tables</span>
             </div>
 
             <!-- TABLE CONTAINER (Authentic MSBTE 4-Column Table with smooth low-width scroll on mobile) -->
