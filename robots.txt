@@ -16,7 +16,7 @@ Allow: /
 User-agent: Bingbot
 Allow: /
 
-# AI search / retrieval (allow to appear in AI search results)
+# AI search, retrieval and generative engine crawlers (GEO)
 User-agent: OAI-SearchBot
 Allow: /
 
@@ -35,7 +35,22 @@ Allow: /
 User-agent: Perplexity-User
 Allow: /
 
-# AI training crawlers (explicitly allowed for model knowledge)
+User-agent: Applebot-Extended
+Allow: /
+
+User-agent: Meta-ExternalAgent
+Allow: /
+
+User-agent: cohere-ai
+Allow: /
+
+User-agent: Amazonbot
+Allow: /
+
+User-agent: Bytespider
+Allow: /
+
+# AI training and foundation model knowledge crawlers
 User-agent: GPTBot
 Allow: /
 
@@ -44,6 +59,10 @@ Allow: /
 
 User-agent: Google-Extended
 Allow: /
+
+# Generative Engine Optimization (GEO) Knowledge Endpoints
+# LLM-Documentation: https://msbtenotes-info.netlify.app/llms.txt
+# LLM-Full-Documentation: https://msbtenotes-info.netlify.app/llms-full.txt
 
 # Primary Sitemap (canonical domain)
 Sitemap: https://msbtenotes-info.netlify.app/sitemap.xml
