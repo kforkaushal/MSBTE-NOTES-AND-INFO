@@ -4,73 +4,61 @@
     const popupHTML = `
     <div id="whatsappPopup"
         class="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-60 hidden transition-opacity duration-300 opacity-0"
-        style="z-index: 9999; position: fixed; inset: 0; background-color: rgba(0, 0, 0, 0.6); display: none; align-items: center; justify-content: center; padding: 1rem;">
+        style="z-index: 99999; position: fixed; inset: 0; background-color: rgba(0, 0, 0, 0.65); backdrop-filter: blur(4px); -webkit-backdrop-filter: blur(4px); display: none; align-items: center; justify-content: center; padding: 1rem;">
         <div class="bg-white rounded-2xl shadow-2xl p-6 max-w-sm w-full mx-auto text-center transform transition-all scale-95 relative"
-            style="background: #ffffff; border-radius: 1.25rem; box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25); padding: 1.5rem; max-width: 24rem; width: 100%; text-align: center; position: relative;">
+            style="background: #ffffff; border-radius: 1.25rem; box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25); padding: 1.75rem 1.5rem; max-width: 24rem; width: 100%; text-align: center; position: relative; border: 1px solid #f1f5f9; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;">
             
             <!-- Close 'x' button -->
             <button id="closePopupBtn" aria-label="Close popup"
-                style="position: absolute; top: 0.75rem; right: 0.75rem; background: none; border: none; color: #9ca3af; font-size: 1.25rem; line-height: 1; cursor: pointer; padding: 0.25rem 0.5rem; border-radius: 9999px;">
+                style="position: absolute; top: 0.75rem; right: 0.75rem; background: none; border: none; color: #9ca3af; font-size: 1.5rem; line-height: 1; cursor: pointer; padding: 0.25rem 0.5rem; border-radius: 9999px; transition: color 0.2s;"
+                onmouseover="this.style.color='#1f2937'"
+                onmouseout="this.style.color='#9ca3af'">
                 &times;
             </button>
 
-            <!-- Bullseye Target Badge Icon -->
-            <div style="display: flex; justify-content: center; margin-bottom: 0.75rem;">
-                <div style="width: 3.25rem; height: 3.25rem; border-radius: 1rem; background: #fee2e2; color: #dc2626; display: flex; align-items: center; justify-content: center;">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width: 1.75rem; height: 1.75rem;">
-                        <circle cx="12" cy="12" r="10"></circle>
-                        <circle cx="12" cy="12" r="6"></circle>
-                        <circle cx="12" cy="12" r="2"></circle>
+            <!-- WhatsApp Community Badge Icon -->
+            <div style="display: flex; justify-content: center; margin-bottom: 0.85rem;">
+                <div style="width: 3.5rem; height: 3.5rem; border-radius: 1rem; background: #dcfce7; color: #16a34a; display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 14px rgba(22, 163, 74, 0.18);">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" style="width: 2rem; height: 2rem; fill: #16a34a;" aria-hidden="true">
+                        <path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/>
                     </svg>
                 </div>
             </div>
 
-            <!-- Title -->
-            <h3 style="font-size: 1.15rem; font-weight: 800; color: #111827; margin-bottom: 0.25rem; line-height: 1.3;">
-                🎯 MSBTE IMPORTANT QUESTION BANK
+            <!-- Official Badge Pill -->
+            <div style="display: inline-flex; align-items: center; gap: 0.35rem; background: #f0fdf4; border: 1px solid #bbf7d0; color: #15803d; font-weight: 700; font-size: 0.72rem; padding: 0.2rem 0.65rem; border-radius: 9999px; margin-bottom: 0.65rem; text-transform: uppercase; letter-spacing: 0.04em;">
+                <span style="display: inline-block; width: 0.5rem; height: 0.5rem; border-radius: 9999px; background: #22c55e;"></span>
+                Official MNI Community
+            </div>
+
+            <!-- Title / Question -->
+            <h3 style="font-size: 1.15rem; font-weight: 800; color: #111827; margin: 0 0 0.45rem 0; line-height: 1.35;">
+                Are you joined to our official MNI community to get daily updates?
             </h3>
 
-            <!-- Subtitle -->
-            <p style="color: #2563eb; font-weight: 700; font-size: 0.875rem; margin-bottom: 0.75rem;">
-                📚 Exam Preparation Made Easier!
+            <!-- Subtitle / Value Proposition -->
+            <p style="color: #4b5563; font-size: 0.85rem; line-height: 1.5; margin: 0 0 1.25rem 0;">
+                Get real-time MSBTE exam timetables, verified model answers, syllabus circulars, and study notes directly on WhatsApp.
             </p>
-
-            <!-- Description -->
-            <p style="color: #4b5563; font-size: 0.875rem; line-height: 1.55; margin-bottom: 0.75rem;">
-                Get our <strong>Important Question Bank</strong> prepared to help you focus on the most important questions for your MSBTE exams.
-            </p>
-
-            <!-- Limited Availability Pill -->
-            <div style="display: inline-flex; align-items: center; gap: 0.35rem; background: #fffbeb; border: 1px solid #fde68a; color: #b45309; font-weight: 700; font-size: 0.75rem; padding: 0.25rem 0.75rem; border-radius: 9999px; margin-bottom: 1rem;">
-                <span>🔥</span> Limited Availability
-            </div>
-
-            <!-- Contact Box -->
-            <div style="background: #eff6ff; border: 1px solid #bfdbfe; border-radius: 0.75rem; padding: 0.65rem 0.75rem; margin-bottom: 1rem; text-align: center;">
-                <p style="font-size: 0.75rem; font-weight: 800; color: #1e40af; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.2rem;">
-                    💬 Want the Question Bank?
-                </p>
-                <p style="font-size: 0.85rem; color: #374151; margin: 0;">
-                    WhatsApp DM us on <a href="https://wa.me/917083236221?text=Hello%2C%20I%20want%20the%20MSBTE%20Important%20Question%20Bank" target="_blank" rel="noopener" style="color: #1d4ed8; font-weight: 800; text-decoration: underline;">70832 36221</a>
-                </p>
-            </div>
 
             <!-- Actions -->
-            <div style="display: flex; flex-direction: column; gap: 0.5rem;">
-                <a href="https://wa.me/917083236221?text=Hello%2C%20I%20want%20the%20MSBTE%20Important%20Question%20Bank" target="_blank" rel="noopener"
-                    id="joinWhatsappBtn"
-                    style="display: flex; align-items: center; justify-content: center; gap: 0.5rem; width: 100%; background-color: #22c55e; color: white; font-weight: 700; font-size: 0.95rem; padding: 0.85rem 1rem; border-radius: 0.75rem; text-decoration: none; transition: background-color 0.2s; box-shadow: 0 4px 6px -1px rgba(34, 197, 94, 0.2);"
-                    onmouseover="this.style.backgroundColor='#16a34a'"
-                    onmouseout="this.style.backgroundColor='#22c55e'">
-                    <svg xmlns="http://www.w3.org/2000/svg" style="width: 1.25rem; height: 1.25rem;" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-                    <span>👉</span> WhatsApp DM Now
+            <div style="display: flex; flex-direction: column; gap: 0.6rem;">
+                <a href="https://whatsapp.com/channel/0029Vap8lWS3QxRxxdmaSR36" target="_blank" rel="noopener noreferrer"
+                    id="followWhatsappBtn"
+                    style="display: flex; align-items: center; justify-content: center; gap: 0.5rem; width: 100%; background: #22c55e; background: linear-gradient(135deg, #22c55e 0%, #16a34a 100%); color: #ffffff; font-weight: 700; font-size: 0.95rem; padding: 0.8rem 1rem; border-radius: 0.75rem; text-decoration: none; box-shadow: 0 4px 12px rgba(34, 197, 94, 0.32); transition: all 0.2s;"
+                    onmouseover="this.style.transform='translateY(-1px)'; this.style.boxShadow='0 6px 16px rgba(34, 197, 94, 0.42)'"
+                    onmouseout="this.style.transform='none'; this.style.boxShadow='0 4px 12px rgba(34, 197, 94, 0.32)'">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" style="width: 1.2rem; height: 1.2rem; fill: #ffffff;" aria-hidden="true">
+                        <path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/>
+                    </svg>
+                    <span>Follow</span>
                 </a>
 
-                <button id="denyWhatsappBtn"
-                    style="background: none; border: none; color: #9ca3af; font-size: 0.8rem; font-weight: 500; cursor: pointer; padding: 0.35rem 0; transition: color 0.2s;"
-                    onmouseover="this.style.color='#4b5563'"
-                    onmouseout="this.style.color='#9ca3af'">
-                    Maybe Later
+                <button id="alreadyFollowedBtn"
+                    style="width: 100%; background: #f8fafc; color: #4b5563; font-weight: 600; font-size: 0.85rem; padding: 0.65rem 1rem; border: 1px solid #e2e8f0; border-radius: 0.75rem; cursor: pointer; transition: all 0.2s;"
+                    onmouseover="this.style.backgroundColor='#e2e8f0'; this.style.color='#111827'"
+                    onmouseout="this.style.backgroundColor='#f8fafc'; this.style.color='#4b5563'">
+                    I'm already followed
                 </button>
             </div>
         </div>
@@ -82,11 +70,12 @@
     document.body.appendChild(div);
 
     const popup = document.getElementById('whatsappPopup');
-    const joinBtn = document.getElementById('joinWhatsappBtn');
-    const denyBtn = document.getElementById('denyWhatsappBtn');
+    const followBtn = document.getElementById('followWhatsappBtn');
+    const alreadyBtn = document.getElementById('alreadyFollowedBtn');
     const closeBtn = document.getElementById('closePopupBtn');
 
     function showPopup() {
+        if (!popup) return;
         popup.classList.remove('hidden');
         popup.style.display = 'flex';
 
@@ -104,6 +93,7 @@
     }
 
     function closePopup() {
+        if (!popup) return;
         popup.classList.add('opacity-0');
         popup.style.opacity = '0';
 
@@ -118,25 +108,46 @@
             popup.classList.add('hidden');
             popup.style.display = 'none';
         }, 300);
-
-        localStorage.setItem('msbteQuestionBankPopupLastShown', new Date().getTime().toString());
     }
 
-    if (joinBtn) joinBtn.addEventListener('click', closePopup);
-    if (denyBtn) denyBtn.addEventListener('click', closePopup);
-    if (closeBtn) closeBtn.addEventListener('click', closePopup);
+    if (followBtn) {
+        followBtn.addEventListener('click', () => {
+            localStorage.setItem('mniCommunityPopupFollowed', 'true');
+            closePopup();
+        });
+    }
+
+    if (alreadyBtn) {
+        alreadyBtn.addEventListener('click', () => {
+            localStorage.setItem('mniCommunityPopupFollowed', 'true');
+            closePopup();
+        });
+    }
+
+    if (closeBtn) {
+        closeBtn.addEventListener('click', () => {
+            localStorage.setItem('mniCommunityPopupLastDismissed', Date.now().toString());
+            closePopup();
+        });
+    }
 
     // Close on backdrop click
     popup.addEventListener('click', (e) => {
-        if (e.target === popup) closePopup();
+        if (e.target === popup) {
+            localStorage.setItem('mniCommunityPopupLastDismissed', Date.now().toString());
+            closePopup();
+        }
     });
 
-    const lastShown = localStorage.getItem('msbteQuestionBankPopupLastShown');
-    const now = new Date().getTime();
+    const isFollowed = localStorage.getItem('mniCommunityPopupFollowed') === 'true';
+    const lastDismissed = localStorage.getItem('mniCommunityPopupLastDismissed');
+    const now = Date.now();
     const twentyFourHours = 24 * 60 * 60 * 1000;
 
-    if (!lastShown || (now - parseInt(lastShown)) > twentyFourHours) {
-        setTimeout(showPopup, 2000);
+    if (!isFollowed) {
+        if (!lastDismissed || (now - parseInt(lastDismissed, 10)) > twentyFourHours) {
+            setTimeout(showPopup, 2000);
+        }
     }
 
 })();
