@@ -2601,7 +2601,8 @@
     </script>
     <!-- Consent Banner (Responsive & Accessible) -->
     <div id="consentBanner"
-      class="fixed bottom-4 left-4 right-4 z-50 bg-white shadow-xl rounded-xl p-4 sm:p-5 md:p-6 max-w-3xl mx-auto border border-gray-200 hidden"
+      class="fixed bottom-4 left-4 right-4 z-[60] bg-white shadow-xl rounded-xl p-4 sm:p-5 md:p-6 max-w-3xl mx-auto border border-gray-200 hidden"
+      style="z-index: 9999;"
       role="dialog" aria-labelledby="consentTitle" aria-describedby="consentDesc" aria-modal="true">
 
       <div class="flex flex-col md:flex-row items-start md:items-center gap-4">
@@ -2754,6 +2755,7 @@
     (function () {
       const banner = document.getElementById('consentBanner');
       if (!banner) return;
+      const stickyCta = document.getElementById('stickyMobileCta');
       const acceptBtn = document.getElementById('consentAccept');
       const rejectBtn = document.getElementById('consentReject');
       const manageBtn = document.getElementById('consentManage');
@@ -2761,6 +2763,20 @@
       const saveBtn = document.getElementById('consentSave');
       const analyticsCheckbox = document.getElementById('consentAnalytics');
       const adsCheckbox = document.getElementById('consentAds');
+
+      function hideBanner() {
+        banner.classList.add('hidden');
+        if (stickyCta) {
+          stickyCta.classList.remove('hidden');
+        }
+      }
+
+      function showBanner() {
+        if (stickyCta) {
+          stickyCta.classList.add('hidden');
+        }
+        banner.classList.remove('hidden');
+      }
 
       function applyConsent(consent) {
         // consent: { analytics: boolean, ads: boolean }
@@ -2787,20 +2803,21 @@
 
       const existing = readConsent();
       if (!existing) {
-        // show after small delay to avoid flash
-        setTimeout(() => banner.classList.remove('hidden'), 300);
+        // Hide mobile sticky CTA while consent is pending, then show banner after delay
+        if (stickyCta) stickyCta.classList.add('hidden');
+        setTimeout(showBanner, 300);
       } else {
         applyConsent(existing);
       }
 
       acceptBtn.addEventListener('click', function () {
         applyConsent({ analytics: true, ads: true });
-        banner.classList.add('hidden');
+        hideBanner();
       });
 
       rejectBtn.addEventListener('click', function () {
         applyConsent({ analytics: false, ads: false });
-        banner.classList.add('hidden');
+        hideBanner();
       });
 
       manageBtn.addEventListener('click', function () {
@@ -2813,20 +2830,20 @@
       saveBtn.addEventListener('click', function () {
         const choice = { analytics: !!analyticsCheckbox.checked, ads: !!adsCheckbox.checked };
         applyConsent(choice);
-        banner.classList.add('hidden');
+        hideBanner();
       });
 
       // keyboard accessibility
       document.addEventListener('keydown', function (e) {
-        if (e.key === 'Escape') banner.classList.add('hidden');
+        if (e.key === 'Escape') hideBanner();
       });
     })();
   </script>
   <script src="whatsapp-popup.js" defer></script>
 
   <!-- STICKY MOBILE CTA -->
-  <aside
-    class="md:hidden fixed bottom-0 left-0 right-0 p-4 bg-white border-t border-gray-100 shadow-[0_-10px_30px_rgba(0,0,0,0.1)] z-50 flex justify-between items-center"
+  <aside id="stickyMobileCta"
+    class="md:hidden fixed bottom-0 left-0 right-0 p-4 bg-white border-t border-gray-100 shadow-[0_-10px_30px_rgba(0,0,0,0.1)] z-40 flex justify-between items-center"
     aria-label="Mobile community action bar">
     <div>
       <div class="text-[10px] text-gray-500 font-bold uppercase tracking-wider">Join Our Community</div>
